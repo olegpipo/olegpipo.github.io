@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="pv-article">
+  <div class="pv-article-header">
+    <div class="pv-article-header-inner">
+      {{ with .Params.silo }}<div class="pv-section-label">{{ . }}</div>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="pv-article-subtitle">{{ . }}</p>{{ end }}
+    </div>
+  </div>
+  <div class="pv-article-body">
+    <div class="pv-article-content">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

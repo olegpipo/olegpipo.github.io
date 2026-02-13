@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="pv-legal-header">
+  <img class="pv-legal-header-logo" src="/img/panicvault.png" alt="PanicVault">
+  <h1>{{ .Title }}</h1>
+  <p>Last updated: {{ with .Params.lastUpdated }}{{ . }}{{ else }}{{ .Date.Format "January 2006" }}{{ end }}</p>
+</div>
+
+<div class="pv-legal-body">
+  <div class="pv-legal-content">
+    {{ .Content }}
+  </div>
+
+  {{ partial "footer-legal.html" . }}
+</div>
+{{ end }}
+
+{{ define "footer" }}
+{{/* Override default footer since legal pages have it inside pv-legal-body */}}
+{{ end }}

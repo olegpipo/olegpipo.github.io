@@ -1,34 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PanicVault - Secure Password Manager | KeePass Sync & AutoFill</title>
-  <meta name="description" content="Your passwords, your file, your control. A secure, offline-first password manager using the open KeePass format. No subscription. No cloud lock-in.">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-<link rel="manifest" href="/img/site.webmanifest">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-</head>
-<body>
-<nav class="pv-nav">
-  <div class="pv-nav-inner">
-    <a class="pv-nav-brand" href="/">
-      <img src="/img/panicvault.png" alt="PanicVault">
-      <span>PanicVault</span>
-    </a>
-    <div class="pv-nav-links">
-      <a href="/privacy/">Privacy</a>
-      <a href="/terms/">Terms</a>
-    </div>
-  </div>
-</nav>
-
-<!-- ── Hero ── -->
+{{ define "main" }}
+<!-- Hero -->
 <section class="pv-hero">
   <div class="pv-hero-bg-pattern"></div>
   <div class="pv-hero-inner">
@@ -58,7 +29,7 @@
   </div>
 </section>
 
-<!-- ── Marquee / Highlights ── -->
+<!-- Marquee / Highlights -->
 <div class="pv-marquee">
   <div class="pv-marquee-track">
     <span>AES-256 Encryption</span>
@@ -96,7 +67,7 @@
   </div>
 </div>
 
-<!-- ── Core Features ── -->
+<!-- Core Features -->
 <section class="pv-section pv-features-section">
   <div class="pv-section-inner">
     <div class="pv-section-label">Features</div>
@@ -234,7 +205,7 @@
   </div>
 </section>
 
-<!-- ── Security ── -->
+<!-- Security -->
 <section class="pv-section pv-security">
   <div class="pv-section-inner">
     <div class="pv-section-label">Security</div>
@@ -278,7 +249,7 @@
   </div>
 </section>
 
-<!-- ── No Lock-in ── -->
+<!-- No Lock-in -->
 <section class="pv-section pv-open">
   <div class="pv-section-inner">
     <div class="pv-open-layout">
@@ -301,7 +272,7 @@
   </div>
 </section>
 
-<!-- ── Download CTA ── -->
+<!-- Download CTA -->
 <section class="pv-download">
   <div class="pv-download-inner">
     <h2>Get PanicVault</h2>
@@ -313,35 +284,8 @@
     <div class="pv-price-tag">Universal purchase &middot; iPhone &middot; iPad &middot; Mac</div>
   </div>
 </section>
+{{ end }}
 
-<footer class="pv-footer">
-  <div class="pv-footer-inner">
-    <div class="pv-footer-links">
-      <a href="/privacy/">Privacy Policy</a>
-      <a href="/terms/">Terms of Service</a>
-      <a href="mailto:ps.applecontact@gmail.com">Contact</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-(function() {
-  var els = document.querySelectorAll('.pv-reveal');
-  if (!('IntersectionObserver' in window)) {
-    els.forEach(function(el) { el.classList.add('pv-visible'); });
-    return;
-  }
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('pv-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  els.forEach(function(el) { observer.observe(el); });
-})();
-</script>
-
-</body>
-</html>
+{{ define "scripts" }}
+{{ partial "reveal-script.html" . }}
+{{ end }}

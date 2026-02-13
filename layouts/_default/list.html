@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="pv-section">
+  <div class="pv-section-inner">
+    {{ with .Params.silo }}<div class="pv-section-label">{{ . }}</div>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="pv-section-subtitle">{{ . }}</p>{{ end }}
+
+    {{ .Content }}
+
+    {{ $pages := .Pages }}
+    {{ if $pages }}
+    <div class="pv-article-list">
+      {{ range $pages }}
+      <a href="{{ .RelPermalink }}" class="pv-article-card pv-reveal">
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+{{ partial "reveal-script.html" . }}
+{{ end }}

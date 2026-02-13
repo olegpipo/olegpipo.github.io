@@ -21,6 +21,9 @@ node_modules/
 _site/
 .jekyll-cache/
 .sass-cache/
+public/
+resources/
+.hugo_build.lock
 
 # Environment
 .env

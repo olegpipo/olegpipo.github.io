@@ -1,0 +1,44 @@
+baseURL = "https://www.panicvault.org/"
+languageCode = "en-us"
+title = "PanicVault - Secure Password Manager | KeePass Sync & AutoFill"
+enableRobotsTXT = true
+
+# Clean URLs (no .html extensions)
+[permalinks]
+  [permalinks.page]
+    '*' = '/:slug/'
+  [permalinks.section]
+    '*' = '/:slug/'
+
+# Sitemap configuration
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Disable default taxonomies (we don't need tags/categories yet)
+[taxonomies]
+
+# Build settings
+[build]
+  [build.buildStats]
+    enable = false
+
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Output formats — ensure clean HTML output
+[outputFormats]
+  [outputFormats.HTML]
+    mediaType = "text/html"
+    baseName = "index"
+    isHTML = true
+    permalinkable = true
+
+# Default page params
+[params]
+  description = "Your passwords, your file, your control. A secure, offline-first password manager using the open KeePass format. No subscription. No cloud lock-in."
+  contactEmail = "ps.applecontact@gmail.com"
