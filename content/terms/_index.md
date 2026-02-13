@@ -5,8 +5,10 @@ type: "page"
 layout: "single"
 lastUpdated: "February 2026"
 sitemap:
-  priority: 0.5
+  priority: 0.3
   changefreq: yearly
+sitemap_priority: 0.3
+sitemap_changefreq: yearly
 ---
 
 ## Acceptance of Terms
