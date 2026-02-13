@@ -1,24 +1,90 @@
 {{ define "main" }}
-<section class="pv-section">
-  <div class="pv-section-inner">
-    {{ with .Params.silo }}<div class="pv-section-label">{{ . }}</div>{{ end }}
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="pv-section-subtitle">{{ . }}</p>{{ end }}
+<!-- Breadcrumb JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    }{{ if ne .RelPermalink "/" }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}"
+    }{{ end }}
+  ]
+}
+</script>
 
-    {{ .Content }}
-
-    {{ $pages := .Pages }}
-    {{ if $pages }}
-    <div class="pv-article-list">
-      {{ range $pages }}
-      <a href="{{ .RelPermalink }}" class="pv-article-card pv-reveal">
-        <h3>{{ .Title }}</h3>
-        {{ with .Description }}<p>{{ . }}</p>{{ end }}
-      </a>
-      {{ end }}
+<section class="pv-article">
+  <!-- Breadcrumb Navigation -->
+  <nav class="pv-breadcrumb" aria-label="Breadcrumb">
+    <div class="pv-breadcrumb-inner">
+      <ol class="pv-breadcrumb-list">
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">{{ .Title }}</li>
+      </ol>
     </div>
-    {{ end }}
+  </nav>
+
+  <!-- Pillar Page Header -->
+  <header class="pv-article-header">
+    <div class="pv-article-header-inner">
+      {{ with .Params.silo }}<div class="pv-section-label">{{ . }}</div>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="pv-article-subtitle">{{ . }}</p>{{ end }}
+    </div>
+  </header>
+
+  <!-- Pillar Page Content -->
+  {{ if .Content }}
+  <div class="pv-article-body">
+    <div class="pv-article-body-inner">
+      <div class="pv-article-content">
+        {{ .Content }}
+      </div>
+    </div>
   </div>
+  {{ end }}
+
+  <!-- Cluster Pages Grid -->
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+  <section class="pv-section pv-related-section">
+    <div class="pv-section-inner">
+      <h2>Articles in {{ .Title }}</h2>
+      <p class="pv-section-subtitle">Explore all guides and articles in this topic.</p>
+      <div class="pv-related-grid">
+        {{ range $pages }}
+        <a href="{{ .RelPermalink }}" class="pv-related-card pv-reveal">
+          <h3>{{ .Title }}</h3>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+          <span class="pv-related-card-meta">{{ .ReadingTime }} min read</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- CTA Section -->
+  <section class="pv-section pv-article-cta">
+    <div class="pv-section-inner">
+      <div class="pv-article-cta-box">
+        <img class="pv-article-cta-logo" src="/img/panicvault.png" alt="PanicVault" width="64" height="64">
+        <h2>Protect Your Passwords with PanicVault</h2>
+        <p>A secure, offline-first password manager using the open KeePass format. Your passwords, your file, your control.</p>
+        <a class="pv-cta-button" href="#">
+          <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on the App Store
+        </a>
+      </div>
+    </div>
+  </section>
 </section>
 {{ end }}
 
