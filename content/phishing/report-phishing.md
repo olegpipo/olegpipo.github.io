@@ -186,7 +186,7 @@ The more detail you provide, the more useful your report:
 
 Reporting is not the end of the process. Take steps to protect yourself:
 
-1. **Change compromised passwords** using a [password manager](/password-managers/) to generate [strong, unique replacements](/password-security/).
+1. **Change compromised passwords** using a [password manager](/password-managers/) to generate [strong, unique replacements](/password-security/). If you are on macOS or iOS, [PanicVault](https://panicvault.com) makes it easy to generate and store strong passwords in the open KeePass KDBX format.
 2. **Enable [two-factor authentication](/two-factor-authentication/)** on all accounts, prioritizing email and financial accounts.
 3. **Monitor your accounts** for unauthorized activity.
 4. **Check for data exposure** on services like Have I Been Pwned to see if your email appears in [data breaches](/data-breaches/).

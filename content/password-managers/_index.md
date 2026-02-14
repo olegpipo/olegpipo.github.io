@@ -81,9 +81,9 @@ Reputable cloud managers mitigate this through regular independent security audi
 
 Offline managers store your vault exclusively on your own devices. There is no cloud sync, no account with a service provider, and no server that could be breached. Your vault file sits on your device, encrypted, under your complete control.
 
-The KeePass format is the most widely used open-source standard for offline password management. It is supported by multiple applications across every major platform. Because the format is open and well-documented, your data is never locked into a proprietary system. You can switch between compatible apps freely.
+The KeePass format is the most widely used open-source standard for offline password management. It is supported by multiple applications across every major platform. Because the format is open and well-documented, your data is never locked into a proprietary system. You can switch between compatible apps freely. On Apple devices, [PanicVault](https://panicvault.com) provides a native macOS and iOS experience for working with KDBX databases, combining the openness of the KeePass format with the polish of a purpose-built Apple app.
 
-The tradeoff is that you are responsible for syncing your vault between devices (using your own cloud storage, USB drive, or other method) and for maintaining backups. If your device is lost or damaged and you have no backup of the vault file, your passwords are gone.
+The tradeoff is that you are responsible for syncing your vault between devices (using your own cloud storage, USB drive, or other method) and for maintaining backups. If your device is lost or damaged and you have no backup of the vault file, your passwords are gone. Modern KeePass apps like PanicVault simplify this by integrating with iCloud Drive and other cloud services for seamless sync.
 
 For many users -- particularly those who prioritize data sovereignty and minimal attack surface -- this tradeoff is well worth it.
 

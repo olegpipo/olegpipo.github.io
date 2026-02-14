@@ -91,7 +91,7 @@ Google Drive is pre-installed on virtually all Android devices. Verify that you 
 
 **Step 2: Install a KeePass-compatible app**
 
-Choose a KeePass-compatible app that supports Google Drive integration. Most popular Android KeePass apps (KeePassDX, Keepass2Android) have built-in Google Drive connectors.
+Choose a KeePass-compatible app that supports Google Drive integration. Most popular Android KeePass apps (KeePassDX, Keepass2Android) have built-in Google Drive connectors. On macOS and iOS, PanicVault is a native option that works with Google Drive through the system file picker.
 
 **Step 3: Connect the app to Google Drive**
 
@@ -111,7 +111,7 @@ Download Google Drive from the App Store and sign in.
 
 **Step 2: Access from your KeePass app**
 
-Many KeePass-compatible iOS apps support Google Drive directly. Some use the iOS Files app integration -- once Google Drive is installed, it appears as a location in the Files app, and any app that uses the iOS file picker can access it.
+Many KeePass-compatible iOS apps support Google Drive directly. [PanicVault](https://panicvault.com), a native macOS and iOS KeePass app, can access `.kdbx` files stored in Google Drive through the iOS Files app integration. Once Google Drive is installed, it appears as a location in the Files app, and any app that uses the iOS file picker -- including PanicVault -- can access it.
 
 **Step 3: Open the database**
 

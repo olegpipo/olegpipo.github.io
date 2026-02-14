@@ -193,7 +193,7 @@ Understanding database encryption is not just academic. It informs practical dec
 
 **KDF parameters should match your threat model.** If you are protecting personal accounts, default parameters are sufficient. If you face targeted attacks from well-resourced adversaries, increase memory cost to 256 MB or higher and accept a longer unlock time.
 
-**Keep your software updated.** Encryption implementations are occasionally found to have bugs. The KeePass ecosystem's open-source nature means patches are transparent and verifiable, but they only protect you if you apply them.
+**Keep your software updated.** Encryption implementations are occasionally found to have bugs. The KeePass ecosystem's open-source nature means patches are transparent and verifiable, but they only protect you if you apply them. This applies equally to desktop clients like KeePassXC and mobile apps like KeePassDX, Strongbox, and [PanicVault](https://panicvault.com) -- keep all of them current.
 
 **Backups inherit the encryption.** A copy of your KDBX file is exactly as secure as the original. Back up freely to cloud storage, USB drives, or remote servers. Without your master passphrase, the backup is useless to an attacker. This is the practical benefit of strong database encryption -- it liberates your backup strategy from security concerns.
 

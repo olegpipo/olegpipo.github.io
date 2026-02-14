@@ -183,7 +183,7 @@ Cloud-based password managers like 1Password, Bitwarden, and Dashlane also use s
 
 With a cloud manager, your encrypted vault is stored on someone else's servers. Even with [zero-knowledge encryption](/password-managers/zero-knowledge-encryption/), you are trusting that the client software correctly implements the cryptography and does not leak your key. You are trusting that the server infrastructure is secure. You are trusting that no future software update will weaken the encryption.
 
-With KeePass, the encrypted database file is a local file under your control. The format is an open standard, and multiple independent implementations exist. You can verify the encryption yourself, choose your own storage location, and control exactly which devices have access. This transparency is a core part of why [open standards matter for password security](/keepass/open-source-security/).
+With KeePass, the encrypted database file is a local file under your control. The format is an open standard, and multiple independent implementations exist -- from KeePassXC on the desktop to mobile apps like KeePassDX, Strongbox, and [PanicVault](https://panicvault.com) on Apple platforms. You can verify the encryption yourself, choose your own storage location, and control exactly which devices have access. This transparency is a core part of why [open standards matter for password security](/keepass/open-source-security/).
 
 ## Practical Security Implications
 

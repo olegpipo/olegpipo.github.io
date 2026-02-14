@@ -70,7 +70,7 @@ The security of recovery codes comes down to where and how you store them. The t
 
 ### Strategy 1: Encrypted Password Manager
 
-Store recovery codes in the notes field of the corresponding password entry in your password manager. If you use a [KeePass-compatible app](/keepass/), the codes are encrypted with the same AES-256 or ChaCha20 encryption that protects your passwords.
+Store recovery codes in the notes field of the corresponding password entry in your password manager. If you use a [KeePass-compatible app](/keepass/) such as [PanicVault](https://panicvault.com) on macOS/iOS, the codes are encrypted with the same AES-256 or ChaCha20 encryption that protects your passwords.
 
 **Advantages**: Codes are encrypted, backed up with your vault, organized by service, and searchable. This is the most practical approach for most people.
 

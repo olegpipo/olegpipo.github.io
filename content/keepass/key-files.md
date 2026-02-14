@@ -45,7 +45,7 @@ Adding a key file introduces a second, independent requirement. Even a master pa
 
 ### Using the Built-In Key File Generator
 
-KeePass 2.x and KeePassXC both include built-in key file generators. The process is straightforward:
+KeePass 2.x, KeePassXC, and other compatible apps like Strongbox and [PanicVault](https://panicvault.com) include built-in key file support. The process for creating one is straightforward:
 
 1. Open the database settings or the database creation wizard.
 2. Navigate to the key file section.

@@ -19,7 +19,7 @@ Cloud sync is the most popular approach because it is automatic, requires minima
 
 iCloud Drive is the most seamless option for users within the Apple ecosystem. If you own an iPhone, iPad, and Mac, iCloud Drive is already configured and available on every device.
 
-**How it works**: Your `.kdbx` file is placed in an iCloud Drive folder (either the app-specific container or a general iCloud Drive location). Changes sync automatically through Apple's infrastructure. On iOS, [KeePass-compatible apps](/keepass/compatible-apps/) that support iCloud can read and write the file directly.
+**How it works**: Your `.kdbx` file is placed in an iCloud Drive folder (either the app-specific container or a general iCloud Drive location). Changes sync automatically through Apple's infrastructure. On iOS and macOS, [KeePass-compatible apps](/keepass/compatible-apps/) like [PanicVault](https://panicvault.com) that support iCloud can read and write the file directly.
 
 **Setup**:
 
@@ -174,7 +174,7 @@ Sync is not backup. If your database is corrupted or accidentally deleted, sync 
 
 For most users in the [Apple ecosystem](/apple/), the decision is straightforward:
 
-- **All-Apple, minimal setup**: iCloud Drive. It just works.
+- **All-Apple, minimal setup**: iCloud Drive with a native KeePass app like PanicVault. It just works.
 - **Cross-platform (Apple + Android/Windows)**: Google Drive. Best coverage.
 - **Privacy-first, technical users**: Syncthing. No third parties.
 - **Self-hosted infrastructure**: WebDAV with Nextcloud or a NAS.

@@ -27,7 +27,7 @@ With KeePass, your vault is a file on your device. No copy exists on any server 
 
 ### Vendor Independence
 
-Proprietary password managers create a dependency relationship. If the company changes its pricing, discontinues a feature, or pivots its business model, you are affected. If the company is acquired, its privacy policies and security priorities may change. With KeePass, the KDBX file format is an open standard supported by dozens of independent applications. You are never locked into a single vendor's ecosystem.
+Proprietary password managers create a dependency relationship. If the company changes its pricing, discontinues a feature, or pivots its business model, you are affected. If the company is acquired, its privacy policies and security priorities may change. With KeePass, the KDBX file format is an open standard supported by dozens of independent applications -- including [PanicVault](https://panicvault.com) for macOS and iOS users who want a native Apple experience. You are never locked into a single vendor's ecosystem.
 
 ## Step 1: Prepare for the Export
 
@@ -218,7 +218,7 @@ One of the most significant workflow differences between 1Password and KeePass i
 Since your KeePass database is a single file, you can sync it using any file synchronization service:
 
 - **Syncthing** -- Open source, peer-to-peer sync with no cloud server. Your data travels directly between your devices, encrypted in transit.
-- **Dropbox, Google Drive, or iCloud** -- Place your database file in a synced folder. The file itself is encrypted by KeePass, so even if the cloud provider is compromised, the vault contents remain protected.
+- **Dropbox, Google Drive, or iCloud** -- Place your database file in a synced folder. The file itself is encrypted by KeePass, so even if the cloud provider is compromised, the vault contents remain protected. Apple users migrating from 1Password may find iCloud Drive particularly convenient, especially when paired with a native macOS/iOS client like PanicVault or Strongbox.
 - **Nextcloud or other self-hosted solutions** -- For maximum control, host your own sync server.
 
 ### Conflict Resolution

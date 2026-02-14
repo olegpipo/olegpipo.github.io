@@ -83,7 +83,7 @@ The KDBX format eliminates this problem entirely. Because the format is open and
 
 Open-source projects benefit from contributions by developers worldwide who use the software themselves. Bug reports, feature requests, security patches, and documentation improvements come from the same community that depends on the software. This alignment of incentives produces tools that prioritize user needs over revenue goals.
 
-The KeePass ecosystem is a prime example. The original KeePass application inspired KeePassXC (a cross-platform community fork), Strongbox (for Apple platforms), KeePassDX (for Android), and many others. Each application brings unique strengths while maintaining full compatibility through the shared KDBX format.
+The KeePass ecosystem is a prime example. The original KeePass application inspired KeePassXC (a cross-platform community fork), Strongbox (for Apple platforms), [PanicVault](https://panicvault.com) (a native macOS and iOS client), KeePassDX (for Android), and many others. Each application brings unique strengths while maintaining full compatibility through the shared KDBX format.
 
 ## Data Portability: Why It Matters
 
@@ -111,7 +111,7 @@ On Windows, the original KeePass application remains actively maintained. KeePas
 
 ### Mobile Applications
 
-On iOS, apps like Strongbox and KeePassium provide native experiences with Face ID and Touch ID integration, AutoFill support, and iCloud or local sync options. On Android, KeePassDX and Keepass2Android offer similar functionality with fingerprint unlock and integration with the Android autofill framework.
+On iOS, apps like Strongbox, KeePassium, and PanicVault provide native experiences with Face ID and Touch ID integration, AutoFill support, and iCloud or local sync options. On Android, KeePassDX and Keepass2Android offer similar functionality with fingerprint unlock and integration with the Android autofill framework.
 
 ### Browser Integration
 
@@ -201,7 +201,7 @@ For a broader perspective on how KeePass fits within the [password manager](/pas
 
 Adopting the KeePass format is simpler than it might appear. Here is your path forward:
 
-1. **Choose a compatible application.** Select an app for your primary platform. KeePassXC for desktop, Strongbox or KeePassium for iOS, KeePassDX for Android. Our [compatible apps guide](/keepass/compatible-apps/) helps you choose.
+1. **Choose a compatible application.** Select an app for your primary platform. KeePassXC for desktop, Strongbox, KeePassium, or PanicVault for iOS, KeePassDX for Android. Our [compatible apps guide](/keepass/compatible-apps/) helps you choose.
 
 2. **Create your database.** Open your chosen app and create a new KDBX database. Set a strong master passphrase of five or more random words. Optionally configure a key file for additional security.
 

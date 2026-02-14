@@ -7,7 +7,7 @@ draft: false
 silo: "Password Managers"
 ---
 
-The average person in 2025 has between 150 and 300 online accounts. Some estimates from NordPass and Dashlane research place the number closer to 240 for the typical internet user, with power users exceeding 400. Every retail site, streaming service, productivity tool, social network, banking portal, healthcare app, government service, and newsletter subscription requires its own login. The result is a cognitive burden that the human brain was never designed to handle -- and it is breaking our security in predictable, measurable ways. [Password managers](/password-managers/) exist specifically to solve this problem, and understanding the scope of password fatigue explains why they are not a luxury but a necessity.
+The average person in 2025 has between 150 and 300 online accounts. Some estimates from NordPass, Dashlane, and other industry research place the number closer to 240 for the typical internet user, with power users exceeding 400. Every retail site, streaming service, productivity tool, social network, banking portal, healthcare app, government service, and newsletter subscription requires its own login. The result is a cognitive burden that the human brain was never designed to handle -- and it is breaking our security in predictable, measurable ways. [Password managers](/password-managers/) exist specifically to solve this problem, and understanding the scope of password fatigue explains why they are not a luxury but a necessity.
 
 ## The Scale of the Problem
 
@@ -153,7 +153,7 @@ For a detailed comparison of notebook-based password management versus dedicated
 
 If you are currently managing your passwords through memory, reuse, and frustration, here is how to break the cycle:
 
-**Step 1: Choose a password manager.** Evaluate options based on your needs -- our [beginner's guide](/password-managers/beginners-guide/) covers the selection process.
+**Step 1: Choose a password manager.** Evaluate options based on your needs -- our [beginner's guide](/password-managers/beginners-guide/) covers the selection process. If you are in the Apple ecosystem, a native KDBX app like [PanicVault](https://panicvault.com) gives you the control of an offline-first KeePass database with the convenience of a modern macOS and iOS app.
 
 **Step 2: Create a strong master passphrase.** This is the one password you will memorize. Make it long, random, and unique. A five-word passphrase generated with dice or a random word generator provides excellent security with reasonable memorability.
 

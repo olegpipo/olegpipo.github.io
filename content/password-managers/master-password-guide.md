@@ -49,7 +49,7 @@ Use one of these methods to select words randomly:
 
 **Diceware method.** Roll five dice (or one die five times) to generate a five-digit number. Look up that number in the Diceware word list to get your word. Repeat for each word in your passphrase. This method is fully offline and verifiably random -- the entropy comes from physical dice rolls, not from software.
 
-**Password manager generator.** Most password managers include a passphrase generator that selects words from a curated word list using a cryptographically secure random number generator. This is the most convenient option if you trust your device.
+**Password manager generator.** Most password managers include a passphrase generator that selects words from a curated word list using a cryptographically secure random number generator. This is the most convenient option if you trust your device. KeePass-compatible apps like [PanicVault](https://panicvault.com) on macOS and iOS include built-in password generators that can create strong passphrases directly within the app.
 
 **EFF word lists.** The Electronic Frontier Foundation publishes several optimized word lists designed for passphrase generation. Their "long list" contains 7,776 words chosen for memorability and distinctness.
 
@@ -89,7 +89,7 @@ Different password managers handle this differently:
 
 **Account recovery keys.** Similar to recovery codes, but sometimes tied to a specific device or biometric. The exact implementation varies by provider.
 
-**No recovery at all.** Some managers, particularly offline or local-only managers, offer no recovery mechanism. If you forget your master password, you create a new vault and start over. This is the most secure approach in terms of zero-knowledge principles, but it places the full burden of remembering on the user.
+**No recovery at all.** Some managers, particularly offline or local-only managers like PanicVault and other KeePass apps, offer no recovery mechanism. If you forget your master password, you create a new vault and start over. This is the most secure approach in terms of zero-knowledge principles, but it places the full burden of remembering on the user.
 
 The existence of recovery mechanisms is a tradeoff. Every recovery path is also a potential attack vector. A recovery code stored insecurely is equivalent to a second master password that an attacker might find. Emergency access contacts could be socially engineered. The most paranoid users may prefer a system with no recovery, accepting the risk of lockout in exchange for the certainty that no one else can bypass their master password.
 

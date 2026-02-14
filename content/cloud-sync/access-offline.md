@@ -133,7 +133,7 @@ With KeePass databases synced via cloud storage, the situation depends on your [
 - Keep both versions (creating a conflict copy), requiring you to manually merge them.
 - Silently overwrite one version with the other (this is rare but dangerous).
 
-Good KeePass-compatible apps include sync and merge capabilities that can intelligently combine changes from two copies of the same database. When evaluating KeePass apps, conflict handling should be a key selection criterion.
+Good KeePass-compatible apps include sync and merge capabilities that can intelligently combine changes from two copies of the same database. On Apple devices, apps like PanicVault handle the KDBX format natively and are designed to work reliably with iCloud Drive's sync behavior. When evaluating KeePass apps, conflict handling should be a key selection criterion.
 
 The safest practice is straightforward: try to avoid editing your vault on multiple devices simultaneously when offline. If you do need to make changes, do so on a single designated "primary" device and keep the others read-only until you reconnect.
 
@@ -141,9 +141,9 @@ The safest practice is straightforward: try to avoid editing your vault on multi
 
 For users in the [Apple ecosystem](/apple/), [iCloud Drive provides a natural sync layer](/cloud-sync/icloud-sync/) for KeePass databases. However, there are platform-specific behaviors to be aware of:
 
-**iOS/iPadOS**: Files stored in iCloud Drive are generally kept locally on the device, but iOS may evict them under storage pressure. Apps that use the iOS file provider API can request that files remain downloaded.
+**iOS/iPadOS**: Files stored in iCloud Drive are generally kept locally on the device, but iOS may evict them under storage pressure. Apps that use the iOS file provider API can request that files remain downloaded. Native KeePass apps like [PanicVault](https://panicvault.com) maintain a local working copy of your database, so your passwords remain accessible even if iCloud Drive evicts the original file.
 
-**macOS**: The "Optimize Mac Storage" setting can evict iCloud Drive files from local storage. Disable this for your vault file or use an app that maintains its own local copy.
+**macOS**: The "Optimize Mac Storage" setting can evict iCloud Drive files from local storage. Disable this for your vault file or use an app like PanicVault that maintains its own local copy independently of iCloud Drive's storage optimization.
 
 **Handoff and Continuity**: Apple's ecosystem features do not apply to KeePass databases in a useful way. Each device opens the vault independently.
 

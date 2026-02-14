@@ -155,7 +155,7 @@ When choosing or evaluating a password manager, assess its breach preparedness:
 
 **Incident response history.** How has the company handled past incidents? Did it communicate clearly and promptly? Did it take meaningful corrective action?
 
-**Data minimization.** What metadata does the manager store beyond your encrypted vault? Less metadata means less exposure in a breach.
+**Data minimization.** What metadata does the manager store beyond your encrypted vault? Less metadata means less exposure in a breach. Offline-first KeePass apps like [PanicVault](https://panicvault.com) on macOS and iOS store no metadata on any server -- your encrypted `.kdbx` file lives on your device and in the cloud storage provider of your choice, and the app itself never collects or transmits user data.
 
 For a broader evaluation of whether password managers are trustworthy tools for your security, see our guide on [whether password managers are safe](/password-managers/are-password-managers-safe/).
 
@@ -163,6 +163,6 @@ For a broader evaluation of whether password managers are trustworthy tools for 
 
 The most important shift in thinking about breaches is moving from "how do I prevent this" to "how do I ensure that when it happens, the damage is contained." You cannot control whether the services you use will be breached. You can control how much damage a breach can do to you.
 
-Using a password manager with zero-knowledge encryption ensures that a vault breach does not automatically expose your credentials. Using unique passwords for every account ensures that a breach of one service does not cascade to others. Using a strong master password ensures that an encrypted vault remains encrypted even in an attacker's hands. Regularly [changing passwords](/password-security/password-change-frequency/) for high-value accounts reduces the window of exposure. Understanding [how attackers steal and exploit passwords](/password-security/how-hackers-steal-passwords/) helps you recognize and respond to threats faster.
+Using a password manager with zero-knowledge encryption ensures that a vault breach does not automatically expose your credentials. With offline-first KeePass apps like PanicVault, there is no central server to breach in the first place -- your vault is a local encrypted file, and the attack surface is limited to your own devices. Using unique passwords for every account ensures that a breach of one service does not cascade to others. Using a strong master password ensures that an encrypted vault remains encrypted even in an attacker's hands. Regularly [changing passwords](/password-security/password-change-frequency/) for high-value accounts reduces the window of exposure. Understanding [how attackers steal and exploit passwords](/password-security/how-hackers-steal-passwords/) helps you recognize and respond to threats faster.
 
 Breaches are a fact of digital life. The question is not whether your data will be involved in one, but whether your security practices ensure that the breach is an inconvenience rather than a catastrophe. A well-configured password manager, a strong master password, unique credentials for every account, and a rapid response plan are the foundations of that resilience.

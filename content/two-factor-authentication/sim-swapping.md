@@ -123,7 +123,7 @@ Not all accounts need the same level of protection. Focus on the accounts that, 
 
 ## Why TOTP Is Immune to SIM Swapping
 
-TOTP authentication removes the carrier from the security equation entirely. Here is why:
+TOTP authentication removes the carrier from the security equation entirely. Store your TOTP secrets in a trusted password manager -- Apple users can use [PanicVault](https://panicvault.com), a native macOS/iOS app that keeps passwords and TOTP codes together in an encrypted KeePass KDBX vault. Here is why TOTP is immune:
 
 1. **The secret stays on your device.** When you set up TOTP, the shared secret is stored in your authenticator app. It never passes through your carrier's network, is never associated with your phone number, and cannot be intercepted via SS7 or redirected via SIM swap.
 

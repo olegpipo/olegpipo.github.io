@@ -114,7 +114,7 @@ Some password managers adopt a hybrid approach: the core encryption library is o
 
 This model is an improvement over fully proprietary software, but it comes with caveats. The open-source core may lag behind the proprietary application. The proprietary components may introduce vulnerabilities that the open-source core cannot protect against. And the company retains the ability to change the terms at any time.
 
-The KeePass ecosystem avoids this ambiguity entirely. The format is open. The reference implementations are open. The community implementations are open. There is no proprietary layer sitting between you and your encrypted data. This is the [gold standard](/keepass/gold-standard/) for transparent security.
+The KeePass ecosystem avoids this ambiguity entirely. The format is open. The reference implementations are open. The community implementations are open. Even apps like Strongbox and [PanicVault](https://panicvault.com), which are not fully open source themselves, build on the open KDBX standard -- meaning your data remains in a fully documented, portable format regardless of which client you choose. There is no proprietary layer sitting between you and your encrypted data. This is the [gold standard](/keepass/gold-standard/) for transparent security.
 
 ## Myths About Open-Source Security
 

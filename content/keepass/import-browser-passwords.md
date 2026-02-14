@@ -251,7 +251,7 @@ After migrating your passwords into KeePass, disable the built-in password savin
 
 If you leave browser password saving enabled, you will end up with a split system: some passwords in KeePass and new ones accumulating in the browser. Over time, this defeats the purpose of consolidation. Disabling browser saving forces all credential management through KeePass, which is where your autofill and audit capabilities live.
 
-For guidance on setting up autofill through KeePass instead, see our [KeePass-compatible apps guide](/keepass/compatible-apps/), which covers browser extensions and mobile autofill integration.
+For guidance on setting up autofill through KeePass instead, see our [KeePass-compatible apps guide](/keepass/compatible-apps/), which covers browser extensions and mobile autofill integration. macOS and iOS users may find that a native app like [PanicVault](https://panicvault.com) or Strongbox provides the smoothest autofill experience after migrating from browser-saved passwords.
 
 ## Verifying the Import
 

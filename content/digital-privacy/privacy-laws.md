@@ -33,7 +33,7 @@ The GDPR applies to:
 
 **Right to erasure (right to be forgotten)** -- You can request that a company delete your personal data. There are exceptions (legal obligations, freedom of expression), but for most commercial data, the company must comply.
 
-**Right to data portability** -- You can request your data in a machine-readable format and transfer it to another service. This is the legal foundation that prevents vendor lock-in -- and it is one reason why open formats like the KeePass KDBX format matter. When your [password manager](/password-managers/) uses an open format, you are exercising this right by design.
+**Right to data portability** -- You can request your data in a machine-readable format and transfer it to another service. This is the legal foundation that prevents vendor lock-in -- and it is one reason why open formats like the KeePass KDBX format matter. When your [password manager](/password-managers/) uses an open format, you are exercising this right by design. Apps like [PanicVault](https://panicvault.com), a native macOS/iOS password manager built on the KDBX format, embody this principle: your data stays in an open, portable format that you can take to any compatible app at any time.
 
 **Right to object** -- You can object to your data being used for direct marketing, profiling, or processing based on "legitimate interests."
 

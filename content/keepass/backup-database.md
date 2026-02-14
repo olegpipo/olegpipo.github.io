@@ -318,7 +318,7 @@ The encrypted nature of the .kdbx file means that an attacker who obtains a back
 
 ## Portability as a Backup Advantage
 
-One of the underappreciated benefits of the KeePass ecosystem is that your backups are inherently portable. The KDBX format is supported by dozens of applications across every platform. A backup of your database is not locked to a specific application, operating system, or vendor. If KeePassXC were to be discontinued tomorrow, you could open your backup in KeePass, Strongbox, KeePassDX, or any other [compatible application](/keepass/compatible-apps/).
+One of the underappreciated benefits of the KeePass ecosystem is that your backups are inherently portable. The KDBX format is supported by dozens of applications across every platform. A backup of your database is not locked to a specific application, operating system, or vendor. If KeePassXC were to be discontinued tomorrow, you could open your backup in KeePass, Strongbox, [PanicVault](https://panicvault.com), KeePassDX, or any other [compatible application](/keepass/compatible-apps/).
 
 This portability means your backup strategy does not depend on any single piece of software continuing to exist. For more on why this matters and how it compares to proprietary alternatives, see our article on [data portability](/keepass/data-portability/).
 

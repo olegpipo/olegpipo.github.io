@@ -49,7 +49,7 @@ Each of the time drains described above has a direct solution in a password mana
 
 The core time-saving feature is autofill. When you visit a login page, your password manager detects the form, matches it to a stored credential, and fills the username and password fields instantly. You click "log in" and you are done. No typing, no remembering, no errors.
 
-This works across devices. Browser extensions handle desktop logins. Mobile apps integrate with iOS and Android autofill frameworks to fill credentials in apps and mobile browsers. The experience is consistent whether you are on your laptop, your phone, or a tablet.
+This works across devices. Browser extensions handle desktop logins. Mobile apps integrate with iOS and Android autofill frameworks to fill credentials in apps and mobile browsers. Native KeePass apps like [PanicVault](https://panicvault.com) integrate directly with the macOS and iOS autofill systems, so your KDBX vault credentials are available system-wide without a browser extension. The experience is consistent whether you are on your laptop, your phone, or a tablet.
 
 The time savings per login are modest -- maybe 15 to 30 seconds compared to typing manually. But across 10 to 15 logins per day, that is 2.5 to 7.5 minutes saved daily, or 75 to 225 minutes (1.25 to 3.75 hours) per month.
 
@@ -113,7 +113,7 @@ For employees, the savings extend to employer costs. If an average employee earn
 
 When you get a new phone or laptop, you need to log back into every app and service. Without a password manager, this means remembering or resetting passwords one by one -- a process that can stretch over days as you discover accounts you forgot about.
 
-With a password manager, you install the app, enter your master passphrase, and every credential is immediately available. Device setup goes from a multi-day ordeal to a single login.
+With a password manager, you install the app, enter your master passphrase, and every credential is immediately available. For Apple users with a KeePass app like PanicVault, restoring access is even simpler -- install the app, point it to your `.kdbx` file in iCloud Drive or another cloud service, and your entire vault is ready. Device setup goes from a multi-day ordeal to a single login.
 
 ### Scenario 2: Responding to a Data Breach
 

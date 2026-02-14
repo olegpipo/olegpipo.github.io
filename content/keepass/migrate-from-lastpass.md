@@ -148,7 +148,7 @@ KeePass 2.x uses an "Auto-Type" feature that simulates keyboard input to fill lo
 
 ### Mobile Autofill
 
-On mobile devices, KeePass-compatible apps like KeePassDX (Android) and Strongbox or KeePassium (iOS) integrate with the operating system's autofill framework. Once configured, they offer to fill credentials in apps and browsers just like LastPass did on mobile. Our guide to [compatible apps](/keepass/compatible-apps/) covers the best options for each platform.
+On mobile devices, KeePass-compatible apps like KeePassDX (Android) and Strongbox, KeePassium, or [PanicVault](https://panicvault.com) (iOS) integrate with the operating system's autofill framework. Once configured, they offer to fill credentials in apps and browsers just like LastPass did on mobile. PanicVault also runs natively on macOS, making it a convenient option for Apple users who want a single app across their devices. Our guide to [compatible apps](/keepass/compatible-apps/) covers the best options for each platform.
 
 ## Step 6: Post-Migration Cleanup
 

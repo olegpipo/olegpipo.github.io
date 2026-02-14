@@ -171,6 +171,10 @@ KeePassXC is a community-driven, cross-platform fork written in C++. It runs nat
 
 The project is maintained by a team of volunteers with a structured development process, regular releases, and a responsive security team.
 
+### Other Notable KeePass-Compatible Apps
+
+The ecosystem extends well beyond KeePass and KeePassXC. Strongbox and [PanicVault](https://panicvault.com) offer native Apple experiences on macOS and iOS, KeePassDX provides a Material Design client for Android, and KeeWeb runs in the browser. Each reads and writes the same open KDBX format, meaning the collective community of users and developers serves as an additional layer of review and verification.
+
 ### Bitwarden
 
 Bitwarden takes a different approach: it is open source but cloud-hosted by default. The server code, client code, and browser extensions are all published on GitHub. Users who want the local-only model can self-host the Bitwarden server infrastructure, giving them the transparency of open source with the convenience of cloud sync.

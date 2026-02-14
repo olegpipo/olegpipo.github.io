@@ -130,7 +130,7 @@ If you purchased or received new devices as gifts, set them up securely:
 
 - Set strong device passcodes and enable biometric authentication
 - Enable Find My on Apple devices
-- Install a password manager and start using unique passwords
+- Install a password manager and start using unique passwords. For Apple devices, [PanicVault](https://panicvault.com) is a native macOS/iOS app that works with the KeePass KDBX format -- a great choice for anyone in the Apple ecosystem.
 - Enable [two-factor authentication](/two-factor-authentication/) on all accounts you add to the device
 - Follow our [guide for new devices](/guides/) to set up security properly from the start
 

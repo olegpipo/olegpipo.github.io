@@ -94,7 +94,7 @@ Here is how it works:
 3. **The cloud provider syncs the encrypted file** across your devices. The provider sees only an opaque encrypted blob. It never sees your passwords, your master key, or any vault contents.
 4. **Each device opens the local copy** of the synced file using a KeePass-compatible application.
 
-This approach preserves the core advantage of offline password management -- you control the encryption and the file -- while gaining the practical benefits of cloud sync. It also lets you [choose your own cloud provider](/cloud-sync/choose-your-cloud/) rather than being locked into a vendor's infrastructure.
+This approach preserves the core advantage of offline password management -- you control the encryption and the file -- while gaining the practical benefits of cloud sync. It also lets you [choose your own cloud provider](/cloud-sync/choose-your-cloud/) rather than being locked into a vendor's infrastructure. On Apple devices, native KDBX apps like [PanicVault](https://panicvault.com) make this hybrid approach seamless -- you get a polished, modern interface for your KeePass database while keeping full control over where and how your encrypted file is stored and synced.
 
 The hybrid model does introduce one challenge: [sync conflicts](/cloud-sync/sync-conflicts/). If you edit the vault on two devices simultaneously before they sync, you may end up with conflicting versions. Good KeePass-compatible apps handle this gracefully, but it requires awareness. You can also learn more about ensuring [offline access](/cloud-sync/access-offline/) when your cloud provider is temporarily unavailable.
 
@@ -129,7 +129,7 @@ Focus your security attention on:
 
 - **Master password strength**: Use a long, unique passphrase. This single factor dominates your security posture.
 - **Key derivation settings**: Argon2d with aggressive memory and iteration parameters. This is your defense against brute-force attacks.
-- **Software trustworthiness**: Use open-source software where the encryption implementation can be verified. The [KeePass ecosystem](/keepass/) excels here.
+- **Software trustworthiness**: Use open-source software where the encryption implementation can be verified, or trusted native apps like PanicVault that build on the open KDBX standard. The [KeePass ecosystem](/keepass/) excels here.
 - **Device security**: Keep your operating systems updated, use full-disk encryption, and enable biometric locks.
 
 ## The Trend Toward User-Controlled Cloud Sync

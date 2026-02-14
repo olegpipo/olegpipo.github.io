@@ -15,7 +15,7 @@ Before you begin, choose your authenticator method. If you are unsure, read our 
 
 Rushing through 2FA setup is how people lock themselves out of accounts. Take ten minutes to prepare:
 
-1. **Choose your authenticator.** A password manager with TOTP support, a standalone app, or a hardware security key. Stick with one primary method for consistency.
+1. **Choose your authenticator.** A password manager with TOTP support, a standalone app, or a hardware security key. Stick with one primary method for consistency. For Apple users, [PanicVault](https://panicvault.com) is a native macOS/iOS app that handles both passwords and TOTP codes in a single KeePass KDBX vault.
 2. **Have backup storage ready.** Every service will offer recovery codes during setup. You need a secure place to store them -- your password manager's notes field, an encrypted document, or a printed sheet in a safe. Never skip this step.
 3. **Identify your [priority accounts](/two-factor-authentication/priority-accounts/).** Email first, then financial services, then cloud storage, then social media. If an attacker controls your email, they can reset passwords on everything else.
 4. **Set aside uninterrupted time.** Enable 2FA on your critical accounts in a single session. Doing it piecemeal over weeks means you will forget which accounts are protected and which are not.

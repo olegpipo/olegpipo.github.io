@@ -45,7 +45,7 @@ The growth of passkey adoption has been exponential but from a small base:
 
 **2023**: Google enables passkey login for all Google accounts. Amazon, PayPal, eBay, GitHub, and others launch support. Platform-native passkey creation becomes frictionless. An estimated 2-3 percent of eligible users create passkeys.
 
-**2024**: Third-party password managers (1Password, Bitwarden, Dashlane) add passkey storage and management. The number of supporting websites roughly doubles. User adoption reaches an estimated 8-10 percent on major platforms. Financial services begin pilot programs.
+**2024**: Third-party password managers (1Password, Bitwarden, Dashlane, [PanicVault](https://panicvault.com)) add passkey storage and management. The number of supporting websites roughly doubles. User adoption reaches an estimated 8-10 percent on major platforms. Financial services begin pilot programs.
 
 **2025**: Cross-device authentication (QR + Bluetooth) becomes more reliable. Enterprise adoption accelerates through Microsoft Entra ID. Apple's Passwords app gives passkeys a visible management interface. User adoption on major platforms reaches approximately 12-15 percent.
 

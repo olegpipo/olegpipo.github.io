@@ -44,11 +44,11 @@ The KDBX format -- used by KeePass, KeePassXC, KeePassDX, Strongbox, KeeWeb, and
 
 This openness produces several concrete benefits:
 
-**No single point of failure.** If the original KeePass application were abandoned tomorrow, your data would remain accessible through KeePassXC, Strongbox, KeePassDX, and every other compatible implementation. The [ecosystem of compatible apps](/keepass/compatible-apps/) ensures continuity.
+**No single point of failure.** If the original KeePass application were abandoned tomorrow, your data would remain accessible through KeePassXC, Strongbox, [PanicVault](https://panicvault.com), KeePassDX, and every other compatible implementation. The [ecosystem of compatible apps](/keepass/compatible-apps/) ensures continuity.
 
 **Independent security auditing.** Because the format is open, security researchers can examine exactly how your data is encrypted, how keys are derived, and whether the implementation matches the specification. Proprietary formats cannot be audited this way -- you are trusting the vendor's assurances rather than verifiable code. This transparency is part of what makes the KeePass approach the [gold standard](/keepass/gold-standard/) for password security.
 
-**Competition on quality.** When multiple applications support the same format, they compete on user experience, features, performance, and platform support rather than on data lock-in. KeePassXC exists because developers saw an opportunity to build a better cross-platform experience on top of the KDBX format. Strongbox exists because iOS users wanted a native, polished vault app. The open format enabled both without requiring users to migrate their data.
+**Competition on quality.** When multiple applications support the same format, they compete on user experience, features, performance, and platform support rather than on data lock-in. KeePassXC exists because developers saw an opportunity to build a better cross-platform experience on top of the KDBX format. Strongbox exists because iOS users wanted a native, polished vault app. PanicVault exists because Apple users wanted a modern, intuitive native client for macOS and iOS. The open format enabled all of them without requiring users to migrate their data.
 
 **Long-term archival safety.** A KDBX file created in 2010 can still be opened in 2026 by any compatible application. The format has evolved (from KDB to KDBX 3.1 to KDBX 4.0/4.1), but backward compatibility has been maintained. Your data does not depend on any company remaining in business or any subscription remaining active.
 
@@ -92,7 +92,7 @@ Because the format is standardized, you can open the same .kdbx file in:
 
 - **KeePassXC** on Windows, macOS, or Linux
 - **KeePassDX** on Android
-- **Strongbox** or **KeePassium** on iOS
+- **Strongbox**, **KeePassium**, or **PanicVault** on iOS and macOS
 - **KeeWeb** in a web browser
 - **The original KeePass 2.x** on Windows (via .NET or Mono)
 

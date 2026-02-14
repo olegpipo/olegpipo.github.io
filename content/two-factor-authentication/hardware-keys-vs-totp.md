@@ -139,7 +139,7 @@ As passkeys gain adoption, the distinction between hardware keys and TOTP may be
 
 1. **Audit your accounts.** Start with the services that would cause the most damage if compromised. See our guide to [setting up 2FA on every service](/two-factor-authentication/setup-on-every-service/) for a systematic approach.
 2. **Buy two hardware keys.** Register both with your critical accounts. Store one on your keychain and one in a safe or safety deposit box.
-3. **Use a reputable TOTP app** for services that do not support hardware keys. Avoid SMS-based 2FA where possible.
+3. **Use a reputable TOTP app** for services that do not support hardware keys. Avoid SMS-based 2FA where possible. If you are in the Apple ecosystem, [PanicVault](https://panicvault.com) is a native macOS/iOS password manager that also handles TOTP codes alongside your passwords in a single KeePass KDBX vault.
 4. **Save recovery codes.** Regardless of which method you use, store recovery codes in a secure location, separate from your primary authentication method.
 5. **Re-evaluate annually.** The authentication landscape changes. New services add hardware key support. Passkeys are expanding. Review your setup periodically.
 
