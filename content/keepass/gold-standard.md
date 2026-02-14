@@ -111,7 +111,7 @@ Acknowledging trade-offs is part of an honest assessment. KeePass is not the eas
 
 For users who are comfortable with technology, this is straightforward. For non-technical users, the initial setup can feel intimidating compared to a managed service. This is a real barrier, and it is the primary reason commercial password managers exist -- they trade some security and control for convenience and simplicity.
 
-However, modern KeePass-compatible applications have significantly narrowed this gap. KeePassXC includes a polished GUI, a built-in browser extension, and a straightforward setup process. Strongbox on iOS and macOS offers an experience comparable to any commercial app, complete with iCloud synchronization, Face ID, and AutoFill support. PanicVault brings the KeePass ecosystem to the web with a clean, accessible interface.
+However, modern KeePass-compatible applications have significantly narrowed this gap. KeePassXC includes a polished GUI, a built-in browser extension, and a straightforward setup process. Strongbox on iOS and macOS offers an experience comparable to any commercial app, complete with iCloud synchronization, Face ID, and AutoFill support. PanicVault brings the KeePass ecosystem to macOS and iOS with a clean, native interface.
 
 The ecosystem has matured to the point where the convenience gap is much smaller than it was a decade ago, while the security and ownership advantages remain as significant as ever.
 

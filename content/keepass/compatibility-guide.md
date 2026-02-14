@@ -63,7 +63,7 @@ The following matrix covers the most widely used [KeePass-compatible application
 |---|---|---|---|---|---|---|---|---|
 | KeePass 2.x | Windows | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | KeePassXC | Win/Mac/Linux | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| PanicVault | Win/Mac/Linux | Yes | Yes | Yes | Yes | No | Yes | Yes |
+| PanicVault | macOS | Yes | Yes | Yes | Yes | No | Yes | Yes |
 | MacPass | macOS | Yes | Yes | Yes | Yes | No | Yes | Yes |
 | KeePassDX | Android | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | KeeWeb | Web/Desktop | Yes | Yes | Yes | Yes | No | Yes | Yes |
@@ -76,6 +76,7 @@ The following matrix covers the most widely used [KeePass-compatible application
 | KeePass2Android | Android | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Strongbox | iOS | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | KeePassium | iOS | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| PanicVault | iOS/iPadOS | Yes | Yes | Yes | Yes | No | Yes | Yes |
 | AuthPass | iOS/Android | Yes | Yes | Yes | Yes | No | Yes | Yes |
 
 ### Key Observations

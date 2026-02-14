@@ -87,10 +87,11 @@ Cross-application interoperability is essentially nonexistent. You cannot open a
 
 The KDBX format supports a fundamentally different model. Because the format is open, independent developers on every platform can build applications that read and write the same files. The result is an ecosystem where:
 
-- **Desktop users** can choose between KeePassXC, KeePass 2.x, KeePassX, KeeWeb, or PanicVault
+- **Desktop users** can choose between KeePassXC, KeePass 2.x, KeePassX, or KeeWeb
+- **Apple users** can use PanicVault, a native macOS and iOS app, or Strongbox
 - **Android users** can choose KeePassDX, KeePass2Android, or KeepShare
-- **iOS users** can choose Strongbox, KeePassium, or AuthPass
-- **Web users** can use KeeWeb or PanicVault directly in the browser
+- **iOS users** can also choose KeePassium or AuthPass
+- **Web users** can use KeeWeb directly in the browser
 
 All of these applications operate on the same KDBX file. A user can create a database in KeePassXC on their Linux workstation, sync it via Dropbox, and access it through Strongbox on their iPhone -- with full fidelity, including custom fields, attachments, and folder structure.
 
