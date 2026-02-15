@@ -31,6 +31,9 @@ resources/
 .env.local
 .env.*
 
+# Pitch deck (local only)
+pitch/
+
 # Logs
 *.log
 npm-debug.log*
