@@ -870,13 +870,14 @@ body {
 }
 
 .pv-price-tag {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto 0;
   background: var(--pv-surface);
   border: 1px solid var(--pv-border);
   border-radius: 8px;
   padding: 0.5rem 1.25rem;
   font-weight: 700;
-  margin-top: 1.25rem;
   font-size: 0.88rem;
   color: var(--pv-text-dim);
 }
