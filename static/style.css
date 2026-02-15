@@ -626,6 +626,12 @@ body {
   height: auto;
 }
 
+/* iPad screenshots: tablet-proportional sizing */
+.pv-screenshots-carousel--ipad .pv-screenshots-track img {
+  width: 300px;
+  height: auto;
+}
+
 /* Stagger reveal for the two rows */
 .pv-screenshots-row.pv-reveal + .pv-screenshots-row.pv-reveal {
   transition-delay: 0.15s;
@@ -639,6 +645,9 @@ body {
   .pv-screenshots-carousel--mac .pv-screenshots-track img {
     width: 320px;
   }
+  .pv-screenshots-carousel--ipad .pv-screenshots-track img {
+    width: 250px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -651,6 +660,9 @@ body {
   }
   .pv-screenshots-carousel--mac .pv-screenshots-track img {
     width: 260px;
+  }
+  .pv-screenshots-carousel--ipad .pv-screenshots-track img {
+    width: 200px;
   }
   .pv-screenshots-track {
     gap: 0.75rem;
@@ -671,6 +683,9 @@ body {
   }
   .pv-screenshots-carousel--mac .pv-screenshots-track img {
     width: 220px;
+  }
+  .pv-screenshots-carousel--ipad .pv-screenshots-track img {
+    width: 170px;
   }
 }
 
