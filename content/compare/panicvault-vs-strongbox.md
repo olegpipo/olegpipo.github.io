@@ -57,7 +57,7 @@ Both apps support the core KDBX feature set, but they differ in some areas:
 | Entry history | Yes | Yes |
 | Password generator | Yes | Yes |
 | iCloud sync | Yes | Yes |
-| Multiple sync providers | Limited | Yes (Dropbox, OneDrive, WebDAV, SFTP) |
+| Multiple sync providers | Yes (iCloud, Google Drive) | Yes (iCloud, Dropbox, Google Drive, OneDrive, WebDAV, SFTP) |
 | Password Audit | No | Yes |
 | Favicon downloads | Yes | Yes |
 | macOS app | Yes | Yes |
@@ -67,7 +67,7 @@ Both apps support the core KDBX feature set, but they differ in some areas:
 
 ### Strongbox's Distinguishing Features
 
-**Multiple sync providers**: Strongbox supports a wider range of cloud storage providers out of the box, including Dropbox, OneDrive, Google Drive, WebDAV, and SFTP. If you store your KDBX file on a service other than iCloud Drive, Strongbox's built-in support for these providers is convenient.
+**Multiple sync providers**: Strongbox supports a wide range of cloud storage providers out of the box, including Dropbox, OneDrive, Google Drive, WebDAV, and SFTP. While PanicVault now covers iCloud and Google Drive, Strongbox still offers more options for users who rely on Dropbox, OneDrive, WebDAV, or SFTP.
 
 **YubiKey support**: Strongbox can use YubiKey hardware keys as an additional authentication factor for database unlock. For users with heightened security requirements, hardware key support adds a meaningful layer.
 
@@ -79,7 +79,7 @@ Both apps support the core KDBX feature set, but they differ in some areas:
 
 **Focused UX**: PanicVault's interface is streamlined and focused on the core credential management workflow. There are fewer settings to configure and fewer menus to navigate. For users who want simplicity, this clarity is an advantage.
 
-**iCloud-first sync**: PanicVault's sync is built around iCloud Drive, which means zero configuration for Apple users. The database syncs like any other iCloud file.
+**Streamlined sync**: PanicVault supports iCloud Drive and Google Drive, covering the two most common cloud storage providers for Apple users. iCloud sync requires zero configuration -- the database syncs like any other iCloud file -- and Google Drive support extends PanicVault's reach to cross-platform households without adding complexity.
 
 ## User Experience
 
@@ -103,9 +103,9 @@ This is largely a matter of personal preference. PanicVault is cleaner and simpl
 
 ### PanicVault
 
-PanicVault syncs through iCloud Drive. Your KDBX file is stored in iCloud and syncs automatically across your iPhone, iPad, and Mac. This is the simplest setup for Apple users -- it just works, with no additional services to configure.
+PanicVault syncs through iCloud Drive and Google Drive. iCloud sync is the simplest setup for Apple users -- your KDBX file syncs automatically across your iPhone, iPad, and Mac with no additional configuration. Google Drive support adds a cross-platform option for users who share files with non-Apple devices or prefer Google's ecosystem.
 
-You can also store your database locally or in any file provider accessible through the Files app, but iCloud is the primary sync mechanism.
+You can also store your database locally or in any file provider accessible through the Files app, but iCloud and Google Drive are the primary built-in sync options.
 
 ### Strongbox
 
@@ -125,7 +125,7 @@ For more on sync options, see our [cloud sync and storage guide](/cloud-sync/).
 
 ### Sync Verdict
 
-If you are all-in on Apple and iCloud, both work equally well. If you need non-iCloud sync options, Strongbox's broader provider support is a clear advantage.
+Both apps support iCloud and Google Drive, which covers most users. If you need Dropbox, OneDrive, WebDAV, or SFTP, Strongbox is the only option with built-in support for those providers. The gap is narrower than it used to be, but Strongbox still offers broader sync flexibility overall.
 
 ## Security
 
@@ -153,7 +153,7 @@ If you are currently using another password manager entirely, both PanicVault an
 ## Who Should Choose Strongbox
 
 - Users who need YubiKey or hardware key support
-- Those who store KDBX files on Dropbox, Google Drive, WebDAV, or SFTP
+- Those who store KDBX files on Dropbox, OneDrive, WebDAV, or SFTP
 - Users who want built-in password audit and breach checking
 - Those who prefer more configuration options and granular control
 - Users who want Apple Watch access to credentials
@@ -162,7 +162,7 @@ If you are currently using another password manager entirely, both PanicVault an
 ## Who Should Choose PanicVault
 
 - Users who prefer a clean, streamlined interface
-- Apple-all-in users who sync exclusively through iCloud
+- Users who sync through iCloud or Google Drive and don't need other providers
 - Those who value simplicity over configurability
 - Users who want all features included at purchase with no tier confusion
 - Those who prefer fewer settings and a more opinionated design approach
@@ -171,7 +171,7 @@ If you are currently using another password manager entirely, both PanicVault an
 
 PanicVault and Strongbox are both excellent KeePass-compatible apps for Apple devices. The choice between them is more about interface preference and specific feature needs (hardware keys, sync providers) than about fundamental capability. Both protect your credentials with the same encryption, both support the same database format, and both integrate well with the Apple ecosystem.
 
-If you value simplicity and a focused design, PanicVault is the better fit. If you need hardware key support, multiple sync providers, or breach monitoring, Strongbox offers more flexibility. Either way, your data remains in the open KDBX format, and you can switch at any time.
+If you value simplicity and a focused design, PanicVault is the better fit. If you need hardware key support, additional sync providers beyond iCloud and Google Drive, or breach monitoring, Strongbox offers more flexibility. Either way, your data remains in the open KDBX format, and you can switch at any time.
 
 ## Related Articles
 
