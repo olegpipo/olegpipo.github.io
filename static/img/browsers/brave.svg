@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="brave-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF5500"/>
+      <stop offset="100%" stop-color="#FB542B"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield shape -->
+  <path d="M24 2L6 10v2c0 2 1.2 3.5 2 4.5l-.5 2c-.3 1.2.2 2.5 1 3.2l1.5 1.3c.5.5.8 1 .5 2L9 29c-.3 1.5.5 2.5 1.5 3.2L24 44l13.5-11.8c1-0.7 1.8-1.7 1.5-3.2l-1.5-4c-.3-1 0-1.5.5-2l1.5-1.3c.8-.7 1.3-2 1-3.2l-.5-2c.8-1 2-2.5 2-4.5v-2L24 2z" fill="url(#brave-grad)"/>
+  <!-- Inner lion face details -->
+  <!-- Forehead -->
+  <path d="M24 12l-5 3.5 1.5 4L24 17.5l3.5 2 1.5-4z" fill="white"/>
+  <!-- Left eye area -->
+  <path d="M16 19l2 1.5 1.5-1L18 18z" fill="white" opacity="0.9"/>
+  <!-- Right eye area -->
+  <path d="M32 19l-2 1.5-1.5-1L30 18z" fill="white" opacity="0.9"/>
+  <!-- Nose bridge -->
+  <path d="M22 21h4v3l-2 2-2-2z" fill="white" opacity="0.85"/>
+  <!-- Left cheek -->
+  <path d="M15 22l3 2v3l-1.5 1.5L14 27v-3z" fill="white" opacity="0.8"/>
+  <!-- Right cheek -->
+  <path d="M33 22l-3 2v3l1.5 1.5L34 27v-3z" fill="white" opacity="0.8"/>
+  <!-- Mouth/chin -->
+  <path d="M20 28l4 2.5 4-2.5v2L24 33l-4-3z" fill="white" opacity="0.85"/>
+  <!-- Center stripe -->
+  <path d="M23.5 17.5h1v16h-1z" fill="url(#brave-grad)" opacity="0.3"/>
+</svg>
