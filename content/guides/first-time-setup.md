@@ -21,7 +21,7 @@ The right password manager depends on your priorities. Here is a simplified deci
 
 ### If You Want Maximum Simplicity on Apple Devices
 
-**PanicVault** is designed specifically for the [Apple ecosystem](/apple/). It uses the open [KeePass KDBX format](/keepass/) for data portability, integrates with Face ID and Touch ID, supports [AutoFill on iPhone and iPad](/guides/autofill-setup/), and syncs via iCloud. No account creation required -- your vault is a file you control.
+**PanicVault** is designed specifically for the [Apple ecosystem](/apple/). It uses the open [KeePass KDBX format](/keepass/) for data portability, integrates with Face ID and Touch ID, supports [AutoFill on iPhone and iPad](/guides/autofill-setup/), and syncs via iCloud Drive or Google Drive. No account creation required -- your vault is a file you control.
 
 ### If You Want a Free, Cloud-Based Solution
 

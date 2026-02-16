@@ -111,7 +111,7 @@ PanicVault can store TOTP (Time-based One-Time Password) secrets alongside your 
 
 Freelancers rarely work from a single device. You might have a MacBook for primary work, an iPhone for quick access and client communication, and an iPad for presentations or on-site meetings.
 
-PanicVault syncs your KDBX database through iCloud Drive, which means your vault is available on every Apple device where you are signed in with the same Apple ID. Changes made on one device appear on the others within seconds.
+PanicVault syncs your KDBX database through iCloud Drive or Google Drive, which means your vault is available on every device you use. Changes made on one device appear on the others within seconds.
 
 If you also use non-Apple devices -- a Windows machine for specific client work, for example -- the KDBX format ensures compatibility. Open the same database file with KeePassXC on Windows or Linux. This [cross-platform compatibility](/keepass/compatible-apps/) is one of the most practical advantages of the KeePass format for freelancers who cannot control which platforms they work on.
 

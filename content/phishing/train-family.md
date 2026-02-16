@@ -98,7 +98,7 @@ If your partner manages shared financial accounts, makes online purchases, or ac
 
 1. **[Recognizing phishing emails](/phishing/recognize-phishing/)**: Walk through the red flags together using real examples from your spam folder.
 2. **[Verification habits](/phishing/verify-suspicious-messages/)**: Agree on a shared approach to unexpected requests, especially those involving money or account credentials.
-3. **Password management**: Set up a shared password manager where both partners can access credentials for shared accounts. PanicVault uses the KDBX format, which allows a shared database on iCloud Drive that both partners can access on their own devices.
+3. **Password management**: Set up a shared password manager where both partners can access credentials for shared accounts. PanicVault uses the KDBX format, which allows a shared database on iCloud Drive or Google Drive that both partners can access on their own devices.
 
 **Approach**:
 - Make it collaborative, not instructional. "Let's set up our security together" rather than "let me teach you about security."
@@ -130,7 +130,7 @@ Rather than training each family member individually, consider a family security
 
 2. **Set up the [family code word](/phishing/family-code-word/)**. Choose it together. Practice it. Make sure everyone understands when and how to use it.
 
-3. **Install password managers** on everyone's devices. PanicVault for Apple devices makes this straightforward -- one database on iCloud Drive, accessible on every family member's iPhone, iPad, and Mac with biometric authentication.
+3. **Install password managers** on everyone's devices. PanicVault for Apple devices makes this straightforward -- one database on iCloud Drive or Google Drive, accessible on every family member's iPhone, iPad, and Mac with biometric authentication.
 
 4. **Enable [two-factor authentication](/two-factor-authentication/)** on every family member's email and financial accounts.
 

@@ -30,7 +30,7 @@ Create a complete backup of every device you are taking. If a device is lost, st
 
 ### Review Your Password Manager
 
-Ensure your [password manager](/password-managers/) is synced and contains all the credentials you might need while traveling. If you use PanicVault, verify that your KDBX database is synced to iCloud Drive so it is accessible across all your Apple devices. Consider whether you need offline access -- download your database locally before departing in case you find yourself without reliable internet.
+Ensure your [password manager](/password-managers/) is synced and contains all the credentials you might need while traveling. If you use PanicVault, verify that your KDBX database is synced to iCloud Drive or Google Drive so it is accessible across all your Apple devices. Consider whether you need offline access -- download your database locally before departing in case you find yourself without reliable internet.
 
 ### Set Up a VPN
 

@@ -163,7 +163,7 @@ If you regularly switch between Apple, Windows, and Android, a third-party passw
 
 ### Apple-Only
 
-If all your devices are Apple, you have the simplest path. iCloud Keychain handles passkeys natively, and a KeePass-compatible app like PanicVault can serve as your password manager with the added benefit of [KDBX data portability](/keepass/). Everything syncs through iCloud, and the experience is consistent across iPhone, iPad, and Mac.
+If all your devices are Apple, you have the simplest path. iCloud Keychain handles passkeys natively, and a KeePass-compatible app like PanicVault can serve as your password manager with the added benefit of [KDBX data portability](/keepass/). Everything syncs through iCloud or Google Drive, and the experience is consistent across iPhone, iPad, and Mac.
 
 ## When Things Go Wrong
 

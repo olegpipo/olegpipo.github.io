@@ -91,7 +91,7 @@ Touch ID and Face ID are supported. System-wide AutoFill works through Apple's c
 
 PanicVault is built natively for Apple platforms using Swift and SwiftUI. The app feels like it belongs on macOS and iOS -- consistent with the platform's design language, responsive, and efficient on resources. [Face ID and Touch ID](/apple/face-id-touch-id-setup/) integration is deep, and system-wide AutoFill works across all apps and browsers through Apple's [credential provider extensions](/apple/credential-provider-extensions/).
 
-Sync happens through iCloud Drive, which means no additional account or service to configure. The app integrates with Shortcuts for automation and works seamlessly within the [Apple ecosystem](/apple/).
+Sync happens through iCloud Drive or Google Drive, with no additional account or service to configure beyond what you already use. The app integrates with Shortcuts for automation and works seamlessly within the [Apple ecosystem](/apple/).
 
 ### Integration Verdict
 
@@ -122,7 +122,7 @@ PanicVault's use of the KDBX format provides superior data portability. Your dat
 | Feature | PanicVault | Bitwarden (Free) | Bitwarden (Premium) |
 |---|---|---|---|
 | Unlimited passwords | Yes | Yes | Yes |
-| Cross-device sync | iCloud | Cloud | Cloud |
+| Cross-device sync | iCloud, Google Drive | Cloud | Cloud |
 | TOTP authenticator | Yes | No | Yes |
 | Face ID / Touch ID | Yes | Yes | Yes |
 | System AutoFill | Yes | Yes | Yes |

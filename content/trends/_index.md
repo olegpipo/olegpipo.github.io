@@ -103,7 +103,7 @@ In a landscape defined by rapid change, the most important quality in a security
 
 The [KeePass KDBX format](/keepass/) takes a fundamentally different approach. Your password database is a file you own, encrypted with algorithms you can verify, compatible with dozens of applications across every platform. When the authentication landscape shifts -- and it will -- your data moves with you.
 
-PanicVault brings this open-format philosophy to the Apple ecosystem with native integration that makes the daily experience seamless. Touch ID, system autofill, iCloud Drive sync -- all built on top of a database format that will outlast any single application. You get the convenience of a modern [password manager](/password-managers/) without surrendering control of your data.
+PanicVault brings this open-format philosophy to the Apple ecosystem with native integration that makes the daily experience seamless. Touch ID, system autofill, iCloud Drive and Google Drive sync -- all built on top of a database format that will outlast any single application. You get the convenience of a modern [password manager](/password-managers/) without surrendering control of your data.
 
 This is not just a technical advantage. It is a strategic one. As passkeys emerge, as AI transforms the threat landscape, as regulations reshape the industry, the users who maintain portability and ownership of their credential data are the ones best positioned to adapt.
 

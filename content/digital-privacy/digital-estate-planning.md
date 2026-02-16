@@ -86,7 +86,7 @@ Your access instructions need to be stored securely but accessibly. There are se
 
 **Secure physical storage at home** -- A fireproof safe that a trusted person knows the combination to. This has the advantage of being immediately accessible without waiting for legal processes.
 
-**Emergency kit** -- Some password managers support creating an emergency access kit or recovery sheet. PanicVault uses the KDBX format, so you can create a clear instruction document that tells your heirs: "The database file is in iCloud Drive at this path. Open it with any KeePass-compatible app. The master password is in the sealed envelope with our attorney."
+**Emergency kit** -- Some password managers support creating an emergency access kit or recovery sheet. PanicVault uses the KDBX format, so you can create a clear instruction document that tells your heirs: "The database file is in iCloud Drive (or Google Drive) at this path. Open it with any KeePass-compatible app. The master password is in the sealed envelope with our attorney."
 
 ### Step 5: Set Up Legacy Contacts and Inactive Account Managers
 

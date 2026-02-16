@@ -121,7 +121,7 @@ The result is not just better security. It is less cognitive load. No more "whic
 
 The [password manager comparison](/compare/) section of this site evaluates the major options across security, usability, price, and data portability. For Apple users specifically, the [best password manager for iPhone](/apple/best-password-manager-iphone/) and [best password manager for Mac](/apple/best-password-manager-mac/) guides provide detailed, platform-specific recommendations.
 
-If data ownership and portability matter to you -- and they should -- the [KeePass ecosystem](/keepass/) offers an open, auditable standard that no single company controls. PanicVault brings that openness to the Apple ecosystem with native integration, [iCloud sync](/cloud-sync/), [Face ID and Touch ID](/apple/face-id-touch-id-setup/) support, and a user experience designed for people who prefer their tools to feel like they belong on their devices.
+If data ownership and portability matter to you -- and they should -- the [KeePass ecosystem](/keepass/) offers an open, auditable standard that no single company controls. PanicVault brings that openness to the Apple ecosystem with native integration, [iCloud and Google Drive sync](/cloud-sync/), [Face ID and Touch ID](/apple/face-id-touch-id-setup/) support, and a user experience designed for people who prefer their tools to feel like they belong on their devices.
 
 ## How to Use These Guides
 

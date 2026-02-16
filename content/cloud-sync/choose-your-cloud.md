@@ -119,7 +119,7 @@ The ecosystem enables cloud choice through several design decisions:
 
 **No phone-home requirement.** KeePass applications do not need to contact a server to function. There is no license validation, no telemetry endpoint, no feature flag server. The app works entirely offline, entirely locally. This means your choice of cloud provider is purely a file sync decision, not an application integration decision.
 
-PanicVault, for example, is built on this principle: it is a KeePass-compatible password manager for Apple devices that syncs through iCloud Drive. The sync layer is Apple's. The encryption layer is the open KeePass standard. The application is designed for the Apple platform. Each layer is independent, and each can be evaluated and replaced on its own terms.
+PanicVault, for example, is built on this principle: it is a KeePass-compatible password manager for Apple devices that syncs through iCloud Drive or Google Drive. The sync layer is yours to choose. The encryption layer is the open KeePass standard. The application is designed for the Apple platform. Each layer is independent, and each can be evaluated and replaced on its own terms.
 
 ## Common Objections Addressed
 

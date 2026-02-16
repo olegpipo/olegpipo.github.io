@@ -56,7 +56,7 @@ Use multiple layers for maximum protection. Not every layer is necessary for eve
 
 **What it is**: Store your vault file in a cloud-synced folder. Every change propagates automatically.
 
-**For PanicVault**: Save your KDBX database to [iCloud Drive](/cloud-sync/). iCloud automatically syncs the file across all your Apple devices and maintains server-side copies. If you lose your phone, your vault is waiting for you on your Mac (and vice versa).
+**For PanicVault**: Save your KDBX database to [iCloud Drive or Google Drive](/cloud-sync/). Your chosen cloud service automatically syncs the file across your devices and maintains server-side copies. If you lose your phone, your vault is waiting for you on your Mac (and vice versa).
 
 **For KeePassXC**: Store your KDBX file in iCloud Drive, Dropbox, Google Drive, or another cloud service. Open it from the synced location on each device.
 

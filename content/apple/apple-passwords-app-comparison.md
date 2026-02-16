@@ -101,7 +101,7 @@ Bitwarden matches Apple Passwords on price (free tier) while adding cross-platfo
 
 ### PanicVault
 
-PanicVault occupies a unique position in this comparison. Like Apple Passwords, it is built natively for Apple devices and integrates with Face ID, Touch ID, system autofill, and iCloud Drive sync. But unlike Apple Passwords, PanicVault uses the open KDBX format, provides full organizational features (groups, tags, custom fields, attachments), and never locks your data into a proprietary ecosystem.
+PanicVault occupies a unique position in this comparison. Like Apple Passwords, it is built natively for Apple devices and integrates with Face ID, Touch ID, system autofill, and iCloud Drive or Google Drive sync. But unlike Apple Passwords, PanicVault uses the open KDBX format, provides full organizational features (groups, tags, custom fields, attachments), and never locks your data into a proprietary ecosystem.
 
 PanicVault is what Apple Passwords would be if Apple cared about data portability and advanced features. You get the native integration of a purpose-built Apple app combined with the openness of the KeePass standard. Your database file can be opened by KeePassXC on a Linux machine, KeePass on Windows, or any other compatible client. If you value both Apple-native design and the freedom to leave, PanicVault bridges that gap.
 

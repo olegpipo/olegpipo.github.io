@@ -108,7 +108,7 @@ For small businesses, the KeePass approach offers specific advantages:
 - **No vendor dependency**: If the app vendor is acquired, changes pricing, or shuts down, your .kdbx files still work with dozens of other applications
 - **Offline access**: No internet connection required to access your credentials
 
-PanicVault brings the KeePass format to the Apple ecosystem with native macOS and iOS integration, including [Touch ID, system autofill, and iCloud sync](/apple/). For teams with members on other platforms, the KDBX format ensures compatibility through KeePassXC on Windows and Linux.
+PanicVault brings the KeePass format to the Apple ecosystem with native macOS and iOS integration, including [Touch ID, system autofill, and iCloud or Google Drive sync](/apple/). For teams with members on other platforms, the KDBX format ensures compatibility through KeePassXC on Windows and Linux.
 
 ### What PanicVault Honestly Is Not
 

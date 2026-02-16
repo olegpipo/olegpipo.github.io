@@ -59,7 +59,7 @@ There is no sync service to subscribe to, no vendor-specific cloud to trust, and
 
 Because the KeePass database is a standard file, you use standard file-sync services to keep it available across platforms. This is where the cross-platform story gets practical.
 
-**iCloud Drive** works on macOS, iOS, and Windows (through iCloud for Windows). You store your .kdbx file in iCloud Drive, and it syncs to all your Apple devices and your Windows PC. This is the simplest option for Apple-primary users who also use Windows, and it is the sync method PanicVault uses by default.
+**iCloud Drive** works on macOS, iOS, and Windows (through iCloud for Windows). You store your .kdbx file in iCloud Drive, and it syncs to all your Apple devices and your Windows PC. This is the simplest option for Apple-primary users who also use Windows, and it is the sync method PanicVault uses by default. PanicVault also supports Google Drive, making it a strong option even if you prefer Google's ecosystem.
 
 **Google Drive** works on every platform -- macOS, iOS, Windows, Android, Linux, and the web. If you use Google Workspace for work and Apple for personal devices, Google Drive bridges both worlds. See our [Google Drive sync guide](/cloud-sync/google-drive-sync/) for detailed setup instructions.
 

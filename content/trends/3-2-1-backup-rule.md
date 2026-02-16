@@ -39,7 +39,7 @@ Maintain at least three copies of your password database:
 
 1. **Primary copy**: The database file on your main device (Mac, iPhone, iPad). This is the copy you interact with daily through your password manager.
 
-2. **Sync copy**: The copy maintained by your file sync service (iCloud Drive, Dropbox, Syncthing). This serves as both a synchronization mechanism between devices and an additional copy. PanicVault users who sync through iCloud Drive automatically have this copy.
+2. **Sync copy**: The copy maintained by your file sync service (iCloud Drive, Dropbox, Syncthing). This serves as both a synchronization mechanism between devices and an additional copy. PanicVault users who sync through iCloud Drive or Google Drive automatically have this copy.
 
 3. **Offline backup**: A copy stored independently of your sync service. This could be on an encrypted external drive, a USB stick, or a separate cloud storage service. The key is that this copy is not connected to the same sync infrastructure as copies 1 and 2.
 
@@ -91,7 +91,7 @@ Schedule a quarterly backup verification. Add it to your calendar. The five minu
 
 PanicVault stores your database as a standard KDBX file. This file can be copied, backed up, and verified like any other file. Here is a practical implementation of the 3-2-1 rule:
 
-**Copy 1 (Primary)**: Your KDBX file on your Mac, iPhone, and iPad, synced through iCloud Drive. PanicVault manages this automatically.
+**Copy 1 (Primary)**: Your KDBX file on your Mac, iPhone, and iPad, synced through iCloud Drive or Google Drive. PanicVault manages this automatically.
 
 **Copy 2 (Sync/Cloud)**: The iCloud Drive copy itself serves as your second copy and satisfies the offsite requirement. It is stored in Apple's data centers and is separate from your device's local storage.
 

@@ -111,7 +111,7 @@ On Windows, the original KeePass application remains actively maintained. KeePas
 
 ### Mobile Applications
 
-On iOS, apps like Strongbox, KeePassium, and PanicVault provide native experiences with Face ID and Touch ID integration, AutoFill support, and iCloud or local sync options. On Android, KeePassDX and Keepass2Android offer similar functionality with fingerprint unlock and integration with the Android autofill framework.
+On iOS, apps like Strongbox, KeePassium, and PanicVault provide native experiences with Face ID and Touch ID integration, AutoFill support, and iCloud, Google Drive, or local sync options. On Android, KeePassDX and Keepass2Android offer similar functionality with fingerprint unlock and integration with the Android autofill framework.
 
 ### Browser Integration
 

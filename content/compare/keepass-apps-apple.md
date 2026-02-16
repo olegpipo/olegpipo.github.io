@@ -182,7 +182,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### All-Apple, Simple Setup
 
-**PanicVault on Mac, iPhone, and iPad.** One app, one purchase, one experience. iCloud Drive handles sync. Best for users who want simplicity and native integration across all Apple devices.
+**PanicVault on Mac, iPhone, and iPad.** One app, one purchase, one experience. iCloud Drive or Google Drive handles sync. Best for users who want simplicity and native integration across all Apple devices.
 
 ### Apple + Cross-Platform
 
@@ -200,7 +200,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Prioritize if you want the most native Apple experience
 
-**PanicVault.** SwiftUI interface, system AutoFill, iCloud sync, and a design philosophy that matches Apple's own apps. The closest you can get to a first-party KeePass experience on Apple devices.
+**PanicVault.** SwiftUI interface, system AutoFill, iCloud and Google Drive sync, and a design philosophy that matches Apple's own apps. The closest you can get to a first-party KeePass experience on Apple devices.
 
 ### Prioritize if you want the most features
 

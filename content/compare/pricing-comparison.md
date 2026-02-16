@@ -33,7 +33,7 @@ All prices are current as of early 2026. Prices change -- check the official sit
 
 **Dashlane Free ($0)**: 25 passwords on a single device. This is effectively a trial. **Dashlane Premium ($59.88/year)**: Unlimited passwords and devices, VPN, dark web monitoring, and password health scoring.
 
-**PanicVault (one-time)**: All features included at purchase. TOTP codes, groups, custom fields, AutoFill, iCloud sync, Face ID/Touch ID. No feature gating.
+**PanicVault (one-time)**: All features included at purchase. TOTP codes, groups, custom fields, AutoFill, iCloud and Google Drive sync, Face ID/Touch ID. No feature gating.
 
 **Strongbox (freemium)**: Free tier is read-only -- you can view databases but not edit them. Pro unlocks full editing, TOTP, and other features. Available as a subscription or a one-time lifetime purchase at $29.99.
 

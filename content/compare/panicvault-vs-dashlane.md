@@ -79,7 +79,7 @@ PanicVault is built natively for macOS using Swift. It integrates with:
 
 - [Touch ID and Face ID](/apple/face-id-touch-id-setup/) for biometric unlock
 - System-wide AutoFill through Apple's [credential provider extension](/apple/credential-provider-extensions/)
-- iCloud Drive for transparent sync across devices
+- iCloud Drive and Google Drive for transparent sync across devices
 - Shortcuts for automation
 - Native macOS design language
 

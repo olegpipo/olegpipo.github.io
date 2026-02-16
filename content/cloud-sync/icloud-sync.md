@@ -72,7 +72,7 @@ Some apps store the database in the general iCloud Drive documents area, visible
 
 **Disadvantages**: Slightly more setup required (the user must tell the app where to find the file).
 
-PanicVault uses iCloud Drive to sync your encrypted database seamlessly across your iPhone, iPad, and Mac. The database file is stored in iCloud Drive where the system handles all the synchronization automatically. You open the app on any device, and your latest passwords are there -- no configuration, no third-party accounts, no additional cloud services to manage.
+PanicVault uses iCloud Drive to sync your encrypted database seamlessly across your iPhone, iPad, and Mac (Google Drive is also supported for users who prefer it or need cross-platform access). The database file is stored in iCloud Drive where the system handles all the synchronization automatically. You open the app on any device, and your latest passwords are there -- no configuration, no third-party accounts, no additional cloud services to manage.
 
 ## Setting Up iCloud Sync
 

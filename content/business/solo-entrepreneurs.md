@@ -168,7 +168,7 @@ Here is a concrete action plan for a solo entrepreneur starting from scratch.
 
 ### Week 1: Foundation
 
-**Day 1** -- Install PanicVault and create your primary business database with a strong master passphrase. Set up iCloud Drive sync so your database is available on all your Apple devices.
+**Day 1** -- Install PanicVault and create your primary business database with a strong master passphrase. Set up iCloud Drive or Google Drive sync so your database is available on all your devices.
 
 **Day 2-3** -- Export saved passwords from your browsers (Safari, Chrome) and import them into your database. Delete the saved passwords from your browsers afterward and disable browser password saving.
 

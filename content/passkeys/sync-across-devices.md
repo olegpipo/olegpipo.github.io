@@ -123,7 +123,7 @@ Password managers that support passkeys provide the most flexible cross-platform
 | 1Password | macOS, iOS, Windows, Android, Linux, browsers | Full cross-platform |
 | Bitwarden | macOS, iOS, Windows, Android, Linux, browsers | Full cross-platform |
 | Dashlane | Browser extensions, iOS, Android | Full cross-platform |
-| PanicVault | macOS, iOS, iPadOS | Apple ecosystem via iCloud Drive |
+| PanicVault | macOS, iOS, iPadOS | Apple ecosystem via iCloud Drive or Google Drive |
 | Strongbox | macOS, iOS | Apple ecosystem |
 
 For KeePass-compatible tools like PanicVault, the passkey is stored in your [KDBX database file](/keepass/), which can be synced through any [cloud storage service](/cloud-sync/) -- iCloud Drive, Google Drive, Dropbox, or even a local network. This gives you maximum control over where your data lives.

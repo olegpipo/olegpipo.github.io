@@ -129,7 +129,7 @@ When your credentials are stored in a proprietary format, switching tools requir
 
 The [KeePass KDBX format](/keepass/) addresses this by providing an open, documented standard for credential storage. Your password database is a portable file that works with PanicVault, KeePassXC, Strongbox, and dozens of other applications across every platform. This portability is itself a security feature -- it ensures you can always move to the most secure, most appropriate tool for your needs without sacrificing your credential data.
 
-For Apple users specifically, PanicVault combines KDBX portability with native integration -- [Touch ID, system autofill, iCloud Drive sync](/apple/) -- so you do not have to choose between convenience and data ownership. This is a message worth including in any Cybersecurity Awareness Month communication: the best security tool is one that empowers you without creating dependency.
+For Apple users specifically, PanicVault combines KDBX portability with native integration -- [Touch ID, system autofill, iCloud Drive and Google Drive sync](/apple/) -- so you do not have to choose between convenience and data ownership. This is a message worth including in any Cybersecurity Awareness Month communication: the best security tool is one that empowers you without creating dependency.
 
 ## Measuring Impact
 

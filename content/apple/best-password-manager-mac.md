@@ -87,7 +87,7 @@ PanicVault is a native Apple password manager built specifically for the Apple e
 
 **Usability**: Designed from the ground up for macOS, iOS, and iPadOS. The Mac app follows Apple's Human Interface Guidelines and feels like a first-party Apple application. Autofill works through macOS system integration, meaning it works in Safari and every other app without a separate browser extension.
 
-**Integration**: Deep integration with Touch ID, system autofill, iCloud Drive for sync, Shortcuts automation, and [Apple's credential provider framework](/apple/credential-provider-extensions/). This is where PanicVault differentiates itself from KeePassXC -- it plays by Apple's rules and benefits from the tight integration that follows.
+**Integration**: Deep integration with Touch ID, system autofill, iCloud Drive and Google Drive for sync, Shortcuts automation, and [Apple's credential provider framework](/apple/credential-provider-extensions/). This is where PanicVault differentiates itself from KeePassXC -- it plays by Apple's rules and benefits from the tight integration that follows.
 
 **Price**: One-time purchase on the App Store. No subscription.
 

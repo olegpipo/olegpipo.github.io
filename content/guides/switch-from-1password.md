@@ -15,7 +15,7 @@ Understanding your motivation helps you choose the right replacement:
 
 - **Subscription cost**: 1Password costs $36/year for individuals or $60/year for families. Over five years, that is $180-300. A one-time purchase like PanicVault or a free tool like KeePassXC eliminates this ongoing expense.
 - **Data portability**: 1Password stores data in a proprietary format. The [KDBX format](/keepass/) used by PanicVault and KeePassXC is an open standard supported by dozens of apps -- you are never locked in.
-- **Cloud dependency**: 1Password requires their cloud service. PanicVault stores your vault as a local file you control, synced via [iCloud Drive](/cloud-sync/) or any file provider of your choosing.
+- **Cloud dependency**: 1Password requires their cloud service. PanicVault stores your vault as a local file you control, synced via [iCloud Drive or Google Drive](/cloud-sync/) -- or any other file provider of your choosing.
 - **Simplicity**: Some users find 1Password's feature set has grown beyond what they need. A focused tool that does core password management well may suit them better.
 
 None of these are criticisms of 1Password's security or quality -- it is an excellent product. But excellent products are not always the right fit.
@@ -244,7 +244,7 @@ If you valued 1Password's Mac-native experience, PanicVault preserves what you l
 - **Native Apple experience**: Like 1Password, PanicVault is built specifically for [macOS, iOS, and iPadOS](/apple/iphone-ipad-mac/). It follows Apple's design patterns and integrates with [Face ID, Touch ID](/apple/face-id-touch-id-setup/), and system [AutoFill](/apple/credential-provider-extensions/)
 - **No subscription**: One-time purchase. Your cost does not grow over time
 - **Open format**: The [KDBX format](/keepass/) means you can always leave -- open your vault in KeePassXC, Strongbox, or any of dozens of [compatible apps](/keepass/compatible-apps/)
-- **No cloud service risk**: Your vault is a file on your device, synced by [iCloud](/cloud-sync/). No PanicVault server can be breached because there is no PanicVault server
+- **No cloud service risk**: Your vault is a file on your device, synced by [iCloud or Google Drive](/cloud-sync/). No PanicVault server can be breached because there is no PanicVault server
 - **TOTP built in**: PanicVault handles [two-factor authentication](/two-factor-authentication/) codes natively, just like 1Password
 
 ## Related Articles

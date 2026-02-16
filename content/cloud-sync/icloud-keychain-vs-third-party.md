@@ -135,7 +135,7 @@ iCloud Keychain's encryption is strong, but the implementation is proprietary. Y
 
 There is a compelling option that captures many of iCloud Keychain's strengths (seamless Apple experience, biometric unlock, cloud sync) while adding the power and flexibility of a third-party solution: running a KeePass-compatible app on your Apple devices with iCloud Drive sync.
 
-PanicVault, for example, is a KeePass-compatible password manager designed specifically for the Apple ecosystem. It opens standard `.kdbx` databases, syncs through [iCloud Drive](/cloud-sync/icloud-sync/), supports Face ID and Touch ID, and provides the rich feature set of the KeePass format -- all while maintaining the data portability and user ownership that iCloud Keychain lacks.
+PanicVault, for example, is a KeePass-compatible password manager designed specifically for the Apple ecosystem. It opens standard `.kdbx` databases, syncs through [iCloud Drive](/cloud-sync/icloud-sync/) or [Google Drive](/cloud-sync/google-drive-sync/), supports Face ID and Touch ID, and provides the rich feature set of the KeePass format -- all while maintaining the data portability and user ownership that iCloud Keychain lacks.
 
 This approach gives you:
 

@@ -165,7 +165,7 @@ If you have not already:
 1. [Configure AutoFill](/guides/autofill-setup/) on all your devices
 2. Enable [Face ID / Touch ID](/apple/face-id-touch-id-setup/)
 3. [Organize your vault](/guides/organize-vault/) -- this is a good time to clean up the folder structure
-4. Set up [iCloud sync](/cloud-sync/) (for PanicVault) or cloud sync (for Bitwarden/1Password)
+4. Set up [iCloud or Google Drive sync](/cloud-sync/) (for PanicVault) or cloud sync (for Bitwarden/1Password)
 
 ## Step 6: Clean Up
 
