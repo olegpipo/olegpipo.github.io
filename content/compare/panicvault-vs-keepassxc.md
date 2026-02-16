@@ -77,14 +77,14 @@ PanicVault is built with SwiftUI and integrates deeply into macOS:
 
 - **Touch ID and Face ID**: Full support through Apple's biometric framework
 - **Safari and all apps**: System-wide AutoFill through Apple's [credential provider extension](/apple/credential-provider-extensions/). No browser extension needed
-- **iCloud Drive**: Built-in sync for seamless multi-device access
+- **iCloud Drive and Google Drive**: Built-in sync for seamless multi-device access
 - **Shortcuts**: Automation support through macOS Shortcuts
 - **Visual design**: Native macOS interface following Apple's Human Interface Guidelines
 - **[Face ID / Touch ID setup](/apple/face-id-touch-id-setup/)**: One-tap biometric configuration
 
 ### Integration Verdict
 
-PanicVault offers significantly better Apple platform integration. The ability to autofill in Safari, use system-wide AutoFill in native apps, and sync through iCloud Drive without manual configuration gives it a substantial advantage for Apple-ecosystem users. KeePassXC's lack of Safari support alone is a dealbreaker for many Mac users.
+PanicVault offers significantly better Apple platform integration. The ability to autofill in Safari, use system-wide AutoFill in native apps, and sync through iCloud Drive or Google Drive without manual configuration gives it a substantial advantage for Apple-ecosystem users. KeePassXC's lack of Safari support alone is a dealbreaker for many Mac users.
 
 ## Mobile Experience
 
@@ -146,7 +146,7 @@ For mobile KeePass app comparisons, see our [KeePass-compatible apps for Apple](
 
 - **Mobile apps**: Native iOS and iPadOS apps with the same features as the desktop version.
 
-- **iCloud sync**: Transparent sync across devices without manual file management.
+- **iCloud and Google Drive sync**: Transparent sync across devices without manual file management.
 
 - **Native Apple design**: SwiftUI interface that looks and feels like a first-party Apple app.
 
@@ -170,7 +170,7 @@ Because both tools use KDBX, many users run both:
 - **PanicVault** on iPhone, iPad, and Mac for daily credential management with native AutoFill
 - **KeePassXC** on a Windows or Linux workstation for the same database
 
-This is the KeePass ecosystem working as designed. You choose the best app for each platform without compromising on data portability. Your single KDBX file, stored on [iCloud Drive](/cloud-sync/) or another sync service, is accessible everywhere.
+This is the KeePass ecosystem working as designed. You choose the best app for each platform without compromising on data portability. Your single KDBX file, stored on [iCloud Drive or Google Drive](/cloud-sync/) or another sync service, is accessible everywhere.
 
 ## Who Should Choose KeePassXC
 
@@ -187,7 +187,7 @@ This is the KeePass ecosystem working as designed. You choose the best app for e
 - Safari users who need browser autofill
 - Users who want system-wide AutoFill in native apps, not just browsers
 - Those who prefer a polished, native interface over a cross-platform UI
-- Users who want iCloud sync without manual file management
+- Users who want iCloud or Google Drive sync without manual file management
 - Anyone who wants a KeePass-compatible app that feels like a first-party Apple product
 
 ## The Bottom Line
