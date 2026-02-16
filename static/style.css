@@ -583,35 +583,41 @@ body {
   background: linear-gradient(270deg, var(--pv-bg) 0%, transparent 100%);
 }
 
+@keyframes pv-screenshots-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 .pv-screenshots-track {
   display: flex;
   gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding: 0.5rem 2rem 1rem;
-  /* Hide scrollbar for cleaner look */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  padding: 0.5rem 0 1rem;
+  width: max-content;
 }
 
-.pv-screenshots-track::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+.pv-screenshots-carousel--iphone .pv-screenshots-track {
+  animation: pv-screenshots-scroll 60s linear infinite;
+}
+
+.pv-screenshots-carousel--mac .pv-screenshots-track {
+  animation: pv-screenshots-scroll 80s linear infinite;
+}
+
+.pv-screenshots-carousel--ipad .pv-screenshots-track {
+  animation: pv-screenshots-scroll 70s linear infinite;
+}
+
+.pv-screenshots-carousel:hover .pv-screenshots-track {
+  animation-play-state: paused;
 }
 
 .pv-screenshots-track img {
   flex-shrink: 0;
-  scroll-snap-align: center;
   border-radius: 12px;
   box-shadow:
     0 2px 16px rgba(0, 0, 0, 0.35),
     0 0 0 1px rgba(255, 255, 255, 0.04);
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   -webkit-user-drag: none;
-}
-
-.pv-screenshots-track img:hover {
-  transform: scale(1.02);
 }
 
 /* iPhone screenshots: phone-proportional sizing */
@@ -666,7 +672,7 @@ body {
   }
   .pv-screenshots-track {
     gap: 0.75rem;
-    padding: 0.5rem 1rem 0.75rem;
+    padding: 0.5rem 0 0.75rem;
   }
   .pv-screenshots-carousel::before,
   .pv-screenshots-carousel::after {
@@ -1987,6 +1993,9 @@ body {
     transition: none;
   }
   .pv-marquee-track {
+    animation: none;
+  }
+  .pv-screenshots-track {
     animation: none;
   }
   .pv-hero-badge,
