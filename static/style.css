@@ -1200,6 +1200,10 @@ body {
     flex-direction: column;
     gap: 0.75rem;
   }
+  .pv-nav-inner {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
   .pv-nav-links {
     gap: 1rem;
   }
