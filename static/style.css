@@ -2111,11 +2111,17 @@ body {
 }
 
 .pv-bh-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--pv-surface);
   border: 1px solid var(--pv-border);
   border-radius: var(--pv-radius);
   padding: 2.5rem 2rem 2rem;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
   transition: border-color 0.25s, transform 0.25s;
 }
 
