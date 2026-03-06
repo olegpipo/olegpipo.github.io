@@ -26,7 +26,7 @@ In practice, digital privacy encompasses several domains:
 - **Account security** -- How you protect access to your online accounts through [strong passwords](/password-security/), [two-factor authentication](/two-factor-authentication/), and credential management
 - **Network security** -- How you protect the connections your devices make, from your [home Wi-Fi](/digital-privacy/secure-home-wifi/) to [public networks](/digital-privacy/public-wifi-safety/)
 - **Data minimization** -- Reducing the amount of personal information available about you through [data broker removal](/digital-privacy/remove-personal-info/) and thoughtful sharing habits
-- **Communication security** -- Protecting the content of your messages through [encryption](/digital-privacy/e2e-encryption-explained/) and [secure email practices](/digital-privacy/secure-email/)
+- **Communication security** -- Protecting the content of your messages through [encryption](/digital-privacy/e2e-encryption-explained/), [secure email practices](/digital-privacy/secure-email/), and choosing [secure messengers](/digital-privacy/secure-messengers/)
 - **Physical device security** -- Securing the hardware that stores and accesses your data, including [smart home devices](/digital-privacy/smart-home-security/)
 
 ## Securing Your Online Accounts

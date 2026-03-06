@@ -43,6 +43,22 @@ The most direct way to evaluate password managers is side-by-side. Each of these
 
 - **[PanicVault vs. Strongbox](/compare/panicvault-vs-strongbox/)** -- Two KeePass-compatible apps built for Apple devices. Similar goals, different approaches to pricing, features, and user experience.
 
+### Third-Party vs. Third-Party
+
+These neutral comparisons help you evaluate popular password managers against each other, regardless of whether you are considering PanicVault.
+
+- **[1Password vs Bitwarden (2026)](/compare/1password-vs-bitwarden/)** -- The two most recommended third-party password managers compared on pricing, security, features, and philosophy. One is polished and premium, the other is open source and affordable.
+
+- **[LastPass vs Bitwarden (2026)](/compare/lastpass-vs-bitwarden/)** -- After the LastPass breach, many users are evaluating Bitwarden as an alternative. This comparison covers security track records, pricing, and what you gain by switching.
+
+- **[Dashlane vs Bitwarden (2026)](/compare/dashlane-vs-bitwarden/)** -- Dashlane bundles a VPN and dark web monitoring at $60/year. Bitwarden offers a generous free tier at $10/year premium. Where does the extra money go?
+
+- **[Bitwarden Free vs Premium (2026)](/compare/bitwarden-free-vs-premium/)** -- A deep dive into what Bitwarden Premium adds over the free tier and whether $10/year is worth the upgrade.
+
+- **[Keeper vs Apple Passwords (2026)](/compare/keeper-vs-apple-passwords/)** -- Keeper's feature-rich $35/year subscription against Apple's free built-in option. When does paying make sense?
+
+- **[Dashlane vs Apple Passwords (2026)](/compare/dashlane-vs-apple-passwords/)** -- Is Dashlane's $60/year worth it over Apple's free Passwords app? Features, security, and value compared for Apple users.
+
 ## Best-Of Category Guides
 
 Not everyone starts with a specific product in mind. These guides help you find the right password manager based on your situation, budget, or requirements.

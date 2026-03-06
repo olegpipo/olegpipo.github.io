@@ -235,3 +235,5 @@ Special characters are not useless -- they expand the character pool and add rea
 The practical takeaway: let a password manager generate long, random passwords with special characters included. You get maximum entropy without any of the pitfalls of human-chosen complexity. For the one or two passwords you memorize, focus on length through passphrases and add a special character for a modest entropy bonus.
 
 The real enemy of password security has never been a missing exclamation mark. It is short, predictable, and reused passwords. Solve those three problems and special characters become what they should be: a small, automatic part of a much larger security strategy.
+
+For a broader overview of all character types used in passwords -- letters, numbers, and symbols -- see our companion guide: [Password Characters Explained](/password-security/password-characters-explained/).

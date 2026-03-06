@@ -167,7 +167,7 @@ Bitwarden is one of the most popular password managers and a useful example of h
 
 **Bitwarden Premium** ($10/year) adds built-in TOTP authenticator, hardware key support (YubiKey, FIDO2), encrypted file attachments (1 GB), emergency access, and Bitwarden's vault health reports. The TOTP feature alone can replace a separate authenticator app.
 
-**Should you upgrade?** If you already use a standalone authenticator app and don't need file attachments, Bitwarden Free covers the essentials. Upgrade if you want the convenience of built-in TOTP codes or need hardware security key support.
+**Should you upgrade?** If you already use a standalone authenticator app and don't need file attachments, Bitwarden Free covers the essentials. Upgrade if you want the convenience of built-in TOTP codes or need hardware security key support. For a complete breakdown, see our dedicated [Bitwarden Free vs Premium (2026)](/compare/bitwarden-free-vs-premium/) comparison.
 
 Worth noting: Bitwarden is cloud-based with server-side storage. If you prefer [offline-first security without a subscription](/compare/best-offline/), KeePass-based managers like PanicVault offer a different model -- your passwords never leave your devices unless you choose to sync them.
 

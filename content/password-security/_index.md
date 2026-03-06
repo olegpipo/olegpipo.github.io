@@ -164,7 +164,7 @@ Patterns like "qwerty," "asdfgh," "123456," and "zxcvbn" appear in every crackin
 
 ### Trusting Character Substitutions
 
-Replacing "a" with "@", "e" with "3", "i" with "1", or "s" with "$" does not meaningfully increase security. These substitution rules have been incorporated into cracking tools for over two decades. A password like "p@$$w0rd" is functionally equivalent to "password" against any competent attack. The same applies to adding [special characters](/password-security/special-characters/) at the end of an otherwise weak password -- it adds negligible entropy when the pattern is predictable.
+Replacing "a" with "@", "e" with "3", "i" with "1", or "s" with "$" does not meaningfully increase security. These substitution rules have been incorporated into cracking tools for over two decades. A password like "p@$$w0rd" is functionally equivalent to "password" against any competent attack. The same applies to adding [special characters](/password-security/special-characters/) at the end of an otherwise weak password (see also our guide to [password characters explained](/password-security/password-characters-explained/)) -- it adds negligible entropy when the pattern is predictable.
 
 Our list of the [most common passwords](/password-security/most-common-passwords/) and the patterns behind them illustrates just how predictable human password choices are.
 
