@@ -5,6 +5,15 @@ date: 2026-02-13
 lastmod: 2026-03-06
 draft: false
 silo: "Two-Factor Authentication"
+faq:
+  - q: "Is YubiKey better than Google Authenticator?"
+    a: "YubiKey offers stronger phishing resistance since it verifies the website's identity. Google Authenticator is more convenient but vulnerable to real-time phishing attacks."
+  - q: "Do I need a hardware security key?"
+    a: "Most people are well-protected with a TOTP authenticator app. Hardware keys are recommended if you're a high-value target, handle sensitive data, or want maximum phishing resistance."
+  - q: "What happens if I lose my YubiKey?"
+    a: "You should always register a backup key or save recovery codes when setting up hardware key 2FA. Without a backup, you may need to go through account recovery with each service."
+  - q: "Can I use both a security key and an authenticator app?"
+    a: "Yes. Most services let you register multiple 2FA methods. Using a hardware key as primary and a TOTP app as backup is a common and recommended setup."
 ---
 
 Choosing a second factor for your accounts is one of the most consequential security decisions you can make. As we cover in our [guide to two-factor authentication](/two-factor-authentication/), any second factor is dramatically better than a password alone -- but the two leading options, hardware security keys and TOTP authenticator apps, differ in meaningful ways. This article breaks down those differences so you can make an informed choice based on your actual threat model rather than marketing claims.

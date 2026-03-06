@@ -5,6 +5,15 @@ date: 2026-02-13
 lastmod: 2026-03-06
 draft: false
 silo: "KeePass & Open Standards"
+faq:
+  - q: "Can I open my KeePass database on iPhone?"
+    a: "Yes. Apps like Strongbox and KeePassium support the KeePass KDBX format on iPhone and iPad, with iCloud Drive or local file access."
+  - q: "Does KeePassXC work on iOS?"
+    a: "KeePassXC does not have a native iOS app. For KeePass on iPhone, use Strongbox, KeePassium, or PanicVault instead."
+  - q: "What is the difference between KDBX 3.1 and 4.0?"
+    a: "KDBX 4.0 adds Argon2 key derivation, ChaCha20 encryption, and header authentication. KDBX 3.1 uses AES-KDF and is more widely supported across older apps."
+  - q: "Which KeePass app is best for iPhone?"
+    a: "PanicVault, Strongbox, and KeePassium are the top KeePass-compatible apps for iPhone. PanicVault offers offline-first security with iCloud sync and AutoFill."
 ---
 
 One of the greatest strengths of the [KeePass ecosystem](/keepass/) is that your password database is not locked to a single application. The KDBX file format is an open standard, and dozens of applications across every major platform can read and write it. But not every application supports every feature -- and when you open a database in an app that does not fully support its format version, you can encounter anything from missing features to outright failure to decrypt.

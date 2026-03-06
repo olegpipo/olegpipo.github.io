@@ -5,6 +5,13 @@ date: 2026-02-14
 lastmod: 2026-03-06
 draft: false
 silo: "Phishing & Social Engineering"
+faq:
+  - q: "What are the most common signs of a phishing email?"
+    a: "The top red flags are artificial urgency, requests for credentials, mismatched URLs, unexpected attachments, and a generic greeting instead of your name."
+  - q: "Can AI-generated phishing emails be detected?"
+    a: "AI phishing emails have fewer grammar mistakes, but still use urgency tactics, suspicious links, and unusual sender addresses. Focus on behavioral red flags rather than spelling errors."
+  - q: "What should I do if I clicked a phishing link?"
+    a: "Change your password immediately, enable 2FA, check for unauthorized account activity, and run a malware scan. If you entered credentials, treat that account as compromised."
 ---
 
 Phishing emails are responsible for more account compromises, financial losses, and data breaches than any other attack vector. With 3.4 billion phishing emails sent daily, you are almost certainly receiving them -- the question is whether you can tell them apart from legitimate messages. This article is part of our comprehensive [Phishing & Social Engineering](/phishing/) guide, and it gives you a practical checklist for identifying phishing attempts before they succeed.
