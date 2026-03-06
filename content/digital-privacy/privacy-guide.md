@@ -1,8 +1,8 @@
 ---
-title: "The Complete Guide to Digital Privacy in 2026"
-description: "A practical, step-by-step guide to protecting your digital privacy in 2026 -- browsers, search engines, messaging, social media, and more."
+title: "Digital Privacy Guide (2026 Edition)"
+description: "Protect your digital privacy in 2026. Actionable steps for browsers, search, messaging & social media. No tech expertise needed."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-03-06
 draft: false
 silo: "Digital Privacy & Online Safety"
 ---

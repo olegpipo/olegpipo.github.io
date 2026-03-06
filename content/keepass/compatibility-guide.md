@@ -1,8 +1,8 @@
 ---
-title: "KDBX File Format Compatibility Guide"
-description: "Complete guide to KDBX 3.1 vs 4.0 compatibility across KeePass apps, covering encryption, KDF support, and feature differences."
+title: "KeePass KDBX Compatibility: Apps & Versions"
+description: "Which KeePass apps support KDBX 4.0? Full compatibility chart for iOS, Android, Mac & Windows. Avoid sync-breaking surprises."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-03-06
 draft: false
 silo: "KeePass & Open Standards"
 ---

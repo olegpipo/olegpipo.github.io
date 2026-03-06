@@ -1,8 +1,8 @@
 ---
-title: "How to Share Passwords Between Apple Devices"
-description: "Complete guide to sharing passwords within the Apple ecosystem using AirDrop, iCloud Keychain sharing, Family Sharing, shared groups, and KeePass databases."
+title: "Share Passwords on iPhone, iPad & Mac"
+description: "5 ways to securely share passwords between Apple devices: AirDrop, iCloud Keychain, Family Sharing & more. Step-by-step guide."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-03-06
 draft: false
 silo: "Apple Ecosystem"
 ---

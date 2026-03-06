@@ -1,8 +1,8 @@
 ---
-title: "How to Recognize a Phishing Email: 10 Red Flags"
-description: "Learn the 10 most reliable red flags that identify phishing emails in 2026, even as AI makes scam messages harder to detect."
+title: "Phishing Emails: 10 Red Flags to Watch For"
+description: "Can you spot a phishing email in 2026? AI makes them harder to detect. Learn the 10 red flags that still work every time."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-03-06
 draft: false
 silo: "Phishing & Social Engineering"
 ---

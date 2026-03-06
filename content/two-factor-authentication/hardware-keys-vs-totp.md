@@ -1,8 +1,8 @@
 ---
-title: "Hardware Security Keys vs. TOTP Apps: Which Is More Secure?"
-description: "Compare hardware security keys like YubiKey and Google Titan with TOTP authenticator apps. Analyze phishing resistance, usability, cost, and which 2FA method fits your security needs."
+title: "YubiKey vs. TOTP Apps: Best 2FA in 2026"
+description: "Hardware keys vs. authenticator apps -- which 2FA method is actually safer? We compare phishing resistance, cost & usability."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-03-06
 draft: false
 silo: "Two-Factor Authentication"
 ---

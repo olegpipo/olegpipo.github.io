@@ -1,8 +1,8 @@
 ---
-title: "Best Offline-Capable Password Manager"
-description: "Comprehensive guide to the best offline password managers in 2026. Local-first tools, airplane mode reliability, and why offline access matters for security-conscious users."
+title: "Best Offline Password Manager (2026)"
+description: "The best password managers that work offline. Local-first apps tested for airplane mode, no-internet reliability & security."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-03-06
 draft: false
 silo: "Comparisons"
 ---

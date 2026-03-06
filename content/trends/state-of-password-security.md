@@ -1,8 +1,8 @@
 ---
-title: "The State of Password Security in 2026"
-description: "A data-driven analysis of password security in 2026: breach statistics, attack trends, user behavior patterns, and what the numbers reveal about our collective vulnerability."
+title: "Password Security Statistics (2026 Data)"
+description: "2026 password security statistics: breach data, attack trends & user behavior. See the numbers behind our collective risk."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-03-06
 draft: false
 silo: "Trends & Future"
 ---

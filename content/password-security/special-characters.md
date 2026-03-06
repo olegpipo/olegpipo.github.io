@@ -1,8 +1,8 @@
 ---
-title: "Special Characters in Passwords: Do They Really Matter?"
-description: "Find out whether special characters actually make passwords stronger. We compare entropy gains, debunk substitution myths, and share practical advice."
+title: "Special Characters in Passwords: The Truth"
+description: "Do special characters actually make passwords stronger? The math says it's complicated. See what really matters for security."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-03-06
 draft: false
 silo: "Password Security"
 ---

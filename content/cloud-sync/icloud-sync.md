@@ -1,8 +1,8 @@
 ---
-title: "iCloud Sync for Password Managers: How It Works"
-description: "How iCloud Drive syncs your KeePass password database across iPhone, iPad, and Mac. Technical details, encryption layers, setup steps, limitations, and troubleshooting."
+title: "iCloud Sync for KeePass: Setup Guide"
+description: "How to sync your KeePass database via iCloud Drive on iPhone, iPad & Mac. Setup steps, encryption details & troubleshooting."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-03-06
 draft: false
 silo: "Cloud Sync & Storage"
 ---

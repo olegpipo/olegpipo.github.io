@@ -1,8 +1,8 @@
 ---
-title: "Apple's Passwords App vs. Third-Party Password Managers"
-description: "Detailed comparison of Apple's built-in Passwords app (iOS 18, macOS Sequoia) with third-party password managers -- features, limitations, cross-platform support, data portability, and when each is the right choice."
+title: "Apple Passwords App: Is It Enough? (2026)"
+description: "Apple's Passwords app vs. 1Password, Bitwarden & KeePass. See what's missing and when a third-party manager is worth it."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-03-06
 draft: false
 silo: "Apple Ecosystem"
 ---
