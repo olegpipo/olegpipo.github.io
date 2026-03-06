@@ -18,6 +18,26 @@ Almost every website you have ever signed up for has nudged you to include at le
 
 This article digs into the real math behind special characters, explains why attackers are rarely fooled by the tricks people use, and offers practical recommendations grounded in how passwords are actually cracked in 2026.
 
+## Complete List of Special Characters for Passwords
+
+Here are all 33 standard special characters accepted by most websites and services:
+
+```
+! @ # $ % ^ & * ( ) - _ = + [ ] { } | \ ; : ' " , . < > ? / ~ `
+```
+
+**Grouped by type:**
+
+| Category | Characters |
+|----------|-----------|
+| Punctuation | `! ? . , ; : ' "` |
+| Math & Logic | `+ - = * / % ^ ~` |
+| Brackets | `( ) [ ] { } < >` |
+| Connectors | `_ - @ # & \| \\` |
+| Currency & Special | `$` `` ` `` |
+
+So what counts as a special character in a password? Any printable symbol that is not a letter (A-Z, a-z) or a digit (0-9) qualifies. These 33 characters come from the standard ASCII printable set and together expand your character pool from 62 (letters plus digits) to 95. Not all services accept every special character -- some restrict `< > " ' \` or spaces. A [password manager](/password-managers/what-is-a-password-manager/) generates compatible passwords automatically through its [built-in generator](/password-managers/how-generators-work/), so you never have to guess which characters a site allows.
+
 ## The Conventional Wisdom
 
 The standard guidance has been repeated for decades: a strong password should contain uppercase letters, lowercase letters, numbers, and special characters. This four-category rule originated in the early days of computing when passwords were short -- often just six to eight characters. At that length, every additional character type genuinely expanded the search space an attacker had to cover.
