@@ -11,6 +11,8 @@ iCloud Drive is the most natural sync solution for anyone managing passwords acr
 
 This article explains the technical details of how iCloud Drive sync works, the encryption layers involved, how KeePass-compatible apps integrate with iCloud, and how to set everything up and troubleshoot the common issues that arise.
 
+> **Quick Answer**: To sync your KeePass database via iCloud, store your `.kdbx` file in iCloud Drive and open it from a KeePass-compatible app on each device. On iPhone, use PanicVault, Strongbox, or KeePassium. On Mac, use KeePassXC or PanicVault. Changes sync automatically through iCloud Drive with end-to-end encryption.
+
 ## How iCloud Drive Works Under the Hood
 
 iCloud Drive is Apple's file synchronization service, built on top of CloudKit. When a file is placed in iCloud Drive, the following sequence occurs:
@@ -46,7 +48,7 @@ Apple encrypts data stored on its iCloud servers. The specifics depend on the da
 - **Standard data protection**: Apple encrypts the data and manages the keys. Apple can technically access the data if compelled by legal process.
 - **Advanced Data Protection (ADP)**: When enabled, most iCloud data categories (including iCloud Drive files) are end-to-end encrypted. Apple does not hold the keys and cannot decrypt the data even under court order.
 
-If you enable Advanced Data Protection (available since iOS 16.2 and macOS 13.1), your iCloud Drive files receive end-to-end encryption in addition to the KeePass encryption. This is a meaningful additional layer, but it is not required for your passwords to be safe. The KeePass encryption alone is sufficient.
+If you enable Advanced Data Protection (available since iOS 16.2 and macOS 13.1), your iCloud Drive files receive [end-to-end encryption](/cloud-sync/end-to-end-encryption/) in addition to the KeePass encryption. This is a meaningful additional layer, but it is not required for your passwords to be safe. The KeePass encryption alone is sufficient.
 
 ### Why Three Layers Matter
 
@@ -54,7 +56,7 @@ Each layer protects against a different failure scenario. KeePass encryption pro
 
 ## How KeePass Apps Use iCloud for Sync
 
-KeePass-compatible apps on iOS and macOS integrate with iCloud Drive in two primary ways:
+KeePass-compatible apps on iOS and macOS integrate with iCloud Drive in two primary ways. (Not sure which app to use? See our [KeePass compatibility guide](/keepass/compatibility-guide/) for a full breakdown.)
 
 ### App-Specific iCloud Container
 
@@ -74,7 +76,16 @@ Some apps store the database in the general iCloud Drive documents area, visible
 
 PanicVault uses iCloud Drive to sync your encrypted database seamlessly across your iPhone, iPad, and Mac (Google Drive is also supported for users who prefer it or need cross-platform access). The database file is stored in iCloud Drive where the system handles all the synchronization automatically. You open the app on any device, and your latest passwords are there -- no configuration, no third-party accounts, no additional cloud services to manage.
 
-## Setting Up iCloud Sync
+## How to Set Up KeePass iCloud Sync
+
+Whether you want to sync KeePass between iPhone and Mac or across your full set of Apple devices, the KeePass iCloud setup process follows the same four steps:
+
+1. **Enable iCloud Drive on all devices** -- Go to Settings > Apple ID > iCloud on each iPhone, iPad, and Mac. Make sure iCloud Drive is toggled on.
+2. **Save your `.kdbx` file to iCloud Drive** -- Place your iCloud Drive password database in a location visible to all your devices. On Mac, drag the file into iCloud Drive in Finder. On iPhone, use the Files app.
+3. **Open the file from your KeePass app on each device** -- Launch your [KeePass-compatible app](/keepass/compatibility-guide/) (PanicVault, KeePassXC, Strongbox, KeePassium, etc.) and use its file picker to open the database from iCloud Drive.
+4. **Verify sync by making a test change** -- Add or edit a test entry on one device, wait 30 seconds, then open the database on another device. If the change appears, your KeePass iCloud sync is working.
+
+The detailed breakdown of each step follows.
 
 ### Prerequisites
 
@@ -85,8 +96,10 @@ PanicVault uses iCloud Drive to sync your encrypted database seamlessly across y
 
 ### Setup on Mac
 
+These steps apply whether you want to sync KeePass between iPhone and Mac or across multiple Macs.
+
 1. **Verify iCloud Drive is enabled**: Open System Settings > Apple ID > iCloud. Ensure "iCloud Drive" is turned on.
-2. **Locate or create your database**: If you are creating a new password database, save it to your iCloud Drive folder. In Finder, iCloud Drive appears in the sidebar.
+2. **Locate or create your database**: If you are creating a new password database, save it to your iCloud Drive folder. In Finder, iCloud Drive appears in the sidebar. This iCloud Drive password database will be the single source of truth across all your devices.
 3. **Open in your KeePass app**: Launch your KeePass-compatible app and open the database from the iCloud Drive location.
 
 ### Setup on iPhone and iPad
@@ -189,4 +202,4 @@ For users who want data portability, cross-platform access, open-source transpar
 
 5. **Use strong KeePass encryption settings** -- Regardless of iCloud's encryption, your database security depends on your KeePass settings. Use Argon2d with adequate memory, a strong passphrase, and a current [KDBX format](/keepass/kdbx-format-guide/).
 
-iCloud Drive provides the most frictionless sync experience available for Apple users. Combined with properly configured KeePass encryption, it offers a security model where your passwords are protected by mathematics, not by trust in any single provider.
+iCloud Drive provides the most frictionless sync experience available for Apple users. If you are evaluating iCloud sync as a password manager strategy, the combination of KeePass encryption with iCloud Drive's native integration is hard to beat on Apple devices. Combined with properly configured KeePass encryption, it offers a security model where your passwords are protected by mathematics, not by trust in any single provider.
