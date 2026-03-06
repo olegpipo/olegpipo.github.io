@@ -16,13 +16,20 @@ faq:
     a: "Digital privacy is your ability to control what personal information is collected about you online -- by websites, apps, advertisers, and governments -- and how that data is used."
 ---
 
-Digital privacy in 2026 is not about hiding. It is about choosing what you share, with whom, and on what terms. As part of your broader approach to [digital privacy and online safety](/digital-privacy/), this guide provides concrete, actionable steps you can take to reduce your digital footprint, limit tracking, and protect your personal information -- without requiring you to abandon the internet or become a command-line hermit.
+Digital privacy in 2026 is not about hiding. It is about choosing what you share, with whom, and on what terms. As part of your broader approach to [digital privacy and online safety](/digital-privacy/), this guide provides concrete, actionable steps you can take to reduce your digital footprint, limit tracking, and protect your personal information -- without requiring you to abandon the internet or become a command-line hermit. Whether you are looking for online privacy tips you can act on immediately or a comprehensive internet privacy checklist to work through over time, this page covers both.
+
+> **Quick Start Checklist** -- Do these 5 things today:
+> 1. Switch to Firefox or Brave as your default browser
+> 2. Change your search engine to DuckDuckGo
+> 3. Install a password manager and enable 2FA on your email
+> 4. Review app permissions on your phone (Settings > Privacy)
+> 5. Turn off ad personalization in your Google/Apple account
 
 The landscape has changed significantly in recent years. Tracking technologies have become more sophisticated, but so have the tools available to ordinary people. Browser privacy features that were experimental in 2023 are now standard. Privacy-focused alternatives to mainstream services have matured. And [privacy laws](/digital-privacy/privacy-laws/) like GDPR, CCPA, and the DELETE Act have given individuals real leverage over their data. The challenge is no longer finding privacy tools -- it is knowing which ones actually matter and how to use them together.
 
 ## Your Browser: The Front Door to Your Privacy
 
-Your web browser is the primary interface between you and the internet, which makes it the most important privacy tool you configure. Every website you visit, every search you perform, and every form you fill out passes through your browser.
+Your web browser is the primary interface between you and the internet, which makes it the single most important tool to protect privacy online. Every website you visit, every search you perform, and every form you fill out passes through your browser.
 
 ### Choosing a Privacy-Respecting Browser
 
@@ -73,6 +80,7 @@ Email was not designed with privacy in mind. Messages are typically stored unenc
 - Use a provider that respects privacy (ProtonMail, Tutanota, or Fastmail)
 - Enable [two-factor authentication](/two-factor-authentication/)
 - Be cautious about what you put in email -- treat it as a postcard that might be read, not a sealed letter
+- Learn to [recognize phishing emails](/phishing/recognize-phishing/) so you do not hand your credentials to an attacker
 - Use email aliases or relay services to prevent your primary email from being collected by data brokers
 
 ## Social Media Privacy
@@ -95,7 +103,7 @@ A [password manager](/password-managers/) is essential infrastructure for digita
 
 Key account privacy practices:
 
-- **Use unique passwords everywhere** -- A password manager makes this feasible
+- **Use unique passwords everywhere** -- A password manager makes this feasible. Include [special characters](/password-security/special-characters/) to strengthen each password
 - **Enable two-factor authentication** -- Preferably with an authenticator app or hardware key, not SMS
 - **Use email aliases** -- Services like Apple's Hide My Email or SimpleLogin let you use a different email address for each service, preventing correlation across services
 - **Delete unused accounts** -- Every account is a potential breach point. If you are not using a service, delete your account rather than letting it sit
@@ -176,7 +184,7 @@ When you [travel](/digital-privacy/travel-cybersecurity/), your devices may be s
 
 ## Building a Privacy Practice
 
-Digital privacy is not a one-time project. It is an ongoing practice. Here is a sustainable approach:
+Digital privacy is not a one-time project. It is an ongoing practice. If you are exploring digital privacy for beginners, start with the "Today" column and work your way forward. Here is a sustainable approach:
 
 **Today** (30 minutes):
 - Switch to a privacy-respecting search engine
