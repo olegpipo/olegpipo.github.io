@@ -109,6 +109,28 @@ PanicVault is what Apple Passwords would be if Apple cared about data portabilit
 
 The broader KeePass ecosystem offers maximum data control. Your KDBX database file is yours -- store it wherever you want, open it with whatever app you prefer, and never worry about a vendor shutting down or changing their pricing. The trade-off is that you manage the sync infrastructure yourself (though iCloud Drive makes this easy on Apple devices) and the experience is less seamless than Apple Passwords' zero-configuration approach.
 
+## Apple Passwords vs. 1Password: Head-to-Head
+
+This is the most common comparison for Apple users deciding between built-in and third-party. Here's how they stack up:
+
+| Feature | Apple Passwords | 1Password |
+|---------|----------------|-----------|
+| Price | Free (built into iOS/macOS) | $2.99/month |
+| Cross-platform | Apple only (+ iCloud for Windows) | Apple, Windows, Android, Linux |
+| Passkey support | Yes | Yes |
+| TOTP codes | Yes (iOS 18+) | Yes |
+| Secure notes | No | Yes |
+| Document storage | No | Yes (1 GB) |
+| Password sharing | Shared groups (Apple users only) | Shared vaults (any platform) |
+| Data export | Limited | Full export (CSV, 1PUX) |
+| Offline access | Yes | Yes (cached) |
+
+**Choose Apple Passwords if** you're all-in on the Apple ecosystem, want zero setup, and only need basic password management.
+
+**Choose 1Password if** you need cross-platform support, secure notes, document storage, or share passwords with non-Apple users.
+
+**Consider PanicVault if** you want the best of both: Apple-native design with KeePass portability, offline-first security, and no subscription. See our [full PanicVault vs. 1Password comparison](/compare/panicvault-vs-1password/) for details.
+
 ## When Apple Passwords Is Enough
 
 Apple Passwords is the right choice if all of the following are true:

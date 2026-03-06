@@ -159,6 +159,18 @@ This approach ensures you never overpay. You upgrade in response to a real need,
 **What you gain**: Safari AutoFill, iOS/iPadOS apps, iCloud sync, native Apple experience -- while keeping KeePassXC on desktop
 **Worth it?**: Yes, if you use iPhone/iPad and want system-wide AutoFill with your existing KDBX database.
 
+## Bitwarden Free vs. Premium: A Case Study
+
+Bitwarden is one of the most popular password managers and a useful example of how free and premium tiers differ in practice.
+
+**Bitwarden Free** includes unlimited passwords, unlimited devices, a password generator, and basic 2FA (email and authenticator app). For many users, this is genuinely sufficient.
+
+**Bitwarden Premium** ($10/year) adds built-in TOTP authenticator, hardware key support (YubiKey, FIDO2), encrypted file attachments (1 GB), emergency access, and Bitwarden's vault health reports. The TOTP feature alone can replace a separate authenticator app.
+
+**Should you upgrade?** If you already use a standalone authenticator app and don't need file attachments, Bitwarden Free covers the essentials. Upgrade if you want the convenience of built-in TOTP codes or need hardware security key support.
+
+Worth noting: Bitwarden is cloud-based with server-side storage. If you prefer [offline-first security without a subscription](/compare/best-offline/), KeePass-based managers like PanicVault offer a different model -- your passwords never leave your devices unless you choose to sync them.
+
 ## The Bottom Line
 
 Free password managers are not consolation prizes. They are serious security tools that protect your credentials effectively. Upgrade when -- and only when -- you hit a specific limitation that a paid tool solves.
