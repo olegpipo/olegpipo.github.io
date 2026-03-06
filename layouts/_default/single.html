@@ -26,6 +26,29 @@
 }
 </script>
 
+<!-- FAQ JSON-LD -->
+{{ if .Params.faq }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $faq := .Params.faq }}
+    {{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $faq.q }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $faq.a }}
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+
 <!-- Article JSON-LD -->
 <script type="application/ld+json">
 {
