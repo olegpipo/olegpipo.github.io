@@ -22,23 +22,23 @@ Not all encryption is equal. Some apps encrypt message content but harvest your 
 
 ## What Makes a Messenger Secure?
 
-Before comparing individual apps, it is important to understand the four pillars that determine whether a messaging app genuinely protects your privacy.
+Before comparing individual apps, understand the four pillars that determine whether a messaging app genuinely protects your privacy.
 
 ### End-to-End Encryption (E2E)
 
-[End-to-end encryption](/digital-privacy/e2e-encryption-explained/) means that only you and the person you are communicating with can read the messages. The service provider cannot decrypt them, even if compelled by a court order. E2E encryption should be enabled by default for all conversations -- not hidden behind a special "secret chat" mode that most users never find.
+[End-to-end encryption](/digital-privacy/e2e-encryption-explained/) means only you and the recipient can read the messages. The service provider cannot decrypt them, even if compelled by a court order. E2E encryption should be enabled by default -- not hidden behind a "secret chat" mode most users never find.
 
 ### Metadata Minimization
 
-Message content is only part of the picture. Metadata -- who you messaged, when, how often, for how long, your IP address, your location -- can reveal as much about your life as the messages themselves. A truly secure messenger collects as little metadata as possible and does not store it on its servers.
+Metadata -- who you messaged, when, how often, your IP address, your location -- can reveal as much about your life as the messages themselves. A truly secure messenger collects as little metadata as possible and does not store it on its servers.
 
 ### Open Source Code
 
-When a messaging app's source code is publicly available, independent security researchers can audit it for vulnerabilities, backdoors, and flaws. Closed-source apps require you to trust the company's claims without verification. Open source is not a guarantee of security, but it is a necessary condition for independent trust.
+When source code is publicly available, independent researchers can audit it for vulnerabilities and backdoors. Closed-source apps require you to trust the company's claims without verification.
 
 ### Independent Security Audits
 
-Regular third-party security audits confirm that the app's encryption implementation works as claimed. Look for messengers that publish audit results publicly and address findings transparently.
+Regular third-party audits confirm that encryption works as claimed. Look for messengers that publish audit results publicly.
 
 ## Messenger Comparison Table
 
@@ -58,64 +58,63 @@ Regular third-party security audits confirm that the app's encryption implementa
 
 ## 1. Signal -- The Gold Standard
 
-Signal is the benchmark against which every other secure messenger is measured. Developed and maintained by the Signal Foundation, a nonprofit organization, Signal has no financial incentive to monetize your data.
+Signal is the benchmark against which every other secure messenger is measured. Developed by the Signal Foundation, a nonprofit, it has no financial incentive to monetize your data.
 
 **What makes Signal stand out:**
 
-- **End-to-end encryption by default** for all messages, voice calls, video calls, and group chats using the Signal Protocol -- the same protocol that other apps have adopted
-- **Minimal metadata collection** -- Signal does not store who you message, when, or how often. The only data Signal retains is your phone number and the date you registered
-- **Fully open source** -- Both the client apps and the server code are publicly available for inspection
-- **Disappearing messages** -- Set messages to automatically delete after a chosen time period, from 30 seconds to four weeks
-- **Sealed sender** -- Even Signal's own servers cannot see who is sending a message to whom
-- **Regular independent audits** -- The Signal Protocol has been formally audited and is widely regarded as the strongest messaging encryption available
+- **End-to-end encryption by default** for all messages, voice calls, video calls, and group chats using the Signal Protocol
+- **Minimal metadata collection** -- Signal retains only your phone number and registration date. It does not store who you message, when, or how often
+- **Fully open source** -- Both client apps and server code are publicly available
+- **Disappearing messages** -- Auto-delete after a chosen period, from 30 seconds to four weeks
+- **Sealed sender** -- Even Signal's servers cannot see who is sending a message to whom
+- **Independently audited** -- The Signal Protocol is widely regarded as the strongest messaging encryption available
 
 **Limitations:**
 
-- Requires a phone number to register, which ties your account to your identity (though Signal is working on username-based contact discovery)
-- Smaller user base than WhatsApp or iMessage, so you may need to convince contacts to install it
-- No cloud backup of messages (by design -- this is a privacy feature, not a limitation)
+- Requires a phone number to register (though username-based discovery is in development)
+- Smaller user base than WhatsApp or iMessage
+- No cloud backup of messages (by design -- this is a privacy feature)
 
-Signal is the top recommendation from the Electronic Frontier Foundation, security researcher Bruce Schneier, and former NSA whistleblower Edward Snowden. If you are serious about private messaging, Signal is the app to use.
+Signal is the top recommendation from the Electronic Frontier Foundation and security experts worldwide. If you are serious about private messaging, Signal is the app to use.
 
 ## 2. iMessage -- Strong for the Apple Ecosystem
 
-For the hundreds of millions of people who use iPhones, iPads, and Macs, iMessage provides convenient end-to-end encryption without requiring a separate app installation.
+For the hundreds of millions of Apple device users, iMessage provides convenient end-to-end encryption without a separate app installation.
 
 **Strengths:**
 
 - **End-to-end encrypted** between Apple devices by default -- no setup required
 - **Seamless integration** with iOS, iPadOS, and macOS
-- **Contact Key Verification** allows you to verify that you are messaging the intended person and detect any interception
+- **Contact Key Verification** to detect interception attempts
 - **No separate account needed** -- Uses your Apple ID
 
 **Concerns:**
 
-- **Not cross-platform** -- Messages to Android users fall back to SMS or RCS. SMS is completely unencrypted. RCS encryption support varies and is not guaranteed to be end-to-end encrypted in all configurations
-- **iCloud backup vulnerability** -- If you back up your iPhone to iCloud without enabling Advanced Data Protection, your iMessage history is stored in a format Apple can decrypt if served with a court order. Enable Advanced Data Protection in your Apple ID settings to close this gap
-- **Closed source** -- Apple's encryption implementation cannot be independently verified by the public
-- **Metadata** -- Apple stores some metadata about iMessage communications, including who you message and when
+- **Not cross-platform** -- Messages to Android users fall back to SMS or RCS, which may not be end-to-end encrypted
+- **iCloud backup vulnerability** -- Without Advanced Data Protection enabled, Apple can decrypt your iMessage history if served with a court order
+- **Closed source** -- Apple's encryption implementation cannot be independently verified
+- **Metadata** -- Apple stores metadata about iMessage communications
 
-iMessage is a solid choice for Apple-to-Apple communication, especially with Advanced Data Protection enabled. But it is not a complete solution if you communicate with anyone outside the Apple ecosystem.
+iMessage is a solid choice for Apple-to-Apple communication with Advanced Data Protection enabled. But it is not a complete solution if you communicate with anyone outside the Apple ecosystem.
 
 ## 3. WhatsApp -- Encryption at Scale, with Caveats
 
-WhatsApp brings end-to-end encryption to over two billion users worldwide. It uses the Signal Protocol for message encryption, which is genuinely strong. The problem is everything around the encryption.
+WhatsApp brings end-to-end encryption to over two billion users worldwide using the Signal Protocol. The encryption is genuinely strong. The problem is everything around it.
 
 **Strengths:**
 
 - **Signal Protocol encryption** for all messages and calls by default
 - **Massive user base** -- Your contacts are likely already on WhatsApp, especially outside North America
-- **Disappearing messages** available
-- **End-to-end encrypted backups** available as an opt-in feature
+- **Disappearing messages** and **encrypted backups** available
 
 **Concerns:**
 
-- **Owned by Meta** -- WhatsApp is part of the same company that runs Facebook and Instagram, which has a well-documented history of aggressive data collection and privacy violations
-- **Extensive metadata collection** -- WhatsApp collects who you message, when, how often, your IP address, your phone model, your contacts list, your profile photo, your status, your groups, and more. This metadata is shared with Meta
-- **Closed source app** -- While the Signal Protocol itself is open source, the WhatsApp application is not. You cannot verify what the app does with your data beyond the encryption layer
+- **Owned by Meta** -- The parent company of Facebook and Instagram has a well-documented history of aggressive data collection
+- **Extensive metadata collection** -- WhatsApp collects who you message, when, how often, your IP address, contacts list, groups, and more. This metadata is shared with Meta
+- **Closed source app** -- You cannot verify what the app does with your data beyond the encryption layer
 - **Phone number required** -- Your account is tied to your phone number
 
-WhatsApp's message encryption is strong, but encryption of content is only one dimension of privacy. The metadata WhatsApp collects and shares with Meta paints a detailed picture of your social graph and communication patterns. Use WhatsApp when your contacts are not on Signal, but understand the trade-offs.
+WhatsApp's message encryption is strong, but the metadata it collects and shares with Meta paints a detailed picture of your social graph. Use WhatsApp when your contacts are not on Signal, but understand the trade-offs.
 
 ## 4. Telegram -- Popular but Misleading
 
@@ -125,15 +124,13 @@ Telegram is one of the most popular messaging apps in the world, and it markets 
 
 **Additional concerns:**
 
-- **Custom encryption protocol** -- Telegram uses its own MTProto protocol rather than the well-audited Signal Protocol. Cryptographers have criticized MTProto's design, and while no practical breaks have been published, using a non-standard protocol is a red flag
+- **Custom encryption protocol** -- Telegram uses its own MTProto protocol rather than the well-audited Signal Protocol. Cryptographers have criticized MTProto's design
 - **Not fully open source** -- The server-side code is not publicly available
-- **Metadata collection** -- Telegram stores contacts, messages (for non-secret chats), and other data on its servers
-- **Cloud-based by default** -- Your messages are stored on Telegram's servers, accessible from any device you log in on. This is convenient but means your messages exist on servers you do not control
+- **Cloud-based by default** -- Your messages are stored on Telegram's servers, accessible from any device. Convenient, but they exist on servers you do not control
 
 **What Telegram does well:**
 
-- Large group support (up to 200,000 members)
-- Channels for broadcasting to large audiences
+- Large group support (up to 200,000 members) and broadcast channels
 - Feature-rich platform with bots, stickers, and file sharing
 - Secret Chats do offer genuine E2E encryption with self-destruct timers
 
@@ -161,46 +158,42 @@ Threema is an excellent choice for privacy-conscious users who want to avoid lin
 
 ## 6. Session -- Decentralized and Anonymous
 
-Session takes a fundamentally different approach to secure messaging. Built on a decentralized network of community-operated servers, it eliminates the need for any central authority.
+Session takes a fundamentally different approach. Built on a decentralized network of community-operated servers, it eliminates any central authority.
 
 **Strengths:**
 
 - **No phone number or email required** -- Register with a randomly generated Session ID
-- **Decentralized architecture** -- Messages are routed through a network of community-operated nodes, with no single point of failure or control
-- **Onion routing** -- Messages are routed through multiple nodes (similar to Tor), hiding your IP address from the recipient and from the network itself
-- **End-to-end encrypted** by default
-- **Open source** -- Fully auditable code
+- **Decentralized architecture** -- No single point of failure or control
+- **Onion routing** -- Messages route through multiple nodes (similar to Tor), hiding your IP address
+- **End-to-end encrypted** by default with fully open source code
 - **No metadata on a central server** -- Because there is no central server
 
 **Limitations:**
 
-- **Smaller user base** -- Far fewer users than mainstream messengers
+- **Smaller user base** and less polished user experience
 - **Slower message delivery** -- Onion routing adds latency
-- **Less polished** than Signal or WhatsApp in terms of user experience
 - **Newer platform** with a shorter track record
 
-Session is designed for users who need anonymity in addition to encryption -- journalists, activists, whistleblowers, and anyone in a situation where being identified as communicating with a specific person could be dangerous.
+Session is designed for users who need anonymity in addition to encryption -- journalists, activists, and whistleblowers.
 
 ## 7. Wire -- Secure Messaging for Business
 
-Wire is an end-to-end encrypted messaging platform that has positioned itself primarily for business and enterprise use, though it also offers a personal version.
+Wire is an end-to-end encrypted platform positioned primarily for business and enterprise use, though it offers a personal version.
 
 **Strengths:**
 
 - **End-to-end encrypted** by default for messages, calls, and file sharing
-- **No phone number required** -- Can register with just an email address
-- **Open source** client applications
-- **Cross-platform** -- Works on iOS, Android, Windows, macOS, Linux, and web browsers
+- **No phone number required** -- Register with just an email address
+- **Open source** client applications, **cross-platform** (iOS, Android, Windows, macOS, Linux, web)
 - **Business features** -- Team management, guest access, and compliance tools
 
 **Limitations:**
 
-- **Changed ownership** -- Wire has changed ownership and jurisdiction multiple times, raising questions about long-term commitment to privacy
-- **Collects more metadata** than Signal or Threema, including a list of all users you have ever contacted
-- **Smaller personal user base** -- Most of Wire's growth is in the enterprise market
+- **Changed ownership** multiple times, raising questions about long-term privacy commitment
+- **Collects more metadata** than Signal or Threema
 - **Free tier limitations** -- Full features require a paid plan
 
-Wire is a competent encrypted messenger, but its shifting ownership and metadata practices place it below Signal, Threema, and Session for personal privacy use.
+Wire is a competent encrypted messenger for business use, but its shifting ownership and metadata practices place it below Signal, Threema, and Session for personal privacy.
 
 ## How to Secure Your Messenger Account
 
@@ -212,7 +205,7 @@ If your messenger has an account password (Telegram, Wire, Threema), make sure i
 
 ### Enable Two-Factor Authentication
 
-If your messenger supports 2FA (Signal, Telegram, WhatsApp, Wire), enable it immediately. This adds a second layer of protection -- even if someone obtains your password or intercepts your SMS verification code, they cannot access your account without the second factor. Store your 2FA recovery codes and TOTP secrets in your password manager so they are backed up securely.
+If your messenger supports 2FA (Signal, Telegram, WhatsApp, Wire), enable it immediately. Even if someone intercepts your SMS verification code, they cannot access your account without the second factor. Store your 2FA recovery codes and TOTP secrets in your password manager so they are backed up securely.
 
 ### Enable Registration Lock
 
