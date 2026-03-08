@@ -75,7 +75,7 @@ Cloud-based managers store your encrypted vault on the provider's servers and sy
 
 The security of a cloud manager depends entirely on its encryption architecture. With proper zero-knowledge encryption, the cloud provider stores only encrypted data and never has access to your master password or vault contents. The risk is that you are trusting a third party to implement and maintain this architecture correctly. Any flaw in their implementation -- a compromised server, a vulnerability in their client code, a deliberate backdoor -- could expose your data.
 
-Reputable cloud managers mitigate this through regular independent security audits, bug bounty programs, and open-source clients that the security community can inspect. But the fundamental trust model requires confidence in the provider's competence and integrity.
+Reputable cloud managers mitigate this through regular independent security audits, bug bounty programs, and open-source clients that the security community can inspect. But the fundamental trust model requires confidence in the provider's competence and integrity. We have published detailed security analyses of the major cloud-based options: [Is Bitwarden Safe?](/password-managers/is-bitwarden-safe/), [Is 1Password Safe?](/password-managers/is-1password-safe/), [Is LastPass Safe?](/password-managers/is-lastpass-safe/), [Is Dashlane Safe?](/password-managers/is-dashlane-safe/), [Is NordPass Safe?](/password-managers/is-nordpass-safe/), [Is Keeper Safe?](/password-managers/is-keeper-safe/), and [Is Proton Pass Safe?](/password-managers/is-proton-pass-safe/).
 
 ### Offline and Local Password Managers
 
@@ -93,7 +93,7 @@ Every major browser offers to save and fill passwords. While this is better than
 
 Browser password storage typically lacks the robust encryption architecture, cross-browser compatibility, secure sharing features, password health auditing, and breach monitoring that dedicated managers provide. The passwords are often tied to your browser profile and may be accessible to anyone with access to your operating system user account.
 
-Our comparison article on [password managers versus browser saving](/password-managers/vs-browser-saving/) details these differences and explains when browser storage might be adequate versus when a dedicated manager is essential.
+Our comparison article on [password managers versus browser saving](/password-managers/vs-browser-saving/) details these differences, and our deep dive into [whether Chrome's password manager is safe](/password-managers/is-chrome-passwords-safe/) examines the specific security gaps in Google's approach.
 
 ## Choosing the Right Password Manager
 
