@@ -152,7 +152,7 @@ Understanding the psychology behind your password choices is valuable, but under
 
 5. **Talk about it.** Social norms shift when individuals model better behavior. Mention your password manager to friends and family. Normalize the practice.
 
-For those just starting their security journey, our [beginner's guide](/guides/beginners-guide/) provides a step-by-step roadmap that assumes no prior technical knowledge.
+For those just starting their security journey, our [beginner's guide](/password-managers/beginners-guide/) provides a step-by-step roadmap that assumes no prior technical knowledge.
 
 ## The Real Enemy Is Not You
 

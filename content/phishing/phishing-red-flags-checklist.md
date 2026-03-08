@@ -101,7 +101,7 @@ A password manager stores your credentials alongside the exact domain where they
 
 Consider the scenario: you click a link to "paypa1.com" (with a number one instead of the letter 'l'). You cannot see the difference in the address bar. Your password manager can. It will not offer to fill your PayPal credentials because the domain does not match. That moment of silence -- the autofill not appearing when you expect it -- is your signal that something is wrong.
 
-PanicVault performs this domain matching through Apple's native autofill framework on both iOS and macOS, protecting you across Safari and every app on your device. Because it stores credentials in the open [KDBX format](/keepass/) and syncs through [iCloud](/features/icloud-sync/), you get this phishing protection without sacrificing control over your own data. For a deeper look at how this defense works, see [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/).
+PanicVault performs this domain matching through Apple's native autofill framework on both iOS and macOS, protecting you across Safari and every app on your device. Because it stores credentials in the open [KDBX format](/keepass/) and syncs through [iCloud](/cloud-sync/icloud-sync/), you get this phishing protection without sacrificing control over your own data. For a deeper look at how this defense works, see [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/).
 
 ## Quick Summary: Scan Before You Click
 

@@ -246,5 +246,5 @@ Choose the tool that fits your broader password management needs, and use its bu
 - [PanicVault vs. 1Password](/compare/panicvault-vs-1password/) -- Full comparison including TOTP implementation
 - [Best Free Password Managers](/compare/best-free-password-managers/) -- Free options with and without TOTP
 - [KeePass Encryption Explained](/keepass/encryption-explained/) -- How TOTP secrets are protected in the KDBX format
-- [Two-Factor Authentication](/2fa/) -- Comprehensive guide to 2FA methods
+- [Two-Factor Authentication](/two-factor-authentication/) -- Comprehensive guide to 2FA methods
 - [Face ID and Touch ID Setup](/apple/face-id-touch-id-setup/) -- Biometric access to your credentials and TOTP codes
