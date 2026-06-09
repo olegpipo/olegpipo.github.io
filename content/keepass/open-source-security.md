@@ -173,7 +173,7 @@ The project is maintained by a team of volunteers with a structured development 
 
 ### Other Notable KeePass-Compatible Apps
 
-The ecosystem extends well beyond KeePass and KeePassXC. Strongbox and [PanicVault](https://panicvault.com) offer native Apple experiences on macOS and iOS, KeePassDX provides a Material Design client for Android, and KeeWeb runs in the browser. Each reads and writes the same open KDBX format, meaning the collective community of users and developers serves as an additional layer of review and verification.
+The ecosystem extends well beyond KeePass and KeePassXC. Strongbox and [PanicVault](https://apps.apple.com/app/id6759188575) offer native Apple experiences on macOS and iOS, KeePassDX provides a Material Design client for Android, and KeeWeb runs in the browser. Each reads and writes the same open KDBX format, meaning the collective community of users and developers serves as an additional layer of review and verification.
 
 ### Bitwarden
 

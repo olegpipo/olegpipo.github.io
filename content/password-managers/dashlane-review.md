@@ -147,7 +147,7 @@ Consider alternatives if:
 
 ## How PanicVault Compares
 
-Dashlane and [PanicVault](https://panicvault.com) represent opposite ends of the password manager philosophy. Dashlane is a subscription-based cloud service that bundles multiple security tools into one package. PanicVault is a one-time purchase, Apple-native app that focuses purely on password management using the open KDBX (KeePass) format.
+Dashlane and [PanicVault](https://apps.apple.com/app/id6759188575) represent opposite ends of the password manager philosophy. Dashlane is a subscription-based cloud service that bundles multiple security tools into one package. PanicVault is a one-time purchase, Apple-native app that focuses purely on password management using the open KDBX (KeePass) format.
 
 Where Dashlane stores your encrypted data on their servers, PanicVault keeps your vault file entirely under your control -- on your device, in iCloud Drive, or in your chosen cloud storage. There is no account to create, no server to trust, and no subscription that expires. Your data lives in the KDBX format, supported by dozens of applications across every platform, so you are never locked in.
 

@@ -144,7 +144,7 @@ After importing login credentials, address the form-filling data that did not tr
 
 ### Importing on Apple Devices
 
-Apple users can create the KDBX database using KeePassXC on macOS, then open it in [PanicVault](https://panicvault.com) on all their Apple devices. PanicVault provides native system autofill on macOS and iOS, offering a modern interface for your imported RoboForm credentials. Store the KDBX file in iCloud Drive for seamless sync. See our [compatible apps guide](/keepass/compatible-apps/) for all platform options.
+Apple users can create the KDBX database using KeePassXC on macOS, then open it in [PanicVault](https://apps.apple.com/app/id6759188575) on all their Apple devices. PanicVault provides native system autofill on macOS and iOS, offering a modern interface for your imported RoboForm credentials. Store the KDBX file in iCloud Drive for seamless sync. See our [compatible apps guide](/keepass/compatible-apps/) for all platform options.
 
 ## Step 3: Verify Your Data
 

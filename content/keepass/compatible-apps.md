@@ -105,7 +105,7 @@ PanicVault is a native Apple app designed from the ground up for macOS and iOS, 
 **Format support**: KDBX 3.x, KDBX 4.x
 **License**: Proprietary
 
-[PanicVault](https://panicvault.com) provides a polished Apple-native experience with full KDBX compatibility. It supports Face ID and Touch ID for biometric unlock, integrates with iOS AutoFill, and works with iCloud Drive and other file providers for seamless sync across Apple devices. PanicVault is a strong choice for users who live within the Apple ecosystem and want a clean, intuitive interface for their KeePass vault without sacrificing compatibility with the broader KDBX ecosystem.
+[PanicVault](https://apps.apple.com/app/id6759188575) provides a polished Apple-native experience with full KDBX compatibility. It supports Face ID and Touch ID for biometric unlock, integrates with iOS AutoFill, and works with iCloud Drive and other file providers for seamless sync across Apple devices. PanicVault is a strong choice for users who live within the Apple ecosystem and want a clean, intuitive interface for their KeePass vault without sacrificing compatibility with the broader KDBX ecosystem.
 
 ### KeePassium (iOS)
 
@@ -186,7 +186,7 @@ The critical point is that **you control the sync mechanism**. Unlike [proprieta
 
 ### For macOS Users
 
-**KeePassXC** for most users. **Strongbox** if you want deep macOS integration with iCloud sync and a fully native Apple experience. **[PanicVault](https://panicvault.com)** if you want a modern, user-friendly native macOS and iOS app with seamless KDBX support. **MacPass** if you prefer a simpler, lightweight native client.
+**KeePassXC** for most users. **Strongbox** if you want deep macOS integration with iCloud sync and a fully native Apple experience. **[PanicVault](https://apps.apple.com/app/id6759188575)** if you want a modern, user-friendly native macOS and iOS app with seamless KDBX support. **MacPass** if you prefer a simpler, lightweight native client.
 
 ### For Linux Users
 

@@ -155,7 +155,7 @@ When choosing or evaluating a password manager, assess its breach preparedness:
 
 **Incident response history.** How has the company handled past incidents? Did it communicate clearly and promptly? Did it take meaningful corrective action?
 
-**Data minimization.** What metadata does the manager store beyond your encrypted vault? Less metadata means less exposure in a breach. Offline-first KeePass apps like [PanicVault](https://panicvault.com) on macOS and iOS store no metadata on any server -- your encrypted `.kdbx` file lives on your device and in the cloud storage provider of your choice, and the app itself never collects or transmits user data.
+**Data minimization.** What metadata does the manager store beyond your encrypted vault? Less metadata means less exposure in a breach. Offline-first KeePass apps like [PanicVault](https://apps.apple.com/app/id6759188575) on macOS and iOS store no metadata on any server -- your encrypted `.kdbx` file lives on your device and in the cloud storage provider of your choice, and the app itself never collects or transmits user data.
 
 For a broader evaluation of whether password managers are trustworthy tools for your security, see our guide on [whether password managers are safe](/password-managers/are-password-managers-safe/).
 

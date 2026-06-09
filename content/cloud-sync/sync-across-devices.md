@@ -19,7 +19,7 @@ Cloud sync is the most popular approach because it is automatic, requires minima
 
 iCloud Drive is the most seamless option for users within the Apple ecosystem. If you own an iPhone, iPad, and Mac, iCloud Drive is already configured and available on every device.
 
-**How it works**: Your `.kdbx` file is placed in an iCloud Drive folder (either the app-specific container or a general iCloud Drive location). Changes sync automatically through Apple's infrastructure. On iOS and macOS, [KeePass-compatible apps](/keepass/compatible-apps/) like [PanicVault](https://panicvault.com) that support iCloud can read and write the file directly.
+**How it works**: Your `.kdbx` file is placed in an iCloud Drive folder (either the app-specific container or a general iCloud Drive location). Changes sync automatically through Apple's infrastructure. On iOS and macOS, [KeePass-compatible apps](/keepass/compatible-apps/) like [PanicVault](https://apps.apple.com/app/id6759188575) that support iCloud can read and write the file directly.
 
 **Setup**:
 

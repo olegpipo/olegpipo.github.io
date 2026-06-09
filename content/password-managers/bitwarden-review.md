@@ -148,7 +148,7 @@ Bitwarden is not the ideal choice in every scenario. Consider alternatives if:
 
 ## How PanicVault Compares
 
-Bitwarden and [PanicVault](https://panicvault.com) share a philosophical commitment to openness -- both support open, inspectable password formats. PanicVault uses the KeePass KDBX format, the most widely supported open-source vault standard in the world. But they differ in their approach to architecture and pricing.
+Bitwarden and [PanicVault](https://apps.apple.com/app/id6759188575) share a philosophical commitment to openness -- both support open, inspectable password formats. PanicVault uses the KeePass KDBX format, the most widely supported open-source vault standard in the world. But they differ in their approach to architecture and pricing.
 
 PanicVault is a native Apple app (macOS and iOS) available as a one-time purchase with no subscription. Your vault is a local KDBX file that you control completely -- sync it through iCloud Drive, keep it offline, or use any cloud storage you choose. There is no server component, no account to create, and no third party holding your encrypted data.
 

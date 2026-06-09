@@ -138,7 +138,7 @@ Other notable features include secure notes, document storage (1 GB included), c
 
 ## How PanicVault Compares
 
-If you are drawn to 1Password's polish but uncomfortable with the subscription model or proprietary lock-in, [PanicVault](https://panicvault.com) offers a fundamentally different approach. PanicVault is a KeePass-compatible password manager built natively for Apple platforms -- macOS and iOS -- that uses the open KDBX format.
+If you are drawn to 1Password's polish but uncomfortable with the subscription model or proprietary lock-in, [PanicVault](https://apps.apple.com/app/id6759188575) offers a fundamentally different approach. PanicVault is a KeePass-compatible password manager built natively for Apple platforms -- macOS and iOS -- that uses the open KDBX format.
 
 The key differences: PanicVault is a one-time purchase with no recurring subscription. Your vault is stored in the industry-standard KDBX format, meaning your data is never locked into a proprietary ecosystem. You control where your vault file lives -- locally, in iCloud Drive, or any cloud storage you choose. And because the KDBX format is open and supported by dozens of applications, you can always switch apps without losing data.
 

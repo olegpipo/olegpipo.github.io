@@ -49,7 +49,7 @@ Each of the time drains described above has a direct solution in a password mana
 
 The core time-saving feature is autofill. When you visit a login page, your password manager detects the form, matches it to a stored credential, and fills the username and password fields instantly. You click "log in" and you are done. No typing, no remembering, no errors.
 
-This works across devices. Browser extensions handle desktop logins. Mobile apps integrate with iOS and Android autofill frameworks to fill credentials in apps and mobile browsers. Native KeePass apps like [PanicVault](https://panicvault.com) integrate directly with the macOS and iOS autofill systems, so your KDBX vault credentials are available system-wide without a browser extension. The experience is consistent whether you are on your laptop, your phone, or a tablet.
+This works across devices. Browser extensions handle desktop logins. Mobile apps integrate with iOS and Android autofill frameworks to fill credentials in apps and mobile browsers. Native KeePass apps like [PanicVault](https://apps.apple.com/app/id6759188575) integrate directly with the macOS and iOS autofill systems, so your KDBX vault credentials are available system-wide without a browser extension. The experience is consistent whether you are on your laptop, your phone, or a tablet.
 
 The time savings per login are modest -- maybe 15 to 30 seconds compared to typing manually. But across 10 to 15 logins per day, that is 2.5 to 7.5 minutes saved daily, or 75 to 225 minutes (1.25 to 3.75 hours) per month.
 

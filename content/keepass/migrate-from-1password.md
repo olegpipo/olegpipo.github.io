@@ -27,7 +27,7 @@ With KeePass, your vault is a file on your device. No copy exists on any server 
 
 ### Vendor Independence
 
-Proprietary password managers create a dependency relationship. If the company changes its pricing, discontinues a feature, or pivots its business model, you are affected. If the company is acquired, its privacy policies and security priorities may change. With KeePass, the KDBX file format is an open standard supported by dozens of independent applications -- including [PanicVault](https://panicvault.com) for macOS and iOS users who want a native Apple experience. You are never locked into a single vendor's ecosystem.
+Proprietary password managers create a dependency relationship. If the company changes its pricing, discontinues a feature, or pivots its business model, you are affected. If the company is acquired, its privacy policies and security priorities may change. With KeePass, the KDBX file format is an open standard supported by dozens of independent applications -- including [PanicVault](https://apps.apple.com/app/id6759188575) for macOS and iOS users who want a native Apple experience. You are never locked into a single vendor's ecosystem.
 
 ## Step 1: Prepare for the Export
 

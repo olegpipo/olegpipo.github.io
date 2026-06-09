@@ -134,7 +134,7 @@ If TOTP data was included in the notes field instead of a dedicated column, extr
 
 ### Importing on Apple Devices
 
-For a seamless Apple experience, create your KDBX database using KeePassXC, then open it in [PanicVault](https://panicvault.com) on your Mac, iPhone, or iPad. PanicVault provides native system autofill on both macOS and iOS and supports iCloud Drive sync for your KDBX file. This makes the transition from Proton Pass particularly smooth for users in the Apple ecosystem. Check our [compatible apps guide](/keepass/compatible-apps/) for the full list of KeePass-compatible applications.
+For a seamless Apple experience, create your KDBX database using KeePassXC, then open it in [PanicVault](https://apps.apple.com/app/id6759188575) on your Mac, iPhone, or iPad. PanicVault provides native system autofill on both macOS and iOS and supports iCloud Drive sync for your KDBX file. This makes the transition from Proton Pass particularly smooth for users in the Apple ecosystem. Check our [compatible apps guide](/keepass/compatible-apps/) for the full list of KeePass-compatible applications.
 
 ## Step 3: Verify Your Data
 

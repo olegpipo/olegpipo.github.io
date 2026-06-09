@@ -125,7 +125,7 @@ See our comprehensive guide on [managing recovery codes](/two-factor-authenticat
 
 The most streamlined way to handle Instagram 2FA is to store your TOTP secret directly in your password manager alongside your Instagram password. This eliminates the need for a separate authenticator app and ensures your 2FA secrets are automatically backed up with your password vault.
 
-[PanicVault](https://panicvault.com) supports this workflow natively on iPhone, iPad, and Mac. During Instagram's 2FA setup, copy the setup key and add it to the OTP field in your Instagram entry in PanicVault. The app stores the TOTP secret in the standard KeePass OTP field within your encrypted `.kdbx` database and generates the six-digit code automatically, refreshing every thirty seconds.
+[PanicVault](https://apps.apple.com/app/id6759188575) supports this workflow natively on iPhone, iPad, and Mac. During Instagram's 2FA setup, copy the setup key and add it to the OTP field in your Instagram entry in PanicVault. The app stores the TOTP secret in the standard KeePass OTP field within your encrypted `.kdbx` database and generates the six-digit code automatically, refreshing every thirty seconds.
 
 The benefits of this approach are significant:
 

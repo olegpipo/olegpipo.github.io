@@ -116,7 +116,7 @@ With your CSV file in hand, you can now import it into your KeePass-compatible a
 
 ### Importing into PanicVault
 
-If you are an Apple user, [PanicVault](https://panicvault.com) provides a native macOS and iOS experience for working with KDBX files. You can first import the CSV into KeePassXC to create a KDBX database, then open that database in PanicVault on all your Apple devices. Alternatively, PanicVault may support direct CSV import -- check the app's current import options. For a full list of compatible apps, see our [KeePass-compatible apps guide](/keepass/compatible-apps/).
+If you are an Apple user, [PanicVault](https://apps.apple.com/app/id6759188575) provides a native macOS and iOS experience for working with KDBX files. You can first import the CSV into KeePassXC to create a KDBX database, then open that database in PanicVault on all your Apple devices. Alternatively, PanicVault may support direct CSV import -- check the app's current import options. For a full list of compatible apps, see our [KeePass-compatible apps guide](/keepass/compatible-apps/).
 
 ### Handling TOTP Secrets
 

@@ -130,7 +130,7 @@ NordPass exports credit card entries and personal information as part of the CSV
 
 ### Importing on Apple Devices
 
-For Apple users, the most convenient workflow is to create your KDBX database using KeePassXC, then open it in [PanicVault](https://panicvault.com) on macOS, iPhone, and iPad. PanicVault is a KeePass-compatible app designed natively for Apple platforms, offering system autofill integration and iCloud sync for your KDBX file. This gives you the seamless experience you had with NordPass while keeping your data in an open format. See our [compatible apps guide](/keepass/compatible-apps/) for all available options.
+For Apple users, the most convenient workflow is to create your KDBX database using KeePassXC, then open it in [PanicVault](https://apps.apple.com/app/id6759188575) on macOS, iPhone, and iPad. PanicVault is a KeePass-compatible app designed natively for Apple platforms, offering system autofill integration and iCloud sync for your KDBX file. This gives you the seamless experience you had with NordPass while keeping your data in an open format. See our [compatible apps guide](/keepass/compatible-apps/) for all available options.
 
 ## Step 3: Verify Your Data
 

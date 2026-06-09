@@ -140,7 +140,7 @@ If you want to change the master password or encryption settings:
 
 ### Using PanicVault on Apple Devices
 
-The KDBX file exported from Enpass can be opened directly in [PanicVault](https://panicvault.com) on your Mac, iPhone, or iPad. Simply place the KDBX file in iCloud Drive (or your preferred sync location) and open it from PanicVault. The app provides native macOS and iOS autofill integration, making it an excellent replacement for Enpass on Apple devices. See our [compatible apps guide](/keepass/compatible-apps/) for all available KeePass-compatible applications.
+The KDBX file exported from Enpass can be opened directly in [PanicVault](https://apps.apple.com/app/id6759188575) on your Mac, iPhone, or iPad. Simply place the KDBX file in iCloud Drive (or your preferred sync location) and open it from PanicVault. The app provides native macOS and iOS autofill integration, making it an excellent replacement for Enpass on Apple devices. See our [compatible apps guide](/keepass/compatible-apps/) for all available KeePass-compatible applications.
 
 ## Step 3: Verify Your Data
 

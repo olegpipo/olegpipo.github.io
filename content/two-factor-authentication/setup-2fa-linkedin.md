@@ -130,7 +130,7 @@ Storing your LinkedIn TOTP secret in a password manager is the most reliable way
 
 **Professional context.** As a professional network, LinkedIn is something you may need to access urgently -- to respond to a recruiter, verify a business contact, or check a message. Having your TOTP code immediately available in your password manager eliminates friction when access matters.
 
-[PanicVault](https://panicvault.com), a KeePass-compatible password manager for iPhone, iPad, and Mac, handles LinkedIn TOTP seamlessly. During setup, scan LinkedIn's QR code or enter the secret key into the OTP field of your LinkedIn entry. PanicVault stores the secret in the standard KeePass OTP field within your encrypted `.kdbx` database and generates the six-digit code alongside your password.
+[PanicVault](https://apps.apple.com/app/id6759188575), a KeePass-compatible password manager for iPhone, iPad, and Mac, handles LinkedIn TOTP seamlessly. During setup, scan LinkedIn's QR code or enter the secret key into the OTP field of your LinkedIn entry. PanicVault stores the secret in the standard KeePass OTP field within your encrypted `.kdbx` database and generates the six-digit code alongside your password.
 
 Because PanicVault uses the open KeePass format, your LinkedIn TOTP secret is never locked into a proprietary ecosystem. The same `.kdbx` database works in [KeePassXC on desktop](/two-factor-authentication/best-authenticator-apps/), KeePassDX on Android, or any other KeePass-compatible app. If you ever switch platforms or apps, your LinkedIn credentials and TOTP secret travel with you.
 

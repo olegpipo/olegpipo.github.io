@@ -134,7 +134,7 @@ Storing your X 2FA secret in a password manager is the most practical approach f
 
 **Seamless sign-in.** When you need to sign into X on a new device, your password manager provides your password, TOTP code, and backup code from a single entry.
 
-[PanicVault](https://panicvault.com) is a KeePass-compatible password manager for Apple devices that handles TOTP natively. During X's 2FA setup, scan the QR code or enter the secret key into the OTP field of your X entry in PanicVault. The app stores the secret in the standard KeePass OTP field within your encrypted `.kdbx` database, generates codes automatically, and backs up the secret as part of your regular vault backup.
+[PanicVault](https://apps.apple.com/app/id6759188575) is a KeePass-compatible password manager for Apple devices that handles TOTP natively. During X's 2FA setup, scan the QR code or enter the secret key into the OTP field of your X entry in PanicVault. The app stores the secret in the standard KeePass OTP field within your encrypted `.kdbx` database, generates codes automatically, and backs up the secret as part of your regular vault backup.
 
 Because PanicVault uses the open KeePass format, your X TOTP secret is portable. You can access the same database from [KeePassXC on a desktop](/two-factor-authentication/best-authenticator-apps/) or KeePassDX on Android. No vendor lock-in, no proprietary format, no risk of losing your codes if an app shuts down.
 

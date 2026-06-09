@@ -163,7 +163,7 @@ Seriously consider alternatives if:
 
 ## How PanicVault Compares
 
-For users leaving LastPass and looking for a fundamentally different approach, [PanicVault](https://panicvault.com) offers a model that addresses several of the concerns the breach exposed. PanicVault is a KeePass-compatible password manager for macOS and iOS that stores your vault locally in the open KDBX format.
+For users leaving LastPass and looking for a fundamentally different approach, [PanicVault](https://apps.apple.com/app/id6759188575) offers a model that addresses several of the concerns the breach exposed. PanicVault is a KeePass-compatible password manager for macOS and iOS that stores your vault locally in the open KDBX format.
 
 The key distinction is architectural: with PanicVault, there is no server to breach. Your encrypted vault file lives on your device and optionally in your own cloud storage (iCloud Drive or similar). No company holds a copy of your encrypted data on servers that could be compromised. The KDBX format is open, audited, and supported by dozens of applications worldwide.
 

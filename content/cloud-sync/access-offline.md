@@ -141,7 +141,7 @@ The safest practice is straightforward: try to avoid editing your vault on multi
 
 For users in the [Apple ecosystem](/apple/), [iCloud Drive provides a natural sync layer](/cloud-sync/icloud-sync/) for KeePass databases. However, there are platform-specific behaviors to be aware of:
 
-**iOS/iPadOS**: Files stored in iCloud Drive are generally kept locally on the device, but iOS may evict them under storage pressure. Apps that use the iOS file provider API can request that files remain downloaded. Native KeePass apps like [PanicVault](https://panicvault.com) maintain a local working copy of your database, so your passwords remain accessible even if iCloud Drive evicts the original file.
+**iOS/iPadOS**: Files stored in iCloud Drive are generally kept locally on the device, but iOS may evict them under storage pressure. Apps that use the iOS file provider API can request that files remain downloaded. Native KeePass apps like [PanicVault](https://apps.apple.com/app/id6759188575) maintain a local working copy of your database, so your passwords remain accessible even if iCloud Drive evicts the original file.
 
 **macOS**: The "Optimize Mac Storage" setting can evict iCloud Drive files from local storage. Disable this for your vault file or use an app like PanicVault that maintains its own local copy independently of iCloud Drive's storage optimization.
 

@@ -54,7 +54,7 @@ Before evaluating individual apps, here are the features that matter most when c
 **Platforms**: iOS, iPadOS, macOS
 **KDBX support**: 3.1 and 4.0
 
-[PanicVault](https://panicvault.com) is a native Apple password manager built from the ground up with SwiftUI. It is designed specifically for users who live in the Apple ecosystem and want a KeePass-compatible app that feels like a first-party Apple product.
+[PanicVault](https://apps.apple.com/app/id6759188575) is a native Apple password manager built from the ground up with SwiftUI. It is designed specifically for users who live in the Apple ecosystem and want a KeePass-compatible app that feels like a first-party Apple product.
 
 PanicVault supports full KDBX 4.0 read and write, including Argon2 key derivation, AES-256 and ChaCha20 encryption, groups, custom fields, entry history, and file attachments. Your KeePassXC database opens without modification.
 

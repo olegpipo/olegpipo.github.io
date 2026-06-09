@@ -113,7 +113,7 @@ For a comprehensive discussion of recovery code management across all services, 
 
 Managing Facebook 2FA with a password manager streamlines both the setup and the day-to-day experience. Instead of switching to a separate authenticator app every time you sign into Facebook on a new device, your password manager stores the TOTP secret alongside your Facebook password and generates the verification code automatically.
 
-[PanicVault](https://panicvault.com) makes this particularly convenient for Apple users. When you scan Facebook's QR code during 2FA setup, PanicVault stores the TOTP secret in the standard KeePass OTP field within your encrypted `.kdbx` database. The six-digit code appears directly in your Facebook entry, refreshing every thirty seconds. Your Facebook password, TOTP code, and recovery codes are all in one secure, encrypted entry.
+[PanicVault](https://apps.apple.com/app/id6759188575) makes this particularly convenient for Apple users. When you scan Facebook's QR code during 2FA setup, PanicVault stores the TOTP secret in the standard KeePass OTP field within your encrypted `.kdbx` database. The six-digit code appears directly in your Facebook entry, refreshing every thirty seconds. Your Facebook password, TOTP code, and recovery codes are all in one secure, encrypted entry.
 
 This approach also solves the backup problem. Your TOTP secret is part of your encrypted password database, which is backed up through your regular vault backup process. Lose your phone? Your TOTP secrets are in your vault, accessible from any device where you have PanicVault (or KeePassXC, or any other KeePass-compatible app). No panicked search for recovery codes, no account recovery process.
 

@@ -137,7 +137,7 @@ If you chose to export as CSV:
 
 ### Using PanicVault on Apple Devices
 
-Apple users who want a native experience can create the KDBX database using KeePassXC, then open it in [PanicVault](https://panicvault.com) on macOS, iPhone, and iPad. PanicVault reads the KDBX format natively and provides system-level autofill on both platforms. Store the KDBX file in iCloud Drive for automatic sync across your Apple devices. For the complete list of KeePass-compatible apps, see our [compatible apps guide](/keepass/compatible-apps/).
+Apple users who want a native experience can create the KDBX database using KeePassXC, then open it in [PanicVault](https://apps.apple.com/app/id6759188575) on macOS, iPhone, and iPad. PanicVault reads the KDBX format natively and provides system-level autofill on both platforms. Store the KDBX file in iCloud Drive for automatic sync across your Apple devices. For the complete list of KeePass-compatible apps, see our [compatible apps guide](/keepass/compatible-apps/).
 
 ### Handling TOTP Secrets
 

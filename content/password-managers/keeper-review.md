@@ -172,7 +172,7 @@ Consider alternatives if:
 
 ## How PanicVault Compares
 
-Keeper and [PanicVault](https://panicvault.com) appeal to different priorities but share a focus on strong security. Keeper targets compliance and enterprise needs; PanicVault targets Apple users who want simplicity, data ownership, and freedom from subscriptions.
+Keeper and [PanicVault](https://apps.apple.com/app/id6759188575) appeal to different priorities but share a focus on strong security. Keeper targets compliance and enterprise needs; PanicVault targets Apple users who want simplicity, data ownership, and freedom from subscriptions.
 
 PanicVault is a one-time purchase -- no annual fees, no add-ons, no recurring charges that grow over time. Your vault is stored in the open KDBX (KeePass) format, supported by dozens of applications across every platform. You own your data completely: it lives on your device or in your choice of cloud storage, with no third-party server holding copies of your encrypted vault.
 

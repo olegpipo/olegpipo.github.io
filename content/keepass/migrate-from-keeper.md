@@ -135,7 +135,7 @@ With the Keeper CSV file ready, you can now import your data into a KeePass-comp
 
 ### Importing on Apple Devices
 
-Apple users can create a KDBX database using KeePassXC on macOS (or any platform), then open that same database file in [PanicVault](https://panicvault.com) on their Mac, iPhone, or iPad. PanicVault is a KeePass-compatible app built natively for Apple platforms, providing system-level autofill integration and a polished interface. Store your KDBX file in iCloud Drive for seamless sync across all your Apple devices. See our [compatible apps guide](/keepass/compatible-apps/) for a full list of options.
+Apple users can create a KDBX database using KeePassXC on macOS (or any platform), then open that same database file in [PanicVault](https://apps.apple.com/app/id6759188575) on their Mac, iPhone, or iPad. PanicVault is a KeePass-compatible app built natively for Apple platforms, providing system-level autofill integration and a polished interface. Store your KDBX file in iCloud Drive for seamless sync across all your Apple devices. See our [compatible apps guide](/keepass/compatible-apps/) for a full list of options.
 
 ### Handling Custom Fields
 

@@ -44,7 +44,7 @@ The KDBX format -- used by KeePass, KeePassXC, KeePassDX, Strongbox, KeeWeb, and
 
 This openness produces several concrete benefits:
 
-**No single point of failure.** If the original KeePass application were abandoned tomorrow, your data would remain accessible through KeePassXC, Strongbox, [PanicVault](https://panicvault.com), KeePassDX, and every other compatible implementation. The [ecosystem of compatible apps](/keepass/compatible-apps/) ensures continuity.
+**No single point of failure.** If the original KeePass application were abandoned tomorrow, your data would remain accessible through KeePassXC, Strongbox, [PanicVault](https://apps.apple.com/app/id6759188575), KeePassDX, and every other compatible implementation. The [ecosystem of compatible apps](/keepass/compatible-apps/) ensures continuity.
 
 **Independent security auditing.** Because the format is open, security researchers can examine exactly how your data is encrypted, how keys are derived, and whether the implementation matches the specification. Proprietary formats cannot be audited this way -- you are trusting the vendor's assurances rather than verifiable code. This transparency is part of what makes the KeePass approach the [gold standard](/keepass/gold-standard/) for password security.
 

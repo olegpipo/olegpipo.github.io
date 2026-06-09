@@ -153,7 +153,7 @@ For a detailed comparison of notebook-based password management versus dedicated
 
 If you are currently managing your passwords through memory, reuse, and frustration, here is how to break the cycle:
 
-**Step 1: Choose a password manager.** Evaluate options based on your needs -- our [beginner's guide](/password-managers/beginners-guide/) covers the selection process. If you are in the Apple ecosystem, a native KDBX app like [PanicVault](https://panicvault.com) gives you the control of an offline-first KeePass database with the convenience of a modern macOS and iOS app.
+**Step 1: Choose a password manager.** Evaluate options based on your needs -- our [beginner's guide](/password-managers/beginners-guide/) covers the selection process. If you are in the Apple ecosystem, a native KDBX app like [PanicVault](https://apps.apple.com/app/id6759188575) gives you the control of an offline-first KeePass database with the convenience of a modern macOS and iOS app.
 
 **Step 2: Create a strong master passphrase.** This is the one password you will memorize. Make it long, random, and unique. A five-word passphrase generated with dice or a random word generator provides excellent security with reasonable memorability.
 

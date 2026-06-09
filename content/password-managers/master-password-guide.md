@@ -49,7 +49,7 @@ Use one of these methods to select words randomly:
 
 **Diceware method.** Roll five dice (or one die five times) to generate a five-digit number. Look up that number in the Diceware word list to get your word. Repeat for each word in your passphrase. This method is fully offline and verifiably random -- the entropy comes from physical dice rolls, not from software.
 
-**Password manager generator.** Most password managers include a passphrase generator that selects words from a curated word list using a cryptographically secure random number generator. This is the most convenient option if you trust your device. KeePass-compatible apps like [PanicVault](https://panicvault.com) on macOS and iOS include built-in password generators that can create strong passphrases directly within the app.
+**Password manager generator.** Most password managers include a passphrase generator that selects words from a curated word list using a cryptographically secure random number generator. This is the most convenient option if you trust your device. KeePass-compatible apps like [PanicVault](https://apps.apple.com/app/id6759188575) on macOS and iOS include built-in password generators that can create strong passphrases directly within the app.
 
 **EFF word lists.** The Electronic Frontier Foundation publishes several optimized word lists designed for passphrase generation. Their "long list" contains 7,776 words chosen for memorability and distinctness.
 

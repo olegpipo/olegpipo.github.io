@@ -83,7 +83,7 @@ The KDBX format eliminates this problem entirely. Because the format is open and
 
 Open-source projects benefit from contributions by developers worldwide who use the software themselves. Bug reports, feature requests, security patches, and documentation improvements come from the same community that depends on the software. This alignment of incentives produces tools that prioritize user needs over revenue goals.
 
-The KeePass ecosystem is a prime example. The original KeePass application inspired KeePassXC (a cross-platform community fork), Strongbox (for Apple platforms), [PanicVault](https://panicvault.com) (a native macOS and iOS client), KeePassDX (for Android), and many others. Each application brings unique strengths while maintaining full compatibility through the shared KDBX format.
+The KeePass ecosystem is a prime example. The original KeePass application inspired KeePassXC (a cross-platform community fork), Strongbox (for Apple platforms), [PanicVault](https://apps.apple.com/app/id6759188575) (a native macOS and iOS client), KeePassDX (for Android), and many others. Each application brings unique strengths while maintaining full compatibility through the shared KDBX format.
 
 ## Data Portability: Why It Matters
 

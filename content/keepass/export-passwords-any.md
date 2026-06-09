@@ -198,7 +198,7 @@ If your source included TOTP secrets (Bitwarden JSON, Proton Pass CSV, Safari CS
 
 ### Using PanicVault on Apple Devices
 
-Once your passwords are in a KDBX database, Apple users can open that file in [PanicVault](https://panicvault.com) on macOS, iPhone, and iPad. PanicVault provides native system autofill integration and supports iCloud Drive sync, making it a seamless experience for users in the Apple ecosystem. The database file is the same regardless of which app you use to access it -- that is the power of the open KDBX format. See our [compatible apps guide](/keepass/compatible-apps/) for all platform options.
+Once your passwords are in a KDBX database, Apple users can open that file in [PanicVault](https://apps.apple.com/app/id6759188575) on macOS, iPhone, and iPad. PanicVault provides native system autofill integration and supports iCloud Drive sync, making it a seamless experience for users in the Apple ecosystem. The database file is the same regardless of which app you use to access it -- that is the power of the open KDBX format. See our [compatible apps guide](/keepass/compatible-apps/) for all platform options.
 
 ## Security During Export
 

@@ -111,7 +111,7 @@ Download Google Drive from the App Store and sign in.
 
 **Step 2: Access from your KeePass app**
 
-Many KeePass-compatible iOS apps support Google Drive directly. [PanicVault](https://panicvault.com), a native macOS and iOS KeePass app, can access `.kdbx` files stored in Google Drive through the iOS Files app integration. Once Google Drive is installed, it appears as a location in the Files app, and any app that uses the iOS file picker -- including PanicVault -- can access it.
+Many KeePass-compatible iOS apps support Google Drive directly. [PanicVault](https://apps.apple.com/app/id6759188575), a native macOS and iOS KeePass app, can access `.kdbx` files stored in Google Drive through the iOS Files app integration. Once Google Drive is installed, it appears as a location in the Files app, and any app that uses the iOS file picker -- including PanicVault -- can access it.
 
 **Step 3: Open the database**
 
