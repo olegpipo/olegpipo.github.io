@@ -2,7 +2,7 @@
 title: "Best Password Manager for Couples"
 description: "The best password managers for couples in 2026. Shared vaults, individual privacy, affordable two-person plans, and emergency access compared."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-07-01
 draft: false
 silo: "Comparisons"
 faq:
@@ -26,7 +26,7 @@ Password management for two people is different from individual use, but it is a
 
 ### Shared Vault for Joint Accounts
 
-Every couple has passwords that both partners need: Netflix, Spotify, the home Wi-Fi, the mortgage portal, the joint credit card login, the shared Amazon account, the utility company login. These need to live in a shared space where either partner can access and update them.
+Every couple has passwords that both partners need: Netflix, Spotify, the home Wi-Fi, the mortgage portal, the joint credit card login, the shared Amazon account, the utility company login. These need to live in a [shared password vault](/password-managers/shared-password-vault/) where either partner can access and update them.
 
 ### Individual Privacy
 

@@ -2,12 +2,12 @@
 title: "How to Share Passwords Securely With Family"
 description: "Safe methods for sharing passwords with family members. Covers shared vaults, secure sharing features, and best practices for household credential management."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-07-01
 draft: false
 silo: "Guides & Tutorials"
 ---
 
-Sharing passwords within a family is inevitable. Streaming services, Wi-Fi networks, utility accounts, shopping memberships, family photo storage -- the modern household runs on shared credentials. The question is not whether you will share passwords with family members, but whether you will do it securely or through text messages and sticky notes. This guide, part of our [Password Manager Guides & Tutorials](/guides/) series, covers the safe methods for every situation.
+Sharing passwords within a family is inevitable. Streaming services, Wi-Fi networks, utility accounts, shopping memberships, family photo storage -- the modern household runs on shared credentials. The question is not whether you will share passwords with family members, but whether you will do it securely with a [shared password vault](/password-managers/shared-password-vault/) or through text messages and sticky notes. This guide, part of our [Password Manager Guides & Tutorials](/guides/) series, covers the safe methods for every situation.
 
 ## The Problem With How Most Families Share Passwords
 
