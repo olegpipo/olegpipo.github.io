@@ -1,8 +1,8 @@
 ---
-title: "Bitwarden Free vs Premium (2026)"
-description: "Bitwarden free vs premium features compared. Is Bitwarden Premium worth $10/year? See what you get and what you miss."
+title: "Bitwarden Free vs Premium: Is $10/Year Worth It? (2026)"
+description: "Bitwarden Free vs Premium compared feature by feature. See exactly what the free plan includes, what the $10/year Premium adds, and whether it's worth upgrading."
 date: 2026-03-06
-lastmod: 2026-03-06
+lastmod: 2026-07-01
 draft: false
 silo: "Comparisons"
 faq:

@@ -1,8 +1,8 @@
 ---
-title: "Bitwarden vs Proton Pass (2026)"
-description: "Bitwarden vs Proton Pass compared for 2026. Two open-source password managers with free tiers. Privacy, features, and pricing analyzed."
+title: "Bitwarden vs Proton Pass: Which Wins in 2026?"
+description: "Bitwarden vs Proton Pass compared: pricing, privacy, features, and email aliases. Two open-source password managers — see which is right for you in 2026."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-07-01
 draft: false
 silo: "Comparisons"
 faq:

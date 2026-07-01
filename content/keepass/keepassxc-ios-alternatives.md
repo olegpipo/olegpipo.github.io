@@ -1,8 +1,8 @@
 ---
-title: "KeePassXC on iOS: Best Alternatives"
-description: "KeePassXC has no iOS app. Here are the best KeePass-compatible alternatives for iPhone and iPad, with KDBX 4.0 support and autofill."
+title: "KeePassXC for iPhone: 3 Best iOS Alternatives (2026)"
+description: "KeePassXC has no iPhone or iPad app. Here are the 3 best KeePass apps for iOS — full KDBX 4.0, AutoFill, and Face ID — plus how to sync your .kdbx database."
 date: 2026-03-06
-lastmod: 2026-03-06
+lastmod: 2026-07-01
 draft: false
 silo: "KeePass & Open Standards"
 faq:
