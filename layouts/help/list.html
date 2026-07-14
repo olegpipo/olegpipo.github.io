@@ -1,0 +1,159 @@
+{{ define "main" }}
+<!-- Breadcrumb JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    }{{ if ne .RelPermalink "/" }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}"
+    }{{ end }}
+  ]
+}
+</script>
+
+{{ $groupOrder := slice "Getting Started" "Passwords & Entries" "2FA & Passkeys" "Sync" "Filling Passwords" "Settings" "Reference" }}
+{{ $groupIcons := dict
+  "Getting Started" `<path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/>`
+  "Passwords & Entries" `<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>`
+  "2FA & Passkeys" `<circle cx="9" cy="12" r="4"/><path d="M13 12h8"/><path d="M18 12v4"/><path d="M21 12v3"/>`
+  "Sync" `<path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/>`
+  "Filling Passwords" `<path d="M4 4h16v12H4z"/><path d="M2 20h20"/><path d="m8 9 2 2 4-4"/>`
+  "Settings" `<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10.09 3V3a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/>`
+  "Reference" `<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>`
+}}
+
+<section class="pv-article">
+  <!-- Breadcrumb Navigation -->
+  <nav class="pv-breadcrumb" aria-label="Breadcrumb">
+    <div class="pv-breadcrumb-inner">
+      <ol class="pv-breadcrumb-list">
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">{{ .Title }}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hub Header -->
+  <header class="pv-article-header">
+    <div class="pv-article-header-inner">
+      {{ with .Params.silo }}<div class="pv-section-label">{{ . }}</div>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="pv-article-subtitle">{{ . }}</p>{{ end }}
+      {{ $count := len .Pages }}
+      {{ if $count }}
+      <div class="pv-help-hub-meta">
+        <span class="pv-help-hub-stat">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          {{ $count }} chapter{{ if ne $count 1 }}s{{ end }}
+        </span>
+        <span class="pv-help-hub-stat">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+          iPhone &amp; Mac
+        </span>
+      </div>
+      {{ end }}
+    </div>
+  </header>
+
+  <!-- Hub Intro -->
+  {{ if .Content }}
+  <div class="pv-article-body pv-help-hub-body">
+    <div class="pv-article-body-inner">
+      <div class="pv-article-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+
+  <!-- Chapters, grouped -->
+  <section class="pv-section pv-help-groups">
+    <div class="pv-section-inner">
+      {{ $ctx := . }}
+      {{ $n := 0 }}
+      {{ range $groupOrder }}
+        {{ $group := . }}
+        {{ $pages := sort (where $ctx.Pages "Params.helpgroup" $group) "Weight" }}
+        {{ if $pages }}
+        {{ $n = add $n 1 }}
+        <div class="pv-help-group">
+          <div class="pv-help-group-head">
+            <span class="pv-help-group-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ index $groupIcons $group | safeHTML }}</svg>
+            </span>
+            <h2 class="pv-help-group-title">{{ $group }}</h2>
+            <span class="pv-help-group-count">{{ len $pages }}</span>
+          </div>
+          <div class="pv-help-grid">
+            {{ range $pages }}
+            <a class="pv-help-card pv-reveal" href="{{ .RelPermalink }}">
+              <h3 class="pv-help-card-title">{{ .Title }}</h3>
+              {{ with .Description }}<p class="pv-help-card-desc">{{ . }}</p>{{ end }}
+              <span class="pv-help-card-meta">
+                {{ .ReadingTime }} min read
+                <svg class="pv-help-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+
+      {{/* Safety net: any chapter whose helpgroup is missing or unrecognised still gets listed. */}}
+      {{ $rest := sort (where $ctx.Pages "Params.helpgroup" "not in" $groupOrder) "Weight" }}
+      {{ if $rest }}
+      <div class="pv-help-group">
+        <div class="pv-help-group-head">
+          <span class="pv-help-group-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16"/></svg>
+          </span>
+          <h2 class="pv-help-group-title">More Chapters</h2>
+          <span class="pv-help-group-count">{{ len $rest }}</span>
+        </div>
+        <div class="pv-help-grid">
+          {{ range $rest }}
+          <a class="pv-help-card pv-reveal" href="{{ .RelPermalink }}">
+            <h3 class="pv-help-card-title">{{ .Title }}</h3>
+            {{ with .Description }}<p class="pv-help-card-desc">{{ . }}</p>{{ end }}
+            <span class="pv-help-card-meta">
+              {{ .ReadingTime }} min read
+              <svg class="pv-help-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="pv-section pv-article-cta">
+    <div class="pv-section-inner">
+      <div class="pv-article-cta-box">
+        <img class="pv-article-cta-logo" src="/img/panicvault.png" alt="PanicVault" width="64" height="64">
+        <h2>Protect Your Passwords with PanicVault</h2>
+        <p>A secure, offline-first password manager using the open KeePass format. Your passwords, your file, your control.</p>
+        <a class="pv-cta-button" href="https://apps.apple.com/app/id6759188575">
+          <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on the App Store
+        </a>
+      </div>
+    </div>
+  </section>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+{{ partial "reveal-script.html" . }}
+{{ end }}
