@@ -383,6 +383,142 @@
   </div>
 </section>
 
+<!-- Continuous Security Assurance -->
+<section id="assurance" class="pv-section pv-assurance">
+  <div class="pv-assurance-glow" aria-hidden="true"></div>
+  <div class="pv-section-inner">
+    <div class="pv-section-label">Continuous Assurance</div>
+    <h2>Re-audited every time<br>the code changes</h2>
+    <p class="pv-section-subtitle">Most apps get a security review once &mdash; if ever. PanicVault is reviewed again on <em>every single change</em>, automatically, before that change is allowed anywhere near your vault.</p>
+
+    <!-- Pipeline -->
+    <div class="pv-pipeline" aria-label="PanicVault continuous integration security pipeline">
+
+      <div class="pv-stage pv-reveal">
+        <div class="pv-stage-head">
+          <div class="pv-stage-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="1.05" y1="12" x2="7" y2="12"/><line x1="17.01" y1="12" x2="22.96" y2="12"/></svg>
+          </div>
+          <span class="pv-stage-index">01</span>
+        </div>
+        <h3>Every change</h3>
+        <p>No code goes straight in. Each change opens as a pull request that has to earn its way through the checks below.</p>
+        <code class="pv-stage-meta">pull request &middot; required checks</code>
+      </div>
+
+      <div class="pv-stage pv-reveal">
+        <div class="pv-stage-head">
+          <div class="pv-stage-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <span class="pv-stage-index">02</span>
+        </div>
+        <h3>Static analysis</h3>
+        <p>A scanner reads the whole codebase and flags unsafe patterns &mdash; before any human even looks at it.</p>
+        <code class="pv-stage-meta">SonarQube SAST &middot; CWE Top 25</code>
+      </div>
+
+      <div class="pv-stage pv-stage--ai pv-reveal">
+        <div class="pv-stage-head">
+          <div class="pv-stage-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><line x1="9" y1="2" x2="9" y2="5"/><line x1="15" y1="2" x2="15" y2="5"/><line x1="9" y1="19" x2="9" y2="22"/><line x1="15" y1="19" x2="15" y2="22"/><line x1="2" y1="9" x2="5" y2="9"/><line x1="2" y1="15" x2="5" y2="15"/><line x1="19" y1="9" x2="22" y2="9"/><line x1="19" y1="15" x2="22" y2="15"/></svg>
+          </div>
+          <span class="pv-stage-index">03</span>
+        </div>
+        <h3>AI security audit</h3>
+        <p>Fable&nbsp;5 &mdash; Anthropic's most advanced model for cybersecurity reasoning &mdash; reads the change the way an attacker would, hunting for whole classes of vulnerability, not typos.</p>
+        <code class="pv-stage-meta">Fable 5 &middot; adversarial diff review</code>
+      </div>
+
+      <div class="pv-stage pv-reveal">
+        <div class="pv-stage-head">
+          <div class="pv-stage-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <span class="pv-stage-index">04</span>
+        </div>
+        <h3>Test suite</h3>
+        <p>Every line of code has to be exercised by a test. Not most of it. All of it &mdash; or the build stops here.</p>
+        <code class="pv-stage-meta">coverage gate: 100% &mdash; blocking</code>
+      </div>
+
+      <div class="pv-stage pv-reveal">
+        <div class="pv-stage-head">
+          <div class="pv-stage-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>
+          </div>
+          <span class="pv-stage-index">05</span>
+        </div>
+        <h3>Merge &amp; ship</h3>
+        <p>Only if everything above is green. One red light and the change cannot be merged &mdash; there is no override button.</p>
+        <code class="pv-stage-meta">all checks green &middot; else: blocked</code>
+      </div>
+
+    </div>
+
+    <!-- Gate status panel -->
+    <div class="pv-gate pv-reveal">
+      <div class="pv-gate-head">
+        <span class="pv-gate-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <code class="pv-gate-path">panicvault &middot; branch: main &middot; ci pipeline</code>
+        <span class="pv-gate-status">Quality gate: passed</span>
+      </div>
+      <div class="pv-gate-metrics">
+        <div class="pv-gate-metric">
+          <div class="pv-gate-figure">100%</div>
+          <div class="pv-gate-name">Line coverage</div>
+          <code class="pv-gate-sub">enforced at merge</code>
+        </div>
+        <div class="pv-gate-metric">
+          <div class="pv-gate-figure">0</div>
+          <div class="pv-gate-name">Open gate violations</div>
+          <code class="pv-gate-sub">SonarQube quality gate</code>
+        </div>
+        <div class="pv-gate-metric">
+          <div class="pv-gate-figure pv-gate-figure--word">every commit</div>
+          <div class="pv-gate-name">AI security review</div>
+          <code class="pv-gate-sub">pre-merge &middot; adversarial</code>
+        </div>
+        <div class="pv-gate-metric">
+          <div class="pv-gate-figure pv-gate-figure--word">blocking</div>
+          <div class="pv-gate-name">Gate policy</div>
+          <code class="pv-gate-sub">fail &rarr; no merge, no ship</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Standards alignment -->
+    <div class="pv-standards pv-reveal">
+      <div class="pv-standards-label">Aligned with</div>
+      <div class="pv-standards-tags">
+        <span class="pv-standards-tag">OWASP MASVS</span>
+        <span class="pv-standards-tag">OWASP ASVS</span>
+        <span class="pv-standards-tag">CWE Top 25</span>
+        <span class="pv-standards-tag">NIST SSDF (SP 800-218)</span>
+        <span class="pv-standards-tag">SLSA build levels</span>
+      </div>
+      <p class="pv-standards-note">Controls mapped to the frameworks security teams actually audit against. We don't wave a certificate at you &mdash; we show you the gate, and the gate runs on every commit.</p>
+    </div>
+
+    <a class="pv-assurance-link pv-reveal" href="/engineering/">Read how we build it <span aria-hidden="true">&rarr;</span></a>
+
+  </div>
+</section>
+
+<!-- Assurance Download CTA -->
+<section class="pv-assurance-cta">
+  <div class="pv-assurance-cta-inner">
+    <span class="pv-assurance-cta-pill"><i aria-hidden="true"></i>All gates green</span>
+    <h2>The build on your phone<br>passed every gate.</h2>
+    <p>Scanned, adversarially reviewed, and fully tested before it ever shipped &mdash; then handed to you as an encrypted file that only you can open.</p>
+    <a class="pv-cta-button" href="https://apps.apple.com/app/id6759188575">
+      <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Download on the App Store
+    </a>
+    <code class="pv-assurance-cta-note">AES-256 / ChaCha20 &middot; Argon2id &middot; Secure Enclave &middot; offline-first</code>
+  </div>
+</section>
+
 <!-- No Lock-in -->
 <section class="pv-section pv-open">
   <div class="pv-section-inner">
@@ -533,6 +669,14 @@
         </div>
         <h3>Trends &amp; Insights</h3>
         <p>The future of authentication and cybersecurity</p>
+      </a>
+
+      <a href="/engineering/" class="pv-resource-card pv-reveal">
+        <div class="pv-resource-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <h3>Engineering &amp; Assurance</h3>
+        <p>How PanicVault is built, tested, and audited on every commit</p>
       </a>
 
     </div>

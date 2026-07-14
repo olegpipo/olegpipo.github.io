@@ -2374,3 +2374,498 @@ body {
     padding: 2rem 1.5rem 1.75rem;
   }
 }
+
+/* ── Continuous Security Assurance ── */
+
+.pv-assurance {
+  --pv-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  --pv-pass: #3fd68a;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px) 0 0 / 100% 3px,
+    var(--pv-bg);
+  border-bottom: 1px solid var(--pv-border);
+}
+
+.pv-assurance-glow {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 420px;
+  background: radial-gradient(ellipse, var(--pv-red-glow) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.pv-assurance .pv-section-inner {
+  position: relative;
+  text-align: center;
+}
+
+.pv-assurance .pv-section-subtitle {
+  max-width: 640px;
+}
+
+.pv-assurance .pv-section-subtitle em {
+  font-style: normal;
+  color: var(--pv-text);
+  border-bottom: 1px solid rgba(230, 57, 70, 0.5);
+}
+
+/* Pipeline */
+
+.pv-pipeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.pv-stage {
+  position: relative;
+  background: var(--pv-surface);
+  border: 1px solid var(--pv-border);
+  border-radius: var(--pv-radius);
+  padding: 1.25rem 1.15rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s, transform 0.3s, background 0.3s;
+}
+
+.pv-stage::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 1.1rem;
+  right: 1.1rem;
+  height: 2px;
+  border-radius: 0 0 2px 2px;
+  background: linear-gradient(90deg, transparent, var(--pv-red), transparent);
+  opacity: 0.35;
+  transition: opacity 0.3s;
+}
+
+.pv-stage:hover {
+  background: var(--pv-surface-2);
+  border-color: rgba(230, 57, 70, 0.35);
+  transform: translateY(-3px);
+}
+
+.pv-stage:hover::before {
+  opacity: 1;
+}
+
+/* connector chevron between stages */
+.pv-stage::after {
+  content: '';
+  position: absolute;
+  top: 2.35rem;
+  right: -0.82rem;
+  width: 8px;
+  height: 8px;
+  border-top: 1.5px solid var(--pv-red);
+  border-right: 1.5px solid var(--pv-red);
+  transform: rotate(45deg);
+  opacity: 0.5;
+}
+
+.pv-stage:last-child::after {
+  display: none;
+}
+
+.pv-stage-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.9rem;
+}
+
+.pv-stage-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--pv-radius-sm);
+  background: rgba(230, 57, 70, 0.07);
+  border: 1px solid rgba(230, 57, 70, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pv-stage-index {
+  font-family: var(--pv-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--pv-text-muted);
+  letter-spacing: 0.08em;
+}
+
+.pv-stage h3 {
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.pv-stage p {
+  color: var(--pv-text-dim);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.pv-stage-meta {
+  display: block;
+  font-family: var(--pv-mono);
+  font-size: 0.68rem;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--pv-red);
+  background: rgba(230, 57, 70, 0.06);
+  border: 1px solid rgba(230, 57, 70, 0.14);
+  border-radius: 6px;
+  padding: 0.4rem 0.55rem;
+  word-break: break-word;
+}
+
+.pv-stage--ai {
+  border-color: rgba(230, 57, 70, 0.32);
+  box-shadow: 0 0 0 1px rgba(230, 57, 70, 0.06), 0 12px 40px rgba(230, 57, 70, 0.07);
+}
+
+.pv-stage--ai::before {
+  opacity: 0.9;
+}
+
+/* stagger pipeline children */
+.pv-pipeline .pv-reveal:nth-child(2) { transition-delay: 0.07s; }
+.pv-pipeline .pv-reveal:nth-child(3) { transition-delay: 0.14s; }
+.pv-pipeline .pv-reveal:nth-child(4) { transition-delay: 0.21s; }
+.pv-pipeline .pv-reveal:nth-child(5) { transition-delay: 0.28s; }
+
+/* Gate status panel */
+
+.pv-gate {
+  border: 1px solid var(--pv-border);
+  border-radius: var(--pv-radius);
+  background: var(--pv-surface);
+  overflow: hidden;
+  text-align: left;
+}
+
+.pv-gate-head {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.7rem 1.1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--pv-border);
+}
+
+.pv-gate-dots {
+  display: inline-flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.pv-gate-dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--pv-border);
+}
+
+.pv-gate-dots i:first-child { background: rgba(230, 57, 70, 0.55); }
+
+.pv-gate-path {
+  font-family: var(--pv-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--pv-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pv-gate-status {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--pv-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--pv-pass);
+  background: rgba(63, 214, 138, 0.08);
+  border: 1px solid rgba(63, 214, 138, 0.25);
+  border-radius: 100px;
+  padding: 0.25rem 0.7rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pv-gate-status::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pv-pass);
+  box-shadow: 0 0 8px var(--pv-pass);
+}
+
+.pv-gate-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pv-gate-metric {
+  padding: 1.6rem 1.3rem;
+  border-right: 1px solid var(--pv-border-subtle);
+}
+
+.pv-gate-metric:last-child {
+  border-right: none;
+}
+
+.pv-gate-figure {
+  font-family: var(--pv-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--pv-red);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.pv-gate-figure--word {
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.32rem;
+}
+
+.pv-gate-name {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--pv-text);
+  margin-bottom: 0.2rem;
+}
+
+.pv-gate-sub {
+  display: block;
+  font-family: var(--pv-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--pv-text-muted);
+}
+
+/* Standards alignment */
+
+.pv-standards {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.pv-standards-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--pv-text-muted);
+  margin-bottom: 1rem;
+}
+
+.pv-standards-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.pv-standards-tag {
+  font-family: var(--pv-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--pv-text-dim);
+  background: var(--pv-surface);
+  border: 1px solid var(--pv-border);
+  border-radius: 8px;
+  padding: 0.45rem 0.85rem;
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.pv-standards-tag:hover {
+  border-color: rgba(230, 57, 70, 0.45);
+  color: var(--pv-text);
+}
+
+.pv-standards-note {
+  max-width: 620px;
+  margin: 1.25rem auto 0;
+  color: var(--pv-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  font-weight: 600;
+}
+
+.pv-assurance-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 2.5rem;
+  color: var(--pv-red);
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(230, 57, 70, 0.3);
+  padding-bottom: 0.15rem;
+  transition: color 0.25s, border-color 0.25s, gap 0.25s;
+}
+
+.pv-assurance-link:hover {
+  color: var(--pv-red-light);
+  border-color: var(--pv-red-light);
+  gap: 0.6rem;
+}
+
+/* ── Assurance Download CTA ── */
+
+.pv-assurance-cta {
+  --pv-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  --pv-pass: #3fd68a;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 4.5rem 1.5rem;
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(230, 57, 70, 0.1) 0%, transparent 60%),
+    var(--pv-surface);
+  border-bottom: 1px solid var(--pv-border);
+}
+
+.pv-assurance-cta-inner {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.pv-assurance-cta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--pv-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pv-pass);
+  background: rgba(63, 214, 138, 0.08);
+  border: 1px solid rgba(63, 214, 138, 0.25);
+  border-radius: 100px;
+  padding: 0.3rem 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.pv-assurance-cta-pill i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pv-pass);
+  box-shadow: 0 0 8px var(--pv-pass);
+}
+
+.pv-assurance-cta h2 {
+  font-size: clamp(1.6rem, 3.6vw, 2.3rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.9rem;
+}
+
+.pv-assurance-cta > .pv-assurance-cta-inner > p {
+  color: var(--pv-text-dim);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.7;
+  margin: 0 auto 1.9rem;
+  max-width: 560px;
+}
+
+.pv-assurance-cta .pv-cta-button {
+  animation: none;
+}
+
+.pv-assurance-cta-note {
+  display: block;
+  margin-top: 1.35rem;
+  font-family: var(--pv-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--pv-text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* Assurance responsive */
+
+@media (max-width: 900px) {
+  .pv-pipeline {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pv-stage::after {
+    top: auto;
+    right: auto;
+    bottom: -1.1rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(135deg);
+  }
+  .pv-stage p {
+    flex-grow: 0;
+  }
+  .pv-gate-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pv-gate-metric:nth-child(2) {
+    border-right: none;
+  }
+  .pv-gate-metric:nth-child(1),
+  .pv-gate-metric:nth-child(2) {
+    border-bottom: 1px solid var(--pv-border-subtle);
+  }
+}
+
+@media (max-width: 600px) {
+  .pv-gate-head {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .pv-gate-status {
+    margin-left: 0;
+  }
+  .pv-gate-metrics {
+    grid-template-columns: 1fr;
+  }
+  .pv-gate-metric {
+    border-right: none;
+    border-bottom: 1px solid var(--pv-border-subtle);
+    padding: 1.3rem 1.2rem;
+  }
+  .pv-gate-metric:last-child {
+    border-bottom: none;
+  }
+  .pv-assurance-cta {
+    padding: 3.5rem 1.25rem;
+  }
+  .pv-standards-note {
+    font-size: 0.8rem;
+  }
+}
