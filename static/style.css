@@ -2876,11 +2876,12 @@ body::after {
 }
 
 .pv-bh-hero-logo {
+  display: block;
   width: 80px;
   height: 80px;
   border-radius: 18px;
   box-shadow: 0 10px 26px rgba(33, 27, 18, 0.22);
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
 }
 
 .pv-bh-hero h1 {
