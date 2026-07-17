@@ -1,0 +1,29 @@
+<div class="pv-appbar" id="pv-appbar" role="complementary" aria-label="Get PanicVault">
+  <img src="/img/panicvault.png" alt="" width="38" height="38">
+  <div class="pv-appbar-text">
+    <strong>PanicVault</strong>
+    <span>KeePass password manager &middot; no subscription</span>
+  </div>
+  <a class="pv-appbar-btn" href="https://apps.apple.com/app/id6759188575">Get</a>
+  <button class="pv-appbar-close" type="button" aria-label="Dismiss">&#10005;</button>
+</div>
+<script>
+(function() {
+  var bar = document.getElementById('pv-appbar');
+  if (!bar) return;
+  try { if (sessionStorage.getItem('pv-appbar-dismissed')) return; } catch (e) {}
+  var shown = false;
+  function onScroll() {
+    if (!shown && window.scrollY > 480) {
+      shown = true;
+      bar.classList.add('pv-appbar-show');
+      window.removeEventListener('scroll', onScroll);
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  bar.querySelector('.pv-appbar-close').addEventListener('click', function() {
+    bar.classList.remove('pv-appbar-show');
+    try { sessionStorage.setItem('pv-appbar-dismissed', '1'); } catch (e) {}
+  });
+})();
+</script>

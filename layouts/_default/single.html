@@ -117,26 +117,48 @@
 
   <!-- Article Body -->
   <div class="pv-article-body">
-    <div class="pv-article-body-inner">
+    <div class="pv-article-body-inner pv-has-rail">
+      <div class="pv-article-main">
 
-      <!-- Table of Contents -->
-      {{ if .TableOfContents }}
-      {{ $toc := .TableOfContents }}
-      {{ if gt (len $toc) 100 }}
-      <details class="pv-toc" open>
-        <summary class="pv-toc-title">Table of Contents</summary>
-        <div class="pv-toc-content">
-          {{ $toc }}
+        <!-- Table of Contents -->
+        {{ if .TableOfContents }}
+        {{ $toc := .TableOfContents }}
+        {{ if gt (len $toc) 100 }}
+        <details class="pv-toc" open>
+          <summary class="pv-toc-title">Table of Contents</summary>
+          <div class="pv-toc-content">
+            {{ $toc }}
+          </div>
+        </details>
+        {{ end }}
+        {{ end }}
+
+        <!-- Main Content (with an inline CTA injected before the 3rd h2, or the 2nd if shorter) -->
+        {{ $ctaHTML := printf "%s" (partial "cta-inline.html" .) }}
+        {{ $parts := split (printf "%s" .Content) "<h2" }}
+        {{ $n := len $parts }}
+        <div class="pv-article-content">
+          {{ if ge $n 3 }}
+            {{ $idx := 3 }}
+            {{ if lt $n 4 }}{{ $idx = 2 }}{{ end }}
+            {{ $out := "" }}
+            {{ range $i, $p := $parts }}
+              {{ if eq $i 0 }}
+                {{ $out = $p }}
+              {{ else }}
+                {{ if eq $i $idx }}{{ $out = printf "%s%s" $out $ctaHTML }}{{ end }}
+                {{ $out = printf "%s<h2%s" $out $p }}
+              {{ end }}
+            {{ end }}
+            {{ $out | safeHTML }}
+          {{ else }}
+            {{ .Content }}
+          {{ end }}
         </div>
-      </details>
-      {{ end }}
-      {{ end }}
 
-      <!-- Main Content -->
-      <div class="pv-article-content">
-        {{ .Content }}
       </div>
 
+      {{ partial "cta-rail.html" . }}
     </div>
   </div>
 
@@ -180,4 +202,5 @@
 
 {{ define "scripts" }}
 {{ partial "reveal-script.html" . }}
+{{ partial "appbar.html" . }}
 {{ end }}
