@@ -498,7 +498,8 @@ body::after {
   text-align: left;
 }
 
-.pv-section-label::before {
+/* section numbers only where the page reads as one document: the homepage */
+.pv-home .pv-section-label::before {
   counter-increment: pvsec;
   content: "No." counter(pvsec, decimal-leading-zero);
   color: var(--pv-ink-faint);
@@ -513,8 +514,16 @@ body::after {
   transform: translateY(-4px);
 }
 
-/* article headers stay centred, certificate-style */
+/* article headers stay centred, certificate-style: — LABEL — */
 .pv-article-header .pv-section-label { justify-content: center; }
+
+.pv-article-header .pv-section-label::before {
+  content: "";
+  flex: 0 0 34px;
+  border-bottom: 1px solid var(--pv-rule-strong);
+  transform: translateY(-4px);
+}
+
 .pv-article-header .pv-section-label::after { flex: 0 0 34px; }
 
 /* ── Sections (general): asymmetric editorial grid ── */
