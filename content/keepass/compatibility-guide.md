@@ -2,7 +2,7 @@
 title: "KeePass KDBX Compatibility: Apps & Versions"
 description: "Which KeePass apps support KDBX 4.0? Full compatibility chart for iOS, Android, Mac & Windows. Avoid sync-breaking surprises."
 date: 2026-02-13
-lastmod: 2026-03-06
+lastmod: 2026-07-17
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -168,7 +168,7 @@ You must use an older application that only supports KDBX 3.1.
 
 ## KeePass on iPhone: Which Apps Work?
 
-A common question is whether KeePassXC works on iPhone. The short answer is no -- KeePassXC is a desktop application for Windows, macOS, and Linux, and the developers have not released a KeePass iOS app. If you use KeePassXC on your computer and want to access the same database on your iPhone, you need a separate iOS-compatible application.
+A common question is whether KeePassXC works on iPhone. The short answer is no -- KeePassXC is a desktop application for Windows, macOS, and Linux, and the developers have not released a KeePass iOS app. If you use KeePassXC on your computer and want to access the same database on your iPhone, you need a separate iOS-compatible application. Our guide to [KeePassXC alternatives for iPhone and iPad](/keepass/keepassxc-ios-alternatives/) walks through each option and how to sync your existing `.kdbx` file to iOS.
 
 The three best options for using KeePass on iPhone are **Strongbox**, **KeePassium**, and **PanicVault**. All three fully support KDBX 4.0, including Argon2d key derivation and ChaCha20 encryption, so you can open a KDBX file on iPhone without converting or downgrading your database. Each app also supports iOS AutoFill, Face ID or Touch ID unlock, and Apple Watch integration. For a detailed comparison of these options, see our guide to [KeePass apps for Apple devices](/compare/keepass-apps-apple/).
 

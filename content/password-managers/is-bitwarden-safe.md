@@ -2,14 +2,14 @@
 title: "Is Bitwarden Safe? (2026)"
 description: "Security analysis of Bitwarden: open-source code, AES-256 encryption, Cure53 audits, zero-knowledge architecture, and breach history reviewed."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-07-17
 draft: false
 silo: "Password Managers"
 faq:
   - q: "Has Bitwarden ever been hacked?"
     a: "No. As of 2026, Bitwarden has not suffered a data breach. Its open-source codebase allows continuous public scrutiny, and regular third-party audits by firms like Cure53 have not uncovered critical vulnerabilities in production."
   - q: "Is Bitwarden safe for business use?"
-    a: "Yes. Bitwarden offers Teams and Enterprise plans with SSO integration, directory sync, admin policies, and event logging. Its zero-knowledge architecture and SOC 2 Type 2 compliance make it suitable for organizations with security requirements."
+    a: "Yes. Bitwarden offers Teams and Enterprise plans with directory sync, admin policies, and event logging. Login with SSO is an Enterprise-plan feature, while SCIM provisioning is available on both Teams and Enterprise. Its zero-knowledge architecture and SOC 2 Type 2 compliance make it suitable for organizations with security requirements."
   - q: "Can Bitwarden see my passwords?"
     a: "No. Bitwarden uses zero-knowledge encryption. Your vault is encrypted on your device before syncing to Bitwarden's servers. Bitwarden never has access to your master password or your unencrypted vault data."
   - q: "Is Bitwarden safer than LastPass?"

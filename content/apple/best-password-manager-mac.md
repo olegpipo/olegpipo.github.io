@@ -2,7 +2,7 @@
 title: "Best Password Manager for Mac in 2026"
 description: "In-depth comparison of the best password managers for macOS in 2026 -- 1Password, Bitwarden, KeePassXC, PanicVault, Dashlane, and Apple Passwords -- evaluated on security, usability, integration, price, and data portability."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-07-17
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -73,7 +73,7 @@ KeePassXC is the leading desktop KeePass client for macOS. It is free, open sour
 
 **Usability**: KeePassXC is powerful but demands more from the user than cloud-based alternatives. There is no automatic sync between devices -- you need to set up your own sync solution using iCloud Drive, Syncthing, or another file sync tool. The browser extension (KeePassXC-Browser) works with Chrome, Firefox, and Chromium-based browsers but does not support Safari. Autofill requires the browser extension and a running KeePassXC instance.
 
-**Integration**: Touch ID for database unlock is supported. No Safari extension is a notable gap on macOS. No system-level autofill integration. KeePassXC lives as a standalone app rather than integrating into the OS in the way Mac users typically expect.
+**Integration**: Touch ID for database unlock is supported. No Safari extension is a notable gap on macOS. No system-level autofill integration. KeePassXC lives as a standalone app rather than integrating into the OS in the way Mac users typically expect. There is also no KeePassXC app for iOS, so pairing it with your iPhone means choosing one of the [KeePassXC alternatives for iOS](/keepass/keepassxc-ios-alternatives/) to open the same database.
 
 **Price**: Completely free. No subscriptions, no premium tiers, no upsells.
 

@@ -2,7 +2,7 @@
 title: "Every App That Opens KeePass Databases: The Complete Compatibility Guide"
 description: "Complete guide to every desktop, mobile, and browser app that opens KeePass KDBX databases, with feature comparisons and platform recommendations."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-07-17
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -198,7 +198,7 @@ The critical point is that **you control the sync mechanism**. Unlike [proprieta
 
 ### For iPhone and iPad Users
 
-**Strongbox** for the richest feature set and deepest Apple ecosystem integration. **PanicVault** for a modern, intuitive native experience with full KDBX compatibility. **KeePassium** for a more security-focused, streamlined experience.
+**Strongbox** for the richest feature set and deepest Apple ecosystem integration. **PanicVault** for a modern, intuitive native experience with full KDBX compatibility. **KeePassium** for a more security-focused, streamlined experience. Since KeePassXC itself has no iOS app, see our comparison of [KeePassXC alternatives for iPhone](/keepass/keepassxc-ios-alternatives/) if you are moving a desktop database onto your phone.
 
 ### For Multi-Platform Users
 
