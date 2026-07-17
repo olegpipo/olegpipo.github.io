@@ -1819,6 +1819,7 @@ body::after {
 
 .pv-inline-cta .pv-inline-cta-btn:hover {
   background: var(--pv-red);
+  color: var(--pv-paper-high);
   transform: translateY(-1px);
 }
 
