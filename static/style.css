@@ -668,16 +668,23 @@ body::after {
   animation-play-state: paused;
 }
 
+/* mounted like plates in an album: white mat matching the assets,
+   sharp print corners, deeper bottom margin, hand-mounted tilt */
 .pv-screenshots-track img {
   display: block;
   width: auto;
-  border-radius: 10px;
+  padding: 9px 9px 16px;
+  background: #ffffff;
   border: 1px solid var(--pv-rule-strong);
-  background: var(--pv-paper-high);
-  box-shadow: 0 14px 30px rgba(60, 48, 24, 0.14), 0 3px 8px rgba(60, 48, 24, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 12px 26px rgba(60, 48, 24, 0.16), 0 2px 6px rgba(60, 48, 24, 0.1);
   user-select: none;
   -webkit-user-select: none;
 }
+
+.pv-screenshots-track img:nth-child(odd) { transform: rotate(-0.4deg) translateY(3px); }
+.pv-screenshots-track img:nth-child(even) { transform: rotate(0.35deg); }
+.pv-screenshots-track img:nth-child(3n) { transform: rotate(0.15deg) translateY(5px); }
 
 .pv-screenshots-carousel--iphone .pv-screenshots-track img { height: 430px; }
 .pv-screenshots-carousel--mac .pv-screenshots-track img { height: 330px; }
