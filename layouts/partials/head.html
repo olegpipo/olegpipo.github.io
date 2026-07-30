@@ -11,8 +11,17 @@
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="author" content="PanicVault">
 <link rel="canonical" href="{{ .Permalink }}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{{- /* Fonts are self-hosted (see the header of static/style.css). Preload only the
+       three faces first paint actually needs on every page: Fraunces normal (every
+       h1/h2), Libre Franklin normal (all body copy) and IBM Plex Mono 500 (the
+       .pv-marquee ticker, which is the LCP element on the homepage, plus the eyebrow
+       labels). Italic and the other mono weights load on demand via font-display:swap
+       rather than competing with the LCP resource. crossorigin is mandatory even
+       same-origin — fonts are fetched in CORS mode and the preload is discarded
+       without it. */ -}}
+<link rel="preload" href="/fonts/fraunces-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/libre-franklin-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/ibm-plex-mono-500-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" href="/img/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
