@@ -18,8 +18,13 @@
   /* ink */
   --pv-ink: #211b12;
   --pv-ink-soft: #4d4536;
-  --pv-ink-dim: #7d735f;
-  --pv-ink-faint: #b0a48b;
+  /* --pv-ink-dim carries small body/meta text: >= 4.5:1 on every paper tone
+     (paper 5.18, dip 4.90, deep 4.72, high 5.59) — WCAG AA normal text. */
+  --pv-ink-dim: #6e6450;
+  /* --pv-ink-faint is the quiet tier: >= 3:1 on every paper tone
+     (paper 3.45, dip 3.27, deep 3.15, high 3.72). Valid for LARGE text
+     (>= 24px) and UI boundaries (WCAG 1.4.11) only — never small text. */
+  --pv-ink-faint: #8c8069;
   /* rules */
   --pv-rule: #ddd3bd;
   --pv-rule-strong: #c2b697;
@@ -502,7 +507,7 @@ body::after {
 .pv-home .pv-section-label::before {
   counter-increment: pvsec;
   content: "No." counter(pvsec, decimal-leading-zero);
-  color: var(--pv-ink-faint);
+  color: var(--pv-ink-dim);
   letter-spacing: 0.08em;
 }
 
@@ -1534,7 +1539,7 @@ body::after {
 .pv-footer-copy {
   font-family: var(--pv-mono);
   font-size: 0.68rem;
-  color: var(--pv-ink-faint);
+  color: var(--pv-ink-dim);
 }
 
 /* ── Breadcrumb ── */
@@ -1913,7 +1918,7 @@ body::after {
   background: none;
   font-size: 1.1rem;
   line-height: 1;
-  color: var(--pv-ink-faint);
+  color: var(--pv-ink-dim);
   padding: 6px;
   cursor: pointer;
 }
@@ -2345,7 +2350,7 @@ body::after {
   font-size: 0.66rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--pv-ink-faint);
+  color: var(--pv-ink-dim);
   margin-top: 8px;
 }
 
@@ -2526,7 +2531,7 @@ body::after {
   font-size: 0.66rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--pv-ink-faint);
+  color: var(--pv-ink-dim);
   margin-top: 8px;
 }
 
@@ -2772,7 +2777,7 @@ body::after {
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--pv-ink-faint);
+  color: var(--pv-ink-dim);
   margin-top: 14px;
 }
 
@@ -3038,7 +3043,7 @@ body::after {
   font-size: 0.66rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--pv-ink-faint);
+  color: var(--pv-ink-dim);
   margin-top: 12px;
 }
 
