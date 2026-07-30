@@ -24,6 +24,14 @@ enableRobotsTXT = true
   [build.buildStats]
     enable = false
 
+# Image processing (responsive WebP for screenshots and the app icon)
+[imaging]
+  resampleFilter = "Lanczos"
+  quality = 78
+  [imaging.exif]
+    disableDate = true
+    disableLatLong = true
+
 # Markup settings
 [markup]
   [markup.goldmark]

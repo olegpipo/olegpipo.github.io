@@ -1,0 +1,28 @@
+{{- /*
+  Responsive WebP screenshot for the homepage carousels.
+
+  Params:
+    file    (string) filename inside assets/screenshots/
+    alt     (string) alt text — pass "" for the aria-hidden marquee duplicates
+    widths  (slice of int) srcset candidate widths, smallest first
+    sizes   (string) the sizes attribute
+    hidden  (bool, optional) emit aria-hidden="true"
+
+  Both the visible copy and the duplicated marquee copy must be rendered with
+  identical widths/sizes so the browser fetches each URL exactly once.
+*/ -}}
+{{- $file := .file -}}
+{{- $res := resources.Get (printf "screenshots/%s" $file) -}}
+{{- if not $res -}}
+  {{- errorf "partials/screenshot.html: assets/screenshots/%s not found" $file -}}
+{{- end -}}
+{{- $variants := slice -}}
+{{- range $w := .widths -}}
+  {{- $variants = $variants | append ($res.Resize (printf "%dx webp q76 photo" $w)) -}}
+{{- end -}}
+{{- $primary := index $variants 0 -}}
+{{- $srcset := slice -}}
+{{- range $v := $variants -}}
+  {{- $srcset = $srcset | append (printf "%s %dw" $v.RelPermalink $v.Width) -}}
+{{- end -}}
+<img src="{{ $primary.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ .sizes }}" width="{{ $primary.Width }}" height="{{ $primary.Height }}" alt="{{ .alt }}" loading="lazy" decoding="async" draggable="false"{{ if .hidden }} aria-hidden="true"{{ end }}>

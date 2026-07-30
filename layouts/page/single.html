@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="pv-legal-header">
-  <img class="pv-legal-header-logo" src="/img/panicvault.png" alt="PanicVault">
+  {{ partial "app-icon.html" (dict "size" 56 "class" "pv-legal-header-logo" "alt" "PanicVault") }}
   <h1>{{ .Title }}</h1>
   <p>Last updated: {{ with .Params.lastUpdated }}{{ . }}{{ else }}{{ .Date.Format "January 2006" }}{{ end }}</p>
 </div>

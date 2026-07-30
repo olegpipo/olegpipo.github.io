@@ -3,7 +3,7 @@
 <section class="pv-bh-hero">
   <div class="pv-hero-bg-pattern"></div>
   <div class="pv-bh-hero-inner">
-    <img class="pv-bh-hero-logo" src="/img/panicvault.png" alt="PanicVault" width="96" height="96">
+    {{ partial "app-icon.html" (dict "size" 96 "class" "pv-bh-hero-logo" "alt" "PanicVault") }}
     <div class="pv-hero-badge">Browser Extension</div>
     <h1>Fill Passwords in Your Browser with <span class="pv-hero-vault">Touch ID</span></h1>
     <p class="pv-bh-hero-sub">PanicVault's browser extension brings AutoFill to Chromium browsers on Mac — powered by Touch ID and your local vault.</p>

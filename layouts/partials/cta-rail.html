@@ -2,7 +2,7 @@
   <div class="pv-rail-card">
     <div class="pv-rail-label">The app behind this guide</div>
     <div class="pv-rail-id">
-      <img src="/img/panicvault.png" alt="PanicVault app icon" width="44" height="44">
+      {{ partial "app-icon.html" (dict "size" 44 "alt" "PanicVault app icon" "loading" "lazy") }}
       <strong>PanicVault</strong>
     </div>
     <p>Your passwords, your file, your control. A secure, offline-first password manager using the open KeePass format.</p>

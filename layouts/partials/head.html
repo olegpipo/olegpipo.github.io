@@ -1,3 +1,9 @@
+{{- /* The master app icon now lives in assets/, but /img/panicvault.png must stay
+       reachable at that exact URL: og:image, twitter:image and the JSON-LD in the
+       article layouts all point at it and social caches are keyed on the URL.
+       Re-encode it and copy it back to the original path. */ -}}
+{{- $iconMaster := resources.Get "img/panicvault.png" -}}
+{{- $ogImage := resources.Copy "/img/panicvault.png" ($iconMaster.Resize "1024x1024 png") -}}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | PanicVault{{ end }}</title>
@@ -23,7 +29,9 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="PanicVault">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:image" content="{{ .Site.BaseURL }}img/panicvault.png">
+<meta property="og:image" content="{{ $ogImage.Permalink }}">
+<meta property="og:image:width" content="{{ $ogImage.Width }}">
+<meta property="og:image:height" content="{{ $ogImage.Height }}">
 {{ if .IsPage -}}
 {{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
 {{ with .Lastmod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
@@ -33,4 +41,4 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ .Site.BaseURL }}img/panicvault.png">
+<meta name="twitter:image" content="{{ $ogImage.Permalink }}">

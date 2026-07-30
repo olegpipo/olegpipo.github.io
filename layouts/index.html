@@ -1,4 +1,48 @@
 {{ define "main" }}
+{{- /* Carousel screenshot sets. Rendered twice per row (visible + aria-hidden
+       marquee duplicate) from the same data so both copies share one URL. */ -}}
+{{- $iphoneWidths := slice 260 380 -}}
+{{- $iphoneSizes := "(max-width: 600px) 126px, (max-width: 900px) 154px, 186px" -}}
+{{- $iphoneShots := slice
+  (dict "file" "iPhone1.png" "alt" "PanicVault on iPhone - Secure Password Manager")
+  (dict "file" "iPhone2.png" "alt" "PanicVault on iPhone - AutoFill Credentials in Safari")
+  (dict "file" "iPhone3.png" "alt" "PanicVault on iPhone - KeePass Compatible Vault")
+  (dict "file" "iPhone4.png" "alt" "PanicVault on iPhone - iCloud & Google Drive Sync")
+  (dict "file" "iPhone5.png" "alt" "PanicVault on iPhone - Biometric Unlock with Face ID")
+  (dict "file" "iPhone6.png" "alt" "PanicVault on iPhone - Password & Passphrase Generator")
+  (dict "file" "iPhone7.png" "alt" "PanicVault on iPhone - Built-in 2FA Authenticator")
+  (dict "file" "iPhone8.png" "alt" "PanicVault on iPhone - Store Passkeys & WebAuthn")
+  (dict "file" "iPhone9.png" "alt" "PanicVault on iPhone - Screenshot 9")
+  (dict "file" "iPhone10.png" "alt" "PanicVault on iPhone - Screenshot 10")
+-}}
+{{- $macWidths := slice 560 960 -}}
+{{- $macSizes := "(max-width: 600px) 277px, (max-width: 900px) 373px, 485px" -}}
+{{- $macShots := slice
+  (dict "file" "MacOS1.png" "alt" "PanicVault on Mac - Secure Password Manager")
+  (dict "file" "MacOS2.png" "alt" "PanicVault on Mac - AutoFill Credentials in Safari")
+  (dict "file" "MacOS3.png" "alt" "PanicVault on Mac - KeePass Compatible Vault")
+  (dict "file" "MacOS4.png" "alt" "PanicVault on Mac - iCloud & Google Drive Sync")
+  (dict "file" "MacOS5.png" "alt" "PanicVault on Mac - Biometric Unlock with Touch ID")
+  (dict "file" "MacOS6.png" "alt" "PanicVault on Mac - Password & Passphrase Generator")
+  (dict "file" "MacOS7.png" "alt" "PanicVault on Mac - Built-in 2FA Authenticator")
+  (dict "file" "MacOS8.png" "alt" "PanicVault on Mac - Store Passkeys & WebAuthn")
+  (dict "file" "MacOS9.png" "alt" "PanicVault on Mac - Screenshot 9")
+  (dict "file" "MacOS10.png" "alt" "PanicVault on Mac - Screenshot 10")
+-}}
+{{- $ipadWidths := slice 320 540 -}}
+{{- $ipadSizes := "(max-width: 600px) 160px, (max-width: 900px) 205px, 265px" -}}
+{{- $ipadShots := slice
+  (dict "file" "iPad1.png" "alt" "PanicVault on iPad - Secure Password Manager")
+  (dict "file" "iPad2.png" "alt" "PanicVault on iPad - AutoFill Credentials in Safari")
+  (dict "file" "iPad3.png" "alt" "PanicVault on iPad - KeePass Compatible Vault")
+  (dict "file" "iPad4.png" "alt" "PanicVault on iPad - iCloud & Google Drive Sync")
+  (dict "file" "iPad5.png" "alt" "PanicVault on iPad - Biometric Unlock with Face ID")
+  (dict "file" "iPad6.png" "alt" "PanicVault on iPad - Password & Passphrase Generator")
+  (dict "file" "iPad7.png" "alt" "PanicVault on iPad - Built-in 2FA Authenticator")
+  (dict "file" "iPad8.png" "alt" "PanicVault on iPad - Store Passkeys & WebAuthn")
+  (dict "file" "iPad9.png" "alt" "PanicVault on iPad - Screenshot 9")
+  (dict "file" "iPad10.png" "alt" "PanicVault on iPad - Screenshot 10")
+-}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -21,7 +65,7 @@
   <div class="pv-hero-bg-pattern"></div>
   <div class="pv-hero-inner">
     <div class="pv-hero-badge">Password Manager for Apple</div>
-    <img class="pv-hero-logo" src="/img/panicvault.png" alt="PanicVault">
+    {{ partial "app-icon.html" (dict "size" 84 "class" "pv-hero-logo" "alt" "PanicVault" "fetchpriority" "high") }}
     <h1>Panic<span class="pv-hero-vault">Vault</span></h1>
     <p class="pv-hero-subtitle">KeePass Sync &amp; AutoFill</p>
     <p class="pv-hero-tagline">Your passwords, your file, your control.<br>No subscription. No cloud lock-in.</p>
@@ -99,27 +143,10 @@
       </div>
       <div class="pv-screenshots-carousel pv-screenshots-carousel--iphone">
         <div class="pv-screenshots-track">
-          <img src="/screenshots/iPhone1.png" alt="PanicVault on iPhone - Secure Password Manager" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone2.png" alt="PanicVault on iPhone - AutoFill Credentials in Safari" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone3.png" alt="PanicVault on iPhone - KeePass Compatible Vault" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone4.png" alt="PanicVault on iPhone - iCloud &amp; Google Drive Sync" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone5.png" alt="PanicVault on iPhone - Biometric Unlock with Face ID" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone6.png" alt="PanicVault on iPhone - Password &amp; Passphrase Generator" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone7.png" alt="PanicVault on iPhone - Built-in 2FA Authenticator" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone8.png" alt="PanicVault on iPhone - Store Passkeys &amp; WebAuthn" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone9.png" alt="PanicVault on iPhone - Screenshot 9" loading="lazy" draggable="false">
-          <img src="/screenshots/iPhone10.png" alt="PanicVault on iPhone - Screenshot 10" loading="lazy" draggable="false">
-          <!-- Duplicated for infinite scroll -->
-          <img src="/screenshots/iPhone1.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone2.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone3.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone4.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone5.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone6.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone7.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone8.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone9.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPhone10.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
+          {{ range $iphoneShots }}{{ partial "screenshot.html" (dict "file" .file "alt" .alt "widths" $iphoneWidths "sizes" $iphoneSizes) }}
+          {{ end }}<!-- Duplicated for infinite scroll -->
+          {{ range $iphoneShots }}{{ partial "screenshot.html" (dict "file" .file "alt" "" "widths" $iphoneWidths "sizes" $iphoneSizes "hidden" true) }}
+          {{ end }}
         </div>
       </div>
     </div>
@@ -132,27 +159,10 @@
       </div>
       <div class="pv-screenshots-carousel pv-screenshots-carousel--mac">
         <div class="pv-screenshots-track">
-          <img src="/screenshots/MacOS1.png" alt="PanicVault on Mac - Secure Password Manager" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS2.png" alt="PanicVault on Mac - AutoFill Credentials in Safari" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS3.png" alt="PanicVault on Mac - KeePass Compatible Vault" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS4.png" alt="PanicVault on Mac - iCloud &amp; Google Drive Sync" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS5.png" alt="PanicVault on Mac - Biometric Unlock with Touch ID" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS6.png" alt="PanicVault on Mac - Password &amp; Passphrase Generator" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS7.png" alt="PanicVault on Mac - Built-in 2FA Authenticator" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS8.png" alt="PanicVault on Mac - Store Passkeys &amp; WebAuthn" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS9.png" alt="PanicVault on Mac - Screenshot 9" loading="lazy" draggable="false">
-          <img src="/screenshots/MacOS10.png" alt="PanicVault on Mac - Screenshot 10" loading="lazy" draggable="false">
-          <!-- Duplicated for infinite scroll -->
-          <img src="/screenshots/MacOS1.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS2.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS3.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS4.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS5.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS6.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS7.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS8.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS9.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/MacOS10.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
+          {{ range $macShots }}{{ partial "screenshot.html" (dict "file" .file "alt" .alt "widths" $macWidths "sizes" $macSizes) }}
+          {{ end }}<!-- Duplicated for infinite scroll -->
+          {{ range $macShots }}{{ partial "screenshot.html" (dict "file" .file "alt" "" "widths" $macWidths "sizes" $macSizes "hidden" true) }}
+          {{ end }}
         </div>
       </div>
     </div>
@@ -165,27 +175,10 @@
       </div>
       <div class="pv-screenshots-carousel pv-screenshots-carousel--ipad">
         <div class="pv-screenshots-track">
-          <img src="/screenshots/iPad1.png" alt="PanicVault on iPad - Secure Password Manager" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad2.png" alt="PanicVault on iPad - AutoFill Credentials in Safari" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad3.png" alt="PanicVault on iPad - KeePass Compatible Vault" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad4.png" alt="PanicVault on iPad - iCloud &amp; Google Drive Sync" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad5.png" alt="PanicVault on iPad - Biometric Unlock with Face ID" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad6.png" alt="PanicVault on iPad - Password &amp; Passphrase Generator" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad7.png" alt="PanicVault on iPad - Built-in 2FA Authenticator" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad8.png" alt="PanicVault on iPad - Store Passkeys &amp; WebAuthn" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad9.png" alt="PanicVault on iPad - Screenshot 9" loading="lazy" draggable="false">
-          <img src="/screenshots/iPad10.png" alt="PanicVault on iPad - Screenshot 10" loading="lazy" draggable="false">
-          <!-- Duplicated for infinite scroll -->
-          <img src="/screenshots/iPad1.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad2.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad3.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad4.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad5.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad6.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad7.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad8.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad9.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
-          <img src="/screenshots/iPad10.png" alt="" loading="lazy" draggable="false" aria-hidden="true">
+          {{ range $ipadShots }}{{ partial "screenshot.html" (dict "file" .file "alt" .alt "widths" $ipadWidths "sizes" $ipadSizes) }}
+          {{ end }}<!-- Duplicated for infinite scroll -->
+          {{ range $ipadShots }}{{ partial "screenshot.html" (dict "file" .file "alt" "" "widths" $ipadWidths "sizes" $ipadSizes "hidden" true) }}
+          {{ end }}
         </div>
       </div>
     </div>

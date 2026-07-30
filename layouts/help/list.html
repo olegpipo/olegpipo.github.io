@@ -141,7 +141,7 @@
   <section class="pv-section pv-article-cta">
     <div class="pv-section-inner">
       <div class="pv-article-cta-box">
-        <img class="pv-article-cta-logo" src="/img/panicvault.png" alt="PanicVault" width="64" height="64">
+        {{ partial "app-icon.html" (dict "size" 64 "class" "pv-article-cta-logo" "alt" "PanicVault" "loading" "lazy") }}
         <h2>Protect Your Passwords with PanicVault</h2>
         <p>A secure, offline-first password manager using the open KeePass format. Your passwords, your file, your control.</p>
         <a class="pv-cta-button" href="https://apps.apple.com/app/id6759188575">

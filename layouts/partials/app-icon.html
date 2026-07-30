@@ -1,0 +1,21 @@
+{{- /*
+  The PanicVault app icon, rendered as WebP at the size the call site actually
+  displays it, with a 2x variant for retina.
+
+  Params:
+    size          (int)    CSS px the icon is displayed at (largest across breakpoints)
+    alt           (string) alt text — pass "" for decorative uses
+    class         (string, optional) class attribute
+    loading       (string, optional) e.g. "lazy"; omitted entirely when not set
+    fetchpriority (string, optional) e.g. "high"
+*/ -}}
+{{- $size := .size -}}
+{{- $alt := "" -}}
+{{- if isset . "alt" }}{{ $alt = .alt }}{{ end -}}
+{{- $src := resources.Get "img/panicvault.png" -}}
+{{- if not $src -}}
+  {{- errorf "partials/app-icon.html: assets/img/panicvault.png not found" -}}
+{{- end -}}
+{{- $x1 := $src.Resize (printf "%dx%d webp q85" $size $size) -}}
+{{- $x2 := $src.Resize (printf "%dx%d webp q85" (mul $size 2) (mul $size 2)) -}}
+<img{{ with .class }} class="{{ . }}"{{ end }} src="{{ $x1.RelPermalink }}" srcset="{{ $x1.RelPermalink }} 1x, {{ $x2.RelPermalink }} 2x" width="{{ $x1.Width }}" height="{{ $x1.Height }}" alt="{{ $alt }}"{{ with .loading }} loading="{{ . }}"{{ end }} decoding="async"{{ with .fetchpriority }} fetchpriority="{{ . }}"{{ end }}>
