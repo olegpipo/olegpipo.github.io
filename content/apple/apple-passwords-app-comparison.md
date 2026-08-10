@@ -93,11 +93,11 @@ Apple Passwords alerts you to compromised passwords (passwords that appear in kn
 
 ### 1Password
 
-1Password excels where Apple Passwords is weakest: organization, cross-platform support, and breadth of stored item types. Vaults, tags, custom fields, secure documents, SSH key management, and team sharing make 1Password suitable for complex use cases. The trade-off is a $36/year subscription and a proprietary data format.
+1Password excels where Apple Passwords is weakest: organization, cross-platform support, and breadth of stored item types. Vaults, tags, custom fields, secure documents, SSH key management, and team sharing make 1Password suitable for complex use cases. The trade-off is a $36/year subscription and a proprietary data format. Our [1Password vs Apple Passwords](/compare/1password-vs-apple-passwords/) comparison walks through the pricing, security, and portability differences in full.
 
 ### Bitwarden
 
-Bitwarden matches Apple Passwords on price (free tier) while adding cross-platform support, open-source transparency, self-hosting capability, and better organizational features. The UI is less polished than both Apple Passwords and 1Password, but the value proposition is strong.
+Bitwarden matches Apple Passwords on price (free tier) while adding cross-platform support, open-source transparency, self-hosting capability, and better organizational features. The UI is less polished than both Apple Passwords and 1Password, but the value proposition is strong. For a feature-by-feature breakdown, see [Bitwarden vs Apple Passwords](/compare/bitwarden-vs-apple-passwords/).
 
 ### PanicVault
 

@@ -1,8 +1,8 @@
 ---
-title: "Best Password Manager for Seniors"
-description: "The best password managers for seniors in 2026. Simple setup, clear design, family sharing, emergency access, and reliable support compared."
+title: "Best Password Managers for Seniors (2026): 5 Simple Picks"
+description: "Five password managers ranked for older adults: simple setup, clear design, family sharing, and emergency access — plus how to help someone get set up."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-08-10
 draft: false
 silo: "Comparisons"
 faq:

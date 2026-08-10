@@ -185,7 +185,7 @@ One question that comes up in the Bitwarden free vs premium debate is whether Pr
 
 Understanding Bitwarden's free-vs-premium split is useful, but it is also worth knowing how other password managers handle the same features.
 
-**TOTP codes included free elsewhere.** Several password managers include TOTP at no extra cost: Apple Passwords (built-in to iOS/macOS), KeePassXC (free and open source), and PanicVault (one-time purchase, KeePass-compatible). If TOTP is your primary reason for considering Bitwarden Premium, you might instead choose a tool that includes it without a subscription. PanicVault, for example, is a native Apple app that stores TOTP codes alongside passwords in the open KDBX format, syncs via iCloud or Google Drive, and costs a one-time fee with no recurring charges.
+**TOTP codes included free elsewhere.** Several password managers include TOTP at no extra cost: Apple Passwords (built-in to iOS/macOS -- see [Bitwarden vs Apple Passwords](/compare/bitwarden-vs-apple-passwords/)), KeePassXC (free and open source), and PanicVault (one-time purchase, KeePass-compatible). If TOTP is your primary reason for considering Bitwarden Premium, you might instead choose a tool that includes it without a subscription. PanicVault, for example, is a native Apple app that stores TOTP codes alongside passwords in the open KDBX format, syncs via iCloud or Google Drive, and costs a one-time fee with no recurring charges.
 
 **Emergency access is rare in free tools.** This is one feature where Bitwarden Premium offers something few free alternatives can match. If emergency access matters to you, Bitwarden Premium at $10/year is one of the most affordable ways to get it.
 

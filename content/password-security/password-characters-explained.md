@@ -1,8 +1,8 @@
 ---
-title: "Password Characters Explained"
-description: "What is a character in a password? Letters, numbers, and symbols explained. Learn which character types make passwords strongest."
+title: "What Is a Character in a Password? The 4 Types Explained"
+description: "A character is any single letter, digit, or symbol in your password. Here are the 4 types, the full 95-character pool, and how each affects strength."
 date: 2026-03-06
-lastmod: 2026-03-06
+lastmod: 2026-08-10
 draft: false
 silo: "Password Security Fundamentals"
 faq:

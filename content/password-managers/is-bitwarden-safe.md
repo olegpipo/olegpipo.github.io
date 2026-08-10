@@ -113,3 +113,4 @@ For most users, Bitwarden provides an excellent balance of security, usability, 
 - [Zero-Knowledge Encryption Explained](/password-managers/zero-knowledge-encryption/)
 - [1Password vs Bitwarden: Full Comparison](/compare/1password-vs-bitwarden/)
 - [LastPass vs Bitwarden: Full Comparison](/compare/lastpass-vs-bitwarden/)
+- [Bitwarden vs Apple Passwords: Full Comparison](/compare/bitwarden-vs-apple-passwords/)

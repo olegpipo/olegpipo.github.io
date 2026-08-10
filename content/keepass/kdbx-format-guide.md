@@ -1,8 +1,8 @@
 ---
-title: "What Is the KeePass (.kdbx) Format? Complete Technical Guide"
-description: "A deep technical guide to the KDBX file format covering header structure, encryption layers, compression, XML payload, and version differences."
+title: "What Is a .KDBX File? The KeePass Format Explained (2026)"
+description: "A .kdbx file is an encrypted KeePass password database. Here's what's inside one, how its encryption works, and how the KDBX 3.1 and 4.x versions differ."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-08-10
 draft: false
 silo: "KeePass & Open Standards"
 ---

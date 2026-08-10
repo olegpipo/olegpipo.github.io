@@ -1,15 +1,28 @@
 ---
-title: "Best Free Password Managers in 2026"
-description: "Comprehensive evaluation of the best free password managers in 2026 including Bitwarden, KeePassXC, Apple Passwords, and PanicVault. Features, limitations, and security compared."
+title: "Best Free Password Managers 2026: 4 Compared (and Their Catches)"
+description: "Bitwarden, KeePassXC, Apple Passwords, and Proton Pass compared. What each free tier actually includes, where the limits bite, and which fits your setup."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-08-10
 draft: false
 silo: "Comparisons"
+faq:
+  - q: "What is the best free password manager?"
+    a: "Bitwarden Free is the most capable option for most people: unlimited passwords on unlimited devices, cloud sync, and apps for every platform. Apple-only users are well served by Apple Passwords, which is built in and needs no setup. KeePassXC offers the deepest feature set at zero cost, but it is desktop-only and you manage sync yourself."
+  - q: "Are free password managers safe?"
+    a: "Yes. Bitwarden, KeePassXC, and Proton Pass are open source, and Bitwarden is independently audited. Apple Passwords is backed by Apple's security infrastructure. Free does not mean insecure -- the business models differ, but the underlying encryption is robust in all four."
+  - q: "Is Bitwarden really free?"
+    a: "Yes. Bitwarden's free tier is permanent rather than a trial, and it includes unlimited passwords on unlimited devices with cloud sync. Premium costs $10/year and adds built-in TOTP codes, emergency access, vault health reports, 1GB of encrypted file storage, and hardware security key support."
+  - q: "Which free password managers include TOTP codes?"
+    a: "KeePassXC and Apple Passwords both store TOTP two-factor codes at no cost. Bitwarden and Proton Pass put TOTP behind their paid tiers -- $10/year for Bitwarden Premium and $1.99/month for Proton Pass premium."
+  - q: "What is the catch with free password managers?"
+    a: "Each free option trades something away. Bitwarden Free withholds TOTP codes, file attachments, and vault health reports. KeePassXC has no mobile apps, no Safari extension, and no automatic sync. Apple Passwords has no folders, custom fields, or meaningful cross-platform support. Proton Pass Free caps hide-my-email aliases at 10 and puts its authenticator behind premium."
 ---
 
 You do not need to spend money to use a good password manager. Several genuinely capable tools are available at no cost, and the gap between free and paid options has narrowed considerably. This guide, part of our [password manager comparisons hub](/compare/), evaluates the best free password managers available in 2026 -- what they do well, where they fall short, and which is the right fit for different types of users.
 
 "Free" means different things to different products. Some are completely free with no upsell. Some offer free tiers that work alongside premium upgrades. Some are free by virtue of being included with your operating system. We cover all three categories and are transparent about limitations.
+
+> **Quick answer**: For most people the best free password manager is **Bitwarden Free** -- unlimited passwords on unlimited devices, cloud sync, and apps on every platform. If you live entirely on Apple devices, **Apple Passwords** is already installed and needs no setup. If you want maximum capability at zero cost, **KeePassXC** is unmatched, but it is desktop-only and you manage sync yourself. Every free tier withholds something: Bitwarden and Proton Pass charge for built-in TOTP codes, KeePassXC has no mobile app or Safari extension, and Apple Passwords has no folders, custom fields, or real cross-platform support.
 
 ## The Contenders
 
