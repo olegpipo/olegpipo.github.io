@@ -2,7 +2,7 @@
 title: "Getting Started"
 description: "Create your first PanicVault vault, open an existing .kdbx file, set a default vault, and choose a strong master password."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-25
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
@@ -55,6 +55,22 @@ If you already have a .kdbx file (from KeePass, KeePassXC, or another compatible
 If iCloud Drive is available, you also see an **Open from iCloud Drive** option that lets you browse your iCloud Drive folders for .kdbx files. If you are signed in to Google Drive, you see an **Open from Google Drive** option as well.
 
 Coming from another password manager without a .kdbx file? See [Importing Passwords](/help/importing-passwords/) to bring your logins in from a CSV export instead.
+
+## Opening a .kdbx File Directly
+
+You do not have to start in PanicVault. PanicVault registers itself with the system as a KeePass database handler, so a .kdbx file you find anywhere on your device can be opened straight into the app:
+
+- **Files app (iPhone, iPad)** — tap the file, or press and hold it and choose **Share**, then **PanicVault**
+- **Finder (Mac)** — double-click the file, or Control-click it and choose **Open With**, then **PanicVault**
+- **Mail, Messages, or AirDrop** — tap or click the attachment and choose PanicVault
+
+The vault is added to your home screen and its lock screen appears right away, ready for your master password. Vaults PanicVault created show the PanicVault document icon; a .kdbx written by another KeePass app keeps that app's icon, but PanicVault is still offered under Open With.
+
+{{< callout type="note" >}}
+PanicVault opens the file in place. It works with the original file where it already lives — in iCloud Drive, in a folder on your Mac, in another app's storage — rather than making a copy, so nothing gets out of step with the vault you sync elsewhere.
+{{< /callout >}}
+
+If the file is already one of your vaults, PanicVault opens that vault instead of adding a second copy of it to your home screen. If a different vault is unlocked at the time, it is locked first, exactly as when you tap another vault on the home screen.
 
 ## Choosing a Strong Master Password
 

@@ -2,7 +2,7 @@
 title: "iCloud Drive Sync"
 description: "Store PanicVault vaults on iCloud Drive to sync them across your Apple devices, with automatic entry-level merging and conflict resolution."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-25
 draft: false
 silo: "User Manual"
 helpgroup: "Sync"
@@ -55,6 +55,8 @@ The vault card on the home screen shows the current sync state:
 ## iCloud Drive and the Files App
 
 Your vault files are stored in the PanicVault folder inside iCloud Drive and are visible in the Files app on iOS and the Finder on Mac.
+
+Vaults in that folder carry the PanicVault document icon, and you can open one straight from there: tap it in the Files app, or double-click it in the Finder, and PanicVault opens with that vault's lock screen. See [Opening a .kdbx File Directly](/help/getting-started/#opening-a-kdbx-file-directly) for the other places this works.
 
 {{< callout type="warning" >}}
 You should not rename or move these files outside of PanicVault, as this may break the bookmark that PanicVault uses to locate the file.
