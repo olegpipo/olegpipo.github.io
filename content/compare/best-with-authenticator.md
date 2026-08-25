@@ -2,7 +2,7 @@
 title: "Best Password Manager With Built-In Authenticator"
 description: "Comprehensive guide to password managers with built-in TOTP authenticators in 2026. Security implications, convenience benefits, and which tools handle two-factor codes best."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-08-25
 draft: false
 silo: "Comparisons"
 ---
@@ -52,7 +52,7 @@ PanicVault includes TOTP code generation as a standard feature -- no premium tie
 
 **Considerations:**
 - No push-based authentication (TOTP only)
-- No FIDO2/WebAuthn hardware key management
+- No FIDO2/WebAuthn security-key management (PanicVault does support YubiKey challenge-response to unlock a vault -- NFC on iPhone, USB on Mac -- see [Hardware Keys](/help/hardware-keys/))
 
 PanicVault's TOTP implementation is straightforward and reliable. The codes are part of your encrypted database, protected by the same [KeePass encryption](/keepass/encryption-explained/) that guards your passwords.
 

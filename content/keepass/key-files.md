@@ -2,7 +2,7 @@
 title: "KeePass Key Files: Adding a Second Factor to Your Password Vault"
 description: "Learn how KeePass key files work as a second authentication factor, how to create and store them securely, and best practices for composite key protection."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-08-25
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -125,7 +125,7 @@ If you must store a key file on a cloud service (for accessibility across device
 
 ## Key File vs. Hardware Security Key
 
-Hardware security keys -- such as YubiKey, SoloKeys, or OnlyKey -- provide a different form of second-factor authentication. KeePassXC supports YubiKey challenge-response as an alternative to (or in addition to) key files. Understanding the differences helps you choose the right approach.
+Hardware security keys -- such as YubiKey, SoloKeys, or OnlyKey -- provide a different form of second-factor authentication. KeePassXC supports YubiKey challenge-response as an alternative to (or in addition to) key files, and so does PanicVault: YubiKey challenge-response over NFC on iPhone, and over USB on Mac, in the same interoperable format. Understanding the differences helps you choose the right approach.
 
 ### Key Files
 
@@ -143,7 +143,7 @@ Hardware security keys -- such as YubiKey, SoloKeys, or OnlyKey -- provide a dif
 
 For most users, a key file on a USB drive provides excellent security with lower cost and complexity. Hardware security keys are the superior choice for high-threat-model scenarios where you are concerned about sophisticated attackers who might briefly access your physical devices.
 
-Both approaches are vastly better than relying on a master password alone. Choose based on your threat model, budget, and tolerance for managing hardware.
+Both approaches are vastly better than relying on a master password alone. Choose based on your threat model, budget, and tolerance for managing hardware. For the step-by-step setup in PanicVault -- programming a slot, choosing slot 1 or slot 2, and unlocking over NFC or USB -- see [Hardware Keys (YubiKey)](/help/hardware-keys/).
 
 ## Recovery Considerations
 

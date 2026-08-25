@@ -2,7 +2,7 @@
 title: "Every App That Opens KeePass Databases: The Complete Compatibility Guide"
 description: "Complete guide to every desktop, mobile, and browser app that opens KeePass KDBX databases, with feature comparisons and platform recommendations."
 date: 2026-02-13
-lastmod: 2026-07-17
+lastmod: 2026-08-25
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -102,10 +102,10 @@ The app uses a freemium model. The free version is fully functional for basic us
 PanicVault is a native Apple app designed from the ground up for macOS and iOS, offering a modern, user-friendly interface for managing KeePass databases.
 
 **Platforms**: macOS, iOS, iPadOS
-**Format support**: KDBX 3.x, KDBX 4.x
+**Format support**: KDBX 4.x
 **License**: Proprietary
 
-[PanicVault](https://apps.apple.com/app/id6759188575) provides a polished Apple-native experience with full KDBX compatibility. It supports Face ID and Touch ID for biometric unlock, integrates with iOS AutoFill, and works with iCloud Drive and other file providers for seamless sync across Apple devices. PanicVault is a strong choice for users who live within the Apple ecosystem and want a clean, intuitive interface for their KeePass vault without sacrificing compatibility with the broader KDBX ecosystem.
+[PanicVault](https://apps.apple.com/app/id6759188575) provides a polished Apple-native experience with full KDBX 4 compatibility. It supports Face ID and Touch ID for biometric unlock, integrates with iOS AutoFill, and works with iCloud Drive and other file providers for seamless sync across Apple devices. It also supports hardware keys -- YubiKey challenge-response over NFC on iPhone, and over USB on Mac -- in the same format KeePassXC uses, so a YubiKey-protected database moves between the two apps unchanged. PanicVault is a strong choice for users who live within the Apple ecosystem and want a clean, intuitive interface for their KeePass vault without sacrificing compatibility with the broader KDBX ecosystem.
 
 ### KeePassium (iOS)
 
@@ -172,7 +172,7 @@ The critical point is that **you control the sync mechanism**. Unlike [proprieta
 | **KDBX 4.x** | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | **Argon2** | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | **TOTP** | Yes | Via plugin | Yes | Yes | Yes | Yes | Yes |
-| **YubiKey** | Yes | Via plugin | -- | Yes | -- | -- | -- |
+| **YubiKey** | Yes | Via plugin | -- | Yes | iPhone NFC, Mac USB | Premium | -- |
 | **Autofill** | Browser ext | Browser plugin | Android API | iOS API | iOS API | iOS API | -- |
 | **Biometric** | -- | -- | Fingerprint | Face/Touch ID | Face/Touch ID | Face/Touch ID | -- |
 | **Open source** | Yes | Yes | Yes | Partial | No | Yes | Yes |

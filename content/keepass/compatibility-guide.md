@@ -2,7 +2,7 @@
 title: "KeePass KDBX Compatibility: Apps & Versions"
 description: "Which KeePass apps support KDBX 4.0? Full compatibility chart for iOS, Android, Mac & Windows. Avoid sync-breaking surprises."
 date: 2026-02-13
-lastmod: 2026-07-17
+lastmod: 2026-08-25
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -139,6 +139,10 @@ Group structures (folders for organizing entries) work identically across versio
 ### TOTP and OTP Support
 
 One-time password (TOTP/HOTP) storage is not part of the KDBX specification itself -- it is handled through custom fields or entry string conventions. Compatibility depends on the application, not the format version. KeePassXC, KeePassDX, and Strongbox all support TOTP through their own conventions, but the exact field names and formats may differ. When sharing a database across applications, verify that TOTP entries work correctly in each.
+
+### Hardware Keys (YubiKey Challenge-Response)
+
+A database can include a YubiKey HMAC-SHA1 challenge-response as part of its composite key, alongside the master password and any key file. This is an application convention rather than a format feature: nothing in the file records that a hardware key is required, so each app has to be told. KeePassXC, Strongbox, KeePassium and PanicVault all implement the same scheme, so one hardware-key database opens in any of them -- PanicVault reads the key over NFC on iPhone and over USB on Mac. The older KeeChallenge plugin for KeePass 2 uses a different mechanism with a separate `.xml` sidecar file and is not interchangeable with it. Note also that KDBX 3.1 and 4.0 mix the response into the key differently, so a hardware-key database should stay in one format version.
 
 ## Practical Compatibility Scenarios
 

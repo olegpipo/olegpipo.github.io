@@ -2,7 +2,7 @@
 title: "PanicVault vs. KeePassXC"
 description: "Detailed comparison of PanicVault and KeePassXC -- two KeePass-compatible password managers with different strengths. Apple integration vs. cross-platform flexibility analyzed."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-08-25
 draft: false
 silo: "Comparisons"
 ---
@@ -106,7 +106,7 @@ For mobile KeePass app comparisons, see our [KeePass-compatible apps for Apple](
 | AES-256 / ChaCha20 | Yes | Yes (+ Twofish) |
 | Argon2d key derivation | Yes | Yes |
 | [Key file](/keepass/key-files/) support | Yes | Yes |
-| YubiKey / hardware key | No | Yes |
+| YubiKey / hardware key | Challenge-response: NFC on iPhone, USB on Mac (not iPad) | Yes (USB) |
 | Entry history | Yes | Yes |
 | Custom fields | Yes | Yes |
 | File attachments | Yes | Yes |
@@ -127,8 +127,6 @@ For mobile KeePass app comparisons, see our [KeePass-compatible apps for Apple](
 ### Notable KeePassXC Advantages
 
 - **Auto-Type**: KeePassXC can simulate keyboard input to type credentials into any application, bypassing the need for system-level autofill integration. This is a powerful feature for filling credentials in terminal windows, virtual machines, and other contexts that do not support standard autofill.
-
-- **YubiKey support**: KeePassXC can use hardware security keys as an additional authentication factor for database unlock, providing stronger protection than software-based factors alone.
 
 - **SSH agent integration**: KeePassXC can serve as an SSH agent, storing SSH keys in your encrypted database and providing them to SSH clients on demand. For developers and system administrators, this is exceptionally useful.
 
@@ -152,16 +150,18 @@ For mobile KeePass app comparisons, see our [KeePass-compatible apps for Apple](
 
 - **Zero configuration**: Install, create database, enable AutoFill. No browser extensions to configure, no background processes to manage.
 
+- **YubiKey on a phone**: PanicVault supports YubiKey challenge-response over NFC on iPhone, and over USB on Mac, using exactly the same scheme as KeePassXC -- so one hardware-key database opens in both apps. KeePassXC has no mobile app at all, so a YubiKey-protected database is desktop-only there. See [Hardware Keys (YubiKey)](/help/hardware-keys/). Not available on iPad.
+
 ## Security Considerations
 
 Both tools use the same KDBX encryption. The security of your database is identical regardless of which app you use to access it. The differences are:
 
 - KeePassXC supports more outer cipher options (Twofish in addition to AES-256 and ChaCha20)
-- KeePassXC supports YubiKey as an additional key factor
+- Both support YubiKey challenge-response as an additional key factor, in the same interoperable format: KeePassXC over USB on the desktop, PanicVault over NFC on iPhone and over USB on Mac
 - KeePassXC is open source, allowing independent code review
 - PanicVault's code is not open source, though the KDBX format is fully documented and your data can be verified in any KeePass app
 
-For most users, these differences are not decisive. If code auditability is critical to your threat model, KeePassXC's open-source nature is valuable. If hardware key support matters, KeePassXC wins. For typical consumer use, both are more than adequately secure.
+For most users, these differences are not decisive. If code auditability is critical to your threat model, KeePassXC's open-source nature is valuable. Hardware keys are no longer a deciding factor: both apps read the same YubiKey challenge-response databases, with PanicVault covering iPhone over NFC and Mac over USB. For typical consumer use, both are more than adequately secure.
 
 ## The Complementary Approach
 
@@ -176,7 +176,7 @@ This is the KeePass ecosystem working as designed. You choose the best app for e
 
 - Users who need cross-platform support on Windows, Linux, and macOS
 - Developers who want SSH agent integration and Auto-Type
-- Users who require YubiKey or hardware key support
+- Users who need hardware-key unlock on Windows, Linux, or an iPad, where PanicVault cannot read a YubiKey
 - Those who prioritize open-source code for security auditing
 - Budget-conscious users who want a completely free solution
 - Users who primarily use Chrome or Firefox (not Safari) on macOS

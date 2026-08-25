@@ -255,6 +255,7 @@ body::after {
 .pv-security-grid .pv-reveal:nth-child(2) { transition-delay: 0.08s; }
 .pv-security-grid .pv-reveal:nth-child(3) { transition-delay: 0.16s; }
 .pv-security-grid .pv-reveal:nth-child(4) { transition-delay: 0.24s; }
+.pv-security-grid .pv-reveal:nth-child(5) { transition-delay: 0.32s; }
 
 .pv-compat-list .pv-reveal:nth-child(2) { transition-delay: 0.06s; }
 .pv-compat-list .pv-reveal:nth-child(3) { transition-delay: 0.12s; }
@@ -976,7 +977,7 @@ body::after {
 
 .pv-security-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0;
   margin-top: 56px;
 }
@@ -3299,7 +3300,7 @@ body::after {
 
   .pv-security-grid { grid-template-columns: repeat(2, 1fr); }
   .pv-security-item { padding: 28px 20px; }
-  .pv-security-item:nth-child(3) { border-left: none; }
+  .pv-security-item:nth-child(odd) { border-left: none; }
   .pv-security-item:nth-child(n+3) { border-top: 1px solid var(--pv-rule-strong); }
 
   .pv-stage {

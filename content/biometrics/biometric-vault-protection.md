@@ -2,7 +2,7 @@
 title: "How Biometrics Protect Your Password Vault"
 description: "Technical deep dive into how Face ID and Touch ID protect your password vault -- Secure Enclave key storage, encrypted key release, and layered security."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-08-25
 draft: false
 silo: "Biometric Security"
 ---
@@ -107,7 +107,9 @@ Relying solely on a master password with no quick-unlock mechanism is the most c
 
 ### Hardware Keys (YubiKey, etc.)
 
-Hardware security keys like YubiKey provide strong two-factor authentication but do not directly enable vault unlock the way biometrics do. They are typically used as a second factor alongside a master password, adding security at the cost of carrying an additional device. Some users combine hardware keys with biometric unlock for maximum security on [password security](/password-security/) sensitive deployments.
+Hardware security keys like YubiKey can unlock a vault directly, not just protect an online account. In the KeePass world this works through challenge-response: the key answers a challenge derived from the database file, and its answer becomes part of the encryption key. PanicVault supports YubiKey challenge-response over NFC on iPhone, and over USB on Mac -- see [Hardware Keys (YubiKey)](/help/hardware-keys/). The cost is carrying an extra device, and the risk is real: lose the only key and the vault cannot be opened at all, so program a backup key.
+
+Biometrics and hardware keys combine rather than compete. On a hardware-key vault, Face ID or Touch ID still works, but be clear about what that means: the key it unlocks is already on the device, so biometrics open that vault **on that device without the YubiKey present**. Other devices still require the physical key. If your threat model is a stolen unlocked phone, keep biometrics off on the vaults that matter most; if it is a stolen database file, the YubiKey protects you either way. See also [password security](/password-security/).
 
 ## Best Practices for Biometric Vault Protection
 

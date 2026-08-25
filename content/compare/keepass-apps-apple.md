@@ -2,7 +2,7 @@
 title: "KeePass-Compatible Apps Compared for Apple"
 description: "Comprehensive comparison of KeePass-compatible password manager apps for iPhone, iPad, and Mac. PanicVault, Strongbox, KeePassXC, and KeePassium evaluated for Apple users."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-08-25
 draft: false
 silo: "Comparisons"
 ---
@@ -40,9 +40,11 @@ PanicVault is designed specifically for the Apple ecosystem. Built with SwiftUI,
 - TOTP two-factor code support
 - Clean, focused interface following Apple's Human Interface Guidelines
 - Full KDBX read/write with groups, custom fields, attachments, and entry history
+- YubiKey challenge-response over NFC on iPhone, and over USB on Mac
 
 **Limitations:**
-- No YubiKey or hardware key support
+- No YubiKey on iPad, over USB-C, or over Lightning (5Ci)
+- KDBX 4 only -- no KDBX 3.1 or KeePass 1.x KDB
 - No SSH agent integration
 - Not open source
 - Apple platforms only
@@ -71,7 +73,7 @@ Strongbox is a mature, feature-rich KeePass client for Apple devices with a long
 - More complex interface due to extensive configuration options
 - Higher price point for lifetime license ($29.99)
 
-**Best for**: Power users who need multiple sync providers, hardware key support, or password auditing. Also ideal for users migrating from older KeePass 1.x databases.
+**Best for**: Power users who need multiple sync providers, Lightning (5Ci) hardware keys, or password auditing. Also ideal for users migrating from older KeePass 1.x databases.
 
 For a direct comparison, see [PanicVault vs. Strongbox](/compare/panicvault-vs-strongbox/).
 
@@ -165,7 +167,7 @@ KeePass 2.x is the original KeePass implementation that defined the KDBX format.
 | System AutoFill | Yes | Yes | No | Yes |
 | Face ID / Touch ID | Yes | Yes | Touch ID only | Yes |
 | TOTP codes | Yes | Yes (Pro) | Yes | Yes (Premium) |
-| YubiKey | No | Yes | Yes | Yes (Premium) |
+| YubiKey | Yes -- NFC on iPhone, USB on Mac | Yes | Yes | Yes (Premium) |
 | SSH agent | No | No | Yes | No |
 | Auto-Type | No | No | Yes | No |
 | iCloud sync | Yes | Yes | Manual | Yes |
@@ -190,7 +192,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Maximum Features
 
-**Strongbox on all Apple devices, KeePassXC on non-Apple desktops.** Strongbox's hardware key support, password audit, and multiple sync providers cover power user needs. KeePassXC handles desktop-specific workflows.
+**Strongbox on all Apple devices, KeePassXC on non-Apple desktops.** Strongbox's password audit, KeePass 1.x support, and multiple sync providers cover power user needs. KeePassXC handles desktop-specific workflows. (Hardware keys are no longer a reason to pick one Apple app over the other -- PanicVault and Strongbox both support YubiKey challenge-response over NFC on iPhone, and over USB on Mac.)
 
 ### Maximum Budget Savings
 
@@ -204,7 +206,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Prioritize if you want the most features
 
-**Strongbox** (Apple) or **KeePassXC** (desktop). Strongbox covers Apple platforms with hardware key support, password auditing, and multiple sync providers. KeePassXC covers desktop platforms with SSH agent, Auto-Type, and open-source transparency.
+**Strongbox** (Apple) or **KeePassXC** (desktop). Strongbox covers Apple platforms with password auditing, KeePass 1.x support, and multiple sync providers. KeePassXC covers desktop platforms with SSH agent, Auto-Type, and open-source transparency.
 
 ### Prioritize if you want the lowest cost
 

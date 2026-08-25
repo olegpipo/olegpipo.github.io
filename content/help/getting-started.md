@@ -2,7 +2,7 @@
 title: "Getting Started"
 description: "Create your first PanicVault vault, open an existing .kdbx file, set a default vault, and choose a strong master password."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-25
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
@@ -37,7 +37,8 @@ You can designate one vault as your default vault. Long-press a vault card on th
    - **iCloud Drive** — the vault is synced via iCloud Drive across your Apple devices (requires iCloud sign-in in system settings)
    - **Google Drive** — the vault is stored locally and synced to your Google Drive (you must sign in to Google first in Settings)
 6. For iCloud Drive, you can optionally choose a folder within your iCloud Drive using the folder picker. You can also create new folders from the picker.
-7. Tap **Create Vault**
+7. Optionally, in the **Hardware Key (Optional)** section, turn on **Protect with a YubiKey** to require a physical YubiKey in addition to your master password. Be sure you have a backup key first — see [Hardware Keys (YubiKey)](/help/hardware-keys/).
+8. Tap **Create Vault**
 
 Your new vault opens automatically and you can start adding entries right away.
 

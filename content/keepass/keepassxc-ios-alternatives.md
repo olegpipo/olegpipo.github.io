@@ -2,7 +2,7 @@
 title: "KeePassXC for iPhone: 3 Best iOS Alternatives (2026)"
 description: "KeePassXC has no iPhone or iPad app. Here are the 3 best KeePass apps for iOS — full KDBX 4.0, AutoFill, and Face ID — plus how to sync your .kdbx database."
 date: 2026-03-06
-lastmod: 2026-07-01
+lastmod: 2026-08-25
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -52,7 +52,7 @@ Before evaluating individual apps, here are the features that matter most when c
 
 **Price**: One-time purchase
 **Platforms**: iOS, iPadOS, macOS
-**KDBX support**: 3.1 and 4.0
+**KDBX support**: 4.0 only
 
 [PanicVault](https://apps.apple.com/app/id6759188575) is a native Apple password manager built from the ground up with SwiftUI. It is designed specifically for users who live in the Apple ecosystem and want a KeePass-compatible app that feels like a first-party Apple product.
 
@@ -72,9 +72,11 @@ The pricing model is a one-time purchase with no subscription. You pay once and 
 - iCloud Drive and Google Drive sync
 - One-time purchase -- no subscription
 - Full KDBX 4.0 compatibility with KeePassXC databases
+- YubiKey challenge-response over NFC on iPhone, and over USB on Mac -- the same format KeePassXC uses, included at no extra cost
 
 **Limitations:**
-- No YubiKey or hardware key support
+- No YubiKey on iPad, over USB-C, or over Lightning (5Ci) -- NFC on iPhone and USB on Mac only
+- KDBX 4 only; older KDBX 3.1 databases must be converted first
 - Not open source
 - Apple platforms only (no Windows, Linux, or Android)
 
@@ -160,7 +162,7 @@ KeePassium's free tier is more generous than Strongbox's -- it allows editing an
 | **TOTP** | Yes | Yes | Premium | Yes | No |
 | **iCloud Sync** | Yes | Yes | Via Files | Via Files | Via Files |
 | **Google Drive Sync** | Yes | Yes | Via Files | Via Files | No |
-| **YubiKey** | No | Yes | Premium | No | No |
+| **YubiKey** | Yes -- NFC on iPhone, USB on Mac | Yes | Premium | No | No |
 | **Open Source** | No | Partial | Yes | Yes | No |
 | **Apple Watch** | No | Yes | No | No | No |
 | **macOS App** | Native | Native | Catalyst | Yes | No |
@@ -221,7 +223,7 @@ The most practical setup for most users is to run KeePassXC on your desktop and 
 
 Here is what each combination looks like:
 
-**KeePassXC + PanicVault** -- The best balance of desktop power and mobile polish. KeePassXC handles your desktop workflow with browser extensions and advanced features. PanicVault provides native iOS AutoFill, Face ID, TOTP codes, and a clean Apple-native interface on your phone. Sync through iCloud Drive or Google Drive. One-time purchase, no subscription.
+**KeePassXC + PanicVault** -- The best balance of desktop power and mobile polish. KeePassXC handles your desktop workflow with browser extensions and advanced features. PanicVault provides native iOS AutoFill, Face ID, TOTP codes, and a clean Apple-native interface on your phone. If your KeePassXC database is protected by a YubiKey, PanicVault opens it too -- challenge-response over NFC on iPhone, and over USB on Mac. Sync through iCloud Drive or Google Drive. One-time purchase, no subscription.
 
 **KeePassXC + Strongbox** -- The maximum-features combination. You get KeePassXC's desktop capabilities plus Strongbox's extensive iOS feature set, including YubiKey support on mobile, password auditing, multiple sync providers, and an Apple Watch app. Higher cost but the broadest feature coverage.
 
@@ -231,7 +233,7 @@ Here is what each combination looks like:
 
 If you are a KeePassXC user looking for the best iOS experience and you primarily use Apple devices, **PanicVault** is the strongest recommendation. Its native design, one-time pricing, iCloud and Google Drive sync, and full KDBX 4.0 compatibility make it the most seamless companion for KeePassXC on desktop.
 
-If you need advanced features like YubiKey on mobile, multiple sync providers, or password auditing, **Strongbox** is the better fit despite its higher cost and complexity.
+If you need multiple sync providers, password auditing, KDBX 3.1 support, or Lightning (5Ci) hardware keys, **Strongbox** is the better fit despite its higher cost and complexity.
 
 If open-source transparency on mobile is important to you, **KeePassium** delivers that with a clean interface and a usable free tier.
 

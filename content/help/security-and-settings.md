@@ -2,7 +2,7 @@
 title: "Security & Settings"
 description: "Configure PanicVault security: Face ID and Touch ID unlock, lock timeout, clipboard auto-clear, Universal Clipboard, appearance, and memory protection."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-25
 draft: false
 silo: "User Manual"
 helpgroup: "Settings"
@@ -21,6 +21,8 @@ Enable biometric unlock to use Face ID (iPhone/iPad with Face ID) or Touch ID (M
 4. Subsequent unlocks can use biometrics
 
 Your master password is stored in the iOS/macOS Keychain, protected by the Secure Enclave. It is never sent anywhere.
+
+Biometric unlock also works on vaults protected by a YubiKey. Because the key that biometrics unlocks is already stored on the device, Face ID or Touch ID opens such a vault **on that device without the YubiKey present** — PanicVault shows a one-time explanation the first time you enable it on a hardware-key vault. Every other device still needs the physical key. See [Hardware Keys (YubiKey)](/help/hardware-keys/).
 
 {{< callout type="tip" >}}
 Even with biometric unlock enabled, PanicVault periodically requires your master password to make sure you still remember it (see "Master Password Re-entry" below).
