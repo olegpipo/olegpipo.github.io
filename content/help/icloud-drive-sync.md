@@ -23,11 +23,15 @@ The vault is created locally and then copied to iCloud Drive. After that, the op
 
 ## Opening Vaults from iCloud Drive
 
+A vault in iCloud Drive is opened the same way as any other vault:
+
 1. Tap the "+" card on the home screen
-2. Choose **Open from iCloud Drive** (only visible when iCloud is available)
-3. Browse through your iCloud Drive folders to find .kdbx files
-4. Each file shows its name and how recently it was modified
-5. Select a file to add it to PanicVault
+2. Choose **Open Existing Vault**
+3. Pick the .kdbx file and it is added to PanicVault
+
+When you are signed in to iCloud, the file browser opens in your **PanicVault** folder in iCloud Drive, so a vault you created there is right in front of you. If your vault lives in a different iCloud Drive folder, navigate to it in the same browser -- it is recognised as an iCloud vault either way.
+
+You can also open a vault straight from the Files app or the Finder; see [iCloud Drive and the Files App](#icloud-drive-and-the-files-app) below.
 
 ## How Sync Works
 
@@ -54,10 +58,20 @@ The vault card on the home screen shows the current sync state:
 
 ## iCloud Drive and the Files App
 
-Your vault files are stored in the PanicVault folder inside iCloud Drive and are visible in the Files app on iOS and the Finder on Mac.
+Vaults you create on iCloud Drive are stored in a **PanicVault** folder inside iCloud Drive, which appears alongside your other apps' folders in the Files app on iPhone and iPad and under iCloud Drive in the Finder on Mac. You can browse it, and any subfolders you created from the folder picker, like any other iCloud Drive folder.
+
+The folder can take a moment to show up: iCloud publishes it the first time the app syncs after being installed or updated, so it may not be there the instant the app finishes installing. On Mac, the Finder only lists the folder once it holds at least one file -- create or copy a vault into it and it appears.
 
 Vaults in that folder carry the PanicVault document icon, and you can open one straight from there: tap it in the Files app, or double-click it in the Finder, and PanicVault opens with that vault's lock screen. See [Opening a .kdbx File Directly](/help/getting-started/#opening-a-kdbx-file-directly) for the other places this works.
 
 {{< callout type="warning" >}}
-You should not rename or move these files outside of PanicVault, as this may break the bookmark that PanicVault uses to locate the file.
+You should not rename or move vault files outside of PanicVault, as this may break the bookmark that PanicVault uses to locate the file.
 {{< /callout >}}
+
+## Vaults Kept Elsewhere in iCloud Drive
+
+You do not have to keep your vault in the PanicVault folder. If you open a .kdbx file that already lives somewhere in your iCloud Drive -- with **Open Existing Vault**, or by tapping it in the Files app -- PanicVault recognises it as an iCloud file and gives it the full iCloud treatment: coordinated reads and writes, automatic download before opening, conflict resolution, and entry-level merging across your devices. The vault card shows it as an iCloud Drive vault.
+
+Files that are not synced by iCloud -- vaults in "On My iPhone", on an external drive, or in a third-party storage provider such as Dropbox -- are still opened as local vaults, and PanicVault leaves their syncing entirely to whatever manages them.
+
+One difference applies to a vault kept outside the PanicVault folder: the system only reports live file-change notifications for the app's own folder, so changes made on another device are picked up when PanicVault comes back to the foreground, when the vault is opened or unlocked, when you save, or when you tap the sync button -- rather than the instant they arrive.
