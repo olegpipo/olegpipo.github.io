@@ -67,7 +67,7 @@ When you create a new vault, scroll to the **Hardware Key (Optional)** section:
 2. Choose **Slot 1** or **Slot 2** (slot 2 is the default)
 3. PanicVault immediately sends a test challenge to your key, so you find out right away whether that slot really is set up for challenge-response. On iPhone, hold the key against the top of the phone; on Mac, plug it in. Touch the key if it asks
 4. Read the warning about losing the key, and tick **I have a backup YubiKey, or I accept that losing this key destroys the vault**
-5. Finish creating the vault as usual
+5. Finish creating the vault as usual. You are asked for the key once more as the vault is written — two touches in all, because the answer has to be computed for the file that is actually created
 
 From that point on, the vault needs your master password **and** your YubiKey. For the rest of the create-vault steps, see [Getting Started](/help/getting-started/).
 
@@ -98,7 +98,7 @@ The very first time you use a YubiKey on a Mac, PanicVault shows an explanation 
 If you decline, PanicVault cannot read the key over USB and says so, with a button that opens the right settings pane. You can grant it later in **System Settings → Privacy & Security → Input Monitoring**, and you can revoke it there at any time. Your iPhone is unaffected — the same vault still unlocks over NFC.
 
 {{< callout type="note" >}}
-A .kdbx file records nothing about hardware keys, so the first time you open a KeePassXC hardware-key vault in PanicVault you have to turn the **YubiKey** row on yourself. After one successful unlock PanicVault remembers, and the row is switched on for you from then on. If an unlock keeps failing with "Incorrect password" on a vault you are sure of, that is the thing to check: if this vault uses a YubiKey, turn on **Hardware Key** below the password field.
+A .kdbx file records nothing about hardware keys, so the first time you open a KeePassXC hardware-key vault in PanicVault you have to turn the **YubiKey** row on yourself. After one successful unlock PanicVault remembers, and the row is switched on for you from then on. If an unlock keeps failing with "Incorrect password" on a vault you are sure of, that is the thing to check: if this vault uses a YubiKey, turn on **YubiKey** below the password field.
 {{< /callout >}}
 
 ## Adding or Removing a YubiKey on an Existing Vault
@@ -113,7 +113,7 @@ You can add a YubiKey to a vault that does not have one, move it to the other sl
    - **Remove the YubiKey** — the vault goes back to master password (plus key file, if it has one)
 4. Confirm
 
-PanicVault re-encrypts the whole vault once with the new combination and saves it. Adding or keeping a YubiKey costs exactly one touch during the change, because the answer has to be recomputed for the newly written file. Removing one costs no extra touch beyond the one that opened the vault. See [Vault Settings](/help/vault-settings/) for the rest of that screen.
+PanicVault re-encrypts the whole vault once with the new combination and saves it. Adding a key or moving it to the other slot costs two touches: one to test the slot before anything is committed, and one as the change is saved, because the answer has to be recomputed for the newly written file. Keeping the key while you change only the password costs one. Removing a key costs no extra touch beyond the one that opened the vault. See [Vault Settings](/help/vault-settings/) for the rest of that screen.
 
 {{< callout type="warning" >}}
 Adding a YubiKey to a vault carries the same risk as creating one with a key: lose the key and the vault is unrecoverable. Have your backup key programmed first.
@@ -161,7 +161,7 @@ Tap **Touch YubiKey** on the banner and the sync completes. PanicVault never ask
 | **The YubiKey wasn't touched in time.** | Start again and touch the gold disc when prompted. On iPhone, keep the key against the phone while you touch it. |
 | **Lost contact with the YubiKey.** | On iPhone this almost always means the key moved away from the phone mid-exchange. Hold it still against the top of the phone until the unlock finishes. |
 | **PanicVault needs Input Monitoring to read your YubiKey over USB.** | Mac only. Turn it on in **System Settings → Privacy & Security → Input Monitoring**, or unlock this vault on your iPhone over NFC instead. |
-| **Incorrect password** on a vault you are sure of | If the vault uses a YubiKey, turn on the **Hardware Key** row below the password field and try again. A .kdbx file does not say whether a hardware key is required. |
+| **Incorrect password** on a vault you are sure of | If the vault uses a YubiKey, turn on the **YubiKey** row below the password field and try again. A .kdbx file does not say whether a hardware key is required. |
 | Several YubiKeys plugged into a Mac at once | PanicVault asks which one to use. Or unplug the ones you are not using. |
 
 {{< callout type="note" >}}
