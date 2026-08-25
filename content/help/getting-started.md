@@ -56,6 +56,8 @@ This is the system file browser, so it reaches everywhere your device can see: i
 
 PanicVault works with the file where it already lives instead of copying it, and a .kdbx it finds anywhere in your iCloud Drive is recorded as an iCloud vault with full sync handling. See [Vaults Kept Elsewhere in iCloud Drive](/help/icloud-drive-sync/#vaults-kept-elsewhere-in-icloud-drive).
 
+If the vault is one iCloud has moved off the device to save space, PanicVault fetches it before adding it; should that take longer than a moment it tells you the vault **hasn't finished downloading from iCloud** — let the download finish in Files or the Finder, then open it again.
+
 If you are signed in to Google Drive, the same menu also offers **Open from Google Drive**, which downloads a copy of a vault from your Google Drive.
 
 {{< callout type="note" >}}
