@@ -53,9 +53,35 @@ If you already have a .kdbx file (from KeePass, KeePassXC, or another compatible
 3. Browse to your .kdbx file and select it
 4. The vault appears on your home screen — tap it to unlock with your master password
 
-If iCloud Drive is available, you also see an **Open from iCloud Drive** option that lets you browse your iCloud Drive folders for .kdbx files. If you are signed in to Google Drive, you see an **Open from Google Drive** option as well.
+This is the system file browser, so it reaches everywhere your device can see: iCloud Drive, "On My iPhone", folders on your Mac, an external drive, or another storage app such as Dropbox. When you are signed in to iCloud it opens in your **PanicVault** folder in iCloud Drive — where vaults you create on iCloud Drive are kept — and you can navigate anywhere else from there.
+
+PanicVault works with the file where it already lives instead of copying it, and a .kdbx it finds anywhere in your iCloud Drive is recorded as an iCloud vault with full sync handling. See [Vaults Kept Elsewhere in iCloud Drive](/help/icloud-drive-sync/#vaults-kept-elsewhere-in-icloud-drive).
+
+If the vault is one iCloud has moved off the device to save space, PanicVault fetches it before adding it; should that take longer than a moment it tells you the vault **hasn't finished downloading from iCloud** — let the download finish in Files or the Finder, then open it again.
+
+If you are signed in to Google Drive, the same menu also offers **Open from Google Drive**, which downloads a copy of a vault from your Google Drive.
+
+{{< callout type="note" >}}
+If the file is already one of your vaults, PanicVault opens the vault you already have rather than adding a second card for the same file.
+{{< /callout >}}
 
 Coming from another password manager without a .kdbx file? See [Importing Passwords](/help/importing-passwords/) to bring your logins in from a CSV export instead.
+
+## Opening a .kdbx File Directly
+
+You do not have to start in PanicVault. PanicVault registers itself with the system as a KeePass database handler, so a .kdbx file you find anywhere on your device can be opened straight into the app:
+
+- **Files app (iPhone, iPad)** — tap the file, or press and hold it and choose **Share**, then **PanicVault**
+- **Finder (Mac)** — double-click the file, or Control-click it and choose **Open With**, then **PanicVault**
+- **Mail, Messages, or AirDrop** — tap or click the attachment and choose PanicVault
+
+The vault is added to your home screen and its lock screen appears right away, ready for your master password. Vaults PanicVault created show the PanicVault document icon; a .kdbx written by another KeePass app keeps that app's icon, but PanicVault is still offered under Open With.
+
+{{< callout type="note" >}}
+PanicVault opens the file in place. It works with the original file where it already lives — in iCloud Drive, in a folder on your Mac, in another app's storage — rather than making a copy, so nothing gets out of step with the vault you sync elsewhere.
+{{< /callout >}}
+
+If the file is already one of your vaults, PanicVault opens that vault instead of adding a second copy of it to your home screen. If a different vault is unlocked at the time, it is locked first, exactly as when you tap another vault on the home screen.
 
 ## Choosing a Strong Master Password
 
