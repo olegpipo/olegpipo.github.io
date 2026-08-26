@@ -53,7 +53,7 @@ Deleted entries are moved to the Recycle Bin, not permanently erased. To delete 
 - **iOS**: Swipe left on the entry in the list and tap Delete, or open the entry and choose Delete from the overflow menu
 - **Mac**: Right-click the entry and choose Delete, or use the menu
 
-To permanently delete entries, go to the Recycle Bin group and choose **Empty Recycle Bin**.
+To permanently delete entries, go to the Recycle Bin group and choose **Empty Recycle Bin**. This erases everything the Recycle Bin holds — including any groups another KeePass app moved there, and everything inside them — and cannot be undone.
 
 {{< callout type="tip" >}}
 You can find the Recycle Bin in the group filter chips (iOS) or in the sidebar (Mac). It shows as "Trash" on iOS.
