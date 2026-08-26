@@ -2,7 +2,7 @@
 title: "Groups & Folders"
 description: "Organize PanicVault entries with groups: create subgroups, edit names, notes and icons, reorder groups, and move them between parents."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Passwords & Entries"
@@ -31,8 +31,9 @@ Long-press (iOS) or right-click (Mac) a group and choose **Edit Group...** to ch
 - **Parent Group** — move the group under a different parent (see "Moving Groups Between Parents" below)
 - **Notes** — a description or memo for the group
 - **Icon** — choose from built-in icons, custom icons, or upload a new custom icon
+- **Expires** — give the group an expiry date (see [Group Expiration](#group-expiration) below)
 
-The edit view also shows read-only info: creation date, modification date, number of entries, and number of subgroups.
+The edit view also shows read-only info: creation date, modification date, number of entries, and number of subgroups. An expired group shows a red "EXPIRED" badge there too.
 
 ## Group Notes
 
@@ -41,6 +42,16 @@ Groups have an optional notes field where you can store a description, instructi
 ## Group Icons
 
 You can set a custom icon on any group to make it easier to identify. In the **Edit Group...** view, choose from the 69 built-in KeePass icons, select a custom icon already in your vault, or upload a new one from a PNG or JPEG image. Custom group icons appear in the sidebar on Mac and in the group filter chips on iOS.
+
+## Group Expiration
+
+Groups can be given an expiry date, the same way [entries can](/help/entries/#entry-expiration):
+
+1. Long-press (iOS) or right-click (Mac) the group and choose **Edit Group...**
+2. Toggle **Group expires** on
+3. Choose an expiry date
+
+Once that date has passed, the group's name is greyed out and struck through — in the sidebar on Mac and in the group filter chips on iOS — and the entries inside it are shown the same way. Nothing is deleted or hidden: an expired group is a reminder, exactly as it is in KeePassXC, and the two apps read each other's group expiry dates.
 
 ## Renaming Groups
 

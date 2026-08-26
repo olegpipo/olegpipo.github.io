@@ -2,7 +2,7 @@
 title: "KeePass Compatibility"
 description: "PanicVault uses the open KDBX 4 format — AES-256-CBC and ChaCha20 ciphers, Argon2d, Argon2id and AES-KDF key derivation, and full round-trip data preservation."
 date: 2026-07-14
-lastmod: 2026-08-25
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Reference"
@@ -78,6 +78,6 @@ When you open and save a .kdbx file in PanicVault, it preserves:
 - Memory protection settings
 - Recycle Bin state
 - Database metadata (name, description, default username, colors)
-- Entry metadata (creation time, modification time, expiry, tags, colors, usage count)
+- Entry and group metadata (creation time, modification time, expiry, tags, colors, last access time and usage count — and PanicVault keeps the usage counters up to date as you use an entry, the same way KeePassXC does)
 
 For details on the individual formats, see [Two-Factor Authentication (TOTP)](/help/two-factor-authentication/) and [Passkeys (WebAuthn)](/help/passkeys/).

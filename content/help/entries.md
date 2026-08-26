@@ -37,6 +37,8 @@ Tap an entry to see its full details. The detail view shows:
 - One-time password (TOTP) if configured
 - Metadata: created date, modified date, last accessed, usage count, and expiry date
 
+PanicVault keeps two of those up to date as you use the entry: copying its username, password or one-time code, or opening its URL sets **Last Accessed** to now and adds one to **Usage Count** — the same bookkeeping KeePassXC does, so the counters stay meaningful when you move a vault between the two apps. Using an entry is not an edit: it does not change the entry's modification date, does not create a history version, and does not save the vault by itself. The new counts are written the next time the vault is saved for a real change; if you lock the vault before that happens, they are simply not recorded.
+
 ## Editing an Entry
 
 1. Open the entry detail view
@@ -100,7 +102,7 @@ You can set an expiry date on entries to remind yourself to update passwords:
 2. Toggle **Entry expires** on
 3. Choose an expiry date
 
-Expired entries show a red "EXPIRED" badge in the detail view.
+Expired entries show a red "EXPIRED" badge in the detail view, and in the entry list their title is greyed out and struck through. Groups can expire too — see [Group Expiration](/help/groups/#group-expiration).
 
 ## Entry History
 
