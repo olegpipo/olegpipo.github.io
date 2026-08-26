@@ -2,7 +2,7 @@
 title: "Getting Started"
 description: "Create your first PanicVault vault, open an existing .kdbx file, set a default vault, and choose a strong master password."
 date: 2026-07-14
-lastmod: 2026-08-25
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
@@ -76,6 +76,8 @@ You do not have to start in PanicVault. PanicVault registers itself with the sys
 - **Mail, Messages, or AirDrop** — tap or click the attachment and choose PanicVault
 
 The vault is added to your home screen and its lock screen appears right away, ready for your master password. Vaults PanicVault created show the PanicVault document icon; a .kdbx written by another KeePass app keeps that app's icon, but PanicVault is still offered under Open With.
+
+The same iCloud wait applies here: if you tap a file in Files or double-click one in the Finder that iCloud has moved off the device to save space, PanicVault fetches it first, and should that take longer than a moment it tells you the vault **hasn't finished downloading from iCloud** — let the download finish, then open the file again.
 
 {{< callout type="note" >}}
 PanicVault opens the file in place. It works with the original file where it already lives — in iCloud Drive, in a folder on your Mac, in another app's storage — rather than making a copy, so nothing gets out of step with the vault you sync elsewhere.

@@ -2,7 +2,7 @@
 title: "Setting Up Biometric Unlock: Step-by-Step"
 description: "Complete guide to enabling Face ID and Touch ID for your password vault -- PanicVault setup on iPhone, iPad, and Mac with security best practices."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-08-26
 draft: false
 silo: "Biometric Security"
 ---
@@ -48,8 +48,8 @@ PanicVault natively supports Face ID on all iPhone and iPad models equipped with
 If you are setting up PanicVault for the first time:
 
 1. Download PanicVault from the App Store.
-2. Choose "Create New Database" or "Open Existing Database" if you have a KeePass (.kdbx) file.
-3. For a new database, set your master password. For an existing database, enter the master password to unlock it.
+2. Tap the "+" card on the home screen and choose "Create New Vault", or "Open Existing Vault" if you already have a KeePass (.kdbx) file.
+3. For a new vault, set your master password. For an existing vault, enter the master password to unlock it.
 
 ### Step 2: Enable Face ID Unlock
 
@@ -80,7 +80,7 @@ PanicVault supports Touch ID on Mac through the built-in Touch ID sensor on MacB
 ### Step 1: Open Your Vault
 
 1. Open PanicVault on your Mac.
-2. Open or create your database, entering your master password.
+2. Open or create your vault, entering your master password.
 
 ### Step 2: Enable Touch ID Unlock
 

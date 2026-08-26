@@ -2,7 +2,7 @@
 title: "Vault Settings"
 description: "Per-vault settings in PanicVault: database info, default username, entry history limits, Recycle Bin, changing your master password, and exporting a .kdbx file."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Settings"
@@ -68,3 +68,5 @@ You can export your vault as a .kdbx file at any time:
 - **Mac**: Click the export icon in the toolbar, or use **Cmd+Shift+E**
 
 The exported file is a standard .kdbx file that can be opened in any compatible KeePass application. See [KeePass Compatibility](/help/keepass-compatibility/) for the list of apps that read the format.
+
+This is the safe export: the file stays encrypted and only your master password opens it. If another app specifically needs a plain-text list instead, see [Exporting Passwords to CSV](/help/exporting-passwords/) — that file is unencrypted and is not a backup.

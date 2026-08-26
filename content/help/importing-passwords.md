@@ -2,14 +2,14 @@
 title: "Importing Passwords"
 description: "Import a CSV export from Apple Passwords, Chrome, Firefox, Bitwarden, KeePassXC, or 1Password into PanicVault, including TOTP columns."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Passwords & Entries"
 weight: 70
 ---
 
-You can bring passwords into PanicVault from other password managers and browsers by importing a CSV file. Imported entries are added directly to the vault you have open, and PanicVault detects which app the file came from automatically.
+You can bring passwords into PanicVault from other password managers and browsers by importing a CSV file. Imported entries are added directly to the vault you have open, and PanicVault detects which app the file came from automatically. Going the other way is covered in [Exporting Passwords to CSV](/help/exporting-passwords/).
 
 ## Before You Import
 

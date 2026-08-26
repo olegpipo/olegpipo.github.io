@@ -2,7 +2,7 @@
 title: "Managing Your Vault"
 description: "Unlock and lock your PanicVault vault, navigate the entry list, search, understand auto-lock behavior, and delete a vault safely."
 date: 2026-07-14
-lastmod: 2026-08-25
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
@@ -20,7 +20,7 @@ Tap a vault on the home screen to open the lock screen. You have two ways to unl
 
 If biometric unlock fails or your master password is required (see [Master Password Re-entry](/help/security-and-settings/) in Settings), you can always fall back to your master password.
 
-A vault can also require a second factor alongside the master password: a key file, or a physical YubiKey. Rows for both sit below the password field on the lock screen. For hardware keys — YubiKey challenge-response over NFC on iPhone, and over USB on Mac — see [Hardware Keys (YubiKey)](/help/hardware-keys/).
+A vault can also require a second factor alongside the master password: a key file, or a physical YubiKey. Rows for both sit below the password field on the lock screen. For key files — choosing one, generating one, and what PanicVault remembers between unlocks — see [Key Files](/help/key-files/). For hardware keys — YubiKey challenge-response over NFC on iPhone, and over USB on Mac — see [Hardware Keys (YubiKey)](/help/hardware-keys/).
 
 {{< callout type="tip" >}}
 If you enter the wrong password three or more times, PanicVault shows an extended error message reminding you to double-check your master password.

@@ -2,14 +2,14 @@
 title: "Hardware Keys (YubiKey)"
 description: "Protect a PanicVault vault with a YubiKey — challenge-response over NFC on iPhone and USB on Mac, slot selection, backup keys, and troubleshooting."
 date: 2026-08-25
-lastmod: 2026-08-25
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Settings"
 weight: 155
 ---
 
-A hardware key is a small physical device — a YubiKey — that you tap against your iPhone or plug into your Mac to unlock your vault. Like a key file, it is an extra factor on top of your master password, but unlike a file it cannot be copied: the secret lives inside the key's chip and never comes out. PanicVault uses the same challenge-response scheme as KeePassXC, so a vault protected by a YubiKey opens in both apps.
+A hardware key is a small physical device — a YubiKey — that you tap against your iPhone or plug into your Mac to unlock your vault. Like a [key file](/help/key-files/), it is an extra factor on top of your master password, but unlike a file it cannot be copied: the secret lives inside the key's chip and never comes out. PanicVault uses the same challenge-response scheme as KeePassXC, so a vault protected by a YubiKey opens in both apps.
 
 ## What a Hardware Key Does
 
