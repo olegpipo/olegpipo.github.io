@@ -66,7 +66,7 @@ When local and remote vaults differ, PanicVault compares every entry by its uniq
 - **Entry moved between groups** -- the move with the more recent timestamp wins.
 - **Both sides changed the same entry** -- this is a conflict (see below).
 
-Groups, entry history, attachments, and custom icons are also merged. Whenever one version of an entry replaces another -- automatically, or because you chose a side when resolving a conflict -- the version it replaced is kept in that entry's [history](/help/entries/#entry-history), so a merge never loses what you had.
+Groups, entry history, attachments, and custom icons are also merged. Whenever one version of an entry replaces another -- automatically, or because you chose a side when resolving a conflict -- the version it replaced is kept in that entry's [history](/help/entries/#entry-history), so a merge never loses what you had. When such a kept version is all a sync brought in -- your entries read exactly as they did before -- the merged vault is still saved and uploaded, and the sync confirmation says the history was merged.
 
 ## Handling Sync Conflicts
 
