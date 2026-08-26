@@ -2,7 +2,7 @@
 title: "Google Drive Sync"
 description: "Connect one or more Google accounts to PanicVault, sync vaults with entry-level merging, resolve conflicts, and work offline with queued syncs."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Sync"
@@ -51,6 +51,10 @@ PanicVault syncs Google Drive vaults using entry-level merging. Instead of repla
 - **Manual sync**: Tap the sync icon in the toolbar to trigger the same merge flow at any time.
 
 The last sync time is shown on the vault card on the home screen.
+
+{{< callout type="note" >}}
+A change you make on another device while this vault is **locked** here is downloaded in the background — there is nothing to merge, because the locked copy has no unsaved changes of its own. The next time you unlock the vault, PanicVault tells you with a **"Vault updated from Google Drive"** message, so a vault that quietly gained an entry or a new name never takes you by surprise. The message appears once, for that update.
+{{< /callout >}}
 
 ## How Merging Works
 
