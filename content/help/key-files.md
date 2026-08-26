@@ -41,6 +41,8 @@ PanicVault stores only a secure reference to the key file's location — it neve
 
 If the key file is moved, renamed, or deleted, PanicVault can no longer find it and shows a clear message such as "The saved key file could not be found. Add it to unlock." When this happens, tap the key file row and select the file again from its new location.
 
+A key file you keep in iCloud Drive is fetched the same way the vault is: if iCloud has moved it off the device to save space, PanicVault downloads it before unlocking — the lock screen says **Downloading from iCloud...** while you wait, and should it take longer than a moment you are told your key file **hasn't finished downloading from iCloud** rather than that it could not be found.
+
 ## Biometric Unlock with a Key File
 
 Face ID and Touch ID keep working on key-file vaults. When you unlock with biometrics, PanicVault automatically loads the remembered key file for you — you do not have to select it each time. If the key file cannot be found (because it was moved or deleted), PanicVault asks you to select it again before unlocking. Biometric unlock itself is covered in [Security & Settings](/help/security-and-settings/).
