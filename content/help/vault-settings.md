@@ -35,10 +35,12 @@ See [Entries (Passwords)](/help/entries/) for how the **Use default** button beh
 
 Control how [entry history](/help/entries/) is stored:
 
+- **Unlimited History Items** -- when on, every previous version is kept, however many there are
 - **Max History Items** -- the maximum number of previous versions kept per entry (default: 10)
+- **Unlimited History Size** -- when on, history is never trimmed for size
 - **Max History Size** -- the maximum total size of history data (default: 6 MB, options from 1 MB to 20 MB)
 
-Both limits are applied when you save a change to an entry, and again after a sync merges two copies of the vault -- the same rules KeePassXC follows. PanicVault keeps the newest versions and drops the oldest ones until an entry's history fits both limits; attachments count towards the size once, even when several versions share the same file. A vault created in another KeePass app can set either limit to unlimited, and PanicVault then keeps every version.
+Both limits are applied when you save a change to an entry, and again after a sync merges two copies of the vault -- the same rules KeePassXC follows. PanicVault keeps the newest versions and drops the oldest ones until an entry's history fits both limits; attachments count towards the size once, even when several versions share the same file. Either limit can be set to unlimited, here or in another KeePass app, and PanicVault then keeps every version.
 
 ## Recycle Bin
 

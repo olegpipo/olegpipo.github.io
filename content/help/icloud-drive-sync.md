@@ -2,7 +2,7 @@
 title: "iCloud Drive Sync"
 description: "Store PanicVault vaults on iCloud Drive to sync them across your Apple devices, with automatic entry-level merging and conflict resolution."
 date: 2026-07-14
-lastmod: 2026-08-25
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Sync"
@@ -33,10 +33,13 @@ When you are signed in to iCloud, the file browser opens in your **PanicVault** 
 
 You can also open a vault straight from the Files app or the Finder; see [iCloud Drive and the Files App](#icloud-drive-and-the-files-app) below.
 
+If iCloud has moved a vault off the device to save space, PanicVault fetches it when you unlock and the lock screen says **Downloading from iCloud...** while it does. Should it take longer than a moment, it tells you the vault **hasn't finished downloading from iCloud** -- let the download finish in Files or the Finder, then unlock again.
+
 ## How Sync Works
 
 iCloud Drive vaults sync automatically using entry-level merging, the same intelligent system used for Google Drive. Changes from multiple devices are merged at the entry level so that edits from both sides are preserved.
 
+- **On unlock**: The vault file is read once, through file coordination, so you never open a copy that iCloud was halfway through replacing with another device's version. If iCloud has moved the vault off the device, it is fetched first and the lock screen says **Downloading from iCloud...** while you wait.
 - **On save**: When you save changes, the file is written to iCloud Drive using file coordination. The operating system handles uploading the file to iCloud in the background.
 - **On app activation**: When PanicVault returns to the foreground, it checks all iCloud vaults for remote changes. If the unlocked vault has new remote changes, they are merged automatically.
 - **Background monitoring**: PanicVault uses the system metadata query API to detect when iCloud Drive files change. Changes are debounced to avoid rapid repeated syncs, and the app ignores notifications caused by its own recent writes.

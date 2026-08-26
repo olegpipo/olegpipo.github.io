@@ -2,7 +2,7 @@
 title: "Two-Factor Authentication (TOTP)"
 description: "Set up TOTP two-factor codes in PanicVault by scanning a QR code or entering a Base32 secret, and view live codes next to your passwords."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "2FA & Passkeys"
@@ -51,6 +51,6 @@ PanicVault supports multiple TOTP storage formats for compatibility with other K
 - **TOTP Seed + TOTP Settings** (KeeTrayTOTP / KeePass plugin format)
 - **TimeOtp-\* fields** (KeePass native TOTP format) -- supports Base32, Base64, and Hex-encoded secrets
 
-When you set up TOTP in PanicVault, it saves the secret in the standard otpauth:// URI format for maximum compatibility.
+When you set up TOTP in PanicVault, it saves the secret in the standard otpauth:// URI format for maximum compatibility. An entry whose TOTP was written by another app keeps that app's fields exactly as they are -- PanicVault only rewrites them into the otpauth:// URI when you change the one-time password settings here yourself.
 
 TOTP secrets can also arrive with a CSV import -- see [Importing Passwords](/help/importing-passwords/). For more on working with other KeePass clients, see [KeePass Compatibility](/help/keepass-compatibility/).

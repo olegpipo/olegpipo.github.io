@@ -2,7 +2,7 @@
 title: "Entries (Passwords)"
 description: "Create, edit, and delete PanicVault entries, and use custom fields, tags, expiry dates, history, attachments, icons, and colors."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-26
 draft: false
 silo: "User Manual"
 helpgroup: "Passwords & Entries"
@@ -44,7 +44,7 @@ Tap an entry to see its full details. The detail view shows:
 3. Make your changes
 4. Tap **Save**
 
-When you change a password, PanicVault automatically saves the old version in the entry's history so you can always look back at previous passwords.
+When you save a change to an entry, PanicVault automatically keeps the previous version in the entry's history, so you can always look back at what the entry looked like before — not just its old passwords.
 
 ## Deleting Entries
 
@@ -104,7 +104,7 @@ Expired entries show a red "EXPIRED" badge in the detail view.
 
 ## Entry History
 
-PanicVault keeps a history of changes to each entry. Every time you save an entry with a changed password, the previous version is saved automatically.
+PanicVault keeps a history of changes to each entry. Every time you save an entry with any field changed — password, username, title, URL, notes, custom fields, tags, colors, icon, attachments, auto-type or expiry — the previous version is saved automatically, the same rule KeePassXC follows. Saving an entry you did not actually change adds nothing to its history.
 
 To view history:
 
