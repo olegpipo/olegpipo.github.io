@@ -2,7 +2,7 @@
 title: "Hardware Keys (YubiKey)"
 description: "Protect a PanicVault vault with a YubiKey — challenge-response over NFC on iPhone and USB on Mac, slot selection, backup keys, and troubleshooting."
 date: 2026-08-25
-lastmod: 2026-08-26
+lastmod: 2026-08-27
 draft: false
 silo: "User Manual"
 helpgroup: "Settings"
@@ -155,6 +155,7 @@ Tap **Touch YubiKey** on the banner and the sync completes. PanicVault never ask
 |---|---|
 | **No YubiKey found.** | iPhone: hold the key flat against the top of the phone and try again. Mac: plug it in and try again. |
 | **This iPad can't read a YubiKey.** | Unlock this vault on an iPhone or a Mac. iPad has no supported way to reach the key. |
+| **That NFC card isn't a YubiKey.** | iPhone only. Something answered the phone, but it was not a YubiKey — a transit card or an office badge in the same case will answer first. Move the other cards away and hold the YubiKey flat against the top of the phone. |
 | **Slot N isn't set up for challenge-response.** | Either the vault uses the other slot — switch the picker — or the slot was never programmed. Configure it with YubiKey Manager. |
 | **This YubiKey has its OTP application turned off for NFC.** | Re-enable the OTP application for NFC with YubiKey Manager, then try again. |
 | **This YubiKey is new. Plug it into a computer once, then it will work over NFC.** | Recent YubiKeys ship with NFC restricted until the key has been powered over USB once. Plug it into any computer's USB port for a moment, then retry the NFC unlock. |
