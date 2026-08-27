@@ -2,7 +2,7 @@
 title: "Entries (Passwords)"
 description: "Create, edit, and delete PanicVault entries, and use custom fields, tags, expiry dates, history, attachments, icons, and colors."
 date: 2026-07-14
-lastmod: 2026-08-26
+lastmod: 2026-08-27
 draft: false
 silo: "User Manual"
 helpgroup: "Passwords & Entries"
@@ -106,7 +106,7 @@ Expired entries show a red "EXPIRED" badge in the detail view, and in the entry 
 
 ## Entry History
 
-PanicVault keeps a history of changes to each entry. Every time you save an entry with any field changed — password, username, title, URL, notes, custom fields, tags, colors, icon, attachments, auto-type or expiry — the previous version is saved automatically, the same rule KeePassXC follows. Saving an entry you did not actually change adds nothing to its history.
+PanicVault keeps a history of changes to each entry. Every time you save an entry with any field changed — password, username, title, URL, notes, custom fields, one-time password, attachments, icon, tags, colors, override URL, auto-type or expiry — the previous version is saved automatically, the same rule KeePassXC follows. Saving an entry you did not actually change adds nothing to its history.
 
 To view history:
 
@@ -114,7 +114,28 @@ To view history:
 2. Tap the overflow menu (three dots)
 3. Choose **Entry History**
 
-The history view shows each previous version with the date, what changed (title, username, password, URL, notes, etc.), and you can expand each version to see the details.
+### What the history view shows
+
+The list opens with a **Current** row — the version in the vault right now — followed by every kept version, newest first. Each version shows:
+
+- The date and time it was recorded
+- Chips naming what is different between that version and the one above it in the list ("Differs from the version above", or "Differs from the current version" for the newest one) — for example Password, Icon or Attachments
+- The values themselves: only the fields that changed by default, with **Show all fields** expanding the row to everything that version held — title, username, password, URL, notes, custom fields, whether a one-time password was configured, attachments with their file sizes, the icon drawn as it was (built-in or custom), tags, colors, override URL, auto-type and expiry
+
+Every kind of change the chips can name has a matching row in the details, so a chip never points at something you cannot then look at.
+
+Passwords in history are masked. Tap **Reveal** to read one, or **Copy** to put it on the clipboard — this is how you get back a password you changed and then needed again. The mask is a fixed row of dots and does not indicate the password's length. Custom fields marked as protected stay masked too, and a one-time password's secret is never shown — history only records whether one was configured.
+
+### Restoring a version
+
+Tap **Restore** on any version to put the entry back to exactly what it held then: password, custom fields, attachments, custom icon, colors, expiry, everything. A confirmation names the version's date and lists what will change before anything is written.
+
+A restore is an ordinary edit, so the version you were on is itself kept in the entry's history — restore the wrong one and you can simply restore back. The entry keeps its identity, stays in its group, keeps the rest of its history, and is saved and synced like any other edit.
+
+Two limits are worth knowing:
+
+- **History does not reach back forever.** The bottom of the history view spells out the window — for example "Keeps up to 10 versions or 6 MB of history" — which you set in [History Settings](/help/vault-settings/#history-settings). Anything older was dropped when those limits were applied, permanently, and cannot be restored. When an entry's history is already full, the version a restore pushes in displaces the oldest one for good; the confirmation says so in as many words and names the version you are about to lose.
+- **An entry in the Recycle Bin cannot have a version restored.** Move the entry out of the Recycle Bin first, then restore.
 
 ## Attachments
 
@@ -152,6 +173,8 @@ You can personalize entries with custom colors and icons.
 4. Select a custom icon that was previously uploaded to the vault
 5. Tap **Upload Custom Icon** to add a new icon from a PNG or JPEG image (automatically resized to 128x128)
 6. If the entry has a URL, tap the **globe icon** to automatically fetch the website's favicon and set it as the entry's custom icon — this is the quickest way to give an entry a recognizable icon
+
+Changing an entry's colors or icon is a change like any other, so the previous ones are kept in the entry's [history](#entry-history) — the history view draws each version's icon as it was, and restoring that version brings the icon back.
 
 {{< callout type="tip" >}}
 Favicon auto-fetch downloads the site's icon, resizes it, and saves it as a custom icon in your vault. It works best when the URL field contains a valid website address.

@@ -2,7 +2,7 @@
 title: "Vault Settings"
 description: "Per-vault settings in PanicVault: database info, default username, entry history limits, Recycle Bin, changing your master password, and exporting a .kdbx file."
 date: 2026-07-14
-lastmod: 2026-08-26
+lastmod: 2026-08-27
 draft: false
 silo: "User Manual"
 helpgroup: "Settings"
@@ -41,6 +41,8 @@ Control how [entry history](/help/entries/) is stored:
 - **Max History Size** -- the maximum total size of history data (default: 6 MB, options from 1 MB to 20 MB)
 
 Both limits are applied when you save a change to an entry, and again after a sync merges two copies of the vault -- the same rules KeePassXC follows. PanicVault keeps the newest versions and drops the oldest ones until an entry's history fits both limits; attachments count towards the size once, even when several versions share the same file. Either limit can be set to unlimited, here or in another KeePass app, and PanicVault then keeps every version.
+
+These limits also decide how far back you can [restore an entry](/help/entries/#entry-history): dropped versions are gone for good, and the history view shows the current window at the bottom of the list.
 
 ## Recycle Bin
 
