@@ -2,7 +2,7 @@
 title: "Managing Your Vault"
 description: "Unlock and lock your PanicVault vault, navigate the entry list, search, understand auto-lock behavior, and delete a vault safely."
 date: 2026-07-14
-lastmod: 2026-08-26
+lastmod: 2026-08-28
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
@@ -24,6 +24,12 @@ A vault can also require a second factor alongside the master password: a key fi
 
 {{< callout type="tip" >}}
 If you enter the wrong password three or more times, PanicVault shows an extended error message reminding you to double-check your master password.
+{{< /callout >}}
+
+Most vaults unlock in about a second. A vault whose key derivation settings are deliberately heavy — a high iteration count, or a large memory setting — takes longer, and while it works the lock screen says **Deriving key... 3 s**, counting up, with a rough total in brackets once PanicVault can estimate one. After two seconds a **Cancel** button appears beside it. Cancelling costs you nothing: no password was tested, so it is not counted as a failed attempt, and you can try again straight away. See [Supported Key Derivation](/help/keepass-compatibility/) for which settings PanicVault accepts.
+
+{{< callout type="note" >}}
+Cancelling stops PanicVault *waiting* — the calculation itself cannot be interrupted, and finishes quietly in the background. If you unlock again immediately you may see **A previous unlock attempt is still finishing. Try again in a moment.** That is PanicVault refusing to run two large key derivations at once rather than risk running the device out of memory. Wait a few seconds and unlock again.
 {{< /callout >}}
 
 ## Locking Your Vault
