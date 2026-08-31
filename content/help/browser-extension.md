@@ -2,7 +2,7 @@
 title: "Browser Extension for Mac"
 description: "Install the PanicVault browser extension and helper to fill passwords, usernames, TOTP codes, and passkeys in Chrome, Brave, Edge, and Arc with Touch ID."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-31
 draft: false
 silo: "User Manual"
 helpgroup: "Filling Passwords"
@@ -88,6 +88,8 @@ For accounts with two-factor authentication:
 - You have unlocked your vault at least once in the PanicVault app with your master password
 - Touch ID is enabled in PanicVault settings
 - Your Mac has a Touch ID sensor or an Apple Watch configured for authentication
+
+**macOS asks for your login keychain password**: The first time the helper reads your vault key, macOS asks permission with a dialog naming `com.tenpercent.panicvault`. Press **Always Allow** and enter your Mac login password -- **Allow** grants permission only once, so the dialog would return on every fill. If it keeps appearing, open **Keychain Access** (Applications > Utilities), select the **login** keychain, open the `com.tenpercent.panicvault` item, and add the helper on the **Access Control** tab.
 
 **No credentials shown**: The extension matches credentials by URL. Make sure:
 

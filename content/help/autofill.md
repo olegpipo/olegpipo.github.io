@@ -2,7 +2,7 @@
 title: "AutoFill"
 description: "Enable PanicVault as a system AutoFill provider on iOS and Mac to fill usernames and passwords in Safari and apps, across multiple vaults."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-08-31
 draft: false
 silo: "User Manual"
 helpgroup: "Filling Passwords"
@@ -35,5 +35,18 @@ See [Entries (Passwords)](/help/entries/) for where the URL and Override URL fie
 ## Multi-Vault AutoFill
 
 If you have multiple vaults, credentials from all unlocked vaults are available in AutoFill. When you unlock a vault during a session, its credentials are added to the pool of available suggestions. This means you can keep separate vaults for personal and work accounts and still see all your credentials in QuickType suggestions and the AutoFill credential picker, as long as each vault has been unlocked at least once during the current session.
+
+## Troubleshooting AutoFill on Mac
+
+**macOS asks for your login keychain password on every fill**: On older builds, macOS showed a dialog reading "AutofillExtension (Safari) wants to use your confidential information stored in com.tenpercent.panicvault in your keychain" every time you filled a password.
+
+Current builds keep the AutoFill key in a shared keychain group that the extension can read directly, so the dialog stops appearing on its own the next time you unlock a vault in the PanicVault app. To clear it straight away, or if you are still on an older build:
+
+- When the dialog appears, press **Always Allow** and enter your Mac login password. **Allow** grants permission for that one fill only, which is why the dialog keeps coming back.
+- If it still appears, open **Keychain Access** (Applications > Utilities), select the **login** keychain, find the `com.tenpercent.panicvault` item and open it. On the **Access Control** tab, add the AutoFill extension to the list of allowed applications (or choose **Allow all applications to access this item**), then click **Save Changes**.
+
+{{< callout type="note" >}}
+This keychain item does not hold any of your passwords. It holds only the key that encrypts the small credential cache AutoFill reads, and it never leaves your Mac.
+{{< /callout >}}
 
 To fill passwords in Chromium-based browsers on Mac, see the [Browser Extension for Mac](/help/browser-extension/).
