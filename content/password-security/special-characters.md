@@ -1,26 +1,26 @@
 ---
-title: "Special Characters in Passwords: The Truth"
-description: "Do special characters actually make passwords stronger? The math says it's complicated. See what really matters for security."
+title: "What Is a Special Character in a Password? Full List + Examples"
+description: "A special character in a password is any symbol that isn't a letter or number, like ! @ # $ % &. Here's the complete list and which ones some sites reject."
 date: 2026-02-13
-lastmod: 2026-03-06
+lastmod: 2026-09-02
 draft: false
 silo: "Password Security"
 faq:
   - q: "What are special characters in a password?"
-    a: "Special characters are non-alphanumeric symbols like !@#$%^&*()-_=+[]{}|;:',.<>?/~`. They expand the character set from 62 (letters + digits) to 95 printable ASCII characters."
+    a: "A special character in a password is any symbol that is not a letter or a number -- like !@#$%^&*()-_=+[]{}|;:',.<>?/~`. There are 32 such symbols in standard ASCII, and together with the space they expand the character set from 62 (letters + digits) to 95 printable characters."
   - q: "Do special characters make passwords stronger?"
     a: "They add some entropy, but length matters far more. A 20-character lowercase password is stronger than an 8-character password with special characters."
   - q: "What special characters are allowed in passwords?"
     a: "Most services accept standard ASCII special characters: !@#$%^&*()-_=+. Some restrict certain symbols. A password manager generates compatible passwords automatically."
 ---
 
-Almost every website you have ever signed up for has nudged you to include at least one special character in your password. An exclamation mark here, an ampersand there, maybe a percent sign if you are feeling adventurous. The assumption behind these requirements is straightforward: more character types equals a stronger password. But is that actually true? The answer is more nuanced than most [password security](/password-security/) advice suggests, and understanding the details can change how you approach every account you create.
+A special character in a password is any symbol that is not a letter or a number, such as ! @ # $ % or &. Almost every website you have ever signed up for has nudged you to include at least one of them in your password. An exclamation mark here, an ampersand there, maybe a percent sign if you are feeling adventurous. The assumption behind these requirements is straightforward: more character types equals a stronger password. But is that actually true? The answer is more nuanced than most [password security](/password-security/) advice suggests, and understanding the details can change how you approach every account you create.
 
 This article digs into the real math behind special characters, explains why attackers are rarely fooled by the tricks people use, and offers practical recommendations grounded in how passwords are actually cracked in 2026.
 
 ## Complete List of Special Characters for Passwords
 
-Here are all 33 standard special characters accepted by most websites and services:
+Here are all 32 standard special characters accepted by most websites and services:
 
 ```
 ! @ # $ % ^ & * ( ) - _ = + [ ] { } | \ ; : ' " , . < > ? / ~ `
@@ -36,13 +36,13 @@ Here are all 33 standard special characters accepted by most websites and servic
 | Connectors | `_ - @ # & \| \\` |
 | Currency & Special | `$` `` ` `` |
 
-So what counts as a special character in a password? Any printable symbol that is not a letter (A-Z, a-z) or a digit (0-9) qualifies. These 33 characters come from the standard ASCII printable set and together expand your character pool from 62 (letters plus digits) to 95. Not all services accept every special character -- some restrict `< > " ' \` or spaces. A [password manager](/password-managers/what-is-a-password-manager/) generates compatible passwords automatically through its [built-in generator](/password-managers/how-generators-work/), so you never have to guess which characters a site allows.
+So what counts as a special character in a password? Any printable symbol that is not a letter (A-Z, a-z) or a digit (0-9) qualifies. These 32 characters come from the standard ASCII printable set, and together with the space they expand your character pool from 62 (letters plus digits) to 95. Not all services accept every special character -- some restrict `< > " ' \` or spaces. A [password manager](/password-managers/what-is-a-password-manager/) generates compatible passwords automatically through its [built-in generator](/password-managers/how-generators-work/), so you never have to guess which characters a site allows.
 
 ## The Conventional Wisdom
 
 The standard guidance has been repeated for decades: a strong password should contain uppercase letters, lowercase letters, numbers, and special characters. This four-category rule originated in the early days of computing when passwords were short -- often just six to eight characters. At that length, every additional character type genuinely expanded the search space an attacker had to cover.
 
-The reasoning makes intuitive sense. If you only use lowercase letters, an attacker trying every combination has 26 options per position. Add uppercase letters and that jumps to 52. Include digits and it becomes 62. Throw in the 33 printable special characters on a standard keyboard (`!@#$%^&*()-_=+[]{}|;:'",.<>?/~\``) and the pool expands to 95.
+The reasoning makes intuitive sense. If you only use lowercase letters, an attacker trying every combination has 26 options per position. Add uppercase letters and that jumps to 52. Include digits and it becomes 62. Throw in the 32 printable special characters on a standard keyboard (`!@#$%^&*()-_=+[]{}|;:'",.<>?/~\``) plus the space, and the pool expands to 95.
 
 More options per position means more possible combinations overall, which means more time for an attacker to brute force the password. So far, so logical. But this analysis assumes brute force is the primary attack vector -- and in practice, it usually is not.
 
