@@ -78,7 +78,7 @@ iCloud Keychain supports shared password groups, allowing you to share specific 
 
 ### Basic Security Monitoring
 
-Apple Passwords monitors your credentials against known data breaches and flags weak, reused, or compromised passwords. When a breach is detected, you receive a notification with a direct link to change the affected password. This baseline monitoring catches the most common and dangerous password problems.
+Apple Passwords monitors your credentials against known data breaches and flags weak, reused, or compromised passwords. When a breach is detected, you receive a notification with a direct link to change the affected password. This baseline monitoring catches the most common and dangerous password problems. In iOS 27 the app goes a step further with [automatic password changes](/apple/ios-27-passwords-app/), which let Apple Intelligence and Safari carry out the change on a flagged account for you.
 
 ## The Limitations
 

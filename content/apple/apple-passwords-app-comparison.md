@@ -87,7 +87,7 @@ On Mac, Apple Passwords works in Safari natively. For Chrome, Firefox, and other
 
 ### No Advanced Security Auditing
 
-Apple Passwords alerts you to compromised passwords (passwords that appear in known data breaches), reused passwords, and weak passwords. This covers the fundamentals. But it lacks the depth of security auditing that tools like 1Password's Watchtower or Bitwarden's vault health reports provide. There are no reports showing password age, no alerts for websites where you have not enabled two-factor authentication, and no proactive recommendations for improving your security posture.
+Apple Passwords alerts you to compromised passwords (passwords that appear in known data breaches), reused passwords, and weak passwords. This covers the fundamentals. But it lacks the depth of security auditing that tools like 1Password's Watchtower or Bitwarden's vault health reports provide. There are no reports showing password age, no alerts for websites where you have not enabled two-factor authentication, and no proactive recommendations for improving your security posture. What Apple has added instead is action rather than analysis: [iOS 27's automatic password changes](/apple/ios-27-passwords-app/) let the app fix a flagged credential for you rather than only pointing at it.
 
 ## Third-Party Managers: Filling the Gaps
 

@@ -198,3 +198,4 @@ The critical preparation steps are simple: verify that your password data is syn
 - [How to Back Up a KeePass Database](/keepass/backup-database/) -- Protect your vault before you migrate
 - [iCloud Sync for Your Password Vault](/cloud-sync/icloud-sync/) -- Keeping your .kdbx file reachable from any device
 - [Best Password Manager for iPhone](/apple/best-password-manager-iphone/) -- Choosing the app you set up on the new phone
+- [Apple Passwords in iOS 27: Automatic Password Changes](/apple/ios-27-passwords-app/)

@@ -146,6 +146,8 @@ Both are excellent. Bitwarden wins on transparency -- open-source code you can v
 
 **Passkey support.** Apple helped create the passkey standard. Its implementation is the industry reference point, with tight hardware and OS integration that third-party managers cannot replicate.
 
+**Free breach and reuse alerts.** Apple Passwords flags weak, reused, and compromised credentials at no cost, and [iOS 27's automatic password changes](/apple/ios-27-passwords-app/) go further by letting the app carry out the change on a flagged account for you.
+
 ## Platform Support
 
 | Platform | Bitwarden | Apple Passwords |

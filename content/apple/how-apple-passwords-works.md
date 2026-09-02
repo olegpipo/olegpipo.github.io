@@ -2,7 +2,7 @@
 title: "How Apple Passwords App Works"
 description: "How Apple's Passwords app works on iPhone, iPad, and Mac. Encryption, AutoFill, syncing, passkeys, and what it can and cannot do."
 date: 2026-03-06
-lastmod: 2026-03-06
+lastmod: 2026-09-02
 draft: false
 silo: "Apple Ecosystem"
 faq:
@@ -129,6 +129,10 @@ Short passwords, common words, simple patterns, and other weak passwords get fla
 ### What to Do About Alerts
 
 For each flagged credential, the Passwords app provides a "Change Password" link that takes you directly to the website. You can then update the password and save the new one. The goal is to replace every flagged password with a unique, randomly generated strong password -- and the app will generate one for you when you are on the site's password change page.
+
+### What's New in iOS 27
+
+Apple announced at WWDC in June 2026 that the Passwords app in iOS 27, iPadOS 27, and macOS 27 can act on those alerts for you. In Apple's words, it "alerts you to weak or compromised passwords and can update them on your behalf" -- one tap hands the job to Apple Intelligence and Safari, which open the site, sign in with your saved credentials, complete the change flow, and save the new strong password. It needs an Apple Intelligence-capable device and a site the automation can navigate. See [Apple Passwords in iOS 27](/apple/ios-27-passwords-app/) for the detail.
 
 ## Verification Codes (TOTP)
 
