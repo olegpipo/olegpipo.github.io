@@ -44,7 +44,7 @@ The key assumption in both formulas is that each character (or word) is selected
 
 ## Entropy for Different Character Sets
 
-The character set you draw from determines how much entropy each character contributes. Here is a reference table showing the entropy per character for common character sets, along with the total entropy for passwords of various lengths.
+The character set you draw from determines how much entropy each character contributes. If you need a refresher on the four types that make up these sets, see [password characters explained](/password-security/password-characters-explained/). Here is a reference table showing the entropy per character for common character sets, along with the total entropy for passwords of various lengths.
 
 ### Entropy Per Character
 

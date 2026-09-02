@@ -110,7 +110,7 @@ While complexity rules have diminishing returns against human behavior, [passwor
 
 A 20-character password composed of two dictionary words and some numbers is still significantly harder to crack than an 8-character password with every character type represented. This is why NIST's revised guidelines emphasize minimum length (recommending at least 15 characters) and explicitly discourage composition rules.
 
-The shift is straightforward: instead of forcing users to include specific character types in short passwords, allow and encourage them to create longer passwords without arbitrary constraints.
+The shift is straightforward: instead of forcing users to include specific character types in short passwords, allow and encourage them to create longer passwords without arbitrary constraints. Understanding [what counts as a character in a password](/password-security/password-characters-explained/) -- and how little each extra type adds compared to extra length -- makes the reasoning behind that shift clear.
 
 ## The NIST Guidelines: What Actually Works
 

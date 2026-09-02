@@ -84,7 +84,7 @@ When a site caps your length, use the maximum it allows. Add a note to the vault
 - **Digits** (0-9): 10 characters
 - **Special characters** (!@#$%^&*): 20-30 characters depending on which set
 
-Together, these give you 90+ possible characters per position, maximizing entropy per character.
+Together, these give you 90+ possible characters per position, maximizing entropy per character. Our guide to [what a character in a password means](/password-security/password-characters-explained/) covers each of these four types and the entropy it adds.
 
 ### When to Exclude Character Types
 

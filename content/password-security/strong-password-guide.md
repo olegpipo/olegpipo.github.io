@@ -29,7 +29,7 @@ The goal is to aim for at least **60 bits of entropy** for important accounts an
 
 ## Length Beats Complexity
 
-For years, security advice focused on complexity: use uppercase, lowercase, numbers, and special characters. While that advice is not wrong, it misses the bigger picture. **Length is the single most important factor** in password strength.
+For years, security advice focused on complexity: use uppercase, lowercase, numbers, and special characters -- [the four types of password characters](/password-security/password-characters-explained/) available on a standard keyboard. While that advice is not wrong, it misses the bigger picture. **Length is the single most important factor** in password strength.
 
 Consider these two passwords:
 
