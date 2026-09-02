@@ -157,3 +157,4 @@ After cleaning up your Reddit presence, take these additional steps:
 - [How to Secure Your Social Media Accounts](/digital-privacy/secure-social-media/)
 - [The Dangers of Password Reuse](/password-security/password-reuse-dangers/)
 - [Conduct a Personal Security Audit](/digital-privacy/personal-security-audit/)
+- [How to Delete a Pinterest Account](/digital-privacy/delete-pinterest-account/)

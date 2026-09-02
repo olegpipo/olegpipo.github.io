@@ -169,3 +169,4 @@ Check if the email address or phone number linked to your Snapchat account has b
 - [How to Remove Your Personal Information From Data Brokers](/digital-privacy/remove-personal-info/)
 - [The Dangers of Password Reuse](/password-security/password-reuse-dangers/)
 - [How to Secure Your Email Account](/digital-privacy/secure-email/)
+- [How to Delete a Pinterest Account](/digital-privacy/delete-pinterest-account/)

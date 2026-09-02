@@ -178,3 +178,4 @@ Some practical approaches:
 - [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
 - [Recognizing and Avoiding Phishing Attacks](/phishing/)
 - [Understanding Data Breaches](/data-breaches/)
+- [How to Delete a Pinterest Account](/digital-privacy/delete-pinterest-account/)

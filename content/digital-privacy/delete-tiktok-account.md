@@ -160,3 +160,4 @@ Enable [two-factor authentication](/two-factor-authentication/) on all accounts 
 - [Your Privacy Rights Under Current Laws](/digital-privacy/privacy-laws/)
 - [How to Remove Your Personal Information From Data Brokers](/digital-privacy/remove-personal-info/)
 - [Conduct a Personal Security Audit](/digital-privacy/personal-security-audit/)
+- [How to Delete a Pinterest Account](/digital-privacy/delete-pinterest-account/)

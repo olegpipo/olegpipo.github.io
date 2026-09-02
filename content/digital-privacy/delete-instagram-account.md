@@ -157,3 +157,4 @@ If you used Instagram login for third-party services, create standalone accounts
 - [How to Delete Your Facebook Account](/digital-privacy/delete-facebook-account/)
 - [Conduct a Personal Security Audit](/digital-privacy/personal-security-audit/)
 - [How to Remove Your Personal Information From Data Brokers](/digital-privacy/remove-personal-info/)
+- [How to Delete a Pinterest Account](/digital-privacy/delete-pinterest-account/)
