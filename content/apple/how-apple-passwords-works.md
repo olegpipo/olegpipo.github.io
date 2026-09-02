@@ -80,7 +80,7 @@ This is a meaningful security guarantee. It means you are trusting Apple's devic
 
 ### How Devices Establish Trust
 
-When you add a new Apple device to your account, it must be approved before it can receive your Keychain data. This approval happens through your existing devices -- you confirm the new device by entering a verification code on a device you already trust. This prevents someone who compromises your Apple ID password from simply adding a new device and downloading all your passwords.
+When you add a new Apple device to your account, it must be approved before it can receive your Keychain data. This approval happens through your existing devices -- you confirm the new device by entering a verification code on a device you already trust. This prevents someone who compromises your Apple ID password from simply adding a new device and downloading all your passwords. It is also the step that trips people up when they ask whether [passwords transfer to a new iPhone](/apple/new-iphone-upgrade/) -- a device awaiting approval shows an empty list until the approval goes through.
 
 Each device in your iCloud Keychain circle has its own encryption keys. When you save a new password on your iPhone, the data is encrypted individually for each of your other devices using their respective keys, then uploaded to iCloud. Each device can only decrypt the data encrypted specifically for it. This per-device encryption model means there is no single key that unlocks everything -- compromising one device does not automatically compromise the keys for your other devices.
 

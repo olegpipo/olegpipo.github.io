@@ -203,4 +203,5 @@ Set a quarterly calendar reminder to:
 - [How to Create a Secure Master Password You'll Remember](/guides/master-password/)
 - [How to Set Up a Password Manager for the First Time](/guides/first-time-setup/)
 - [KeePass Backup Database Guide](/keepass/backup-database/)
+- [Do Passwords Transfer to a New iPhone?](/apple/new-iphone-upgrade/)
 - [Cloud Sync and Storage for Password Managers](/cloud-sync/)

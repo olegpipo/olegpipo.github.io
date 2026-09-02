@@ -219,3 +219,4 @@ For a complete walkthrough, including troubleshooting when AutoFill stops appear
 - [Bitwarden vs Apple Passwords](/compare/bitwarden-vs-apple-passwords/) -- Free cross-platform versus Apple's built-in option
 - [Why iCloud Keychain Isn't Enough](/apple/icloud-keychain-not-enough/) -- When to upgrade from the built-in option
 - [AutoFill on iPhone Guide](/apple/autofill-iphone-guide/) -- Set up and troubleshoot iOS AutoFill
+- [Do Passwords Transfer to a New iPhone?](/apple/new-iphone-upgrade/) -- What moves automatically when you upgrade, and what doesn't

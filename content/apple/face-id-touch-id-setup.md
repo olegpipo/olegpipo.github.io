@@ -116,6 +116,8 @@ This is a deliberate security choice. Each device's Secure Enclave is unique, an
 2. Enable biometric unlock in the app's settings for that specific device.
 3. Authenticate with the device's enrolled biometric to complete the binding.
 
+This is why biometrics are one of the few things that do not come across when you are [transferring passwords to a new iPhone](/apple/new-iphone-upgrade/): the credentials sync, but the enrollment has to be redone.
+
 For a deeper look at managing your vault across [iPhone, iPad, and Mac](/apple/iphone-ipad-mac/), including sync options and ensuring a consistent experience, see our cross-device guide.
 
 ## How Password Managers Integrate With iOS Autofill

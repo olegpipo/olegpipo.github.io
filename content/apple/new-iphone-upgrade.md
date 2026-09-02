@@ -1,15 +1,28 @@
 ---
-title: "What Happens to Your Passwords When You Upgrade Your iPhone"
-description: "A complete guide to transferring passwords when upgrading your iPhone, covering iCloud Keychain migration, third-party password manager data, KeePass database transfer, Quick Start, and backup and restore."
+title: "Do Passwords Transfer to a New iPhone? What Moves, What Doesn't"
+description: "Yes. iCloud Keychain passwords and passkeys move over with Quick Start or an iCloud backup. What needs a manual step: third-party vaults, Face ID, and authenticator apps."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-09-02
 draft: false
 silo: "Apple Ecosystem"
+faq:
+  - q: "Do passwords transfer to a new iPhone?"
+    a: "Yes, if iCloud Keychain is turned on. Your saved passwords live in iCloud, so they download to the new iPhone as soon as you sign in with your Apple Account -- whether you use Quick Start, restore from an iCloud backup, or restore from an encrypted local backup. Passwords saved only on the old device, with iCloud Keychain off, do not sync unless you restore from an encrypted backup."
+  - q: "Do passkeys transfer to a new iPhone?"
+    a: "Yes. Passkeys saved in iCloud Keychain sync through iCloud exactly like passwords, so they appear on the new iPhone once you sign in and iCloud Keychain finishes syncing. No export or manual step is needed. Passkeys stored in a third-party password manager come back when you sign into that app or reopen your vault on the new device."
+  - q: "Why didn't my passwords transfer to my new iPhone?"
+    a: "Four causes account for most cases: iCloud Keychain was off on the old iPhone, so entries never reached iCloud; the local backup you restored from was not encrypted, and unencrypted backups omit Keychain data; the new iPhone was set up as a new device instead of restored; or the new device is still waiting for approval from a trusted device or your iCloud Security Code."
+  - q: "What passwords do I need to set up a new iPhone?"
+    a: "You need your Apple Account password and a way to receive a two-factor code, plus the passcode of your old iPhone if you use Quick Start. Have your Wi-Fi password handy, and the master password for any third-party or KeePass vault -- biometrics do not transfer, so the first unlock on the new device requires typing it."
+  - q: "Why does iCloud show fewer passwords than the Passwords app on my iPhone?"
+    a: "Usually because the two views count different things. The Passwords app also holds passkeys, Wi-Fi networks, and verification codes alongside sign-in entries, so its list can be longer than what another view reports. Entries saved while iCloud Keychain was switched off exist only on that device. Turn iCloud Keychain on and let it finish syncing before you migrate."
 ---
 
 Upgrading your iPhone should be exciting, not stressful. But among the photos, messages, and apps that need to make the journey to your new device, your passwords occupy a uniquely critical position. Lose a photo and it is a disappointment. Lose your passwords and you are locked out of your digital life. The good news is that Apple has invested heavily in making data transfer seamless, and the [Apple ecosystem](/apple/) generally handles password migration well -- if you understand what is happening and prepare properly.
 
-This guide covers every aspect of password transfer during an iPhone upgrade: what happens automatically, what requires your attention, and how to ensure that every credential -- from iCloud Keychain entries to your KeePass database to third-party app data -- arrives safely on your new device.
+This guide covers every aspect of password transfer during an iPhone upgrade: what happens automatically, what requires your attention, and how to ensure that every credential -- from iCloud Keychain entries to your KeePass database to third-party app data -- arrives safely on your new device. It applies to the iPhone 18 lineup shipping with iOS 27, and equally to any earlier iPhone you are moving from, because the transfer mechanics have not changed.
+
+> **Quick answer**: Yes, your passwords transfer. If iCloud Keychain is turned on, your saved passwords and passkeys download to the new iPhone as soon as you sign in with your Apple Account -- via Quick Start, an iCloud backup restore, or an encrypted local backup restore. What does **not** move automatically: your Face ID or Touch ID enrollment, which is tied to the old device's Secure Enclave and has to be set up fresh; the first unlock of a third-party or KeePass vault, which requires your master password rather than biometrics; and codes held in third-party authenticator apps that do not sync to an account or the cloud.
 
 ## Before You Upgrade: The Preparation Checklist
 
@@ -21,7 +34,7 @@ Open Settings on your current iPhone, tap your name at the top, then tap iCloud,
 
 ### Confirm Your Apple ID Credentials
 
-You will need your Apple ID email and password during the new iPhone setup. If you use two-factor authentication (you should), you will also need access to a trusted device or phone number for the verification code. If your current iPhone is your only trusted device, make sure you have a trusted phone number that can receive SMS codes, because your old iPhone will be unavailable during part of the setup process.
+You will need your Apple ID (now called Apple Account) email and password during the new iPhone setup. If you use two-factor authentication (you should), you will also need access to a trusted device or phone number for the verification code. If your current iPhone is your only trusted device, make sure you have a trusted phone number that can receive SMS codes, because your old iPhone will be unavailable during part of the setup process.
 
 ### Check Your Password Manager
 
@@ -143,7 +156,7 @@ Biometric enrollment always starts fresh on a new device. Your Face ID or Touch 
 
 Once your new iPhone is set up, take a few minutes to verify everything transferred correctly:
 
-- **iCloud Keychain**: Open Settings > Passwords. Browse your saved credentials and try autofilling a login in Safari to confirm the integration works.
+- **iCloud Keychain**: Open the Passwords app, which has been a standalone app since iOS 18 rather than a section inside Settings. Browse your saved credentials and try autofilling a login in Safari to confirm the integration works.
 - **Password manager**: Open PanicVault (or your manager of choice). Unlock with your master password. Browse entries, confirm the database is complete, enable Face ID, and verify TOTP codes generate correctly.
 - **AutoFill configuration**: Go to Settings > General > AutoFill & Passwords. Confirm your preferred manager is selected as the AutoFill provider.
 - **Cloud sync**: If your KeePass database is in iCloud Drive or another cloud service, make a small test change and verify it syncs back.
@@ -151,7 +164,14 @@ Once your new iPhone is set up, take a few minutes to verify everything transfer
 
 ## Common Problems and Solutions
 
-**Passwords did not transfer.** Check that iCloud Keychain is enabled (Settings > [your name] > iCloud > Passwords and Keychain). For third-party managers, sign out and back in, or re-point the app at your cloud-stored database.
+**Passwords did not transfer.** This is the most common complaint after an upgrade, and it almost always comes down to one of four things. Work through them in order:
+
+1. **iCloud Keychain was off.** Check that it is enabled on both devices (Settings > [your name] > iCloud > Passwords and Keychain). Entries saved while it was off exist only on the device where you saved them, so turn it on and let the old iPhone finish syncing before you wipe or trade it in.
+2. **The local backup was not encrypted.** Only encrypted Finder or iTunes backups include Keychain data, saved passwords, and Wi-Fi credentials. If you restored from an unencrypted backup, those items were silently omitted -- make a fresh encrypted backup from the old device and restore again.
+3. **The new iPhone was set up as new.** Choosing "Set Up as New iPhone" instead of restoring skips all app data, including any locally stored vault or database file. iCloud Keychain still syncs, but local-only data does not.
+4. **The device is waiting for approval.** A new device sometimes needs approval from an existing trusted device, or your iCloud Security Code, before Keychain data will download. Approve it from another Apple device, or use the security code, then give iCloud a few minutes to sync.
+
+For third-party managers, sign out and back in, or re-point the app at your cloud-stored database.
 
 **Face ID not working for password manager.** New enrollment does not automatically re-authorize apps. Open your manager's settings and re-enable Face ID unlock -- you will need your master password.
 
@@ -170,3 +190,11 @@ The iPhone upgrade cycle is annual for many users. Building these checks into yo
 Transferring passwords during an iPhone upgrade is largely automatic if you are prepared. iCloud Keychain syncs through iCloud independently of the device transfer. Third-party password managers reconnect through their cloud services. KeePass databases in cloud storage are accessible from any device that can reach the file.
 
 The critical preparation steps are simple: verify that your password data is synced, confirm you know your master password, create a backup, and understand that biometrics require fresh enrollment on the new device. Fifteen minutes of preparation before the upgrade prevents every password-related problem that could occur during it.
+
+## Related Articles
+
+- [How Apple Passwords Works](/apple/how-apple-passwords-works/) -- What iCloud Keychain stores and how it syncs
+- [Face ID and Touch ID Setup](/apple/face-id-touch-id-setup/) -- Re-enrolling biometrics on your new iPhone
+- [How to Back Up a KeePass Database](/keepass/backup-database/) -- Protect your vault before you migrate
+- [iCloud Sync for Your Password Vault](/cloud-sync/icloud-sync/) -- Keeping your .kdbx file reachable from any device
+- [Best Password Manager for iPhone](/apple/best-password-manager-iphone/) -- Choosing the app you set up on the new phone
