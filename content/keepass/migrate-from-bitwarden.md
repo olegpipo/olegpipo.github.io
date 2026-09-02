@@ -235,3 +235,4 @@ Install the KeePassXC Browser extension for desktop autofill. Configure your mob
 - [KeePass Encryption Explained](/keepass/encryption-explained/)
 - [Migrate from 1Password to KeePass](/keepass/migrate-from-1password/)
 - [Migrate from LastPass to KeePass](/keepass/migrate-from-lastpass/)
+- [Bitwarden vs Proton Pass](/compare/bitwarden-vs-proton-pass/)

@@ -167,5 +167,6 @@ For users who want the [best free password manager](/compare/best-free-password-
 - [1Password vs Bitwarden](/compare/1password-vs-bitwarden/) -- detailed head-to-head comparison of the two most-recommended managers
 - [LastPass vs Bitwarden](/compare/lastpass-vs-bitwarden/) -- how Bitwarden compares to the most recognized name in password management
 - [Dashlane vs Bitwarden](/compare/dashlane-vs-bitwarden/) -- comparing the value champion with the all-in-one option
+- [Bitwarden vs Proton Pass](/compare/bitwarden-vs-proton-pass/) -- the other open-source contender, compared on price, aliases, and jurisdiction
 - [Best Free Password Managers](/compare/best-free-password-managers/) -- where Bitwarden stacks up among free options
 - [What Is a Password Manager?](/password-managers/what-is-a-password-manager/) -- the fundamentals if you are just getting started

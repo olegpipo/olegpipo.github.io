@@ -211,3 +211,4 @@ Remove or disable the Proton Pass browser extension and mobile app autofill. Rep
 - [KeePass-Compatible Apps for Every Platform](/keepass/compatible-apps/)
 - [KeePass vs. Proprietary Password Managers](/keepass/vs-proprietary/)
 - [Migrate from Bitwarden to KeePass](/keepass/migrate-from-bitwarden/)
+- [Bitwarden vs Proton Pass](/compare/bitwarden-vs-proton-pass/)
