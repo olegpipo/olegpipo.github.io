@@ -68,6 +68,8 @@ Facebook is the most data-rich social media platform for most people, often cont
 - Review and remove old posts using the "Manage Activity" tool
 - Review and revoke permissions for third-party apps (Settings > Apps and Websites)
 
+Fake account warnings are a common pretext for stealing Facebook logins, so it is worth knowing [how Facebook phishing emails look](/phishing/facebook-phishing/) before you act on any alert that arrives by email.
+
 ### Instagram
 
 Instagram shares Facebook's underlying infrastructure (both are Meta properties), so some settings overlap.

@@ -60,6 +60,7 @@ If the phishing email impersonates a specific company (your bank, Apple, Amazon,
 - **Microsoft**: phish@office365.microsoft.com
 - **Amazon**: stop-spoofing@amazon.com
 - **PayPal**: spoof@paypal.com
+- **Facebook and Meta**: phish@fb.com -- see [Facebook phishing](/phishing/facebook-phishing/) for what these emails look like
 - **Your bank**: Most banks have a dedicated phishing email address, often listed on their security page.
 
 Organizations use these reports to identify campaigns targeting their customers and take action against fraudulent domains and accounts.

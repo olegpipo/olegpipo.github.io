@@ -87,7 +87,7 @@ If you are deciding between an authenticator app and SMS for Facebook 2FA, TOTP 
 
 **International travel.** If you travel internationally and do not have a local SIM or roaming enabled, SMS codes may not reach you. TOTP codes continue to generate normally regardless of your location or network status.
 
-**Account takeover patterns.** Real-world Facebook account compromises frequently involve [phishing attacks](/two-factor-authentication/what-is-2fa/) combined with SIM swapping. Attackers phish your password, then swap your SIM to receive the SMS code. TOTP eliminates the SIM component of this attack chain.
+**Account takeover patterns.** Real-world Facebook account compromises frequently involve [phishing attacks](/two-factor-authentication/what-is-2fa/) combined with SIM swapping. Attackers phish your password, then swap your SIM to receive the SMS code. TOTP eliminates the SIM component of this attack chain, and recognizing [Facebook phishing](/phishing/facebook-phishing/) removes the first link in it.
 
 For all these reasons, the security community overwhelmingly recommends TOTP over SMS. Facebook makes it easy to use either one, so there is no reason not to choose the stronger option.
 

@@ -73,7 +73,7 @@ Some phishing pages present a multi-step login process that mimics the real site
 3. Third page: Requests your 2FA code.
 4. Redirect: You are sent to the real site, logged in, with no indication that anything went wrong.
 
-Each step adds credibility. The personalization makes the page feel more legitimate. The multi-step flow matches what you expect from the real site.
+Each step adds credibility. The personalization makes the page feel more legitimate. The multi-step flow matches what you expect from the real site. Our [real Facebook phishing examples](/phishing/facebook-phishing/) show the emails that funnel people into these staged login flows.
 
 ### Browser-in-the-Browser Attacks
 

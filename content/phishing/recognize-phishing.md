@@ -91,6 +91,8 @@ Examples include:
 - "Legal proceedings will begin if payment is not received."
 - "Your recent transaction has been flagged for fraud -- verify immediately or your account will be frozen."
 
+Social platforms are a favorite vehicle for this tactic: see [how Facebook phishing emails look](/phishing/facebook-phishing/) when they threaten to unpublish a page or delete an account over a community standards violation.
+
 **What to do**: Legitimate organizations communicate account issues through their official apps and portals, not through threatening emails. If a threat feels real, verify it through official channels -- not through any link or phone number in the email itself.
 
 ## Red Flag 8: Too-Good-to-Be-True Offers

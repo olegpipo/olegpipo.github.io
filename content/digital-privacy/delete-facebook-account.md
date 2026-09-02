@@ -126,6 +126,8 @@ If full deletion feels too drastic, consider these middle-ground options:
 - **Adjust privacy settings** -- Lock down your profile so only friends see your content, disable search engine indexing, and revoke third-party app permissions
 - **Limit usage with Screen Time** -- Set app time limits on your phone to control how much time you spend on Facebook
 
+If you keep the account in any form, keep its attack surface in mind too: our [Facebook phishing examples](/phishing/facebook-phishing/) covers the fake emails most commonly used against accounts that stay active.
+
 ## Securing Your Remaining Accounts
 
 Deleting Facebook is a significant privacy step, but it is only one piece of the puzzle. After deletion, turn your attention to the accounts you keep.

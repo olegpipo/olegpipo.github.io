@@ -25,7 +25,7 @@ Facebook remains one of the most targeted platforms for account takeovers. With 
 Several situations call for an immediate password change:
 
 - **You see unfamiliar activity.** Posts you did not write, messages you did not send, friend requests you did not make, or login notifications from locations you do not recognize.
-- **You received a security alert from Facebook.** Meta sends alerts when it detects sign-ins from new devices or locations. If you did not initiate the sign-in, act immediately.
+- **You received a security alert from Facebook.** Meta sends alerts when it detects sign-ins from new devices or locations. If you did not initiate the sign-in, act immediately -- but check the alert itself first, because these are widely imitated. Our [real Facebook phishing examples](/phishing/facebook-phishing/) show how the fakes are worded.
 - **Your password appeared in a data breach.** Even if it was not Facebook that was breached, if you reused the same password on another service that was compromised, attackers will try it on Facebook. Check your password manager's [audit feature](/guides/audit-passwords/) to find out.
 - **You shared your password with someone.** Whether it was a partner, a social media manager, or a friend, revoke that access by changing the password once it is no longer needed.
 - **Your password is weak or predictable.** If it contains your name, birthday, pet's name, or any dictionary word followed by numbers, it is vulnerable to automated guessing attacks.

@@ -1,13 +1,13 @@
 ---
-title: "Facebook Phishing Examples (2026)"
-description: "Real Facebook phishing email examples from 2026. Learn to spot fake community standards violations, page alerts, and Marketplace scams before losing access."
+title: "Facebook Phishing: 5 Real Examples and How to Spot Them (2026)"
+description: "Real Facebook phishing examples from 2026: community standards, page admin, friend request, Marketplace, and Meta verification scams. How to verify and report."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Phishing & Social Engineering"
 faq:
   - q: "How do I know if a Facebook email is real?"
-    a: "Legitimate Facebook emails come from @facebookmail.com only. You can verify any email by checking Settings > Security and Login > See recent emails from Facebook. If the email does not appear there, it is a phishing attempt."
+    a: "Genuine Facebook and Meta email comes from facebookmail.com, fb.com, facebook.com, instagram.com, meta.com, or metamail.com, or a subdomain of one of those such as support.facebook.com or business.fb.com. Any other domain is a fake. Because sender addresses can be spoofed, the reliable check is Accounts Center > Password and security > Recent emails, under Security checks. If the email does not appear there, it is a phishing attempt."
   - q: "What does a Facebook phishing email look like?"
     a: "Facebook phishing emails commonly claim a community standards violation, warn about page admin issues, mimic Marketplace payment notifications, or request Meta business verification. They use Facebook branding but link to domains other than facebook.com."
   - q: "Does Facebook send emails about community standards violations?"
@@ -36,7 +36,7 @@ This is the most common Facebook phishing email. It creates immediate fear of lo
 
 **What it looks like**: The email uses Facebook's branding -- the blue color scheme, the "f" logo, and a layout that mirrors genuine Facebook notifications. It claims that your account or page has been reported for violating community standards, citing reasons like "misleading content," "spam activity," "hate speech," or "impersonation." The email threatens account suspension or permanent deletion within 24 to 48 hours and provides an "Appeal" button.
 
-**The tell**: The sender address is not @facebookmail.com. Common fakes include support@facebook-community.com, noreply@meta-security.net, appeals@fb-standards.com, or community@facebook-help.org. The appeal link goes to a [fake login page](/phishing/fake-login-pages/) at a domain like facebook-appeal.com or meta-community-review.net. Real community standards notifications appear in your Support Inbox within the Facebook app (Settings > Support Inbox), not through external email links.
+**The tell**: The sender domain is not one Meta actually uses. Common fakes include support@facebook-community.com, noreply@meta-security.net, appeals@fb-standards.com, or community@facebook-help.org. The appeal link goes to a [fake login page](/phishing/fake-login-pages/) at a domain like facebook-appeal.com or meta-community-review.net. Real community standards notifications appear in your Support Inbox within the Facebook app (Settings > Support Inbox), not through external email links.
 
 **The reality**: Facebook does enforce community standards, but violations are communicated through in-app notifications in your Support Inbox. If content is removed, you see a notification within the app with a clear explanation of which standard was violated and an option to appeal directly through Facebook's interface. Facebook does not email threats of immediate account deletion.
 
@@ -52,7 +52,7 @@ This pattern specifically targets Facebook Page owners and business administrato
 
 **What it looks like**: The email appears to come from "Facebook Business" or "Meta Business Suite" and targets page administrators. It claims that the page has been flagged for policy violations, unusual activity, or incomplete business verification. The email states that the page will be unpublished or restricted unless the admin verifies their identity. A "Verify Now" or "Confirm Page Ownership" button links to a convincing replica of the Facebook Business interface.
 
-**The tell**: The phishing page asks for your personal Facebook login credentials, not business verification documents. Facebook does require business verification for certain advertising features, but this process is conducted entirely within Meta Business Suite -- not through email links. Fake sender addresses include business@facebook-pages.com, admin@meta-business-verify.net, or support@fb-business.org. Real business communications come from @facebookmail.com.
+**The tell**: The phishing page asks for your personal Facebook login credentials, not business verification documents. Facebook does require business verification for certain advertising features, but this process is conducted entirely within Meta Business Suite -- not through email links. Fake sender addresses include business@facebook-pages.com, admin@meta-business-verify.net, or support@fb-business.org. Real business communications come from a Meta sending domain such as @facebookmail.com.
 
 **The reality**: If your Facebook Page genuinely has an issue, you will see notifications within Meta Business Suite or in your Facebook notifications. Business verification is a process you initiate within the platform, not something triggered by an unsolicited email. Navigate directly to business.facebook.com to check on any page issues.
 
@@ -68,7 +68,7 @@ This pattern is designed to be low-key and blend in with the routine notificatio
 
 **What it looks like**: The email mimics a standard Facebook friend request notification. It often includes a profile photo (typically stolen from a real Facebook user), a name, and mutual friend information. The "Confirm" and "Delete" buttons both link to a phishing page. Some versions include multiple friend requests to appear more natural, mimicking the batch notifications Facebook occasionally sends.
 
-**The tell**: While Facebook does send friend request notifications by email, the phishing versions link to domains other than facebook.com. The phishing page typically displays a Facebook login screen, claiming your session has expired and you need to log in again. Legitimate Facebook notification emails link directly to facebook.com, where you are either already logged in or prompted to log in on the official domain. Check the sender address -- it should be @facebookmail.com and links should go to facebook.com.
+**The tell**: While Facebook does send friend request notifications by email, the phishing versions link to domains other than facebook.com. The phishing page typically displays a Facebook login screen, claiming your session has expired and you need to log in again. Legitimate Facebook notification emails link directly to facebook.com, where you are either already logged in or prompted to log in on the official domain. Check the sender address -- it should be a Meta domain such as @facebookmail.com -- and links should go to facebook.com.
 
 **The reality**: If you want to check friend requests, open the Facebook app directly or navigate to facebook.com. Never log in through a link in an email notification. If you are already logged into Facebook in your browser, a legitimate notification link will take you directly to the friend request without asking for your password again.
 
@@ -100,7 +100,7 @@ This pattern has surged since Facebook's rebranding to Meta, exploiting confusio
 
 **What it looks like**: The email uses Meta branding and claims that your business account must complete a verification process to continue running ads, maintain your page, or comply with new Meta policies. It may reference specific regulatory requirements (data privacy, advertising transparency) to seem authoritative. The email provides a link to a "Meta Business Verification Portal" that asks for your login credentials, business information, tax identification numbers, and sometimes credit card details.
 
-**The tell**: Meta does have a business verification process, but it is conducted entirely within Meta Business Suite at business.facebook.com. Meta never sends unsolicited emails demanding immediate business verification through an external link. The phishing page's domain is not facebook.com or meta.com -- it is something like meta-verification.com, meta-business-verify.net, or business-meta.org. Real Meta communications come from @facebookmail.com.
+**The tell**: Meta does have a business verification process, but it is conducted entirely within Meta Business Suite at business.facebook.com. Meta never sends unsolicited emails demanding immediate business verification through an external link. The phishing page's domain is not facebook.com or meta.com -- it is something like meta-verification.com, meta-business-verify.net, or business-meta.org. Real Meta communications come from a Meta sending domain such as @facebookmail.com.
 
 **The reality**: If your Meta business account genuinely requires verification, you will see a notification within Meta Business Suite when you log in. The verification process involves uploading business documents through Facebook's secure portal, not entering credentials on a third-party site. Navigate directly to business.facebook.com to check verification status.
 
@@ -108,9 +108,9 @@ This pattern has surged since Facebook's rebranding to Meta, exploiting confusio
 
 Before acting on any communication claiming to be from Facebook or Meta, follow these steps:
 
-1. **Check recent emails in-app**: Go to Settings > Security and Login > See recent emails from Facebook. This shows every legitimate email Facebook has sent you recently. If the email you received is not listed, it is fake.
+1. **Check recent emails in-app**: Go to Accounts Center > Password and security, then select Recent emails under Security checks. This shows every legitimate email Facebook has sent you recently. If the email you received is not listed, it is fake.
 
-2. **Check the sender address**: Legitimate Facebook emails come only from @facebookmail.com. Not @facebook-support.com, not @meta-security.net -- only @facebookmail.com.
+2. **Check the sender address**: Genuine Facebook and Meta email comes from facebookmail.com, fb.com, facebook.com, instagram.com, meta.com, or metamail.com, or a subdomain of one of those such as support.facebook.com or business.fb.com. Any other domain is a fake. Because sender addresses can be spoofed, step 1 is the check that settles it.
 
 3. **Inspect the links without clicking**: Hover over buttons or links to see the actual URL. It should point to facebook.com, meta.com, or business.facebook.com. Any other domain is a phishing attempt.
 
@@ -145,7 +145,7 @@ If you receive a phishing email or message impersonating Facebook or Meta:
 1. **Do not click any links** or enter any information on pages reached through the email.
 2. **Forward the email** to phish@fb.com, then delete it from your inbox.
 3. **Report in-app**: If you received a phishing message on Facebook Messenger, open the conversation, tap the name at the top, scroll down, and tap Report. For fake profiles, go to the profile, tap the three-dot menu, and select Report.
-4. **If you entered your credentials on a fake site**: Change your Facebook password immediately. Go to Settings > Security and Login > Where You're Logged In and log out of all sessions. Enable two-factor authentication. Review your connected apps and remove any you do not recognize.
+4. **If you entered your credentials on a fake site**: Change your Facebook password immediately. Go to Accounts Center > Password and security > Where you're logged in and log out of all sessions. Enable two-factor authentication. Review your connected apps and remove any you do not recognize.
 5. **If you have been locked out**: Visit facebook.com/hacked to begin the account recovery process.
 6. **Report to additional agencies**: File a report with the FTC at ReportFraud.ftc.gov and with the Anti-Phishing Working Group at reportphishing@apwg.org. See our full guide on [how to report a phishing attempt](/phishing/report-phishing/).
 
@@ -155,11 +155,11 @@ Facebook phishing will continue to evolve with the platform. The Meta rebrand, e
 
 Build a layered defense:
 
-- **Check the "Recent emails from Facebook" section** in Settings before acting on any email.
+- **Check the "Recent emails" section** in Accounts Center > Password and security before acting on any email.
 - **Use a password manager** that checks domains automatically and refuses to autofill on fake sites.
 - **Enable two-factor authentication** on your Facebook account using an authentication app (not SMS).
 - **Never enter your password** on a page you reached through an email link.
-- **Review connected apps** regularly at Settings > Apps and Websites to reduce your attack surface.
+- **Review connected apps** regularly in the Apps and Websites section of your Facebook settings to reduce your attack surface.
 - **Report every phishing attempt** to phish@fb.com to help Facebook shut down active campaigns.
 
 Attackers exploit the fear of losing your account, your page, or your business. When you verify every email through the app's built-in tool and let your password manager handle domain verification, that fear cannot be weaponized against you.
