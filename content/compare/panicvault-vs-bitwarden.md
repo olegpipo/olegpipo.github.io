@@ -2,7 +2,7 @@
 title: "PanicVault vs. Bitwarden: Open Format vs. Open Source"
 description: "Detailed comparison of PanicVault and Bitwarden -- two password managers emphasizing openness from different angles. Security, pricing, data portability, and Apple integration analyzed."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 ---
@@ -60,10 +60,10 @@ For most threat models, both are more than adequate. If code auditability is you
 ### Bitwarden
 
 - Free tier: Core vault features, unlimited passwords, sync across devices
-- Premium: $10/year (TOTP authenticator, emergency access, vault health reports)
-- Family: $40/year (up to 6 users, shared collections)
+- Premium: $19.80/year (TOTP authenticator, emergency access, vault health reports)
+- Family: $47.88/year (up to 6 users, shared collections)
 
-Bitwarden's free tier is genuinely useful -- not a crippled demo. You get unlimited password storage, device sync, and a password generator. The premium tier adds TOTP code storage, advanced 2FA options, and 1GB of encrypted file storage.
+Bitwarden's free tier is genuinely useful -- not a crippled demo. You get unlimited password storage, device sync, and a password generator. The premium tier adds TOTP code storage, advanced 2FA options, and 5GB of encrypted file storage.
 
 ### PanicVault
 
@@ -127,7 +127,7 @@ PanicVault's use of the KDBX format provides superior data portability. Your dat
 | Face ID / Touch ID | Yes | Yes | Yes |
 | System AutoFill | Yes | Yes | Yes |
 | Password generator | Yes | Yes | Yes |
-| File attachments | Yes | No | Yes (1GB) |
+| File attachments | Yes | No | Yes (5GB) |
 | Breach monitoring | No | No | Yes |
 | Emergency access | No | No | Yes |
 | Self-hosting | N/A | No | Community option |

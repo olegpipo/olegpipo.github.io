@@ -2,7 +2,7 @@
 title: "Most Private Password Manager"
 description: "The most private password managers in 2026. Zero-knowledge encryption, open source, minimal data collection, and local-first options compared."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
@@ -54,7 +54,7 @@ The most private option is one where no company ever has any of your data -- enc
 
 ### 1. Bitwarden (Best Open-Source Cloud Option)
 
-**Price**: Free; Premium $10/year; self-hosted free (infrastructure costs apply)
+**Price**: Free; Premium $19.80/year; self-hosted free (infrastructure costs apply)
 
 Bitwarden offers the best balance of privacy, usability, and features among cloud-based options. Its open-source codebase has been audited by multiple independent security firms, and the self-hosted option gives privacy-focused users complete control.
 

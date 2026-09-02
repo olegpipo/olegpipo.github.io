@@ -2,7 +2,7 @@
 title: "NordPass vs Proton Pass (2026)"
 description: "NordPass vs Proton Pass compared for 2026. Two privacy-focused newcomers with different ecosystems, encryption, and pricing models analyzed."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
@@ -59,7 +59,7 @@ The standout feature is **hide-my-email aliases**. Proton Pass generates unique 
 Proton Pass pricing is structured around the broader Proton ecosystem:
 
 - **Proton Pass Free**: Unlimited passwords, unlimited devices, 10 email aliases, built-in TOTP authenticator
-- **Proton Pass Plus**: $47.88/year -- unlimited email aliases, integrated 2FA, Proton Sentinel (advanced account protection), Dark Web Monitoring, credential sharing, and passkey support
+- **Proton Pass Plus**: $35.88/year -- unlimited email aliases, integrated 2FA, Proton Sentinel (advanced account protection), Dark Web Monitoring, credential sharing, and passkey support
 - **Proton Unlimited**: $119.88/year -- includes Proton Pass Plus alongside ProtonMail, ProtonVPN, Proton Drive, and Proton Calendar with maximum storage and features
 
 The free tier is remarkably generous: unlimited passwords on unlimited devices, 10 hide-my-email aliases, and a built-in TOTP authenticator. This is one of the best free password manager experiences available, rivaling Bitwarden's free tier.
@@ -79,12 +79,12 @@ The free tier is remarkably generous: unlimited passwords on unlimited devices, 
 | Plan | Cost | What You Get |
 |---|---|---|
 | Free | $0 | Unlimited passwords, unlimited devices, 10 email aliases, TOTP |
-| Pass Plus | $47.88/year | Unlimited aliases, Dark Web Monitoring, Proton Sentinel, sharing |
+| Pass Plus | $35.88/year | Unlimited aliases, Dark Web Monitoring, Proton Sentinel, sharing |
 | Proton Unlimited | $119.88/year | Pass Plus + ProtonMail, ProtonVPN, Proton Drive, Proton Calendar |
 
 ### Pricing Verdict
 
-At the premium level, NordPass is significantly cheaper: $23.88/year versus $47.88/year for Proton Pass Plus. That is a $24/year difference, which adds up to $120 over five years.
+At the premium level, NordPass is cheaper: $23.88/year versus $35.88/year for Proton Pass Plus. That is a $12/year difference, which adds up to $60 over five years.
 
 But the comparison shifts when you factor in free tiers and ecosystems:
 
@@ -135,7 +135,7 @@ Both have clean breach histories. For users who prioritize verifiable transparen
 
 | Feature | NordPass | Proton Pass |
 |---|---|---|
-| **Price (Individual)** | $23.88/year | $47.88/year (Pass Plus) |
+| **Price (Individual)** | $23.88/year | $35.88/year (Pass Plus) |
 | **Free tier** | Unlimited passwords, 1 device at a time | Unlimited passwords, unlimited devices |
 | Free tier email aliases | No | 10 aliases |
 | Free tier TOTP | No | Yes |
@@ -163,7 +163,7 @@ Both have clean breach histories. For users who prioritize verifiable transparen
 
 ### Where NordPass Leads
 
-**Lower premium price.** NordPass Premium at $23.88/year is half the cost of Proton Pass Plus at $47.88/year. For users who want a paid password manager at the lowest possible price, NordPass is the more affordable option.
+**Lower premium price.** NordPass Premium at $23.88/year is $12 a year less than Proton Pass Plus at $35.88/year. For users who want a paid password manager at the lowest possible price, NordPass is the more affordable option.
 
 **Desktop apps.** NordPass offers native desktop applications for Windows, macOS, and Linux. Proton Pass operates through browser extensions and mobile apps only -- there is no standalone desktop application. For users who want vault access without a browser, NordPass provides it.
 
@@ -246,7 +246,7 @@ NordPass and Proton Pass are both strong choices, but they serve different prior
 
 **Choose NordPass** if you want a polished, affordable password manager with desktop apps and a proven track record. At $23.88/year, it is one of the best values in the premium password manager market. The Nord ecosystem integration is a bonus for existing NordVPN users, and the overall experience is refined and reliable.
 
-**Choose Proton Pass** if privacy and transparency are your highest priorities. Open-source code, Swiss jurisdiction, metadata encryption, and hide-my-email aliases make Proton Pass the most privacy-forward password manager available. The free tier is exceptional -- arguably the best free password manager experience alongside Bitwarden. You pay more for the premium plan ($47.88/year), but you get verifiable privacy guarantees that NordPass does not offer.
+**Choose Proton Pass** if privacy and transparency are your highest priorities. Open-source code, Swiss jurisdiction, metadata encryption, and hide-my-email aliases make Proton Pass the most privacy-forward password manager available. The free tier is exceptional -- arguably the best free password manager experience alongside Bitwarden. You pay more for the premium plan ($35.88/year), but you get verifiable privacy guarantees that NordPass does not offer.
 
 Both products are improving rapidly. NordPass is adding features and refining its experience with each update. Proton Pass is building out functionality that its newer platform initially lacked. In a market still dominated by legacy players, both NordPass and Proton Pass are fresh alternatives worth serious consideration.
 

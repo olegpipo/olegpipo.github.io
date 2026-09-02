@@ -2,7 +2,7 @@
 title: "Best Password Manager for Students"
 description: "Find the best password manager for students in 2026. Budget-friendly options, academic discounts, multi-device support, and building security habits for college and beyond."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 ---
@@ -24,7 +24,7 @@ A password manager eliminates all four risks. It generates unique, strong passwo
 
 ### Bitwarden Free
 
-**Price**: $0 (Premium: $10/year)
+**Price**: $0 (Premium: $19.80/year)
 
 Bitwarden's free tier is the strongest recommendation for students who need a no-cost solution. You get unlimited password storage across all devices, sync through Bitwarden's cloud, and apps for every platform.
 
@@ -32,7 +32,7 @@ Bitwarden's free tier is the strongest recommendation for students who need a no
 - Genuinely free with no meaningful limitations on core features
 - Works on the iPhone in your pocket, the MacBook in your bag, and the Windows desktop in the computer lab
 - Browser extensions for Safari, Chrome, Firefox, and Edge
-- The $10/year premium tier is affordable if you want TOTP codes and file storage
+- The $19.80/year premium tier is affordable if you want TOTP codes and file storage
 
 **Trade-offs:**
 - The Electron-based desktop app is functional but not native on macOS
@@ -131,7 +131,7 @@ If budget is not the primary concern, 1Password's quality justifies its price. B
 | iOS app | Yes | Built-in | Yes | No | Yes |
 | Mac app | Yes (Electron) | Built-in | Yes (native) | Yes (Qt) | Yes (native) |
 | Windows/Linux | Yes | No | Via KeePass | Yes | Yes |
-| TOTP codes | Premium ($10/yr) | Yes | Yes | Yes | Yes |
+| TOTP codes | Premium ($19.80/yr) | Yes | Yes | Yes | Yes |
 | Safari AutoFill | Yes | Yes | Yes | No | Yes |
 | Offline access | Limited | Cached | Full | Full | Limited |
 | Open format | No | No | Yes (KDBX) | Yes (KDBX) | No |
@@ -182,7 +182,7 @@ For budget-conscious students, here is the total cost of ownership over a typica
 | Bitwarden Free | $0 |
 | KeePassXC | $0 |
 | Apple Passwords | $0 |
-| Bitwarden Premium | $40 |
+| Bitwarden Premium | $79.20 |
 | PanicVault | One-time purchase |
 | 1Password | ~$144 |
 

@@ -2,7 +2,7 @@
 title: "Free vs. Paid Password Manager (2026)"
 description: "Is a paid password manager worth it? Honest comparison of free vs. premium features, security gaps, and who should upgrade."
 date: 2026-02-14
-lastmod: 2026-03-06
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 ---
@@ -33,7 +33,7 @@ Premium password managers -- whether subscription-based (1Password, Bitwarden Pr
 **Free options without TOTP**: Bitwarden Free
 **Premium options with TOTP**: PanicVault, 1Password, Bitwarden Premium, Dashlane, Strongbox Pro
 
-If you use Bitwarden Free and want TOTP codes in your password manager, upgrading to Bitwarden Premium ($10/year) or switching to PanicVault (one-time purchase) adds this capability. For a detailed analysis of built-in authenticators, see our [best password manager with built-in authenticator](/compare/best-with-authenticator/) guide.
+If you use Bitwarden Free and want TOTP codes in your password manager, upgrading to Bitwarden Premium ($19.80/year) or switching to PanicVault (one-time purchase) adds this capability. For a detailed analysis of built-in authenticators, see our [best password manager with built-in authenticator](/compare/best-with-authenticator/) guide.
 
 Is TOTP worth paying for? If you currently use a separate authenticator app and are happy with that workflow, no. If you find managing two apps (password manager + authenticator) annoying enough that you sometimes skip enabling 2FA, then yes -- consolidating TOTP into your password manager removes the friction that prevents adoption.
 
@@ -81,7 +81,7 @@ If you manage a large number of credentials (200+), organizational features beco
 ### File Attachments
 
 **Free with attachments**: KeePassXC
-**Premium with attachments**: PanicVault, Bitwarden Premium (1GB), 1Password (1GB), Strongbox Pro
+**Premium with attachments**: PanicVault, Bitwarden Premium (5GB), 1Password (1GB), Strongbox Pro
 
 Attaching files to credential entries (scans of documents, key files, software licenses) is useful but niche. KeePassXC offers it for free. Most cloud-based managers limit it to premium tiers.
 
@@ -92,7 +92,7 @@ Stay with a free password manager if:
 - **You manage fewer than 100 credentials** and do not need organizational structure
 - **You use Bitwarden Free** and are satisfied with the feature set
 - **You use Apple Passwords** and stay within the Apple ecosystem
-- **Budget is a hard constraint** and even $10/year is not comfortable
+- **Budget is a hard constraint** and even $19.80/year is not comfortable
 - **You use KeePassXC** and do not need mobile apps or Safari support
 - **You do not need TOTP codes** in your password manager (you use a separate authenticator app)
 - **Breach monitoring** is not a priority (you check Have I Been Pwned manually)
@@ -105,7 +105,7 @@ Upgrade to a premium or paid password manager if:
 
 ### You Want TOTP Codes Without a Separate App
 
-If you are on Bitwarden Free and want built-in TOTP, upgrade to Bitwarden Premium ($10/year) or switch to PanicVault (one-time purchase). Both include TOTP at a modest cost.
+If you are on Bitwarden Free and want built-in TOTP, upgrade to Bitwarden Premium ($19.80/year) or switch to PanicVault (one-time purchase). Both include TOTP at a modest cost.
 
 ### You Want a Native Apple Experience
 
@@ -117,7 +117,7 @@ KeePassXC gives you KDBX portability for free but lacks Safari support and mobil
 
 ### You Need Family Sharing With Permissions
 
-Bitwarden Families ($40/year) or 1Password Families ($59.88/year) provide managed shared vaults with permissions that free tools cannot replicate. See our [best for families](/compare/best-for-families/) guide.
+Bitwarden Families ($47.88/year) or 1Password Families ($59.88/year) provide managed shared vaults with permissions that free tools cannot replicate. See our [best for families](/compare/best-for-families/) guide.
 
 ### You Want Emergency Access
 
@@ -140,9 +140,9 @@ This approach ensures you never overpay. You upgrade in response to a real need,
 ## Cost of Upgrading: Realistic Scenarios
 
 ### Scenario 1: Bitwarden Free to Bitwarden Premium
-**Cost**: $10/year
-**What you gain**: TOTP codes, 1GB file storage, emergency access, vault health reports
-**Worth it?**: Yes, if you want TOTP codes. $10/year is negligible.
+**Cost**: $19.80/year
+**What you gain**: TOTP codes, 5GB file storage, emergency access, vault health reports
+**Worth it?**: Yes, if you want TOTP codes. $19.80/year is still negligible.
 
 ### Scenario 2: Apple Passwords to PanicVault
 **Cost**: One-time purchase
@@ -152,7 +152,7 @@ This approach ensures you never overpay. You upgrade in response to a real need,
 ### Scenario 3: Bitwarden Free to 1Password
 **Cost**: $35.88/year (increase from $0)
 **What you gain**: Polished UX, Watchtower, travel mode, native apps, passkeys
-**Worth it?**: Only if you specifically value 1Password's UX and Watchtower. Bitwarden Premium at $10/year covers most of the same features.
+**Worth it?**: Only if you specifically value 1Password's UX and Watchtower. Bitwarden Premium at $19.80/year covers most of the same features.
 
 ### Scenario 4: KeePassXC to KeePassXC + PanicVault
 **Cost**: PanicVault one-time purchase
@@ -165,7 +165,7 @@ Bitwarden is one of the most popular password managers and a useful example of h
 
 **Bitwarden Free** includes unlimited passwords, unlimited devices, a password generator, and basic 2FA (email and authenticator app). For many users, this is genuinely sufficient.
 
-**Bitwarden Premium** ($10/year) adds built-in TOTP authenticator, hardware key support (YubiKey, FIDO2), encrypted file attachments (1 GB), emergency access, and Bitwarden's vault health reports. The TOTP feature alone can replace a separate authenticator app.
+**Bitwarden Premium** ($19.80/year) adds built-in TOTP authenticator, hardware key support (YubiKey, FIDO2), encrypted file attachments (5 GB), emergency access, and Bitwarden's vault health reports. The TOTP feature alone can replace a separate authenticator app.
 
 **Should you upgrade?** If you already use a standalone authenticator app and don't need file attachments, Bitwarden Free covers the essentials. Upgrade if you want the convenience of built-in TOTP codes or need hardware security key support. For a complete breakdown, see our dedicated [Bitwarden Free vs Premium (2026)](/compare/bitwarden-free-vs-premium/) comparison.
 

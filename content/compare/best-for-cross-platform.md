@@ -2,7 +2,7 @@
 title: "Best Cross-Platform Password Manager"
 description: "Best cross-platform password managers in 2026. iOS, Android, Windows, Mac, Linux, and browser support compared for seamless sync everywhere."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
@@ -46,7 +46,7 @@ Cross-platform also means feature parity. If the Mac app supports TOTP codes but
 
 ### 1. Bitwarden (Widest Platform Support)
 
-**Price**: Free; Premium $10/year; Families $40/year
+**Price**: Free; Premium $19.80/year; Families $47.88/year
 
 Bitwarden covers more platforms than any other password manager. Native or web-based apps exist for every major operating system, every major browser, and even the command line. If a device can connect to the internet, Bitwarden probably runs on it.
 
@@ -74,7 +74,7 @@ Bitwarden covers more platforms than any other password manager. Native or web-b
 - Safari extension sometimes lags behind Chrome/Firefox extensions in updates
 - macOS integration is functional but less polished than native apps
 - UI is consistent but basic compared to 1Password
-- TOTP codes require the $10/year premium plan
+- TOTP codes require the $19.80/year premium plan
 
 **Best for**: Users who need their password manager on every platform, including Linux and niche browsers. Bitwarden's free tier with unlimited device sync is the best value proposition for cross-platform users. See our [PanicVault vs. Bitwarden](/compare/panicvault-vs-bitwarden/) comparison.
 

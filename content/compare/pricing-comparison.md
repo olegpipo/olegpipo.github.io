@@ -2,7 +2,7 @@
 title: "Password Manager Pricing Comparison 2026"
 description: "Complete password manager pricing breakdown for 2026. Individual, family, and lifetime plans compared for 1Password, Bitwarden, Dashlane, PanicVault, Strongbox, and more."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 ---
@@ -16,9 +16,9 @@ All prices are current as of early 2026. Prices change -- check the official sit
 | Password Manager | Free Tier | Individual Price | Annual Cost | Billing |
 |---|---|---|---|---|
 | 1Password | None | $2.99/month | $35.88/year | Annual only |
-| Bitwarden | Yes (full) | $0.83/month | $10/year | Annual only |
+| Bitwarden | Yes (full) | $1.65/month | $19.80/year | Annual only |
 | Dashlane | Limited (25 passwords, 1 device) | $4.99/month | $59.88/year | Annual only |
-| Proton Pass | Yes (basic) | $1.99/month | $23.88/year | Annual only |
+| Proton Pass | Yes (basic) | $2.99/month | $35.88/year | Annual only |
 | NordPass | Limited | $1.49/month | $17.88/year | Annual (2-year deals available) |
 | PanicVault | N/A | One-time purchase | One-time | One-time |
 | Strongbox | Read-only free | Subscription or $29.99 lifetime | Varies | Multiple options |
@@ -29,7 +29,7 @@ All prices are current as of early 2026. Prices change -- check the official sit
 
 **1Password ($35.88/year)**: Everything. There is no free or cheaper tier. You get unlimited passwords, all devices, Watchtower monitoring, passkey support, 1GB document storage, and shared vaults. The price is the price.
 
-**Bitwarden Free ($0)**: Unlimited passwords, unlimited devices, sync, password generator, and basic 2FA for your account. This is a fully functional password manager. **Bitwarden Premium ($10/year)**: Adds TOTP authenticator, 1GB file storage, emergency access, Vault Health Reports, and advanced 2FA options (YubiKey, FIDO2).
+**Bitwarden Free ($0)**: Unlimited passwords, unlimited devices, sync, password generator, and basic 2FA for your account. This is a fully functional password manager. **Bitwarden Premium ($19.80/year)**: Adds TOTP authenticator, 5GB file storage, emergency access, Vault Health Reports, and advanced 2FA options (YubiKey, FIDO2).
 
 **Dashlane Free ($0)**: 25 passwords on a single device. This is effectively a trial. **Dashlane Premium ($59.88/year)**: Unlimited passwords and devices, VPN, dark web monitoring, and password health scoring.
 
@@ -46,7 +46,7 @@ All prices are current as of early 2026. Prices change -- check the official sit
 | Password Manager | Family Price | Members | Per-Person Annual | Notes |
 |---|---|---|---|---|
 | 1Password | $4.99/month | Up to 5 | $11.98 | $59.88/year total |
-| Bitwarden | $3.33/month | Up to 6 | $6.67 | $40/year total |
+| Bitwarden | $3.99/month | Up to 6 | $7.98 | $47.88/year total |
 | Dashlane | $7.49/month | Up to 10 | $8.99 | $89.88/year total |
 | Proton Pass | $3.99/month | Up to 6 | $7.98 | $47.88/year total |
 | NordPass | $2.79/month | Up to 6 | $5.58 | $33.48/year total |
@@ -57,7 +57,7 @@ All prices are current as of early 2026. Prices change -- check the official sit
 
 ### Family Plan Analysis
 
-**Best per-person value (subscription)**: Bitwarden at $6.67 per person per year for a full household. Bitwarden Families is the clear winner for budget-conscious families who want a subscription service. See our [best password manager for families](/compare/best-for-families/) guide.
+**Best per-person value (subscription)**: NordPass at $5.58 per person per year, with Bitwarden Families and Proton Pass next at $7.98 for a full household. Bitwarden Families remains the pick for budget-conscious families who want an open-source subscription service. See our [best password manager for families](/compare/best-for-families/) guide.
 
 **Best per-person value (overall)**: KeePassXC and Apple Passwords are free for any number of family members. PanicVault's one-time purchase with App Store Family Sharing is the cheapest paid option over time.
 
@@ -72,9 +72,9 @@ The real cost of a password manager is not the monthly price -- it is the total 
 | Password Manager | Year 1 | Year 2 | Year 3 | Year 5 | Year 10 |
 |---|---|---|---|---|---|
 | 1Password | $35.88 | $71.76 | $107.64 | $179.40 | $358.80 |
-| Bitwarden Premium | $10.00 | $20.00 | $30.00 | $50.00 | $100.00 |
+| Bitwarden Premium | $19.80 | $39.60 | $59.40 | $99.00 | $198.00 |
 | Dashlane Premium | $59.88 | $119.76 | $179.64 | $299.40 | $598.80 |
-| Proton Pass Plus | $23.88 | $47.76 | $71.64 | $119.40 | $238.80 |
+| Proton Pass Plus | $35.88 | $71.76 | $107.64 | $179.40 | $358.80 |
 | NordPass Premium | $17.88 | $35.76 | $53.64 | $89.40 | $178.80 |
 | PanicVault | One-time | -- | -- | -- | -- |
 | Strongbox Lifetime | $29.99 | -- | -- | -- | -- |
@@ -86,13 +86,13 @@ The real cost of a password manager is not the monthly price -- it is the total 
 | Password Manager | Year 1 | Year 3 | Year 5 | Year 10 |
 |---|---|---|---|---|
 | 1Password Family | $59.88 | $179.64 | $299.40 | $598.80 |
-| Bitwarden Family | $40.00 | $120.00 | $200.00 | $400.00 |
+| Bitwarden Family | $47.88 | $143.64 | $239.40 | $478.80 |
 | Dashlane Family | $89.88 | $269.64 | $449.40 | $898.80 |
 | PanicVault | One-time per user | -- | -- | -- |
 | KeePassXC | $0 | $0 | $0 | $0 |
 | Apple Passwords | $0 | $0 | $0 | $0 |
 
-The difference is stark. Over ten years, Dashlane costs a single user nearly $600. Bitwarden Premium costs $100. PanicVault and KeePassXC cost nothing beyond the initial purchase (or nothing at all).
+The difference is stark. Over ten years, Dashlane costs a single user nearly $600. Bitwarden Premium costs $198. PanicVault and KeePassXC cost nothing beyond the initial purchase (or nothing at all).
 
 ## Hidden Costs and Considerations
 
@@ -126,7 +126,7 @@ For an in-depth analysis of free vs. paid, see our [free vs. premium guide](/com
 Some password managers offer student discounts:
 
 - **1Password**: Occasionally offers student promotions or extended free trials (check their education page)
-- **Bitwarden**: No specific student discount, but the free tier is more than adequate and Premium is only $10/year
+- **Bitwarden**: No specific student discount, but the free tier is more than adequate and Premium is only $19.80/year
 - **Dashlane**: Has offered student discounts in the past (verify current availability)
 - **NordPass**: Bundled with NordVPN student discounts
 
@@ -153,7 +153,7 @@ Business plans are outside the scope of this comparison but are relevant if you 
 
 ### Minimal Budget ($10-30/year)
 
-**Bitwarden Premium** at $10/year adds TOTP codes and file storage to an already-capable free tier. **PanicVault** (one-time purchase) is the best long-term value for Apple users.
+**Bitwarden Premium** at $19.80/year adds TOTP codes and file storage to an already-capable free tier. **PanicVault** (one-time purchase) is the best long-term value for Apple users.
 
 ### Comfort Budget ($30-60/year)
 
@@ -165,7 +165,7 @@ Business plans are outside the scope of this comparison but are relevant if you 
 
 ## The Bottom Line
 
-Password manager pricing ranges from completely free to $60/year. The expensive options are not proportionally better than the cheap ones -- they offer different features and trade-offs. Bitwarden at $10/year and PanicVault's one-time purchase offer the best value. KeePassXC and Apple Passwords offer the best price (free). 1Password and Dashlane offer the most features at the highest cost.
+Password manager pricing ranges from completely free to $60/year. The expensive options are not proportionally better than the cheap ones -- they offer different features and trade-offs. Bitwarden at $19.80/year and PanicVault's one-time purchase offer the best value. KeePassXC and Apple Passwords offer the best price (free). 1Password and Dashlane offer the most features at the highest cost.
 
 Do not let pricing complexity prevent you from using a password manager. Even the most expensive option on this list costs less per month than a cup of coffee. And the free options are genuinely excellent.
 

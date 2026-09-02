@@ -1,28 +1,28 @@
 ---
-title: "Bitwarden Free vs Premium: Is $10/Year Worth It? (2026)"
-description: "Bitwarden Free vs Premium compared feature by feature. See exactly what the free plan includes, what the $10/year Premium adds, and whether it's worth upgrading."
+title: "Bitwarden Free vs Premium: Is $1.65/Month Worth It? (2026)"
+description: "Bitwarden Free vs Premium compared feature by feature. See exactly what the free plan includes, what the $19.80/year Premium adds, and whether it's worth upgrading."
 date: 2026-03-06
-lastmod: 2026-07-17
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
   - q: "Is Bitwarden free?"
-    a: "Yes. Bitwarden has a permanently free tier -- not a trial and not time-limited. It includes unlimited passwords, unlimited devices, cloud sync across all of them, a password generator, browser extensions, mobile and desktop apps, and passkey support, using the same AES-256 encryption as the paid plans. Premium is an optional $10/year upgrade that adds built-in TOTP codes, emergency access, vault health reports, 1GB of encrypted file storage, and hardware security key support."
+    a: "Yes. Bitwarden has a permanently free tier -- not a trial and not time-limited. It includes unlimited passwords, unlimited devices, cloud sync across all of them, a password generator, browser extensions, mobile and desktop apps, and passkey support, using the same AES-256 encryption as the paid plans. Premium is an optional $19.80/year upgrade that adds built-in TOTP codes, emergency access, vault health reports, 5GB of encrypted file storage, and hardware security key support."
   - q: "Is Bitwarden Premium worth it?"
-    a: "For most users, yes. At $10/year Bitwarden Premium adds built-in TOTP codes, emergency access, vault health reports, 1GB encrypted file storage, and hardware security key support. The TOTP feature alone can replace a separate authenticator app."
+    a: "For most users, yes. At $19.80/year Bitwarden Premium adds built-in TOTP codes, emergency access, vault health reports, 5GB encrypted file storage, and hardware security key support. The TOTP feature alone can replace a separate authenticator app."
   - q: "What features does Bitwarden Premium have?"
-    a: "Bitwarden Premium includes TOTP authenticator storage, emergency access, vault health reports, 1GB encrypted file attachments, priority support, and advanced 2FA options like YubiKey and FIDO2 hardware keys."
+    a: "Bitwarden Premium includes TOTP authenticator storage, emergency access, vault health reports, 5GB encrypted file attachments, priority support, and advanced 2FA options like YubiKey and FIDO2 hardware keys."
   - q: "Is Bitwarden free good enough?"
     a: "Bitwarden Free is a fully functional password manager with unlimited passwords, unlimited devices, cloud sync, a password generator, and basic two-factor authentication. It is good enough for users who do not need built-in TOTP codes, file attachments, or emergency access."
   - q: "What is the difference between Bitwarden free and premium?"
-    a: "The main differences are that Premium adds built-in TOTP authenticator storage, emergency access for trusted contacts, vault health reports showing weak or reused passwords, 1GB of encrypted file storage, and support for hardware security keys like YubiKey and FIDO2."
+    a: "The main differences are that Premium adds built-in TOTP authenticator storage, emergency access for trusted contacts, vault health reports showing weak or reused passwords, 5GB of encrypted file storage, and support for hardware security keys like YubiKey and FIDO2."
   - q: "Is Bitwarden Families worth it over Premium?"
-    a: "Bitwarden Families costs $40/year for up to 6 users and includes all Premium features plus shared collections. If two or more family members would each pay $10/year for Premium, Families becomes a better deal starting at three users."
+    a: "Bitwarden Families costs $47.88/year for up to 6 users and includes all Premium features plus shared collections. If two or more family members would each pay $19.80/year for Premium, Families becomes a better deal starting at three users."
 ---
 
-Bitwarden is one of the most recommended password managers for good reason: it is open source, independently audited, and offers a free tier that is genuinely useful rather than a crippled demo. But the existence of a $10/year Premium plan raises an obvious question -- is Bitwarden free good enough, or should you upgrade? This comparison, part of our [password manager comparisons hub](/compare/), breaks down every difference between Bitwarden Free and Bitwarden Premium so you can decide with confidence.
+Bitwarden is one of the most recommended password managers for good reason: it is open source, independently audited, and offers a free tier that is genuinely useful rather than a crippled demo. But the existence of a $19.80/year Premium plan raises an obvious question -- is Bitwarden free good enough, or should you upgrade? This comparison, part of our [password manager comparisons hub](/compare/), breaks down every difference between Bitwarden Free and Bitwarden Premium so you can decide with confidence.
 
-> **Quick answer**: Yes, Bitwarden is genuinely free, and the free tier is permanent rather than a trial. It covers unlimited passwords on unlimited devices, cloud sync, a password generator, and passkeys -- with the same AES-256 encryption the paid plans use. **Premium costs $10/year** and adds built-in TOTP codes, emergency access, vault health reports, 1GB of encrypted file storage, and hardware key support such as YubiKey and FIDO2. Upgrade if you want to retire a separate authenticator app or need emergency access; stay on Free if you do not.
+> **Quick answer**: Yes, Bitwarden is genuinely free, and the free tier is permanent rather than a trial. It covers unlimited passwords on unlimited devices, cloud sync, a password generator, and passkeys -- with the same AES-256 encryption the paid plans use. **Premium costs $19.80/year ($1.65/month)** and adds built-in TOTP codes, emergency access, vault health reports, 5GB of encrypted file storage, and hardware key support such as YubiKey and FIDO2. Upgrade if you want to retire a separate authenticator app or need emergency access; stay on Free if you do not.
 
 ## Bitwarden Free: What You Actually Get
 
@@ -45,9 +45,9 @@ That is a substantial feature set for zero dollars. Most people who need a passw
 
 The free tier does not feel incomplete in daily use. You log in, your passwords are there, AutoFill works, and the generator creates strong credentials. If you stopped reading here and signed up for Bitwarden Free, you would be meaningfully more secure than the vast majority of internet users.
 
-## Bitwarden Premium: What $10/Year Adds
+## Bitwarden Premium: What $19.80/Year Adds
 
-Bitwarden Premium costs $10 per year -- less than a dollar per month. For that price, you get everything in the free tier plus several additions that address specific gaps.
+Bitwarden Premium costs $19.80 per year -- $1.65 per month, after the January 2026 increase that also raised encrypted file storage to 5 GB. For that price, you get everything in the free tier plus several additions that address specific gaps.
 
 ### Built-In TOTP Authenticator
 
@@ -76,11 +76,11 @@ Premium adds security reports that scan your vault for:
 
 These reports are useful during initial setup -- when you migrate from a less secure system and want to methodically strengthen your credentials -- and as periodic checkups afterward. Free users can manually check Have I Been Pwned, but the integrated reports are significantly more convenient.
 
-### Encrypted File Storage (1 GB)
+### Encrypted File Storage (5 GB)
 
-Premium includes 1 GB of encrypted file storage. You can attach files to any vault entry -- scans of insurance cards, software license keys, PDF copies of important documents, key files, or recovery codes.
+Premium includes 5 GB of encrypted file storage. You can attach files to any vault entry -- scans of insurance cards, software license keys, PDF copies of important documents, key files, or recovery codes.
 
-One gigabyte is modest but sufficient for documents. It is not intended for media files or large archives. If you need to store a scan of your passport alongside your travel account credentials, or attach a recovery key to a cryptocurrency exchange entry, the storage is useful.
+Five gigabytes is more than sufficient for documents. It is not intended for media files or large archives. If you need to store a scan of your passport alongside your travel account credentials, or attach a recovery key to a cryptocurrency exchange entry, the storage is useful.
 
 ### Advanced Two-Factor Authentication
 
@@ -102,7 +102,7 @@ Free users can create one active text-only Send. Premium users can send file att
 
 ## Feature Comparison Table
 
-| Feature | Bitwarden Free | Bitwarden Premium ($10/yr) |
+| Feature | Bitwarden Free | Bitwarden Premium ($19.80/yr) |
 |---|---|---|
 | Unlimited passwords | Yes | Yes |
 | Unlimited devices | Yes | Yes |
@@ -119,25 +119,25 @@ Free users can create one active text-only Send. Premium users can send file att
 | **TOTP authenticator storage** | No | **Yes** |
 | **Emergency access** | No | **Yes** |
 | **Vault health reports** | No | **Yes** |
-| **Encrypted file storage** | No | **Yes (1 GB)** |
+| **Encrypted file storage** | No | **Yes (5 GB)** |
 | **YubiKey / FIDO2 support** | No | **Yes** |
 | **Priority support** | No | **Yes** |
 | **Send (file attachments)** | Text only, 1 active | **Files up to 100 MB** |
 | Vault export | Yes | Yes |
 | Open source | Yes | Yes |
 
-The core functionality -- storing, syncing, and filling passwords -- is identical. Everything in bold is what your $10/year buys.
+The core functionality -- storing, syncing, and filling passwords -- is identical. Everything in bold is what your $19.80/year buys.
 
 ## Bitwarden Families: The Third Option
 
-Before making a decision, consider the Families plan at $40/year:
+Before making a decision, consider the Families plan at $47.88/year:
 
 - **Up to 6 users**, each with their own account
 - **All Premium features** included for every member
 - **Shared collections** for credentials the household uses together (streaming services, utility accounts, shared subscriptions)
 - **Organization management** with permission controls
 
-At $40/year for 6 users, that is $6.67 per person -- cheaper than individual Premium if three or more family members need accounts. If you are already considering Premium for yourself and your partner, the Families plan is the better deal.
+At $47.88/year for 6 users, that is $7.98 per person -- cheaper than individual Premium if three or more family members need accounts. If you are already considering Premium for yourself and your partner, the Families plan is the better deal.
 
 For a detailed breakdown of family options across all password managers, see our [best password managers for families](/compare/best-for-families/) guide.
 
@@ -147,9 +147,9 @@ Bitwarden Free is the right choice if:
 
 **You use a separate authenticator app and are happy with it.** If your TOTP workflow with Google Authenticator, Authy, or another app is fine, you do not need Bitwarden's built-in TOTP. The security of having your 2FA codes in a separate app from your passwords is arguably stronger, though less convenient.
 
-**You do not need file attachments.** If you have no use for attaching documents to vault entries, that 1 GB of storage has zero value to you.
+**You do not need file attachments.** If you have no use for attaching documents to vault entries, that 5 GB of storage has zero value to you.
 
-**Budget is genuinely tight.** Even $10/year might matter if you are a student or in a financially constrained situation. The free tier does not compromise on security -- just on convenience features. For more budget-friendly recommendations, see our [best free password managers](/compare/best-free-password-managers/) guide.
+**Budget is genuinely tight.** Even $19.80/year might matter if you are a student or in a financially constrained situation. The free tier does not compromise on security -- just on convenience features. For more budget-friendly recommendations, see our [best free password managers](/compare/best-free-password-managers/) guide.
 
 **You do not own a hardware security key.** If you do not have a YubiKey or FIDO2 key and do not plan to buy one, the advanced 2FA options are irrelevant.
 
@@ -187,21 +187,21 @@ Understanding Bitwarden's free-vs-premium split is useful, but it is also worth 
 
 **TOTP codes included free elsewhere.** Several password managers include TOTP at no extra cost: Apple Passwords (built-in to iOS/macOS -- see [Bitwarden vs Apple Passwords](/compare/bitwarden-vs-apple-passwords/)), KeePassXC (free and open source), and PanicVault (one-time purchase, KeePass-compatible). If TOTP is your primary reason for considering Bitwarden Premium, you might instead choose a tool that includes it without a subscription. PanicVault, for example, is a native Apple app that stores TOTP codes alongside passwords in the open KDBX format, syncs via iCloud or Google Drive, and costs a one-time fee with no recurring charges.
 
-**Emergency access is rare in free tools.** This is one feature where Bitwarden Premium offers something few free alternatives can match. If emergency access matters to you, Bitwarden Premium at $10/year is one of the most affordable ways to get it.
+**Emergency access is rare in free tools.** This is one feature where Bitwarden Premium offers something few free alternatives can match. If emergency access matters to you, Bitwarden Premium at $19.80/year is one of the most affordable ways to get it.
 
 **Vault health reports have free alternatives.** The Have I Been Pwned website provides breach checking for free. KeePassXC includes a password health check. Apple Passwords flags weak and compromised credentials. Bitwarden's integrated reports are more convenient but not unique to the paid tier across the market.
 
-**File storage varies widely.** KeePassXC supports file attachments for free with no size limit (your database file grows accordingly). PanicVault supports attachments in the KDBX format. Cloud-based managers like 1Password and Bitwarden cap storage at 1 GB on their paid plans.
+**File storage varies widely.** KeePassXC supports file attachments for free with no size limit (your database file grows accordingly). PanicVault supports attachments in the KDBX format. Cloud-based managers cap storage on their paid plans -- 1 GB for 1Password, 5 GB for Bitwarden.
 
 For a direct comparison with one of these alternatives, see our [PanicVault vs. Bitwarden](/compare/panicvault-vs-bitwarden/) analysis, or explore the full [pricing comparison](/compare/pricing-comparison/) across all major password managers.
 
-## The Verdict: Is Bitwarden Premium Worth $10/Year?
+## The Verdict: Is Bitwarden Premium Worth $19.80/Year?
 
-For most users who are already committed to Bitwarden, yes. Ten dollars per year is an almost trivially small amount for the convenience of built-in TOTP codes, the safety net of emergency access, and the hygiene benefits of vault health reports. You spend more on a single coffee shop visit.
+For most users who are already committed to Bitwarden, yes. Under twenty dollars per year is an almost trivially small amount for the convenience of built-in TOTP codes, the safety net of emergency access, and the hygiene benefits of vault health reports. You spend more on a couple of coffee shop visits.
 
 The exception is if none of the Premium features apply to you. If you use a separate authenticator app by choice, do not need file attachments, have no use for emergency access, and do not own hardware security keys, there is no reason to upgrade. Bitwarden Free is a complete password manager, not a limited preview.
 
-The best approach: start with Bitwarden Free. Use it for a month. If you find yourself wanting TOTP integration, missing health reports, or wishing you could attach files to entries, upgrade. The $10/year price makes this an easy experiment -- you are not committing to a significant expense.
+The best approach: start with Bitwarden Free. Use it for a month. If you find yourself wanting TOTP integration, missing health reports, or wishing you could attach files to entries, upgrade. The $19.80/year price makes this an easy experiment -- you are not committing to a significant expense.
 
 And if you find yourself wanting features that neither Bitwarden tier provides well -- like a native Apple experience, offline-first architecture, or the vendor independence of an open database format -- consider exploring KeePass-compatible alternatives like PanicVault. The right password manager is the one that fits your workflow, not the one with the most features on a comparison chart.
 

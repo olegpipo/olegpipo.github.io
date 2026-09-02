@@ -2,7 +2,7 @@
 title: "Bitwarden vs Apple Passwords: 5 Differences That Decide It (2026)"
 description: "Both are free and secure, so it comes down to one thing: do you own any non-Apple device? Platform support, TOTP, security, and pricing compared for 2026."
 date: 2026-03-08
-lastmod: 2026-08-10
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
@@ -15,7 +15,7 @@ faq:
   - q: "Does Apple Passwords work on Windows?"
     a: "Only partially. Apple offers an iCloud for Windows app that provides a Chrome browser extension. It is basic and limited compared to Bitwarden's full Windows desktop app, web vault, and extensions for every major browser."
   - q: "Is Bitwarden free like Apple Passwords?"
-    a: "Bitwarden has a free tier with unlimited passwords on unlimited devices. Premium costs $10/year and adds TOTP codes, advanced 2FA, file storage, and vault health reports. Apple Passwords is completely free with no tiers."
+    a: "Bitwarden has a free tier with unlimited passwords on unlimited devices. Premium costs $19.80/year and adds TOTP codes, advanced 2FA, file storage, and vault health reports. Apple Passwords is completely free with no tiers."
 ---
 
 Bitwarden and Apple Passwords are both free. Both store and autofill passwords. Both use AES-256 encryption. But they serve different needs. Bitwarden is a cross-platform, open-source password manager with advanced features. Apple Passwords is a built-in tool that works seamlessly on Apple devices with zero configuration. The right choice depends on your devices, your needs, and how much control you want over your data. This comparison is part of our [password manager comparisons hub](/compare/), where we analyze every major password manager to help you decide.
@@ -24,7 +24,7 @@ Bitwarden and Apple Passwords are both free. Both store and autofill passwords. 
 
 Bitwarden is the most recommended free password manager for good reason. The free tier includes unlimited passwords on unlimited devices with no artificial restrictions. The entire codebase is open source, published on GitHub, and audited annually by Cure53 with results made public.
 
-Premium at $10/year adds TOTP verification codes, advanced two-factor authentication (YubiKey, FIDO2), 1GB encrypted file storage, vault health reports, emergency access, and priority support. The Families plan covers up to 6 users for $40/year.
+Premium at $19.80/year adds TOTP verification codes, advanced two-factor authentication (YubiKey, FIDO2), 5GB encrypted file storage, vault health reports, emergency access, and priority support. The Families plan covers up to 6 users for $47.88/year.
 
 Bitwarden runs on everything: Chrome, Firefox, Safari, Edge, Brave, and Vivaldi browser extensions; Windows, macOS, and Linux desktop apps; iOS and Android mobile apps; a web vault accessible from any browser; and a command-line interface. For organizations and privacy-conscious users, self-hosting lets you run the entire Bitwarden server on your own infrastructure.
 
@@ -45,15 +45,15 @@ The limitation is scope. Apple Passwords works fully only on Apple devices, with
 | Plan | Bitwarden | Apple Passwords |
 |---|---|---|
 | Free | $0 (unlimited passwords, unlimited devices) | $0 (unlimited, Apple devices only) |
-| Premium | $10/year | N/A (no paid tier) |
-| Family | $40/year (6 users) | N/A (free via iCloud sharing) |
-| TOTP Codes | Premium ($10/yr) | Free (built-in) |
-| File Storage | 1GB (Premium) | None |
+| Premium | $19.80/year | N/A (no paid tier) |
+| Family | $47.88/year (6 users) | N/A (free via iCloud sharing) |
+| TOTP Codes | Premium ($19.80/yr) | Free (built-in) |
+| File Storage | 5GB (Premium) | None |
 | Emergency Access | Premium | None |
 
 ### Pricing Verdict
 
-Both have genuinely free options. Apple Passwords includes TOTP verification codes for free, which Bitwarden reserves for the $10/year Premium plan. If TOTP codes are your only reason to consider Premium, and you only use Apple devices, Apple Passwords handles that at no cost. For the complete pricing picture, see our [pricing comparison guide](/compare/pricing-comparison/).
+Both have genuinely free options. Apple Passwords includes TOTP verification codes for free, which Bitwarden reserves for the $19.80/year Premium plan. If TOTP codes are your only reason to consider Premium, and you only use Apple devices, Apple Passwords handles that at no cost. For the complete pricing picture, see our [pricing comparison guide](/compare/pricing-comparison/).
 
 ## Security Architecture
 
@@ -94,16 +94,16 @@ Both are excellent. Bitwarden wins on transparency -- open-source code you can v
 
 | Feature | Bitwarden | Apple Passwords |
 |---|---|---|
-| Price | Free / $10/year | Free |
+| Price | Free / $19.80/year | Free |
 | Platforms | All (Windows, Mac, Linux, iOS, Android, Web) | Apple devices (+ basic Windows extension) |
 | Open Source | Yes | No |
 | Self-Hosting | Yes | No |
 | Master Password | Yes (required) | No (device passcode) |
-| TOTP Codes | Premium ($10/yr) | Free |
+| TOTP Codes | Premium ($19.80/yr) | Free |
 | Passkeys | Yes | Yes (native OS-level) |
 | Password Generator | Yes | Yes |
 | Secure Notes | Yes (Free) | No |
-| File Storage | 1GB (Premium) | No |
+| File Storage | 5GB (Premium) | No |
 | Dark Web Monitoring | Vault health reports (Premium) | Compromised password alerts |
 | Password Sharing | Yes (Organizations) | iCloud sharing groups |
 | Emergency Access | Premium | Legacy Contact (Apple ID level) |
@@ -124,7 +124,7 @@ Both are excellent. Bitwarden wins on transparency -- open-source code you can v
 
 **Self-hosting.** Run the Bitwarden server on your own infrastructure. Your encrypted vault never touches Bitwarden's servers. Apple Passwords requires iCloud.
 
-**Secure notes and file storage.** Bitwarden stores encrypted notes, custom fields, and up to 1GB of files. Apple Passwords stores only credentials and verification codes.
+**Secure notes and file storage.** Bitwarden stores encrypted notes, custom fields, and up to 5GB of files. Apple Passwords stores only credentials and verification codes.
 
 **Import and export.** Bitwarden supports importing from dozens of password managers and exporting to CSV and JSON. Apple Passwords has limited CSV export that loses TOTP configurations, passkeys, and metadata.
 
@@ -140,7 +140,7 @@ Both are excellent. Bitwarden wins on transparency -- open-source code you can v
 
 **Hardware security.** The Secure Enclave protects encryption keys at the chip level. Biometric authentication via Face ID or Touch ID stays within dedicated security hardware. This is a genuine security advantage.
 
-**Free TOTP codes.** Apple Passwords generates and autofills verification codes at no cost. Bitwarden requires the $10/year Premium plan for this feature.
+**Free TOTP codes.** Apple Passwords generates and autofills verification codes at no cost. Bitwarden requires the $19.80/year Premium plan for this feature.
 
 **No master password.** Your device passcode and biometrics are the key. There is no separate password to create, remember, or risk forgetting. For users who find master passwords intimidating, this removes a real barrier.
 
@@ -205,7 +205,7 @@ PanicVault gives you Apple-native integration like Apple Passwords with the feat
 
 For Apple-only users with basic needs, Apple Passwords is genuinely excellent. It is free, frictionless, hardware-secured, and handles passwords, passkeys, and TOTP codes without installing anything. If your digital life stays within Apple's ecosystem, it is hard to justify paying for anything else.
 
-Bitwarden is the right choice when you need cross-platform access, open-source transparency, self-hosting, secure notes, advanced organization, or flexibility to switch tools in the future. The free tier is strong, and $10/year for Premium is exceptional value.
+Bitwarden is the right choice when you need cross-platform access, open-source transparency, self-hosting, secure notes, advanced organization, or flexibility to switch tools in the future. The free tier is strong, and $19.80/year for Premium is exceptional value.
 
 For Apple users who want more than Apple Passwords offers -- true data portability, offline-first design, no iCloud requirement -- without the complexity of managing a full Bitwarden setup, [PanicVault](/compare/panicvault-vs-apple-passwords/) bridges the gap with Apple-native design and an open KDBX vault you own forever.
 

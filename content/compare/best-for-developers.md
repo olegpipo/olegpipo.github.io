@@ -2,7 +2,7 @@
 title: "Best Password Manager for Developers"
 description: "The best password managers for developers in 2026. CLI tools, SSH key storage, API token management, and self-hosting options compared."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
@@ -74,7 +74,7 @@ Developers tend to value open standards. A proprietary vault format creates lock
 
 ### Bitwarden
 
-**Price**: $0 (free tier) / $10/year (Premium) / $4/user/month (Teams)
+**Price**: $0 (free tier) / $19.80/year (Premium) / $4/user/month (Teams)
 
 Bitwarden is the strongest open-source option with self-hosting, a capable CLI, and a generous free tier. For developers who value transparency and control, it checks most boxes.
 
@@ -168,7 +168,7 @@ Keeper has positioned itself as a security-focused option with specific features
 
 | Feature | 1Password | Bitwarden | KeePassXC | PanicVault | Keeper |
 |---|---|---|---|---|---|
-| Price | $36/year | $0-$10/year | $0 | One-time | $35/year |
+| Price | $36/year | $0-$19.80/year | $0 | One-time | $35/year |
 | CLI | Yes (op) | Yes (bw) | Yes | Via KeePassXC | Yes |
 | SSH Agent | Yes | No | Yes | Via KeePassXC | No |
 | Self-Hosting | No | Yes | N/A (local) | N/A (local) | No |

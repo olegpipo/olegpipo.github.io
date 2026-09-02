@@ -2,7 +2,7 @@
 title: "Best Password Manager for Nomads"
 description: "The best password managers for digital nomads in 2026. Offline access, Travel Mode, VPN integration, and security on public Wi-Fi compared."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
@@ -75,9 +75,9 @@ Nomads manage banking in multiple countries, booking platforms across regions, a
 
 ### Bitwarden
 
-**Price**: $0 (free tier) / $10/year (Premium)
+**Price**: $0 (free tier) / $19.80/year (Premium)
 
-Bitwarden offers the best value for nomads on a budget. The free tier covers basic needs, the premium tier adds TOTP codes for $10/year, and the self-hosting option appeals to nomads who want full control over their data location.
+Bitwarden offers the best value for nomads on a budget. The free tier covers basic needs, the premium tier adds TOTP codes for $19.80/year, and the self-hosting option appeals to nomads who want full control over their data location.
 
 **Why it works for nomads:**
 - Free tier with unlimited passwords across all platforms
@@ -85,7 +85,7 @@ Bitwarden offers the best value for nomads on a budget. The free tier covers bas
 - Self-hosting via Vaultwarden gives full control over data location and jurisdiction
 - Cross-platform apps for every device and browser
 - Emergency access for designating a trusted contact
-- $10/year Premium adds TOTP authenticator and encrypted file storage
+- $19.80/year Premium adds TOTP authenticator and encrypted file storage
 - Open source with transparent security practices
 
 **Drawbacks:**
@@ -174,7 +174,7 @@ NordPass itself is a capable password manager, but its primary appeal for nomads
 
 | Feature | 1Password | Bitwarden | PanicVault | Dashlane | NordPass |
 |---|---|---|---|---|---|
-| Price | $36/year | $0-$10/year | One-time | $60/year | $18/year |
+| Price | $36/year | $0-$19.80/year | One-time | $60/year | $18/year |
 | Travel Mode | Yes | No | No | No | No |
 | Offline Access | Read-only | Read-only | Full | Limited cache | Limited cache |
 | Built-in VPN | No | No | No | Yes | No (bundle) |

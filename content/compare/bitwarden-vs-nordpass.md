@@ -2,7 +2,7 @@
 title: "Bitwarden vs NordPass (2026)"
 description: "Bitwarden vs NordPass compared for 2026. Open-source free tier vs Nord's XChaCha20 encryption. Pricing, security, features analyzed side by side."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
@@ -15,16 +15,16 @@ faq:
   - q: "Can I self-host NordPass?"
     a: "No. NordPass is a closed-source, cloud-only service. Bitwarden is the only major password manager offering self-hosting, letting you run the entire server on your own infrastructure."
   - q: "Is NordPass worth it if I already have NordVPN?"
-    a: "NordPass is available as part of Nord's bundle plans. If you already pay for NordVPN, upgrading to a bundle that includes NordPass may be cost-effective. Standalone, NordPass Premium at $23.88/year is decent but does not match Bitwarden's $10/year value."
+    a: "NordPass is available as part of Nord's bundle plans. If you already pay for NordVPN, upgrading to a bundle that includes NordPass may be cost-effective. Standalone, NordPass Premium at $23.88/year is decent but does not match Bitwarden's $19.80/year value."
 ---
 
-Bitwarden and NordPass take different roads to the same destination: securing your passwords. Bitwarden is the open-source veteran with a genuinely free tier and $10/year premium. NordPass is the newer entrant from the team behind NordVPN, featuring modern XChaCha20 encryption and a sleek interface. Both are competent password managers. The differences come down to pricing, transparency, and what you value in a security product. This comparison is part of our [password manager comparisons hub](/compare/), where we evaluate every major option side by side.
+Bitwarden and NordPass take different roads to the same destination: securing your passwords. Bitwarden is the open-source veteran with a genuinely free tier and $19.80/year premium. NordPass is the newer entrant from the team behind NordVPN, featuring modern XChaCha20 encryption and a sleek interface. Both are competent password managers. The differences come down to pricing, transparency, and what you value in a security product. This comparison is part of our [password manager comparisons hub](/compare/), where we evaluate every major option side by side.
 
 ## Bitwarden: Open Source and Affordable
 
 Bitwarden launched in 2016 and quickly became the default recommendation for anyone who wants a full-featured password manager without a significant cost. The entire codebase -- client apps, server, browser extensions -- is open source on GitHub. Annual third-party audits by Cure53 are published publicly.
 
-The free tier is the most generous in the industry. Unlimited passwords, unlimited devices, a password generator, secure notes, and basic two-factor authentication. Premium at $10/year adds TOTP code generation, advanced 2FA (YubiKey, FIDO2), 1GB encrypted file storage, vault health reports, and emergency access.
+The free tier is the most generous in the industry. Unlimited passwords, unlimited devices, a password generator, secure notes, and basic two-factor authentication. Premium at $19.80/year adds TOTP code generation, advanced 2FA (YubiKey, FIDO2), 5GB encrypted file storage, vault health reports, and emergency access.
 
 Bitwarden supports every major platform: browser extensions for Chrome, Firefox, Safari, Edge, Brave, and Vivaldi; desktop apps for Windows, macOS, and Linux; mobile apps for iOS and Android; a web vault; and a CLI. For advanced users and organizations, self-hosting is available.
 
@@ -43,10 +43,10 @@ NordPass integrates with the broader Nord ecosystem. If you use NordVPN or NordL
 | Plan | Bitwarden | NordPass |
 |---|---|---|
 | Free | $0 (unlimited passwords, unlimited devices) | $0 (unlimited passwords, 1 device at a time) |
-| Individual Premium | $10/year | $23.88/year ($1.99/month) |
-| Family | $40/year (up to 6 users) | $43.08/year (up to 6 users) |
-| TOTP Codes | Premium ($10/yr) | Premium ($23.88/yr) |
-| File Storage | 1GB (Premium) | 3GB (Premium) |
+| Individual Premium | $19.80/year | $23.88/year ($1.99/month) |
+| Family | $47.88/year (up to 6 users) | $43.08/year (up to 6 users) |
+| TOTP Codes | Premium ($19.80/yr) | Premium ($23.88/yr) |
+| File Storage | 5GB (Premium) | 3GB (Premium) |
 | Dark Web Monitoring | Included in Premium | Data Breach Scanner (Premium) |
 
 ### Five-Year Cost Comparison
@@ -54,12 +54,12 @@ NordPass integrates with the broader Nord ecosystem. If you use NordVPN or NordL
 | Scenario | Bitwarden | NordPass |
 |---|---|---|
 | Free tier, 5 years | $0 | $0 |
-| Premium, 5 years | $50 | $119.40 |
-| Family, 5 years | $200 | $215.40 |
+| Premium, 5 years | $99 | $119.40 |
+| Family, 5 years | $239.40 | $215.40 |
 
 ### Pricing Verdict
 
-Bitwarden is significantly cheaper at the individual level. The gap narrows for family plans. NordPass's free tier is functional but the one-device-at-a-time limitation is a real constraint -- if you switch between a phone and a laptop, you will be logging in and out constantly. Bitwarden's free tier has no such restriction. For the full pricing landscape, see our [pricing comparison guide](/compare/pricing-comparison/).
+Bitwarden is cheaper at the individual level. On family plans the order flips -- NordPass Family is slightly cheaper than Bitwarden Families. NordPass's free tier is functional but the one-device-at-a-time limitation is a real constraint -- if you switch between a phone and a laptop, you will be logging in and out constantly. Bitwarden's free tier has no such restriction. For the full pricing landscape, see our [pricing comparison guide](/compare/pricing-comparison/).
 
 ## Security Architecture
 
@@ -100,7 +100,7 @@ Both are secure. AES-256 and XChaCha20 are both considered effectively unbreakab
 
 | Feature | Bitwarden | NordPass |
 |---|---|---|
-| Price | Free / $10/year | Free / $23.88/year |
+| Price | Free / $19.80/year | Free / $23.88/year |
 | Free Tier Devices | Unlimited | 1 at a time |
 | Open Source | Yes | No |
 | Self-Hosting | Yes | No |
@@ -112,7 +112,7 @@ Both are secure. AES-256 and XChaCha20 are both considered effectively unbreakab
 | Password Sharing | Yes (Organizations) | Premium |
 | Emergency Access | Premium | No |
 | Secure Notes | Yes (Free) | Yes (Free) |
-| File Storage | 1GB (Premium) | 3GB (Premium) |
+| File Storage | 5GB (Premium) | 3GB (Premium) |
 | Password Generator | Yes | Yes |
 | Password Health | Premium | Premium |
 | Offline Access | Yes | Yes |
@@ -130,7 +130,7 @@ Both are secure. AES-256 and XChaCha20 are both considered effectively unbreakab
 
 **Emergency access.** Bitwarden Premium lets you designate a trusted contact who can request vault access with a configurable waiting period. NordPass does not offer this feature.
 
-**Price.** $10/year versus $23.88/year. For nearly identical functionality, Bitwarden costs less than half.
+**Price.** $19.80/year versus $23.88/year. For nearly identical functionality, Bitwarden is about $4 a year cheaper.
 
 **Send feature.** Bitwarden Send lets you share encrypted text or files via a link with optional password protection and expiration. NordPass has no equivalent for one-off secure sharing.
 
@@ -139,8 +139,6 @@ Both are secure. AES-256 and XChaCha20 are both considered effectively unbreakab
 **Interface design.** NordPass has a cleaner, more modern interface. Vault navigation is smoother, and the overall experience feels more consumer-friendly. Bitwarden's interface is functional but utilitarian.
 
 **Email masking.** NordPass Premium includes email masking -- generating unique email addresses that forward to your real inbox. This reduces spam and protects your primary email from appearing in breach databases. Bitwarden does not offer this natively.
-
-**File storage capacity.** NordPass provides 3GB of encrypted storage versus Bitwarden's 1GB. For storing documents, scans, or recovery media, NordPass offers more room.
 
 **Nord ecosystem.** If you already use NordVPN or NordLocker, bundling NordPass can make financial sense. The combined subscription may cost less than buying each product separately.
 
@@ -165,7 +163,7 @@ Both cover all major platforms. Bitwarden adds a CLI for scripting and automatio
 - **Anyone who wants a free password manager** without device limitations
 - **Privacy advocates** who want open-source, auditable code
 - **Self-hosters** who want full control over their vault infrastructure
-- **Budget-conscious users** who want premium features for $10/year
+- **Budget-conscious users** who want premium features for $19.80/year
 - **Developers** who need CLI access and API integration
 - **Users who value emergency access** for estate planning
 
@@ -175,7 +173,6 @@ Both cover all major platforms. Bitwarden adds a CLI for scripting and automatio
 - **Users who prioritize UI polish** and do not mind paying more for it
 - **People who want email masking** built into their password manager
 - **Users who prefer XChaCha20** encryption as a modern alternative to AES
-- **Those storing larger files** who need more than 1GB of encrypted storage
 
 ## Consider Also: A Different Approach
 
@@ -183,7 +180,7 @@ Both Bitwarden and NordPass store your vault on their servers. Both require trus
 
 **PanicVault** is a KeePass-compatible password manager built natively for Apple devices. Your vault is a standard KDBX file -- an open format supported by dozens of apps on every platform.
 
-- **One-time purchase** -- no $10/year, no $23.88/year, no renewal
+- **One-time purchase** -- no $19.80/year, no $23.88/year, no renewal
 - **Open KDBX format** -- your data is never locked to any vendor
 - **TOTP codes built in** -- no premium tier required
 - **iCloud and Google Drive sync** -- you choose where your encrypted file lives
@@ -194,7 +191,7 @@ PanicVault does not include email masking or a Data Breach Scanner. What it offe
 
 ## The Bottom Line
 
-Bitwarden is the better value for most users. A free tier with no device restrictions, $10/year premium, open-source code, self-hosting, and emergency access create a package that NordPass cannot match at $23.88/year. If you value transparency and affordability, Bitwarden is the clear choice.
+Bitwarden is the better value for most users. A free tier with no device restrictions, $19.80/year premium, open-source code, self-hosting, and emergency access create a package that NordPass cannot match at $23.88/year. If you value transparency and affordability, Bitwarden is the clear choice.
 
 NordPass is worth considering if you are already invested in the Nord ecosystem, want email masking, or prefer its cleaner interface. The XChaCha20 encryption is a genuine technical differentiator, even if the practical security difference from AES-256 is negligible. NordPass is a good product -- it just has to compete with Bitwarden's exceptional value.
 
@@ -203,7 +200,7 @@ For Apple users who want open-format data ownership without any subscription, [P
 ## Related Articles
 
 - [1Password vs Bitwarden](/compare/1password-vs-bitwarden/) -- How Bitwarden stacks up against the premium favorite
-- [Bitwarden Free vs Premium](/compare/bitwarden-free-vs-premium/) -- Is Bitwarden's $10/year upgrade worth it?
+- [Bitwarden Free vs Premium](/compare/bitwarden-free-vs-premium/) -- Is Bitwarden's $19.80/year upgrade worth it?
 - [Dashlane vs Bitwarden](/compare/dashlane-vs-bitwarden/) -- Bitwarden versus Dashlane's premium bundle
 - [Free vs Premium Password Managers](/compare/free-vs-premium/) -- When free is enough and when it is not
 - [PanicVault vs Bitwarden](/compare/panicvault-vs-bitwarden/) -- The one-time-purchase alternative

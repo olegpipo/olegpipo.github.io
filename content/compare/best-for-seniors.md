@@ -2,7 +2,7 @@
 title: "Best Password Managers for Seniors (2026): 5 Simple Picks"
 description: "Five password managers ranked for older adults: simple setup, clear design, family sharing, and emergency access — plus how to help someone get set up."
 date: 2026-03-08
-lastmod: 2026-08-10
+lastmod: 2026-09-02
 draft: false
 silo: "Comparisons"
 faq:
@@ -98,7 +98,7 @@ For seniors who already use an iPhone or Mac, Apple Passwords is the easiest sta
 
 ### Bitwarden
 
-**Price**: $0 (free tier) / $10/year (Premium) / $40/year (Families, up to 6)
+**Price**: $0 (free tier) / $19.80/year (Premium) / $47.88/year (Families, up to 6)
 
 Bitwarden's free tier offers a solid starting point for seniors on a fixed income. The core features -- unlimited password storage, sync across devices, and autofill -- are available at no cost.
 
@@ -107,8 +107,8 @@ Bitwarden's free tier offers a solid starting point for seniors on a fixed incom
 - Works across Apple devices and also on Windows and Android
 - Emergency access feature allows a trusted contact to request vault access after a waiting period
 - Simple vault interface with search and folders
-- Premium tier is only $10/year if they want TOTP codes
-- Family plan ($40/year for 6 users) is the most affordable subscription option
+- Premium tier is only $19.80/year if they want TOTP codes
+- Family plan ($47.88/year for 6 users) is the most affordable subscription option
 
 **Drawbacks:**
 - Interface is less polished than 1Password, especially on macOS
@@ -170,9 +170,9 @@ Dashlane offers a guided, hand-holding approach that suits seniors who appreciat
 
 | Feature | Apple Passwords | 1Password | Bitwarden | PanicVault | Dashlane |
 |---|---|---|---|---|---|
-| Price | Free | $36/year | Free-$10/year | One-time | $60/year |
+| Price | Free | $36/year | Free-$19.80/year | One-time | $60/year |
 | Setup Difficulty | None | Easy | Moderate | Easy | Easy |
-| Family Plan | Shared groups | $60/year (5) | $40/year (6) | Shared KDBX | $90/year (10) |
+| Family Plan | Shared groups | $60/year (5) | $47.88/year (6) | Shared KDBX | $90/year (10) |
 | Emergency Access | Apple Account | Family organizer | Yes (timed) | Manual sharing | Yes |
 | Face ID/Touch ID | Yes | Yes | Yes | Yes | Yes |
 | TOTP Codes | Yes | Yes | Premium | Yes | Yes |
