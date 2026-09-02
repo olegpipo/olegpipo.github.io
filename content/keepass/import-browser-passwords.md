@@ -19,7 +19,7 @@ Before walking through the technical steps, it is worth understanding why browse
 
 Browser password managers are designed primarily for convenience, not security. The encryption protecting your saved passwords is typically tied to your operating system login. If someone gains access to your computer while you are logged in -- or if your OS account is compromised -- your browser passwords are exposed. There is no separate master password protecting the credential store in most default configurations.
 
-Chrome, for example, encrypts saved passwords using the operating system's credential storage (Windows DPAPI or macOS Keychain), which means anyone with access to your logged-in user session can view all saved passwords through the browser settings. Safari integrates with macOS Keychain, which provides stronger isolation but still ties credential access to your system login. Firefox offers an optional primary password feature, but it is not enabled by default and many users never activate it.
+Chrome, for example, encrypts saved passwords using the operating system's credential storage (Windows DPAPI or macOS Keychain), which means anyone with access to your logged-in user session can view all saved passwords through the browser settings. Safari integrates with macOS Keychain, which provides stronger isolation but still ties credential access to your system login. Firefox offers an optional primary password feature, but it is not enabled by default and many users never activate it. Our separate review looks at [whether Google Password Manager is safe](/password-managers/is-chrome-passwords-safe/) in more depth.
 
 ### No Cross-Browser Access
 

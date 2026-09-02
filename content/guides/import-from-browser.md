@@ -56,6 +56,8 @@ Do not email the CSV file, upload it to cloud storage, or leave it sitting on yo
 
 Chrome exports: website URL, username, password, and any notes. It does not export saved payment methods or addresses -- those must be transferred manually.
 
+If you are exporting because you are rethinking how much to leave in the browser, our answer to [is Google Password Manager safe](/password-managers/is-chrome-passwords-safe/) covers what Chrome does and does not protect.
+
 ## Exporting from Safari
 
 Safari's password export is done through macOS System Settings, not through Safari itself.

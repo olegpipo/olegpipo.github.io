@@ -19,7 +19,7 @@ When you save a password in a browser, the credentials are stored in a local dat
 
 Chrome stores saved passwords in a local SQLite database. On Windows, passwords are encrypted using the Windows Data Protection API (DPAPI), which ties the encryption key to your Windows user account. On macOS, Chrome uses the Keychain to protect the encryption key. On Linux, the story is less reassuring -- Chrome historically used weaker encryption or stored passwords in near-plaintext depending on the desktop environment.
 
-If you sign into Chrome with a Google account, passwords sync to Google's servers. Google encrypts this data in transit and at rest, but Google holds the encryption keys by default. The on-device encryption feature (introduced in 2022) offers the option of encrypting synced passwords with a passphrase that Google cannot access, but this is not enabled by default and most users never activate it.
+If you sign into Chrome with a Google account, passwords sync to Google's servers. Google encrypts this data in transit and at rest, but Google holds the encryption keys by default. The on-device encryption feature (introduced in 2022) offers the option of encrypting synced passwords with a passphrase that Google cannot access, but this is not enabled by default and most users never activate it. For a longer answer to [is Google Password Manager safe](/password-managers/is-chrome-passwords-safe/), see our dedicated review of Chrome's storage and sync model.
 
 ### Apple Safari and iCloud Keychain
 

@@ -47,7 +47,7 @@ The more serious scenario is malware with elevated privileges on your device. If
 
 ### Cloud Account Compromise
 
-Synced passkeys (the default on Apple, Google, and most third-party managers) are stored in a cloud-synced credential manager. If an attacker compromises your Apple ID, they could potentially access your passkeys on a new device.
+Synced passkeys (the default on Apple, Google, and most third-party managers) are stored in a cloud-synced credential manager. If an attacker compromises your Apple ID, they could potentially access your passkeys on a new device. The same applies to passkeys synced through Chrome -- see [is Google Password Manager safe](/password-managers/is-chrome-passwords-safe/) for how that sync model works and what 2026 research found about it.
 
 Apple mitigates this through several mechanisms:
 - End-to-end encryption means Apple cannot read your passkey data.

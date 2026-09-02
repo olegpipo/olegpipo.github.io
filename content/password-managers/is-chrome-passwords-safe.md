@@ -1,11 +1,15 @@
 ---
-title: "Is Chrome Password Manager Safe?"
-description: "Honest security analysis of Chrome's built-in password manager: how it stores passwords, encryption method, Google account risks, and why experts recommend alternatives."
+title: "Is Google Password Manager (Chrome) Safe? 2026 Security Review"
+description: "Google Password Manager is fine for casual use but not zero-knowledge by default. What the 2026 passkey-hijack research means, and when to switch."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Password Managers"
 faq:
+  - q: "Is Google Password Manager the same as Chrome's password manager?"
+    a: "Yes. Google Password Manager is the official name for the password manager built into Chrome and Android, and it is the same service you reach at passwords.google.com. There is one store and one sync model behind all three surfaces, so a password saved in Chrome on a laptop shows up in the Android app and on the web."
+  - q: "Can Google Password Manager passkeys be stolen?"
+    a: "Only by malware that is already running on the device. Unit 42 research published in August 2026 described three techniques -- Pass-ta-key, Silver Pass-ta-key, and Golden Pass-ta-key -- that let malware on a Windows PC hijack or decrypt passkeys synced through Google Password Manager in Chrome. There is no remote attack, and Google assigned no CVE because the device must already be compromised."
   - q: "Does Chrome encrypt saved passwords?"
     a: "Yes, but the level of encryption depends on your setup. Chrome encrypts passwords using OS-level encryption by default (DPAPI on Windows, Keychain on macOS). If you enable on-device encryption in Chrome settings, passwords are encrypted with a key derived from your Google account password before syncing to Google's servers."
   - q: "Can Google see my saved passwords?"
@@ -18,11 +22,11 @@ faq:
     a: "If an attacker gains access to your Google account and you have not enabled on-device encryption, they can view all your saved passwords through passwords.google.com or by signing into Chrome on any device. This is one of the most significant security risks of relying on Chrome for password management."
 ---
 
-Google Chrome's built-in password manager is the most widely used password storage tool in the world -- not because people chose it after careful evaluation, but because it is there. Chrome asks to save your password, you click "Save," and the password appears next time you visit the site. The convenience is undeniable. But convenience and security are different things, and the question of whether Chrome's password manager is safe enough to trust with your digital life deserves an honest answer. For the broader context on password management options, see our [password managers guide](/password-managers/).
+Google Chrome's built-in password manager is the most widely used password storage tool in the world -- not because people chose it after careful evaluation, but because it is there. Its official name is **Google Password Manager**: the same service saves and syncs credentials in Chrome on the desktop, in Android, and at passwords.google.com. This article uses "Chrome password manager" and "Google Password Manager" interchangeably, because they are the same product. Chrome asks to save your password, you click "Save," and the password appears next time you visit the site. The convenience is undeniable. But convenience and security are different things, and the question of whether Google Password Manager is safe enough to trust with your digital life deserves an honest answer. For the broader context on password management options, see our [password managers guide](/password-managers/).
 
 ## The Short Answer
 
-Chrome's password manager is better than nothing -- significantly better than reusing passwords or writing them on sticky notes. But it is not as secure as a dedicated password manager. It lacks zero-knowledge encryption by default, has no separate master password, depends entirely on your Google account security, and offers no meaningful protection if someone gains access to your unlocked computer or Google account.
+Google Password Manager -- the manager built into Chrome and Android -- is better than nothing, and significantly better than reusing passwords or writing them on sticky notes. But it is not as secure as a dedicated password manager. It lacks zero-knowledge encryption by default, has no separate master password, depends entirely on your Google account security, and offers no meaningful protection if someone gains access to your unlocked computer or Google account.
 
 For casual users with low-risk accounts, Chrome passwords provide basic convenience. For anyone with important accounts -- banking, email, healthcare, financial -- a dedicated password manager is the better choice by a meaningful margin.
 
@@ -44,7 +48,7 @@ The critical difference from dedicated password managers is that Chrome does not
 
 When you sign into Chrome with a Google account and enable sync, your passwords are uploaded to Google's servers. By default, this sync uses Google's server-side encryption -- meaning Google manages the encryption keys and can technically access your synced passwords.
 
-Google offers an **on-device encryption** option (introduced in 2022) that encrypts passwords with a key derived from your Google account credentials before uploading. When enabled, this provides a closer approximation of zero-knowledge encryption. However, this feature is not enabled by default, and most users are unaware it exists. The vast majority of Chrome users sync passwords with Google-managed encryption.
+Google offers an **on-device encryption** option (introduced in 2022) that encrypts passwords with a key derived from your Google account credentials before uploading. When enabled, this provides a closer approximation of zero-knowledge encryption. However, this feature is not enabled by default, and most users are unaware it exists. The vast majority of Chrome users sync passwords with Google-managed encryption. To turn it on, open Settings at passwords.google.com -- or `chrome://password-manager/settings` in Chrome -- and set up **On-device encryption**. Google documents the change as permanent: once it is enabled it cannot be removed, and resetting it deletes the passwords already saved.
 
 ### No Master Password
 
@@ -66,7 +70,7 @@ Chrome does not use Argon2, bcrypt, or high-iteration PBKDF2 for key derivation 
 
 ## Breach History
 
-Chrome's password manager has not suffered a standalone breach in the sense that a dedicated service like LastPass has. However, the relevant breach vector is different: **Google account compromises** are the primary risk, and they happen frequently.
+Google Password Manager has not suffered a standalone breach in the sense that a dedicated service like LastPass has. However, the relevant breach vector is different: **Google account compromises** are the primary risk, and they happen frequently.
 
 Google accounts are targeted through phishing, credential stuffing, SIM swapping, and social engineering. When a Google account is compromised, the attacker gains access to everything -- Gmail, Google Drive, Google Photos, and all synced Chrome passwords (unless on-device encryption is enabled).
 
@@ -98,6 +102,14 @@ Google does run a significant bug bounty program (the Vulnerability Reward Progr
 
 **No secure notes or document storage.** Chrome stores only passwords and payment cards. It cannot store secure notes, identity documents, recovery codes, or other sensitive information that a password manager vault can hold.
 
+## The 2026 Passkey Research: What Pass-ta-key Means for You
+
+In August 2026, Palo Alto Networks' Unit 42 published [Pass the Passkey](https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/), research by Arie Olshtein describing three techniques -- Pass-ta-key, Silver Pass-ta-key, and Golden Pass-ta-key -- against the passkeys that Google Password Manager syncs through Chrome. The first signs an assertion with the device identity key while leaving the "user verified" flag unset, so it only works against sites that fail to check that flag. The second forces the device to re-enroll and registers an attacker-controlled user-verification key in the gap. The third reads the 32-byte Security Domain Secret -- the single key that protects every synced passkey in a Google account -- out of Chrome's process memory, where it briefly sits in plaintext.
+
+Read the preconditions carefully. Every one of these paths begins with malware already running as an ordinary user on a Windows PC with a TPM, and the demonstrations were validated against Chrome 142. This is not a remote attack, passkey cryptography itself is not broken, and no exploitation in the wild has been reported. Google assigned no CVE -- it rarely does for issues that require an already-compromised device -- and it removed an earlier exposure of the secret from Chrome's FIDO logs.
+
+For an ordinary user the lesson is narrower than the headlines: browser-synced credentials are only as safe as the device and the browser process holding them, so keeping the operating system clean is the control that matters. A manager with its own vault lock and its own encryption key is a different trust model -- the vault stays encrypted until you unlock it.
+
 ## What Could Go Wrong
 
 The most common real-world failures with Chrome passwords:
@@ -118,7 +130,7 @@ PanicVault, for example, stores your vault locally in the open KeePass format wi
 
 ## Verdict
 
-Chrome's password manager is a convenience tool, not a security tool. It is better than no password management -- autofill based on domain matching protects against some phishing, and saving passwords encourages unique credentials per site. But it lacks the fundamental security properties that define a trustworthy password manager: no independent master password, no default zero-knowledge encryption, no vault isolation from the broader Google account, and vulnerability to the most common malware attacks.
+Google Password Manager is a convenience tool, not a security tool. It is better than no password management -- autofill based on domain matching protects against some phishing, and saving passwords encourages unique credentials per site. But it lacks the fundamental security properties that define a trustworthy password manager: no independent master password, no default zero-knowledge encryption, no vault isolation from the broader Google account, and vulnerability to the most common malware attacks.
 
 For users who currently save passwords in Chrome, the practical advice is clear: keep using Chrome's autofill if it is the only thing between you and password reuse, but plan to migrate to a dedicated password manager for any account that matters. The security improvement is significant, the migration process is simple, and the daily experience is comparable in convenience.
 
@@ -127,6 +139,7 @@ For a detailed comparison of browser-based and dedicated password management, se
 ## Related Articles
 
 - [Browser Password Saving vs Dedicated Managers](/password-managers/vs-browser-saving/)
+- [Can Passkeys Be Hacked?](/passkeys/can-passkeys-be-hacked/)
 - [Are Password Managers Safe?](/password-managers/are-password-managers-safe/)
 - [Zero-Knowledge Encryption Explained](/password-managers/zero-knowledge-encryption/)
 - [What Happens If a Password Manager Gets Hacked?](/password-managers/what-if-hacked/)
