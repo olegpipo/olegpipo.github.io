@@ -2,7 +2,7 @@
 title: "Proton Pass Review (2026)"
 description: "Proton Pass review covering pricing, open-source security, email aliases, and Swiss privacy. Is Proton Pass the best privacy-first password manager?"
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Password Managers"
 faq:
@@ -31,10 +31,10 @@ Proton Pass offers a generous free tier, but its paid pricing is structured to e
 | Plan | Price | Devices | Key Features |
 |------|-------|---------|--------------|
 | **Free** | $0 | Unlimited | Unlimited passwords, 10 hide-my-email aliases, passkey support, password generator |
-| **Pass Plus** | $23.88/yr ($1.99/mo) | Unlimited | Unlimited aliases, integrated 2FA (TOTP), Dark Web Monitoring, Secure Sharing, vault organization |
-| **Proton Unlimited** | $47.88/yr ($3.99/mo) | Unlimited | Pass Plus + Proton Mail Plus + Proton VPN Plus + Proton Drive + Proton Calendar |
+| **Pass Plus** | $35.88/yr ($2.99/mo) | Unlimited | Unlimited aliases, integrated 2FA (TOTP), Dark Web Monitoring, Secure Sharing, vault organization |
+| **Proton Unlimited** | $119.88/yr ($9.99/mo) | Unlimited | Pass Plus + Proton Mail Plus + Proton VPN Plus + Proton Drive + Proton Calendar |
 
-The Proton Unlimited bundle is where the value equation gets compelling. For $47.88 per year, you get a premium password manager, encrypted email, a VPN, encrypted cloud storage, and an encrypted calendar. If you would use even two of those services, the bundle price is difficult to beat. Our [pricing comparison](/compare/pricing-comparison/) shows how this stacks up against standalone password manager subscriptions.
+The Proton Unlimited bundle is where the value equation gets compelling. For $119.88 per year, you get a premium password manager, encrypted email, a VPN, encrypted cloud storage, and an encrypted calendar. If you would use even two of those services, the bundle price is difficult to beat. Our [pricing comparison](/compare/pricing-comparison/) shows how this stacks up against standalone password manager subscriptions.
 
 The free tier is notably generous. Unlike NordPass (one device) or many competitors that cap password count, Proton Pass Free gives you unlimited passwords on unlimited devices. The 10 email alias limit is the primary constraint, and for many users, 10 aliases are enough. If you are evaluating [free password managers](/compare/best-free-password-managers/), Proton Pass belongs in the conversation alongside Bitwarden.
 
@@ -128,7 +128,7 @@ Proton Pass may not suit everyone:
 
 - **Power users with advanced needs**: If you need SSH key storage, extensive custom fields, document attachments, or deep enterprise features, 1Password or Bitwarden offer more
 - **Users who want a desktop app**: If a standalone desktop application is important to your workflow, Proton Pass currently lacks one
-- **Users outside the Proton ecosystem**: If you have no interest in Proton Mail or VPN, the pricing advantage of the bundle disappears, and you are paying roughly the same as [Bitwarden](/compare/bitwarden-vs-proton-pass/) for fewer features
+- **Users outside the Proton ecosystem**: If you have no interest in Proton Mail or VPN, the pricing advantage of the bundle disappears, and Pass Plus costs noticeably more than [Bitwarden](/compare/bitwarden-vs-proton-pass/) Premium for fewer features
 - **Users who prefer offline storage**: Proton Pass is cloud-based. For local control, an [offline password manager](/compare/best-offline/) is better
 
 ## How PanicVault Compares

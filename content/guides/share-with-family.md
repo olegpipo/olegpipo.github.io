@@ -2,7 +2,7 @@
 title: "How to Share Passwords Securely With Family"
 description: "Safe methods for sharing passwords with family members. Covers shared vaults, secure sharing features, and best practices for household credential management."
 date: 2026-02-14
-lastmod: 2026-07-01
+lastmod: 2026-09-02
 draft: false
 silo: "Guides & Tutorials"
 ---
@@ -89,7 +89,7 @@ Cloud-based password managers like 1Password and Bitwarden include purpose-built
 
 ### Bitwarden Organizations
 
-Bitwarden's Family plan ($40/year for up to 6 members) uses "Organizations" for sharing. You create an organization, invite family members, and assign entries to shared collections.
+Bitwarden's Family plan ($47.88/year for up to 6 members) uses "Organizations" for sharing. You create an organization, invite family members, and assign entries to shared collections.
 
 - **Collections**: Group shared entries into collections with different access levels
 - **Invite system**: Family members get invited by email and join with their own Bitwarden accounts

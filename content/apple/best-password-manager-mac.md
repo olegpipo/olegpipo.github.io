@@ -2,7 +2,7 @@
 title: "Best Password Manager for Mac in 2026"
 description: "In-depth comparison of the best password managers for macOS in 2026 -- 1Password, Bitwarden, KeePassXC, PanicVault, Dashlane, and Apple Passwords -- evaluated on security, usability, integration, price, and data portability."
 date: 2026-02-13
-lastmod: 2026-07-17
+lastmod: 2026-09-02
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -61,7 +61,7 @@ Bitwarden is the most popular open-source cloud password manager. Its Mac app is
 
 **Integration**: Touch ID support, Safari extension, and system autofill integration are all present. The experience is slightly less seamless than 1Password -- occasional prompts require an extra click -- but it is reliable.
 
-**Price**: Free tier with core features. Premium at $10/year. Family plan at $40/year for up to 6 users. This is dramatically cheaper than 1Password and a compelling argument for users who do not need the last five percent of polish.
+**Price**: Free tier with core features. Premium at $19.80/year. Family plan at $47.88/year for up to 6 users. This is dramatically cheaper than 1Password and a compelling argument for users who do not need the last five percent of polish.
 
 **Data portability**: Export to CSV and JSON. No native KDBX export, but conversion tools exist. The open-source nature means the community maintains migration paths.
 
@@ -138,7 +138,7 @@ With iOS 18 and macOS Sequoia, Apple introduced a standalone Passwords app that 
 
 **Best overall for Mac users who want polish**: 1Password. The native Mac experience is the most refined, and the security architecture is strong. The subscription cost is the main drawback.
 
-**Best for budget-conscious users**: Bitwarden. The free tier is genuinely useful, and the premium tier at $10/year is a bargain. Open source adds transparency.
+**Best for budget-conscious users**: Bitwarden. The free tier is genuinely useful, and the premium tier at $19.80/year is a bargain. Open source adds transparency.
 
 **Best for data ownership and portability**: KeePassXC or PanicVault. Both use the KDBX format, giving you complete control over your data. KeePassXC is free and cross-platform. PanicVault offers a more Mac-native experience with system-level integration that KeePassXC cannot provide.
 

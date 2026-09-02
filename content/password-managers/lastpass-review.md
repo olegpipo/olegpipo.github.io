@@ -2,7 +2,7 @@
 title: "LastPass Review (2026)"
 description: "Honest LastPass review for 2026. Post-breach security changes, pricing, features, trust concerns, and whether LastPass has earned back user confidence."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Password Managers"
 faq:
@@ -15,7 +15,7 @@ faq:
   - q: "Should I switch from LastPass to another manager?"
     a: "If you stayed through the breach and have a strong master password (12+ characters), updated your PBKDF2 iterations to 600,000, and changed your most sensitive passwords, you can continue using LastPass. However, if trust is broken or you want open-source transparency, Bitwarden is the most recommended alternative. Both support CSV import/export for easy migration."
   - q: "How does LastPass compare to Bitwarden?"
-    a: "Bitwarden offers a better free tier (unlimited devices vs one device type), is open source, costs less for premium ($10/year vs $36/year), and has not suffered a major breach. LastPass has a more familiar interface for long-time users and includes features like emergency access and dark web monitoring. For most new users, Bitwarden is the better choice."
+    a: "Bitwarden offers a better free tier (unlimited devices vs one device type), is open source, costs less for premium ($19.80/year vs $36/year), and has not suffered a major breach. LastPass has a more familiar interface for long-time users and includes features like emergency access and dark web monitoring. For most new users, Bitwarden is the better choice."
 ---
 
 LastPass is the most recognized name in password management -- and since late 2022, that recognition cuts both ways. For years, LastPass was the default recommendation, the password manager people had actually heard of, the one bundled with enterprise agreements and recommended in every "how to stay safe online" article. Then came the breach.
@@ -38,7 +38,7 @@ LastPass's pricing structure in 2026 reflects a product caught between its free-
 
 The free tier is notable for its limitations: you can use LastPass on either mobile devices or computers, but not both. This is a significant downgrade from the pre-2021 free tier that offered unlimited devices with full sync. The change pushed many free users toward alternatives -- particularly Bitwarden, which still offers unlimited devices for free. Our [free vs premium comparison](/compare/free-vs-premium/) details what you typically get at each price point.
 
-At $36/year for Premium, LastPass sits in the same price bracket as 1Password ($35.88/year) but offers less than either competitor in certain areas. The Families plan at $48/year for six users is competitive, though Bitwarden undercuts it at $40/year. For a complete cost analysis, see our [pricing comparison](/compare/pricing-comparison/).
+At $36/year for Premium, LastPass sits in the same price bracket as 1Password ($35.88/year) but offers less than either competitor in certain areas. The Families plan at $48/year for six users is competitive, and Bitwarden now sits within cents of it at $47.88/year. For a complete cost analysis, see our [pricing comparison](/compare/pricing-comparison/).
 
 ## The Breach: What Happened and Why It Matters
 

@@ -2,7 +2,7 @@
 title: "The Best Authenticator Apps in 2026"
 description: "Compare the top authenticator apps for TOTP two-factor authentication in 2026, including Google Authenticator, Microsoft Authenticator, Authy, and password managers with built-in TOTP support."
 date: 2026-02-13
-lastmod: 2026-07-01
+lastmod: 2026-09-02
 draft: false
 silo: "Two-Factor Authentication"
 faq:
@@ -176,7 +176,7 @@ Bitwarden is a popular open-source cloud-based password manager that includes TO
 
 **Weaknesses:**
 
-- TOTP requires a premium subscription ($10/year)
+- TOTP requires a premium subscription ($19.80/year)
 - Cloud-based -- your encrypted vault is stored on Bitwarden's servers (or a self-hosted instance)
 - Uses PBKDF2 by default for key derivation (Argon2id available but not the default), which is less resistant to hardware-accelerated attacks than Argon2d
 

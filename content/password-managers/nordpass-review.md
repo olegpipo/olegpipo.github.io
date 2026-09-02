@@ -2,7 +2,7 @@
 title: "NordPass Review (2026)"
 description: "NordPass review covering pricing, XChaCha20 encryption, features, pros and cons. Is NordPass worth it in 2026? Our honest assessment."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Password Managers"
 faq:
@@ -32,7 +32,7 @@ NordPass offers three tiers. All paid plans include a 30-day money-back guarante
 | **Premium** | $23.88/yr ($1.99/mo) | Unlimited | Password health, Data Breach Scanner, email masking, secure sharing, emergency access |
 | **Family** | $43.68/yr ($3.64/mo) | Unlimited (6 users) | All Premium features for up to 6 family members with separate vaults |
 
-The pricing is competitive. Premium costs roughly the same as Bitwarden Premium ($10/yr) when you consider what each includes -- NordPass bundles features like email masking and breach scanning that Bitwarden reserves for its paid tier or does not offer at all. Compared to 1Password ($35.88/yr) or Dashlane ($59.88/yr), NordPass undercuts both significantly. See our [pricing comparison](/compare/pricing-comparison/) for a full breakdown of how password manager costs stack up.
+The pricing is competitive. Premium costs roughly the same as Bitwarden Premium ($19.80/yr) when you consider what each includes -- NordPass bundles features like email masking and breach scanning that Bitwarden reserves for its paid tier or does not offer at all. Compared to 1Password ($35.88/yr) or Dashlane ($59.88/yr), NordPass undercuts both significantly. See our [pricing comparison](/compare/pricing-comparison/) for a full breakdown of how password manager costs stack up.
 
 The free tier is functional but limited. Restricting users to one device at a time makes it impractical for anyone who uses both a phone and a computer -- which is nearly everyone. If you are evaluating [free password managers](/compare/best-free-password-managers/), Bitwarden's free tier with unlimited devices is more generous.
 

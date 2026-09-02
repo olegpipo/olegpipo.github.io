@@ -2,7 +2,7 @@
 title: "Enpass Review (2026)"
 description: "Enpass review covering local storage, lifetime pricing, bring-your-own-cloud sync, and security. Is Enpass the right offline-first password manager?"
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Password Managers"
 faq:
@@ -36,7 +36,7 @@ Enpass offers one of the most flexible pricing structures in the password manage
 | **Lifetime** | $79.99 (one-time) | Unlimited | All Individual features, no expiration |
 | **Family** | $47.99/yr ($3.99/mo) | Unlimited (6 users) | All Individual features for up to 6 members |
 
-The lifetime plan is the headline here. For the cost of roughly three years of a typical subscription, you get permanent access with no recurring charges. In a market where 1Password charges $35.88/yr, Dashlane charges $59.88/yr, and even Bitwarden charges $10/yr, Enpass's $79.99 lifetime option is exceptional value for users who plan to stick with their password manager for years.
+The lifetime plan is the headline here. For the cost of roughly three years of a typical subscription, you get permanent access with no recurring charges. In a market where 1Password charges $35.88/yr, Dashlane charges $59.88/yr, and even Bitwarden charges $19.80/yr, Enpass's $79.99 lifetime option is exceptional value for users who plan to stick with their password manager for years.
 
 The free tier has a notable split: desktop is fully functional with unlimited items, but mobile is capped at 25 items. This is generous enough for evaluation but not practical for daily use. Check our [free vs premium comparison](/compare/free-vs-premium/) to see how Enpass's free offering compares to competitors.
 

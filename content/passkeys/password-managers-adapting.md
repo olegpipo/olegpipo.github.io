@@ -2,7 +2,7 @@
 title: "How Password Managers Are Adapting to Passkeys"
 description: "How 1Password, Bitwarden, Dashlane, KeePass, and other password managers are evolving to support passkeys alongside traditional passwords. Industry analysis for 2026."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-09-02
 draft: false
 silo: "Passkeys & Passwordless"
 ---
@@ -51,7 +51,7 @@ Bitwarden's approach is transparency-first, consistent with its open-source phil
 
 **Self-hosting compatible.** If you self-host Bitwarden, your passkeys are stored on your own infrastructure. This appeals to users who want maximum control over their credential data.
 
-**Pricing advantage.** Bitwarden's free tier supports passkey storage, making it the most accessible option for users who want passkey management without additional cost. The premium tier ($10/year) adds hardware security key support and advanced features.
+**Pricing advantage.** Bitwarden's free tier supports passkey storage, making it the most accessible option for users who want passkey management without additional cost. The premium tier ($19.80/year) adds hardware security key support and advanced features.
 
 ### Dashlane
 

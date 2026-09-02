@@ -2,18 +2,18 @@
 title: "Bitwarden Review (2026)"
 description: "Complete Bitwarden review for 2026. Free tier, open-source security, self-hosting, pricing, features, and who this budget-friendly password manager suits best."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-02
 draft: false
 silo: "Password Managers"
 faq:
   - q: "Is Bitwarden really free?"
-    a: "Yes. Bitwarden's free tier includes unlimited passwords, unlimited devices, cloud sync, a password generator, and autofill across all platforms. There are no time limits or device restrictions. The Premium plan at $10/year adds TOTP authentication, emergency access, vault health reports, and 1 GB of encrypted file storage."
+    a: "Yes. Bitwarden's free tier includes unlimited passwords, unlimited devices, cloud sync, a password generator, and autofill across all platforms. There are no time limits or device restrictions. The Premium plan at $19.80/year adds TOTP authentication, emergency access, vault health reports, and 5 GB of encrypted file storage."
   - q: "Is Bitwarden safe to use?"
     a: "Bitwarden is considered very safe. It uses AES-256 encryption with a zero-knowledge architecture, and its full source code is open for public inspection on GitHub. It undergoes annual independent security audits by firms like Cure53, with results published publicly. The open-source model means the security community can verify Bitwarden's claims directly."
   - q: "Can I self-host Bitwarden?"
     a: "Yes. Bitwarden offers an official self-hosted option and there is also Vaultwarden, a community-built compatible server. Self-hosting gives you full control over your encrypted vault data and removes dependence on Bitwarden's cloud infrastructure. It requires technical knowledge to set up and maintain securely."
   - q: "How does Bitwarden compare to 1Password?"
-    a: "Bitwarden is significantly cheaper (free or $10/year vs $35.88/year), open source, and supports self-hosting. 1Password offers a more polished interface, a Secret Key security layer, Travel Mode, and an Apple Watch app. Both use AES-256 encryption and zero-knowledge architecture. Bitwarden wins on price and transparency; 1Password wins on polish and premium features."
+    a: "Bitwarden is significantly cheaper (free or $19.80/year vs $35.88/year), open source, and supports self-hosting. 1Password offers a more polished interface, a Secret Key security layer, Travel Mode, and an Apple Watch app. Both use AES-256 encryption and zero-knowledge architecture. Bitwarden wins on price and transparency; 1Password wins on polish and premium features."
   - q: "Does Bitwarden work on all devices?"
     a: "Yes. Bitwarden supports Windows, macOS, Linux, iOS, Android, and all major browsers including Chrome, Firefox, Safari, Edge, and Brave. It also has a command-line interface and a web vault accessible from any browser. Cross-device sync is automatic through Bitwarden's cloud or your self-hosted server."
 ---
@@ -29,16 +29,16 @@ Bitwarden's pricing is its most immediately compelling feature. Here is what eac
 | Plan | Annual Cost | Monthly Equivalent | Users | Key Inclusions |
 |---|---|---|---|---|
 | Free | $0 | $0 | 1 | Unlimited passwords, unlimited devices, cloud sync, password generator, autofill |
-| Premium | $10/yr | $0.83/mo | 1 | Everything in Free + TOTP authenticator, emergency access, vault health reports, 1 GB file storage |
-| Families | $40/yr | $3.33/mo | Up to 6 | All Premium features for every member, shared collections, unlimited sharing |
+| Premium | $19.80/yr | $1.65/mo | 1 | Everything in Free + TOTP authenticator, emergency access, vault health reports, 5 GB file storage |
+| Families | $47.88/yr | $3.99/mo | Up to 6 | All Premium features for every member, shared collections, unlimited sharing |
 | Teams | $48/user/yr | $4/user/mo | Unlimited | Business features, admin console, event logs |
 | Enterprise | $72/user/yr | $6/user/mo | Unlimited | SSO, SCIM, custom policies, directory sync |
 
 The free tier is not a trial. It is a fully functional password manager with no password limit, no device limit, no expiration date, and no advertisements. You can use Bitwarden Free indefinitely and never encounter an artificial restriction on core functionality. This sets it apart from virtually every competitor -- see our [free vs premium password manager comparison](/compare/free-vs-premium/) for details on what free tiers typically include and exclude.
 
-The Premium upgrade at $10/year is the cheapest paid plan among major password managers. For context, 1Password charges $35.88/year and Dashlane charges $60/year for their individual plans. Over five years, Bitwarden Premium costs $50 total. The same period with 1Password costs $180. Our [pricing comparison guide](/compare/pricing-comparison/) breaks this down across all major options.
+The Premium upgrade at $19.80/year is the cheapest paid plan among major password managers -- and while the January 2026 increase from $10 was Bitwarden's first Premium price change in about a decade, it came with 5 GB of encrypted file storage instead of 1 GB and an expanded feature set. For context, 1Password charges $35.88/year and Dashlane charges $60/year for their individual plans. Over five years, Bitwarden Premium costs $99 total. The same period with 1Password costs $180. Our [pricing comparison guide](/compare/pricing-comparison/) breaks this down across all major options.
 
-The Families plan at $40/year for six users is also the most affordable family option available, working out to approximately $6.67 per person per year.
+The Families plan at $47.88/year for six users is also among the most affordable family options available, working out to approximately $7.98 per person per year.
 
 ## Security Architecture
 
@@ -113,7 +113,7 @@ Bitwarden supports Windows, macOS, Linux, iOS, Android, Chrome, Firefox, Safari,
 
 - **Genuinely useful free tier.** Unlimited passwords, unlimited devices, no expiration. This alone makes Bitwarden the default recommendation for anyone starting with password managers.
 - **Open-source transparency.** Full client and server code available for public scrutiny. Security claims can be verified, not just trusted.
-- **Cheapest premium option.** At $10/year, Bitwarden Premium is a fraction of the cost of 1Password ($35.88/year) or Dashlane ($60/year).
+- **Cheapest premium option.** At $19.80/year, Bitwarden Premium is a fraction of the cost of 1Password ($35.88/year) or Dashlane ($60/year).
 - **Self-hosting option.** Complete data sovereignty for users who want it.
 - **Emergency access.** Built-in emergency access with configurable waiting periods -- a feature absent from 1Password.
 - **Active development and community.** Regular updates, responsive to community feedback, and a thriving ecosystem of integrations.
@@ -156,7 +156,7 @@ For Apple users who like Bitwarden's commitment to openness but prefer a native 
 
 ## The Bottom Line
 
-Bitwarden is the password manager that removes every excuse for not using one. Its free tier eliminates the cost barrier. Its open-source nature eliminates the trust barrier. Its cross-platform support eliminates the compatibility barrier. And its $10/year premium plan eliminates the excuse that advanced features are too expensive.
+Bitwarden is the password manager that removes every excuse for not using one. Its free tier eliminates the cost barrier. Its open-source nature eliminates the trust barrier. Its cross-platform support eliminates the compatibility barrier. And its $19.80/year premium plan eliminates the excuse that advanced features are too expensive.
 
 It is not the most polished option, and it lacks some premium features that competitors offer. But for the vast majority of users -- especially those starting their password management journey or those who value transparency and value -- Bitwarden is difficult to beat. It does the core job well, it does it securely, and it does it at a price that no competitor can match.
 
