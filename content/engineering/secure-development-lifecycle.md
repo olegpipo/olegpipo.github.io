@@ -94,7 +94,7 @@ PW.4 -- "reuse existing, well-secured software" -- is the practice that a passwo
 PW.7 asks you to review and analyze human-readable code to find vulnerabilities and verify compliance. We do this three ways on every single pull request, because each catches a different class of defect:
 
 - **[SonarQube static analysis](/engineering/static-analysis-sonarqube/)** with a blocking quality gate -- deterministic, syntactic, taint-aware, tireless, and unable to understand intent.
-- **[Adversarial AI review by Fable 5](/engineering/ai-code-audit-fable-5/)** -- semantic, adversarial, high-recall, reads the diff asking "how would I break this," and catches logic and state-machine flaws that no linter can express.
+- **[Adversarial AI review by Fable](/engineering/ai-code-audit-fable-5/)** -- semantic, adversarial, high-recall, reads the diff asking "how would I break this," and catches logic and state-machine flaws that no linter can express.
 - **Human review** -- the only one of the three that knows what we *meant*.
 
 ### Testing (PW.8)

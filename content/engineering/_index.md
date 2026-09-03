@@ -1,6 +1,6 @@
 ---
 title: "Engineering & Security Assurance: How PanicVault Is Built"
-description: "How PanicVault is engineered and verified: adversarial AI review of every commit by Fable 5, a blocking SonarQube quality gate, 100% test coverage, and the cryptographic and platform engineering behind an offline-first password manager."
+description: "How PanicVault is engineered and verified: adversarial AI review of every commit by Fable, a blocking SonarQube quality gate, 100% test coverage, and the cryptographic and platform engineering behind an offline-first password manager."
 date: 2026-07-14
 lastmod: 2026-07-14
 draft: false
@@ -19,7 +19,7 @@ In other words: **the security of a password manager is a property of the engine
 
 Nothing merges into PanicVault without passing through all four of the following. They are here because each one is blind to what the others catch.
 
-**1. Adversarial AI security review of every diff.** Every commit and pull request is audited in CI by **Fable 5**, Anthropic's most advanced model for cybersecurity reasoning, instructed to read the change the way an attacker would. It catches the class of defect that no rule engine can express: logic flaws, unsafe state transitions, key-material lifetime bugs, time-of-check-to-time-of-use races, semantically incorrect use of correct cryptography, and error paths that leak. Read the full account -- including a frank section on what AI review is *not* -- in [Continuous AI Security Audit](/engineering/ai-code-audit-fable-5/).
+**1. Adversarial AI security review of every diff.** Every commit and pull request is audited in CI by **Fable**, Anthropic's most advanced model for cybersecurity reasoning, instructed to read the change the way an attacker would. It catches the class of defect that no rule engine can express: logic flaws, unsafe state transitions, key-material lifetime bugs, time-of-check-to-time-of-use races, semantically incorrect use of correct cryptography, and error paths that leak. Read the full account -- including a frank section on what AI review is *not* -- in [Continuous AI Security Audit](/engineering/ai-code-audit-fable-5/).
 
 **2. Static analysis with a blocking quality gate.** SonarQube runs SAST on every build. Zero new bugs, zero new vulnerabilities, every security hotspot reviewed, ratings of A. If the gate fails, the build fails and the merge is refused. There is no override button, and [we explain why a gate that can be overridden is not a gate](/engineering/static-analysis-sonarqube/).
 
@@ -40,7 +40,7 @@ We assume from the outset that the attacker already has your vault file -- not a
 
 ### Review and verification
 
-- **[Continuous AI Security Audit: Every Commit Reviewed by Fable 5](/engineering/ai-code-audit-fable-5/)** -- what an adversarial AI reviewer catches that linters and tired humans miss, why "on every commit" beats "once a year," and an honest account of the limits: it is a high-recall reviewer that never gets tired, not a proof and not a substitute for design review.
+- **[Continuous AI Security Audit: Every Commit Reviewed by Fable](/engineering/ai-code-audit-fable-5/)** -- what an adversarial AI reviewer catches that linters and tired humans miss, why "on every commit" beats "once a year," and an honest account of the limits: it is a high-recall reviewer that never gets tired, not a proof and not a substitute for design review.
 - **[Static Analysis and the Quality Gate: SonarQube on Every Build](/engineering/static-analysis-sonarqube/)** -- SAST versus DAST, taint analysis from source to sink (the vault file *is* untrusted input), bugs versus vulnerabilities versus security hotspots versus code smells, the technical debt ratio, and what a blocking gate actually means.
 - **[Why We Hold 100% Test Coverage -- and What It Really Proves](/engineering/hundred-percent-test-coverage/)** -- line coverage, branch coverage, MC-DC, the reason a 90% target always leaves the *scariest* 10% untested, known-answer vectors from the standards, and how to think like a mutation tester.
 

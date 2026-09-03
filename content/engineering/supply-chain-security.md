@@ -32,7 +32,7 @@ A useful way to see this: most of the CVEs that hit mobile apps in any given yea
 
 Every dependency PanicVault does use is **pinned to an exact resolved revision, recorded in a lockfile that is committed to the repository.** Not a version range. Not "^2.1.0", which is an instruction to your build system to run whatever the maintainer publishes next.
 
-The distinction matters more than it sounds. A range means the code you tested and the code you ship can differ, and the difference arrives without a commit, without a review, and without anyone noticing. Pinning makes a dependency change what it should always have been: **a diff.** A visible, reviewable line in a pull request, read by a human and adversarially reviewed by [Fable 5](/engineering/ai-code-audit-fable-5/) like any other change. Dependency bumps are treated as code changes because they are code changes.
+The distinction matters more than it sounds. A range means the code you tested and the code you ship can differ, and the difference arrives without a commit, without a review, and without anyone noticing. Pinning makes a dependency change what it should always have been: **a diff.** A visible, reviewable line in a pull request, read by a human and adversarially reviewed by [Fable](/engineering/ai-code-audit-fable-5/) like any other change. Dependency bumps are treated as code changes because they are code changes.
 
 An important nuance most write-ups skip: a package manifest is itself *executable code*. Swift Package Manager compiles and runs `Package.swift` to resolve the graph. It sandboxes that evaluation, but the correct posture is to treat manifest execution and build plugins as part of the attack surface, not as configuration. We do not use build plugins that require network or arbitrary filesystem permissions.
 
@@ -78,7 +78,7 @@ That is the structural argument for [offline-first](/cloud-sync/offline-vs-cloud
 Concretely, on every build:
 
 - The lockfile is verified; an unpinned or drifted dependency fails the build.
-- Dependency changes appear in the diff and are reviewed by humans and by Fable 5 like any other change.
+- Dependency changes appear in the diff and are reviewed by humans and by Fable like any other change.
 - Known-vulnerability data is checked against the resolved dependency set, and a new advisory is a build-breaking finding, not an email.
 - [SonarQube's quality gate](/engineering/static-analysis-sonarqube/) blocks the merge on any new security finding in our own code.
 - The artifact is built, signed, and its provenance recorded, only from CI, only from a tagged commit.

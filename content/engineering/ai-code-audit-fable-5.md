@@ -1,6 +1,6 @@
 ---
-title: "Continuous AI Security Audit: Every Commit Reviewed by Fable 5"
-description: "Every PanicVault commit is adversarially reviewed in CI by Fable 5, Anthropic's most advanced model for cybersecurity reasoning. What an AI reviewer catches that linters and humans miss -- and what it honestly does not."
+title: "Continuous AI Security Audit: Every Commit Reviewed by Fable"
+description: "Every PanicVault commit is adversarially reviewed in CI by Fable, Anthropic's most advanced model for cybersecurity reasoning. What an AI reviewer catches that linters and humans miss -- and what it honestly does not."
 date: 2026-07-14
 lastmod: 2026-07-14
 draft: false
@@ -9,13 +9,13 @@ silo: "Engineering & Security"
 
 The traditional way to get a security review of a password manager is to hire a firm once a year. They spend two weeks with a snapshot of your code, write a report, and leave. Then you merge four hundred commits over the following twelve months, none of which anyone with a security specialism has looked at closely, and you tell users you have been "security reviewed."
 
-We do something different. **Every commit and every pull request in PanicVault is audited in CI by Fable 5 -- Anthropic's most advanced model for cybersecurity reasoning -- acting as an adversarial reviewer of the diff.** Not a linter pass. A reviewer whose instruction is to read the change the way an attacker would and answer one question: *how do I break this?*
+We do something different. **Every commit and every pull request in PanicVault is audited in CI by Fable -- Anthropic's most advanced model for cybersecurity reasoning -- acting as an adversarial reviewer of the diff.** Not a linter pass. A reviewer whose instruction is to read the change the way an attacker would and answer one question: *how do I break this?*
 
 This article explains what that catches, why the cadence matters more than the depth of any single review, and -- because credibility here depends entirely on candour -- exactly what it does not do.
 
 ## What "Adversarial Review of the Diff" Means
 
-Fable 5 receives the change under review together with the surrounding code it touches, plus the standing context of what PanicVault is: an offline password manager whose assets are a vault file, a master key in memory, a clipboard, an AutoFill surface, and a sync path. That context is the whole trick. A general-purpose reviewer sees a function that returns a `Bool`. A reviewer that knows the [threat model](/engineering/secure-development-lifecycle/) sees a function that returns a `Bool` *which decides whether a vault is considered unlocked*, and immediately asks what happens when the function throws instead of returning.
+Fable receives the change under review together with the surrounding code it touches, plus the standing context of what PanicVault is: an offline password manager whose assets are a vault file, a master key in memory, a clipboard, an AutoFill surface, and a sync path. That context is the whole trick. A general-purpose reviewer sees a function that returns a `Bool`. A reviewer that knows the [threat model](/engineering/secure-development-lifecycle/) sees a function that returns a `Bool` *which decides whether a vault is considered unlocked*, and immediately asks what happens when the function throws instead of returning.
 
 It is not summarizing the diff. It is attacking it.
 
@@ -63,11 +63,11 @@ If this section were absent, you should not believe the rest of the article.
 
 **It is not a proof.** A model reasoning about code is producing a very well-informed argument, not a mathematical guarantee. Formal verification proves properties. AI review finds problems. Those are different activities, and the second one can never be complete: absence of findings is not evidence of absence of flaws.
 
-**It is not deterministic.** Run it twice and the wording changes. It can raise a finding on one pass and not the next. This is why the *blocking* gates in our pipeline are the deterministic ones -- the [SonarQube quality gate](/engineering/static-analysis-sonarqube/) and [100% test coverage](/engineering/hundred-percent-test-coverage/) -- and why Fable 5's findings must be **dispositioned**: fixed, or answered in writing in the pull request with a rationale that a human signs. A finding that is silently ignored is a process failure, and a reviewer whose findings can be silently ignored is decoration.
+**It is not deterministic.** Run it twice and the wording changes. It can raise a finding on one pass and not the next. This is why the *blocking* gates in our pipeline are the deterministic ones -- the [SonarQube quality gate](/engineering/static-analysis-sonarqube/) and [100% test coverage](/engineering/hundred-percent-test-coverage/) -- and why Fable's findings must be **dispositioned**: fixed, or answered in writing in the pull request with a rationale that a human signs. A finding that is silently ignored is a process failure, and a reviewer whose findings can be silently ignored is decoration.
 
 **It produces false positives.** Of course it does. A reviewer that never raised a false positive would be a reviewer with terrible recall, because the two trade off. We would rather triage a wrong finding than miss a right one, and we tune the process rather than the sensitivity.
 
-**It does not replace design review.** Fable 5 sees a diff. It does not sit in the room when we decide whether a feature should exist at all -- whether to add a sharing mechanism, whether to touch the network, whether a convenience is worth an attack surface. The most consequential security decisions in PanicVault are decisions *not* to build things, and no diff-level reviewer can make them for you. That is threat modelling, and it is human work.
+**It does not replace design review.** Fable sees a diff. It does not sit in the room when we decide whether a feature should exist at all -- whether to add a sharing mechanism, whether to touch the network, whether a convenience is worth an attack surface. The most consequential security decisions in PanicVault are decisions *not* to build things, and no diff-level reviewer can make them for you. That is threat modelling, and it is human work.
 
 **It does not replace human review.** The model can tell you the code does something dangerous. It cannot tell you the code does something you did not intend, because it does not know what you intended.
 
@@ -78,7 +78,7 @@ The point of having four reviewers is that they fail differently:
 | Control | What it reasons about | Blind to |
 |---|---|---|
 | SonarQube SAST | Syntax, data flow, taint paths | Intent and multi-step logic |
-| Fable 5 adversarial review | Semantics, state, attacker goals | Runtime behaviour; is non-deterministic |
+| Fable adversarial review | Semantics, state, attacker goals | Runtime behaviour; is non-deterministic |
 | 100% test coverage | What the code actually *does* when executed | Whether what it does is what you wanted |
 | Human review | Intent and design fit | Fatigue, volume, the eleventh comment |
 

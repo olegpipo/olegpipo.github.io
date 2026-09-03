@@ -90,7 +90,7 @@ If a failing gate can be dismissed by a person under deadline pressure, then the
 
 Every escape hatch, in practice, becomes the default path. A "temporary" bypass flag gets copied into the next pull request because it worked last time. A rule exclusion added to unblock a release stays in the config for three years. A dashboard nobody is blocked by is a dashboard nobody reads.
 
-So there is no bypass. What there *is* -- and this matters, because a gate with no relief valve gets sabotaged instead of respected -- is a legitimate, visible path for the rare true false positive: **you change the rule configuration, in a commit, in a pull request, reviewed by humans and by Fable 5, permanently visible in the git history.** The waiver becomes part of the diff. It gets argued about. It gets a rationale written next to it.
+So there is no bypass. What there *is* -- and this matters, because a gate with no relief valve gets sabotaged instead of respected -- is a legitimate, visible path for the rare true false positive: **you change the rule configuration, in a commit, in a pull request, reviewed by humans and by Fable, permanently visible in the git history.** The waiver becomes part of the diff. It gets argued about. It gets a rationale written next to it.
 
 The difference is not bureaucratic; it is structural. An override is invisible and individual. A configuration change is visible and collective. One decays silently; the other has to be defended.
 
@@ -100,7 +100,7 @@ Being honest about the ceiling is what makes the claim credible.
 
 SAST does not understand intent. It cannot tell you that the vault should have locked before this line, only that this line dereferences a possibly-nil value. It generates false positives, sometimes tediously. It cannot reason about behaviour that emerges across process boundaries -- and PanicVault has a real one, between the main app and the AutoFill extension. It cannot find a design flaw. It will never tell you that a feature should not exist.
 
-Which is exactly why it is one of four controls and not the only one. SonarQube gives us mechanical, deterministic, unmissable enforcement of the things that *can* be expressed as rules. [Fable 5](/engineering/ai-code-audit-fable-5/) reasons about the things that cannot. [Tests](/engineering/hundred-percent-test-coverage/) prove the code actually runs the way we claim. Humans decide what any of it is for. Each covers the others' blind spot, and the [lifecycle](/engineering/secure-development-lifecycle/) is what holds them together.
+Which is exactly why it is one of four controls and not the only one. SonarQube gives us mechanical, deterministic, unmissable enforcement of the things that *can* be expressed as rules. [Fable](/engineering/ai-code-audit-fable-5/) reasons about the things that cannot. [Tests](/engineering/hundred-percent-test-coverage/) prove the code actually runs the way we claim. Humans decide what any of it is for. Each covers the others' blind spot, and the [lifecycle](/engineering/secure-development-lifecycle/) is what holds them together.
 
 The result you get is a vault file in an [open, verifiable format](/keepass/kdbx-format-guide/) -- and code behind it that no engineer, however senior and however rushed, can merge past a red gate.
 
