@@ -58,7 +58,7 @@ If the phishing email impersonates a specific company (your bank, Apple, Amazon,
 - **Apple**: reportphishing@apple.com
 - **Google**: Report through Gmail's built-in reporting
 - **Microsoft**: phish@office365.microsoft.com
-- **Amazon**: stop-spoofing@amazon.com
+- **Amazon**: reportascam@amazon.com -- see [Amazon phishing emails](/phishing/amazon-phishing/) for examples and step-by-step forwarding
 - **PayPal**: spoof@paypal.com
 - **Facebook and Meta**: phish@fb.com -- see [Facebook phishing](/phishing/facebook-phishing/) for what these emails look like
 - **Your bank**: Most banks have a dedicated phishing email address, often listed on their security page.
