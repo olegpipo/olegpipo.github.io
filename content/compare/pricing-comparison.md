@@ -20,7 +20,7 @@ All prices were checked in 2026 (1Password and NordPass in September 2026). Pric
 | Dashlane | Limited (25 passwords, 1 device) | $4.99/month | $59.88/year | Annual only |
 | Proton Pass | Yes (basic) | $2.99/month | $35.88/year | Annual only |
 | NordPass | Limited (1 active device) | $1.99/month first year, then $2.99/month | $23.88 first year, then $35.88/year | Annual (2-year deals available) |
-| PanicVault | N/A | One-time purchase | One-time | One-time |
+| PanicVault | N/A | $4.99 one-time purchase | $4.99 once, no renewal | One-time |
 | Strongbox | Non-commercial use only | $2.99/month, $24.99/year or $124.99 lifetime | $24.99/year | Monthly, annual or lifetime |
 | KeePassXC | Full (free) | $0 | $0 | N/A |
 | Apple Passwords | Full (built-in) | $0 | $0 | N/A |
@@ -35,7 +35,7 @@ All prices were checked in 2026 (1Password and NordPass in September 2026). Pric
 
 **Dashlane Free ($0)**: 25 passwords on a single device. This is effectively a trial. **Dashlane Premium ($59.88/year)**: Unlimited passwords and devices, VPN, dark web monitoring, and password health scoring.
 
-**PanicVault (one-time)**: All features included at purchase. TOTP codes, groups, custom fields, AutoFill, iCloud and Google Drive sync, Face ID/Touch ID. No feature gating.
+**PanicVault ($4.99 one-time)**: All features included at purchase. TOTP codes, groups, custom fields, AutoFill, iCloud and Google Drive sync, Face ID/Touch ID. No feature gating.
 
 **Strongbox (freemium)**: The free version is for non-commercial use only. It is not read-only: on iPhone and iPad it edits databases and includes AutoFill and TOTP codes, but not Face ID or Touch ID unlock. Pro adds biometric unlock, YubiKey support, offline editing, and breach checks, and on Mac it also unlocks AutoFill. Strongbox's website lists Pro at $2.99/month, $24.99/year, or $124.99 for a lifetime licence.
 
@@ -52,16 +52,16 @@ All prices were checked in 2026 (1Password and NordPass in September 2026). Pric
 | Dashlane | $7.49/month | Up to 10 | $8.99 | $89.88/year total |
 | Proton Pass | $3.99/month | Up to 6 | $7.98 | $47.88/year total |
 | NordPass | $3.69/month first year, then $5.99/month | Up to 6 | $7.38 first year, then $11.98 | $44.28 first year, then $71.88/year |
-| PanicVault | Per-device purchase | Unlimited | Fixed | App Store Family Sharing available |
+| PanicVault | $4.99 one-time | Unlimited | $0 after purchase | App Store Family Sharing available |
 | Strongbox | Same as Pro plans | Up to 6 | Varies by plan | Paid plans include Family Sharing |
 | KeePassXC | $0 | Unlimited | $0 | Share database file |
 | Apple Passwords | $0 | Unlimited | $0 | iCloud sharing groups |
 
 ### Family Plan Analysis
 
-**Best per-person value (subscription)**: Bitwarden Families and Proton Pass at $7.98 per person per year for a full household. NordPass Family is slightly cheaper in its first year ($7.38 per person) but renews at $11.98 per person. Bitwarden Families remains the pick for budget-conscious families who want an open-source subscription service. See our [best password manager for families](/compare/best-for-families/) guide.
+**Per-person cost (subscription)**: Bitwarden Families and Proton Pass work out to $7.98 per person per year for a full household. NordPass Family is slightly cheaper in its first year ($7.38 per person) but renews at $11.98 per person. Every subscription keeps charging each year. See our [best password manager for families](/compare/best-for-families/) guide.
 
-**Best per-person value (overall)**: KeePassXC and Apple Passwords are free for any number of family members. PanicVault's one-time purchase with App Store Family Sharing is the cheapest paid option over time.
+**Best per-person value (overall)**: KeePassXC and Apple Passwords are free for any number of family members. PanicVault, at $4.99 once with App Store Family Sharing, is the cheapest paid option over time.
 
 **Most members**: Dashlane supports up to 10 family members, making its per-person cost competitive only if you fill most seats.
 
@@ -78,7 +78,7 @@ The real cost of a password manager is not the monthly price -- it is the total 
 | Dashlane Premium | $59.88 | $119.76 | $179.64 | $299.40 | $598.80 |
 | Proton Pass Plus | $35.88 | $71.76 | $107.64 | $179.40 | $358.80 |
 | NordPass Premium | $23.88 | $59.76 | $95.64 | $167.40 | $346.80 |
-| PanicVault | One-time | -- | -- | -- | -- |
+| PanicVault | $4.99 | $4.99 | $4.99 | $4.99 | $4.99 |
 | Strongbox Pro Lifetime | $124.99 | -- | -- | -- | -- |
 | KeePassXC | $0 | $0 | $0 | $0 | $0 |
 | Apple Passwords | $0 | $0 | $0 | $0 | $0 |
@@ -90,11 +90,11 @@ The real cost of a password manager is not the monthly price -- it is the total 
 | 1Password Family | $71.88 | $215.64 | $359.40 | $718.80 |
 | Bitwarden Family | $47.88 | $143.64 | $239.40 | $478.80 |
 | Dashlane Family | $89.88 | $269.64 | $449.40 | $898.80 |
-| PanicVault | One-time per user | -- | -- | -- |
+| PanicVault | $4.99 one-time | No renewal | No renewal | No renewal |
 | KeePassXC | $0 | $0 | $0 | $0 |
 | Apple Passwords | $0 | $0 | $0 | $0 |
 
-The difference is stark. Over ten years, Dashlane costs a single user nearly $600. Bitwarden Premium costs $198. PanicVault and KeePassXC cost nothing beyond the initial purchase (or nothing at all).
+The difference is stark. Over ten years, Dashlane costs a single user nearly $600. Bitwarden Premium costs $198. PanicVault costs $4.99 once, and KeePassXC costs nothing.
 
 ## Hidden Costs and Considerations
 
@@ -156,7 +156,7 @@ Business plans are outside the scope of this comparison but are relevant if you 
 
 ### Minimal Budget ($10-30/year)
 
-**Bitwarden Premium** at $19.80/year adds TOTP codes and file storage to an already-capable free tier. **PanicVault** (one-time purchase) is the best long-term value for Apple users. **Strongbox Pro** costs $24.99/year, or $124.99 for a lifetime licence.
+**Bitwarden Premium** at $19.80/year adds TOTP codes and file storage to an already-capable free tier. **PanicVault** ($4.99, one-time purchase) is the best long-term value for Apple users. **Strongbox Pro** costs $24.99/year, or $124.99 for a lifetime licence.
 
 ### Comfort Budget ($30-60/year)
 
