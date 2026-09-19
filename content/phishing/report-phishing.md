@@ -2,7 +2,7 @@
 title: "How to Report a Phishing Attempt"
 description: "Step-by-step guide to reporting phishing emails, texts, calls, and websites to protect yourself and others from future attacks."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-09-19
 draft: false
 silo: "Phishing & Social Engineering"
 ---
@@ -27,25 +27,26 @@ You are not just protecting yourself when you report phishing -- you are protect
 
 This is the fastest and most impactful step. Your email provider uses reports to improve filtering for all users.
 
-**Gmail**:
+**Gmail** (Google documents this option for Gmail on a computer):
 1. Open the phishing email.
-2. Click the three-dot menu in the upper-right corner of the email.
+2. Next to the Reply button, click More (the three-dot icon).
 3. Select "Report phishing."
 4. Google will analyze the email and use the data to improve filtering.
 
 **Apple Mail (iCloud)**:
-1. On iPhone/iPad: Open the email, tap the reply arrow, and select "Move to Junk." For more impactful reporting, forward the email to reportphishing@apple.com.
-2. On Mac: Select the email and choose Message > Move to Junk, or forward it to reportphishing@apple.com.
+1. On iPhone/iPad: In the Mail app, swipe left on the email, tap More, then tap "Move to Junk." Marking email as junk helps improve iCloud Mail's filtering.
+2. On Mac: Select the email and click the Junk button in the Mail toolbar, or drag it to the Junk folder.
+3. If the email pretends to be from Apple, also forward it to reportphishing@apple.com. On a Mac, select it and choose Message > Forward As Attachment so Apple receives the full headers.
 
-**Microsoft Outlook**:
+**Microsoft Outlook and Outlook.com**:
 1. Select the phishing email.
-2. Click the "Report" button in the ribbon (or right-click > Report > Report Phishing).
-3. Microsoft uses reports to improve filtering across Outlook, Hotmail, and enterprise email.
+2. Select Report > Report phishing. In Outlook.com the Report button sits above the reading pane, in new Outlook it is on the Home tab, and in classic Outlook it is on the Message tab of the open email.
+3. Microsoft uses reports to improve its filters. On a work or school Microsoft 365 account, your organization decides whether reports go to Microsoft, to its own security team, or both.
 
 **Yahoo Mail**:
 1. Select the phishing email.
-2. Click the three-dot menu.
-3. Select "Report a phishing scam."
+2. Click the Spam button. Yahoo moves the email to your Spam folder and uses the report to improve its filters.
+3. If Yahoo shows a phishing alert at the top of the email, you can also click Report in that alert.
 
 ### To the Anti-Phishing Working Group (APWG)
 
@@ -53,13 +54,13 @@ Forward phishing emails to **reportphishing@apwg.org**. The APWG is a global coa
 
 ### To the Impersonated Organization
 
-If the phishing email impersonates a specific company (your bank, Apple, Amazon, etc.), forward it to that company's abuse or phishing reporting address:
+If the phishing email impersonates a specific company (your bank, Apple, Amazon, etc.), report it to that company through its published phishing address or built-in Report button:
 
-- **Apple**: reportphishing@apple.com
+- **Apple**: reportphishing@apple.com. For a text pretending to be Apple, take a screenshot and email the screenshot to that address.
 - **Google**: Report through Gmail's built-in reporting
-- **Microsoft**: phish@office365.microsoft.com
+- **Microsoft**: In Outlook or Outlook.com, use Report > Report phishing. From any other email app, attach the phishing email to a new message to phish@office365.microsoft.com. Microsoft asks for the original as an attachment, not a plain forward, so it can examine the headers.
 - **Amazon**: reportascam@amazon.com -- see [Amazon phishing emails](/phishing/amazon-phishing/) for examples and step-by-step forwarding
-- **PayPal**: spoof@paypal.com
+- **PayPal**: phishing@paypal.com, for both emails and forwarded texts. Unlike Microsoft and Apple, PayPal asks you to forward the whole email normally -- not as an attachment, and without changing the subject line. The older `spoof@paypal.com` address no longer appears on PayPal's reporting page.
 - **Facebook and Meta**: phish@fb.com -- see [Facebook phishing](/phishing/facebook-phishing/) for what these emails look like
 - **Your bank**: Most banks have a dedicated phishing email address, often listed on their security page.
 
@@ -73,14 +74,14 @@ Report phishing URLs to Google Safe Browsing at **safebrowsing.google.com/safebr
 
 ### Microsoft SmartScreen
 
-Report phishing sites through the Microsoft Security Intelligence portal. SmartScreen protections are used by Edge and Windows Defender.
+Report phishing sites through the Microsoft Security Intelligence portal at **microsoft.com/wdsi/support/report-unsafe-site**, or, while you are on the site in Microsoft Edge, open Settings and more (...) > Help and feedback > Report unsafe site. SmartScreen protections are used by Edge and Windows Defender.
 
 ### Your Browser
 
-Most browsers allow you to report phishing sites directly:
+Some browsers let you report a phishing site from a menu; for the others, use the Safe Browsing report page:
 
-- **Safari**: Go to Safari > Report Fraudulent Website.
-- **Chrome**: Click the three-dot menu > Help > Report an issue, or use the Safe Browsing report page.
+- **Safari**: Safari has no menu command for reporting a site. Its fraudulent-website warnings come from Google Safe Browsing, so report the URL on the Safe Browsing report page above.
+- **Chrome**: Use the Safe Browsing report page above. Chrome's Help > Report an issue sends feedback about Chrome itself, not a phishing report.
 - **Firefox**: Click the hamburger menu > Help > Report deceptive site.
 
 ### Domain Registrars and Hosting Providers

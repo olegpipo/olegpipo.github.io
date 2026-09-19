@@ -2,7 +2,7 @@
 title: "Microsoft Phishing Examples (2026)"
 description: "Real Microsoft 365 and Outlook phishing email examples from 2026. Learn to spot fake Microsoft security alerts, Teams invites, and OneDrive scams."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-19
 draft: false
 silo: "Phishing & Social Engineering"
 faq:
@@ -13,7 +13,7 @@ faq:
   - q: "Does Microsoft send emails about expiring passwords?"
     a: "Microsoft 365 administrators can configure password expiration policies, but Microsoft does not send emails asking you to click a link to reset your password. If your organization requires a password change, you will see a prompt when you sign in. Always go to account.microsoft.com directly."
   - q: "How do I report a phishing email pretending to be Microsoft?"
-    a: "Forward the suspicious email to phish@office365.microsoft.com. In Outlook, you can also use the built-in 'Report Message' button to flag it as phishing. Do not click any links or open attachments."
+    a: "In Outlook or Outlook.com, select the email and choose Report > Report phishing. Microsoft calls this the fastest way to report it. If you use a different email app, attach the suspicious email to a new message to phish@office365.microsoft.com. Microsoft asks for the original as an attachment rather than a plain forward so it can examine the headers. Do not click any links or open attachments."
   - q: "Can a password manager protect me from Microsoft phishing?"
     a: "Yes. A password manager like PanicVault checks the exact domain before autofilling credentials. If you land on a fake Microsoft page like 'microsoft-login.com' instead of 'login.microsoftonline.com,' the password manager will not autofill -- warning you that the site is fraudulent."
 ---
@@ -123,7 +123,7 @@ The verification code variant is particularly dangerous. An attacker may be atte
 2. Never share a verification code with anyone or enter it on a site you reached through a text link.
 3. Open your Microsoft app or go to account.microsoft.com directly to check your account.
 4. Forward the suspicious text to 7726 (SPAM) to report it to your carrier.
-5. Report the message to Microsoft by forwarding it to phish@office365.microsoft.com.
+5. Report it in your messaging app as well: tap Report Junk under the message on iPhone, or use the report spam option on Android. Microsoft's phish@office365.microsoft.com address is for emails, not texts.
 6. Delete the message.
 
 ## How to Verify a Microsoft Email Is Legitimate
@@ -166,8 +166,8 @@ When you receive a notification about your Microsoft account, instead of clickin
 
 If you receive a phishing email or text pretending to be Microsoft, report it to help protect others:
 
-1. **In Outlook**: Use the built-in "Report Message" or "Report Phishing" button on the ribbon. This is the most effective reporting method for Microsoft 365 users.
-2. **Forward the email** to phish@office365.microsoft.com.
+1. **In Outlook or Outlook.com**: Select the email and choose Report > Report phishing. Microsoft calls this the fastest way to report a message. On a work or school account, your organization decides whether the report goes to Microsoft, to its own security team, or both.
+2. **From any other email app**: Attach the suspicious email to a new message to phish@office365.microsoft.com. Microsoft asks for it as an attachment, not a plain forward, so it can examine the headers.
 3. **Report to your IT department** if you are in a corporate environment -- they need to know about phishing campaigns targeting the organization.
 4. **Report to the FTC** at ReportFraud.ftc.gov.
 5. **Report to the Anti-Phishing Working Group** at reportphishing@apwg.org.
@@ -184,7 +184,7 @@ If you entered your Microsoft credentials on a phishing site, act immediately:
 4. **Notify your IT department** if this is a corporate Microsoft 365 account. They need to assess whether the attacker accessed sensitive data, sent emails from your account, or created inbox forwarding rules.
 5. **Check email forwarding rules**: Attackers often set up forwarding rules to copy all incoming email to an external address. In Outlook, go to Settings, then Mail, then Forwarding, and remove any rules you did not create.
 6. **Review connected apps**: Check for unauthorized apps with access to your Microsoft account at account.microsoft.com under Apps & Services.
-7. **Forward the phishing email** to phish@office365.microsoft.com.
+7. **Report the phishing email** with Report > Report phishing in Outlook, or from another email app by attaching it to a message to phish@office365.microsoft.com.
 8. **Report it** to the FTC at ReportFraud.ftc.gov and to the Anti-Phishing Working Group at reportphishing@apwg.org. See our full guide on [how to report a phishing attempt](/phishing/report-phishing/).
 
 ## Staying Ahead of Microsoft Phishing in 2026
@@ -197,7 +197,7 @@ What works is a layered defense:
 - **Enable multi-factor authentication** on every Microsoft account, preferably using authenticator apps or hardware security keys rather than SMS codes.
 - **Never click links** in emails claiming to be from Microsoft or your IT department. Navigate to the relevant portal directly.
 - **Verify meeting invitations and file shares** through the Teams or OneDrive app before clicking email links.
-- **Report every phishing attempt** using the "Report Message" button in Outlook and by forwarding to phish@office365.microsoft.com.
+- **Report every phishing attempt** using Report > Report phishing in Outlook, or from other email apps by attaching the email to a message to phish@office365.microsoft.com.
 - **Train your team**: In corporate environments, [help colleagues and family members recognize phishing](/phishing/train-family/) to strengthen the collective defense.
 
 The attackers are counting on the rushed moment when you see "Your password expires in 2 hours" and click without thinking. The best countermeasure is building habits that remove urgency from the equation: let your password manager handle domain verification, go directly to the source for every notification, and treat every unsolicited message about your Microsoft account with healthy skepticism.

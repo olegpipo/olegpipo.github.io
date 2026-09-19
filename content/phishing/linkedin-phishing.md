@@ -2,7 +2,7 @@
 title: "LinkedIn Phishing Examples (2026)"
 description: "Real LinkedIn phishing email examples from 2026. Learn to spot fake job offers, profile alerts, and InMail scams before they steal your credentials."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-19
 draft: false
 silo: "Phishing & Social Engineering"
 faq:
@@ -13,7 +13,7 @@ faq:
   - q: "Does LinkedIn send job offer emails?"
     a: "LinkedIn sends notification emails about InMail messages and job recommendations, but the actual content is always accessed by logging into linkedin.com. LinkedIn will never ask you to download attachments or enter credentials on a non-LinkedIn site to view a job offer."
   - q: "How do I report a fake LinkedIn email?"
-    a: "Forward the suspicious email to safety@linkedin.com, then delete it. You can also report fake profiles and messages directly within LinkedIn by clicking the three-dot menu and selecting Report."
+    a: "Forward the suspicious email to phishing@linkedin.com, then delete it. You can also report fake profiles and messages directly within LinkedIn by clicking the three-dot menu and selecting Report."
   - q: "Can a password manager protect me from LinkedIn phishing?"
     a: "Yes. A password manager like PanicVault checks the exact domain before autofilling. If you land on 'linkedin-support.com' instead of 'linkedin.com,' the password manager stays silent -- warning you the site is fake, even if it looks identical to the real LinkedIn login page."
 ---
@@ -143,7 +143,7 @@ When you receive a notification about a job offer, InMail, or profile view, do n
 If you receive a phishing email or message impersonating LinkedIn:
 
 1. **Do not click any links** or enter any information on pages reached through the email.
-2. **Forward the email** to safety@linkedin.com, then delete it from your inbox.
+2. **Forward the email** to phishing@linkedin.com, then delete it from your inbox.
 3. **Report in-app**: For suspicious messages received within LinkedIn, click the three-dot menu on the message and select Report. For fake profiles, go to the profile, click More, and select Report/Block.
 4. **If you entered your credentials on a fake site**: Change your LinkedIn password immediately at linkedin.com/psettings/change-password. Enable two-factor authentication (Settings > Sign in & Security > Two-step verification). Review your active sessions and sign out of any you do not recognize.
 5. **If you shared personal information with a fake recruiter**: Monitor your credit reports, consider placing a fraud alert or credit freeze, and report identity theft at IdentityTheft.gov.
@@ -160,7 +160,7 @@ Build a layered defense:
 - **Enable two-factor authentication** on your LinkedIn account using an authentication app.
 - **Limit your public profile information** to reduce the data attackers can use for personalized phishing.
 - **Be skeptical of unsolicited job offers** that seem too good to be true or require immediate action.
-- **Report every phishing attempt** to safety@linkedin.com to help LinkedIn remove fake profiles and shut down campaigns.
+- **Report every phishing attempt** to phishing@linkedin.com to help LinkedIn remove fake profiles and shut down campaigns.
 
 The professional context that makes LinkedIn valuable also makes it dangerous. Attackers count on your ambition, curiosity, and professional courtesy to override your caution. When you verify every message on the platform itself and let your password manager handle domain checking, professional trust cannot be exploited.
 

@@ -2,7 +2,7 @@
 title: "Apple Phishing Email Examples (2026)"
 description: "Real Apple phishing email examples from 2026. Learn to spot fake Apple ID, iCloud, and App Store emails before scammers steal your account."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-19
 draft: false
 silo: "Phishing & Social Engineering"
 faq:
@@ -125,7 +125,7 @@ These texts include links to phishing sites that mimic Apple's sign-in page. On 
 3. Check your Apple ID status by going to Settings on your device and tapping your name.
 4. If you are concerned, navigate to appleid.apple.com manually.
 5. Forward the suspicious text to 7726 (SPAM) to report it to your carrier.
-6. Report the message to Apple by forwarding it to reportphishing@apple.com.
+6. Report the message to Apple: take a screenshot of the text and email the screenshot to reportphishing@apple.com, as Apple asks for texts. In Messages, you can also tap Report Junk under the message.
 7. Delete the message.
 
 ## How to Verify an Apple Email Is Legitimate
@@ -168,8 +168,8 @@ When you receive a notification about your Apple ID, instead of clicking the lin
 
 If you receive a phishing email or text pretending to be Apple, report it to help protect others:
 
-1. **Forward the email** to reportphishing@apple.com. Do not click any links before forwarding.
-2. **For spam iMessages or texts**, tap Report Junk under the message (if the option appears) or forward the text to 7726 (SPAM).
+1. **Forward the email** to reportphishing@apple.com. Do not click any links before forwarding. In Mail on a Mac, select the email and choose Message > Forward As Attachment so Apple gets the full headers.
+2. **For spam iMessages or texts**, tap Report Junk under the message (if the option appears) or forward the text to 7726 (SPAM). To report a text pretending to be Apple to Apple itself, email a screenshot of it to reportphishing@apple.com.
 3. **For suspicious FaceTime calls**, take a screenshot of the call information and email it to reportfacetimefraud@apple.com.
 4. **Report to the FTC** at ReportFraud.ftc.gov.
 5. **Report to the Anti-Phishing Working Group** at reportphishing@apwg.org.

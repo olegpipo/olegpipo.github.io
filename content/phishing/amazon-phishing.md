@@ -187,7 +187,7 @@ Forward Amazon phishing emails to **reportascam@amazon.com**, as an attachment i
 7. **Forward the email to the Anti-Phishing Working Group** at reportphishing@apwg.org, which the FTC also recommends. APWG likewise asks for Forward as Attachment when your email app supports it.
 8. **Delete it** once you have reported it.
 
-**What about stop-spoofing@amazon.com?** Older guides -- including earlier versions of this page -- told readers to forward Amazon phishing to stop-spoofing@amazon.com. That address no longer appears on Amazon's help pages. The address Amazon publishes today is reportascam@amazon.com, so use that one.
+**What about `stop-spoofing@amazon.com`?** Older guides -- including earlier versions of this page -- told readers to forward Amazon phishing to `stop-spoofing@amazon.com`. That address no longer appears on Amazon's help pages. The address Amazon publishes today is reportascam@amazon.com, so use that one.
 
 For a complete guide on reporting phishing across all brands and platforms, see our article on [how to report a phishing attempt](/phishing/report-phishing/).
 

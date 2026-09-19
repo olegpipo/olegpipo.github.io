@@ -2,7 +2,7 @@
 title: "BofA Phishing Email Examples (2026)"
 description: "Real Bank of America phishing email examples from 2026. Learn to spot fake BofA emails, texts, and calls before they steal your credentials."
 date: 2026-03-06
-lastmod: 2026-03-06
+lastmod: 2026-09-19
 draft: false
 silo: "Phishing & Social Engineering"
 faq:
@@ -13,7 +13,7 @@ faq:
   - q: "Does Bank of America send emails asking for personal information?"
     a: "No. Bank of America will never ask for your Social Security number, full account number, PIN, password, or one-time passcode via email, text, or phone call. Any message requesting this information is a scam, regardless of how legitimate it looks."
   - q: "How do I report a phishing email to Bank of America?"
-    a: "Forward the suspicious email to abuse@bankofamerica.com without clicking any links. For phishing texts, forward the message to 7726 (SPAM). You can also report fraud directly through the Bank of America mobile app or by calling the number on the back of your debit card."
+    a: "Forward the suspicious email to abuse@bofa.com without clicking any links. For phishing texts, forward the message to 7726 (SPAM). You can also report fraud directly through the Bank of America mobile app or by calling the number on the back of your debit card."
   - q: "Can a password manager protect me from Bank of America phishing?"
     a: "Yes. A password manager like PanicVault checks the exact domain before autofilling credentials. If you land on a fake BofA site like 'bankofamerica-secure.com' instead of 'bankofamerica.com,' the password manager will not autofill -- and that silence is your warning that something is wrong."
 ---
@@ -182,7 +182,7 @@ If you entered your credentials on a phishing site or shared sensitive informati
 3. **Enable two-factor authentication** on your BofA account if it is not already active.
 4. **Review recent transactions** for any unauthorized activity. Report fraudulent transactions immediately.
 5. **Check other accounts** -- If you use the same password elsewhere, change those passwords too. This is an urgent reason to adopt a password manager if you have not already.
-6. **Forward the phishing email** to abuse@bankofamerica.com.
+6. **Forward the phishing email** to abuse@bofa.com.
 7. **Report it** to the FTC at ReportFraud.ftc.gov and to the Anti-Phishing Working Group at reportphishing@apwg.org. See our full guide on [how to report a phishing attempt](/phishing/report-phishing/).
 8. **Consider a credit freeze** if you shared your Social Security number. Contact the three major credit bureaus (Equifax, Experian, TransUnion) to place a freeze, which prevents new accounts from being opened in your name. Our [online banking security guide](/digital-privacy/online-banking-security/) covers this process in detail.
 
