@@ -208,7 +208,7 @@ Both 1Password and LastPass store your encrypted credentials on company-managed 
 - **Open KDBX format** -- your data works in any KeePass-compatible app on any platform
 - **TOTP codes built in** -- no premium tier required
 - **iCloud and Google Drive sync** -- you control where your encrypted file lives
-- **Apple-native design** -- Face ID, Touch ID, AutoFill, widgets, Shortcuts
+- **Apple-native design** -- Face ID, Touch ID, and AutoFill that suggests logins right above the keyboard
 - **No cloud account** -- no servers to breach, no company storing your vault
 
 PanicVault does not offer web vaults, emergency access, or cross-platform desktop apps beyond Apple. But for Apple users who want to eliminate the risk of server-side breaches entirely, it removes the vulnerability that LastPass demonstrated in 2022.

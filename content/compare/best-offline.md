@@ -18,7 +18,7 @@ faq:
 
 A password manager that requires an internet connection to function is a password manager that can fail you at the worst possible moment. International flights, remote locations, network outages, restricted government or corporate environments, and mobile dead zones are all situations where you might desperately need a credential and have no connectivity. This guide, part of our [password manager comparisons hub](/compare/), evaluates which password managers work reliably offline and which ones leave you stranded.
 
-> **Our Top Pick**: PanicVault is the best offline password manager for Apple users in 2026. It uses the open KeePass format, works completely without internet, syncs via iCloud Drive when you choose to, and costs nothing. For cross-platform users who also need Windows or Linux, KeePassXC is the best free option.
+> **Our Top Pick**: PanicVault is the best offline password manager for Apple users in 2026. It uses the open KeePass format, works completely without internet, syncs via iCloud Drive when you choose to, and costs a one-time $4.99 with no subscription. For cross-platform users who also need Windows or Linux, KeePassXC is the best free option.
 
 ## Why Offline Access Matters
 
@@ -149,13 +149,13 @@ Bitwarden's offline mode is functional but less robust than local-first tools. S
 
 ## Best Offline Password Manager by Category
 
-**Best offline password manager for iPhone**: [PanicVault](/). It is a native iOS and macOS app built around the KeePass format, with full AutoFill support and Face ID unlock -- all working without any internet connection. Free with no subscription required.
+**Best offline password manager for iPhone**: [PanicVault](/). It is a native iOS and macOS app built around the KeePass format, with full AutoFill support and Face ID unlock -- all working without any internet connection. A one-time $4.99 purchase, with no subscription.
 
 **Best offline password manager for cross-platform**: [KeePassXC](/compare/panicvault-vs-keepassxc/). It runs on Windows, macOS, and Linux, is completely free and open source, and has no cloud component at all. Pair it with PanicVault on mobile for a fully offline solution across every device.
 
 **Best offline password manager for families**: [Strongbox](/compare/panicvault-vs-strongbox/). Its support for shared vaults via iCloud Drive makes it easy for family members to share a KeePass database without relying on a third-party cloud service. Vault access works offline; on iPhone and iPad, editing a synced database while offline requires Strongbox Pro.
 
-**Best free offline password manager**: KeePassXC (desktop) and PanicVault (Apple devices). Both are completely free, use the open KDBX format, and never require a subscription or internet connection. For a broader look at free options, see our [free vs. premium password manager comparison](/compare/free-vs-premium/).
+**Best free offline password manager**: KeePassXC (desktop). It is completely free, uses the open KDBX format, and never requires a subscription or internet connection. On Apple devices, PanicVault opens the same KDBX file for a one-time $4.99. For a broader look at free options, see our [free vs. premium password manager comparison](/compare/free-vs-premium/).
 
 ## Use Cases for Offline Password Managers
 
@@ -208,7 +208,7 @@ Some users prefer tools that make zero network requests. A local-first password 
 
 **If you want offline with the most features**: KeePassXC for desktop, PanicVault for mobile. Both use the same KDBX file, giving you the best of both worlds.
 
-**If you want the best password manager without subscription**: Both PanicVault and KeePassXC are completely free. No recurring fees, no premium tiers gating offline access. Compare the full landscape in our [free vs. premium password manager guide](/compare/free-vs-premium/).
+**If you want the best password manager without subscription**: PanicVault is a one-time $4.99 purchase and KeePassXC is free. Neither has recurring fees or premium tiers gating offline access. Compare the full landscape in our [free vs. premium password manager guide](/compare/free-vs-premium/).
 
 **If cloud sync is important but you want offline access**: 1Password or Bitwarden. Their cached offline mode handles the common case (accessing existing credentials without internet) even though full functionality requires connectivity. For a deeper look at how [Bitwarden compares to a local-first approach](/compare/panicvault-vs-bitwarden/), see our dedicated comparison.
 
