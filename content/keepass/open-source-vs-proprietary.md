@@ -2,7 +2,7 @@
 title: "Why Open Source Beats Proprietary for Password Security"
 description: "Explore why open-source password managers provide stronger security through code audits, community review, and transparency versus proprietary alternatives."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-09-19
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -114,7 +114,7 @@ Some password managers adopt a hybrid approach: the core encryption library is o
 
 This model is an improvement over fully proprietary software, but it comes with caveats. The open-source core may lag behind the proprietary application. The proprietary components may introduce vulnerabilities that the open-source core cannot protect against. And the company retains the ability to change the terms at any time.
 
-The KeePass ecosystem avoids this ambiguity entirely. The format is open. The reference implementations are open. The community implementations are open. Even apps like Strongbox and [PanicVault](https://apps.apple.com/app/id6759188575), which are not fully open source themselves, build on the open KDBX standard -- meaning your data remains in a fully documented, portable format regardless of which client you choose. There is no proprietary layer sitting between you and your encrypted data. This is the [gold standard](/keepass/gold-standard/) for transparent security.
+The KeePass ecosystem avoids this ambiguity entirely. The format is open. The reference implementations are open. The community implementations are open. Even apps whose App Store builds you cannot verify build on the open KDBX standard: closed-source apps like [PanicVault](https://apps.apple.com/app/id6759188575), and apps like Strongbox and KeePassium that publish their source code but ship App Store builds nobody can check against it. Your data remains in a fully documented, portable format regardless of which client you choose. There is no proprietary layer sitting between you and your encrypted data. This is the [gold standard](/keepass/gold-standard/) for transparent security.
 
 ## Myths About Open-Source Security
 

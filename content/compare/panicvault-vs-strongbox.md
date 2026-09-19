@@ -2,7 +2,7 @@
 title: "PanicVault vs. Strongbox"
 description: "Comprehensive comparison of PanicVault and Strongbox -- two Apple-native KeePass-compatible password managers. Pricing, features, sync options, and usability evaluated honestly."
 date: 2026-02-14
-lastmod: 2026-08-25
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 ---
@@ -15,14 +15,15 @@ Because both use KDBX, this is not a lock-in decision. You can switch between Pa
 
 ### Strongbox
 
-Strongbox uses a freemium model with multiple pricing tiers:
+Strongbox uses a freemium model. These are the prices on [Strongbox's website](https://strongboxsafe.com/pricing/), in US dollars; App Store prices vary by country:
 
-- **Free tier**: Read-only access to KDBX databases, basic viewing
-- **Pro (subscription)**: Full features with annual subscription
-- **Pro (lifetime)**: One-time purchase at $29.99 (price may vary by region)
-- **Family options**: Available through App Store Family Sharing
+- **Free version**: For non-commercial use only. It is not read-only: on iPhone and iPad it opens and edits KDBX databases and includes AutoFill, TOTP codes, key files, and built-in sync
+- **Pro (monthly)**: $2.99/month
+- **Pro (yearly)**: $24.99/year, with a 3-month free trial
+- **Pro (lifetime)**: $124.99, one-time purchase
+- **Family options**: Paid plans can be shared with up to 6 people through Family Sharing
 
-The free tier is limited enough that most users will need to upgrade for practical use. The lifetime purchase option is the most relevant comparison point with PanicVault.
+According to [Strongbox's comparison page](https://strongboxsafe.com/comparison/), Pro adds Face ID and Touch ID unlock, YubiKey support, offline editing, and Have I Been Pwned breach checks; on Mac it also unlocks AutoFill, SFTP and WebDAV sync, and the SSH agent. Without Pro, you unlock with your master password rather than Face ID, Touch ID or a PIN. The lifetime licence is the most relevant comparison point with PanicVault.
 
 ### PanicVault
 
@@ -32,7 +33,7 @@ The free tier is limited enough that most users will need to upgrade for practic
 
 ### Pricing Verdict
 
-Both tools offer a one-time purchase option that provides full functionality. The actual prices on the App Store should be compared at the time of purchase, as they can vary. Strongbox's free tier lets you evaluate the app before buying, though the read-only limitation makes it more of a preview than a usable tool.
+Both tools offer a one-time purchase option that provides full functionality: PanicVault's single purchase, or Strongbox Pro's $124.99 lifetime licence. Prices vary by country, so compare them at the time of purchase. Strongbox's free version and 3-month Pro trial let you try the app before paying, but the free version is limited to non-commercial use.
 
 For a broader view of password manager pricing, see our [pricing comparison guide](/compare/pricing-comparison/).
 
@@ -44,13 +45,14 @@ Both apps support the core KDBX feature set, but they differ in some areas:
 |---|---|---|
 | KDBX 4.0 | Yes | Yes |
 | KDBX 3.1 | No (KDBX 4 only) | Yes |
+| KeePass 1.x (.kdb) and Password Safe | No | Yes |
 | AES-256 / ChaCha20 | Yes | Yes |
 | Argon2d / AES-KDF | Yes | Yes |
 | [Key file](/keepass/key-files/) support | Yes | Yes |
-| YubiKey challenge-response | Yes -- NFC on iPhone, USB on Mac (not iPad) | Yes -- NFC on iPhone, USB on Mac, and Lightning (5Ci) keys |
+| YubiKey challenge-response | Yes -- NFC on iPhone, USB on Mac (not iPad) | Pro -- NFC on iPhone, USB on Mac, and Lightning (5Ci) keys |
 | TOTP codes | Yes | Yes |
-| Face ID / Touch ID | Yes | Yes |
-| System AutoFill | Yes | Yes |
+| Face ID / Touch ID | Yes | Pro |
+| System AutoFill | Yes | Yes (Pro on Mac) |
 | Custom fields | Yes | Yes |
 | File attachments | Yes | Yes |
 | Groups and folders | Yes | Yes |
@@ -58,19 +60,22 @@ Both apps support the core KDBX feature set, but they differ in some areas:
 | Entry history | Yes | Yes |
 | Password generator | Yes | Yes |
 | iCloud sync | Yes | Yes |
-| Multiple sync providers | Yes (iCloud, Google Drive) | Yes (iCloud, Dropbox, Google Drive, OneDrive, WebDAV, SFTP) |
-| Password Audit | No | Yes |
-| Favicon downloads | Yes | Yes |
+| Multiple sync providers | Yes (iCloud, Google Drive) | Yes (iCloud, Dropbox, Google Drive, OneDrive, WebDAV, SFTP; WebDAV and SFTP are Pro on Mac) |
+| Password Audit | No | Yes (breach checks: Pro) |
+| Favicon downloads | Yes | Pro |
+| Open source | No | Source published* |
 | macOS app | Yes | Yes |
 | iOS app | Yes | Yes |
 | iPadOS app | Yes | Yes |
 | Apple Watch | No | Yes (limited) |
 
+\*Strongbox publishes its source code under the AGPL-3.0, but App Store builds can't be verified against it.
+
 ### Strongbox's Distinguishing Features
 
 **Multiple sync providers**: Strongbox supports a wide range of cloud storage providers out of the box, including Dropbox, OneDrive, Google Drive, WebDAV, and SFTP. While PanicVault now covers iCloud and Google Drive, Strongbox still offers more options for users who rely on Dropbox, OneDrive, WebDAV, or SFTP.
 
-**Password audit**: Strongbox includes breach checking that flags compromised passwords by checking against known breach databases. This helps identify credentials that need updating.
+**Password audit**: Strongbox audits your database for weak passwords, and with Pro it also checks them against Have I Been Pwned breach data. This helps identify credentials that need updating.
 
 **Apple Watch**: Strongbox offers a limited Apple Watch companion app for quick credential access.
 
@@ -78,7 +83,7 @@ Both apps support the core KDBX feature set, but they differ in some areas:
 
 **Focused UX**: PanicVault's interface is streamlined and focused on the core credential management workflow. There are fewer settings to configure and fewer menus to navigate. For users who want simplicity, this clarity is an advantage.
 
-**Hardware keys at no extra cost**: PanicVault supports YubiKey challenge-response over NFC on iPhone, and over USB on Mac, in the same interoperable format Strongbox and KeePassXC use -- included in the one-time purchase rather than gated behind a subscription tier. Strongbox additionally supports Lightning (5Ci) keys, which PanicVault does not. See [Hardware Keys (YubiKey)](/help/hardware-keys/).
+**Hardware keys at no extra cost**: PanicVault supports YubiKey challenge-response over NFC on iPhone, and over USB on Mac, in the same interoperable format Strongbox and KeePassXC use -- included in the one-time purchase rather than gated behind a paid Pro tier, as it is in Strongbox. Strongbox additionally supports Lightning (5Ci) keys, which PanicVault does not. See [Hardware Keys (YubiKey)](/help/hardware-keys/).
 
 **Streamlined sync**: PanicVault supports iCloud Drive and Google Drive, covering the two most common cloud storage providers for Apple users. iCloud sync requires zero configuration -- the database syncs like any other iCloud file -- and Google Drive support extends PanicVault's reach to cross-platform households without adding complexity.
 
@@ -120,7 +125,7 @@ Strongbox supports multiple sync providers:
 - SFTP
 - Local storage
 
-This flexibility is valuable if your KDBX file lives on a non-Apple cloud service. If you share a database with users on other platforms who access it through [KeePassXC](/compare/panicvault-vs-keepassxc/) on Windows or Linux, having the file on Dropbox or a WebDAV server accessible to all parties is convenient.
+All of these are available in the free version on iPhone and iPad; on Mac, WebDAV and SFTP require Pro. This flexibility is valuable if your KDBX file lives on a non-Apple cloud service. If you share a database with users on other platforms who access it through [KeePassXC](/compare/panicvault-vs-keepassxc/) on Windows or Linux, having the file on Dropbox or a WebDAV server accessible to all parties is convenient.
 
 For more on sync options, see our [cloud sync and storage guide](/cloud-sync/).
 
@@ -134,8 +139,8 @@ Both tools implement the same KDBX encryption. A database encrypted by PanicVaul
 
 The differences are:
 
-- **Both** support YubiKey challenge-response for hardware-backed database unlock -- NFC on iPhone and USB on Mac, in the same interoperable format; Strongbox also supports Lightning (5Ci) keys
-- **Strongbox** offers password audit (breach checking) within the app
+- **Both** support YubiKey challenge-response for hardware-backed database unlock -- NFC on iPhone and USB on Mac, in the same interoperable format; Strongbox also supports Lightning (5Ci) keys, and requires Pro for hardware keys
+- **Strongbox** offers password audit within the app (breach checking requires Pro)
 - **PanicVault** has a simpler security surface (fewer features means fewer potential vulnerabilities)
 
 For most users, these differences are not decisive. Hardware keys are no longer one of them: both apps unlock the same YubiKey-protected databases.
@@ -171,9 +176,9 @@ If you are currently using another password manager entirely, both PanicVault an
 
 ## The Bottom Line
 
-PanicVault and Strongbox are both excellent KeePass-compatible apps for Apple devices. The choice between them is more about interface preference and specific feature needs (sync providers, password audit) than about fundamental capability -- both now support YubiKey challenge-response over NFC on iPhone, and over USB on Mac. Both protect your credentials with the same encryption, both support the same database format, and both integrate well with the Apple ecosystem.
+PanicVault and Strongbox both open the same KDBX files on Apple devices. The choice between them is more about interface preference and specific feature needs (sync providers, password audit) than about fundamental capability -- both now support YubiKey challenge-response over NFC on iPhone, and over USB on Mac. Both protect your credentials with the same encryption, both support the same database format, and both integrate well with the Apple ecosystem.
 
-If you value simplicity and a focused design, PanicVault is the better fit. If you need additional sync providers beyond iCloud and Google Drive, breach monitoring, or KDBX 3.1 support, Strongbox offers more flexibility. Either way, your data remains in the open KDBX format, and you can switch at any time. For a wider look at the iPhone side that includes KeePassium, see our guide to the [best KeePass apps for iPhone](/keepass/keepass-ios/).
+If you value simplicity, a focused native design, and every feature in a single one-time purchase, PanicVault is the better fit. If you need additional sync providers beyond iCloud and Google Drive, breach monitoring, or KDBX 3.1 support, Strongbox offers more flexibility. Either way, your data remains in the open KDBX format, and you can switch at any time. For a wider look at the iPhone side that includes KeePassium, see our guide to the [best KeePass apps for iPhone](/keepass/keepass-ios/).
 
 ## Related Articles
 

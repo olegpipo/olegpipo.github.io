@@ -11,9 +11,9 @@ faq:
   - q: "Does KeePass work on iPhone?"
     a: "Your KeePass database does, even though the KeePass program itself does not run on iOS. A KeePass-compatible app such as PanicVault, Strongbox or KeePassium opens the same .kdbx file you use on your PC, fills passwords through iOS AutoFill, and unlocks with Face ID or Touch ID. Keep the file in a cloud folder that both your PC and your iPhone can reach."
   - q: "What is the best KeePass app for iOS?"
-    a: "It depends on what matters to you. PanicVault has a native Apple design and is a one-time purchase. Strongbox has the most features, including built-in Dropbox, OneDrive, WebDAV and SFTP sync and an Apple Watch app. KeePassium is fully open source and has a capable free tier. All three open KDBX 4 databases created in KeePass 2.x."
+    a: "It depends on what matters to you. PanicVault has a native Apple design and is a one-time purchase. Strongbox has the most features, including built-in Dropbox, OneDrive, WebDAV and SFTP sync and an Apple Watch app. KeePassium has a free version limited to one database, with Premium needed for logins suggested above the keyboard and YubiKey support. All three open KDBX 4 databases created in KeePass 2.x."
   - q: "Is there a free KeePass app for iPhone?"
-    a: "Yes. KeePassium's free tier covers one database and includes AutoFill, Face ID or Touch ID unlock, and TOTP codes. Strongbox also has a free version for non-commercial use that includes AutoFill and TOTP codes, but Face ID and Touch ID unlock require Strongbox Pro."
+    a: "Yes, but the free versions are cut down. KeePassium Free handles one database and has basic AutoFill, Face ID and TOTP codes, but you pick each login from a list every time; logins suggested above the keyboard, saving new logins from AutoFill, YubiKey support and the password audit need Premium (€19.99/year). Strongbox's free version is for non-commercial use only and does not unlock with Face ID or Touch ID; that needs Strongbox Pro. PanicVault is a one-time purchase with no subscription and no feature tiers."
   - q: "Can I use the same KeePass database on Windows and iPhone?"
     a: "Yes. Put the .kdbx file in a folder synced by OneDrive, Dropbox, Google Drive or iCloud for Windows, open it from there in KeePass on your PC, and open the same file in your iPhone app. Avoid editing on both devices before changes have synced; if you end up with two copies, KeePass 2.x can merge them with File > Synchronize."
 ---
@@ -22,7 +22,7 @@ faq:
 
 You don't need one. Your KeePass database is a single encrypted file in an open, documented format, and several iPhone and iPad apps open it as it is. This guide covers the three worth using, how to move your database from a Windows PC to your phone, and how to make iOS fill passwords from it.
 
-> **Quick answer**: There is no official KeePass app for iPhone or iPad. KeePass 2.x is a Windows program (it also runs on Linux and macOS through Mono), and the KeePass website lists iOS apps from other developers under "Contributed/Unofficial KeePass Ports". The three best KeePass apps for iPhone are **[PanicVault](https://apps.apple.com/app/id6759188575)** for a native Apple design and a one-time purchase, **Strongbox** for the most features, and **KeePassium** for open-source code and a usable free tier. All three open the .kdbx file you already use in KeePass, fill passwords through iOS AutoFill, and unlock with Face ID (a Pro feature in Strongbox). PanicVault needs the database in KDBX 4 format; [step 3 below](#step-3-check-your-kdbx-version) shows how to check and upgrade it in KeePass 2.x.
+> **Quick answer**: There is no official KeePass app for iPhone or iPad. KeePass 2.x is a Windows program (it also runs on Linux and macOS through Mono), and the KeePass website lists iOS apps from other developers under "Contributed/Unofficial KeePass Ports". The three best KeePass apps for iPhone are **[PanicVault](https://apps.apple.com/app/id6759188575)** for a native Apple design and a one-time purchase, **Strongbox** for the most features, and **KeePassium**, whose free version is limited to one database and basic AutoFill. All three open the .kdbx file you already use in KeePass, fill passwords through iOS AutoFill, and unlock with Face ID (a Pro feature in Strongbox). PanicVault needs the database in KDBX 4 format; [step 3 below](#step-3-check-your-kdbx-version) shows how to check and upgrade it in KeePass 2.x.
 
 ## Is There an Official KeePass App for iPhone?
 
@@ -49,7 +49,7 @@ All three open a `.kdbx` database from KeePass 2.x, work with iOS AutoFill, and 
 **Sync**: iCloud Drive and Google Drive built in; Dropbox, OneDrive and others through the iOS Files app
 **Platforms**: iPhone, iPad, Mac
 
-[PanicVault](https://apps.apple.com/app/id6759188575) is the app this site is built around, so we have kept its limitations in plain view. It is a native Apple app written in SwiftUI, for people who want their KeePass database to feel at home on an iPhone. It reads and writes KDBX 4 with groups, custom fields, attachments and entry history intact, fills passwords system-wide through iOS AutoFill, and unlocks with Face ID or Touch ID. It also generates TOTP codes, including from the `TimeOtp` fields KeePass 2.x uses for its own one-time passwords.
+[PanicVault](https://apps.apple.com/app/id6759188575) is a native Apple app written in SwiftUI, for people who want their KeePass database to feel at home on an iPhone. It reads and writes KDBX 4 with groups, custom fields, attachments and entry history intact, fills passwords system-wide through iOS AutoFill, and unlocks with Face ID or Touch ID. It also generates TOTP codes, including from the `TimeOtp` fields KeePass 2.x uses for its own one-time passwords.
 
 iCloud Drive and Google Drive sync are built in. A database in Dropbox or OneDrive opens through the Files app, with that provider's app doing the syncing. YubiKey challenge-response works over NFC on iPhone and USB on Mac, in the same format KeePassXC uses.
 
@@ -59,7 +59,7 @@ The limits matter for KeePass 2.x users. PanicVault opens **KDBX 4 only**, so a 
 
 ### Strongbox
 
-**Price**: Free version for non-commercial use; Strongbox Pro at $2.99/month, $24.99/year or $99.99 lifetime (US App Store)
+**Price**: Free version for non-commercial use; Strongbox Pro at $2.99/month, $24.99/year or $124.99 lifetime on Strongbox's website
 **KDBX versions**: KDBX 4, KDBX 3.1 and KeePass 1.x `.kdb`, plus Password Safe
 **Sync**: iCloud Drive, Dropbox, Google Drive, OneDrive, WebDAV and SFTP built in, plus the Files app
 **Platforms**: iPhone, iPad, Mac, Apple Watch
@@ -79,11 +79,11 @@ The trade-offs are a busier interface, with many settings to expose, and the hig
 **Sync**: Any provider in the iOS Files app (iCloud Drive, Dropbox, OneDrive, Google Drive, Box and others)
 **Platforms**: iPhone, iPad, Mac (built with Mac Catalyst)
 
-KeePassium is the pick if you want open source on your phone. The full app is published under the GPLv3, and its App Store listing says it has been independently audited by Cure53. It also has the most usable free tier of the three: according to [KeePassium's pricing page](https://keepassium.com/pricing/), the free version includes sync, AutoFill, Face ID and Touch ID unlock, TOTP codes and file attachments for one database. Premium adds multiple databases, YubiKey support, a password leak audit and Quick AutoFill. The subscription is "rent-to-own": if you cancel, you keep the app version that existed at your last payment.
+KeePassium publishes its source code under the GPLv3, as Strongbox does under the AGPL-3.0, but there is no way to verify that either app's App Store build was compiled from that code. KeePassium's App Store listing says it has been independently audited by Cure53. The free version handles one database and has basic AutoFill, Face ID and Touch ID unlock, TOTP codes and file attachments, but you pick each login from a list every time. According to [KeePassium's pricing page](https://keepassium.com/pricing/), logins suggested above the keyboard (Quick AutoFill), YubiKey support, the password audit and more than one database need Premium (€19.99/year) or the lifetime Pro licence, and KeePassium's release notes say saving new logins from AutoFill is a Premium feature too.
 
 KeePassium works through the storage providers in the Files app rather than keeping its own cloud logins. The limits are one database on the free tier, YubiKey only with a paid licence, and a Mac app built from the iPad code with Mac Catalyst.
 
-**Best for**: Anyone who wants a free KeePass app for iPhone, or open-source code on mobile as well as desktop.
+**Best for**: People who keep a single database and can live with basic AutoFill, or who are willing to pay for Premium.
 
 ### Older and Discontinued Apps
 
@@ -99,15 +99,18 @@ KeePassium works through the storage providers in the Files app rather than keep
 | **KDBX 4** | Yes | Yes | Yes |
 | **KDBX 3.1** | No (upgrade first) | Yes | Yes |
 | **KeePass 1.x .kdb** | No | Yes | Yes |
-| **iOS AutoFill** | Yes | Yes | Yes |
+| **Free version** | No tiers; every feature is in the one-time purchase | Non-commercial use only; no Face ID, YubiKey or offline editing | One database; no logins above the keyboard, YubiKey or password audit |
+| **iOS AutoFill** | Yes | Yes | Yes (logins above the keyboard: Premium) |
 | **Face ID / Touch ID** | Yes | Pro | Yes |
 | **TOTP codes** | Yes | Yes | Yes |
 | **Built-in sync** | iCloud Drive, Google Drive | iCloud Drive, Dropbox, Google Drive, OneDrive, WebDAV, SFTP | Via Files app providers |
 | **YubiKey** | NFC on iPhone (not iPad) | Pro | Premium |
-| **Open source** | No | Yes (AGPL-3.0) | Yes (GPLv3) |
+| **Open source** | No | Source published* | Source published* |
 | **Mac app** | Yes | Yes | Yes (Mac Catalyst) |
 
-Prices vary by country and change over time, so check the App Store before you buy.
+\*Source code is public, but App Store builds can't be verified against it.
+
+Prices vary by country and change over time, so check them before you buy.
 
 ## How to Move Your KeePass Database from Windows to iPhone
 
@@ -169,7 +172,7 @@ Then tap a login field, choose the entry above the keyboard, and confirm with Fa
 
 ## Which One Should You Choose?
 
-Choose **PanicVault** for an app that feels like it came with your iPhone, if your database can be KDBX 4. Choose **Strongbox** for the most features and built-in Dropbox, OneDrive or server sync, and expect to pay. Choose **KeePassium** to spend nothing, or for open-source code on your phone. All three read the same file, so you can try more than one against your real database without exporting anything.
+Choose **PanicVault** for an app that feels like it came with your iPhone, sold once with no subscription and no feature tiers, if your database can be KDBX 4. Choose **Strongbox** for the most features and built-in Dropbox, OneDrive or server sync, and expect to pay. Choose **KeePassium** to start free, if one database and basic AutoFill are enough; logins above the keyboard and YubiKey support need Premium. All three read the same file, so you can try more than one against your real database without exporting anything.
 
 ## Related Articles
 

@@ -29,12 +29,12 @@ The trade-off is that you manage sync yourself (typically through [iCloud Drive]
 
 Strongbox and KeePassium are both long-established KeePass clients for iPhone, iPad, and Mac, and both open KDBX 4, KDBX 3.1, and KeePass 1.x databases. They differ in four places:
 
-- **What is free.** KeePassium's free tier includes AutoFill, Face ID and Touch ID, and TOTP codes, limited to one database. Strongbox's free version (non-commercial use only) includes AutoFill and TOTP codes on iPhone and iPad, but Face ID and Touch ID unlock need Pro, and on Mac so does AutoFill.
-- **What paying costs.** Strongbox Pro is $2.99/month, $24.99/year, or $99.99 lifetime. KeePassium Premium is €19.99/year on a rent-to-own basis, and the lifetime KeePassium Pro app is $79.99. (US App Store prices; they vary by region.)
+- **What is free.** KeePassium's free version handles one database with basic AutoFill, Face ID and Touch ID, and TOTP codes, but you pick each login from a list every time; logins suggested above the keyboard, saving new logins from AutoFill, YubiKey support, and the password audit need Premium. Strongbox's free version (non-commercial use only) includes AutoFill and TOTP codes on iPhone and iPad, but Face ID and Touch ID unlock need Pro, and on Mac so does AutoFill.
+- **What paying costs.** Strongbox Pro is $2.99/month, $24.99/year, or $124.99 lifetime on Strongbox's website. KeePassium Premium is €19.99/year on a rent-to-own basis, and the lifetime KeePassium Pro app is $79.99 on the US App Store. (Prices vary by region.)
 - **Sync.** Strongbox connects to Dropbox, Google Drive, OneDrive, WebDAV, and SFTP itself, as well as iCloud Drive. KeePassium works through whichever providers appear in the iOS Files app.
 - **Scope.** Strongbox does more: an Apple Watch app, Have I Been Pwned breach checks, and an SSH agent on Mac (all Pro). KeePassium is smaller and more focused.
 
-Both publish their source code: KeePassium under the GPLv3, Strongbox under the AGPL-3.0. Choose KeePassium for a capable free tier and a simpler app; choose Strongbox if you want the most features and built-in sync and expect to pay. They open the same file, so trying both costs nothing but time.
+Both publish their source code, KeePassium under the GPLv3 and Strongbox under the AGPL-3.0, but there is no way to verify that the App Store builds were compiled from it. Choose KeePassium for a simpler app you can start using free, within the limits above; choose Strongbox if you want the most features and built-in sync and expect to pay. They open the same file, so trying both costs nothing but time. So does PanicVault, covered below, if your database is KDBX 4: a native app sold as a one-time purchase, with no subscription.
 
 ## The Apps
 
@@ -67,7 +67,7 @@ PanicVault is designed specifically for the Apple ecosystem. Built with SwiftUI,
 ### Strongbox
 
 **Platforms**: macOS, iOS, iPadOS
-**Price**: Freemium (free version for non-commercial use; Pro at $2.99/month, $24.99/year, or $99.99 lifetime on the US App Store)
+**Price**: Freemium (free version for non-commercial use; Pro at $2.99/month, $24.99/year, or $124.99 lifetime on Strongbox's website)
 **KDBX support**: Full (3.1 and 4.0, plus KeePass 1.x KDB)
 
 Strongbox is a mature, feature-rich KeePass client for Apple devices with a longer history on the App Store. It offers more configuration options and sync provider support than PanicVault.
@@ -85,7 +85,7 @@ Strongbox is a mature, feature-rich KeePass client for Apple devices with a long
 **Limitations:**
 - Free version lacks Face ID and Touch ID unlock (and, on Mac, AutoFill), and is for non-commercial use only
 - More complex interface due to extensive configuration options
-- Highest lifetime price in this group ($99.99 on the US App Store)
+- Highest lifetime price in this group ($124.99 on Strongbox's website)
 
 **Best for**: Power users who need multiple sync providers, Lightning (5Ci) hardware keys, or password auditing. Also ideal for users migrating from older KeePass 1.x databases.
 
@@ -97,7 +97,7 @@ For a direct comparison, see [PanicVault vs. Strongbox](/compare/panicvault-vs-s
 **Price**: Free (open source)
 **KDBX support**: Full (3.1 and 4.0)
 
-KeePassXC is the gold-standard desktop KeePass client. It is free, open source, and packed with features that no other KeePass app matches. However, it is desktop-only -- there are no official mobile apps.
+KeePassXC is a widely used desktop KeePass client. It is free and open source, with desktop features such as Auto-Type, an SSH agent, and browser extensions. However, it is desktop-only -- there are no official mobile apps.
 
 **Highlights:**
 - Completely free with no premium tier
@@ -127,24 +127,24 @@ For the full desktop comparison, see [PanicVault vs. KeePassXC](/compare/panicva
 **Price**: Freemium (free for one database; Premium at €19.99/year, or $79.99 for the lifetime Pro app on the US App Store)
 **KDBX support**: Full (3.1 and 4.0, plus KeePass 1.x KDB)
 
-KeePassium is another well-regarded KeePass client for iOS that offers a clean interface and reliable AutoFill. The full app is open source under the GPLv3.
+KeePassium is a KeePass client for iPhone and iPad, with a Mac version built with Mac Catalyst. Its source code is published under the GPLv3.
 
 **Highlights:**
-- Clean, modern iOS interface
+- Simpler interface than Strongbox
 - System AutoFill support
 - Face ID and Touch ID, including in the free tier
 - TOTP codes, including in the free tier
 - Multiple databases (Premium; the free tier covers one)
 - File provider integration (iCloud, Dropbox, etc.)
 - YubiKey support and password leak audit (Premium)
-- Fully open source (GPLv3)
+- Source code published under the GPLv3
 
 **Limitations:**
-- Multiple databases, YubiKey, and password audit require Premium or Pro
+- Multiple databases, YubiKey, password audit, and logins suggested above the keyboard require Premium or Pro; the free version's AutoFill makes you pick each login from a list
 - Less established than Strongbox
 - macOS app via Catalyst (not fully native macOS experience)
 
-**Best for**: iOS users who want an alternative to PanicVault or Strongbox with a clean interface and open-source transparency.
+**Best for**: iPhone and iPad users with a single database who can live with basic AutoFill, or who are willing to pay for Premium.
 
 ### KeePass 2.x (via Mono on macOS)
 
@@ -176,10 +176,10 @@ KeePass 2.x is the original KeePass implementation that defined the KDBX format.
 | macOS | Native (SwiftUI) | Native | Qt-based | Catalyst |
 | iOS / iPadOS | Yes | Yes | No | Yes |
 | Price | One-time | Freemium/Lifetime | Free | Freemium/Lifetime |
-| Open source | No | Yes (AGPL) | Yes | Yes (GPLv3) |
+| Open source | No | Source published* | Yes | Source published* |
 | Safari AutoFill | System AutoFill | System AutoFill (Pro on Mac) | No | System AutoFill |
 | Chrome/Firefox extension | Not needed | Not needed | Yes (no Safari) | Not needed |
-| System AutoFill | Yes | Yes (Pro on Mac) | No | Yes |
+| System AutoFill | Yes | Yes (Pro on Mac) | No | Yes (logins above the keyboard: Premium) |
 | Face ID / Touch ID | Yes | Pro | Touch ID only | Yes |
 | TOTP codes | Yes | Yes | Yes | Yes |
 | YubiKey | Yes -- NFC on iPhone, USB on Mac | Pro | Yes | Premium |
@@ -192,6 +192,8 @@ KeePass 2.x is the original KeePass implementation that defined the KDBX format.
 | Apple Watch | No | Pro | No | No |
 | KDB (v1) support | No | Yes | No | Yes |
 | Database merge | No | Yes | Yes | No |
+
+\*Source code is public, but App Store builds can't be verified against it.
 
 ## Recommended Combinations
 
@@ -207,11 +209,11 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Maximum Features
 
-**Strongbox on all Apple devices, KeePassXC on non-Apple desktops.** Strongbox's password audit, KeePass 1.x support, and multiple sync providers cover power user needs. KeePassXC handles desktop-specific workflows. (Hardware keys are no longer a reason to pick one Apple app over the other -- PanicVault and Strongbox both support YubiKey challenge-response over NFC on iPhone, and over USB on Mac.)
+**Strongbox on all Apple devices, KeePassXC on non-Apple desktops.** Strongbox's password audit, KeePass 1.x support, and multiple sync providers cover power user needs. KeePassXC handles desktop-specific workflows. (Hardware keys are no longer a reason to pick one Apple app over the other -- PanicVault and Strongbox both support YubiKey challenge-response over NFC on iPhone, and over USB on Mac; in Strongbox it is a Pro feature.)
 
-### Maximum Budget Savings
+### Zero Cost, With Trade-offs
 
-**KeePassXC on Mac, KeePassium (free tier) on iPhone.** Completely free across all devices. The trade-offs are that KeePassium's free tier covers a single database without YubiKey support, and KeePassXC has no Safari integration.
+**KeePassXC on Mac, KeePassium's free version on iPhone.** This costs nothing, but you give up a lot: KeePassium Free opens one database, you pick each login from a list instead of seeing it above the keyboard, and YubiKey support and the password audit need Premium. KeePassXC has no Safari integration.
 
 ## Choosing the Right App
 
@@ -225,11 +227,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Prioritize if you want the lowest cost
 
-**KeePassXC** on desktop and **KeePassium free** on mobile. Zero cost across all devices, though with some mobile limitations.
-
-### Prioritize if you want open-source code
-
-**KeePassXC** on desktop or **KeePassium** on iPhone, iPad, and Mac -- both fully open source. Strongbox also publishes its source code, under the AGPL-3.0 licence. PanicVault is not open source, though it uses the open KDBX format.
+**KeePassXC** on desktop and **KeePassium free** on mobile. Zero cost across all devices, though KeePassium's free version is limited to one database and basic AutoFill.
 
 ## Database Compatibility Notes
 
@@ -241,7 +239,7 @@ For encryption details, see our [KeePass encryption explained](/keepass/encrypti
 
 ## The Bottom Line
 
-The KeePass ecosystem on Apple is healthy and competitive. PanicVault offers the best native Apple experience. Strongbox offers the most features and flexibility. KeePassXC dominates desktop use. KeePassium provides a solid free mobile option with open-source transparency.
+PanicVault offers the best native Apple experience, as a one-time purchase with built-in iCloud Drive and Google Drive sync. Strongbox has the most features and sync options, and the highest lifetime price. KeePassXC covers Windows and Linux desktops. KeePassium has a free version for a single database, with Premium needed for logins above the keyboard and YubiKey support.
 
 Because they all use the same KDBX format, your choice is about interface preference and specific feature needs -- not about locking your data into a particular tool. Try the ones that interest you. Your database file works in all of them.
 

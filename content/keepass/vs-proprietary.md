@@ -2,7 +2,7 @@
 title: "KeePass vs. Proprietary Formats: Who Owns Your Data?"
 description: "Compare open KeePass KDBX format against proprietary password manager formats on data portability, vendor lock-in, and long-term data ownership."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-09-19
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -127,7 +127,7 @@ Free tiers are typically limited: fewer devices, no sharing, no advanced feature
 
 More importantly, the free tier still locks your data in a proprietary format. You are not paying money, but you are paying with control. The switching cost accumulates silently as you add entries, and by the time you consider leaving, the friction of export and migration serves as an effective retention mechanism.
 
-KeePass-compatible applications, by contrast, are genuinely free. KeePassXC, KeePassDX, and KeeWeb are open-source and community-funded. Strongbox and KeePassium offer optional premium tiers for convenience features, but the core password management functionality -- and crucially, full KDBX format compatibility -- is available without payment.
+Many KeePass-compatible applications, by contrast, are free. KeePassXC, KeePassDX, and KeeWeb are open-source and community-funded. Strongbox and KeePassium have cut-down free versions (Strongbox's is for non-commercial use only; KeePassium's is limited to one database) and charge for features such as biometric unlock, hardware keys, or multiple databases, but even their free versions read and write the full KDBX format.
 
 ## Making the Decision
 
