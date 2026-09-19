@@ -2,7 +2,7 @@
 title: "Best Cross-Platform Password Manager"
 description: "Best cross-platform password managers in 2026. iOS, Android, Windows, Mac, Linux, and browser support compared for seamless sync everywhere."
 date: 2026-03-08
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -207,7 +207,7 @@ The KeePass ecosystem takes a fundamentally different approach to cross-platform
 - Sync is manual or depends on a third-party file sync service
 - Browser autofill setup requires more configuration than integrated solutions
 - No managed sync -- if sync breaks, you troubleshoot it yourself
-- PanicVault and Strongbox on iOS are paid apps (though KeePassium has a free tier)
+- PanicVault on iOS is a paid app, and the free versions of Strongbox and KeePassium are cut down (Strongbox's is for non-commercial use only; KeePassium's is limited to one database)
 
 **Best for**: Users who value data ownership and want the best possible app on each platform, even if those apps come from different developers. The KeePass ecosystem is the most truly cross-platform approach because the KDBX format works everywhere. See our [KeePass apps for Apple](/compare/keepass-apps-apple/) guide for iOS and macOS options.
 

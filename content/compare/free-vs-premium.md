@@ -2,7 +2,7 @@
 title: "Free vs. Paid Password Manager (2026)"
 description: "Is a paid password manager worth it? Honest comparison of free vs. premium features, security gaps, and who should upgrade."
 date: 2026-02-14
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 ---
@@ -25,13 +25,13 @@ Any of these tools, used consistently, provides dramatically better security tha
 
 ## What Premium Adds
 
-Premium password managers -- whether subscription-based (1Password, Bitwarden Premium, Dashlane) or one-time purchase (PanicVault, Strongbox) -- add features in several categories.
+Premium password managers -- whether subscription-based (1Password, Bitwarden Premium, Dashlane) or one-time purchase (PanicVault, or Strongbox's lifetime Pro licence) -- add features in several categories.
 
 ### TOTP Authenticator Codes
 
-**Free options with TOTP**: KeePassXC, Apple Passwords, Proton Pass
+**Free options with TOTP**: KeePassXC, Apple Passwords, Proton Pass, Strongbox (free version, non-commercial use only)
 **Free options without TOTP**: Bitwarden Free
-**Premium options with TOTP**: PanicVault, 1Password, Bitwarden Premium, Dashlane, Strongbox Pro
+**Premium options with TOTP**: PanicVault, 1Password, Bitwarden Premium, Dashlane
 
 If you use Bitwarden Free and want TOTP codes in your password manager, upgrading to Bitwarden Premium ($19.80/year) or switching to PanicVault (one-time purchase) adds this capability. For a detailed analysis of built-in authenticators, see our [best password manager with built-in authenticator](/compare/best-with-authenticator/) guide.
 
@@ -80,8 +80,8 @@ If you manage a large number of credentials (200+), organizational features beco
 
 ### File Attachments
 
-**Free with attachments**: KeePassXC
-**Premium with attachments**: PanicVault, Bitwarden Premium (5GB), 1Password (1GB), Strongbox Pro
+**Free with attachments**: KeePassXC, Strongbox (free version, non-commercial use only)
+**Premium with attachments**: PanicVault, Bitwarden Premium (5GB), 1Password (1GB)
 
 Attaching files to credential entries (scans of documents, key files, software licenses) is useful but niche. KeePassXC offers it for free. Most cloud-based managers limit it to premium tiers.
 

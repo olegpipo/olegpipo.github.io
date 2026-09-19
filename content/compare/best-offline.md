@@ -2,7 +2,7 @@
 title: "Best Offline Password Manager (2026)"
 description: "The best password managers that work offline. Local-first apps tested for airplane mode, no-internet reliability & security."
 date: 2026-02-14
-lastmod: 2026-03-06
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -95,9 +95,9 @@ Strongbox is another Apple-native KeePass-compatible app that operates on a loca
 - Full vault access without internet
 - All KDBX features available offline
 - Multiple sync provider support (iCloud, Dropbox, WebDAV, SFTP)
-- Offline editing and entry creation
+- Offline editing and entry creation (on iPhone and iPad, editing a synced database while offline is a Pro feature; the free version shows a read-only copy)
 
-Strongbox's offline capabilities are equivalent to PanicVault's, as both operate on local KDBX files. For a comparison between them, see [PanicVault vs. Strongbox](/compare/panicvault-vs-strongbox/).
+Strongbox's offline capabilities are similar to PanicVault's, as both operate on local KDBX files, apart from that Pro requirement on iPhone and iPad. For a comparison between them, see [PanicVault vs. Strongbox](/compare/panicvault-vs-strongbox/).
 
 ### 1Password (Cached Offline)
 
@@ -137,8 +137,8 @@ Bitwarden's offline mode is functional but less robust than local-first tools. S
 | Feature | PanicVault | KeePassXC | Strongbox | 1Password | Bitwarden |
 |---|---|---|---|---|---|
 | Full vault access | Yes | Yes | Yes | Cached | Cached |
-| Create entries | Yes | Yes | Yes | Limited | No |
-| Edit entries | Yes | Yes | Yes | Limited | Limited |
+| Create entries | Yes | Yes | Yes (Pro on iOS for synced databases) | Limited | No |
+| Edit entries | Yes | Yes | Yes (Pro on iOS for synced databases) | Limited | Limited |
 | Password generator | Yes | Yes | Yes | Yes | Yes |
 | TOTP codes | Yes | Yes | Yes | Yes | Yes |
 | AutoFill | Yes | Via extension | Yes | Yes | Yes |
@@ -153,7 +153,7 @@ Bitwarden's offline mode is functional but less robust than local-first tools. S
 
 **Best offline password manager for cross-platform**: [KeePassXC](/compare/panicvault-vs-keepassxc/). It runs on Windows, macOS, and Linux, is completely free and open source, and has no cloud component at all. Pair it with PanicVault on mobile for a fully offline solution across every device.
 
-**Best offline password manager for families**: [Strongbox](/compare/panicvault-vs-strongbox/). Its support for shared vaults via iCloud Drive makes it easy for family members to share a KeePass database without relying on a third-party cloud service. All vault access and editing works offline.
+**Best offline password manager for families**: [Strongbox](/compare/panicvault-vs-strongbox/). Its support for shared vaults via iCloud Drive makes it easy for family members to share a KeePass database without relying on a third-party cloud service. Vault access works offline; on iPhone and iPad, editing a synced database while offline requires Strongbox Pro.
 
 **Best free offline password manager**: KeePassXC (desktop) and PanicVault (Apple devices). Both are completely free, use the open KDBX format, and never require a subscription or internet connection. For a broader look at free options, see our [free vs. premium password manager comparison](/compare/free-vs-premium/).
 

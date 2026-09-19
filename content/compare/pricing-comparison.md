@@ -2,7 +2,7 @@
 title: "Password Manager Pricing Comparison 2026"
 description: "Complete password manager pricing breakdown for 2026. Individual, family, and lifetime plans compared for 1Password, Bitwarden, Dashlane, PanicVault, Strongbox, and more."
 date: 2026-02-14
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 ---
@@ -21,7 +21,7 @@ All prices are current as of early 2026. Prices change -- check the official sit
 | Proton Pass | Yes (basic) | $2.99/month | $35.88/year | Annual only |
 | NordPass | Limited | $1.49/month | $17.88/year | Annual (2-year deals available) |
 | PanicVault | N/A | One-time purchase | One-time | One-time |
-| Strongbox | Read-only free | Subscription or $29.99 lifetime | Varies | Multiple options |
+| Strongbox | Non-commercial use only | $2.99/month, $24.99/year or $124.99 lifetime | $24.99/year | Monthly, annual or lifetime |
 | KeePassXC | Full (free) | $0 | $0 | N/A |
 | Apple Passwords | Full (built-in) | $0 | $0 | N/A |
 
@@ -35,7 +35,7 @@ All prices are current as of early 2026. Prices change -- check the official sit
 
 **PanicVault (one-time)**: All features included at purchase. TOTP codes, groups, custom fields, AutoFill, iCloud and Google Drive sync, Face ID/Touch ID. No feature gating.
 
-**Strongbox (freemium)**: Free tier is read-only -- you can view databases but not edit them. Pro unlocks full editing, TOTP, and other features. Available as a subscription or a one-time lifetime purchase at $29.99.
+**Strongbox (freemium)**: The free version is for non-commercial use only. It is not read-only: on iPhone and iPad it edits databases and includes AutoFill and TOTP codes, but not Face ID or Touch ID unlock. Pro adds biometric unlock, YubiKey support, offline editing, and breach checks, and on Mac it also unlocks AutoFill. Strongbox's website lists Pro at $2.99/month, $24.99/year, or $124.99 for a lifetime licence.
 
 **KeePassXC ($0)**: Every feature is available for free. TOTP, SSH agent, Auto-Type, YubiKey, custom fields, attachments. The only "limitation" is that it is desktop-only.
 
@@ -51,7 +51,7 @@ All prices are current as of early 2026. Prices change -- check the official sit
 | Proton Pass | $3.99/month | Up to 6 | $7.98 | $47.88/year total |
 | NordPass | $2.79/month | Up to 6 | $5.58 | $33.48/year total |
 | PanicVault | Per-device purchase | Unlimited | Fixed | App Store Family Sharing available |
-| Strongbox | Per-device purchase | Unlimited | Fixed | App Store Family Sharing available |
+| Strongbox | Same as Pro plans | Up to 6 | Varies by plan | Paid plans include Family Sharing |
 | KeePassXC | $0 | Unlimited | $0 | Share database file |
 | Apple Passwords | $0 | Unlimited | $0 | iCloud sharing groups |
 
@@ -77,7 +77,7 @@ The real cost of a password manager is not the monthly price -- it is the total 
 | Proton Pass Plus | $35.88 | $71.76 | $107.64 | $179.40 | $358.80 |
 | NordPass Premium | $17.88 | $35.76 | $53.64 | $89.40 | $178.80 |
 | PanicVault | One-time | -- | -- | -- | -- |
-| Strongbox Lifetime | $29.99 | -- | -- | -- | -- |
+| Strongbox Pro Lifetime | $124.99 | -- | -- | -- | -- |
 | KeePassXC | $0 | $0 | $0 | $0 | $0 |
 | Apple Passwords | $0 | $0 | $0 | $0 | $0 |
 
@@ -153,11 +153,11 @@ Business plans are outside the scope of this comparison but are relevant if you 
 
 ### Minimal Budget ($10-30/year)
 
-**Bitwarden Premium** at $19.80/year adds TOTP codes and file storage to an already-capable free tier. **PanicVault** (one-time purchase) is the best long-term value for Apple users.
+**Bitwarden Premium** at $19.80/year adds TOTP codes and file storage to an already-capable free tier. **PanicVault** (one-time purchase) is the best long-term value for Apple users. **Strongbox Pro** costs $24.99/year, or $124.99 for a lifetime licence.
 
 ### Comfort Budget ($30-60/year)
 
-**1Password** at $35.88/year provides the most polished experience. **Strongbox Lifetime** at $29.99 gives you a full-featured KeePass client forever. See [PanicVault vs. 1Password](/compare/panicvault-vs-1password/) for the detailed comparison.
+**1Password** at $35.88/year provides the most polished experience. See [PanicVault vs. 1Password](/compare/panicvault-vs-1password/) for the detailed comparison.
 
 ### Money Is Not the Constraint
 

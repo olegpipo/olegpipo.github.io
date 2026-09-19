@@ -2,7 +2,7 @@
 title: "Best Password Manager With Built-In Authenticator"
 description: "Comprehensive guide to password managers with built-in TOTP authenticators in 2026. Security implications, convenience benefits, and which tools handle two-factor codes best."
 date: 2026-02-14
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 ---
@@ -124,7 +124,7 @@ See [PanicVault vs. KeePassXC](/compare/panicvault-vs-keepassxc/) for the full c
 
 ### Strongbox
 
-Strongbox includes TOTP in its Pro tier, which is available as a lifetime purchase or subscription.
+Strongbox includes TOTP codes in its free version, which is for non-commercial use only, as well as in Strongbox Pro ($2.99/month, $24.99/year, or $124.99 lifetime on Strongbox's website).
 
 **How it works:**
 - Add TOTP secrets to entries
@@ -137,7 +137,7 @@ Strongbox includes TOTP in its Pro tier, which is available as a lifetime purcha
 - Apple Watch can display codes
 
 **Considerations:**
-- Requires Pro purchase (not free)
+- The free version is for non-commercial use only; commercial use requires Pro
 - See [PanicVault vs. Strongbox](/compare/panicvault-vs-strongbox/) for the full comparison
 
 ### Apple Passwords
@@ -189,7 +189,7 @@ See [PanicVault vs. Dashlane](/compare/panicvault-vs-dashlane/).
 | Apple Passwords | Yes | $0 (built-in) | Yes | Proprietary | Apple |
 | 1Password | Yes | Included in $36/yr | Yes (cached) | Proprietary | All |
 | Bitwarden | Premium only | $19.80/year | Yes (cached) | Proprietary | All |
-| Strongbox | Pro only | Varies | Yes | KDBX (open) | Apple |
+| Strongbox | Yes | $0 (free version, non-commercial use only) | Yes | KDBX (open) | Apple |
 | Dashlane | Premium only | $60/year | Limited | Proprietary | All |
 
 ## Setting Up TOTP: A Quick Guide

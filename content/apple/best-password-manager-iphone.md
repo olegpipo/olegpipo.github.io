@@ -145,12 +145,12 @@ Both apps connect to your KDBX database wherever it lives -- iCloud Drive, Dropb
 | Feature | 1Password | Bitwarden | Apple Passwords | PanicVault | Dashlane | Strongbox |
 |---|---|---|---|---|---|---|
 | System autofill | Yes | Yes | Native | Yes | Yes | Yes |
-| Face ID / Touch ID | Yes | Yes | Native | Yes | Yes | Yes |
+| Face ID / Touch ID | Yes | Yes | Native | Yes | Yes | Pro |
 | Apple Watch | Yes | No | Yes | No | No | Yes |
 | Widgets | Yes | Basic | Yes | Yes | Basic | Yes |
 | KDBX format | No | No | No | Yes | No | Yes |
 | Offline access | Yes | Yes | Yes | Yes | Limited | Yes |
-| Price (annual) | $36 | $0-10 | $0 | One-time | $60 | $0-24 |
+| Price (annual) | $36 | $0-10 | $0 | One-time | $60 | $0-24.99 |
 
 ## What to Choose
 
