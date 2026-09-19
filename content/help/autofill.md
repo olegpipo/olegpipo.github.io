@@ -2,7 +2,7 @@
 title: "AutoFill"
 description: "Enable PanicVault as a system AutoFill provider on iOS and Mac to fill usernames and passwords in Safari and apps, across multiple vaults."
 date: 2026-07-14
-lastmod: 2026-08-31
+lastmod: 2026-09-19
 draft: false
 silo: "User Manual"
 helpgroup: "Filling Passwords"
@@ -15,10 +15,10 @@ PanicVault supports the system AutoFill feature to fill usernames and passwords 
 
 1. Go to **Settings** in PanicVault
 2. Tap **Setup AutoFill...** -- this takes you to your device's Settings
-3. Go to **Passwords** > **AutoFill Passwords**
-4. Enable AutoFill and select **PanicVault** as a provider
+3. Go to **General** > **AutoFill & Passwords** (on iOS 17 and earlier: **Passwords** > **Password Options**)
+4. Turn on **AutoFill Passwords and Passkeys** and select **PanicVault**
 
-Once enabled, when a login field appears in Safari or any app, your device offers to fill credentials from PanicVault.
+Once enabled, when a login field appears in Safari or any app, PanicVault suggests matching logins right above the keyboard -- tap one to fill it.
 
 ## Setting Up AutoFill on Mac
 
