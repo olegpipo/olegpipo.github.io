@@ -41,7 +41,7 @@ Both publish their source code, KeePassium under the GPLv3 and Strongbox under t
 ### PanicVault
 
 **Platforms**: macOS, iOS, iPadOS
-**Price**: One-time purchase
+**Price**: $4.99 one-time purchase
 **KDBX support**: KDBX 4.0 only (KDBX 3.1 databases must be converted first)
 
 PanicVault is designed specifically for the Apple ecosystem. Built with SwiftUI, it provides native integration with macOS, iOS, and iPadOS that feels like a first-party Apple application.
@@ -175,11 +175,11 @@ KeePass 2.x is the original KeePass implementation that defined the KDBX format.
 |---|---|---|---|---|
 | macOS | Native (SwiftUI) | Native | Qt-based | Catalyst |
 | iOS / iPadOS | Yes | Yes | No | Yes |
-| Price | One-time | Freemium/Lifetime | Free | Freemium/Lifetime |
+| Price | $4.99 one-time | Freemium/Lifetime | Free | Freemium/Lifetime |
 | Open source | No | Source published* | Yes | Source published* |
 | Safari AutoFill | System AutoFill | System AutoFill (Pro on Mac) | No | System AutoFill |
 | Chrome/Firefox extension | Not needed | Not needed | Yes (no Safari) | Not needed |
-| System AutoFill | Yes | Yes (Pro on Mac) | No | Yes (logins above the keyboard: Premium) |
+| System AutoFill | Yes, logins above the keyboard | Yes (Pro on Mac) | No | Yes (logins above the keyboard: Premium) |
 | Face ID / Touch ID | Yes | Pro | Touch ID only | Yes |
 | TOTP codes | Yes | Yes | Yes | Yes |
 | YubiKey | Yes -- NFC on iPhone, USB on Mac | Pro | Yes | Premium |

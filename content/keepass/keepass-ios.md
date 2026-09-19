@@ -44,7 +44,7 @@ All three open a `.kdbx` database from KeePass 2.x, work with iOS AutoFill, and 
 
 ### PanicVault
 
-**Price**: One-time purchase, no subscription
+**Price**: $4.99 one-time purchase, no subscription
 **KDBX versions**: KDBX 4 only
 **Sync**: iCloud Drive and Google Drive built in; Dropbox, OneDrive and others through the iOS Files app
 **Platforms**: iPhone, iPad, Mac
@@ -95,12 +95,12 @@ KeePassium works through the storage providers in the Files app rather than keep
 
 | Feature | PanicVault | Strongbox | KeePassium |
 |---|---|---|---|
-| **Price model** | One-time purchase | Free (non-commercial) or Pro subscription / lifetime | Free (one database) or Premium subscription / lifetime Pro |
+| **Price model** | $4.99 one-time purchase | Free (non-commercial) or Pro subscription / lifetime | Free (one database) or Premium subscription / lifetime Pro |
 | **KDBX 4** | Yes | Yes | Yes |
 | **KDBX 3.1** | No (upgrade first) | Yes | Yes |
 | **KeePass 1.x .kdb** | No | Yes | Yes |
-| **Free version** | No tiers; every feature is in the one-time purchase | Non-commercial use only; no Face ID, YubiKey or offline editing | One database; no logins above the keyboard, YubiKey or password audit |
-| **iOS AutoFill** | Yes | Yes | Yes (logins above the keyboard: Premium) |
+| **Free version** | No tiers; every feature is in the $4.99 purchase | Non-commercial use only; no Face ID, YubiKey or offline editing | One database; no logins above the keyboard, YubiKey or password audit |
+| **iOS AutoFill** | Yes, logins suggested above the keyboard | Yes | Yes (logins above the keyboard: Premium) |
 | **Face ID / Touch ID** | Yes | Pro | Yes |
 | **TOTP codes** | Yes | Yes | Yes |
 | **Built-in sync** | iCloud Drive, Google Drive | iCloud Drive, Dropbox, Google Drive, OneDrive, WebDAV, SFTP | Via Files app providers |

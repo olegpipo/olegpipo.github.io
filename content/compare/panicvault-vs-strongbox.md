@@ -27,13 +27,13 @@ According to [Strongbox's comparison page](https://strongboxsafe.com/comparison/
 
 ### PanicVault
 
-- One-time purchase on the App Store
+- $4.99 one-time purchase on the App Store (US price)
 - All features included at purchase
 - No freemium limitations, no subscription tiers
 
 ### Pricing Verdict
 
-Both tools offer a one-time purchase option that provides full functionality: PanicVault's single purchase, or Strongbox Pro's $124.99 lifetime licence. Prices vary by country, so compare them at the time of purchase. Strongbox's free version and 3-month Pro trial let you try the app before paying, but the free version is limited to non-commercial use.
+Both tools offer a one-time purchase option that provides full functionality: PanicVault's single $4.99 purchase, or Strongbox Pro's $124.99 lifetime licence. Prices vary by country, so compare them at the time of purchase. Strongbox's free version and 3-month Pro trial let you try the app before paying, but the free version is limited to non-commercial use.
 
 For a broader view of password manager pricing, see our [pricing comparison guide](/compare/pricing-comparison/).
 
@@ -52,7 +52,7 @@ Both apps support the core KDBX feature set, but they differ in some areas:
 | YubiKey challenge-response | Yes -- NFC on iPhone, USB on Mac (not iPad) | Pro -- NFC on iPhone, USB on Mac, and Lightning (5Ci) keys |
 | TOTP codes | Yes | Yes |
 | Face ID / Touch ID | Yes | Pro |
-| System AutoFill | Yes | Yes (Pro on Mac) |
+| System AutoFill | Yes, logins suggested above the keyboard | Yes (Pro on Mac) |
 | Custom fields | Yes | Yes |
 | File attachments | Yes | Yes |
 | Groups and folders | Yes | Yes |

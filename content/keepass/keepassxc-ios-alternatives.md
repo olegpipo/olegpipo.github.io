@@ -52,7 +52,7 @@ Before evaluating individual apps, here are the features that matter most when c
 
 ### PanicVault
 
-**Price**: One-time purchase
+**Price**: $4.99 one-time purchase
 **Platforms**: iOS, iPadOS, macOS
 **KDBX support**: 4.0 only
 
@@ -156,9 +156,9 @@ The free version handles one database and has basic AutoFill, Face ID and Touch 
 
 | Feature | PanicVault | Strongbox | KeePassium | AuthPass | KeePass Touch |
 |---|---|---|---|---|---|
-| **Price** | One-time | Freemium | Freemium | Free | Freemium |
+| **Price** | $4.99 one-time | Freemium | Freemium | Free | Freemium |
 | **KDBX 4.0** | Yes | Yes | Yes | Yes | Partial |
-| **AutoFill** | Yes | Yes | Yes (logins above the keyboard: Premium) | Yes | Limited |
+| **AutoFill** | Yes, logins above the keyboard | Yes | Yes (logins above the keyboard: Premium) | Yes | Limited |
 | **Face ID / Touch ID** | Yes | Pro | Yes | Yes | Yes |
 | **TOTP** | Yes | Yes | Yes | Yes | No |
 | **iCloud Sync** | Yes | Yes | Via Files | Via Files | Via Files |
