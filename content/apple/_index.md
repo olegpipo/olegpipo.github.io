@@ -2,7 +2,7 @@
 title: "Password Management for Apple Users: The Complete Guide"
 description: "A comprehensive guide to password management across iPhone, iPad, and Mac. Learn how to use Face ID, Touch ID, AutoFill, iCloud sync, and native Apple features with a dedicated password manager."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-09-19
 draft: false
 silo: "Apple Ecosystem"
 sitemap_priority: 0.8
@@ -111,7 +111,7 @@ The Apple Watch might seem like an unlikely platform for password management, bu
 
 Password managers with Apple Watch apps typically display a read-only subset of your vault, protected by the watch's own authentication (wrist detection and passcode). The data syncs from the paired iPhone, so the watch never needs to handle the full encrypted database independently.
 
-Our guide on [using a password manager with Apple Watch](/apple/apple-watch/) covers which password managers support watchOS, what you can realistically do on such a small screen, and the security considerations of having credentials accessible on your wrist.
+Our guide on [using a password manager with Apple Watch](/apple/apple-watch/) covers how password manager Watch apps work, what you can realistically do on such a small screen, and the security considerations of having credentials accessible on your wrist.
 
 ## The Cross-Platform Reality
 

@@ -2,7 +2,7 @@
 title: "Best Password Manager for iPhone (2026)"
 description: "The best password manager apps for iPhone in 2026. We compare Apple Passwords, PanicVault, 1Password, Bitwarden & Strongbox for security, features & price."
 date: 2026-02-13
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Apple Ecosystem"
 aliases:
@@ -108,7 +108,7 @@ PanicVault is purpose-built for the Apple ecosystem and uses the open KDBX forma
 
 **Widget support**: Home screen and lock screen widgets provide quick access to TOTP codes and frequently used credentials. The widgets follow Apple's design language and feel native.
 
-**Apple Watch**: Apple Watch companion app for viewing one-time passwords. Particularly useful when you need to enter a TOTP code on a different device.
+**Apple Watch**: No Apple Watch app. TOTP codes live in the iPhone, iPad and Mac apps, where each entry shows its live code, ready to copy.
 
 **Strengths**: KDBX format means your data works with any [KeePass-compatible app](/keepass/compatible-apps/). No subscription -- one-time purchase. iCloud Drive sync without a proprietary cloud service. Native Apple design. Full KeePass encryption (AES-256, ChaCha20, Argon2d).
 
@@ -146,7 +146,7 @@ Both apps connect to your KDBX database wherever it lives -- iCloud Drive, Dropb
 |---|---|---|---|---|---|---|
 | System autofill | Yes | Yes | Native | Yes | Yes | Yes |
 | Face ID / Touch ID | Yes | Yes | Native | Yes | Yes | Yes |
-| Apple Watch | Yes | No | Yes | Yes | No | Yes |
+| Apple Watch | Yes | No | Yes | No | No | Yes |
 | Widgets | Yes | Basic | Yes | Yes | Basic | Yes |
 | KDBX format | No | No | No | Yes | No | Yes |
 | Offline access | Yes | Yes | Yes | Yes | Limited | Yes |

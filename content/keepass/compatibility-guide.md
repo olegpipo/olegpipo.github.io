@@ -2,7 +2,7 @@
 title: "KeePass KDBX Compatibility: Apps & Versions"
 description: "Which KeePass apps support KDBX 4.0? Full compatibility chart for iOS, Android, Mac & Windows. Avoid sync-breaking surprises."
 date: 2026-02-13
-lastmod: 2026-08-25
+lastmod: 2026-09-19
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -174,9 +174,9 @@ You must use an older application that only supports KDBX 3.1.
 
 A common question is whether KeePassXC works on iPhone. The short answer is no -- KeePassXC is a desktop application for Windows, macOS, and Linux, and the developers have not released a KeePass iOS app. If you use KeePassXC on your computer and want to access the same database on your iPhone, you need a separate iOS-compatible application. Our guide to [KeePassXC alternatives for iPhone and iPad](/keepass/keepassxc-ios-alternatives/) walks through each option and how to sync your existing `.kdbx` file to iOS. The original KeePass 2.x has no iOS app either; if that is what you run on Windows, our guide to [KeePass for iPhone](/keepass/keepass-ios/) covers the same apps plus how to check that your database is in KDBX 4 format.
 
-The three best options for using KeePass on iPhone are **Strongbox**, **KeePassium**, and **PanicVault**. All three fully support KDBX 4.0, including Argon2d key derivation and ChaCha20 encryption, so you can open a KDBX file on iPhone without converting or downgrading your database. Each app also supports iOS AutoFill, Face ID or Touch ID unlock, and Apple Watch integration. For a detailed comparison of these options, see our guide to [KeePass apps for Apple devices](/compare/keepass-apps-apple/).
+The three best options for using KeePass on iPhone are **Strongbox**, **KeePassium**, and **PanicVault**. All three fully support KDBX 4.0, including Argon2d key derivation and ChaCha20 encryption, so you can open a KDBX file on iPhone without converting or downgrading your database. Each app also supports iOS AutoFill and Face ID or Touch ID unlock. Apple Watch support differs: Strongbox has an Apple Watch app (a Strongbox Pro feature), while KeePassium and PanicVault have none. For a detailed comparison of these options, see our guide to [KeePass apps for Apple devices](/compare/keepass-apps-apple/).
 
-Syncing your database to your iPhone is straightforward. All three apps support iCloud Drive, Dropbox, OneDrive, and local file transfer. If you are already in the Apple ecosystem, [iCloud sync for KeePass](/cloud-sync/icloud-sync/) is the most seamless option -- your KDBX file stays up to date automatically across your Mac, iPhone, and iPad without any third-party service.
+Syncing your database to your iPhone is straightforward. All three apps support iCloud Drive and local file transfer, but they reach other cloud services differently: Strongbox has Dropbox and OneDrive built in, KeePassium reaches Dropbox and OneDrive through the iOS Files app, and PanicVault has iCloud Drive and Google Drive built in and opens Dropbox or OneDrive files through the Files app. If you are already in the Apple ecosystem, [iCloud sync for KeePass](/cloud-sync/icloud-sync/) is the most seamless option -- your KDBX file stays up to date automatically across your Mac, iPhone, and iPad without any third-party service.
 
 If you are switching from a desktop-only KeePass setup, the transition is simple: save your database to a cloud folder your iPhone can access, install one of these apps, and open the file. No export, no conversion, no data loss. The open KDBX format ensures your passwords move freely between platforms.
 

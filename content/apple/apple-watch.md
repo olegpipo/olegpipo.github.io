@@ -2,7 +2,7 @@
 title: "Using a Password Manager with Apple Watch"
 description: "How to access passwords and TOTP codes from your Apple Watch, including setup, complications, quick lookups, emergency access, and limitations of wrist-based password management."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-09-19
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -17,7 +17,7 @@ The Apple Watch is not a replacement for your iPhone or Mac as a primary passwor
 
 The most practical Apple Watch use case for password management is displaying time-based one-time passwords (TOTP codes). When you are logging into a service that requires a six-digit verification code, glancing at your wrist is faster than unlocking your phone, opening your password manager, finding the entry, and copying the code. This is especially valuable when your phone is across the room, in your bag, or charging.
 
-PanicVault supports displaying TOTP codes on Apple Watch, giving you a dedicated complication that shows your most frequently used codes without requiring you to navigate through the full app. For users who rely on two-factor authentication across dozens of services -- and you should, as outlined in our guide to the [best authenticator apps](/two-factor-authentication/best-authenticator-apps/) -- having codes on your wrist removes one of the friction points that causes people to skip 2FA entirely.
+For users who rely on two-factor authentication across dozens of services -- and you should, as outlined in our guide to the [best authenticator apps](/two-factor-authentication/best-authenticator-apps/) -- having codes on your wrist removes one of the friction points that causes people to skip 2FA entirely. PanicVault has no Apple Watch app, so its TOTP codes live in the iPhone, iPad and Mac apps.
 
 ### Quick Lookups
 
@@ -29,7 +29,7 @@ If your iPhone is lost, stolen, broken, or out of battery, your Apple Watch can 
 
 ### Unlock Confirmation
 
-Apple Watch already serves as an authentication device for unlocking your Mac (when configured through [Face ID and Touch ID settings](/apple/face-id-touch-id-setup/)) and approving certain system operations. Password managers that integrate with watchOS extend this concept, using the watch as a proximity-based confirmation factor for vault access on nearby devices.
+Apple Watch already serves as an authentication device for unlocking your Mac (when configured through [Face ID and Touch ID settings](/apple/face-id-touch-id-setup/)) and approving certain system operations. This is a macOS feature, not something a password manager's Watch app provides: when an app on your Mac asks you to authenticate -- to view passwords, for example -- the request can appear on your watch, and you approve it by double-clicking the side button ([Apple's guide](https://support.apple.com/guide/mac-help/mchl4f800a42/mac)). PanicVault's help center, for instance, notes that its [Mac browser helper](/help/browser-extension/) works with a Touch ID sensor or an Apple Watch configured for authentication.
 
 ## Setting Up Password Management on Apple Watch
 
@@ -37,11 +37,11 @@ Getting your passwords accessible on your Apple Watch requires a few deliberate 
 
 ### Step 1: Install the Watch App
 
-If your password manager offers a watchOS companion app, it installs through the Watch app on your iPhone. Open the Watch app, scroll to the list of available apps, and install the password manager's watchOS component. Not all password managers offer Apple Watch apps -- this is one area where KeePass-compatible apps designed specifically for Apple hardware, like PanicVault, have an advantage over cross-platform managers that treat watchOS as an afterthought.
+If your password manager offers a watchOS companion app, it installs through the Watch app on your iPhone. Open the Watch app, scroll to the list of available apps, and install the password manager's watchOS component. Not all password managers offer Apple Watch apps.
 
 ### Step 2: Configure Which Entries to Sync
 
-Apple Watch has limited storage and a small screen, so syncing your entire vault is neither practical nor desirable. Most watch-compatible password managers let you select specific entries or folders to sync to the watch. Choose entries you actually need on your wrist:
+Apple Watch has limited storage and a small screen, so syncing your entire vault is neither practical nor desirable. Where your password manager lets you choose which items go to the watch, pick entries you actually need on your wrist:
 
 - **TOTP codes** for your most-used two-factor services
 - **Wi-Fi passwords** you frequently share or enter on other devices
@@ -53,7 +53,7 @@ Keep the synced set small. A watch screen showing 200 entries is not useful -- y
 
 ### Step 3: Set Up Complications
 
-Complications are the small widgets on your Apple Watch face that display information at a glance. A password manager complication can show your most recent TOTP code, a count of expiring codes, or a shortcut to launch the app. Configure a complication on whichever watch face you use most frequently so that TOTP access is one tap or zero taps away.
+Complications are the small widgets on your Apple Watch face that display information at a glance. Depending on the app, a password manager complication can show a one-time code or act as a shortcut to launch the app. If your password manager offers one, configure a complication on whichever watch face you use most frequently so that TOTP access is one tap or zero taps away.
 
 ### Step 4: Configure Watch Security
 
@@ -67,7 +67,7 @@ Your Apple Watch inherits some security from your iPhone pairing, but you should
 
 Understanding the data flow helps you assess the security of passwords on your wrist. When you sync entries to your Apple Watch, the data travels from your iPhone to your watch over an encrypted Bluetooth or Wi-Fi connection. The watch stores the synced data in its own encrypted storage, protected by the watch's Secure Enclave (the same hardware security module discussed in our [Secure Enclave deep dive](/apple/secure-enclave/)).
 
-The Apple Watch does not connect directly to your cloud storage to fetch the KeePass database. It receives pre-decrypted, selected entries from the iPhone companion app. This means the watch never handles your full encrypted database, never processes your master password, and never performs key derivation. The security boundary is your iPhone -- if the iPhone is compromised, the watch data is also compromised, but the watch itself does not expand the attack surface for your vault.
+Password manager Watch apps typically receive only selected items from the iPhone app, so the watch never downloads or unlocks your whole vault: it does not process your master password or perform key derivation. The security boundary is your iPhone -- if the iPhone is compromised, the watch data is also compromised -- but the watch is still one more device holding decrypted copies of the entries you chose.
 
 For users who sync their KeePass database across [iPhone, iPad, and Mac](/apple/iphone-ipad-mac/), the Apple Watch adds another endpoint in the chain, but one that holds only a curated subset of your data rather than the complete vault.
 
@@ -79,9 +79,9 @@ The Apple Watch is a remarkable piece of hardware, but it has real constraints t
 
 The Apple Watch display, even on the Ultra model, is small. Displaying a 20-character password means tiny text, horizontal scrolling, or both. Complex passwords with mixed cases and special characters are difficult to read and even harder to manually transcribe. TOTP codes -- six digits, large font -- are ideal for the watch screen. Full passwords are usable but not comfortable.
 
-### No Keyboard Input
+### Limited Text Input
 
-You cannot type a master password on the Apple Watch. This means the watch app either inherits authentication from the iPhone or uses biometric authentication (wrist detection plus passcode). You will not be entering your KeePass database master password on the watch directly.
+Typing a long master password on the Apple Watch is impractical: text entry is limited to dictation, Scribble and, on some models, a tiny on-screen keyboard. Watch apps therefore rely on the iPhone app to send them data it has already unlocked, and protect that data with the watch's own passcode and wrist detection. You will not be entering your master password on the watch directly.
 
 ### Storage Constraints
 
@@ -97,7 +97,7 @@ If your Apple Watch is a GPS-only model (not cellular), it depends on proximity 
 
 ### No AutoFill
 
-Unlike on iPhone where password managers integrate with the system AutoFill framework through [credential provider extensions](/apple/credential-provider-extensions/), there is no AutoFill on Apple Watch. Every credential access is a manual lookup. You see the password on your watch screen and type it into whatever device or form you need it in.
+On iPhone, iPad and Mac, password managers integrate with the system AutoFill framework through [credential provider extensions](/apple/credential-provider-extensions/). Those extensions do not exist on watchOS, so no third-party password manager can fill passwords on the watch. The watch's own AutoFill suggestions, available since watchOS 6.2 in watch apps that support them, come from iCloud Keychain. With a password manager's Watch app, every credential access is a manual lookup: you see the password on your watch screen and type it into whatever device or form you need it in.
 
 ## Security Considerations
 
@@ -135,16 +135,14 @@ Not everyone needs passwords on their wrist. The Apple Watch password management
 
 If you rarely use 2FA codes and always have your phone within reach, the Apple Watch adds minimal value for password management. In that case, focusing on the [best password manager for iPhone](/apple/best-password-manager-iphone/) is a better use of your time. But if you fall into any of the categories above, the convenience is significant.
 
-## Setting Up PanicVault on Apple Watch
+## PanicVault and Apple Watch
 
-PanicVault's watchOS app focuses on the use cases that actually work well on a small screen: TOTP codes, favorited credentials, and emergency access entries. After installing the watchOS companion from the Watch app on your iPhone:
+PanicVault does not currently have an Apple Watch app. There is no watchOS companion and no complication, and PanicVault cannot show your entries or TOTP codes on the watch.
 
-1. Open PanicVault on your iPhone and navigate to Settings, then Apple Watch.
-2. Select the entries and TOTP codes you want available on your wrist.
-3. Choose a complication style for your preferred watch face -- the circular complication shows a live TOTP countdown, while the rectangular complication shows the code and service name.
-4. The selected entries sync automatically whenever your watch and iPhone are in range.
+If you use PanicVault and wear an Apple Watch, here is what works today:
 
-Because PanicVault uses the standard KeePass KDBX format, the entries you sync to your watch are the same entries available on your [iPhone, iPad, and Mac](/apple/iphone-ipad-mac/). There is no separate vault, no separate account, and no additional subscription. Your database file remains the single source of truth, and the watch displays a curated view of it.
+- **TOTP codes on your iPhone.** An entry with a [TOTP secret](/help/two-factor-authentication/) shows the live code and a countdown in its detail view; tap the code to copy it. The same codes are available in PanicVault on your [iPad and Mac](/apple/iphone-ipad-mac/).
+- **Approving requests on your Mac.** macOS lets an unlocked Apple Watch approve authentication requests on a nearby Mac. PanicVault's [Mac browser helper](/help/browser-extension/) works with a Touch ID sensor or an Apple Watch configured for authentication.
 
 ## Conclusion
 
