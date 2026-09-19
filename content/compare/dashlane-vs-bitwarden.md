@@ -2,7 +2,7 @@
 title: "Dashlane vs Bitwarden (2026)"
 description: "Dashlane vs Bitwarden compared for 2026. Features, pricing, security, and which password manager offers better value for your money."
 date: 2026-03-06
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -168,7 +168,6 @@ Both are secure enough for the vast majority of users. The practical risk of eit
 | Windows | Browser extension + web vault | Desktop app + browser extension |
 | Linux | Browser extension + web vault | Desktop app + browser extension + CLI |
 | Android | Mobile app | Mobile app |
-| Apple Watch | No | No |
 | Web | Full web vault | Full web vault |
 | CLI | No | Yes |
 

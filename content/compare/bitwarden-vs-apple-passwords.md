@@ -2,7 +2,7 @@
 title: "Bitwarden vs Apple Passwords: 5 Differences That Decide It (2026)"
 description: "Both are free and secure, so it comes down to one thing: do you own any non-Apple device? Platform support, TOTP, security, and pricing compared for 2026."
 date: 2026-03-08
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -154,7 +154,6 @@ Both are excellent. Bitwarden wins on transparency -- open-source code you can v
 |---|---|---|
 | iPhone / iPad | Mobile app | Built-in |
 | Mac | Desktop app + browser extensions | Built-in |
-| Apple Watch | Limited | Yes |
 | Windows | Desktop app + browser extensions + web vault | iCloud for Windows (Chrome only) |
 | Android | Mobile app | No |
 | Linux | Desktop app + browser extensions + web vault | No |

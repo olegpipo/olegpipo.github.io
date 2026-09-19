@@ -76,11 +76,9 @@ Bitwarden offers a capable iOS app backed by its open-source architecture and co
 
 **Widget support**: Bitwarden offers a basic widget for quick vault access. It is functional but not as visually refined as 1Password's widget.
 
-**Apple Watch**: No dedicated Apple Watch app. This is a notable gap for users who rely on their watch for quick TOTP code access.
-
 **Strengths**: Open source, free tier with core features, $19.80/year premium, self-hosting option, Argon2 support on premium.
 
-**Limitations**: No Apple Watch app. Autofill occasionally less reliable than 1Password for complex login flows. UI is functional but not as polished. See our [PanicVault vs Bitwarden comparison](/compare/panicvault-vs-bitwarden/) for a deeper look at the trade-offs.
+**Limitations**: Autofill occasionally less reliable than 1Password for complex login flows. UI is functional but not as polished. See our [PanicVault vs Bitwarden comparison](/compare/panicvault-vs-bitwarden/) for a deeper look at the trade-offs.
 
 ### Apple Passwords
 
@@ -91,8 +89,6 @@ Apple's built-in Passwords app (iOS 18+) is the zero-configuration option. It is
 **Face ID / Touch ID**: Native biometric integration. No separate unlock step -- the system authenticates you as part of the autofill flow. This is the smoothest biometric experience of any option on this list.
 
 **Widget support**: The Passwords app widget shows verification codes and recently used credentials. It integrates naturally with the iOS home screen and lock screen.
-
-**Apple Watch**: iCloud Keychain syncs to Apple Watch, providing access to stored passwords and verification codes on your wrist.
 
 **Strengths**: Zero configuration. System-level integration no third-party can fully match. Free. Passkey support. Verification codes. For a detailed breakdown, see our [Apple Passwords app comparison](/apple/apple-passwords-app-comparison/).
 
@@ -106,7 +102,7 @@ PanicVault is purpose-built for the Apple ecosystem and uses the open KDBX forma
 
 **Face ID / Touch ID**: Native biometric unlock using Apple's LocalAuthentication framework. The experience is smooth and on par with 1Password. Configurable lock timeouts let you balance security with convenience.
 
-**Widget support**: Home screen and lock screen widgets provide quick access to TOTP codes and frequently used credentials. The widgets follow Apple's design language and feel native.
+**Widget support**: None. PanicVault keeps TOTP codes and credentials inside the app, behind Face ID, rather than on the home or lock screen.
 
 **Apple Watch**: No Apple Watch app. TOTP codes live in the iPhone, iPad and Mac apps, where each entry shows its live code, ready to copy.
 
@@ -146,8 +142,6 @@ Both apps connect to your KDBX database wherever it lives -- iCloud Drive, Dropb
 |---|---|---|---|---|---|---|
 | System autofill | Yes | Yes | Native | Yes | Yes | Yes |
 | Face ID / Touch ID | Yes | Yes | Native | Yes | Yes | Pro |
-| Apple Watch | Yes | No | Yes | No | No | Yes |
-| Widgets | Yes | Basic | Yes | Yes | Basic | Yes |
 | KDBX format | No | No | No | Yes | No | Yes |
 | Offline access | Yes | Yes | Yes | Yes | Limited | Yes |
 | Price (annual) | $48 | $0-20 | $0 | One-time | $60 | $0-24.99 |
@@ -156,7 +150,7 @@ Both apps connect to your KDBX database wherever it lives -- iCloud Drive, Dropb
 
 **If you want the most polished iOS experience and do not mind a subscription**: 1Password remains the premium choice. The autofill reliability, Apple Watch app, and overall UI quality justify the cost for many users.
 
-**If budget matters more than polish**: Bitwarden's free tier is genuinely functional, and the $19.80/year premium tier adds features that most users will appreciate. The lack of an Apple Watch app is the main mobile drawback.
+**If budget matters more than polish**: Bitwarden's free tier is genuinely functional, and the $19.80/year premium tier adds features that most users will appreciate.
 
 **If you never leave the Apple ecosystem**: Apple Passwords is hard to beat as the best password manager for Apple devices. Zero configuration, system-deep integration, and no cost. Just understand the lock-in: your data lives in iCloud Keychain and leaving means manual CSV export.
 

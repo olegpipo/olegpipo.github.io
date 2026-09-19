@@ -163,9 +163,8 @@ Both 1Password and Bitwarden offer broad cross-platform support, which is a sign
 | Web vault | Yes | Yes |
 | Browser extensions | Safari, Chrome, Firefox, Edge, Brave | Safari, Chrome, Firefox, Edge, Brave, Opera, Vivaldi, Tor |
 | CLI | Yes | Yes |
-| Apple Watch | Yes (view passwords) | No |
 
-The coverage is nearly identical. Bitwarden supports a slightly wider range of browser extensions (including Tor Browser and Vivaldi). 1Password offers an Apple Watch companion app. For the vast majority of users, both managers will run on every device they own.
+The coverage is nearly identical. Bitwarden supports a slightly wider range of browser extensions (including Tor Browser and Vivaldi). For the vast majority of users, both managers will run on every device they own.
 
 ## Data Portability
 
