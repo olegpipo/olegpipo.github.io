@@ -2,7 +2,7 @@
 title: "Best PM for Healthcare Workers"
 description: "Find the best password manager for healthcare workers in 2026. HIPAA compliance, audit trails, shared EMR credentials, and mobile access compared."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -78,7 +78,7 @@ Keeper is the strongest option for healthcare organizations that need to check e
 
 ### 2. 1Password Business
 
-**Price**: Business starts at $7.99/user/month
+**Price**: Business starts at $8.99/user/month
 
 1Password Business combines enterprise security features with the best user experience of any password manager. Its polished interface reduces training time, which matters in healthcare settings where staff turnover is high and training budgets are thin.
 

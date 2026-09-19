@@ -2,7 +2,7 @@
 title: "1Password vs LastPass (2026)"
 description: "1Password vs LastPass compared for 2026. Security track records, pricing, features, and whether LastPass has recovered from its 2022 breach."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -15,7 +15,7 @@ faq:
   - q: "Does LastPass still have a free plan?"
     a: "Yes, but it is limited to one device type -- either mobile or desktop, not both. You get unlimited passwords but cannot sync between your phone and computer without upgrading to Premium at $36/year. 1Password has no free plan, only a 14-day trial."
   - q: "Is 1Password worth the extra cost over LastPass?"
-    a: "1Password costs $35.88/year vs LastPass Premium at $36/year, so they are nearly identical in price. Given 1Password's clean security record, Secret Key protection, Travel Mode, and polished interface, most users will find 1Password the better value. The small price difference makes this an easy recommendation."
+    a: "1Password Individual costs $47.88/year vs LastPass Premium at $36/year, so 1Password is about $12 a year more. Given 1Password's clean security record, Secret Key protection, Travel Mode, and polished interface, most users will find 1Password the better value. An extra $1 a month is a small price for a much stronger security track record."
 ---
 
 The 1Password vs LastPass comparison has changed fundamentally since 2022. For years, these were the two most recommended password managers, trading places at the top of review lists. Then LastPass suffered a catastrophic data breach that exposed encrypted vault data for millions of users. That event is the elephant in every room where LastPass is discussed, and any honest comparison must address it directly. This comparison is part of our [password manager comparisons hub](/compare/), where we evaluate every major password manager so you can make an informed decision.
@@ -41,16 +41,16 @@ LastPass has since made significant security improvements: mandatory 12-characte
 
 1Password's Secret Key architecture would have made the same attack far less damaging. Even with stolen vault data and a compromised master password, the attacker would also need each user's Secret Key -- a 128-bit key stored only on enrolled devices, never on 1Password's servers.
 
-## Pricing: Nearly Identical
+## Pricing: 1Password Now Costs a Little More
 
-One of the more surprising aspects of this comparison is how close the pricing is. Given the difference in security track records, you might expect a significant price gap. There is not.
+Until 1Password raised its prices in March 2026, the two cost almost exactly the same. Now 1Password Individual costs about $12 a year more than LastPass Premium, and 1Password Families about $24 a year more than LastPass Families. Given the difference in security track records, the gap is still modest.
 
 ### 1Password Pricing
 
 | Plan | Cost | Key Features |
 |---|---|---|
-| Individual | $35.88/year ($2.99/month) | Unlimited passwords, all platforms, Watchtower, Travel Mode, Secret Key |
-| Family | $59.88/year ($4.99/month) | Up to 5 members, shared vaults, granular permissions |
+| Individual | $47.88/year ($3.99/month) | Unlimited passwords, all platforms, Watchtower, Travel Mode, Secret Key |
+| Family | $71.88/year ($5.99/month) | Up to 5 members, shared vaults, granular permissions |
 | No free tier | -- | 14-day trial only |
 
 ### LastPass Pricing
@@ -65,11 +65,11 @@ One of the more surprising aspects of this comparison is how close the pricing i
 
 | | 1Password | LastPass Premium |
 |---|---|---|
-| Individual (5 years) | $179.40 | $180.00 |
-| Family (5 years) | $299.40 | $240.00 |
-| Difference (individual) | -- | +$0.60 |
+| Individual (5 years) | $239.40 | $180.00 |
+| Family (5 years) | $359.40 | $240.00 |
+| Difference (individual) | -- | -$59.40 |
 
-The individual plans are essentially the same price -- a difference of sixty cents over five years. LastPass's family plan is slightly cheaper and includes six users instead of five. The free tier gives LastPass a nominal advantage for users who only need passwords on one device type.
+LastPass is now the cheaper option: $59.40 less over five years for an individual and $119.40 less for a family, and its family plan includes six users instead of five. The free tier gives LastPass a nominal advantage for users who only need passwords on one device type.
 
 For a full breakdown across all major managers, see our [pricing comparison guide](/compare/pricing-comparison/).
 
@@ -114,7 +114,7 @@ Setting aside the breach, both 1Password and LastPass are mature password manage
 
 ### Comparison Summary Table
 
-| Feature | 1Password ($35.88/yr) | LastPass Free | LastPass Premium ($36/yr) |
+| Feature | 1Password ($47.88/yr) | LastPass Free | LastPass Premium ($36/yr) |
 |---|---|---|---|
 | Unlimited passwords | Yes | Yes | Yes |
 | Unlimited devices | Yes | 1 device type | Yes |
@@ -157,7 +157,9 @@ Setting aside the breach, both 1Password and LastPass are mature password manage
 
 **Familiarity.** LastPass has been around since 2008 and was the default recommendation for years. Many users are already familiar with its interface and workflow. Switching has a learning curve and migration cost that some users prefer to avoid.
 
-**Family plan value.** LastPass Families at $48/year supports six users, compared to 1Password Families at $59.88/year for five users. For families, LastPass is cheaper per user.
+**Lower price.** LastPass Premium at $36/year costs about $12 a year less than 1Password Individual at $47.88/year.
+
+**Family plan value.** LastPass Families at $48/year supports six users, compared to 1Password Families at $71.88/year for five users. For families, LastPass is cheaper per user.
 
 **Dark web monitoring.** LastPass Premium monitors breach databases for your email addresses and alerts you when credentials appear in known data leaks. 1Password checks passwords against Have I Been Pwned through Watchtower but does not offer the same breadth of email-based dark web scanning.
 
@@ -185,7 +187,7 @@ Both managers cover all major platforms. 1Password has a slight edge with a nati
 - Users who want native desktop apps with CLI access
 - Apple ecosystem users who want Apple Watch support and polished macOS/iOS apps
 - Anyone currently on LastPass who is reconsidering after the breach
-- Users willing to pay $36/year for a premium experience with stronger security architecture
+- Users willing to pay $48/year for a premium experience with stronger security architecture
 
 ## Who Should Choose LastPass
 
@@ -213,11 +215,11 @@ PanicVault does not offer web vaults, emergency access, or cross-platform deskto
 
 ## The Bottom Line
 
-In 2026, 1Password vs LastPass is not a close comparison. At nearly identical prices ($35.88/year vs $36/year), 1Password offers a cleaner security track record, the Secret Key architecture, Travel Mode, a more polished interface, CLI access, and Apple Watch support. LastPass offers a limited free tier, emergency access, and dark web monitoring.
+In 2026, 1Password vs LastPass is not a close comparison. For about $12 a year more ($47.88/year vs $36/year), 1Password offers a cleaner security track record, the Secret Key architecture, Travel Mode, a more polished interface, CLI access, and Apple Watch support. LastPass offers a limited free tier, emergency access, and dark web monitoring.
 
 The breach changed this comparison permanently. Before 2022, LastPass and 1Password were genuinely comparable products with different strengths. Since the breach, 1Password has a decisive security advantage that LastPass's improvements have not fully closed. The stolen vault data is still out there, still being subjected to brute-force attempts, and LastPass's architectural decision not to implement a Secret Key equivalent means the same type of attack could theoretically succeed again.
 
-For users choosing between these two in 2026, 1Password is the clear recommendation. The price is the same, the features are competitive, and the security story is not comparable.
+For users choosing between these two in 2026, 1Password is the clear recommendation. The price difference is about $1 a month, the features are competitive, and the security story is not comparable.
 
 ## Related Articles
 

@@ -2,14 +2,14 @@
 title: "1Password Review (2026)"
 description: "Complete 1Password review for 2026. Pricing, security architecture, key features, pros and cons, and who this premium password manager is best for."
 date: 2026-03-08
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Password Managers"
 faq:
   - q: "Is 1Password worth the price in 2026?"
-    a: "For users who value polish, convenience, and strong security features like the Secret Key and Travel Mode, 1Password justifies its $35.88/year price. However, budget-conscious users can get comparable core security from Bitwarden at $19.80/year or free. The value depends on whether premium features matter to your workflow."
+    a: "For users who value polish, convenience, and strong security features like the Secret Key and Travel Mode, 1Password justifies its $47.88/year price. However, budget-conscious users can get comparable core security from Bitwarden at $19.80/year or free. The value depends on whether premium features matter to your workflow."
   - q: "Does 1Password have a free plan?"
-    a: "No. 1Password offers a 14-day free trial but no permanent free tier. Every user must subscribe to the individual plan at $35.88/year or the family plan at $59.88/year after the trial ends. This is a notable drawback compared to competitors like Bitwarden."
+    a: "No. 1Password offers a 14-day free trial but no permanent free tier. Every user must subscribe to the individual plan at $47.88/year or the family plan at $71.88/year after the trial ends. This is a notable drawback compared to competitors like Bitwarden."
   - q: "How secure is 1Password?"
     a: "1Password uses AES-256-GCM encryption, a unique Secret Key system, PBKDF2 with 650,000 iterations, and zero-knowledge architecture. It has been independently audited by Cure53 and has never suffered a data breach. The Secret Key adds an extra layer of protection beyond your master password."
   - q: "Can 1Password be used on Android and Windows?"
@@ -28,16 +28,16 @@ But reputation alone does not justify a subscription. In 2026, the password mana
 
 | Plan | Annual Cost | Monthly Equivalent | Users | Key Inclusions |
 |---|---|---|---|---|
-| Individual | $35.88/yr | $2.99/mo | 1 | All features, all platforms, Watchtower, Travel Mode |
-| Family | $59.88/yr | $4.99/mo | Up to 5 | Shared vaults, permissions, guest accounts |
-| Teams Starter | $239.40/yr | $19.95/mo | Up to 10 | Admin console, usage reports |
-| Business | $95.88/user/yr | $7.99/user/mo | Unlimited | Advanced policies, custom groups, SSO |
+| Individual | $47.88/yr | $3.99/mo | 1 | All features, all platforms, Watchtower, Travel Mode |
+| Family | $71.88/yr | $5.99/mo | Up to 5 | Shared vaults, permissions, guest accounts |
+| Teams Starter | $299.40/yr | $24.95/mo | Up to 10 | Admin console, usage reports |
+| Business | $107.88/user/yr | $8.99/user/mo | Unlimited | Advanced policies, custom groups, SSO |
 
 There is a 14-day free trial for individuals and families, but no permanent free tier. This is 1Password's most frequently cited drawback -- competitors like Bitwarden offer fully functional free plans, and even Dashlane provides a limited free option. For a detailed comparison of what you get at each price point across the market, see our [pricing comparison guide](/compare/pricing-comparison/).
 
 The upside of 1Password's pricing is simplicity: every feature is included. There are no add-on modules, no premium-only security features hidden behind a higher tier, and no surprise charges. You pay one price and get everything.
 
-Over five years, an individual 1Password subscription costs approximately $180. A family plan for five users works out to about $12 per person per year -- reasonable for the feature set, though still more than Bitwarden's family plan at $47.88/year for six users.
+Over five years, an individual 1Password subscription costs approximately $240. A family plan for five users works out to about $14 per person per year -- reasonable for the feature set, though still more than Bitwarden's family plan at $47.88/year for six users.
 
 ## Security Architecture
 
@@ -146,7 +146,7 @@ PanicVault lacks some of 1Password's cloud-specific features like Travel Mode an
 
 ## The Bottom Line
 
-1Password remains one of the best password managers available in 2026. Its combination of security architecture, polish, and features like the Secret Key and Travel Mode sets it apart from most competitors. If you are willing to pay $35.88/year for a premium experience and do not need open-source transparency or a free tier, 1Password is a strong choice that you are unlikely to outgrow.
+1Password remains one of the best password managers available in 2026. Its combination of security architecture, polish, and features like the Secret Key and Travel Mode sets it apart from most competitors. If you are willing to pay $47.88/year for a premium experience and do not need open-source transparency or a free tier, 1Password is a strong choice that you are unlikely to outgrow.
 
 However, the password manager market has matured significantly. Competitors offer [strong free options](/compare/best-free-password-managers/) and open-source alternatives that match 1Password's core security. Whether 1Password's premium features justify its premium price depends entirely on your priorities.
 

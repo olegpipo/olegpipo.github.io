@@ -2,14 +2,14 @@
 title: "Best PM for Small Business"
 description: "The best password managers for small businesses in 2026. Team sharing, admin controls, compliance, affordable per-seat pricing, and onboarding compared."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
   - q: "What is the best password manager for small businesses?"
-    a: "Bitwarden Teams at $4/user/month offers the best value for small businesses. 1Password Business at $7.99/user/month provides a more polished experience with better admin controls. Both support team sharing and compliance features."
+    a: "Bitwarden Teams at $4/user/month offers the best value for small businesses. 1Password Business at $8.99/user/month provides a more polished experience with better admin controls. Both support team sharing and compliance features."
   - q: "How much does a business password manager cost?"
-    a: "Business password manager pricing typically ranges from $3 to $8 per user per month. Keeper Business starts at $2/user/month (billed annually), Bitwarden Teams is $4/user/month, and 1Password Business is $7.99/user/month."
+    a: "Business password manager pricing typically ranges from $3 to $9 per user per month. Keeper Business starts at $2/user/month (billed annually), Bitwarden Teams is $4/user/month, and 1Password Business is $8.99/user/month."
   - q: "Do small businesses really need a password manager?"
     a: "Yes. Small businesses are disproportionately targeted by cyberattacks because they often lack security infrastructure. A password manager prevents password reuse, enables secure credential sharing between team members, and provides admin oversight."
   - q: "Can employees share passwords securely in a business password manager?"
@@ -70,7 +70,7 @@ Event logs, login reports, policy enforcement documentation, and export capabili
 
 ### 1Password Business
 
-**Price**: $7.99/user/month (billed annually)
+**Price**: $8.99/user/month (billed annually)
 
 1Password Business is the most polished option for small businesses that want comprehensive admin controls, excellent UX, and minimal friction for employees. The higher price point buys a significantly better experience than cheaper alternatives.
 
@@ -86,9 +86,9 @@ Event logs, login reports, policy enforcement documentation, and export capabili
 - 24/7 business support
 
 **Drawbacks:**
-- $7.99/user/month is the highest per-seat price on this list
-- For a 10-person team, that is $960/year -- a significant line item
-- No free tier or trial for small teams to test before committing
+- $8.99/user/month is the highest per-seat price on this list
+- For a 10-person team, that is about $1,079/year -- a significant line item
+- No free tier, only a 14-day free trial
 - Proprietary format creates vendor dependence
 - Cloud-only with no self-hosting option
 
@@ -98,7 +98,7 @@ Event logs, login reports, policy enforcement documentation, and export capabili
 
 **Price**: $4/user/month (billed annually)
 
-Bitwarden Teams offers the best value for small businesses that need shared password management with admin controls. At half the price of 1Password Business, it covers the essential features most small businesses need.
+Bitwarden Teams offers the best value for small businesses that need shared password management with admin controls. At less than half the price of 1Password Business, it covers the essential features most small businesses need.
 
 **Why it works for small businesses:**
 - $4/user/month is the most affordable mainstream option
@@ -162,7 +162,7 @@ Dashlane Business bundles VPN and dark web monitoring into the base price, makin
 - Phishing alerts for the entire team
 
 **Drawbacks:**
-- $8/user/month matches 1Password's pricing without the same polish
+- $8/user/month is close to 1Password's $8.99 without the same polish
 - Browser-only desktop experience (no native Mac app)
 - Fewer admin features than 1Password or Keeper
 - Less established in the enterprise market
@@ -201,7 +201,7 @@ NordPass Business offers competitive pricing with a clean interface and the opti
 
 | Solution | Monthly | Annual | Included Extras |
 |---|---|---|---|
-| 1Password Business | $79.90 | $958.80 | Family accounts, 5 GB/user |
+| 1Password Business | $89.90 | $1,078.80 | Family accounts, 5 GB/user |
 | Bitwarden Teams | $40.00 | $480.00 | Open source, self-host option |
 | Keeper Business | $20.00* | $240.00* | *Base price; add-ons extra |
 | Dashlane Business | $80.00 | $960.00 | VPN, dark web monitoring |
@@ -239,9 +239,9 @@ Rolling out a password manager across a small team is straightforward if you fol
 
 ## Our Top Pick
 
-For most small businesses, **Bitwarden Teams** at $4/user/month offers the best balance of features, cost, and reliability. The annual cost for a 10-person team ($480) is half of 1Password or Dashlane, and the core features -- shared vaults, admin controls, event logging, and cross-platform support -- cover what most small businesses need. The self-hosting option via Vaultwarden is a bonus for businesses with technical leadership who want full data control.
+For most small businesses, **Bitwarden Teams** at $4/user/month offers the best balance of features, cost, and reliability. The annual cost for a 10-person team ($480) is half of Dashlane and less than half of 1Password, and the core features -- shared vaults, admin controls, event logging, and cross-platform support -- cover what most small businesses need. The self-hosting option via Vaultwarden is a bonus for businesses with technical leadership who want full data control.
 
-For small businesses that prioritize employee experience and can budget for it, **1Password Business** at $7.99/user/month provides the most polished interface, the best onboarding experience, and included family accounts that employees genuinely appreciate.
+For small businesses that prioritize employee experience and can budget for it, **1Password Business** at $8.99/user/month provides the most polished interface, the best onboarding experience, and included family accounts that employees genuinely appreciate.
 
 For businesses in regulated industries where compliance documentation is a hard requirement, **Keeper Business** offers the most comprehensive compliance reporting and policy enforcement, though calculate the total cost including add-ons before committing.
 

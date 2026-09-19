@@ -2,7 +2,7 @@
 title: "How to Share Passwords Securely With Family"
 description: "Safe methods for sharing passwords with family members. Covers shared vaults, secure sharing features, and best practices for household credential management."
 date: 2026-02-14
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Guides & Tutorials"
 ---
@@ -81,7 +81,7 @@ Cloud-based password managers like 1Password and Bitwarden include purpose-built
 
 ### 1Password Family Vault
 
-1Password's Family plan ($4.99/month for up to 5 members) includes shared vaults alongside private ones. Each family member gets their own account with their own master password, plus access to designated shared vaults.
+1Password's Family plan ($5.99/month for up to 5 members, billed annually) includes shared vaults alongside private ones. Each family member gets their own account with their own master password, plus access to designated shared vaults.
 
 - **Granular control**: You can create multiple shared vaults (e.g., "Streaming," "Household," "Kids") and assign different family members to each
 - **Per-person access**: Family organizers can add or remove members from specific vaults

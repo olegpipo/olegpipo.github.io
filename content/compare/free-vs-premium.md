@@ -117,7 +117,7 @@ KeePassXC gives you KDBX portability for free but lacks Safari support and mobil
 
 ### You Need Family Sharing With Permissions
 
-Bitwarden Families ($47.88/year) or 1Password Families ($59.88/year) provide managed shared vaults with permissions that free tools cannot replicate. See our [best for families](/compare/best-for-families/) guide.
+Bitwarden Families ($47.88/year) or 1Password Families ($71.88/year) provide managed shared vaults with permissions that free tools cannot replicate. See our [best for families](/compare/best-for-families/) guide.
 
 ### You Want Emergency Access
 
@@ -150,7 +150,7 @@ This approach ensures you never overpay. You upgrade in response to a real need,
 **Worth it?**: Yes, if you have outgrown Apple Passwords' flat list or want data portability.
 
 ### Scenario 3: Bitwarden Free to 1Password
-**Cost**: $35.88/year (increase from $0)
+**Cost**: $47.88/year (increase from $0)
 **What you gain**: Polished UX, Watchtower, travel mode, native apps, passkeys
 **Worth it?**: Only if you specifically value 1Password's UX and Watchtower. Bitwarden Premium at $19.80/year covers most of the same features.
 

@@ -2,7 +2,7 @@
 title: "Keeper vs Apple Passwords (2026)"
 description: "Keeper vs Apple's built-in Passwords app compared. Pricing, security, features, and which password manager fits your needs in 2026."
 date: 2026-03-06
-lastmod: 2026-03-06
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -57,7 +57,7 @@ Free. No tiers, no add-ons, no annual renewal.
 
 ### Pricing Verdict
 
-If your primary concern is cost, Apple Passwords wins by default -- it is impossible to beat free. Keeper's $34.99/year base price is competitive with other premium managers like 1Password ($35.88/year), but the add-on model means the real price can creep higher. For a full cost breakdown across all major managers, see our [pricing comparison guide](/compare/pricing-comparison/).
+If your primary concern is cost, Apple Passwords wins by default -- it is impossible to beat free. Keeper's $34.99/year base price is lower than some other premium managers, such as 1Password ($47.88/year), but the add-on model means the real price can creep higher. For a full cost breakdown across all major managers, see our [pricing comparison guide](/compare/pricing-comparison/).
 
 ## Security Architecture
 

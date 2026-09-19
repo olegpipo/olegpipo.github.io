@@ -9,17 +9,17 @@ silo: "Comparisons"
 
 Password manager pricing is deliberately confusing. Monthly rates that are only available with annual billing. Features split across tiers with names like "Premium," "Professional," and "Teams" that blur together. Free tiers that are too limited to use but too present to ignore in marketing. This guide, part of our [password manager comparisons hub](/compare/), lays out the actual costs with no ambiguity, so you can make a budget-conscious decision without deciphering pricing pages designed to steer you toward the most expensive option.
 
-All prices are current as of early 2026. Prices change -- check the official sites for the latest numbers.
+All prices were checked in 2026 (1Password and NordPass in September 2026). Prices change -- check the official sites for the latest numbers.
 
 ## Individual Plans
 
 | Password Manager | Free Tier | Individual Price | Annual Cost | Billing |
 |---|---|---|---|---|
-| 1Password | None | $2.99/month | $35.88/year | Annual only |
+| 1Password | None | $3.99/month | $47.88/year | Annual only |
 | Bitwarden | Yes (full) | $1.65/month | $19.80/year | Annual only |
 | Dashlane | Limited (25 passwords, 1 device) | $4.99/month | $59.88/year | Annual only |
 | Proton Pass | Yes (basic) | $2.99/month | $35.88/year | Annual only |
-| NordPass | Limited | $1.49/month | $17.88/year | Annual (2-year deals available) |
+| NordPass | Limited (1 active device) | $1.99/month first year, then $2.99/month | $23.88 first year, then $35.88/year | Annual (2-year deals available) |
 | PanicVault | N/A | One-time purchase | One-time | One-time |
 | Strongbox | Non-commercial use only | $2.99/month, $24.99/year or $124.99 lifetime | $24.99/year | Monthly, annual or lifetime |
 | KeePassXC | Full (free) | $0 | $0 | N/A |
@@ -27,7 +27,9 @@ All prices are current as of early 2026. Prices change -- check the official sit
 
 ### What the Tiers Actually Get You
 
-**1Password ($35.88/year)**: Everything. There is no free or cheaper tier. You get unlimited passwords, all devices, Watchtower monitoring, passkey support, 1GB document storage, and shared vaults. The price is the price.
+**1Password ($47.88/year)**: Everything. There is no free or cheaper tier. You get unlimited passwords, all devices, Watchtower monitoring, passkey support, 1GB document storage, and shared vaults. The only discount is a first-year promotion for new customers who subscribe directly ($2.99/month, or $35.88 for the year); after that, you pay the regular price.
+
+**NordPass Premium ($23.88 first year, then $35.88/year)**: Unlimited devices, password health, Data Breach Scanner, a built-in authenticator for 2FA codes, email masking, and secure sharing. NordPass Free stores unlimited passwords but allows only one active session at a time and has no authenticator.
 
 **Bitwarden Free ($0)**: Unlimited passwords, unlimited devices, sync, password generator, and basic 2FA for your account. This is a fully functional password manager. **Bitwarden Premium ($19.80/year)**: Adds TOTP authenticator, 5GB file storage, emergency access, Vault Health Reports, and advanced 2FA options (YubiKey, FIDO2).
 
@@ -45,11 +47,11 @@ All prices are current as of early 2026. Prices change -- check the official sit
 
 | Password Manager | Family Price | Members | Per-Person Annual | Notes |
 |---|---|---|---|---|
-| 1Password | $4.99/month | Up to 5 | $11.98 | $59.88/year total |
+| 1Password | $5.99/month | Up to 5 | $14.38 | $71.88/year total |
 | Bitwarden | $3.99/month | Up to 6 | $7.98 | $47.88/year total |
 | Dashlane | $7.49/month | Up to 10 | $8.99 | $89.88/year total |
 | Proton Pass | $3.99/month | Up to 6 | $7.98 | $47.88/year total |
-| NordPass | $2.79/month | Up to 6 | $5.58 | $33.48/year total |
+| NordPass | $3.69/month first year, then $5.99/month | Up to 6 | $7.38 first year, then $11.98 | $44.28 first year, then $71.88/year |
 | PanicVault | Per-device purchase | Unlimited | Fixed | App Store Family Sharing available |
 | Strongbox | Same as Pro plans | Up to 6 | Varies by plan | Paid plans include Family Sharing |
 | KeePassXC | $0 | Unlimited | $0 | Share database file |
@@ -57,7 +59,7 @@ All prices are current as of early 2026. Prices change -- check the official sit
 
 ### Family Plan Analysis
 
-**Best per-person value (subscription)**: NordPass at $5.58 per person per year, with Bitwarden Families and Proton Pass next at $7.98 for a full household. Bitwarden Families remains the pick for budget-conscious families who want an open-source subscription service. See our [best password manager for families](/compare/best-for-families/) guide.
+**Best per-person value (subscription)**: Bitwarden Families and Proton Pass at $7.98 per person per year for a full household. NordPass Family is slightly cheaper in its first year ($7.38 per person) but renews at $11.98 per person. Bitwarden Families remains the pick for budget-conscious families who want an open-source subscription service. See our [best password manager for families](/compare/best-for-families/) guide.
 
 **Best per-person value (overall)**: KeePassXC and Apple Passwords are free for any number of family members. PanicVault's one-time purchase with App Store Family Sharing is the cheapest paid option over time.
 
@@ -71,11 +73,11 @@ The real cost of a password manager is not the monthly price -- it is the total 
 
 | Password Manager | Year 1 | Year 2 | Year 3 | Year 5 | Year 10 |
 |---|---|---|---|---|---|
-| 1Password | $35.88 | $71.76 | $107.64 | $179.40 | $358.80 |
+| 1Password | $47.88 | $95.76 | $143.64 | $239.40 | $478.80 |
 | Bitwarden Premium | $19.80 | $39.60 | $59.40 | $99.00 | $198.00 |
 | Dashlane Premium | $59.88 | $119.76 | $179.64 | $299.40 | $598.80 |
 | Proton Pass Plus | $35.88 | $71.76 | $107.64 | $179.40 | $358.80 |
-| NordPass Premium | $17.88 | $35.76 | $53.64 | $89.40 | $178.80 |
+| NordPass Premium | $23.88 | $59.76 | $95.64 | $167.40 | $346.80 |
 | PanicVault | One-time | -- | -- | -- | -- |
 | Strongbox Pro Lifetime | $124.99 | -- | -- | -- | -- |
 | KeePassXC | $0 | $0 | $0 | $0 | $0 |
@@ -85,7 +87,7 @@ The real cost of a password manager is not the monthly price -- it is the total 
 
 | Password Manager | Year 1 | Year 3 | Year 5 | Year 10 |
 |---|---|---|---|---|
-| 1Password Family | $59.88 | $179.64 | $299.40 | $598.80 |
+| 1Password Family | $71.88 | $215.64 | $359.40 | $718.80 |
 | Bitwarden Family | $47.88 | $143.64 | $239.40 | $478.80 |
 | Dashlane Family | $89.88 | $269.64 | $449.40 | $898.80 |
 | PanicVault | One-time per user | -- | -- | -- |
@@ -98,7 +100,7 @@ The difference is stark. Over ten years, Dashlane costs a single user nearly $60
 
 ### Price Increases
 
-Subscription prices can increase. 1Password's individual price has risen over the years. When you subscribe, you commit to whatever the company decides to charge in the future, or you migrate away (which has its own cost in time and effort).
+Subscription prices can increase. 1Password raised its Individual plan from $35.88 to $47.88/year and its Families plan from $59.88 to $71.88/year at renewals from March 2026. NordPass's discounted first year renews at a higher standard rate. When you subscribe, you commit to whatever the company decides to charge in the future, or you migrate away (which has its own cost in time and effort).
 
 One-time purchases and free tools do not have this problem. A database file you paid for once continues working indefinitely.
 
@@ -138,7 +140,8 @@ For completeness, though this site focuses on personal use:
 
 | Password Manager | Team Price | Per User/Month | Notes |
 |---|---|---|---|
-| 1Password Business | $7.99/user/month | $7.99 | Advanced admin controls |
+| 1Password Teams Starter Pack | $24.95/month (up to 10 users) | $2.50 at 10 users | Billed annually |
+| 1Password Business | $8.99/user/month | $8.99 | Advanced admin controls |
 | Bitwarden Teams | $4/user/month | $4.00 | |
 | Bitwarden Enterprise | $6/user/month | $6.00 | SSO, policies |
 | Dashlane Business | $8/user/month | $8.00 | VPN included |
@@ -157,7 +160,7 @@ Business plans are outside the scope of this comparison but are relevant if you 
 
 ### Comfort Budget ($30-60/year)
 
-**1Password** at $35.88/year provides the most polished experience. See [PanicVault vs. 1Password](/compare/panicvault-vs-1password/) for the detailed comparison.
+**1Password** at $47.88/year provides the most polished experience. See [PanicVault vs. 1Password](/compare/panicvault-vs-1password/) for the detailed comparison.
 
 ### Money Is Not the Constraint
 

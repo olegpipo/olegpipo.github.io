@@ -2,7 +2,7 @@
 title: "Best Password Managers for Seniors (2026): 5 Simple Picks"
 description: "Five password managers ranked for older adults: simple setup, clear design, family sharing, and emergency access — plus how to help someone get set up."
 date: 2026-03-08
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -75,7 +75,7 @@ For seniors who already use an iPhone or Mac, Apple Passwords is the easiest sta
 
 ### 1Password
 
-**Price**: $2.99/month ($35.88/year) for individual; $4.99/month ($59.88/year) for family (up to 5)
+**Price**: $3.99/month ($47.88/year) for individual; $5.99/month ($71.88/year) for family (up to 5)
 
 1Password offers the most polished experience for seniors who want (or need) more than Apple Passwords provides. The interface is clean, the onboarding is guided, and the family plan allows a tech-savvy family member to serve as organizer.
 
@@ -170,9 +170,9 @@ Dashlane offers a guided, hand-holding approach that suits seniors who appreciat
 
 | Feature | Apple Passwords | 1Password | Bitwarden | PanicVault | Dashlane |
 |---|---|---|---|---|---|
-| Price | Free | $36/year | Free-$19.80/year | One-time | $60/year |
+| Price | Free | $48/year | Free-$19.80/year | One-time | $60/year |
 | Setup Difficulty | None | Easy | Moderate | Easy | Easy |
-| Family Plan | Shared groups | $60/year (5) | $47.88/year (6) | Shared KDBX | $90/year (10) |
+| Family Plan | Shared groups | $72/year (5) | $47.88/year (6) | Shared KDBX | $90/year (10) |
 | Emergency Access | Apple Account | Family organizer | Yes (timed) | Manual sharing | Yes |
 | Face ID/Touch ID | Yes | Yes | Yes | Yes | Yes |
 | TOTP Codes | Yes | Yes | Premium | Yes | Yes |
@@ -197,7 +197,7 @@ If you are helping a parent or grandparent set up a password manager, these step
 
 For most seniors, the right choice depends on one question: **is there a tech-savvy family member involved?**
 
-**If yes**: **1Password Family** is the best option. The family organizer can handle setup, assist with recovery, and monitor security -- all while the senior uses a clean, simple interface for daily password filling. The $60/year cost is an investment in family security.
+**If yes**: **1Password Family** is the best option. The family organizer can handle setup, assist with recovery, and monitor security -- all while the senior uses a clean, simple interface for daily password filling. The $72/year cost is an investment in family security.
 
 **If no (independent senior, Apple user)**: **Apple Passwords** first, then **PanicVault** when they want more organization. Apple Passwords has zero learning curve. When they outgrow it, PanicVault offers more structure without a subscription.
 

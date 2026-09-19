@@ -73,7 +73,7 @@ PanicVault's TOTP implementation is straightforward and reliable. The codes are 
 - Works across all 1Password platforms
 
 **Considerations:**
-- Requires a subscription ($2.99/month individual)
+- Requires a subscription ($3.99/month individual)
 - TOTP secrets are in 1Password's proprietary format (not portable to KDBX)
 - Cloud-dependent for sync
 
@@ -187,7 +187,7 @@ See [PanicVault vs. Dashlane](/compare/panicvault-vs-dashlane/).
 | PanicVault | Yes | $0 (included) | Yes | KDBX (open) | Apple |
 | KeePassXC | Yes | $0 (free tool) | Yes | KDBX (open) | Desktop |
 | Apple Passwords | Yes | $0 (built-in) | Yes | Proprietary | Apple |
-| 1Password | Yes | Included in $36/yr | Yes (cached) | Proprietary | All |
+| 1Password | Yes | Included in $48/yr | Yes (cached) | Proprietary | All |
 | Bitwarden | Premium only | $19.80/year | Yes (cached) | Proprietary | All |
 | Strongbox | Yes | $0 (free version, non-commercial use only) | Yes | KDBX (open) | Apple |
 | Dashlane | Premium only | $60/year | Limited | Proprietary | All |

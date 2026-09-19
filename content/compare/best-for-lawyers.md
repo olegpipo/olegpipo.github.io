@@ -2,7 +2,7 @@
 title: "Best Password Manager for Lawyers"
 description: "Best password managers for lawyers and law firms in 2026. Client confidentiality, ethical compliance, audit trails, and secure sharing compared."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -52,7 +52,7 @@ Beyond passwords, lawyers often need to store secure notes (safe combinations, a
 
 ### 1. 1Password (Best Overall for Law Firms)
 
-**Price**: Individual $2.99/month; Teams $7.99/user/month; Business $14.99/user/month
+**Price**: Individual $3.99/month; Teams Starter Pack $24.95/month for up to 10 users; Business $8.99/user/month (billed annually)
 
 1Password is the most widely recommended password manager for legal professionals, and for good reason. Its combination of vault separation, audit logging, intuitive UX, and robust sharing makes it the most complete solution for law firm environments.
 

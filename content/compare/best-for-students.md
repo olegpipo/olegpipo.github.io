@@ -2,7 +2,7 @@
 title: "Best Password Manager for Students"
 description: "Find the best password manager for students in 2026. Budget-friendly options, academic discounts, multi-device support, and building security habits for college and beyond."
 date: 2026-02-14
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 ---
@@ -104,7 +104,7 @@ See our [PanicVault vs. KeePassXC](/compare/panicvault-vs-keepassxc/) comparison
 
 ### 1Password (Student Discounts)
 
-**Price**: $2.99/month ($35.88/year), sometimes with student promotions
+**Price**: $3.99/month ($47.88/year), sometimes with student promotions
 
 1Password occasionally offers student discounts or extended free trials. Check their website for current academic pricing. Even at full price, it is the most polished password manager available.
 
@@ -121,13 +121,13 @@ See our [PanicVault vs. KeePassXC](/compare/panicvault-vs-keepassxc/) comparison
 - Subscription model means ongoing cost throughout college
 - Proprietary data format
 
-If budget is not the primary concern, 1Password's quality justifies its price. But for most students, the free alternatives are strong enough that paying $36/year is optional.
+If budget is not the primary concern, 1Password's quality justifies its price. But for most students, the free alternatives are strong enough that paying $48/year is optional.
 
 ## Comparing the Options
 
 | Feature | Bitwarden Free | Apple Passwords | PanicVault | KeePassXC | 1Password |
 |---|---|---|---|---|---|
-| Price | $0 | $0 | One-time | $0 | $36/year |
+| Price | $0 | $0 | One-time | $0 | $48/year |
 | iOS app | Yes | Built-in | Yes | No | Yes |
 | Mac app | Yes (Electron) | Built-in | Yes (native) | Yes (Qt) | Yes (native) |
 | Windows/Linux | Yes | No | Via KeePass | Yes | Yes |
@@ -184,7 +184,7 @@ For budget-conscious students, here is the total cost of ownership over a typica
 | Apple Passwords | $0 |
 | Bitwarden Premium | $79.20 |
 | PanicVault | One-time purchase |
-| 1Password | ~$144 |
+| 1Password | ~$192 |
 
 Even the most expensive option (1Password) is less than the cost of a single textbook per year. Password security is one of the cheapest investments a student can make. For more on pricing, see our [pricing comparison guide](/compare/pricing-comparison/).
 

@@ -2,7 +2,7 @@
 title: "Apple Passwords App: Is It Enough? (2026)"
 description: "Apple's Passwords app vs. 1Password, Bitwarden & KeePass. See what's missing and when a third-party manager is worth it."
 date: 2026-02-13
-lastmod: 2026-03-06
+lastmod: 2026-09-19
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -93,7 +93,7 @@ Apple Passwords alerts you to compromised passwords (passwords that appear in kn
 
 ### 1Password
 
-1Password excels where Apple Passwords is weakest: organization, cross-platform support, and breadth of stored item types. Vaults, tags, custom fields, secure documents, SSH key management, and team sharing make 1Password suitable for complex use cases. The trade-off is a $36/year subscription and a proprietary data format. Our [1Password vs Apple Passwords](/compare/1password-vs-apple-passwords/) comparison walks through the pricing, security, and portability differences in full.
+1Password excels where Apple Passwords is weakest: organization, cross-platform support, and breadth of stored item types. Vaults, tags, custom fields, secure documents, SSH key management, and team sharing make 1Password suitable for complex use cases. The trade-off is a $47.88/year subscription and a proprietary data format. Our [1Password vs Apple Passwords](/compare/1password-vs-apple-passwords/) comparison walks through the pricing, security, and portability differences in full.
 
 ### Bitwarden
 
@@ -115,7 +115,7 @@ This is the most common comparison for Apple users deciding between built-in and
 
 | Feature | Apple Passwords | 1Password |
 |---------|----------------|-----------|
-| Price | Free (built into iOS/macOS) | $2.99/month |
+| Price | Free (built into iOS/macOS) | $3.99/month (billed annually) |
 | Cross-platform | Apple only (+ iCloud for Windows) | Apple, Windows, Android, Linux |
 | Passkey support | Yes | Yes |
 | TOTP codes | Yes (iOS 18+) | Yes |

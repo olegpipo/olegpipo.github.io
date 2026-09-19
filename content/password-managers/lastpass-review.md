@@ -2,7 +2,7 @@
 title: "LastPass Review (2026)"
 description: "Honest LastPass review for 2026. Post-breach security changes, pricing, features, trust concerns, and whether LastPass has earned back user confidence."
 date: 2026-03-08
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Password Managers"
 faq:
@@ -38,7 +38,7 @@ LastPass's pricing structure in 2026 reflects a product caught between its free-
 
 The free tier is notable for its limitations: you can use LastPass on either mobile devices or computers, but not both. This is a significant downgrade from the pre-2021 free tier that offered unlimited devices with full sync. The change pushed many free users toward alternatives -- particularly Bitwarden, which still offers unlimited devices for free. Our [free vs premium comparison](/compare/free-vs-premium/) details what you typically get at each price point.
 
-At $36/year for Premium, LastPass sits in the same price bracket as 1Password ($35.88/year) but offers less than either competitor in certain areas. The Families plan at $48/year for six users is competitive, and Bitwarden now sits within cents of it at $47.88/year. For a complete cost analysis, see our [pricing comparison](/compare/pricing-comparison/).
+At $36/year for Premium, LastPass costs about $12 a year less than 1Password ($47.88/year) but offers less than either competitor in certain areas. The Families plan at $48/year for six users is competitive, and Bitwarden now sits within cents of it at $47.88/year. For a complete cost analysis, see our [pricing comparison](/compare/pricing-comparison/).
 
 ## The Breach: What Happened and Why It Matters
 

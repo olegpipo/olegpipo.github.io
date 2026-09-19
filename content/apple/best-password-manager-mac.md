@@ -2,7 +2,7 @@
 title: "Best Password Manager for Mac in 2026"
 description: "In-depth comparison of the best password managers for macOS in 2026 -- 1Password, Bitwarden, KeePassXC, PanicVault, Dashlane, and Apple Passwords -- evaluated on security, usability, integration, price, and data portability."
 date: 2026-02-13
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -47,7 +47,7 @@ Can you export your data in standard formats? Can you switch to another tool wit
 
 **Integration**: Excellent Touch ID support, Apple Watch unlock, menu bar quick access, and integration with macOS system autofill. 1Password feels like it was built for the Mac because, historically, it was.
 
-**Price**: $2.99/month for individuals, $4.99/month for families (up to 5 members). No free tier. The subscription model is a recurring expense, but the polish justifies it for many users.
+**Price**: $3.99/month for individuals, $5.99/month for families (up to 5 members), billed annually. No free tier. The subscription model is a recurring expense, but the polish justifies it for many users.
 
 **Data portability**: You can export to CSV and 1PUX (1Password's own format). No native KDBX export. Moving away from 1Password is possible but requires a conversion step. This is a meaningful limitation if portability is a priority.
 
@@ -131,7 +131,7 @@ With iOS 18 and macOS Sequoia, Apple introduced a standalone Passwords app that 
 | Safari autofill | Yes | Yes | No | Yes | Yes | Yes |
 | Touch ID | Yes | Yes | Yes | Yes | Browser only | Yes |
 | KDBX support | No | No | Yes | Yes | No | No |
-| Price (annual) | $36 | $0-10 | $0 | One-time | $60 | $0 |
+| Price (annual) | $48 | $0-10 | $0 | One-time | $60 | $0 |
 | Cross-platform | All | All | Desktop | Apple | All | Apple + Windows |
 
 ## Recommendations

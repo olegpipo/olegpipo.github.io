@@ -2,12 +2,12 @@
 title: "1Password vs NordPass (2026)"
 description: "1Password vs NordPass compared for 2026. Pricing, security, features, and whether NordPass's lower price makes up for fewer features."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
   - q: "Is 1Password or NordPass better?"
-    a: "1Password is the more complete password manager with a mature feature set including Watchtower, Travel Mode, Secret Key, shared vaults, and a CLI. NordPass is a solid alternative at a lower price ($23.88/year vs $35.88/year) with modern XChaCha20 encryption and a cleaner, simpler interface. Choose 1Password for depth, NordPass for value."
+    a: "1Password is the more complete password manager with a mature feature set including Watchtower, Travel Mode, Secret Key, shared vaults, and a CLI. NordPass is a solid alternative at a lower price (Premium is $23.88 for the first year and $35.88/year at renewal, vs $47.88/year for 1Password Individual) with modern XChaCha20 encryption and a cleaner, simpler interface. Choose 1Password for depth, NordPass for value."
   - q: "Is NordPass secure?"
     a: "Yes. NordPass uses XChaCha20 encryption, which is a modern algorithm considered as strong as AES-256 but more resistant to certain implementation errors. NordPass has a zero-knowledge architecture and has passed independent security audits by Cure53. It is made by Nord Security, the company behind NordVPN."
   - q: "Does NordPass have a free plan?"
@@ -30,29 +30,29 @@ NordPass undercuts 1Password by a meaningful margin, especially when you conside
 
 | Plan | Cost | Key Features |
 |---|---|---|
-| Individual | $35.88/year ($2.99/month) | Unlimited passwords, all platforms, Watchtower, Travel Mode, Secret Key, 1GB storage |
-| Family | $59.88/year ($4.99/month) | Up to 5 members, shared vaults, granular permissions |
+| Individual | $47.88/year ($3.99/month) | Unlimited passwords, all platforms, Watchtower, Travel Mode, Secret Key, 1GB storage |
+| Family | $71.88/year ($5.99/month) | Up to 5 members, shared vaults, granular permissions |
 | No free tier | -- | 14-day trial only |
 
 ### NordPass Pricing
 
-| Plan | Cost | Key Features |
-|---|---|---|
-| Free | $0 | Unlimited passwords, 1 active device at a time, password generator, autofill |
-| Premium | $23.88/year ($1.99/month) | Unlimited devices, password health, data breach scanner, secure sharing |
-| Family | $47.88/year ($3.99/month) | Up to 6 users, all Premium features per user |
+| Plan | First year | Renews at | Key Features |
+|---|---|---|---|
+| Free | $0 | $0 | Unlimited passwords, 1 active device at a time, password generator, autofill |
+| Premium | $23.88/year ($1.99/month) | $35.88/year ($2.99/month) | Unlimited devices, password health, data breach scanner, built-in authenticator, secure sharing |
+| Family | $44.28/year ($3.69/month) | $71.88/year ($5.99/month) | Up to 6 users, all Premium features per user |
 
 ### Five-Year Cost Comparison
 
-| | 1Password | NordPass Premium |
+| | 1Password | NordPass |
 |---|---|---|
-| Individual (5 years) | $179.40 | $119.40 |
-| Family (5 years) | $299.40 | $239.40 |
-| Savings with NordPass | -- | $60 (individual) / $60 (family) |
+| Individual (5 years) | $239.40 | $167.40 |
+| Family (5 years) | $359.40 | $331.80 |
+| Savings with NordPass | -- | $72 (individual) / $27.60 (family) |
 
-NordPass Premium saves you $12/year compared to 1Password, or $60 over five years. The family plan is $12/year cheaper and includes six users instead of five. NordPass also offers a functional free tier, while 1Password does not.
+NordPass Premium costs $24 less than 1Password Individual in the first year and $12/year less after it renews, which adds up to $72 over five years. The family plans renew at the same $71.88/year, so NordPass Family's saving comes almost entirely from its discounted first year -- its lasting advantage is a sixth user. NordPass also offers a functional free tier, while 1Password does not.
 
-NordPass frequently runs promotional pricing for the first year or two, which can bring the initial cost even lower. Be aware that renewal rates may be higher than introductory rates.
+The NordPass figures above use its first-year discount followed by standard renewals. NordPass also sells two-year plans with a lower effective monthly price. 1Password offers new customers who subscribe directly a first-year discount too ($2.99/month for Individual, $4.49/month for Families), which would cut $12 or $18 from its five-year totals.
 
 For a complete breakdown across all major managers, see our [pricing comparison guide](/compare/pricing-comparison/).
 
@@ -103,13 +103,13 @@ In practice, neither encryption algorithm is the weak link for either product. T
 
 ### Comparison Summary Table
 
-| Feature | 1Password ($35.88/yr) | NordPass Free | NordPass Premium ($23.88/yr) |
+| Feature | 1Password ($47.88/yr) | NordPass Free | NordPass Premium ($23.88 first yr, then $35.88/yr) |
 |---|---|---|---|
 | Unlimited passwords | Yes | Yes | Yes |
 | Unlimited devices | Yes | 1 active device | Yes |
 | Cloud sync | Yes | Limited | Yes |
 | Password generator | Yes | Yes | Yes |
-| TOTP authenticator | Yes (built-in) | No | No |
+| TOTP authenticator | Yes (built-in) | No | Yes (built-in) |
 | Security monitoring | Watchtower | No | Password health + breach scanner |
 | Dark web monitoring | Yes (via Watchtower) | No | Data breach scanner |
 | Travel Mode | Yes | No | No |
@@ -126,11 +126,11 @@ In practice, neither encryption algorithm is the weak link for either product. T
 | XChaCha20 encryption | No (AES-256) | Yes | Yes |
 | Argon2id key derivation | No (PBKDF2) | Yes | Yes |
 
+Both managers store two-factor (TOTP) codes in the vault and can autofill them -- NordPass through its built-in NordPass Authenticator on the Premium and Family plans -- so 2FA code storage is not a reason to pick one over the other.
+
 ### Where 1Password Leads
 
 **Feature depth.** 1Password has more features across nearly every category. Watchtower is a comprehensive security dashboard. Travel Mode is unique in the industry. Shared vaults with granular permissions enable sophisticated family and team setups. The CLI enables automation. The Apple Watch app provides quick access. After fifteen-plus years of development, 1Password's feature set is simply larger.
-
-**TOTP authenticator.** 1Password includes a built-in TOTP code generator, which means you can store both your passwords and your two-factor authentication codes in the same vault. NordPass does not include TOTP code storage or generation -- you need a separate authenticator app.
 
 **Watchtower.** 1Password's security monitoring is deeper and better integrated than NordPass's password health and breach scanner. Watchtower checks for weak passwords, reused credentials, compromised accounts, sites without 2FA, vulnerable services, and expiring items, all in a unified dashboard.
 
@@ -146,7 +146,7 @@ In practice, neither encryption algorithm is the weak link for either product. T
 
 ### Where NordPass Leads
 
-**Price.** At $23.88/year, NordPass Premium costs $12 less per year than 1Password. Over five years, that saves $60. NordPass also offers a free tier that 1Password does not.
+**Price.** NordPass Premium costs $23.88 for the first year and $35.88/year at renewal, versus $47.88/year for 1Password Individual -- $24 less in year one and $12 less each year after. Over five years, that saves $72. NordPass also offers a free tier that 1Password does not.
 
 **Modern encryption.** XChaCha20 and Argon2id are more modern than 1Password's AES-256 and PBKDF2. While both are secure, NordPass is using the latest cryptographic best practices out of the box.
 
@@ -156,7 +156,7 @@ In practice, neither encryption algorithm is the weak link for either product. T
 
 **Free tier.** NordPass Free includes unlimited passwords with autofill, limited to one active device at a time. 1Password has no free option beyond a 14-day trial. For users on a budget, NordPass Free is a functional starting point.
 
-**Family plan value.** NordPass Family at $47.88/year for six users is cheaper than 1Password Family at $59.88/year for five users. NordPass offers more seats for less money.
+**Family plan value.** NordPass Family costs $44.28 for the first year for six users, versus $71.88/year for 1Password Families with five members. After the first year, both renew at $71.88/year, so NordPass's lasting advantage is the sixth seat.
 
 **Nord ecosystem.** For users already subscribed to NordVPN or NordLocker, NordPass fits naturally into the Nord product family. Bundle pricing may be available, and the shared account management provides convenience.
 
@@ -181,7 +181,6 @@ Both managers cover all major platforms with native apps. NordPass supports a sl
 - Users who want the most feature-rich password manager available
 - Anyone who values the Secret Key as protection against master password compromise
 - Frequent travelers who need Travel Mode
-- Users who want built-in TOTP authenticator support
 - Families and teams who need shared vaults with granular permissions
 - Developers and power users who need CLI access
 - Apple ecosystem users who want Apple Watch support
@@ -189,7 +188,7 @@ Both managers cover all major platforms with native apps. NordPass supports a sl
 
 ## Who Should Choose NordPass
 
-- Budget-conscious users who want a capable password manager for $23.88/year or less
+- Budget-conscious users who want a capable password manager for $23.88 in the first year and $35.88/year after
 - Anyone who values modern encryption (XChaCha20) and key derivation (Argon2id)
 - Users who prefer a simpler, less feature-heavy interface
 - Those who need a free password manager and are comfortable with single-device limitations
@@ -215,9 +214,9 @@ PanicVault does not offer email masking, web vaults, Travel Mode, or the Nord ec
 
 ## The Bottom Line
 
-1Password is the better password manager if you want depth, polish, and proven security. Its feature set is broader, Watchtower and Travel Mode have no NordPass equivalents, the Secret Key provides meaningful security value, and fifteen years of refinement show in the daily experience. At $35.88/year, it costs more -- but you get more.
+1Password is the better password manager if you want depth, polish, and proven security. Its feature set is broader, Watchtower and Travel Mode have no NordPass equivalents, the Secret Key provides meaningful security value, and fifteen years of refinement show in the daily experience. At $47.88/year, it costs more -- but you get more.
 
-NordPass is the better choice if you want modern encryption, a simpler interface, and a lower price. At $23.88/year, it saves $12 annually while delivering competent core password management with XChaCha20 encryption and Argon2id key derivation. It lacks 1Password's feature depth, but if you do not need Travel Mode, TOTP storage, file attachments, or CLI access, NordPass covers the essentials effectively.
+NordPass is the better choice if you want modern encryption, a simpler interface, and a lower price. At $23.88 for the first year and $35.88/year at renewal, it saves $24 in year one and $12 a year after that, while delivering competent core password management -- including a built-in authenticator for 2FA codes -- with XChaCha20 encryption and Argon2id key derivation. It lacks 1Password's feature depth, but if you do not need Travel Mode, file attachments, or CLI access, NordPass covers the essentials effectively.
 
 For most users who can afford the difference, 1Password's additional features and proven track record justify the premium. For users who want solid password management without paying for features they will not use, NordPass delivers real value at a lower price point.
 

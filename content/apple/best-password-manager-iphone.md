@@ -64,7 +64,7 @@ Biometric authentication is the single most important integration point for a mo
 
 **Strengths**: Best-in-class autofill reliability, excellent Apple Watch app, Watchtower security alerts, passkey support.
 
-**Limitations**: Subscription required ($2.99/month individual). No KDBX support. Data export limited to CSV and 1PUX formats. For a detailed head-to-head, see our [PanicVault vs 1Password comparison](/compare/panicvault-vs-1password/).
+**Limitations**: Subscription required ($3.99/month individual). No KDBX support. Data export limited to CSV and 1PUX formats. For a detailed head-to-head, see our [PanicVault vs 1Password comparison](/compare/panicvault-vs-1password/).
 
 ### Bitwarden
 
@@ -150,7 +150,7 @@ Both apps connect to your KDBX database wherever it lives -- iCloud Drive, Dropb
 | Widgets | Yes | Basic | Yes | Yes | Basic | Yes |
 | KDBX format | No | No | No | Yes | No | Yes |
 | Offline access | Yes | Yes | Yes | Yes | Limited | Yes |
-| Price (annual) | $36 | $0-10 | $0 | One-time | $60 | $0-24.99 |
+| Price (annual) | $48 | $0-20 | $0 | One-time | $60 | $0-24.99 |
 
 ## What to Choose
 

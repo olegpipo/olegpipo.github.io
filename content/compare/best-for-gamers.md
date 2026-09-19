@@ -2,7 +2,7 @@
 title: "Best Password Manager for Gamers"
 description: "The best password managers for gamers in 2026. Protect Steam, Epic, PSN, and Xbox accounts with fast autofill, 2FA support, and affordable pricing."
 date: 2026-03-08
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -88,7 +88,7 @@ Bitwarden's free tier is the strongest recommendation for most gamers. Unlimited
 
 ### NordPass
 
-**Price**: $0 (free tier) / $1.49/month ($17.88/year, Premium) / $2.79/month ($33.48/year, Family)
+**Price**: $0 (free tier) / Premium $1.99/month ($23.88) for the first year, then $2.99/month ($35.88/year) / Family $3.69/month ($44.28) for the first year, then $5.99/month ($71.88/year)
 
 NordPass comes from the same company as NordVPN, which has strong brand recognition in the gaming community. The interface is clean, the pricing is competitive, and the free tier covers basic needs.
 
@@ -110,7 +110,7 @@ NordPass comes from the same company as NordVPN, which has strong brand recognit
 
 ### 1Password
 
-**Price**: $2.99/month ($35.88/year)
+**Price**: $3.99/month ($47.88/year)
 
 1Password is the premium option for gamers who want the best experience and are willing to pay for it. Watchtower is particularly valuable for gamers, as it flags credentials exposed in data breaches -- and gaming platform breaches are frequent.
 
@@ -123,7 +123,7 @@ NordPass comes from the same company as NordVPN, which has strong brand recognit
 - Travel Mode can hide sensitive vaults (useful for gaming conventions and LAN events)
 
 **Drawbacks:**
-- No free tier -- costs $36/year
+- No free tier -- costs $48/year
 - Most expensive option on this list for individual use
 - Proprietary format
 - Overkill for gamers who just need basic password storage
@@ -179,7 +179,7 @@ KeePassXC is the fully free, no-compromise option for gamers on desktop. It runs
 
 | Feature | Bitwarden | NordPass | 1Password | PanicVault | KeePassXC |
 |---|---|---|---|---|---|
-| Price | $0-$19.80/year | $0-$18/year | $36/year | One-time | $0 |
+| Price | $0-$19.80/year | $0, or $24 first year then $36/year | $48/year | One-time | $0 |
 | TOTP Codes | Premium | Premium | Yes | Yes | Yes |
 | Windows App | Yes | Yes | Yes | Via KeePassXC | Yes |
 | iOS App | Yes | Yes | Yes | Yes | No* |
@@ -207,7 +207,7 @@ Beyond choosing a password manager, take these steps to protect your gaming life
 
 For gamers in the Apple ecosystem who also game on a Windows PC, the **PanicVault + KeePassXC** combination offers a one-time purchase on mobile and completely free desktop access -- both sharing the same KDBX database.
 
-For gamers who want premium features and proactive breach monitoring, **1Password** justifies its $36/year cost with Watchtower alerts that can catch compromised credentials before an attacker uses them.
+For gamers who want premium features and proactive breach monitoring, **1Password** justifies its $48/year cost with Watchtower alerts that can catch compromised credentials before an attacker uses them.
 
 Whatever you choose, the ten minutes you spend setting up a password manager today could save you from losing a Steam library you have been building for a decade.
 

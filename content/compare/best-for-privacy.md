@@ -2,7 +2,7 @@
 title: "Most Private Password Manager"
 description: "The most private password managers in 2026. Zero-knowledge encryption, open source, minimal data collection, and local-first options compared."
 date: 2026-03-08
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -150,7 +150,7 @@ PanicVault brings the KeePass privacy model to Apple devices with a native, poli
 
 ### 5. 1Password (Best Privacy from a Commercial Provider)
 
-**Price**: Individual $2.99/month ($35.88/year)
+**Price**: Individual $3.99/month ($47.88/year)
 
 1Password is not open source and is a US/Canadian company, so privacy purists may look elsewhere. But among fully commercial, closed-source password managers, 1Password has the strongest privacy track record. No advertising, no data selling, a zero-knowledge architecture that has never been breached, and a consistent public commitment to user privacy.
 

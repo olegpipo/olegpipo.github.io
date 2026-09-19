@@ -2,7 +2,7 @@
 title: "Best Password Manager for Families"
 description: "Evaluate the best password managers for families in 2026. Shared vaults, per-person costs, recovery options, and child safety features compared across 1Password, Bitwarden, and more."
 date: 2026-02-14
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 ---
@@ -37,7 +37,7 @@ A family plan's value depends on the per-person cost. A $5/month plan for 5 memb
 
 ### 1Password Families
 
-**Price**: $4.99/month ($59.88/year) for up to 5 family members
+**Price**: $5.99/month ($71.88/year) for up to 5 family members
 
 1Password's family plan is the most polished option for families who want a managed, cloud-based solution. Each family member gets their own account with private vaults, plus access to shared vaults that the family organizer creates.
 
@@ -53,7 +53,7 @@ A family plan's value depends on the per-person cost. A $5/month plan for 5 memb
 - No free tier -- every member costs money after the 5th person
 - Data stored on 1Password's cloud (no local-only option)
 - Proprietary format -- switching away requires export/import
-- $59.88/year is a meaningful ongoing expense
+- $71.88/year is a meaningful ongoing expense
 
 **Best for**: Families who want the most polished, managed experience and are comfortable with a subscription. See our [PanicVault vs. 1Password](/compare/panicvault-vs-1password/) comparison for a deeper individual analysis.
 
@@ -149,13 +149,13 @@ Dashlane's family plan covers the most members of any subscription option.
 
 | Plan | Year 1 | Year 3 | Year 5 |
 |---|---|---|---|
-| 1Password Family (5) | $59.88 | $179.64 | $299.40 |
+| 1Password Family (5) | $71.88 | $215.64 | $359.40 |
 | Bitwarden Family (6) | $47.88 | $143.64 | $239.40 |
 | Dashlane Family (10) | $89.88 | $269.64 | $449.40 |
 | PanicVault (shared + individual) | One-time | -- | -- |
 | Apple Passwords | $0 | $0 | $0 |
 
-For families watching their budget, the difference between five years of 1Password ($299.40) and five years of Bitwarden ($239.40) is notable. PanicVault's one-time purchase eliminates the subscription question entirely, though it requires more manual management for sharing. For a full pricing analysis, see our [pricing comparison guide](/compare/pricing-comparison/).
+For families watching their budget, the difference between five years of 1Password ($359.40) and five years of Bitwarden ($239.40) is notable. PanicVault's one-time purchase eliminates the subscription question entirely, though it requires more manual management for sharing. For a full pricing analysis, see our [pricing comparison guide](/compare/pricing-comparison/).
 
 ## Sharing Approaches Compared
 
@@ -193,7 +193,7 @@ For Apple-specific sharing guidance, see our [sharing passwords on Apple devices
 
 ### Best for Apple-Only Families Who Want Polish
 
-**1Password Families** at $59.88/year for families who prioritize UX and do not mind the subscription. The family organizer and account recovery features provide peace of mind, and the native Apple apps are excellent.
+**1Password Families** at $71.88/year for families who prioritize UX and do not mind the subscription. The family organizer and account recovery features provide peace of mind, and the native Apple apps are excellent.
 
 ### Best for Budget-Conscious Apple Families
 

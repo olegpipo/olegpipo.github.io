@@ -2,7 +2,7 @@
 title: "How to Switch From 1Password: Migration Guide"
 description: "Step-by-step guide to switching from 1Password to PanicVault or another password manager. Export vaults, preserve tags, and migrate TOTP secrets."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-09-19
 draft: false
 silo: "Guides & Tutorials"
 ---
@@ -13,7 +13,7 @@ Switching from 1Password -- whether because of subscription fatigue, data portab
 
 Understanding your motivation helps you choose the right replacement:
 
-- **Subscription cost**: 1Password costs $36/year for individuals or $60/year for families. Over five years, that is $180-300. A one-time purchase like PanicVault or a free tool like KeePassXC eliminates this ongoing expense.
+- **Subscription cost**: Since its March 2026 price increase, 1Password costs $47.88/year for individuals or $71.88/year for families. Over five years, that is about $240-360. A one-time purchase like PanicVault or a free tool like KeePassXC eliminates this ongoing expense.
 - **Data portability**: 1Password stores data in a proprietary format. The [KDBX format](/keepass/) used by PanicVault and KeePassXC is an open standard supported by dozens of apps -- you are never locked in.
 - **Cloud dependency**: 1Password requires their cloud service. PanicVault stores your vault as a local file you control, synced via [iCloud Drive or Google Drive](/cloud-sync/) -- or any other file provider of your choosing.
 - **Simplicity**: Some users find 1Password's feature set has grown beyond what they need. A focused tool that does core password management well may suit them better.

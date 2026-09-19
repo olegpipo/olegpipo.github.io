@@ -2,7 +2,7 @@
 title: "How to Set Up a Password Manager for the First Time"
 description: "Complete beginner's guide to setting up a password manager. Step-by-step instructions for choosing, installing, and configuring your first vault."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-09-19
 draft: false
 silo: "Guides & Tutorials"
 ---
@@ -29,7 +29,7 @@ The right password manager depends on your priorities. Here is a simplified deci
 
 ### If You Want Maximum Polish and Do Not Mind a Subscription
 
-**1Password** provides the most refined user experience, especially on macOS. It costs $2.99/month for individuals.
+**1Password** provides the most refined user experience, especially on macOS. It costs $3.99/month for individuals, billed annually.
 
 ### If You Already Use Apple Passwords
 

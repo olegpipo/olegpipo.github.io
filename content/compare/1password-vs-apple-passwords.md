@@ -2,7 +2,7 @@
 title: "1Password vs Apple Passwords (2026)"
 description: "1Password vs Apple Passwords compared for 2026. Free built-in option vs premium cross-platform manager -- features, security, and who should pick which."
 date: 2026-03-08
-lastmod: 2026-08-10
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -18,11 +18,11 @@ faq:
     a: "Switch if you need cross-platform support, shared vaults, Travel Mode, Watchtower security monitoring, secure file storage, or more organizational control. Stay with Apple Passwords if you only use Apple devices, have basic needs, and prefer not to pay for a password manager. The decision depends on your device ecosystem and feature requirements."
 ---
 
-Apple Passwords and 1Password represent opposite ends of the password manager spectrum. One is free, built into your Apple devices, and requires zero setup. The other costs $35.88/year, works everywhere, and offers a feature set that extends well beyond basic credential storage. This comparison is part of our [password manager comparisons hub](/compare/), where we evaluate every major option to help you make the right choice.
+Apple Passwords and 1Password represent opposite ends of the password manager spectrum. One is free, built into your Apple devices, and requires zero setup. The other costs $47.88/year, works everywhere, and offers a feature set that extends well beyond basic credential storage. This comparison is part of our [password manager comparisons hub](/compare/), where we evaluate every major option to help you make the right choice.
 
 This is not a comparison of equals. 1Password is a dedicated, full-featured password manager that has been refined for over fifteen years. Apple Passwords is a system-level credential manager that Apple has steadily improved, evolving from the basic iCloud Keychain into a standalone Passwords app in iOS 18 and macOS Sequoia. The question is not which is better in absolute terms -- 1Password has more features by a wide margin. The question is whether Apple Passwords does enough for your specific needs, or whether the gaps justify paying for 1Password.
 
-## Pricing: Free vs $35.88/Year
+## Pricing: Free vs $47.88/Year
 
 This is the simplest dimension of the comparison and potentially the most important.
 
@@ -39,18 +39,18 @@ Apple Passwords costs nothing. There is no subscription, no premium tier, no ups
 
 | Plan | Cost | What You Get |
 |---|---|---|
-| Individual | $35.88/year ($2.99/month) | Unlimited passwords, all platforms, Watchtower, Travel Mode, Secret Key, 1GB storage |
-| Family | $59.88/year ($4.99/month) | Up to 5 members, shared vaults, granular permissions |
+| Individual | $47.88/year ($3.99/month) | Unlimited passwords, all platforms, Watchtower, Travel Mode, Secret Key, 1GB storage |
+| Family | $71.88/year ($5.99/month) | Up to 5 members, shared vaults, granular permissions |
 | No free tier | -- | 14-day trial only |
 
 ### Five-Year Cost Comparison
 
 | | Apple Passwords | 1Password |
 |---|---|---|
-| Individual (5 years) | $0 | $179.40 |
-| Family (5 years) | $0 | $299.40 |
+| Individual (5 years) | $0 | $239.40 |
+| Family (5 years) | $0 | $359.40 |
 
-Over five years, 1Password costs $179.40 for an individual. Apple Passwords costs nothing. This is a meaningful difference, and for users whose needs Apple Passwords satisfies, it is hard to argue against free.
+Over five years, 1Password costs $239.40 for an individual. Apple Passwords costs nothing. This is a meaningful difference, and for users whose needs Apple Passwords satisfies, it is hard to argue against free.
 
 For a full breakdown across all major managers, see our [pricing comparison guide](/compare/pricing-comparison/).
 
@@ -98,7 +98,7 @@ This is where the comparison becomes most relevant. Apple Passwords is a basic p
 
 ### Comparison Summary Table
 
-| Feature | 1Password ($35.88/yr) | Apple Passwords (Free) |
+| Feature | 1Password ($47.88/yr) | Apple Passwords (Free) |
 |---|---|---|
 | Password storage | Unlimited | Unlimited |
 | Password autofill | Yes (all platforms) | Yes (Apple devices + Windows via iCloud) |
@@ -151,7 +151,7 @@ If you use any non-Apple device -- a Windows work laptop, an Android phone, a Li
 
 ### Where Apple Passwords Leads
 
-**Price.** Free is free. If Apple Passwords meets your needs, there is no financial reason to pay $35.88/year for 1Password.
+**Price.** Free is free. If Apple Passwords meets your needs, there is no financial reason to pay $47.88/year for 1Password.
 
 **Zero setup.** Apple Passwords works the moment you sign into your Apple ID. There is no account to create, no app to download, no extension to configure. Credentials are saved automatically when you create accounts in Safari, and autofill works across all apps and websites on Apple devices.
 
@@ -205,7 +205,7 @@ This is the table that decides the comparison for many users. If you live entire
 - Users with basic needs: password storage, autofill, breach alerts, and verification codes
 - People who trust Apple's privacy model and prefer not to extend trust to another company
 - Those who want the deepest possible system integration on their Apple devices
-- Budget-conscious users for whom $35.88/year is not justified by additional features
+- Budget-conscious users for whom $47.88/year is not justified by additional features
 
 ## Consider Also: A Different Approach
 
@@ -229,7 +229,7 @@ Apple Passwords is the right choice for Apple-only users with basic needs. It is
 
 1Password is the right choice for users who need cross-platform support, advanced features, or organizational depth. If you own a single non-Apple device, the comparison essentially ends -- Apple Passwords cannot follow you to Windows, Android, or Linux in any meaningful way. Even for Apple-only users, 1Password's Watchtower, Travel Mode, shared vaults with permissions, secure notes, file storage, and Secret Key represent a significant capability upgrade over Apple's built-in option.
 
-The $35.88/year question is simple: do you need what Apple Passwords cannot provide? If yes, 1Password is worth every dollar. If no, Apple Passwords is a surprisingly capable free option that continues to improve.
+The $47.88/year question is simple: do you need what Apple Passwords cannot provide? If yes, 1Password is worth every dollar. If no, Apple Passwords is a surprisingly capable free option that continues to improve.
 
 ## Related Articles
 

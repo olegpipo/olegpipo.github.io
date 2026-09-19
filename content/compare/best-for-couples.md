@@ -2,7 +2,7 @@
 title: "Best Password Manager for Couples"
 description: "The best password managers for couples in 2026. Shared vaults, individual privacy, affordable two-person plans, and emergency access compared."
 date: 2026-03-08
-lastmod: 2026-09-02
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 faq:
@@ -11,7 +11,7 @@ faq:
   - q: "Can couples share passwords without sharing everything?"
     a: "Yes. 1Password, Bitwarden, and Dashlane all support shared vaults alongside private vaults. Each partner maintains their own private space while accessing shared credentials for joint accounts."
   - q: "Is a family plan worth it for just two people?"
-    a: "It depends on the plan. Bitwarden Family at $47.88/year for two people costs $23.94/person -- more than two individual Premium accounts ($19.80 each). 1Password Family at $60/year is cheaper than two individual accounts ($72/year). Always compare per-person costs."
+    a: "It depends on the plan. Bitwarden Family at $47.88/year for two people costs $23.94/person -- more than two individual Premium accounts ($19.80 each). 1Password Family at $71.88/year is cheaper than two individual accounts ($95.76/year). Always compare per-person costs."
   - q: "How do couples handle emergency access to passwords?"
     a: "Bitwarden offers a timed emergency access feature. 1Password allows a family organizer to help recover accounts. PanicVault users can share a backup of their KDBX file with their partner. Apple Passwords supports shared groups."
   - q: "Can my partner and I use different devices with the same password manager?"
@@ -52,9 +52,9 @@ Couples often have different device preferences. One partner may use an iPhone, 
 
 ### 1Password Family
 
-**Price**: $4.99/month ($59.88/year) for up to 5 family members
+**Price**: $5.99/month ($71.88/year) for up to 5 family members
 
-1Password's family plan is the top recommendation for most couples. Even though you only use 2 of the 5 available accounts, the per-person cost ($2.50/month each) is actually cheaper than two individual 1Password accounts ($2.99/month each). You save $12/year by choosing the family plan over two individual plans.
+1Password's family plan is the top recommendation for most couples. Even though you only use 2 of the 5 available accounts, the per-person cost (about $3/month each) is actually cheaper than two individual 1Password accounts ($3.99/month each). You save $23.88/year by choosing the family plan over two individual plans.
 
 **Why it works for couples:**
 - Shared vaults for joint accounts alongside private vaults for each partner
@@ -65,7 +65,7 @@ Couples often have different device preferences. One partner may use an iPhone, 
 - Up to 3 additional accounts available if the couple grows or wants to include parents
 
 **Drawbacks:**
-- $60/year is a meaningful recurring expense
+- $72/year is a meaningful recurring expense
 - Both partners must use 1Password (no mixing password managers)
 - Cloud-based only -- no local-only option
 - Proprietary format creates vendor dependence
@@ -171,8 +171,8 @@ Dashlane's family plan is the most expensive option but supports the most member
 
 | Plan | Annual Cost | Per Person | Shared Vaults | Emergency Access |
 |---|---|---|---|---|
-| 1Password Family (5) | $59.88 | $29.94 | Yes | Organizer recovery |
-| 2x 1Password Individual | $71.76 | $35.88 | No | No |
+| 1Password Family (5) | $71.88 | $35.94 | Yes | Organizer recovery |
+| 2x 1Password Individual | $95.76 | $47.88 | No | No |
 | Bitwarden Family (6) | $47.88 | $23.94 | Yes | Yes (timed) |
 | 2x Bitwarden Premium | $39.60 | $19.80 | No | Yes (timed) |
 | Dashlane Family (10) | $89.88 | $44.94 | Yes | Yes |

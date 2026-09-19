@@ -80,7 +80,7 @@ Bitwarden covers more platforms than any other password manager. Native or web-b
 
 ### 2. 1Password (Best Cross-Platform Experience)
 
-**Price**: Individual $2.99/month ($35.88/year); Families $4.99/month ($59.88/year)
+**Price**: Individual $3.99/month ($47.88/year); Families $5.99/month ($71.88/year)
 
 1Password may not match Bitwarden's raw platform count, but it delivers the most polished experience on every platform it supports. The iOS, macOS, Windows, Android, and Linux apps all feel like they were built by teams that care deeply about each platform's design conventions.
 
@@ -104,7 +104,7 @@ Bitwarden covers more platforms than any other password manager. Native or web-b
 - Passkey support on all platforms
 
 **Limitations:**
-- No free tier -- $36/year minimum
+- No free tier -- $48/year minimum
 - Proprietary data format limits portability
 - No self-hosted option
 - Linux support is newer and slightly less mature than other platforms
@@ -146,7 +146,7 @@ Dashlane has evolved from a Mac-first tool into a genuinely cross-platform solut
 
 ### 4. NordPass (Smooth Across All Platforms)
 
-**Price**: Free (one device); Premium $1.49/month ($17.88/year, introductory)
+**Price**: Free (one device); Premium $1.99/month ($23.88) for the first year, then $2.99/month ($35.88/year)
 
 NordPass, from the makers of NordVPN, has quietly built a competent cross-platform password manager. Its native apps on every platform and competitive introductory pricing make it worth considering, especially for NordVPN subscribers who can bundle services.
 
@@ -168,7 +168,7 @@ NordPass, from the makers of NordVPN, has quietly built a competent cross-platfo
 - Offline access to cached credentials
 
 **Limitations:**
-- Introductory pricing increases significantly on renewal (check renewal rates)
+- Introductory pricing increases on renewal (Premium goes from $23.88 to $35.88/year)
 - Less established than Bitwarden or 1Password in the password manager market
 - No self-hosted option
 - No CLI tool

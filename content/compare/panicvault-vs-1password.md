@@ -2,7 +2,7 @@
 title: "PanicVault vs. 1Password: Detailed Comparison"
 description: "An honest, in-depth comparison of PanicVault and 1Password covering security, pricing, data ownership, Apple integration, and daily usability for Mac and iOS users."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-09-19
 draft: false
 silo: "Comparisons"
 ---
@@ -67,12 +67,12 @@ One notable difference: 1Password requires an internet connection for initial se
 
 ### 1Password
 
-- Individual: $2.99/month ($35.88/year)
-- Family: $4.99/month ($59.88/year, up to 5 members)
+- Individual: $3.99/month ($47.88/year)
+- Family: $5.99/month ($71.88/year, up to 5 members)
 - No free tier
 - No lifetime purchase option
 
-Over five years, an individual subscription costs approximately $180. A family plan over five years costs roughly $300.
+Over five years, an individual subscription costs approximately $240. A family plan over five years costs roughly $360.
 
 ### PanicVault
 
