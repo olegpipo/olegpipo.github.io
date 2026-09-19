@@ -52,7 +52,7 @@ All prices were checked in 2026 (1Password and NordPass in September 2026). Pric
 | Dashlane | $7.49/month | Up to 10 | $8.99 | $89.88/year total |
 | Proton Pass | $3.99/month | Up to 6 | $7.98 | $47.88/year total |
 | NordPass | $3.69/month first year, then $5.99/month | Up to 6 | $7.38 first year, then $11.98 | $44.28 first year, then $71.88/year |
-| PanicVault | $4.99 one-time | Unlimited | $0 after purchase | App Store Family Sharing available |
+| PanicVault | $4.99 one-time | Up to 6 | $0 after purchase | One purchase shared through App Store Family Sharing |
 | Strongbox | Same as Pro plans | Up to 6 | Varies by plan | Paid plans include Family Sharing |
 | KeePassXC | $0 | Unlimited | $0 | Share database file |
 | Apple Passwords | $0 | Unlimited | $0 | iCloud sharing groups |
