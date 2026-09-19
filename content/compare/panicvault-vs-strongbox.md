@@ -173,7 +173,7 @@ If you are currently using another password manager entirely, both PanicVault an
 
 PanicVault and Strongbox are both excellent KeePass-compatible apps for Apple devices. The choice between them is more about interface preference and specific feature needs (sync providers, password audit) than about fundamental capability -- both now support YubiKey challenge-response over NFC on iPhone, and over USB on Mac. Both protect your credentials with the same encryption, both support the same database format, and both integrate well with the Apple ecosystem.
 
-If you value simplicity and a focused design, PanicVault is the better fit. If you need additional sync providers beyond iCloud and Google Drive, breach monitoring, or KDBX 3.1 support, Strongbox offers more flexibility. Either way, your data remains in the open KDBX format, and you can switch at any time.
+If you value simplicity and a focused design, PanicVault is the better fit. If you need additional sync providers beyond iCloud and Google Drive, breach monitoring, or KDBX 3.1 support, Strongbox offers more flexibility. Either way, your data remains in the open KDBX format, and you can switch at any time. For a wider look at the iPhone side that includes KeePassium, see our guide to the [best KeePass apps for iPhone](/keepass/keepass-ios/).
 
 ## Related Articles
 

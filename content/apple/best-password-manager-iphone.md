@@ -180,7 +180,7 @@ The right answer changes depending on what else you own and what you are trying 
 
 ### "I want KeePass on my iPhone"
 
-**Best choice**: **PanicVault** for the cleanest Apple-native experience, or **Strongbox** for the most feature-rich KeePass implementation. Both read and write KDBX files and integrate with iOS AutoFill. See our [KeePass apps for Apple](/compare/keepass-apps-apple/) guide for a complete comparison, or our [KeePassXC iOS alternatives](/keepass/keepassxc-ios-alternatives/) guide if you are coming from KeePassXC on the desktop.
+**Best choice**: **PanicVault** for the cleanest Apple-native experience, or **Strongbox** for the most feature-rich KeePass implementation. Both read and write KDBX files and integrate with iOS AutoFill. Our guide to [KeePass for iOS](/keepass/keepass-ios/) compares the iPhone options, including KeePassium, and shows how to move a database over from Windows. See our [KeePass apps for Apple](/compare/keepass-apps-apple/) guide for a complete comparison, or our [KeePassXC iOS alternatives](/keepass/keepassxc-ios-alternatives/) guide if you are coming from KeePassXC on the desktop.
 
 ### "I want the absolute simplest option"
 

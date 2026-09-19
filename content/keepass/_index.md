@@ -117,7 +117,7 @@ On iOS, apps like Strongbox, KeePassium, and PanicVault provide native experienc
 
 KeePassXC includes a companion browser extension for Chrome, Firefox, Edge, and other Chromium-based browsers. It communicates with the desktop application to provide autofill capabilities that work seamlessly with your browsing workflow.
 
-For a comprehensive overview of compatible applications organized by platform, see our [KeePass compatible apps guide](/keepass/compatible-apps/). Our broader [compatibility guide](/keepass/compatibility-guide/) covers interoperability considerations, including how to ensure your database works across different applications. If you use KeePassXC on desktop and need a mobile solution, see our guide to [KeePassXC on iOS: best alternatives](/keepass/keepassxc-ios-alternatives/).
+For a comprehensive overview of compatible applications organized by platform, see our [KeePass compatible apps guide](/keepass/compatible-apps/). Our broader [compatibility guide](/keepass/compatibility-guide/) covers interoperability considerations, including how to ensure your database works across different applications. For your phone, our guide to [KeePass on iOS](/keepass/keepass-ios/) compares the iPhone apps and shows how to move a database over from KeePass on Windows. If you use KeePassXC on desktop and need a mobile solution, see our guide to [KeePassXC on iOS: best alternatives](/keepass/keepassxc-ios-alternatives/).
 
 ## Migrating to KeePass
 
