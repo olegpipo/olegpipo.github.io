@@ -2,14 +2,14 @@
 title: "Security & Settings"
 description: "Configure PanicVault security: Face ID and Touch ID unlock, lock timeout, clipboard auto-clear, Universal Clipboard, appearance, and memory protection."
 date: 2026-07-14
-lastmod: 2026-08-26
+lastmod: 2026-09-25
 draft: false
 silo: "User Manual"
 helpgroup: "Settings"
 weight: 150
 ---
 
-PanicVault's app-wide settings control how your vaults are unlocked, how long they stay unlocked, and how copied values are handled. This page covers every option on the Settings screen, which you reach by tapping the gear icon on the home screen.
+PanicVault's app-wide settings control how your vaults are unlocked, how long they stay unlocked, and how copied values are handled. This page covers every option on the Settings screen, which you reach by tapping the gear icon on the home screen. On Mac you can also open it from anywhere in the app, whether or not a vault is unlocked: choose **PanicVault > Settings...** from the menu bar or press **Cmd+,**. Click **Done** to close it.
 
 ## Biometric Unlock (Face ID / Touch ID)
 

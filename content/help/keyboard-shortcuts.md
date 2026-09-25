@@ -2,7 +2,7 @@
 title: "Keyboard Shortcuts for Mac"
 description: "Every PanicVault keyboard shortcut on Mac — create entries, search, generate passwords, lock the vault, copy credentials, import CSV, and export your vault."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-09-25
 draft: false
 silo: "User Manual"
 helpgroup: "Reference"
@@ -22,14 +22,16 @@ PanicVault supports keyboard shortcuts on Mac for common actions. This page list
 | **Cmd+B** | Copy the selected entry's username |
 | **Cmd+Shift+E** | Export the vault |
 | **Cmd+Delete** | Delete the selected entry |
+| **Cmd+,** | Open Settings (works whether or not a vault is unlocked) |
 | **Cmd+?** | Open PanicVault Help |
 
-These shortcuts are also available from the Mac menu bar under the **Vault** and **Help** menus.
+These shortcuts are also available from the Mac menu bar under the **PanicVault**, **Vault** and **Help** menus.
 
 ## Menu Bar Commands
 
 The Mac menu bar provides access to all major vault actions:
 
+- **PanicVault** menu -- Settings...
 - **Vault** menu -- Search Entries, Lock Vault, Generate Password, Export Vault, Copy Password, Copy Username, Delete Entry
 - **Help** menu -- PanicVault Help (opens this manual)
 
@@ -39,4 +41,5 @@ The Mac menu bar provides access to all major vault actions:
 - [Password Generator](/help/password-generator/) -- what **Cmd+G** opens
 - [Importing Passwords](/help/importing-passwords/) -- what **Cmd+Shift+I** opens
 - [Vault Settings](/help/vault-settings/) -- exporting your vault with **Cmd+Shift+E**
+- [Security & Settings](/help/security-and-settings/) -- what **Cmd+,** opens
 - [Drag and Drop on Mac](/help/drag-and-drop/) -- reorganizing entries and groups with the mouse

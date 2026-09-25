@@ -2,7 +2,7 @@
 title: "Getting Started"
 description: "Create your first PanicVault vault, open an existing .kdbx file, set a default vault, and choose a strong master password."
 date: 2026-07-14
-lastmod: 2026-08-26
+lastmod: 2026-09-25
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
@@ -20,7 +20,7 @@ From here you can:
 - Tap a vault card to open and unlock it
 - Tap the "+" card to create or import a vault
 - Long-press a vault card to set it as default or delete it
-- Tap the gear icon to open Settings
+- Tap the gear icon to open Settings (on Mac you can also choose **PanicVault > Settings...** or press **Cmd+,** at any time, even with a vault open)
 
 ## Default Vault
 
