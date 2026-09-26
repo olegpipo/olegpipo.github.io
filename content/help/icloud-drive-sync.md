@@ -40,7 +40,7 @@ If iCloud has moved a vault off the device to save space, PanicVault fetches it 
 iCloud Drive vaults sync automatically using entry-level merging, the same intelligent system used for Google Drive. Changes from multiple devices are merged at the entry level so that edits from both sides are preserved.
 
 - **On unlock**: The vault file is read once, through file coordination, so you never open a copy that iCloud was halfway through replacing with another device's version. If iCloud has moved the vault off the device, it is fetched first and the lock screen says **Downloading from iCloud...** while you wait.
-- **On save**: When you save changes, the file is written to iCloud Drive using file coordination. The operating system handles uploading the file to iCloud in the background.
+- **On save**: Before writing, PanicVault reads the vault file through file coordination. If iCloud has brought in another device's version since the last sync, PanicVault merges it with your changes entry by entry and saves the result, so a save never overwrites a change it has not merged. The operating system then uploads the file in the background. If that version does not open with the password you unlocked with -- it was changed on the other device -- nothing is written and PanicVault says so; your changes stay on screen.
 - **On app activation**: When PanicVault returns to the foreground, it checks all iCloud vaults for remote changes. If the unlocked vault has new remote changes, they are merged automatically.
 - **Background monitoring**: PanicVault uses the system metadata query API to detect when iCloud Drive files change. Changes are debounced to avoid rapid repeated syncs, and the app ignores notifications caused by its own recent writes.
 
@@ -48,7 +48,9 @@ The entry-by-entry merge rules are the same ones documented under [Google Drive 
 
 ## Handling Sync Conflicts
 
-Conflicts are handled the same way as Google Drive vaults. When the same entry has been modified on two different devices since the last sync, PanicVault shows a conflict resolution screen where you choose which version to keep for each conflicting entry. You can also use the "Keep All Local" or "Keep All Remote" bulk actions.
+When the same entry was changed on this device and on another one since the last sync, PanicVault saves both versions straight away -- yours, and the other device's as a "(conflicted copy)" -- then shows the conflict screen: **Keep All Local**, **Keep All Remote**, **Keep Both**, or entry by entry. Both versions are kept until you choose, so if you cancel, lock the vault, or PanicVault is closed before you answer, nothing is lost. This happens whether the conflict turns up when you save or when PanicVault syncs on its own (on unlock, when it comes back to the foreground, or when you tap the sync button).
+
+Your choice is saved the same careful way, so a change another device made after both versions were saved is kept. If you changed the vault again before choosing, the choice is not applied and PanicVault says **Both versions kept: the vault changed before your choice** -- delete the version you don't want.
 
 ## Sync Status Indicators
 
@@ -77,4 +79,4 @@ You do not have to keep your vault in the PanicVault folder. If you open a .kdbx
 
 Files that are not synced by iCloud -- vaults in "On My iPhone", on an external drive, or in a third-party storage provider such as Dropbox -- are still opened as local vaults. Their syncing stays with whatever manages them, but when it changes the file PanicVault merges those changes instead of overwriting them. See [Vaults Synced by Another App](/help/getting-started/#vaults-synced-by-another-app).
 
-One difference applies to an iCloud Drive vault kept outside the PanicVault folder: the system only reports live file-change notifications for the app's own folder, so changes made on another device are picked up when PanicVault comes back to the foreground, when the vault is opened or unlocked, when you save, or when you tap the sync button -- rather than the instant they arrive.
+One difference applies to an iCloud Drive vault kept outside the PanicVault folder: the system only reports live file-change notifications for the app's own folder, so changes made on another device, or by KeePassXC on this Mac, are picked up when PanicVault comes back to the foreground, when the vault is opened or unlocked, when you tap the sync button, and when you save -- rather than the instant they arrive. A save never overwrites them: it first merges any newer version iCloud has already brought onto this device.

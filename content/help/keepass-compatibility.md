@@ -27,7 +27,7 @@ Your PanicVault databases can be opened in:
 - **Strongbox** (iOS, Mac)
 - Any other application that supports the KDBX 4 format
 
-Similarly, PanicVault can open .kdbx files created by any of these applications. To bring an existing file in, see [Getting Started](/help/getting-started/). You can even keep the same file open in PanicVault and KeePassXC at once: PanicVault merges what KeePassXC saves instead of overwriting it (see [Vaults Synced by Another App](/help/getting-started/#vaults-synced-by-another-app)).
+Similarly, PanicVault can open .kdbx files created by any of these applications. To bring an existing file in, see [Getting Started](/help/getting-started/). You can even keep the same file open in PanicVault and KeePassXC at once -- in a folder on your Mac or in iCloud Drive: PanicVault merges what KeePassXC saves instead of overwriting it (see [Vaults Synced by Another App](/help/getting-started/#vaults-synced-by-another-app) and [Vaults Kept Elsewhere in iCloud Drive](/help/icloud-drive-sync/#vaults-kept-elsewhere-in-icloud-drive)).
 
 ## Opening an Older KeePass Database
 
