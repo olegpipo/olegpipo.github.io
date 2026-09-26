@@ -101,6 +101,8 @@ Changes another app makes appear in PanicVault as soon as you switch back to it,
 
 Syncthing and Dropbox sometimes keep a separate copy of the file when two devices change it at the same moment (Syncthing names it like `Vault.sync-conflict-20260925-101500-ABCDEFG.kdbx`, Dropbox like `Vault (Anna's conflicted copy 2026-09-25).kdbx`). Those copies are separate files, and PanicVault does not merge them into your vault. You can open one with **Open Existing Vault** to check whether it holds anything you need.
 
+If unlocking says the vault file **was moved into a sync tool's versions folder or the Trash**, the sync tool has put the old file aside (Syncthing into `.stversions`) and nothing is at its place yet: wait for the sync to finish, or select the file again with **Open Existing Vault**.
+
 ## Choosing a Strong Master Password
 
 Your master password is the single key that protects all your other passwords. Choose it carefully:
