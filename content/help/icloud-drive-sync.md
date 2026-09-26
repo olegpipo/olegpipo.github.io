@@ -42,7 +42,7 @@ If iCloud has moved a vault off the device to save space, PanicVault fetches it 
 iCloud Drive vaults sync automatically using entry-level merging, the same intelligent system used for Google Drive. Changes from multiple devices are merged at the entry level so that edits from both sides are preserved.
 
 - **On unlock**: The vault file is read once, through file coordination, so you never open a copy that iCloud was halfway through replacing with another device's version. If iCloud has moved the vault off the device, it is fetched first and the lock screen says **Downloading from iCloud...** while you wait.
-- **On save**: Before writing, PanicVault reads the vault file through file coordination. If iCloud has brought in another device's version since the last sync, PanicVault merges it with your changes entry by entry and saves the result, so a save never overwrites a change it has not merged. The operating system then uploads the file in the background. If that version does not open with the password you unlocked with -- it was changed on the other device -- nothing is written and PanicVault says so; your changes stay on screen.
+- **On save**: Before writing, PanicVault reads the vault file through file coordination. If iCloud has brought in another device's version since the last sync, PanicVault merges it with your changes entry by entry and saves the result, so a save never overwrites a change it has not merged. This holds when you have just changed the master password too: the other device's version, still under the old password, is merged, and the result is saved under the new one. The operating system then uploads the file in the background. If that version does not open with the password you unlocked with -- it was changed on the other device -- nothing is written and PanicVault says so; your changes stay on screen.
 - **On app activation**: When PanicVault returns to the foreground, it checks all iCloud vaults for remote changes. If the unlocked vault has new remote changes, they are merged automatically.
 - **Background monitoring**: PanicVault uses the system metadata query API to detect when iCloud Drive files change. Changes are debounced to avoid rapid repeated syncs, and the app ignores notifications caused by its own recent writes.
 
@@ -50,9 +50,15 @@ The entry-by-entry merge rules are the same ones documented under [Google Drive 
 
 ## Handling Sync Conflicts
 
-When the same entry was changed on this device and on another one since the last sync, PanicVault saves both versions straight away -- yours, and the other device's as a "(conflicted copy)" -- then shows the conflict screen: **Keep All Local**, **Keep All Remote**, **Keep Both**, or entry by entry. Both versions are kept until you choose, so if you cancel, lock the vault, or PanicVault is closed before you answer, nothing is lost. This happens whether the conflict turns up when you save or when PanicVault syncs on its own (on unlock, when it comes back to the foreground, or when you tap the sync button).
+When the same entry was changed on this device and on another one since the last sync, PanicVault saves both versions straight away -- yours, and the other device's as a "(conflicted copy)" -- then shows the conflict screen: **Keep All Local**, **Keep All Remote**, **Keep Both**, or entry by entry. Both versions are kept until you choose, so if you cancel, lock the vault, or PanicVault is closed before you answer, nothing is lost. This happens whether the conflict turns up when you save or when PanicVault syncs on its own (on unlock, when it comes back to the foreground, or when you tap the sync button). If the other device changes the same entries again while PanicVault is saving, PanicVault starts over with its latest version, so the conflict screen always compares yours with the latest one.
 
-Your choice is saved the same careful way, so a change another device made after both versions were saved is kept. If you changed the vault again before choosing, the choice is not applied and PanicVault says **Both versions kept: the vault changed before your choice** -- delete the version you don't want.
+Sometimes both versions are kept without the conflict screen -- delete the one you don't want:
+
+- the other device changed something else in the vault while PanicVault was saving both versions: a choice made from the earlier comparison would undo that change;
+- you changed the vault again before the save had finished;
+- the save was one PanicVault finished after you had locked the vault: both versions are in the file, and you see them the next time you unlock it.
+
+Your choice is saved the same careful way, so a change another device made after both versions were saved is kept. If the vault changed before you chose -- you edited it, or a sync brought in a change from another device -- or another conflict came up while your choice waited its turn, the choice is not applied and PanicVault says **Both versions kept: the vault changed before your choice** -- delete the version you don't want. Using an entry meanwhile, such as copying its password, does not count as a change.
 
 ## Sync Status Indicators
 
