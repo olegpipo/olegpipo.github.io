@@ -188,7 +188,7 @@ iCloud Drive is the simplest sync method if you use a Mac as your desktop machin
 
 5. **Enable AutoFill.** On iOS 18 and later, go to iPhone Settings > General > AutoFill & Passwords, turn on AutoFill Passwords and Passkeys, and turn on your KeePass app in the list of apps. (On iOS 17 and earlier, the setting was under Settings > Passwords > Password Options.)
 
-Your database now syncs automatically between your Mac and iPhone through iCloud Drive. Changes made on either device propagate through iCloud.
+Your database now syncs automatically between your Mac and iPhone through iCloud Drive. Changes made on either device propagate through iCloud. PanicVault merges the changes KeePassXC saves instead of overwriting them.
 
 ### Option 2: Google Drive (Best for Cross-Platform)
 

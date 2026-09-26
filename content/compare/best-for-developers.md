@@ -129,7 +129,7 @@ For developers working primarily in the Apple ecosystem, PanicVault offers a com
 - KDBX format means your database is scriptable and interoperable with KeePassXC on desktop
 - One-time purchase with no recurring cost
 - Built-in TOTP authenticator for GitHub 2FA, AWS MFA, and other developer services
-- iCloud sync keeps your vault available across iPhone, iPad, and Mac
+- iCloud sync keeps your vault available across iPhone, iPad, and Mac -- when another device or KeePassXC changes it, PanicVault merges those changes before it saves instead of overwriting them
 - Prefer your own sync? Keep the vault in a folder synced by Syncthing, Dropbox, or your own SSH or rsync setup, or open it in KeePassXC on the same Mac -- PanicVault merges the changes they make instead of overwriting them
 - Groups and tags for organizing credentials by project, client, or environment
 - Offline access -- your vault works without internet, critical for air-gapped environments

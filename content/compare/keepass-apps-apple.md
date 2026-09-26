@@ -206,7 +206,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Apple + Cross-Platform
 
-**PanicVault on iPhone and iPad, KeePassXC on Mac, Windows, and Linux.** Use PanicVault for mobile with system AutoFill. Use KeePassXC on desktop for its advanced features (SSH agent, Auto-Type, browser extension). Store the KDBX file on iCloud Drive or Dropbox for sync across all devices. Even in a Dropbox folder, PanicVault merges the changes KeePassXC makes instead of overwriting them.
+**PanicVault on iPhone and iPad, KeePassXC on Mac, Windows, and Linux.** Use PanicVault for mobile with system AutoFill. Use KeePassXC on desktop for its advanced features (SSH agent, Auto-Type, browser extension). Store the KDBX file on iCloud Drive or Dropbox for sync across all devices. Either way, PanicVault merges the changes KeePassXC makes before it saves, instead of overwriting them.
 
 ### Maximum Features
 

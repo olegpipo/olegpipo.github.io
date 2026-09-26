@@ -109,7 +109,7 @@ This is largely a matter of personal preference. PanicVault is cleaner and simpl
 
 ### PanicVault
 
-PanicVault syncs through iCloud Drive and Google Drive. iCloud sync is the simplest setup for Apple users -- your KDBX file syncs automatically across your iPhone, iPad, and Mac with no additional configuration. Google Drive support adds a cross-platform option for users who share files with non-Apple devices or prefer Google's ecosystem.
+PanicVault syncs through iCloud Drive and Google Drive. iCloud sync is the simplest setup for Apple users -- your KDBX file syncs automatically across your iPhone, iPad, and Mac with no additional configuration, and when another device or KeePassXC has changed it, PanicVault merges those changes before it saves instead of overwriting them. Google Drive support adds a cross-platform option for users who share files with non-Apple devices or prefer Google's ecosystem.
 
 You can also store your database locally or in any file provider accessible through the Files app, but iCloud and Google Drive are the primary built-in sync options. When Dropbox, Syncthing, your own SSH or rsync setup, or KeePassXC on the same Mac changes a vault kept that way, PanicVault merges those changes instead of overwriting them.
 
