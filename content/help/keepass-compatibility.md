@@ -2,7 +2,7 @@
 title: "KeePass Compatibility"
 description: "PanicVault uses the open KDBX 4 format — AES-256-CBC and ChaCha20 ciphers, Argon2d, Argon2id and AES-KDF key derivation, and full round-trip data preservation."
 date: 2026-07-14
-lastmod: 2026-08-28
+lastmod: 2026-09-26
 draft: false
 silo: "User Manual"
 helpgroup: "Reference"
@@ -27,7 +27,7 @@ Your PanicVault databases can be opened in:
 - **Strongbox** (iOS, Mac)
 - Any other application that supports the KDBX 4 format
 
-Similarly, PanicVault can open .kdbx files created by any of these applications. To bring an existing file in, see [Getting Started](/help/getting-started/).
+Similarly, PanicVault can open .kdbx files created by any of these applications. To bring an existing file in, see [Getting Started](/help/getting-started/). You can even keep the same file open in PanicVault and KeePassXC at once: PanicVault merges what KeePassXC saves instead of overwriting it (see [Vaults Synced by Another App](/help/getting-started/#vaults-synced-by-another-app)).
 
 ## Opening an Older KeePass Database
 

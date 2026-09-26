@@ -2,7 +2,7 @@
 title: "iCloud Drive Sync"
 description: "Store PanicVault vaults on iCloud Drive to sync them across your Apple devices, with automatic entry-level merging and conflict resolution."
 date: 2026-07-14
-lastmod: 2026-08-26
+lastmod: 2026-09-26
 draft: false
 silo: "User Manual"
 helpgroup: "Sync"
@@ -75,6 +75,6 @@ You should not rename or move vault files outside of PanicVault, as this may bre
 
 You do not have to keep your vault in the PanicVault folder. If you open a .kdbx file that already lives somewhere in your iCloud Drive -- with **Open Existing Vault**, or by tapping it in the Files app -- PanicVault recognises it as an iCloud file and gives it the full iCloud treatment: coordinated reads and writes, automatic download before opening, conflict resolution, and entry-level merging across your devices. The vault card shows it as an iCloud Drive vault.
 
-Files that are not synced by iCloud -- vaults in "On My iPhone", on an external drive, or in a third-party storage provider such as Dropbox -- are still opened as local vaults, and PanicVault leaves their syncing entirely to whatever manages them.
+Files that are not synced by iCloud -- vaults in "On My iPhone", on an external drive, or in a third-party storage provider such as Dropbox -- are still opened as local vaults. Their syncing stays with whatever manages them, but when it changes the file PanicVault merges those changes instead of overwriting them. See [Vaults Synced by Another App](/help/getting-started/#vaults-synced-by-another-app).
 
-One difference applies to a vault kept outside the PanicVault folder: the system only reports live file-change notifications for the app's own folder, so changes made on another device are picked up when PanicVault comes back to the foreground, when the vault is opened or unlocked, when you save, or when you tap the sync button -- rather than the instant they arrive.
+One difference applies to an iCloud Drive vault kept outside the PanicVault folder: the system only reports live file-change notifications for the app's own folder, so changes made on another device are picked up when PanicVault comes back to the foreground, when the vault is opened or unlocked, when you save, or when you tap the sync button -- rather than the instant they arrive.

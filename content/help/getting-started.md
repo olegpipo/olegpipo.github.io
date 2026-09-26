@@ -2,14 +2,14 @@
 title: "Getting Started"
 description: "Create your first PanicVault vault, open an existing .kdbx file, set a default vault, and choose a strong master password."
 date: 2026-07-14
-lastmod: 2026-09-25
+lastmod: 2026-09-26
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
 weight: 10
 ---
 
-This page walks you through your first minutes with PanicVault: the home screen, creating a new vault, opening a .kdbx file you already have, and picking a master password that will actually protect it.
+This page walks you through your first minutes with PanicVault: the home screen, creating a new vault, opening a .kdbx file you already have, keeping it safe alongside the apps and sync tools that also change it, and picking a master password that will actually protect it.
 
 ## The Home Screen
 
@@ -80,10 +80,26 @@ The vault is added to your home screen and its lock screen appears right away, r
 The same iCloud wait applies here: if you tap a file in Files or double-click one in the Finder that iCloud has moved off the device to save space, PanicVault fetches it first, and should that take longer than a moment it tells you the vault **hasn't finished downloading from iCloud** — let the download finish, then open the file again.
 
 {{< callout type="note" >}}
-PanicVault opens the file in place. It works with the original file where it already lives — in iCloud Drive, in a folder on your Mac, in another app's storage — rather than making a copy, so nothing gets out of step with the vault you sync elsewhere.
+PanicVault opens the file in place. It works with the original file where it already lives — in iCloud Drive, in a folder on your Mac, in another app's storage — rather than making a copy, so nothing gets out of step with the vault you sync elsewhere. When another app or sync tool changes the file while you have the vault open, PanicVault merges those changes instead of overwriting them — see [Vaults Synced by Another App](#vaults-synced-by-another-app).
 {{< /callout >}}
 
 If the file is already one of your vaults, PanicVault opens that vault instead of adding a second copy of it to your home screen. If a different vault is unlocked at the time, it is locked first, exactly as when you tap another vault on the home screen.
+
+## Vaults Synced by Another App
+
+A vault that is not on [iCloud Drive](/help/icloud-drive-sync/) or [Google Drive](/help/google-drive-sync/) — one in "On My iPhone", in a folder on your Mac, on an external drive, or in a folder kept in step by Dropbox, Nextcloud, Syncthing or your own SSH or rsync setup — is synced by whatever manages that folder, not by PanicVault. You can also keep the same file open in KeePassXC on the same Mac.
+
+PanicVault makes sure it never overwrites what those tools write:
+
+- **Before every save**, PanicVault checks whether the file is still the one it opened or last saved. If it is, the save goes ahead as usual.
+- **If another app changed the file**, PanicVault opens the new version with the password and key file you unlocked with, merges its changes into yours entry by entry, and saves the result. When entries were added or changed, a message such as **Merged 2 changes from another app** tells you so. This works even when KeePassXC has re-encrypted the file with a new random seed, as it does on every save.
+- **If the same entry changed in both places**, PanicVault saves both versions straight away — yours, and the other app's as a "(conflicted copy)" — and then shows the conflict screen so you can choose which to keep: **Keep All from PanicVault**, **Keep All from File**, or **Keep Both**, or entry by entry. Both versions are kept until you choose, so if you cancel, or PanicVault is closed before you answer, nothing is lost. If the other app changed something else in the file while PanicVault was saving, both versions are kept without the conflict screen: delete the copy you don't want. If it keeps changing the same entries while PanicVault saves, PanicVault stops after a few tries without overwriting the file, keeps your changes on screen and shows the **Changes not saved to the vault file** banner; your changes are saved with your next change, or tap **Try Again** once the other app has finished.
+- **If PanicVault cannot open the new file** — its master password or key file was changed in the other app, or the file has not finished arriving from another device — PanicVault does not overwrite it. A **Changes not saved to the vault file** banner stays above your entries. Tap **Try Again** once the sync has finished. If the password really was changed, use **Export Vault** to keep a copy of your latest changes (it opens with the password you unlocked with), then lock the vault and unlock it with its current password.
+- **For a vault protected by a YubiKey**, a file saved in KeePassXC needs a fresh answer from your key before it can be merged, and PanicVault shows the **Changes not saved to the vault file — YubiKey needed** banner. Until you touch the key, changes you make are not saved to the file. Don't lock the vault before then, or use **Export Vault** first. See [Hardware Keys: Syncing and Other Devices](/help/hardware-keys/#syncing-and-other-devices).
+
+Changes another app makes appear in PanicVault as soon as you switch back to it, and in any case the next time you save. Switching back only reads them in: PanicVault writes the file when you save, or when PanicVault has changes of its own the file does not have yet (for example the same entry changed in both places).
+
+Syncthing and Dropbox sometimes keep a separate copy of the file when two devices change it at the same moment (Syncthing names it like `Vault.sync-conflict-20260925-101500-ABCDEFG.kdbx`, Dropbox like `Vault (Anna's conflicted copy 2026-09-25).kdbx`). Those copies are separate files, and PanicVault does not merge them into your vault. You can open one with **Open Existing Vault** to check whether it holds anything you need.
 
 ## Choosing a Strong Master Password
 
