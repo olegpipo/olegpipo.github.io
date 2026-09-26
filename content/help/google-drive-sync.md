@@ -75,9 +75,9 @@ A conflict occurs when the same entry was edited on two devices since the last s
 - **Keep Local** -- use your version of the entry
 - **Keep Remote** -- use the other device's version
 
-Once all conflicts are resolved, PanicVault saves the merged vault and uploads it to Drive. If the copy on Google Drive changed while the conflict screen was up, your choice is not applied and nothing is overwritten: PanicVault says **Both versions kept: the vault changed before your choice**, and the next sync compares your version with the latest one.
+Once all conflicts are resolved, PanicVault saves the merged vault and uploads it to Drive. If the copy on Google Drive changed while the conflict screen was up, your choice is not applied and nothing is overwritten: PanicVault says **Your choice wasn't applied: the vault changed on Google Drive. The next sync compares again.** Your version stays on this device and the other one on Google Drive; if they still differ, the next sync shows the conflict screen again, with the latest version.
 
-Sometimes a change saved just before you locked the vault reaches Google Drive only after you have unlocked it again -- if PanicVault was still busy saving, for example. It is uploaded then and merged into the vault. If the same entry was changed on both sides, both versions are kept without the conflict screen: the other one as a "(conflicted copy)" or in the entry's [history](/help/entries/#entry-history).
+Sometimes a change saved just before you locked the vault reaches Google Drive only after you have unlocked it again -- if PanicVault was still busy saving, for example. It is uploaded then and merged into the vault. If the same entry was changed on both sides, both versions are usually kept without the conflict screen: the other one as a "(conflicted copy)" or in the entry's [history](/help/entries/#entry-history). If you changed that entry again after unlocking, the conflict screen asks you which version to keep.
 
 ## Offline Behavior
 
