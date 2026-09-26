@@ -21,6 +21,8 @@ When creating a new vault, choose **iCloud Drive** as the storage location. You 
 
 The vault is created locally and then copied to iCloud Drive. After that, the operating system handles uploading and downloading changes in the background.
 
+PanicVault never replaces a vault file that is already there. If the folder already has a file with your vault's name -- one created on another device, for example -- the new vault is saved as "Personal 2.kdbx" (for a vault named "Personal"), and it keeps the name you gave it in PanicVault.
+
 ## Opening Vaults from iCloud Drive
 
 A vault in iCloud Drive is opened the same way as any other vault:
