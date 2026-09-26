@@ -56,7 +56,8 @@ Sometimes both versions are kept without the conflict screen -- delete the one y
 
 - the other device changed something else in the vault while PanicVault was saving both versions: a choice made from the earlier comparison would undo that change;
 - you changed the vault again before the save had finished;
-- the save was one PanicVault finished after you had locked the vault: both versions are in the file, and you see them the next time you unlock it.
+- the save was one PanicVault finished after you had locked the vault: both versions are in the file, and you see them the next time you unlock it;
+- iCloud itself kept two copies of the vault file, because both devices saved it at the same moment: PanicVault merges them on its own. The one exception to keeping both versions: for an entry changed in both copies, PanicVault keeps the newer change and puts the other in the entry's [history](/help/entries/#entry-history) -- or, when the history can't hold it, keeps it as a "(conflicted copy)".
 
 Your choice is saved the same careful way, so a change another device made after both versions were saved is kept. If the vault changed before you chose -- you edited it, or a sync brought in a change from another device -- or another conflict came up while your choice waited its turn, the choice is not applied and PanicVault says **Both versions kept: the vault changed before your choice** -- delete the version you don't want. Using an entry meanwhile, such as copying its password, does not count as a change.
 
