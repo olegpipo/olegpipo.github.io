@@ -2,7 +2,7 @@
 title: "KeePassXC for iPhone: 3 Best iOS Alternatives (2026)"
 description: "KeePassXC has no iPhone or iPad app. Here are the 3 best KeePass apps for iOS — full KDBX 4.0, AutoFill, and Face ID — plus how to sync your .kdbx database."
 date: 2026-03-06
-lastmod: 2026-09-19
+lastmod: 2026-09-26
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -206,7 +206,7 @@ Google Drive is the better choice if you use KeePassXC on Windows or Linux, or i
 
 ### Option 3: Other Sync Methods
 
-**Dropbox and OneDrive** work similarly to Google Drive. Install the desktop client, move your KDBX file into the synced folder, and open it from the same location on both desktop and mobile. Strongbox has built-in support for both. PanicVault and KeePassium access them through the iOS Files framework.
+**Dropbox and OneDrive** work similarly to Google Drive. Install the desktop client, move your KDBX file into the synced folder, and open it from the same location on both desktop and mobile. Strongbox has built-in support for both. PanicVault and KeePassium access them through the iOS Files framework. PanicVault merges the changes KeePassXC saves to a file kept there instead of overwriting them.
 
 **WebDAV and SFTP** are options for users who run their own server or NAS. Strongbox supports these protocols natively. KeePassium supports them through third-party file providers.
 

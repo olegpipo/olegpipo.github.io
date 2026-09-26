@@ -2,7 +2,7 @@
 title: "PanicVault vs. KeePassXC"
 description: "Detailed comparison of PanicVault and KeePassXC -- two KeePass-compatible password managers with different strengths. Apple integration vs. cross-platform flexibility analyzed."
 date: 2026-02-14
-lastmod: 2026-08-25
+lastmod: 2026-09-26
 draft: false
 silo: "Comparisons"
 ---
@@ -120,7 +120,7 @@ For mobile KeePass app comparisons, see our [KeePass-compatible apps for Apple](
 | Password generator | Yes | Yes |
 | SSH agent | No | Yes |
 | KeeShare | No | Yes |
-| Database merge | No | Yes |
+| Database merge | Automatic (sync and outside changes) | Yes |
 | Open source | No | Yes |
 | Price | One-time purchase | Free |
 
@@ -170,7 +170,7 @@ Because both tools use KDBX, many users run both:
 - **PanicVault** on iPhone, iPad, and Mac for daily credential management with native AutoFill
 - **KeePassXC** on a Windows or Linux workstation for the same database
 
-This is the KeePass ecosystem working as designed. You choose the best app for each platform without compromising on data portability. Your single KDBX file, stored on [iCloud Drive or Google Drive](/cloud-sync/) or another sync service, is accessible everywhere.
+This is the KeePass ecosystem working as designed. You choose the best app for each platform without compromising on data portability. Your single KDBX file, stored on [iCloud Drive or Google Drive](/cloud-sync/) or another sync service, is accessible everywhere. In a folder you sync yourself -- with Dropbox, Syncthing or an SSH or rsync setup -- PanicVault merges the changes KeePassXC saves instead of overwriting them, and on a Mac you can even keep the same file open in both apps at once.
 
 ## Who Should Choose KeePassXC
 

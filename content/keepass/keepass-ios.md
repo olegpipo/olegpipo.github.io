@@ -2,7 +2,7 @@
 title: "KeePass for iPhone & iOS: The 3 Best KeePass Apps (2026)"
 description: "There's no official KeePass app for iPhone. These 3 iOS apps open your .kdbx database with AutoFill and Face ID, plus how to move it over from Windows."
 date: 2026-09-19
-lastmod: 2026-09-19
+lastmod: 2026-09-26
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -153,7 +153,7 @@ In your chosen app, add an existing database, browse to the cloud folder from st
 
 ### Avoid Editing in Two Places at Once
 
-A `.kdbx` database is one encrypted file. If you change it on your PC and your iPhone before either change has synced, your cloud service may keep two copies. PanicVault merges changes entry by entry for vaults on iCloud Drive or Google Drive and shows you any real conflicts to resolve.
+A `.kdbx` database is one encrypted file. If you change it on your PC and your iPhone before either change has synced, your cloud service may keep two copies. PanicVault merges changes entry by entry for vaults on iCloud Drive or Google Drive and shows you any real conflicts to resolve. For a vault in a folder another app syncs, such as Dropbox or OneDrive, it merges the changes that reach the file instead of overwriting them. It does not merge a separate conflicted copy your cloud service keeps; open that copy with **Open Existing Vault** to check whether it holds anything you need.
 
 On the PC, [KeePass's Synchronize feature](https://keepass.info/help/v2/sync.html) (**File > Synchronize > Synchronize with File**) merges two copies entry by entry. The most recently modified version of each entry wins, the other version goes into that entry's history, and the merged result is written to both files. KeePass also checks on save whether the file on disk has changed, and offers to synchronize instead of overwriting. See [resolving sync conflicts](/cloud-sync/sync-conflicts/) for more.
 

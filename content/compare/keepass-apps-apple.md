@@ -2,7 +2,7 @@
 title: "Strongbox vs KeePassium vs KeePassXC: KeePass Apps for Mac & iPhone"
 description: "Strongbox, KeePassium, KeePassXC and PanicVault compared on Mac, iPhone and iPad: price, AutoFill, YubiKey, sync, and which one fits your setup."
 date: 2026-02-14
-lastmod: 2026-09-19
+lastmod: 2026-09-26
 draft: false
 silo: "Comparisons"
 ---
@@ -50,6 +50,7 @@ PanicVault is designed specifically for the Apple ecosystem. Built with SwiftUI,
 - System-wide AutoFill through Apple's [credential provider extension](/apple/credential-provider-extensions/)
 - [Face ID and Touch ID](/apple/face-id-touch-id-setup/) for biometric unlock
 - iCloud Drive and Google Drive sync built in
+- Works alongside Dropbox, Syncthing, your own SSH or rsync setup, or KeePassXC on the same Mac: changes they make to the vault file are merged, not overwritten
 - TOTP two-factor code support
 - Clean, focused interface following Apple's Human Interface Guidelines
 - Full KDBX read/write with groups, custom fields, attachments, and entry history
@@ -191,7 +192,7 @@ KeePass 2.x is the original KeePass implementation that defined the KDBX format.
 | Password audit | No | Yes (breach check: Pro) | No | Premium |
 | Apple Watch | No | Pro | No | No |
 | KDB (v1) support | No | Yes | No | Yes |
-| Database merge | No | Yes | Yes | No |
+| Database merge | Automatic (sync and outside changes) | Yes | Yes | No |
 
 \*Source code is public, but App Store builds can't be verified against it.
 
@@ -205,7 +206,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Apple + Cross-Platform
 
-**PanicVault on iPhone and iPad, KeePassXC on Mac, Windows, and Linux.** Use PanicVault for mobile with system AutoFill. Use KeePassXC on desktop for its advanced features (SSH agent, Auto-Type, browser extension). Store the KDBX file on iCloud Drive or Dropbox for sync across all devices.
+**PanicVault on iPhone and iPad, KeePassXC on Mac, Windows, and Linux.** Use PanicVault for mobile with system AutoFill. Use KeePassXC on desktop for its advanced features (SSH agent, Auto-Type, browser extension). Store the KDBX file on iCloud Drive or Dropbox for sync across all devices. Even in a Dropbox folder, PanicVault merges the changes KeePassXC makes instead of overwriting them.
 
 ### Maximum Features
 

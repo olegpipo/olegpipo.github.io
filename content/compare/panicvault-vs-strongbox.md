@@ -2,7 +2,7 @@
 title: "PanicVault vs. Strongbox"
 description: "Comprehensive comparison of PanicVault and Strongbox -- two Apple-native KeePass-compatible password managers. Pricing, features, sync options, and usability evaluated honestly."
 date: 2026-02-14
-lastmod: 2026-09-19
+lastmod: 2026-09-26
 draft: false
 silo: "Comparisons"
 ---
@@ -111,7 +111,7 @@ This is largely a matter of personal preference. PanicVault is cleaner and simpl
 
 PanicVault syncs through iCloud Drive and Google Drive. iCloud sync is the simplest setup for Apple users -- your KDBX file syncs automatically across your iPhone, iPad, and Mac with no additional configuration. Google Drive support adds a cross-platform option for users who share files with non-Apple devices or prefer Google's ecosystem.
 
-You can also store your database locally or in any file provider accessible through the Files app, but iCloud and Google Drive are the primary built-in sync options.
+You can also store your database locally or in any file provider accessible through the Files app, but iCloud and Google Drive are the primary built-in sync options. When Dropbox, Syncthing, your own SSH or rsync setup, or KeePassXC on the same Mac changes a vault kept that way, PanicVault merges those changes instead of overwriting them.
 
 ### Strongbox
 
