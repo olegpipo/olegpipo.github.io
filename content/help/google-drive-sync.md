@@ -83,7 +83,7 @@ Sometimes a change saved just before you locked the vault reaches Google Drive o
 
 If you are offline when PanicVault tries to sync, the sync is queued automatically. The toolbar shows an exclamation cloud icon to indicate a pending sync. When you reconnect, you can tap the sync icon to retry, or the sync will retry automatically on the next save.
 
-One exception: a change from before you locked and unlocked the vault that is still waiting for Google Drive (see [Handling Sync Conflicts](#handling-sync-conflicts) above) is kept only as long as PanicVault stays open. If PanicVault is closed first, that change is lost.
+A change from before you locked and unlocked the vault that is still waiting for Google Drive (see [Handling Sync Conflicts](#handling-sync-conflicts) above) is kept on this device until it reaches Google Drive, even if PanicVault is closed: it is uploaded and merged the next time you unlock the vault. If it no longer opens with the vault's password -- the password was changed since -- PanicVault says so and keeps it. If Google Drive refuses it -- the file was deleted, your storage is full, or PanicVault may no longer change the file -- PanicVault says why and tries again later.
 
 ## Choosing a Google Drive Folder
 
