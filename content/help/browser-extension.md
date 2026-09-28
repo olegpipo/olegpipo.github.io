@@ -1,15 +1,15 @@
 ---
 title: "Browser Extension for Mac"
-description: "Install the PanicVault browser extension and helper to fill passwords, usernames, TOTP codes, and passkeys in Chrome, Brave, Edge, and Arc with Touch ID."
+description: "Install the PanicVault extension and helper to fill passwords, usernames, TOTP codes, and passkeys in Chrome, Brave, Edge, Arc, and Dia with Touch ID."
 date: 2026-07-14
-lastmod: 2026-08-31
+lastmod: 2026-09-28
 draft: false
 silo: "User Manual"
 helpgroup: "Filling Passwords"
 weight: 140
 ---
 
-PanicVault includes a browser extension for Chromium-based browsers (Google Chrome, Brave, Microsoft Edge, Arc, and Chromium) that lets you fill passwords, usernames, and TOTP codes directly in web pages using Touch ID. This page walks through what the extension does, how to install the helper and the extension, how to use them day to day, and how to fix the most common problems.
+PanicVault includes a browser extension for Chromium-based browsers (Google Chrome, Brave, Microsoft Edge, Arc, Dia, and Chromium) that lets you fill passwords, usernames, and TOTP codes directly in web pages using Touch ID. This page walks through what the extension does, how to install the helper and the extension, how to use them day to day, and how to fix the most common problems.
 
 ## What It Does
 
@@ -43,7 +43,7 @@ After installing the helper, add the PanicVault extension to your browser:
 3. The PanicVault icon appears in your browser toolbar
 
 {{< callout type="note" >}}
-The extension works with Chrome, Brave, Edge, Arc, and other Chromium-based browsers. All of these browsers use the Chrome Web Store for extensions.
+The extension works with Chrome, Brave, Edge, Arc, Dia, and other Chromium-based browsers. All of these browsers use the Chrome Web Store for extensions.
 {{< /callout >}}
 
 ## Using the Extension
