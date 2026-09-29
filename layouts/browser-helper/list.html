@@ -44,7 +44,7 @@
         <h2>Install Browser Helper</h2>
         <p>Download the macOS installer (.pkg) that configures the native messaging helper for all your browsers automatically.</p>
         <span class="pv-bh-card-btn">Download Installer</span>
-        <span class="pv-bh-card-meta">macOS .pkg &middot; No terminal required</span>
+        <span class="pv-bh-card-meta">macOS .pkg &middot; Apple silicon &amp; Intel</span>
       </a>
 
       <a class="pv-bh-card pv-bh-card-primary" href="https://chromewebstore.google.com/detail/panicvault/fhmfaaopcbpcfaednjoemhokncpkibnm" target="_blank" rel="noopener noreferrer">
@@ -132,6 +132,10 @@
       <div class="pv-bh-trouble-item pv-reveal">
         <h3>Helper Not Found</h3>
         <p>If the extension shows "PanicVault helper not found," re-download and run the installer from PanicVault Settings &gt; Browser Extension. Verify that <code>~/Library/Application Support/PanicVault/PanicVaultChromeHelper</code> exists.</p>
+      </div>
+      <div class="pv-bh-trouble-item pv-reveal">
+        <h3>Helper Fails to Start</h3>
+        <p>If the extension reports "Failed to start native messaging host," or running the helper in Terminal prints "bad CPU type in executable," your installed helper can't run on this Mac (versions before 1.3 ran only on Apple silicon). Download and run the latest installer (1.3 or later) at the top of this page, then restart your browser.</p>
       </div>
       <div class="pv-bh-trouble-item pv-reveal">
         <h3>Extension Not Detected</h3>

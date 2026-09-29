@@ -2,7 +2,7 @@
 title: "Browser Extension for Mac"
 description: "Install the PanicVault extension and helper to fill passwords, usernames, TOTP codes, and passkeys in Chrome, Brave, Edge, Arc, and Dia with Touch ID."
 date: 2026-07-14
-lastmod: 2026-09-28
+lastmod: 2026-09-29
 draft: false
 silo: "User Manual"
 helpgroup: "Filling Passwords"
@@ -32,7 +32,7 @@ The browser helper is a separate download (not included in the Mac App Store ver
 3. Open the downloaded installer and follow the prompts
 4. The installer places the helper in the correct location and configures it for all your installed browsers automatically
 
-No terminal commands or scripts are required — the installer handles everything for you.
+No terminal commands or scripts are required — the installer handles everything for you. The helper runs on both Apple silicon and Intel Macs.
 
 ## Installing the Extension
 
@@ -80,6 +80,8 @@ For accounts with two-factor authentication:
 
 - Re-download and run the installer from Settings → Browser Extension
 - Check that `~/Library/Application Support/PanicVault/PanicVaultChromeHelper` exists
+
+**"Failed to start native messaging host"**: If the extension reports that the native helper disconnected with this message, or running the helper in Terminal prints "bad CPU type in executable", your installed helper cannot run on this Mac (helper versions before 1.3 ran only on Apple silicon). Install the latest helper (1.3 or later) from Settings → Browser Extension or the [Browser Helper page](/browser-helper/), then restart your browser.
 
 **Extension not detected after install**: Restart your browser after installing the helper. The browser reads native messaging manifests at startup.
 
