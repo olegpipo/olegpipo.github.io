@@ -1,15 +1,17 @@
 ---
 title: "Setting Up 2FA for Your Most Important Accounts"
-description: "Identify which accounts to protect with two-factor authentication first. Practical guide to prioritizing email, banking, social media, cloud storage, and password manager 2FA setup."
+description: "Identify which accounts to protect with two-factor authentication first, then use our service-by-service table: the 2FA methods Google, Apple, Microsoft, Amazon, Meta, X, GitHub and others offer, and where each setting lives."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Two-Factor Authentication"
+aliases:
+  - /two-factor-authentication/setup-on-every-service/
 ---
 
 Not all accounts carry equal risk. When you enable [two-factor authentication](/two-factor-authentication/) across your digital life, the order in which you secure accounts matters -- because some accounts, if compromised, hand attackers the keys to everything else. This guide identifies the accounts that deserve 2FA first, explains why the priority order matters, and walks through practical setup for each category.
 
-If you are already convinced and want the step-by-step process for enabling 2FA everywhere, see our [guide to setting up 2FA on every service](/two-factor-authentication/setup-on-every-service/). This article focuses on which accounts to protect first when you cannot do everything at once.
+This article focuses on which accounts to protect first when you cannot do everything at once. When you are ready to start, the [service-by-service table](#where-to-turn-on-2fa-service-by-service) below shows which 2FA methods each major service offers, where the setting lives, and links to our full step-by-step guides.
 
 ## Why Priority Order Matters
 
@@ -39,7 +41,7 @@ Your primary email account is the master key to your digital identity. Almost ev
 - Register at least two authentication methods (a hardware key and a TOTP app, or two hardware keys) to avoid lockout.
 - Save recovery codes and store them in a physically secure location -- not in a document attached to the same email account.
 - If you use multiple email addresses, secure all of them. An old email account you forgot about may still be the recovery address for active services.
-- Consider enabling Google's Advanced Protection Program if you use Gmail. It requires hardware keys for all logins and restricts third-party app access.
+- Consider enabling Google's Advanced Protection Program if you use Gmail. It requires a passkey or security key to sign in and restricts third-party app access.
 
 **Common mistake:** Securing your bank with 2FA but leaving the email address used for bank password resets unprotected. The attacker bypasses your bank's 2FA by resetting your bank password through your unprotected email.
 
@@ -52,8 +54,8 @@ Your [password manager](/password-managers/) stores credentials for every other 
 **Setup guidance:**
 
 - Use a strong, unique master passphrase with high entropy. This is the one password you must memorize.
-- Enable 2FA on your password manager account if it is cloud-synced. Bitwarden, 1Password, and Dashlane all support TOTP and hardware keys.
-- For offline password managers like KeePass (used in PanicVault), 2FA takes a different form: a key file stored on a separate device, or a hardware key integrated through plugins. The database file itself is the vault, so controlling access to the file is the primary security measure.
+- Enable 2FA on your password manager account if it is cloud-synced. Bitwarden and 1Password, for example, support both authenticator apps and security keys for account sign-in.
+- For KeePass-format vaults (the format PanicVault uses), there is no account to sign in to, so the second factor protects the file itself: a [key file](/keepass/key-files/) kept on a separate device, or a YubiKey that PanicVault uses in [challenge-response mode](/help/hardware-keys/). The database file is the vault, so controlling access to the file is the primary security measure.
 - Store your password manager's recovery kit (emergency kit, secret key, recovery codes) in a secure physical location -- a safe, a safety deposit box, or with a trusted person.
 
 **Common mistake:** Using the same password for your password manager and another service. If that other service is breached, your entire vault is exposed.
@@ -66,7 +68,7 @@ Bank accounts, brokerage accounts, retirement accounts, and cryptocurrency excha
 
 **Setup guidance:**
 
-- Enable the strongest 2FA method available. Many banks still only offer SMS-based 2FA. If that is your only option, use it -- SMS 2FA is better than no 2FA -- but be aware of [SIM swapping risks](/two-factor-authentication/sim-swapping/) and take carrier-level precautions.
+- Enable the strongest 2FA method available. Many banks still only offer SMS-based 2FA. If that is your only option, use it -- SMS 2FA is better than no 2FA -- but be aware of [SIM swapping risks](/two-factor-authentication/sms-being-phased-out/) and take carrier-level precautions.
 - For cryptocurrency exchanges and wallets, use hardware security keys where supported. The irreversible nature of cryptocurrency transactions makes these accounts especially high-value targets.
 - Enable transaction alerts via email and push notification so you are immediately aware of unauthorized activity.
 - If your bank supports app-based authentication (Chase, Bank of America, and others have proprietary push-based 2FA), use it. It is more secure than SMS.
@@ -85,7 +87,7 @@ Google Drive, iCloud, Dropbox, OneDrive, and similar services often contain docu
 **Setup guidance:**
 
 - Google Account: Supports hardware keys, TOTP, and Google prompts. Enable all available methods.
-- Apple ID/iCloud: Supports Apple's built-in 2FA with trusted devices and phone number verification. Enable it in Settings > [Your Name] > Sign-In & Security.
+- Apple Account/iCloud: Supports Apple's built-in 2FA with trusted devices and phone number verification, plus optional security keys. Enable it in Settings > [Your Name] > Sign-In & Security.
 - Dropbox: Supports hardware keys and TOTP. Enable in Settings > Security.
 - Microsoft/OneDrive: Supports hardware keys, TOTP, and the Microsoft Authenticator app.
 
@@ -112,10 +114,9 @@ Social media account compromise is used for impersonation, scam propagation, and
 
 **Setup guidance:**
 
-- **X/Twitter**: Settings > Security and account access > Security > Two-factor authentication. Supports hardware keys and TOTP.
-- **Facebook/Meta**: Settings > Security and Login > Two-Factor Authentication. Supports hardware keys, TOTP, and Facebook's code generator.
-- **Instagram**: Settings > Security > Two-Factor Authentication. Supports TOTP.
-- **LinkedIn**: Settings > Sign in & security > Two-step verification. Supports TOTP and phone-based verification.
+- Use an authenticator app or security key rather than text messages wherever the platform allows it. Facebook and Instagram now keep their 2FA settings in Meta's Accounts Center; X, LinkedIn, Discord and Reddit all support authenticator apps. The [service table below](#where-to-turn-on-2fa-service-by-service) has the current menu path for each.
+- Save each platform's backup codes in the same password manager entry as the login.
+- Review the sessions and connected third-party apps on each account while you are in its security settings.
 
 **Common mistake:** Assuming your social media accounts are "low value." Attackers routinely use compromised social media accounts to send phishing messages to your contacts, creating a trust exploitation chain.
 
@@ -123,11 +124,11 @@ Social media account compromise is used for impersonation, scam propagation, and
 
 ### E-commerce and Shopping Accounts
 
-Amazon, PayPal, eBay, and other shopping platforms store payment methods. Enable 2FA to prevent unauthorized purchases. PayPal supports TOTP and SMS. Amazon supports TOTP.
+Amazon, PayPal, eBay, and other shopping platforms store payment methods. Enable 2FA to prevent unauthorized purchases. Amazon and PayPal both support authenticator apps as well as text-message codes.
 
 ### Developer and Technical Accounts
 
-GitHub, GitLab, npm, PyPI, Docker Hub, and cloud infrastructure accounts. A compromised developer account can be used to inject malicious code into software supply chains. GitHub now requires 2FA for all contributing developers.
+GitHub, GitLab, npm, PyPI, Docker Hub, and cloud infrastructure accounts. A compromised developer account can be used to inject malicious code into software supply chains. GitHub requires 2FA for accounts that contribute code, and npm now sets up new 2FA only with security keys or passkeys.
 
 ### Communication Platforms
 
@@ -139,6 +140,8 @@ Steam, PlayStation Network, Nintendo, Twitch, Netflix. Lower priority but still 
 
 ## Practical Setup Strategy
 
+Rushing through 2FA setup is how people lock themselves out. Before the first account, have two things ready: the authenticator you will use (a password manager with TOTP support, a standalone app, or a security key) and the place where each service's recovery codes will go. Then set aside one uninterrupted session for your Tier 1 accounts. Doing them piecemeal over weeks is how you end up unsure which accounts are protected.
+
 ### Step 1: Inventory Your Accounts
 
 Before you start enabling 2FA, create a complete inventory of your accounts. Your password manager is the best source for this. Export a list of saved logins and sort them into the tiers above. You will likely find accounts you forgot existed -- those are the dangerous ones, because they may use weak passwords and have no 2FA.
@@ -148,10 +151,10 @@ Before you start enabling 2FA, create a complete inventory of your accounts. You
 For most people, the optimal setup is:
 
 - **Hardware security keys** for Tier 1 accounts (email, password manager, banking) if budget allows.
-- **TOTP authenticator app** for everything else. Choose a reputable app -- see our guide to the [best authenticator apps](/two-factor-authentication/best-authenticator-apps/).
+- **TOTP authenticator app** for everything else. Choose a reputable app -- see our guide to the [best authenticator apps](/two-factor-authentication/best-authenticator-apps/) -- or keep the codes in your password manager. On iPhone, iPad and Mac, [PanicVault](https://apps.apple.com/app/id6759188575) stores each TOTP secret in the same KeePass entry as the password it protects.
 - **Avoid SMS-based 2FA** wherever a better option exists. Use it only when it is the sole 2FA method offered.
 
-For a deeper comparison, see our analysis of [what 2FA is and how it protects you](/two-factor-authentication/what-is-2fa/).
+For a deeper comparison of the methods, see our [complete guide to two-factor authentication](/two-factor-authentication/).
 
 ### Step 3: Save Recovery Codes
 
@@ -180,12 +183,38 @@ Work through your account inventory from Tier 1 down. For each account:
 
 After enabling 2FA on your critical accounts, test the recovery process. Can you actually use your backup hardware key to log in? Can you use a recovery code? Do you know where they are stored? A security measure you cannot recover from is a lockout waiting to happen.
 
+## Where to Turn On 2FA: Service by Service
+
+Every service hides 2FA in a different place and calls it something different. This table lists the methods each major service offers and where the setting lives (menu labels as of October 2026; services rename them often). Where we have a full walkthrough, the last column links to it.
+
+| Service | 2FA methods offered | Where the setting is | Full guide |
+|---|---|---|---|
+| Google | Google prompts, authenticator app, text or call, passkeys and security keys, backup codes | Google Account > **Security & sign-in** > **2-Step Verification** | [Google](/two-factor-authentication/setup-2fa-google/) |
+| Microsoft account | Microsoft Authenticator or any authenticator app, email or text codes, passkeys and security keys | account.microsoft.com > **Security** > **Manage how I sign in** > **Two-step verification** | [Microsoft](/two-factor-authentication/setup-2fa-microsoft/) |
+| Apple Account | Codes on your trusted devices or a trusted phone number; optional security keys | iPhone: **Settings** > your name > **Sign-In & Security** | [Apple Account](/two-factor-authentication/setup-2fa-apple-id/) |
+| Amazon | Authenticator app, text message | **Your Account** > **Login & security** > **Two-Step Verification (2SV) Settings** | [Amazon](/two-factor-authentication/setup-2fa-amazon/) |
+| Facebook | Authentication app, text message, security key, recovery codes | **Settings and privacy** > **Settings** > **Accounts Center** > **Password and security** > **Two-factor authentication** | [Facebook](/two-factor-authentication/setup-2fa-facebook/) |
+| Instagram | Authentication app (turned on in the iPhone or Android app), text message, WhatsApp, backup codes | **Settings** > **Accounts Center** > **Password and security** > **Two-factor authentication** | [Instagram](/two-factor-authentication/setup-2fa-instagram/) |
+| X | Authentication app, security key, text message (X Premium only) | **Settings and privacy** > **Security and account access** > **Security** > **Two-factor authentication** | [X](/two-factor-authentication/setup-2fa-x-twitter/) |
+| LinkedIn | Authenticator app, text message | **Settings & Privacy** > **Sign in & security** > **Two-factor authentication** | [LinkedIn](/guides/change-password-linkedin/) |
+| WhatsApp | A two-step verification PIN (being upgraded to a password) rather than codes; passkeys on iPhone | **Settings** > **Account** > **Two-step verification** | [WhatsApp](/two-factor-authentication/setup-2fa-whatsapp/) |
+| Discord | Security keys and passkeys, authenticator app, text message as a backup, backup codes | **User Settings** > **My Account** > **Password and Authentication** | [Discord](/two-factor-authentication/setup-2fa-discord/) |
+| Reddit | Authenticator app only, backup codes (set up on the desktop website) | **Settings** > **Account authorization** > **Two-factor authentication** | [Reddit](/two-factor-authentication/setup-2fa-reddit/) |
+| GitHub | Authenticator app, text message (some countries), passkeys, security keys, GitHub Mobile | **Settings** > **Password and authentication** | [GitHub](/two-factor-authentication/setup-2fa-github/) |
+| Proton Mail | Authenticator app, security keys | **Settings** > **All settings** > **Account and password** > **Two-factor authentication** | -- |
+| Dropbox | Authenticator app, text message (some countries), security keys, passkeys, backup codes | **Settings** > **Security** > **2-factor authentication** | -- |
+| PayPal | Authenticator app, text message | **Settings** > **Security** > **2-step verification** | -- |
+| AWS | Passkeys and security keys, authenticator app, hardware code tokens (required on the root user) | Account menu > **Security credentials** > **Multi-factor authentication (MFA)** > **Assign MFA device** | -- |
+| npm | Security keys and passkeys (new authenticator-app setups were switched off in late 2025) | Profile picture > **Account** > **Two-Factor Authentication** | -- |
+
+Two rows need a note. WhatsApp's two-step verification protects your phone number's registration on a new phone rather than generating codes, so it does not go into an authenticator. And Apple does not use authenticator-app codes for your Apple Account at all; the codes appear on your other Apple devices.
+
 ## Handling Accounts That Only Offer SMS 2FA
 
 Some services -- particularly banks and government portals -- only support SMS-based 2FA. In these cases:
 
 1. Enable SMS 2FA. It is still significantly better than password-only authentication.
-2. Add a PIN or account lock to your mobile carrier account (see our [SIM swapping guide](/two-factor-authentication/sim-swapping/) for carrier-specific instructions).
+2. Add a PIN or account lock to your mobile carrier account (see our [carrier-by-carrier SIM swap protections](/two-factor-authentication/sms-being-phased-out/#lock-your-number-against-sim-swaps)).
 3. Consider using a Google Voice number for SMS 2FA where possible. Google Voice numbers cannot be SIM-swapped through a carrier.
 4. Monitor your phone for sudden loss of service, which could indicate a SIM swap in progress.
 
@@ -197,7 +226,9 @@ Enabling 2FA is not a one-time task. Ongoing maintenance keeps your protection e
 - **Update when you change devices.** When you get a new phone, migrate your TOTP secrets before wiping the old device.
 - **Replace compromised factors immediately.** If you suspect your phone or hardware key has been compromised, revoke the affected second factor and re-enroll with a new one.
 - **Keep your authenticator app updated.** Security patches matter for the app that protects all your other accounts.
-- **Review [recovery code](/two-factor-authentication/recovery-codes/) storage** to ensure codes are accessible and current.
+- **Review [recovery code](/two-factor-authentication/backup-totp-codes/) storage** to ensure codes are accessible and current.
+- **Keep a record of what is protected.** After a big enrollment session it is easy to lose track. Note in each password manager entry whether 2FA is on and which method it uses, and turn 2FA on as part of creating any new account rather than "later."
+- **Update recovery phone numbers.** If you change your number, update it on every service that uses it for codes or recovery.
 
 ## The Compound Effect of 2FA
 

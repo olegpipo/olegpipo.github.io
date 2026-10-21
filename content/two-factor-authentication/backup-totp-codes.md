@@ -1,10 +1,12 @@
 ---
-title: "How to Back Up Your TOTP Codes"
-description: "Complete guide to backing up TOTP secrets and authenticator codes. Encrypted backups, password manager storage, QR code archiving, and recovery planning."
+title: "How to Back Up 2FA: TOTP Secrets and Recovery Codes"
+description: "How to back up two-factor authentication: TOTP secrets in a password manager, saved QR codes and text keys, authenticator exports, and recovery codes (how Google, GitHub, Microsoft, Apple and Reddit handle them, and when to regenerate)."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Two-Factor Authentication"
+aliases:
+  - /two-factor-authentication/recovery-codes/
 ---
 
 Every TOTP code you generate is derived from a shared secret -- a string of characters that your authenticator and the service agreed on when you first enabled [two-factor authentication](/two-factor-authentication/). That secret is the real credential. The six-digit code that changes every 30 seconds is just a mathematical derivative of it. If you lose the secret, you lose the ability to generate codes, and you lose access to your account.
@@ -24,7 +26,7 @@ The scenarios that destroy TOTP access are mundane, not exotic:
 - Your authenticator app becomes corrupted or loses its data after an OS update.
 - You uninstall the app by accident.
 
-These are not rare events. They happen to millions of people every year. A [lost 2FA device](/two-factor-authentication/lost-2fa-device/) is one of the most common reasons people contact account support, and the recovery process is often painful.
+These are ordinary events, not exotic ones, and the account recovery that follows is often slow and painful. If it has already happened to you, start with our guide to a [lost 2FA device](/two-factor-authentication/lost-2fa-device/).
 
 ## The TOTP Secret: What You Are Actually Backing Up
 
@@ -40,7 +42,7 @@ Backing up your TOTP codes means preserving this secret for every service where 
 
 ## Backup Strategy 1: Store TOTP Secrets in Your Password Manager
 
-This is the most practical and secure approach for most people. A [password manager with TOTP support](/two-factor-authentication/password-manager-as-authenticator/) stores the TOTP secret directly in the vault entry for each service, alongside the username and password. The secret is encrypted with the same strong encryption that protects your passwords.
+This is the most practical and secure approach for most people. A [password manager with TOTP support](/two-factor-authentication/google-authenticator-vs-builtin/) stores the TOTP secret directly in the vault entry for each service, alongside the username and password. The secret is encrypted with the same strong encryption that protects your passwords.
 
 Benefits of this approach:
 
@@ -49,12 +51,12 @@ Benefits of this approach:
 - **Searchable.** You can quickly find the TOTP entry for any service by searching your vault.
 - **Encrypted at rest.** The secrets are protected by your vault's encryption -- AES-256, ChaCha20, or Twofish with Argon2d key derivation in the case of KeePass-format databases.
 
-PanicVault, built on the [KeePass](/keepass/) ecosystem, stores TOTP secrets as protected fields in the KDBX database. This means they receive the same multi-layered encryption as passwords, including inner random stream protection that keeps secrets encrypted even while the database is loaded in memory.
+PanicVault, built on the [KeePass](/keepass/) ecosystem, saves a TOTP secret you add inside the entry it belongs to, as a standard `otpauth://` URI (the format KeePassXC uses). It is part of the encrypted KDBX file, so it is encrypted and backed up exactly like the password next to it, and any KeePass app that reads that format can generate the same codes.
 
 How to add a TOTP secret to your password manager:
 
 1. Go to the service's 2FA settings and begin the enrollment process.
-2. When the QR code appears, scan it with your password manager (or click "Can't scan?" to get the text secret).
+2. When the QR code appears, scan it with your password manager (in PanicVault: edit the entry, then **Scan QR Code** in the One-Time Password section on iPhone or iPad), or click "Can't scan?" to get the text secret and paste it in.
 3. The password manager stores the secret and begins generating codes.
 4. Enter the current code on the service's site to complete enrollment.
 5. Save the entry. Your TOTP secret is now backed up with your vault.
@@ -106,30 +108,53 @@ This is the most portable backup format. A text secret can be entered into any T
 
 Some authenticator apps support exporting your TOTP secrets. This is the only option for backing up secrets that are already enrolled in a standalone authenticator without saved QR codes.
 
-**Google Authenticator:** Offers a "Transfer accounts" feature that generates a QR code containing all your secrets. You can scan this QR code with another instance of Google Authenticator on a different device. Note that the transfer QR code is a temporary display -- screenshot it and encrypt the screenshot if you want a persistent backup.
+**Google Authenticator:** **Transfer codes** > **Export codes** generates QR codes containing your secrets, meant to be scanned by Google Authenticator on another device. The codes are in Google's own migration format, the display is temporary, and on Android the app may block screenshots of it. Optional sync to your Google account is the app's main backup.
 
-**Authy:** Does not support direct export. Authy's cloud backup means your secrets are on their servers, but extracting the raw secrets for use in another app requires third-party tools and is intentionally difficult.
+**Authy:** Has no export feature (Twilio says so on its support site). Its cloud backup is encrypted with a backup password you choose, which helps if you lose your phone but not if you want to leave Authy.
 
-**Microsoft Authenticator:** Supports cloud backup through your Microsoft account. Does not offer easy export of raw TOTP secrets.
+**Microsoft Authenticator:** Backs up to iCloud on iPhone and to your Microsoft account on Android, and a backup only restores on the same platform. There is no documented export of raw TOTP secrets.
 
 **Aegis Authenticator (Android):** Offers full export of all secrets in JSON or encrypted format. This is one of the most backup-friendly authenticator apps available.
 
-**Raivo OTP (iOS):** Supports export to various formats. Another backup-friendly option for iOS users.
+**Raivo OTP (iOS):** Has an export feature, but it is a cautionary tale: after the app changed owners, a May 2024 update left many users without their codes unless they had exported or synced them first. Whatever app you use, keep your own copy of the secrets.
 
 If your current authenticator does not support export, the migration path is to re-enroll 2FA on each service, capturing the secret in your password manager this time. It is tedious, but it is a one-time process. Our guide to [moving codes to a password manager](/two-factor-authentication/move-codes-to-password-manager/) walks through this process step by step.
 
 ## Backup Strategy 5: Recovery Codes as Last Resort
 
-[Recovery codes](/two-factor-authentication/recovery-codes/) are not the same as TOTP secret backups. They are one-time codes that bypass 2FA entirely, provided by the service during setup. They do not let you generate new TOTP codes -- they let you sign in without a TOTP code.
+Recovery codes (some services call them backup codes) are not the same as TOTP secret backups. They are one-time codes the service gives you when you turn on 2FA. They do not let you generate new TOTP codes -- they let you sign in once without one. Each code works a single time, and generating a new set cancels the old one.
 
-Recovery codes serve as an emergency fallback, not a primary backup strategy. Use them to regain access after a device loss, then immediately set up 2FA again with proper backup.
+Recovery codes serve as an emergency fallback, not a primary backup strategy. Use one to regain access after a device loss, then immediately set up 2FA again with proper backup.
 
-That said, recovery codes are a critical layer in your backup strategy:
+### How Different Services Handle Recovery Codes
 
-- Save recovery codes for every service in your password manager.
-- If you print them, store the printout in a physically secure location.
-- Regenerate recovery codes periodically (some expire or are limited in quantity).
-- After using a recovery code, generate new ones immediately.
+| Service | What you get | Where to view or renew it |
+|---|---|---|
+| Google | 10 backup codes, 8 digits each | Google Account > **Security & sign-in** > **2-Step Verification** > **Backup codes** |
+| GitHub | 16 one-time recovery codes to download, print or copy | **Settings** > **Password and authentication** > **Recovery codes** |
+| Microsoft account | One 25-character recovery code; creating a new one cancels the old one, and you cannot view an existing code | Security settings > **Manage how I sign in** > **Recovery code** |
+| Apple Account | No codes by default. Optional 28-character **Recovery Key**, and up to five **Recovery Contacts** who can give you a 6-digit code | iPhone: **Settings** > your name > **Sign-In & Security** > **Recovery Key** or **Recovery Contacts** |
+
+Apple's Recovery Key deserves a warning. Turning it on switches off Apple's standard account recovery: from then on, resetting your password takes the key plus a trusted phone number and one of your Apple devices, and losing them can lock you out of your Apple Account for good. If you set one up, store it like a master password -- in your vault and on paper.
+
+### Where to Keep Them
+
+- **In your password manager**, in the entry for the service. They are encrypted, backed up with the vault and easy to find.
+- **On paper** for your two or three most critical accounts, in a safe or another secure place.
+- **Outside the vault** for the accounts your vault depends on. If your KDBX file lives in iCloud Drive or Google Drive, the recovery codes for that cloud account cannot only be inside the vault, or a lost vault locks you out of the very account you need to restore it.
+- **Never** as a screenshot in your photo library or a plain text file on your desktop (see "What Not to Do" below).
+
+### When to Regenerate
+
+- **After using any code.** Replace the set as soon as you are back in, rather than waiting until you are down to your last code.
+- **After a lost or stolen device** that held the codes, even in encrypted form.
+- **After a suspected incident** -- malware, a breached backup, or someone else seeing the printout.
+- **When you change your 2FA method or where you store the codes**, so the old copies stop working.
+- **If a code you did not use shows as used.** Google, for example, marks used backup codes. A code used by someone else means they had your password too: change it, regenerate the codes and review recent account activity.
+
+### Families and Teams
+
+For shared accounts -- a family streaming plan, a small business's domain registrar -- every person who may need to recover the account should be able to reach the codes, for example in a [shared vault](/password-managers/shared-password-vault/). Avoid the key-person problem: if only one person knows where the codes are, write down the location for at least one other trusted person. For what happens to your accounts if you cannot act yourself, see [emergency access planning](/guides/emergency-access/).
 
 ## What Not to Do
 
