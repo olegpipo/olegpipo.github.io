@@ -2,9 +2,11 @@
 title: "Online Banking Security: 10 Rules for Protection"
 description: "Ten essential rules for keeping your online banking and financial accounts safe from hackers, phishing, and fraud in 2026."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Digital Privacy & Online Safety"
+aliases:
+  - /digital-privacy/holiday-shopping-security/
 ---
 
 Online banking is one of those activities where the stakes are unambiguously high. A compromised social media account is annoying. A compromised bank account is financially devastating. As part of your overall [digital privacy and online safety](/digital-privacy/) approach, securing your financial accounts deserves the highest level of attention and the strictest security practices.
@@ -120,6 +122,7 @@ Including your financial account details in your [digital estate plan](/digital-
 
 Beyond the ten core rules, consider these additional measures:
 
+- **Pay online with a credit card or Apple Pay, not a debit card** -- Under US law, your liability for unauthorized credit card charges is capped at $50, and it is $0 when only the card number was stolen. With a debit card the money leaves your account immediately, and your protection shrinks the longer you take to report the fraud ([FTC](https://consumer.ftc.gov/articles/lost-or-stolen-credit-atm-and-debit-cards)). Apple Pay never sends your actual card number to the merchant, so a breached retailer cannot leak it.
 - **Virtual card numbers** -- Some banks and services (like Privacy.com) let you generate unique card numbers for each merchant. If a merchant is breached, the compromised number does not affect your real card.
 - **Separate checking account for online purchases** -- Keep your primary checking account disconnected from online shopping. Fund a separate account with only the amount you plan to spend.
 - **Automatic logout** -- Ensure your banking app and website are configured to log you out after a short period of inactivity.

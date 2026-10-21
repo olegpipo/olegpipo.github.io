@@ -2,9 +2,11 @@
 title: "How to Secure Your Home Wi-Fi Network"
 description: "Step-by-step guide to securing your home Wi-Fi network -- router settings, encryption, guest networks, and monitoring for unauthorized access."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Digital Privacy & Online Safety"
+aliases:
+  - /digital-privacy/smart-home-security/
 ---
 
 Your home Wi-Fi network is the invisible foundation of your digital life. Every device in your house -- phones, laptops, tablets, smart speakers, security cameras, thermostats -- connects through your router. If that router is misconfigured or running outdated firmware, every one of those devices is potentially exposed. As part of your broader [digital privacy and online safety](/digital-privacy/) strategy, securing your home network is one of the highest-impact steps you can take.
@@ -113,7 +115,7 @@ This limits the damage if any single device is compromised. A hacked smart bulb 
 
 ## What About Mesh Networks?
 
-Mesh Wi-Fi systems (like Apple's discontinued AirPort, Eero, Google Nest Wi-Fi, and others) have become popular for their whole-home coverage. From a security perspective:
+Mesh Wi-Fi systems (like Eero, Google Nest Wi-Fi, and others) have become popular for their whole-home coverage. From a security perspective:
 
 **Advantages**: Mesh systems typically receive regular firmware updates, have simpler configuration interfaces, and some (like Eero) include built-in security features like automatic threat detection.
 
@@ -146,7 +148,16 @@ If you work from home, your home network handles sensitive business data. Consid
 
 ### Smart Home Devices
 
-[Smart home devices](/digital-privacy/smart-home-security/) present unique challenges because they are often designed with convenience prioritized over security. Many have weak or no encryption, limited ability to update, and they communicate with cloud servers constantly. Isolating them on a guest network is the single most important step.
+Smart home devices present unique challenges because they are often designed with convenience prioritized over security. Many have weak or no encryption, limited ability to update, and they communicate with cloud servers constantly. Isolating them on a guest network (or their own VLAN) is the single most important step: a compromised smart plug or bulb should never be able to reach the laptop holding your files.
+
+Beyond the network, a few device-level habits close most of the remaining gaps:
+
+- **Change every default password.** Each device and its companion app account gets its own strong, unique password, stored in your [password manager](/password-managers/). A home with a dozen devices means a dozen credentials -- PanicVault keeps them in the same encrypted vault as everything else, on all your Apple devices.
+- **Cameras and doorbells** are the highest-stakes devices, because a compromise means someone watching your home. Turn on [two-factor authentication](/two-factor-authentication/) for the camera account, keep the firmware updated, turn off remote viewing if you never use it, and point cameras at entry points rather than bedrooms or bathrooms. Cameras that support HomeKit Secure Video have their footage analyzed on your home hub (an Apple TV or HomePod) and stored end-to-end encrypted in iCloud (an iCloud+ plan is required), so neither Apple nor the camera maker can view it ([Apple](https://support.apple.com/guide/icloud/mme054c72692)).
+- **Smart locks** combine digital and physical security. Keep a physical key, review access codes and authorized users regularly, and remove anyone who no longer needs entry.
+- **Speakers, thermostats and robot vacuums** leak more privacy than security: voice recordings, your daily schedule, a map of your home. Review each companion app's data-sharing settings and delete stored recordings you do not need.
+
+When you buy something new, favor devices with a published update commitment, ones that keep working locally if the manufacturer's cloud goes down, and ones that support open standards. Matter, backed by Apple, Google, Amazon and Samsung, runs over Wi-Fi and Thread and is designed for local control across ecosystems ([Connectivity Standards Alliance](https://csa-iot.org/all-solutions/matter/)).
 
 ### Children and Parental Controls
 
@@ -167,6 +178,7 @@ Many routers offer built-in parental controls -- content filtering, time-based a
 - [ ] Configure DNS to use a privacy-respecting provider
 - [ ] Review connected devices and remove any you do not recognize
 - [ ] Store your Wi-Fi password and router admin credentials in your password manager
+- [ ] Change the default password on every smart home device and enable 2FA on their accounts
 - [ ] Set a recurring reminder to check for firmware updates quarterly
 
 Your home network is the digital perimeter of your household. Securing it properly protects not just your own devices but everyone who connects -- your family, your guests, and even the delivery person who asks for your Wi-Fi password. Take an hour to work through this checklist, and you will have addressed one of the most common and consequential security gaps in most homes.
@@ -174,7 +186,6 @@ Your home network is the digital perimeter of your household. Securing it proper
 ## Related Articles
 
 - [Wi-Fi Password Sharing: Secure QR Code Method](/digital-privacy/wifi-password-sharing/)
-- [How to Secure Your Smart Home Devices](/digital-privacy/smart-home-security/)
 - [How to Stay Safe on Public Wi-Fi](/digital-privacy/public-wifi-safety/)
 - [The Complete Guide to Digital Privacy in 2026](/digital-privacy/privacy-guide/)
 - [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
