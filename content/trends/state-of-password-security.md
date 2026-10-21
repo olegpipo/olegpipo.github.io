@@ -2,7 +2,7 @@
 title: "Password Security Statistics (2026 Data)"
 description: "2026 password security statistics: breach data, attack trends & user behavior. See the numbers behind our collective risk."
 date: 2026-02-14
-lastmod: 2026-03-06
+lastmod: 2026-10-21
 draft: false
 silo: "Trends & Future"
 ---
@@ -15,7 +15,7 @@ This analysis draws on the latest breach data, attack statistics, and behavioral
 
 ### Breach Volume and Scale
 
-The pace of data breaches has not slowed. In 2025, publicly disclosed breaches exposed over 6 billion records globally, continuing a trend that has seen year-over-year increases for more than a decade. The average cost of a data breach reached $4.88 million, according to IBM's annual report -- a figure that understates the true impact because it excludes downstream effects on consumers whose credentials were exposed.
+The pace of data breaches has not slowed. In 2025, publicly disclosed breaches exposed over 6 billion records globally, continuing a trend that has seen year-over-year increases for more than a decade. The global average cost of a data breach reached a record $4.99 million in [IBM's 2026 Cost of a Data Breach Report](https://www.ibm.com/reports/data-breach) -- a figure that understates the true impact because it excludes downstream effects on consumers whose credentials were exposed.
 
 Credential theft remains the most common initial attack vector, involved in roughly 50% of breaches. This is not surprising. Stolen credentials are the path of least resistance for attackers. Why exploit a zero-day vulnerability when you can simply log in with a password someone reused from a breached service?
 
@@ -29,7 +29,7 @@ The average person now manages approximately 250 online accounts. The human brai
 
 An estimated 3.4 billion phishing emails are sent every day. The volume alone makes phishing the dominant attack vector against individual users. But volume is only part of the story. The quality of phishing attacks has improved dramatically, driven by AI-generated content that eliminates the spelling errors and awkward phrasing that once served as reliable detection signals.
 
-AI-crafted [phishing messages](/phishing/) now achieve click rates approximately four times higher than traditional phishing. This is not a marginal improvement. It represents a fundamental shift in the economics of phishing: lower cost per campaign, higher success rate per message, and the ability to personalize at scale.
+In a 2024 study, AI-written [phishing messages](/phishing/) were clicked about four times as often as a generic phishing email, matching emails written by human experts ([Heiding et al.](https://arxiv.org/abs/2412.00586)). This is not a marginal improvement. It represents a fundamental shift in the economics of phishing: lower cost per campaign, higher success rate per message, and the ability to personalize at scale.
 
 ## Attack Trends in 2026
 
@@ -47,7 +47,7 @@ This trend has implications for how we think about [two-factor authentication](/
 
 ### Social Engineering at Scale
 
-Voice cloning fraud increased 400% in 2025. Deepfake video is becoming accessible to non-technical attackers through [deepfake-as-a-service](/trends/deepfake-as-a-service/) platforms. These technologies transform social engineering from a craft practiced by skilled con artists into an industrialized process.
+In December 2024 the FBI warned that criminals use generative AI to [clone the voices of loved ones](https://www.ic3.gov/PSA/2024/PSA241203) to fake emergencies and ransom demands. Deepfake video is becoming accessible to non-technical attackers through [deepfake-as-a-service](/trends/deepfake-as-a-service/) platforms. These technologies transform social engineering from a craft practiced by skilled con artists into an industrialized process.
 
 The implications for account recovery are particularly concerning. Many services use phone-based or video-based identity verification as a fallback when users lose access to their accounts. If an attacker can convincingly impersonate someone's voice or appearance, these recovery processes become attack vectors rather than safety nets.
 
@@ -57,7 +57,7 @@ The implications for account recovery are particularly concerning. Many services
 
 Password manager usage has increased steadily, reaching an estimated 35% of internet users in 2026. This is meaningful progress from the roughly 20% adoption rate five years ago. But it also means that nearly two-thirds of internet users still manage their credentials manually or rely on browser-based password saving without a dedicated manager.
 
-Among password manager users, satisfaction and security outcomes are significantly better. Users with password managers have an average of 3x fewer compromised accounts, use passwords that are 40% longer on average, and are far less likely to reuse credentials across services.
+Among password manager users, security outcomes are better: with a generator doing the work, their passwords can be long and unique, and they are far less likely to reuse credentials across services.
 
 The barrier to adoption is not awareness. Most people know password managers exist and understand the value proposition. The barriers are inertia, friction, and trust. Moving hundreds of credentials into a new system feels overwhelming. Learning a new tool takes time. And trusting a single application with all your passwords requires a leap of faith that many people are not ready to make.
 
@@ -108,6 +108,6 @@ The state of password security in 2026 leads to a clear set of practical conclus
 ## Related Articles
 
 - [Are Passwords Dead? The Passwordless Future](/trends/are-passwords-dead/)
-- [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [Zero Trust Security for Individuals](/trends/zero-trust-individuals/)
 - [Authentication in 2027: Predictions](/trends/authentication-2027/)

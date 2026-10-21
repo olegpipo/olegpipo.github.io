@@ -2,7 +2,7 @@
 title: "Phishing & Social Engineering: How to Protect Yourself"
 description: "Complete guide to phishing attacks and social engineering in 2026. Learn to recognize scams, protect your credentials, and stay safe from AI-powered threats."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Phishing & Social Engineering"
 sitemap_priority: 0.8
@@ -33,11 +33,11 @@ The common thread is human manipulation. Every social engineering attack exploit
 
 The phishing landscape in 2026 is fundamentally different from what it was even two years ago. [AI-powered phishing](/trends/ai-phishing-effectiveness/) has eliminated the telltale signs that once made fraudulent messages easy to spot. Grammar mistakes, awkward phrasing, generic greetings -- these red flags are disappearing because large language models produce fluent, contextually appropriate text in any language.
 
-Research shows that AI-generated phishing emails achieve click rates roughly four times higher than traditionally crafted ones. That statistic should concern everyone. The bar for creating a convincing phishing campaign has dropped to nearly zero. An attacker no longer needs to speak English fluently or understand cultural nuances. The AI handles all of that.
+In a 2024 study, AI-written spear phishing emails were clicked as often as emails written by human experts -- and about four times as often as a generic phishing email ([Heiding et al.](https://arxiv.org/abs/2412.00586)). That statistic should concern everyone. The bar for creating a convincing phishing campaign has dropped to nearly zero. An attacker no longer needs to speak English fluently or understand cultural nuances. The AI handles all of that.
 
 ### Voice Cloning and Deepfakes
 
-Perhaps the most alarming development is the rise of [deepfake voice cloning scams](/phishing/deepfake-voice-scams/). With as little as three seconds of audio -- easily obtained from social media, voicemail greetings, or public recordings -- attackers can clone a person's voice with startling accuracy. Voice cloning fraud increased by 400% in 2025, and the trend is accelerating.
+Perhaps the most alarming development is the rise of [deepfake voice cloning scams](/phishing/deepfake-voice-scams/). With as little as three seconds of audio -- easily obtained from social media, voicemail greetings, or public recordings -- attackers can clone a person's voice with startling accuracy. In December 2024 the FBI warned that criminals use generative AI to [create short audio clips of a loved one's voice](https://www.ic3.gov/PSA/2024/PSA241203) to fake an emergency or a ransom demand.
 
 Imagine receiving a phone call from your child, your parent, or your spouse, and the voice on the other end sounds exactly like them. They tell you they have been in an accident, they have been arrested, they need money immediately. The emotional response overrides rational thinking. People pay. This is not a hypothetical scenario -- it is happening thousands of times a day.
 

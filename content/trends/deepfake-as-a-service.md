@@ -2,12 +2,12 @@
 title: "Deepfake-as-a-Service: What It Means for Security"
 description: "How the commoditization of deepfake technology threatens authentication and identity verification, the rise of voice cloning fraud, and what individuals can do to protect themselves."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Trends & Future"
 ---
 
-The most unsettling trend in [password security and authentication](/trends/) is not a new type of malware or a novel cryptographic attack. It is the commoditization of impersonation. Deepfake-as-a-service platforms have made it trivially easy for anyone -- not just sophisticated attackers -- to generate convincing fake audio and video of real people. Voice cloning fraud increased 400% in 2025, and the trajectory shows no signs of flattening.
+The most unsettling trend in [password security and authentication](/trends/) is not a new type of malware or a novel cryptographic attack. It is the commoditization of impersonation. Deepfake-as-a-service platforms have made it trivially easy for anyone -- not just sophisticated attackers -- to generate convincing fake audio and video of real people. In December 2024 the FBI warned that criminals use generative AI to [clone the voices of loved ones](https://www.ic3.gov/PSA/2024/PSA241203) to fake emergencies and ransom demands, and the tools keep getting cheaper.
 
 This is not a hypothetical threat discussed in academic papers. It is an operational reality reshaping how we think about identity, verification, and trust.
 
@@ -117,7 +117,7 @@ For individuals, this means adopting phishing-resistant authentication now, esta
 
 ## Related Articles
 
-- [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [Why Regulators Are Banning SMS OTP](/trends/sms-otp-ban/)
 - [Privacy in the Age of AI](/trends/privacy-age-of-ai/)
 - [Are Passwords Dead? The Passwordless Future](/trends/are-passwords-dead/)

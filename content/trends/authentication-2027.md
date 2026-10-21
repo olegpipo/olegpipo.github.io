@@ -2,7 +2,7 @@
 title: "Authentication in 2027: Predictions"
 description: "Data-informed predictions for how authentication will evolve by 2027: passkey ubiquity, AI-native security, post-quantum preparation, regulatory changes, and what individuals should do to prepare."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Trends & Future"
 ---
@@ -39,9 +39,9 @@ Credential stuffing attacks will routinely incorporate AI prediction of password
 
 ### Why We Are Confident
 
-The trend lines are unambiguous. [AI phishing is already 400% more effective](/trends/ai-phishing-effectiveness/) than traditional methods. The cost of AI-generated content continues to fall. And the AI models are improving with each iteration. There is no plausible scenario where attackers do not adopt the most effective available tools.
+The trend lines are unambiguous. [AI-written phishing already matches human experts](/trends/ai-phishing-effectiveness/) and draws about four times the clicks of a generic phishing email. The cost of AI-generated content continues to fall. And the AI models are improving with each iteration. There is no plausible scenario where attackers do not adopt the most effective available tools.
 
-On the deepfake front, voice cloning fraud increased 400% in 2025. The technology is improving while becoming cheaper and more accessible. A high-profile incident is a matter of when, not if.
+On the deepfake front, the FBI has warned that criminals already use [AI voice cloning](https://www.ic3.gov/PSA/2024/PSA241203) to impersonate family members. The technology is improving while becoming cheaper and more accessible. A high-profile incident is a matter of when, not if.
 
 ### What Could Go Wrong (for Attackers)
 

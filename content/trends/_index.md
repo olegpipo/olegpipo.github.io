@@ -2,7 +2,7 @@
 title: "Password Security Trends & The Future of Authentication"
 description: "Comprehensive analysis of password security trends in 2026, the rise of passkeys, AI-driven threats, quantum computing risks, and what the future of authentication holds."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Trends & Future"
 sitemap_priority: 0.8
@@ -19,13 +19,13 @@ This is the comprehensive guide to where password security stands today and wher
 
 The numbers are sobering. An estimated 3.4 billion phishing emails are sent every day. Credential stuffing attacks account for the majority of unauthorized access attempts against consumer services. And the fundamental human problem -- that people reuse passwords, choose weak ones, and resist changing their habits -- has not improved meaningfully despite years of awareness campaigns.
 
-What has changed is the sophistication of attacks. AI-generated phishing emails now achieve [click rates four times higher](/trends/ai-phishing-effectiveness/) than their human-crafted predecessors. Voice cloning fraud increased 400% in 2025, enabling social engineering attacks that would have been science fiction a few years ago. The attack surface has expanded while the average person's security practices have remained largely static.
+What has changed is the sophistication of attacks. In a 2024 study, AI-written spear phishing emails were [clicked as often as those written by human experts](/trends/ai-phishing-effectiveness/), and about four times as often as a generic phishing email. Voice cloning, which the FBI has warned criminals use to [impersonate family members](https://www.ic3.gov/PSA/2024/PSA241203), enables social engineering attacks that would have been science fiction a few years ago. The attack surface has expanded while the average person's security practices have remained largely static.
 
 For a detailed analysis of where things stand, read our full assessment of [the state of password security in 2026](/trends/state-of-password-security/).
 
 ## The Passwordless Movement
 
-The most significant structural change in authentication is the emergence of passkeys -- FIDO2-based credentials that replace passwords with cryptographic key pairs. When you sign in with a passkey, your device proves your identity using a private key that never leaves your hardware. There is nothing to type, nothing to remember, and nothing for an attacker to phish.
+The most significant structural change in authentication is the emergence of passkeys -- FIDO2-based credentials that replace passwords with cryptographic key pairs. When you sign in with a passkey, your device proves your identity using a private key that is never sent to the website. There is nothing to type, nothing to remember, and nothing for an attacker to phish.
 
 Passkey logins are three times faster than password-based logins. Major platforms including Apple, Google, and Microsoft have integrated passkey support into their operating systems. Consumer adoption is accelerating, with some services reporting that passkey-enabled accounts have near-zero account takeover rates.
 
@@ -116,7 +116,7 @@ This is not just a technical advantage. It is a strategic one. As passkeys emerg
 - [Why Regulators Are Banning SMS OTP](/trends/sms-otp-ban/)
 - [World Password Day](/trends/world-password-day/)
 - [The 3-2-1 Backup Rule in 2026](/trends/3-2-1-backup-rule/)
-- [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [Privacy in the Age of AI](/trends/privacy-age-of-ai/)
 - [Zero Trust Security for Individuals](/trends/zero-trust-individuals/)
 - [Authentication in 2027: Predictions](/trends/authentication-2027/)

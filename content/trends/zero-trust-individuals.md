@@ -109,7 +109,7 @@ In a zero trust model, every credential is treated as potentially compromised. T
 
 **Unique passwords for every account**: This is the most fundamental zero trust practice for credentials. If every password is unique, the compromise of one account cannot cascade to others. A [password manager](/password-managers/) makes this practical by generating and storing random passwords for every account.
 
-**Random generation, not human creation**: Human-created passwords are predictable, even when they feel creative. AI models trained on breach data can predict human-created passwords with alarming accuracy. Truly random generation -- 20+ character strings of mixed characters -- is the only reliable defense.
+**Random generation, not human creation**: Human-created passwords are predictable, even when they feel creative. [AI models trained on breach data](/password-security/password-cracking-explained/) can predict human-created passwords with alarming accuracy. Truly random generation -- 20+ character strings of mixed characters -- is the only reliable defense.
 
 **Phishing-resistant authentication**: [Passkeys](/passkeys/) and hardware security keys verify both your identity and the identity of the service you are authenticating to. SMS-based [two-factor authentication](/two-factor-authentication/) is [increasingly inadequate](/trends/sms-otp-ban/).
 
@@ -184,7 +184,7 @@ Zero trust is not a product you buy or a project you complete. It is a mindset y
 ## Related Articles
 
 - [The State of Password Security in 2026](/trends/state-of-password-security/)
-- [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [The 3-2-1 Backup Rule in 2026](/trends/3-2-1-backup-rule/)
 - [Why Regulators Are Banning SMS OTP](/trends/sms-otp-ban/)
 - [Privacy in the Age of AI](/trends/privacy-age-of-ai/)

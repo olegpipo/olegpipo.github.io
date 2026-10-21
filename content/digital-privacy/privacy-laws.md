@@ -2,7 +2,7 @@
 title: "Privacy Laws Explained: GDPR, CCPA, DELETE Act"
 description: "A plain-language guide to major privacy laws -- GDPR, CCPA, and the DELETE Act -- what they mean for you and how to exercise your rights."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Digital Privacy & Online Safety"
 ---
@@ -94,11 +94,11 @@ The CPRA created the California Privacy Protection Agency (CPPA), the first dedi
 
 ### What It Is
 
-The DELETE Act, signed into law in 2023 with its system fully operational by 2026, is specifically targeted at data brokers -- companies that collect and sell personal information about people who are not their direct customers. This is a significant law because data brokers are the backbone of the surveillance economy, and they have historically operated with minimal oversight.
+The DELETE Act, signed into law in 2023, with its deletion platform opening to consumers in January 2026, is specifically targeted at data brokers -- companies that collect and sell personal information about people who are not their direct customers. This is a significant law because data brokers are the backbone of the surveillance economy, and they have historically operated with minimal oversight.
 
 ### How It Works
 
-The DELETE Act created a centralized mechanism for Californians to request deletion of their personal information from all registered data brokers through a single request. Instead of contacting hundreds of data brokers individually, you submit one request through the California Data Broker Registry, and all registered brokers must process it.
+The DELETE Act created a centralized mechanism for Californians to request deletion of their personal information from all registered data brokers through a single request. Instead of contacting hundreds of data brokers individually, you submit one request through DROP, the Delete Request and Opt-out Platform run by the California Privacy Protection Agency, and all registered brokers must process it. (The California Data Broker Registry is only the list of brokers.)
 
 ### Why It Matters
 
@@ -106,10 +106,12 @@ Before the DELETE Act, [removing your personal information from data brokers](/d
 
 ### How to Use It
 
-1. Visit the California Data Broker Registry website
-2. Submit a deletion request (you will need to verify your identity)
-3. All registered data brokers must process your deletion within the specified timeframe
-4. You can submit a new request periodically to address re-acquired data
+1. Go to [consumer.drop.privacy.ca.gov](https://consumer.drop.privacy.ca.gov) -- it is free, and only California residents can use it
+2. Confirm that you live in California and submit one deletion request
+3. Since August 1, 2026, every registered broker must check DROP at least once every 45 days and process new requests ([CPPA](https://www.cppa.ca.gov/data_brokers/))
+4. Once a broker has deleted your data, it must keep deleting new personal information about you at least every 45 days, so you do not need to resubmit
+
+Our guide to [removing your personal information](/digital-privacy/remove-personal-info/) walks through DROP step by step.
 
 ## Other State Privacy Laws
 
@@ -154,7 +156,7 @@ For services you no longer use, submit deletion requests. Under GDPR and CCPA, c
 
 ### Use the DELETE Act
 
-If you are a California resident, use the centralized data broker deletion system. If you are not in California, you can still contact data brokers individually.
+If you are a California resident, use DROP, the state's centralized data broker deletion platform. If you are not in California, you can still contact data brokers individually.
 
 ### Manage Your Data Proactively
 

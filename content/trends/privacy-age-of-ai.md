@@ -171,7 +171,7 @@ PanicVault embodies this approach for Apple users. Your passwords live in an enc
 
 ## Related Articles
 
-- [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [Remove Your Personal Information From Data Brokers](/digital-privacy/remove-personal-info/)
 - [Zero Trust Security for Individuals](/trends/zero-trust-individuals/)
 - [Deepfake-as-a-Service: What It Means for Security](/trends/deepfake-as-a-service/)

@@ -142,5 +142,5 @@ The best thing World Password Day can do is make itself unnecessary -- by cataly
 - [The State of Password Security in 2026](/trends/state-of-password-security/)
 - [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
 - [Are Passwords Dead? The Passwordless Future](/trends/are-passwords-dead/)
-- [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [The 3-2-1 Backup Rule in 2026](/trends/3-2-1-backup-rule/)

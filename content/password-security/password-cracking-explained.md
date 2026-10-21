@@ -70,6 +70,8 @@ Pure dictionary attacks find the low-hanging fruit. Hybrid attacks go further by
 
 Tools like Hashcat and John the Ripper ship with sophisticated rule engines that can generate thousands of variants from each base word. A dictionary of 10 million words with 1,000 rules produces 10 billion candidates -- still trivially fast against a weak hash.
 
+Machine learning adds another way to guess. PassGAN, a 2017 research model, learned what real passwords look like from leaked password lists instead of hand-written rules; combined with Hashcat, it matched 51% to 73% more passwords than Hashcat alone ([Hitaj et al.](https://arxiv.org/abs/1709.00440)). Like rules, it only models how humans choose passwords, so it has no edge against a randomly generated one.
+
 This is also why [password complexity rules](/password-security/password-complexity-rules/) that merely require "one uppercase, one number, one symbol" provide less protection than people assume. Attackers have encoded exactly those patterns into their rules. The substitution of `@` for `a` or `3` for `e` adds almost no entropy because it is a predictable transformation.
 
 True [password entropy](/password-security/password-entropy/) comes from genuine randomness, not from human-predictable complexity.
@@ -84,7 +86,7 @@ A rainbow table is a massive lookup structure that maps hash values back to thei
 
 A full table storing every hash and its corresponding input would require absurd amounts of storage. Rainbow tables use a clever trick called **reduction functions** to compress the data. They store chains of alternating hash and reduction steps. To crack a hash, you apply the reduction functions to see if the hash appears in any chain, then reconstruct the original password from the chain's starting point.
 
-For unsalted MD5, rainbow tables covering all 8-character alphanumeric passwords fit in a few hundred gigabytes. That is well within reach of a consumer hard drive.
+For a fast, unsalted hash like MD5, tables covering every short alphanumeric password are practical to build or buy, and they fit on an ordinary consumer hard drive.
 
 ### The Second Problem: Identical Passwords, Identical Hashes
 
