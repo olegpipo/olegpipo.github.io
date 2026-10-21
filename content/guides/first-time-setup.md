@@ -2,16 +2,18 @@
 title: "How to Set Up a Password Manager for the First Time"
 description: "Complete beginner's guide to setting up a password manager. Step-by-step instructions for choosing, installing, and configuring your first vault."
 date: 2026-02-14
-lastmod: 2026-09-19
+lastmod: 2026-10-21
 draft: false
 silo: "Guides & Tutorials"
+aliases:
+  - /password-managers/beginners-guide/
 ---
 
-Setting up a password manager is one of those tasks that feels bigger than it actually is. If you have been putting it off, you are not alone -- 69% of people report feeling overwhelmed by password management. But the actual process takes about 30 minutes, and the payoff is immediate. This guide, part of our [Password Manager Guides & Tutorials](/guides/) hub, walks you through every step from choosing your tool to adding your first credentials.
+Setting up a password manager is one of those tasks that feels bigger than it actually is. If you have been putting it off, you are not alone. But the actual process takes about 30 minutes, and the payoff is immediate. This guide, part of our [Password Manager Guides & Tutorials](/guides/) hub, walks you through every step from choosing your tool to adding your first credentials.
 
 ## Why You Need a Password Manager
 
-Before we get into the how, a quick word on the why. The average person manages approximately 250 passwords -- 168 personal and 87 business. Studies show that 94% of those passwords are reused or duplicated across services. Every data breach that exposes one of your reused passwords puts every account sharing that credential at risk.
+Before we get into the how, a quick word on the why. A [2024 NordPass study](https://www.globenewswire.com/news-release/2024/05/21/2885556/0/en/People-have-around-170-passwords-on-average-study-shows.HTML) counted an average of 168 passwords for personal accounts and 87 for work. Nobody memorizes that many unique passwords, so people reuse them: a 2025 [Cybernews analysis](https://cybernews.com/security/password-leak-study-unveils-2025-trends-reused-and-lazy/) of 19 billion leaked passwords found that 94% were reused or duplicated. Every data breach that exposes one of your reused passwords puts every account sharing that credential at risk.
 
 A password manager solves this completely. It generates unique, strong passwords for every account and remembers them for you. You memorize one master password. The software handles everything else.
 
@@ -44,7 +46,7 @@ For detailed comparisons, see our [best password manager for iPhone](/apple/best
 1. Open the App Store and search for "PanicVault"
 2. Tap Get, then authenticate with Face ID or your Apple ID password
 3. Once installed, open PanicVault
-4. The app will prompt you to create a new database or open an existing one
+4. You land on the home screen, where the "+" card lets you create a new vault or open an existing one
 
 ### PanicVault on Mac
 
@@ -60,15 +62,18 @@ Most password managers follow a similar pattern: download from the App Store (or
 
 Your vault is the encrypted container that holds all your credentials. Creating one involves two key decisions: where to store it and what master password to protect it with.
 
-### Create a New Database in PanicVault
+### Create a New Vault in PanicVault
 
-1. Open PanicVault and tap "Create New Database"
-2. Choose a storage location:
+1. Tap the "+" card on the home screen and choose **Create New Vault**
+2. Name your vault something you will recognize (e.g., "Personal" or "Passwords")
+3. Set your master password (see the next section) -- a strength meter shows how strong it is
+4. Choose a storage location:
    - **iCloud Drive** (recommended) -- Your vault syncs automatically across all your Apple devices via [iCloud](/cloud-sync/)
-   - **On My iPhone/iPad** -- The vault stays on this device only
-   - **Other cloud providers** -- If you use Dropbox, Google Drive, or another file provider with a Files app integration
-3. Name your database something you will recognize (e.g., "My Vault" or "Passwords")
-4. Set your master password (see the next section)
+   - **Local** -- The vault stays on this device only
+   - **Google Drive** -- The vault syncs through your Google Drive (sign in to Google in PanicVault's Settings first)
+5. Tap **Create Vault**
+
+Already have a .kdbx file from KeePass or KeePassXC? Choose **Open Existing Vault** instead. The file browser reaches iCloud Drive, On My iPhone, and storage apps such as Dropbox.
 
 ### Choose Your Master Password
 
@@ -76,7 +81,7 @@ This is the most important step in the entire process. Your master password is t
 
 **What makes a good master password:**
 - At least 16 characters long
-- A passphrase of 4-6 random words (e.g., "correct horse battery staple" but use your own random words)
+- A passphrase of 5 or more random words (like "correct horse battery staple", but generated for you and one word longer)
 - Something you can type reliably from memory
 - Not based on personal information (birthdays, pet names, addresses)
 
@@ -87,13 +92,11 @@ This is the most important step in the entire process. Your master password is t
 
 For a deep dive into creating and remembering a strong master password, see our dedicated [master password guide](/guides/master-password/).
 
-### Configure Security Settings
+### Check the Security Defaults
 
-In PanicVault and most KeePass-compatible managers, you can configure:
+New PanicVault vaults use the [KDBX 4 format](/help/keepass-compatibility/) with AES-256 encryption and the Argon2d key derivation function, which makes every guess at your master password slow and memory-hungry. There is nothing to tune on day one, and PanicVault also opens vaults that other KeePass apps created with ChaCha20 or Argon2id.
 
-- **Key derivation**: Argon2d is the recommended algorithm. It makes brute-force attacks against your master password computationally expensive
-- **Encryption**: AES-256 or ChaCha20. Both are excellent. AES-256 benefits from hardware acceleration on Apple devices
-- **Auto-lock timeout**: Set your vault to lock automatically after a period of inactivity. 5 minutes is a reasonable default for most people
+The setting worth a look now is the **lock timeout** in PanicVault's Settings: how long the vault stays unlocked while you are not using it. The choices run from 30 seconds to 5 minutes (the default is 1 minute), or Never.
 
 ## Step 4: Enable Biometric Unlock
 
@@ -101,12 +104,12 @@ Typing your master password every time you need a credential gets old fast. Biom
 
 ### In PanicVault
 
-1. Open Settings within PanicVault
-2. Find the Face ID / Touch ID option and enable it
-3. You will be asked to enter your master password to confirm
-4. From now on, PanicVault will offer biometric unlock when you open the app
+1. Open PanicVault's Settings (the gear icon on the home screen)
+2. Turn on **Unlock with Face ID** (or Touch ID)
+3. Unlock your vault once more with your master password -- PanicVault stores it in the device Keychain, protected by the Secure Enclave
+4. From then on, Face ID or Touch ID unlocks the vault
 
-This does not weaken your security. Your master password is still required after a device restart, after a system update, or if biometric authentication fails multiple times. The master password remains the actual key to your encrypted vault -- biometrics are a convenience layer managed by [Apple's Secure Enclave](/apple/secure-enclave/).
+This does not weaken your security. The master password remains the actual key to your encrypted vault -- biometrics are a convenience layer managed by [Apple's Secure Enclave](/apple/secure-enclave/). PanicVault still asks you to type the master password every 14 days by default, so you do not forget it.
 
 ## Step 5: Add Your First Credentials
 
@@ -115,6 +118,16 @@ Now it is time to start filling your vault. You have several options for getting
 ### Import from Your Browser
 
 If Chrome, Safari, or Firefox has been saving your passwords, you can export them and import them into your password manager in bulk. This is by far the fastest way to populate your vault. See our complete [browser import guide](/guides/import-from-browser/) for step-by-step instructions.
+
+### Clean Up What You Imported
+
+Delete the exported file as soon as the import is done -- it holds every password in plain text. Then accept that the import brought your old habits with it: duplicates, accounts you no longer use, and the same few passwords reused everywhere. You do not have to fix everything at once. Change these first, with a [generated password](/password-managers/how-generators-work/) for each:
+
+1. Your email accounts (they reset the password of everything else)
+2. Banking and financial services
+3. Your Apple Account and cloud storage
+4. Your main social media accounts
+5. Any account that used your most-reused password
 
 ### Add Entries Manually
 
@@ -136,24 +149,22 @@ AutoFill is what transforms a password manager from "a secure place to write thi
 
 ### On iPhone and iPad
 
-1. Open the Settings app
-2. Navigate to Passwords > Password Options (or General > AutoFill & Passwords on some iOS versions)
-3. Enable AutoFill Passwords
-4. Select PanicVault (or your chosen password manager) as the AutoFill provider
-5. You may want to disable the built-in iCloud Keychain to avoid confusion about which manager is filling credentials
+1. In PanicVault's Settings, tap **Setup AutoFill...** -- it opens the Settings app
+2. Go to **General** > **AutoFill & Passwords** (on iOS 17 and earlier: **Passwords** > **Password Options**)
+3. Turn on **AutoFill Passwords and Passkeys** and select PanicVault (or your chosen password manager)
+4. You may want to turn off Apple's Passwords in the same list to avoid confusion about which manager is filling credentials
 
 For a detailed walkthrough including troubleshooting, see our [AutoFill setup guide](/guides/autofill-setup/).
 
 ### On Mac
 
-1. Open System Settings
-2. Navigate to Passwords (or search for "AutoFill")
-3. Under Password Options, enable AutoFill and select PanicVault as your provider
-4. In Safari, PanicVault will appear as an autofill option when you encounter login forms
+1. In PanicVault's Settings, click **Open Password Settings...** -- it opens System Settings
+2. Enable PanicVault as an AutoFill provider
+3. In Safari and other apps, PanicVault will appear as an AutoFill option when you encounter login forms
 
 ## Step 7: Install the Browser Extension (If Applicable)
 
-PanicVault uses Apple's system-level [credential provider framework](/apple/credential-provider-extensions/), so it works across Safari and apps without a separate extension. However, if you are using a manager like Bitwarden, 1Password, or KeePassXC, you will want their browser extension:
+PanicVault uses Apple's system-level [credential provider framework](/apple/credential-provider-extensions/), so it works across Safari and apps without a separate extension. For Chrome, Brave, Edge, Arc and Dia on a Mac, PanicVault has its own extension and helper -- see [Browser Extension for Mac](/help/browser-extension/). If you are using a manager like Bitwarden, 1Password, or KeePassXC, you will want their browser extension:
 
 - **Safari**: Install from the App Store (usually bundled with the main app)
 - **Chrome**: Install from the Chrome Web Store
@@ -183,6 +194,10 @@ Before you consider the setup complete, run through this checklist:
 
 **Not setting a vault lock timeout.** If your vault stays unlocked indefinitely, anyone with physical access to your device has access to all your passwords. Set a reasonable timeout.
 
+## Building the Habit
+
+The first week feels slower: you are learning a new tool and resisting the urge to type an old password from memory. By the second week AutoFill is second nature, and the friction disappears. The key is consistency -- use the manager for every login, every new account and every password change, including the "unimportant" ones. Attackers do not care which account you considered unimportant; any reused password is a way in.
+
 ## What to Do Next
 
 You have a working password manager. Here is your recommended next steps path:
@@ -190,7 +205,7 @@ You have a working password manager. Here is your recommended next steps path:
 1. **This week**: [Import your browser passwords](/guides/import-from-browser/) and start using AutoFill for daily logins
 2. **Next week**: [Audit your passwords](/guides/audit-passwords/) to identify and fix weak or reused credentials
 3. **This month**: [Set up 2FA](/guides/setup-2fa/) on your most important accounts (email, banking, social media)
-4. **When you are comfortable**: [Organize your vault](/guides/organize-vault/), [set up emergency access](/guides/emergency-access/), and [help your family get started](/guides/setup-for-parents/)
+4. **When you are comfortable**: [Organize your vault](/guides/organize-vault/), [set up emergency access](/guides/emergency-access/), and [help your family get started](/guides/setup-for-parents/). If you share accounts with a partner or family, stop texting passwords and [share them through a shared vault](/guides/share-with-family/) instead
 
 The hardest part is starting. You have already done that.
 

@@ -2,9 +2,11 @@
 title: "How Password Managers Generate Strong Random Passwords"
 description: "Learn how password managers use cryptographic random number generators to create high-entropy passwords that resist cracking attacks."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Password Managers"
+aliases:
+  - /guides/generate-strong-passwords/
 ---
 
 The password you think is random probably is not. When people try to create passwords from memory, they fall into predictable patterns -- dictionary words with numbers appended, keyboard walks like `qwerty123`, or personal details dressed up with symbols. Attackers know these patterns intimately, and their cracking tools are built to exploit them. A [password manager](/password-managers/) solves this problem at its root by generating passwords using cryptographic randomness, producing strings that no human brain would choose and no pattern-based attack can predict.
@@ -13,19 +15,18 @@ This guide explains the mechanics behind password generation -- what makes a gen
 
 ## Why Human-Generated Passwords Fail
 
-Before understanding how generators work, it helps to understand why they are necessary. The human brain is remarkably bad at producing randomness. When asked to pick a "random" number between 1 and 10, people overwhelmingly choose 7. When asked to create a "random" password, people do the equivalent.
+Before understanding how generators work, it helps to understand why they are necessary. The human brain is remarkably bad at producing randomness. Asked to pick a "random" number, people favor a few answers far more often than chance would predict. Asked to create a "random" password, they do the equivalent.
 
-Studies of breached password databases reveal consistent patterns in human-chosen passwords:
+Breached password databases show the same patterns over and over in human-chosen passwords:
 
-- **Over 50% of passwords** contain a dictionary word as their base
-- **Common substitutions** (@ for a, 3 for e, 0 for o) appear in roughly 30% of passwords that attempt to look complex
-- **Sequential numbers** (123, 456, 789) are appended to approximately 25% of passwords
-- **Birth years** (1985, 1990, 2000) appear far more frequently than other four-digit combinations
-- **Keyboard patterns** (qwerty, asdfgh, zxcvbn) rank among the top 100 most common passwords year after year
+- **Dictionary words and names** form the base of a large share of them
+- **Common substitutions** (@ for a, 3 for e, 0 for o) are the standard way people try to make a word look complex
+- **Sequential numbers** (123, 456, 789) and **years** (a birth year, the current year) are the usual additions at the end
+- **Keyboard patterns** (qwerty, asdfgh, 1qaz2wsx) rank among the most common passwords year after year
 
 Attackers encode every one of these patterns into their cracking rules. A password like `Summer2024!` feels unique to the person who created it, but to a cracking algorithm running hybrid dictionary attacks, it is among the first candidates tested. The word `summer` is in every dictionary list, the year `2024` is a common append, and the trailing exclamation mark is the most frequently used special character.
 
-The core problem is that humans optimize for memorability, which inherently means predictability. Password generators optimize for something completely different: entropy. To understand the full security implications of how you choose your passwords, see our guide on [getting started with a password manager](/password-managers/beginners-guide/).
+The core problem is that humans optimize for memorability, which inherently means predictability. Password generators optimize for something completely different: entropy. If you do not use a generator yet, our guide to [setting up a password manager for the first time](/guides/first-time-setup/) gets you there in about 30 minutes.
 
 ## Cryptographic Random Number Generation
 
@@ -88,7 +89,7 @@ Here is what this looks like in practice:
 | Lower + Upper + Digits | 62 | 5.95 bits | 71.4 bits | 95.3 bits | 119.1 bits |
 | Full printable ASCII | 95 | 6.57 bits | 78.8 bits | 105.1 bits | 131.4 bits |
 
-Security researchers generally recommend a minimum of 80 bits of entropy for standard accounts and 128 bits or more for high-value targets. At 128 bits of entropy, testing every possible password would require more energy than the sun produces in its entire lifetime -- even with hypothetical future hardware.
+Security researchers generally recommend a minimum of 80 bits of entropy for standard accounts and 128 bits or more for high-value targets. At 128 bits, an attacker testing a trillion guesses per second would need, on average, hundreds of millions of times the age of the universe to find the password.
 
 The key insight is that entropy depends on both [password length](/password-security/password-length/) and character set size, but length has a larger practical impact. Doubling the character set adds one bit per character. Doubling the length doubles the total entropy. This is why a 20-character lowercase password (94 bits) can be stronger than a 12-character full-ASCII password (78.8 bits).
 
@@ -139,13 +140,48 @@ For passwords that must be memorized -- like a master passphrase -- the [passphr
 
 For passwords that the manager stores and fills automatically, there is no reason to use anything other than fully random generation. You never need to type or remember the password, so its readability is irrelevant.
 
+## Configuring Your Password Generator
+
+Everything above comes down to a handful of settings. In PanicVault, open the generator from the key icon in the entry list toolbar (**Cmd+G** on Mac) or from the dice icon in the password field while you create or edit an entry. It has two modes:
+
+- **Random characters** -- set the length anywhere from 8 to 128 characters (the default is 20) and toggle uppercase letters, lowercase letters, digits and symbols in any combination. Leave all four on unless a site objects. An option to **exclude ambiguous characters** drops look-alikes such as `l`, `1`, `I`, `O` and `0`, which helps if you ever have to read the password aloud or type it from another screen.
+- **Passphrase** -- 3 to 10 random words from the [EFF long wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) (the default is 5), joined by a hyphen, space, dot or underscore. Each word adds about 12.9 bits, so five words give roughly 64.6 bits -- about as much as a random 10-character password drawn from the full keyboard -- and six words about 77.5 bits.
+
+Every password, generated or typed, gets a strength meter: **Weak** (under 40 bits), **Fair** (40 to 59), **Strong** (60 to 79) or **Excellent** (80 and up). Tap **Use Password** to put the result straight into the entry, or **Copy** to paste it into a signup form. The generator also remembers your last 10 passwords. See the [Password Generator](/help/password-generator/) page of the manual for details.
+
+Which mode to use:
+
+- **For accounts AutoFill handles**, use random characters at 20 or more. You will never see or type them.
+- **For your [master password](/guides/master-password/)** and the rare credential you must type by hand, use a passphrase of five or more words.
+
+## Generated Passwords in Practice
+
+A few situations come up again and again:
+
+- **Banks and older systems** sometimes cap the length or allow only a few symbols. Generate within their rules at the maximum length they accept, note the restriction in the entry so you know later why this password is shorter than usual, and turn on [two-factor authentication](/guides/setup-2fa/) -- the password is only one layer.
+- **Wi-Fi networks** need a strong password, but you will type it on TVs, printers and guests' devices. A five-word passphrase is strong and easy to type; store it in your vault so you can read it off your phone. Our [home Wi-Fi guide](/digital-privacy/secure-home-wifi/) covers the rest of the router.
+- **App-specific passwords**, such as the ones Apple generates so a third-party mail app can reach your iCloud account, are created by the service, not by you. Store them in your vault next to the main account so you can find and revoke them later.
+- **Throwaway accounts** (a one-time registration, a free trial) still deserve a generated password. It costs nothing and avoids creating a reused password that links back to your real accounts.
+- **Forced password changes**: never iterate on the old password (`Password1` to `Password2`). Generate a completely new one, save it in the entry, and log out and back in to confirm it works.
+
+## Troubleshooting: The Site Rejected a Generated Password
+
+The site has a rule your generator did not follow. The usual fixes:
+
+- **Too long**: reduce the length to the site's maximum.
+- **A symbol it does not accept**: turn symbols off and make the password longer to compensate, rather than shortening it. Our guide to [special characters in passwords](/password-security/special-characters/) lists the ones that most often cause trouble.
+- **Missing a required type** ("must include a number"): a random password occasionally lacks one of the four types by chance. Regenerate until it meets the rule.
+- **Spaces not allowed**: if you are using a passphrase, switch the delimiter from space to a hyphen.
+
+If you used a generated password to sign up but forgot to save it, check the generator first: PanicVault keeps your last 10 generated passwords, so you can copy it back into a new entry. If it is gone, use the site's password reset and save the new one this time.
+
 ## What Password Managers Do That Browsers Cannot
 
 Modern browsers have added basic password generation -- Chrome and Safari can suggest random passwords for new account signups. But these built-in generators are limited in ways that matter.
 
-Browser generators typically offer no configuration. You cannot choose the length, character composition, or format. The generated password is what the browser decides, take it or leave it. Dedicated password managers like PanicVault give you full control over every parameter, from minimum character type counts to exact length to specific character exclusions.
+Browser generators offer little or no configuration. You get the format the browser decides, with at most a variant or two, take it or leave it. Dedicated password managers give you control over the parameters: in PanicVault you choose the exact length, which character sets to include, whether to exclude ambiguous characters, and whether to generate a passphrase instead.
 
-Browser generators also lack the auditing capabilities that make generated passwords useful over time. A dedicated manager can flag generated passwords that have appeared in known breaches, identify entries that share passwords, and prompt you to regenerate credentials for compromised services. For an in-depth comparison, see our analysis of [password managers vs. browser saving](/password-managers/vs-browser-saving/).
+Auditing is no longer the dividing line it once was. Apple's Passwords app, for example, flags reused, weak and leaked passwords ([Apple](https://support.apple.com/guide/security/sec7f0432063/web)), and a dedicated manager can likewise flag generated passwords that have appeared in known breaches, identify entries that share passwords, and prompt you to regenerate credentials for compromised services. For an in-depth comparison, see our analysis of [password managers vs. browser saving](/password-managers/vs-browser-saving/).
 
 ## The Math Against Attackers
 
@@ -161,7 +197,7 @@ This is the core value proposition of a password generator: it transforms passwo
 
 **Generate the longest password the system allows.** Since the manager handles storage and filling, length costs nothing. Default to 20 characters or more.
 
-**Use the full character set unless the site restricts it.** If a site rejects your generated password, reduce the symbol set rather than the length.
+**Use the full character set unless the site restricts it.** If a site rejects your generated password, reduce the symbol set rather than the length, and note the site's rule in the entry.
 
 **Regenerate after a breach notification.** If a service reports a breach, generate a new password immediately. Do not modify the old one -- replace it entirely.
 

@@ -2,12 +2,18 @@
 title: "How to Create a Secure Master Password You'll Remember"
 description: "Learn how to create a master password that is both genuinely strong and reliably memorable. Passphrase techniques, common mistakes, and testing methods."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Guides & Tutorials"
+aliases:
+  - /password-managers/master-password-guide/
 ---
 
 Your master password is the single most important credential you will ever create. It protects every other password, secure note, credit card number, and sensitive document stored in your vault. Get it right, and your vault is essentially impenetrable. Get it wrong, and the strongest encryption in the world cannot save you. This guide, part of our [Password Manager Guides & Tutorials](/guides/) series, teaches you how to create a master password that is both genuinely strong and reliably memorable.
+
+## What Is a Master Password?
+
+A master password is the one password that unlocks your password manager. Every login, note and card in your vault is encrypted with a key derived from it, which makes it the only password you still have to remember -- and the one you cannot afford to lose.
 
 ## What Makes a Master Password Different
 
@@ -17,14 +23,16 @@ This creates a tension between security and memorability. A random string like `
 
 ## The Math Behind Password Strength
 
-Password strength is measured in bits of entropy -- essentially, how many guesses an attacker would need to crack it. Each bit of entropy doubles the number of possible guesses.
+Password strength is measured in bits of entropy -- essentially, how many guesses an attacker would need to crack it. Each bit of entropy doubles the number of possible guesses. To make that concrete, picture an attacker testing a trillion guesses per second, roughly what a rig of eight high-end GPUs manages against a fast hash like MD5. Trying every possibility would take:
 
-- **40 bits of entropy**: Crackable in minutes with modern hardware
-- **60 bits of entropy**: Takes years with dedicated hardware
-- **80 bits of entropy**: Effectively uncrackable with current technology
-- **100+ bits of entropy**: Safe against foreseeable future advances
+- **40 bits of entropy**: About a second
+- **60 bits of entropy**: About two weeks
+- **80 bits of entropy**: Tens of thousands of years
+- **100+ bits of entropy**: Billions of years
 
-The key insight is that entropy comes from randomness, not complexity. A 12-character password mixing uppercase, lowercase, numbers, and symbols has about 72 bits of entropy -- if every character is truly random. But humans are terrible at being random. We pick dictionary words, substitute letters predictably (@ for a, 3 for e), and follow patterns that attackers know well.
+Those are worst-case numbers. A KeePass vault does not use a fast hash: it runs your master password through a deliberately slow key derivation function (Argon2 in PanicVault), which cuts the attacker's guessing rate drastically. But the margin only helps if the password itself has real entropy.
+
+The key insight is that entropy comes from randomness, not complexity. A 12-character password mixing uppercase, lowercase, numbers, and symbols has about 79 bits of entropy -- if every character is truly random. But humans are terrible at being random. We pick dictionary words, substitute letters predictably (@ for a, 3 for e), and follow patterns that attackers know well.
 
 ## The Passphrase Method: Your Best Option
 
@@ -55,9 +63,9 @@ Practice typing your passphrase several times. Most people find that after 5-10 
 ### Option A: Using PanicVault's Generator
 
 1. Open PanicVault on your [iPhone, iPad, or Mac](/apple/iphone-ipad-mac/)
-2. Navigate to the password generator
-3. Switch from "Random Characters" to "Passphrase" mode
-4. Set the word count to 5-7
+2. Open the [password generator](/help/password-generator/) from the key icon in the entry list toolbar (**Cmd+G** on Mac)
+3. Switch to passphrase mode, which draws words from the EFF long wordlist
+4. Set the word count to 5-7 (PanicVault allows 3 to 10; the default is 5)
 5. Generate several passphrases until you find one you can visualize
 6. Practice typing it before committing to it
 
@@ -71,15 +79,9 @@ This method guarantees true randomness because physical dice cannot be biased by
 4. String the words together
 5. Practice until it is memorized
 
-### Option C: The Three-Word-Plus Method
+### Why Not Just Three Words and a Number?
 
-If a 5-7 word passphrase feels too long, use 3 genuinely random words plus a memorable modifier:
-
-1. Randomly select 3 words: `harvest prism copper`
-2. Add a number or symbol that is meaningful to you but not guessable: `harvest-prism-copper-42`
-3. This gives you roughly 50-60 bits of entropy from the words plus some from the modifier
-
-This is less secure than a 6-word passphrase but far better than a typical human-chosen password.
+Shorter shortcuts like `harvest-prism-copper-42` are tempting, but three random words from a 7,776-word list give only about 39 bits (each word adds about 12.9), and a number you picked adds only a few more, because attackers try the common ones first. That is well short of the five-word minimum. For the one password that guards everything, use the full passphrase.
 
 ## What to Avoid
 
@@ -134,11 +136,17 @@ Can you type your master password quickly enough that a casual observer could no
 
 This is controversial advice, but it is practical. When you first create your master password, write it on a piece of paper and keep it in a physically secure location (a safe, a locked drawer -- not under your keyboard or on a sticky note on your monitor). This is your backup while you are still memorizing it.
 
-Once you have typed your master password enough times that it is completely automatic (usually a week or two), destroy the paper. Some people keep the paper permanently in a home safe as part of their [emergency access plan](/guides/emergency-access/).
+Once you have typed your master password enough times that it is completely automatic (usually a week or two), destroy the paper -- or keep it on purpose.
+
+### Should You Keep a Written Copy?
+
+For most people, forgetting the master password is a bigger risk than someone breaking into a safe. A sheet of paper in a locked safe or a safe deposit box is out of reach of remote attackers, and it is often what lets your family into your accounts in an [emergency](/guides/emergency-access/). If you keep one, do not label it "master password" or name the app, and remember who else can open that safe.
+
+If you share your home with people you do not fully trust, keep a hint instead of the passphrase: a memory cue for each word that means nothing to anyone else. It jogs your memory without handing over the key.
 
 ### Practice Daily
 
-For the first two weeks, deliberately type your master password rather than using biometric unlock. This reinforces the muscle memory. After two weeks, you can switch to [Face ID or Touch ID](/apple/face-id-touch-id-setup/) for daily use, but make a point of typing it from memory at least once a week so you do not forget it.
+For the first two weeks, deliberately type your master password rather than using biometric unlock. This reinforces the muscle memory. After two weeks, you can switch to [Face ID or Touch ID](/apple/face-id-touch-id-setup/) for daily use, but keep typing it from memory regularly so you do not forget it. PanicVault does this for you: even with biometric unlock on, it asks for the master password every 14 days by default (under **Master Password Re-entry** in Settings you can choose every 7, 14 or 30 days, or every unlock).
 
 ### Consider a Key File (Advanced)
 
@@ -161,22 +169,28 @@ You do not need to change your master password on a regular schedule. A strong p
 
 In PanicVault:
 
-1. Open your database
-2. Navigate to database settings
-3. Select "Change Master Password"
-4. Enter your current master password
-5. Enter and confirm your new master password
-6. The database will be re-encrypted with the new key
+1. Unlock your vault and tap the gear icon in the entry list toolbar to open **Database Settings**
+2. In the **Master Password** section, tap **Change Master Password**
+3. Enter your current master password
+4. Enter and confirm your new master password, then tap **Change Password**
 
-Make sure to update any backups of your database after changing your master password. Old backups will still require the old password.
+PanicVault re-encrypts the vault with the new password and saves it. A vault on iCloud Drive or Google Drive uploads automatically, and the key Face ID or Touch ID uses is updated too. Your other devices will ask for the new password the next time they unlock.
+
+Make sure to update any backups of your database after changing your master password. Old backups still open with the old password, so a backup made before the change is only as safe as the password you replaced.
+
+## What Happens If You Forget Your Master Password
+
+With a local password manager like PanicVault or [KeePassXC](/keepass/), nobody can reset it -- not Apple, not the app developer. The vault is encrypted with a key derived from your master password, and no copy of that password exists anywhere else. If you forget it, the data is gone: you create a new vault and reset your accounts one by one. This is a feature, not a bug -- the same property keeps anyone who steals the file out -- but it means you must take memorization seriously.
+
+Cloud managers differ only in what you set up in advance. In 1Password, a family organizer or team administrator can [recover a member's account](https://support.1password.com/recovery/). Bitwarden cannot reset a master password, but a trusted contact you added through its Premium emergency access feature can request access to your vault ([Bitwarden](https://bitwarden.com/help/forgot-master-password/)). Neither helps if it was not set up before you forgot.
+
+For a KeePass vault, preparation is the only recovery plan:
+
+- **Keep typing it.** Let PanicVault's re-entry prompt do its job instead of setting it to the longest interval.
+- **Keep a written copy or a hint** somewhere safe (see above), or a sealed [emergency kit](/guides/emergency-access/) for the people who would need your passwords.
+- **Back up the vault file and any key file.** A backup cannot fix a forgotten password, but losing the file or the [key file](/keepass/key-files/) locks you out just as surely. See [How to Back Up Your Password Vault](/guides/backup-vault/).
 
 ## FAQ
-
-**What if I forget my master password?**
-
-If you are using a local password manager like PanicVault or [KeePassXC](/keepass/), there is no recovery option. The encryption is designed so that no one -- not even the app developer -- can access your data without the master password. This is a feature, not a bug, but it means you must take memorization seriously.
-
-Cloud-based managers like 1Password and Bitwarden have limited recovery options (emergency kits, recovery codes), but these require advance setup.
 
 **Should I use a password manager to store my master password?**
 
