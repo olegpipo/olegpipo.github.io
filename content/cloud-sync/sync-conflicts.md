@@ -2,7 +2,7 @@
 title: "Resolving Sync Conflicts in Password Databases"
 description: "How sync conflicts occur in KeePass password databases, how different apps handle merging, and best practices for avoiding data loss when using multiple devices."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Cloud Sync & Storage"
 ---
@@ -42,9 +42,9 @@ When a sync conflict occurs, cloud providers typically use one of two strategies
 
 The most recent upload replaces the older version. The older version is silently discarded (or moved to version history, if the provider retains versions). This is the default behavior for most cloud storage services.
 
-**iCloud Drive**: Uses last-write-wins. If two devices upload different versions, the most recent upload wins. iCloud may keep the older version in version history for 30 days, but this is not guaranteed.
+**iCloud Drive**: Uses last-write-wins. If two devices upload different versions, the most recent upload wins. iCloud Drive keeps no version history you can browse for a `.kdbx` file, so the overwritten version can only come back from a backup such as Time Machine.
 
-**Google Drive**: Uses last-write-wins for most file types. Previous versions are retained in version history (up to 100 versions for 30 days).
+**Google Drive**: Uses last-write-wins for most file types. Previous versions are retained in version history (for 30 days or up to 100 newer versions, unless you mark one "Keep forever").
 
 **Dropbox**: Detects the conflict and creates a "conflicted copy" file alongside the original. For example, if `database.kdbx` has a conflict, Dropbox creates `database (Pierre's MacBook Pro's conflicted copy 2026-02-13).kdbx`. Both versions are preserved, and the user must resolve the conflict manually.
 
@@ -52,7 +52,7 @@ Dropbox's approach is the most conservative and the safest for password database
 
 ### The Risk of Lost Changes
 
-With last-write-wins (iCloud, Google Drive), changes from the "losing" device are discarded from the active file. If you added three new passwords on your phone and then your laptop's older version overwrites it, those three passwords are gone from the live file. They may exist in the provider's version history, but you might not notice the loss until you need those passwords and cannot find them.
+With last-write-wins (iCloud, Google Drive), changes from the "losing" device are discarded from the active file. If you added three new passwords on your phone and then your laptop's older version overwrites it, those three passwords are gone from the live file. With Google Drive they may still exist in version history (with iCloud Drive, only in a backup), but you might not notice the loss until you need those passwords and cannot find them.
 
 This silent data loss is the primary danger of sync conflicts with password databases.
 
@@ -155,7 +155,7 @@ When a conflict does occur, follow this procedure:
 
 ### If Last-Write-Wins Occurred (iCloud, Google Drive)
 
-1. Check the cloud provider's version history for the database file.
+1. Check the cloud provider's version history for the database file (Google Drive or Dropbox; iCloud Drive has none, so use a backup such as Time Machine).
 2. Download the previous version (the "losing" version).
 3. Open the current (winning) database in KeePassXC.
 4. Merge the previous version using Database > Merge From Database.

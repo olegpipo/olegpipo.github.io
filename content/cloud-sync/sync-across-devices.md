@@ -2,7 +2,7 @@
 title: "How to Sync Your Password Database Across All Devices"
 description: "Step-by-step guide to syncing your KeePass password database across iPhone, iPad, Mac, and other devices using iCloud, Google Drive, Dropbox, Syncthing, WebDAV, and manual methods."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Cloud Sync & Storage"
 ---
@@ -164,9 +164,9 @@ A sync conflict occurs when you modify the database on two devices before they h
 
 ## Automatic Backup Considerations
 
-Sync is not backup. If your database is corrupted or accidentally deleted, sync will propagate the corruption or deletion to all devices. Protect against this with an [automatic backup strategy](/cloud-sync/automatic-backup/):
+Sync is not backup. If your database is corrupted or accidentally deleted, sync will propagate the corruption or deletion to all devices. Protect against this with an [automatic backup strategy](/keepass/backup-database/):
 
-- Enable file versioning in your cloud service (Dropbox keeps 30-180 days of version history depending on plan; Google Drive keeps 100 versions; iCloud has limited versioning).
+- Enable file versioning in your cloud service (Dropbox keeps 30 to 365 days of version history depending on plan; Google Drive keeps versions for 30 days or up to 100 newer ones; iCloud Drive keeps none you can browse for a `.kdbx` file, so rely on separate backups there).
 - Keep a periodic offline copy on a USB drive or local disk.
 - Some KeePass apps support automatic backup files (a copy saved alongside the main file each time you save).
 

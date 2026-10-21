@@ -2,7 +2,7 @@
 title: "iCloud vs. Google Drive vs. Dropbox for Password Database Storage"
 description: "Compare iCloud Drive, Google Drive, and Dropbox for storing encrypted KeePass password databases. Security features, pricing, sync reliability, and platform support analyzed."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Cloud Sync & Storage"
 ---
@@ -20,7 +20,7 @@ That said, providers differ meaningfully in platform integration, sync behavior,
 | Encryption at rest | AES-128 (standard) / AES-256 (Advanced Data Protection) | AES-256 | AES-256 |
 | Encryption in transit | TLS 1.2+ | TLS 1.2+ | TLS 1.2+ |
 | End-to-end encryption option | Yes (Advanced Data Protection) | No (client-side encryption available for Workspace) | No (Vault feature encrypts at rest with user key, but limited) |
-| File versioning | 30 days | 30 days (100 versions) | 30 days (free) / 180 days (paid) |
+| File versioning | None for a .kdbx file (Recently Deleted: 30 days) | 30 days or 100 versions; pin with "Keep forever" | 30 days (Basic, Plus, Family) / 180-365 days (business plans) |
 | Platform availability | Apple platforms, Windows, iCloud.com | All platforms | All platforms |
 | Sync conflict handling | Last-write-wins with conflict copies | Last-write-wins with conflict copies | Last-write-wins with conflict copies |
 | Linux support | No native client | Yes | Yes |
@@ -88,7 +88,7 @@ On Apple devices specifically, Google Drive integration is less seamless than iC
 
 Google Drive sync is mature and generally reliable. The desktop client (Google Drive for Desktop) provides clear sync status indicators and detailed activity logs. Files sync quickly, and the system handles network interruptions gracefully.
 
-Like iCloud, Google Drive uses file-level sync. The entire KDBX file is uploaded on each save. Google Drive maintains up to 100 versions of a file for 30 days, which is useful if you need to recover a previous version of your database.
+Like iCloud, Google Drive uses file-level sync. The entire KDBX file is uploaded on each save. Google Drive keeps earlier versions of a file for 30 days or until there are 100 newer ones, and you can mark any version "Keep forever" -- useful if you need to recover a previous version of your database.
 
 Google Drive has one notable behavior: it scans uploaded files for malware and policy violations. While this scanning cannot read the contents of an encrypted KDBX file (it would just see encrypted bytes), it is worth knowing that Google processes your files server-side.
 
@@ -126,7 +126,7 @@ Key sync features relevant to password databases:
 - **Block-level sync (delta sync)**: Unlike iCloud and Google Drive, Dropbox can upload only the changed portions of a file. For large files, this dramatically reduces upload time and bandwidth. For small KDBX files, the benefit is minimal, but it does mean marginally faster sync.
 - **Conflict handling**: Dropbox creates "conflicted copy" files when simultaneous edits are detected. See our guide on [resolving sync conflicts](/cloud-sync/sync-conflicts/) for details on handling this with password databases.
 
-Dropbox maintains file version history for 30 days on the free plan and 180 days on paid plans. Extended version history (up to 10 years) is available as a paid add-on.
+Dropbox keeps file version history for 30 days on Basic, Plus and Family accounts, 180 days on Professional, Essentials, Business and Standard, and 365 days on Business Plus, Advanced and Enterprise.
 
 ### Pricing and Storage
 
@@ -160,7 +160,7 @@ Google Drive is the pragmatic multi-platform choice. The 15 GB free tier is gene
 - You want the fastest and most reliable sync engine
 - You use Linux as a primary or secondary platform
 - You need LAN sync for fast local device-to-device sync
-- You value extended file version history (up to 180 days or more)
+- You value extended file version history (180 days or more on Dropbox's business plans)
 - You are already a Dropbox subscriber
 
 Dropbox's sync technology is best-in-class. If sync speed and reliability are your top priorities, or if Linux support is essential, Dropbox is the strongest option.

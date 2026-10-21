@@ -2,7 +2,7 @@
 title: "iCloud Sync for KeePass: Setup Guide"
 description: "How to sync your KeePass database via iCloud Drive on iPhone, iPad & Mac. Setup steps, encryption details & troubleshooting."
 date: 2026-02-13
-lastmod: 2026-03-06
+lastmod: 2026-10-21
 draft: false
 silo: "Cloud Sync & Storage"
 ---
@@ -129,7 +129,7 @@ The choice between iCloud and other services like [Google Drive](/cloud-sync/goo
 - **Limited Windows integration** -- iCloud for Windows exists but is not as reliable or well-integrated as iCloud on Apple platforms
 - **No Linux support** -- There is no official iCloud Drive client for Linux
 - **Sync visibility** -- iCloud Drive does not provide detailed sync status indicators. You cannot easily see if a file is "syncing" or "synced" the way Dropbox does
-- **File version history** -- iCloud Drive's version history is less robust than Dropbox's (which keeps 30-180 days of versions depending on plan)
+- **File version history** -- iCloud Drive keeps no version history you can browse for a `.kdbx` file; iCloud.com can only restore files deleted in the last 30 days. Dropbox keeps 30 to 365 days of versions depending on plan, and Google Drive keeps recent versions too
 
 If you live entirely within the Apple ecosystem, iCloud is the clear winner for simplicity. If you need cross-platform access, consider Google Drive or Dropbox as covered in our [device sync guide](/cloud-sync/sync-across-devices/).
 
