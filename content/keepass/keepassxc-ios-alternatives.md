@@ -2,7 +2,7 @@
 title: "KeePassXC for iPhone: 3 Best iOS Alternatives (2026)"
 description: "KeePassXC has no iPhone or iPad app. Here are the 3 best KeePass apps for iOS — full KDBX 4.0, AutoFill, and Face ID — plus how to sync your .kdbx database."
 date: 2026-03-06
-lastmod: 2026-09-26
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -180,7 +180,7 @@ iCloud Drive is the simplest sync method if you use a Mac as your desktop machin
 
 1. **Locate your KDBX file.** Open KeePassXC on your Mac and check where your database file is stored. You can see the full path in the title bar or in KeePassXC's recent databases list.
 
-2. **Move the file to iCloud Drive.** Open Finder and navigate to iCloud Drive. Create a folder (for example, "KeePass" or "Vault") and move your .kdbx file into it. If you also use a key file, move that as well.
+2. **Move the file to iCloud Drive.** Open Finder and navigate to iCloud Drive. Create a folder (for example, "KeePass" or "Vault") and move your .kdbx file into it. If you also use a key file, do not put it in this folder -- transfer it to your iPhone separately (see the note on key files below).
 
 3. **Update KeePassXC.** Open KeePassXC and use File > Open Database to open the file from its new iCloud Drive location. KeePassXC will now read and write to the synced copy.
 
@@ -196,7 +196,7 @@ Google Drive is the better choice if you use KeePassXC on Windows or Linux, or i
 
 1. **Install Google Drive on your desktop.** Download the Google Drive desktop client for Windows, macOS, or Linux. This creates a synced folder on your computer.
 
-2. **Move your KDBX file to Google Drive.** Place your .kdbx file (and key file, if used) in your Google Drive folder.
+2. **Move your KDBX file to Google Drive.** Place your .kdbx file in your Google Drive folder. If you use a key file, keep it out of Google Drive and transfer it to your iPhone separately (see the note on key files below).
 
 3. **Update KeePassXC.** Open the database from its new Google Drive location in KeePassXC.
 
