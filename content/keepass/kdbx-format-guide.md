@@ -2,7 +2,7 @@
 title: "What Is a .KDBX File? The KeePass Format Explained (2026)"
 description: "A .kdbx file is an encrypted KeePass password database. Here's what's inside one, how its encryption works, and how the KDBX 3.1 and 4.x versions differ."
 date: 2026-02-13
-lastmod: 2026-08-10
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -49,9 +49,9 @@ Following the signature, the header contains a series of **type-length-value (TL
 A UUID identifying the encryption algorithm used for the payload. The two standard options are:
 
 - **AES-256-CBC** (`31C1F2E6-BF71-4350-BE58-05216AFC5AFF`) -- The default in older databases
-- **ChaCha20** (`D6038A2B-8B6F-4CB5-A524-339A31DBB59A`) -- Available in KDBX 3.1+ and the default in many modern implementations
+- **ChaCha20** (`D6038A2B-8B6F-4CB5-A524-339A31DBB59A`) -- Added in KeePass 2.35 alongside KDBX 4; since KeePass 2.44, choosing it always produces a KDBX 4 file
 
-ChaCha20 is a stream cipher that offers excellent performance on devices without hardware AES acceleration and provides authenticated encryption when paired with Poly1305. Both options deliver strong security, but ChaCha20 is increasingly preferred for new databases. For a deeper comparison of these ciphers, see our [KeePass encryption explained](/keepass/encryption-explained/) guide.
+ChaCha20 is a stream cipher that performs well on devices without hardware AES acceleration. KDBX does not use the Poly1305 authenticator that usually accompanies it; integrity comes from the format's own checks (HMAC-authenticated blocks in KDBX 4). Both options deliver strong security. For a deeper comparison of these ciphers, see our [KeePass encryption explained](/keepass/encryption-explained/) guide.
 
 ### Compression Flags
 
@@ -199,7 +199,37 @@ Binary attachments (files stored within entries) are handled differently across 
 
 The move from KDBX 3.1 to 4.x was driven by genuine security improvements. HMAC authentication prevents tampering that simple hash verification cannot detect. Moving the inner stream parameters inside the encrypted payload reduces information leakage. And Argon2 support makes brute-force attacks orders of magnitude more expensive.
 
-Most modern applications default to KDBX 4.x when creating new databases. If you are working with an older database in KDBX 3.1 format, consider migrating to 4.x for the improved security properties. Our [compatibility guide](/keepass/compatibility-guide/) covers which applications support which versions.
+Most modern applications default to KDBX 4.x when creating new databases. If you are working with an older database in KDBX 3.1 format, consider upgrading it; the steps are below. Our list of [KeePass apps for every platform](/keepass/compatible-apps/) shows which applications read which versions.
+
+## How to Upgrade a Database to KDBX 4
+
+Upgrading changes how the file is written, not what is in it: your master password, key file, YubiKey setup, entries and attachments all stay the same. Before you start, make a backup copy of the `.kdbx` file and check that every app that opens it reads KDBX 4. Any other PC running KeePass 2.x needs version 2.35 or later.
+
+### Check Which Version a File Uses
+
+In KeePassXC, choose **Database > Database Settings**, then **Security** and the **Encryption Settings** tab: the **Database format** field shows it. KeePass 2.x does not display the version, but [keepass.info](https://keepass.info/help/kb/kdbx_4.html) explains when it writes KDBX 4: when the key derivation function is anything other than AES-KDF (for example Argon2), when the cipher is ChaCha20 (since KeePass 2.44), or when a plugin stores data that only KDBX 4 can hold. A database using AES-KDF with AES-256 and no such plugin data is saved as KDBX 3.1, even by the latest KeePass.
+
+You can also read the header described above in a hex viewer: bytes 8-11 read `01 00 03 00` for KDBX 3.1, `00 00 04 00` for KDBX 4.0 and `01 00 04 00` for KDBX 4.1, which KeePass introduced in [version 2.48](https://keepass.info/help/kb/kdbx_4.1.html).
+
+### Upgrade in KeePassXC
+
+1. Open and unlock the database.
+2. Choose **Database > Database Settings**, select **Security**, and open the **Encryption Settings** tab.
+3. Set **Database format** to **KDBX 4 (recommended)**.
+4. Click **OK**, then choose **Database > Save Database**.
+
+### Upgrade in KeePass 2.x
+
+1. Open and unlock the database.
+2. Choose **File > Database Settings** and open the **Security** tab.
+3. Change the key derivation function from **AES-KDF** to **Argon2d** or **Argon2id**.
+4. Click **OK**, then choose **File > Save**.
+
+Switching the key derivation function is what makes KeePass write KDBX 4. A KeePass 1.x `.kdb` file is a different format rather than an older version of the same one, so it cannot be upgraded in place: import it first (**File > Import** in KeePass 2.x, **Database > Import** in KeePassXC), save the result as a new `.kdbx` file, then follow the steps above.
+
+### When You Might Go Back to KDBX 3.1
+
+Only when an app you cannot replace still reads nothing newer. In KeePass 2.x, set the key derivation function back to AES-KDF and the cipher to AES-256, then save; KeePass writes KDBX 3.1 again as long as no plugin has stored data that needs KDBX 4. KeePassXC offers **KDBX 3** under **Database format** only while the database uses no KDBX 4 features; once it does (Argon2, for example), the setting is greyed out until you switch those features off. Either way, you give up Argon2's resistance to GPU cracking and KDBX 4's HMAC-authenticated blocks. keepass.info also warns that once all major KeePass ports support KDBX 4, KeePass will always save in that format.
 
 ## Security Properties of the Format
 
@@ -211,7 +241,7 @@ The KDBX format provides several layers of defense in depth:
 
 **Key derivation resistance.** Argon2 with appropriate parameters (e.g., 64 MB memory, 3 iterations) ensures that brute-forcing the master password requires enormous per-guess resources, as explored in our discussion of [zero-knowledge encryption](/password-managers/zero-knowledge-encryption/).
 
-**Forward secrecy of encryption keys.** The master seed changes on every save, so even if a previous encryption key were somehow compromised, it would not decrypt future versions of the database.
+**Fresh randomness on every save.** KeePass generates a new master seed and encryption IV each time it saves, so two saves of the same database never produce the same ciphertext. This is not forward secrecy: anyone who has your master password (and key file, if you use one) can decrypt every past and future copy of the file, so a leaked master password means changing it.
 
 **Memory protection.** The inner random stream encrypts sensitive values within the XML, reducing the window during which passwords exist in plaintext in process memory.
 
@@ -230,6 +260,6 @@ You do not need to understand every byte of the KDBX header to use a KeePass-com
 - **Choose KDBX 4.x with Argon2** when creating a new database. The security improvements over KDBX 3.1 are substantial.
 - **Use a strong master passphrase.** The format's encryption is only as strong as the key protecting it. Argon2 makes brute force expensive, but a weak password is still a weak password.
 - **Keep backups.** Because the KDBX file is a single encrypted blob, corruption of even a few bytes can make the entire database unreadable. Regular backups to independent storage locations protect against hardware failure and accidental deletion.
-- **Verify application compatibility.** Not every application supports every KDBX feature. If you use custom fields, attachments, or Argon2id, confirm that all your applications handle them correctly. Our [compatibility guide](/keepass/compatibility-guide/) provides a detailed matrix.
+- **Verify application compatibility.** Not every application supports every KDBX feature. If you use custom fields, attachments, or Argon2id, confirm that all your applications handle them correctly. Our list of [KeePass apps for every platform](/keepass/compatible-apps/) includes a format and cipher matrix.
 
 The KDBX format has earned its position as the most widely supported open password database standard through two decades of careful engineering, community scrutiny, and iterative improvement. It is a format designed by people who understand that the security of your passwords depends on getting every cryptographic detail right -- and who made sure anyone could verify that they did.
