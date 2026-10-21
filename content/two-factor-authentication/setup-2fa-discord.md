@@ -2,7 +2,7 @@
 title: "Set Up 2FA on Discord (2026)"
 description: "Step-by-step guide to enabling two-factor authentication on Discord using an authenticator app to protect your account from takeovers and scams."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "Two-Factor Authentication"
 faq:
@@ -15,7 +15,7 @@ faq:
   - q: "Does Discord 2FA protect my servers?"
     a: "Enabling 2FA protects your account login. Server owners can also require 2FA for moderator actions by enabling server-wide 2FA, which means members need 2FA enabled to kick, ban, or change server settings."
   - q: "Can I enable 2FA on Discord from my phone?"
-    a: "Yes. You can enable 2FA from the Discord mobile app by going to User Settings, tapping My Account, and selecting Enable Two-Factor Auth. The process is the same as on desktop."
+    a: "Yes. In the Discord mobile app, open Settings, tap Account, and tap Enable Authenticator App. The rest of the process is the same as on desktop."
 ---
 
 Discord has grown far beyond its gaming roots into a platform used by communities of every kind -- study groups, open-source projects, creative teams, cryptocurrency communities, and professional organizations. That growth has made Discord accounts increasingly valuable targets. Compromised accounts are used for server takeovers, cryptocurrency scams, phishing campaigns against server members, and spreading malware through trusted channels. Enabling two-factor authentication is your primary defense against these attacks. This guide walks you through the setup process on both desktop and mobile. For the big picture on how 2FA protects your accounts, see our [complete guide to two-factor authentication](/two-factor-authentication/).
@@ -36,9 +36,11 @@ Server owners face an additional risk. A compromised admin account can be used t
 
 Discord keeps its 2FA implementation straightforward:
 
-**Authenticator app (TOTP)** -- This is the primary and required method. Discord supports any app or password manager that generates standard TOTP codes. For guidance on choosing an app, see our [best authenticator apps comparison](/two-factor-authentication/best-authenticator-apps/).
+**Authenticator app (TOTP)** -- The method most people start with, and the one SMS backup depends on. Discord supports any app or password manager that generates standard TOTP codes. For guidance on choosing an app, see our [best authenticator apps comparison](/two-factor-authentication/best-authenticator-apps/).
 
-**SMS (backup only)** -- After setting up an authenticator app, you can add a phone number for SMS-based backup verification. SMS cannot be used as the primary 2FA method on Discord. This design choice reflects the security community's consensus that [TOTP is more secure than SMS](/two-factor-authentication/totp-vs-sms/).
+**Security keys and passkeys** -- Discord also accepts security keys and passkeys as a second factor, and recommends them. On desktop, use **Register a Security Key** in the same "Password and Authentication" section; in the mobile app, go to **Account** > **Security Keys** > **Add**. You can register up to 16 keys.
+
+**SMS (backup only)** -- After setting up an authenticator app, you can add a phone number for SMS-based backup verification. SMS cannot be used as the primary 2FA method on Discord. This design choice reflects the security community's consensus that [TOTP is more secure than SMS](/two-factor-authentication/sms-being-phased-out/).
 
 ## Step-by-Step Setup on Desktop
 
@@ -46,7 +48,7 @@ Discord keeps its 2FA implementation straightforward:
 
 **Step 2: Go to My Account.** In the left sidebar, make sure you are on the "My Account" tab. This is typically the default view when you open settings.
 
-**Step 3: Click Enable Two-Factor Auth.** Scroll down to the "Password and Authentication" section. Click the "Enable Two-Factor Auth" button.
+**Step 3: Click Enable Authenticator App.** Scroll down to the "Password and Authentication" section. Click the "Enable Authenticator App" button.
 
 **Step 4: Enter your password.** Discord will ask you to confirm your current password before proceeding.
 
@@ -54,17 +56,17 @@ Discord keeps its 2FA implementation straightforward:
 
 **Step 6: Enter the verification code.** Type the six-digit code currently displayed in your authenticator app and click "Activate."
 
-**Step 7: Download your backup codes.** Discord will immediately present you with a set of backup codes. These are critically important -- click "Download Backup Codes" to save them as a text file. Each code can be used once to log in if you lose access to your authenticator app. Store these codes securely in your password manager.
+**Step 7: Save your backup codes.** Discord gives you a set of backup codes (you can see them again later with **View Backup Codes** in My Account). These are critically important. Each code can be used once to log in if you lose access to your authenticator app. Store these codes securely in your password manager.
 
 After enabling 2FA, Discord will ask for a verification code each time you log in on a new device or after logging out.
 
 ## Step-by-Step Setup on the Mobile App
 
-**Step 1: Open settings.** Tap your avatar or profile icon in the bottom-right corner (iOS) or swipe right and tap the gear icon (Android).
+**Step 1: Open settings.** Open **Settings** in the Discord app.
 
-**Step 2: Tap "My Account."** Under the "User Settings" section, tap "My Account."
+**Step 2: Tap "Account."**
 
-**Step 3: Tap "Enable Two-Factor Auth."** Scroll to the authentication section and tap the enable button.
+**Step 3: Tap "Enable Authenticator App."**
 
 **Step 4: Enter your password.** Verify your identity by entering your current Discord password.
 
@@ -82,7 +84,7 @@ After enabling authenticator-based 2FA, you can add SMS as a backup method:
 2. Under Two-Factor Authentication, you will see an option to "Enable SMS Authentication"
 3. Enter your phone number and verify it with the code Discord sends
 
-SMS backup is optional but provides an additional recovery path if you lose access to your authenticator app and your backup codes simultaneously. The trade-off is that SMS is [vulnerable to SIM swapping](/two-factor-authentication/sim-swapping/), but as a backup-only method, the risk is manageable.
+SMS backup is optional but provides an additional recovery path if you lose access to your authenticator app and your backup codes simultaneously. The trade-off is that SMS is [vulnerable to SIM swapping](/two-factor-authentication/sms-being-phased-out/), but as a backup-only method, the risk is manageable.
 
 ## Optional: Server-Wide 2FA Requirement
 
@@ -96,7 +98,7 @@ When enabled, any member with moderator permissions (kick, ban, manage channels,
 
 ## Why TOTP Is the Right Choice for Discord
 
-Discord's decision to require TOTP as the primary 2FA method (rather than allowing SMS as a standalone option) reflects the reality that Discord accounts are frequently targeted through social engineering. SMS codes can be intercepted through [SIM swapping attacks](/two-factor-authentication/sim-swapping/), which are relatively easy for attackers to execute. TOTP codes are generated locally on your device and never travel through a phone network.
+Discord's decision not to allow SMS as a standalone 2FA method reflects the reality that Discord accounts are frequently targeted through social engineering. SMS codes can be intercepted through [SIM swapping attacks](/two-factor-authentication/sms-being-phased-out/), which are relatively easy for attackers to execute. TOTP codes are generated locally on your device and never travel through a phone network.
 
 This is especially important for Discord because the attack surface extends beyond your own account. A compromised admin account can damage an entire community. The stronger the authentication protecting admin accounts, the safer every member of those communities becomes.
 
@@ -104,7 +106,7 @@ This is especially important for Discord because the attack surface extends beyo
 
 Discord provides backup codes during the 2FA setup process, and this is the only time they are automatically displayed. You can view or regenerate them later from your account settings, but if you skip saving them initially, you might forget they exist until you desperately need them.
 
-Store your backup codes in your password manager alongside your Discord credentials. This ensures they are encrypted, backed up, and accessible even if your phone is lost. Never store them only as a screenshot on the same phone that holds your authenticator app -- if you lose that phone, you lose both your codes and your backup codes. For more on managing recovery codes securely, see our [recovery codes guide](/two-factor-authentication/recovery-codes/).
+Store your backup codes in your password manager alongside your Discord credentials. This ensures they are encrypted, backed up, and accessible even if your phone is lost. Never store them only as a screenshot on the same phone that holds your authenticator app -- if you lose that phone, you lose both your codes and your backup codes. For more on managing recovery codes securely, see our [recovery codes guide](/two-factor-authentication/backup-totp-codes/).
 
 ## Using a Password Manager for TOTP Codes
 
@@ -117,12 +119,12 @@ Here is why this matters for Discord specifically:
 - **Encrypted storage.** Your TOTP secret is protected by the same encryption that guards your passwords. This is important because the TOTP secret is the "master key" -- anyone who has it can generate valid codes.
 - **Easy phone upgrades.** When you get a new phone, your password manager migrates everything automatically. No need to disable 2FA on Discord, re-enable it on the new device, and generate new backup codes.
 
-The trade-off of keeping your password and TOTP code in the same vault is well-understood. For most people, the practical benefits of reliable, backed-up TOTP codes outweigh the theoretical concern. Read the full analysis in our guide on [using your password manager as an authenticator](/two-factor-authentication/password-manager-as-authenticator/).
+The trade-off of keeping your password and TOTP code in the same vault is well-understood. For most people, the practical benefits of reliable, backed-up TOTP codes outweigh the theoretical concern. Read the full analysis in our guide on [using your password manager as an authenticator](/two-factor-authentication/google-authenticator-vs-builtin/).
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication and Why You Need It](/two-factor-authentication/what-is-2fa/)
-- [TOTP vs. SMS: Which Two-Factor Method Is More Secure?](/two-factor-authentication/totp-vs-sms/)
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/)
+- [SMS 2FA vs. Authenticator Apps: Why SMS Is Being Phased Out](/two-factor-authentication/sms-being-phased-out/)
 - [The Best Authenticator Apps in 2026](/two-factor-authentication/best-authenticator-apps/)
-- [How to Use Your Password Manager as an Authenticator](/two-factor-authentication/password-manager-as-authenticator/)
-- [How to Set Up 2FA on Every Account That Supports It](/two-factor-authentication/setup-on-every-service/)
+- [Google Authenticator vs. Password Manager TOTP](/two-factor-authentication/google-authenticator-vs-builtin/)
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/)
