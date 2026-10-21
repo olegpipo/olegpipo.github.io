@@ -179,7 +179,7 @@ Before you consider the setup complete, run through this checklist:
 - **Master password memorized**: Can you type it without looking at a reference? Practice a few times
 - **Biometric unlock working**: Test Face ID or Touch ID to confirm it unlocks your vault
 - **AutoFill functioning**: Visit a site you have saved and confirm the credential fills correctly
-- **Backup plan**: Know where your vault file is stored. If you are using iCloud Drive, your vault is already backed up. For extra safety, see our [vault backup guide](/guides/backup-vault/)
+- **Backup plan**: Know where your vault file is stored. iCloud Drive keeps your vault in sync, but sync is not a backup: a deleted or damaged vault syncs to every device too. Keep separate copies -- see our [vault backup guide](/guides/backup-vault/)
 - **Emergency access considered**: If something happens to you, can a trusted person access your vault? See our [emergency access guide](/guides/emergency-access/)
 
 ## Common First-Time Mistakes

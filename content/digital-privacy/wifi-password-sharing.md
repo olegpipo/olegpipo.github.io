@@ -2,7 +2,7 @@
 title: "Wi-Fi Password Sharing: Secure QR Code Method"
 description: "How to share your Wi-Fi password securely using QR codes -- faster, safer, and more convenient than dictating passwords to guests."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Digital Privacy & Online Safety"
 ---
@@ -54,7 +54,7 @@ Both iOS (since iOS 11) and Android (since Android 10) support scanning Wi-Fi QR
 
 Apple devices have a built-in Wi-Fi sharing feature that works between Apple devices. When a nearby Apple device tries to connect to a network you are already on, your iPhone or Mac will offer to share the password. This is seamless but only works between Apple devices with Wi-Fi and Bluetooth enabled and mutual contact entries.
 
-For guests with non-Apple devices, you need a QR code.
+For guests with non-Apple devices, you need a QR code. On iOS 18 or later, the Passwords app makes one for any Wi-Fi network you have joined: open Passwords, tap Wi-Fi, choose the network, and tap Show Network QR Code ([Apple](https://support.apple.com/guide/iphone/find-and-share-your-wi-fi-password-iph96e6aa9bb/ios)). The methods below work on older versions too.
 
 ### Method 2: Using the Shortcuts App on iPhone
 

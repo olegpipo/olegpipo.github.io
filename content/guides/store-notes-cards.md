@@ -2,7 +2,7 @@
 title: "How to Store Secure Notes, Credit Cards, and IDs"
 description: "Use your password manager for more than passwords. Learn how to securely store credit cards, IDs, Wi-Fi passwords, software licenses, and sensitive notes."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Guides & Tutorials"
 ---
@@ -43,7 +43,7 @@ PanicVault uses the [KDBX format](/keepass/) which supports custom fields. You c
 1. Create a new entry in your "Banking & Finance" or "Credit Cards" group
 2. Set the title to the card name and last four digits
 3. Use the username field for the cardholder name
-4. Use custom fields for card number, expiration, CVV, and other details
+4. Use custom fields for card number, expiration, CVV, and other details, and mark the card number, CVV and PIN as **protected** (the lock icon) so they stay hidden until you reveal them
 5. Or use the notes field with a structured format:
 
 ```

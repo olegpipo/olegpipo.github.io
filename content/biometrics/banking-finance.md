@@ -2,7 +2,7 @@
 title: "Biometric Authentication for Banking in 2026"
 description: "How banks and financial institutions use biometric authentication in 2026 -- mobile banking, transaction security, ATM access, regulatory requirements, and trends."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Biometric Security"
 ---
@@ -127,7 +127,7 @@ The banking industry's adoption of biometrics is converging with the broader [pa
 
 Several banks have begun supporting passkey-based authentication:
 
-- Users create a passkey for their bank account, stored in their device's Secure Enclave.
+- Users create a passkey for their bank account, saved in iCloud Keychain or their password manager and synced end-to-end encrypted across their devices.
 - Logging in requires biometric verification (Face ID or Touch ID), which authorizes the use of the passkey.
 - No password is transmitted or stored on the bank's servers.
 

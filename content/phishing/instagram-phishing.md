@@ -2,7 +2,7 @@
 title: "Instagram Phishing Examples (2026)"
 description: "Real Instagram phishing email examples from 2026. Learn to spot fake copyright violations, verification offers, and login alerts before losing your account."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "Phishing & Social Engineering"
 faq:
@@ -145,7 +145,7 @@ If you receive a phishing email or message impersonating Instagram:
 1. **Do not click any links** or enter any information on pages reached through the email.
 2. **Forward the email** to phish@instagram.com, then delete it.
 3. **Report in-app**: If you received a phishing DM on Instagram, tap the three-dot menu on the message, select Report, and follow the prompts.
-4. **If you entered your credentials on a fake site**: Change your Instagram password immediately. Enable two-factor authentication (Settings > Security > Two-Factor Authentication). Review Login Activity and log out of any unrecognized sessions. Check that your email address and phone number have not been changed.
+4. **If you entered your credentials on a fake site**: Change your Instagram password immediately. Enable two-factor authentication (Accounts Center > Password and security > Two-factor authentication). Review Login Activity and log out of any unrecognized sessions. Check that your email address and phone number have not been changed.
 5. **If you have been locked out**: Visit instagram.com/hacked to begin the account recovery process.
 6. **Report to additional agencies**: File a report with the FTC at ReportFraud.ftc.gov and with the Anti-Phishing Working Group at reportphishing@apwg.org.
 

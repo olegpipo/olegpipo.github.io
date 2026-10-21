@@ -2,7 +2,7 @@
 title: "What Is Smishing? How to Spot SMS Phishing"
 description: "Everything you need to know about smishing (SMS phishing) -- how text message scams work, the most common tactics, and how to protect yourself."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Phishing & Social Engineering"
 ---
@@ -85,7 +85,7 @@ This is one of the ways a [password manager prevents phishing](/phishing/passwor
 
 Both iOS and Android offer built-in SMS spam filtering:
 
-- **iPhone**: Go to Settings > Messages > Filter Unknown Senders. This moves texts from unknown numbers into a separate list, reducing the chance of acting on them impulsively. You can also report spam messages to Apple.
+- **iPhone**: Go to Settings > Apps > Messages and turn on Screen Unknown Senders (called Filter Unknown Senders before iOS 26) ([Apple](https://support.apple.com/en-us/125068)). This moves texts from unknown numbers into a separate list, reducing the chance of acting on them impulsively. You can also report spam messages to Apple.
 - **Android**: Google Messages includes built-in spam protection. Enable it in the Messages app settings.
 
 Third-party apps can provide additional filtering, though be cautious about granting messaging permissions to apps from unknown developers.

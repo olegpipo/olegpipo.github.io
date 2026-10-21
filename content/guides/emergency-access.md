@@ -2,7 +2,7 @@
 title: "How to Set Up Emergency Access to Your Vault"
 description: "Plan for the unexpected. Learn how to give a trusted person access to your password vault in an emergency without compromising daily security."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Guides & Tutorials"
 ---
@@ -160,7 +160,7 @@ This is elegant because it does not require pre-sharing credentials. The waiting
 
 ### Apple Legacy Contact
 
-Apple allows you to designate a Legacy Contact who can request access to your Apple ID data (including iCloud Keychain passwords) after your death, with proof provided to Apple. This does not cover third-party password managers but can serve as a complementary layer.
+Apple allows you to designate a Legacy Contact who can request access to your Apple Account data -- photos, messages, notes, files, device backups and more -- after your death, with proof provided to Apple. It does not include anything stored in iCloud Keychain, so your saved passwords and passkeys are not passed on ([Apple](https://support.apple.com/en-us/102631)), and it does not cover third-party password managers. Treat it as a complementary layer, not a way to hand over your passwords.
 
 ## Method 4: Trusted Person With Read-Only Access
 

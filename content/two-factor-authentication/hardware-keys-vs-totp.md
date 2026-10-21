@@ -2,7 +2,7 @@
 title: "YubiKey vs. TOTP Apps: Best 2FA in 2026"
 description: "Hardware keys vs. authenticator apps -- which 2FA method is actually safer? We compare phishing resistance, cost & usability."
 date: 2026-02-13
-lastmod: 2026-03-06
+lastmod: 2026-10-21
 draft: false
 silo: "Two-Factor Authentication"
 faq:
@@ -163,7 +163,7 @@ The strongest approach is layered. Register hardware keys as your primary second
 
 ## The Role of Passkeys
 
-The authentication landscape is evolving. [Passkeys](/passkeys/) build on the same FIDO2/WebAuthn protocol that hardware keys use, but store the credentials in platform authenticators (your phone's secure enclave, your laptop's TPM) or in password managers. Passkeys bring hardware-key-level phishing resistance to software-based authentication, potentially bridging the gap between hardware key security and TOTP convenience.
+The authentication landscape is evolving. [Passkeys](/passkeys/) build on the same FIDO2/WebAuthn protocol that hardware keys use, but store the credentials in your platform's credential manager (such as iCloud Keychain or Google Password Manager) or in a password manager, usually synced end-to-end encrypted across your devices. Passkeys bring hardware-key-level phishing resistance to software-based authentication, potentially bridging the gap between hardware key security and TOTP convenience.
 
 As passkeys gain adoption, the distinction between hardware keys and TOTP may become less relevant for many users. For now, though, both methods remain essential tools. The [future of multi-factor authentication](/two-factor-authentication/future-of-mfa/) is moving toward phishing-resistant standards, and understanding the current landscape helps you make decisions that align with where security is heading.
 
