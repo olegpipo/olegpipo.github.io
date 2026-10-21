@@ -1,13 +1,17 @@
 ---
-title: "Why Biometrics Are Safer Than Passwords Alone"
-description: "Evidence-based analysis of why biometric authentication outperforms passwords for security -- breach data, human factors, and how Face ID and Touch ID improve outcomes."
+title: "Is Face ID Safer Than a Password? Real Risks and Where Biometrics Win"
+description: "Is Face ID or Touch ID safer than a password? The evidence, the real attacks on biometrics (spoofing, template theft, bypass, coercion), and where passwords still win."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Biometric Security"
+aliases:
+  - /biometrics/can-biometrics-be-hacked/
 ---
 
 The claim that biometrics are safer than passwords deserves scrutiny rather than blind acceptance. Passwords have protected digital systems for over fifty years, and they are deeply understood. Biometrics are newer, less familiar, and come with their own set of trade-offs. But when you examine the actual data -- breach statistics, human behavior patterns, attack success rates, and real-world security outcomes -- the evidence strongly supports the conclusion that biometric authentication, used properly, provides better security than passwords alone. This article presents that evidence in the context of [biometric security](/biometrics/) for password management.
+
+The short answer: for unlocking your own iPhone, iPad, Mac or password vault, yes -- Face ID and Touch ID are safer than typing a password, because they cannot be reused, phished or leaked in a server breach. They are not unbreakable, and below we go through the attacks that do exist, how realistic each one is, and the situations where a password still wins.
 
 ## The Password Problem, Quantified
 
@@ -20,15 +24,15 @@ According to data from multiple studies and breach analyses:
 - An estimated 65% of people reuse passwords across multiple accounts. When one service is breached, every account sharing that password is compromised.
 - The most common passwords remain predictable: "123456," "password," "qwerty," and similar strings appear in nearly every breach database.
 - Even among users who try to create unique passwords, many follow predictable patterns: a base word plus a number, a name plus a year, a common word with letter-number substitutions ("p@ssw0rd").
-- The average person maintains accounts on 70-100 services. Creating and memorizing a unique, strong password for each is beyond normal human memory capacity.
+- A 2024 NordPass study counted an average of 168 passwords for personal accounts alone. Creating and memorizing a unique, strong password for each is beyond normal human memory capacity.
 
 ### Breach Statistics
 
 Major password breaches continue at an alarming rate:
 
-- The 2024 RockYou2024 compilation aggregated nearly 10 billion unique passwords from various breaches, providing attackers with an unprecedented dictionary for credential stuffing attacks.
+- A file posted in 2024 and dubbed RockYou2024 claimed to hold nearly 10 billion unique plaintext passwords compiled from old and new leaks -- a ready-made dictionary for credential stuffing attacks.
 - Credential stuffing -- using breached username-password pairs to try logging into other services -- accounts for a significant portion of unauthorized account access.
-- The average cost of a data breach involving stolen credentials was $4.5 million in 2023 (IBM Cost of a Data Breach report).
+- Breaches that started with stolen or compromised credentials cost an average of $4.62 million in 2023 (IBM Cost of a Data Breach report).
 
 These numbers illustrate a fundamental point: passwords fail at scale because they depend on human behavior, and human behavior around passwords is consistently poor.
 
@@ -64,6 +68,40 @@ Phishing attacks trick users into entering their passwords on fake websites. Bio
 
 This is also why the [passkey](/passkeys/) standard -- which combines biometric authentication with public-key cryptography -- is considered a significant advancement over passwords for web authentication.
 
+## Can Biometrics Be Hacked? The Real Risks
+
+Yes, biometric systems can be attacked. But "hacked" covers several very different attacks, and on Apple devices they are not equally realistic.
+
+### Spoofing
+
+Spoofing means presenting a fake -- a fingerprint mold, a mask -- that the sensor accepts. It works in the lab. In 2020, Cisco Talos made 3D-printed fingerprint molds that fooled the sensors they tested about 80% of the time on average; a MacBook Pro's Touch ID was fooled about 95% of the time, and the only devices they could not beat were Windows 10 laptops using Windows Hello ([Talos](https://blog.talosintelligence.com/fingerprint-research/)). It also took months of "difficult and tedious work", a good copy of the victim's fingerprint, and the device in hand -- and Apple devices allow only five failed attempts before they require the passcode or password. Face ID checks a 3D depth map and infrared image rather than a flat picture, which raises the bar further. Our [Face ID vs. Touch ID](/biometrics/face-id-vs-touch-id/) comparison covers the spoofing research in detail. Talos's own advice was that people likely to be specifically targeted should rely on strong passwords and token-based two-factor authentication rather than fingerprints alone.
+
+### Replay Attacks
+
+A replay attack captures biometric data in transit and plays it back later. On Apple devices, the main processor never sees usable data to capture: the Touch ID sensor talks to the [Secure Enclave](/apple/secure-enclave/) over a channel encrypted and authenticated with a session key, negotiated using a key provisioned for that sensor and its Secure Enclave at the factory, and Face ID's camera data is digitally signed and sent to the Secure Enclave ([Apple Platform Security](https://support.apple.com/guide/security/face-id-and-touch-id-security-sec067eb0c9e/web)).
+
+### Template Theft
+
+A stolen biometric template would be a lasting problem, because you cannot grow a new fingerprint. Apple keeps the mathematical representation of your face or fingerprint encrypted with a key available only to the Secure Enclave; neither iOS nor any app can read it, it is never stored on Apple's servers, and it is never backed up to iCloud ([Apple: Touch ID](https://support.apple.com/en-us/105095), [Face ID](https://support.apple.com/en-us/102381)). Getting at it would take a hardware attack on the chip itself.
+
+### Software Bypass
+
+Apps never handle biometric data. They ask the system to authenticate you and get back a result, while the matching happens inside the Secure Enclave. A well-designed password manager goes further and keeps its unlock secret in the Keychain under Secure Enclave protection, so a successful match is what releases it -- PanicVault, for example, stores your master password in the Keychain, protected by the Secure Enclave, when you turn on Face ID or Touch ID unlock.
+
+### Coercion
+
+The most practical "hack" is not technical: someone forces your finger onto the sensor or holds the phone up to your face. Face ID is attention-aware and checks that your eyes are open, which makes unlocking it while you sleep harder. If you expect trouble, press and hold the side button together with either volume button (the gesture that brings up the power-off and Emergency SOS sliders): your iPhone then requires the passcode before Face ID works again ([Apple](https://support.apple.com/en-us/102381)). Courts also treat compelled biometrics differently from compelled passwords; see [the legal implications of biometric unlock](/biometrics/legal-implications/).
+
+### A Realistic Threat Assessment
+
+For most people using a password manager like PanicVault:
+
+- **Low risk: spoofing.** It needs a targeted effort, expertise, a copy of your biometric and your device in hand.
+- **Low risk: replay and template theft.** The Secure Enclave design shuts these out.
+- **Low risk: software bypass** of Secure Enclave-protected secrets.
+- **Moderate risk: coercion,** for people who may be targeted for what is on their devices -- journalists, activists, executives. Know the quick-disable gesture.
+- **Highest practical risk: someone watching you type your master password** on the occasions biometrics are unavailable. Biometric unlock reduces that risk by reducing how often you type it in public.
+
 ## The Nuances: Where Passwords Still Win
 
 Intellectual honesty requires acknowledging the scenarios where passwords have advantages over biometrics:
@@ -96,9 +134,9 @@ In the context of a password vault:
 
 2. **The biometric provides the practical access layer.** Face ID or Touch ID lets you access your vault quickly and frequently without typing the master password, which means you can set a maximally strong master password without a usability penalty.
 
-3. **The Secure Enclave bridges the two.** The vault key, derived from your master password, is stored in the Secure Enclave and protected by biometric access control. This links the biometric to the cryptographic key without the biometric itself being a cryptographic key.
+3. **The Secure Enclave bridges the two.** The secret that opens the vault is kept in the device Keychain under Secure Enclave protection, and a biometric match is what unlocks it. This links the biometric to the cryptographic key without the biometric itself being a cryptographic key.
 
-PanicVault implements exactly this model. Your KeePass database is encrypted with standard KDBX encryption, your master password is the primary key, and Face ID (on iPhone and iPad) or Touch ID (on Mac) provides biometric quick-access through the Secure Enclave. The biometric does not weaken the cryptographic protection -- it makes it practical to use the strongest possible cryptographic protection.
+PanicVault implements exactly this model. Your KeePass database is encrypted with standard KDBX encryption, your master password is the primary key, and Face ID or Touch ID (depending on the device) provides quick access through a copy of the master password held in the Keychain, protected by the Secure Enclave. PanicVault still asks for the typed master password every 14 days by default, so you never forget the real key. The biometric does not weaken the cryptographic protection -- it makes it practical to use the strongest possible cryptographic protection.
 
 ## Evidence from Organizational Deployments
 
@@ -115,7 +153,7 @@ These organizational findings parallel the individual experience. When authentic
 
 ### "My password is in my head -- my fingerprint is on everything I touch"
 
-This objection conflates the biometric trait with the biometric authentication system. Your fingerprint is indeed on many surfaces, but a latent fingerprint on a glass is not the same as the sub-epidermal mathematical template stored in your Secure Enclave. Modern [fingerprint sensors](/biometrics/fingerprint-sensors/) with liveness detection cannot be fooled by surface-level prints. And the risk of someone lifting your fingerprint and creating a functional spoof is many orders of magnitude lower than the risk of your password being [captured through a breach](/biometrics/can-biometrics-be-hacked/).
+This objection conflates the biometric trait with the biometric authentication system. Your fingerprint is indeed on many surfaces, and turning a good print into a working spoof is possible -- [researchers have done it](#spoofing). But it takes expertise, time and your device in hand, and Apple's [fingerprint sensors](/biometrics/fingerprint-sensors/) allow five failed attempts before demanding the password. A password leaked in a breach, by contrast, is used remotely, at scale, by people who never touch your phone. The risk of someone lifting your fingerprint and building a functional spoof is many orders of magnitude lower than the risk of your password being captured through a breach.
 
 ### "A password can be changed, a fingerprint cannot"
 
@@ -123,7 +161,7 @@ True, but this comparison assumes equal probability of compromise. Password comp
 
 ### "I do not trust companies with my biometric data"
 
-A valid concern -- but on Apple devices, there is no company to trust with this data. Face ID and Touch ID data never leaves the Secure Enclave on your device. Apple does not have your biometric data. Neither does PanicVault or any other app. The data is protected by hardware that even Apple cannot access remotely. This is fundamentally different from, say, a centralized biometric database maintained by a government or corporation.
+A valid concern -- but on Apple devices, there is no company to trust with this data. Face ID and Touch ID data is encrypted with a key only the Secure Enclave can use, is never stored on Apple's servers, and is never backed up to iCloud. Apple does not have your biometric data. Neither does PanicVault or any other app. The data is protected by hardware that even Apple cannot access remotely. This is fundamentally different from, say, a centralized biometric database maintained by a government or corporation.
 
 ### "Biometrics are just a convenience feature"
 
@@ -138,7 +176,7 @@ For users in the [Apple ecosystem](/apple/), Face ID and Touch ID provide the mo
 ## Related Articles
 
 - [Biometric Unlock: Convenience vs. Security](/biometrics/convenience-vs-security/)
-- [Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)
+- [How Face ID Technology Actually Works](/biometrics/how-face-id-works/)
 - [Face ID vs. Touch ID: Which Is More Secure?](/biometrics/face-id-vs-touch-id/)
 - [How Biometrics Protect Your Password Vault](/biometrics/biometric-vault-protection/)
 - [Legal Implications of Biometric Unlock](/biometrics/legal-implications/)
