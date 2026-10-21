@@ -1,10 +1,13 @@
 ---
 title: "The Transition: Managing Passwords and Passkeys Together"
-description: "Practical strategies for organizing and managing both passwords and passkeys during the multi-year transition to passwordless authentication. Stay secure and organized."
+description: "Where to keep passwords and passkeys together, which password managers support passkeys in 2026, and practical strategies for the multi-year transition to passwordless sign-in."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Passkeys & Passwordless"
+aliases:
+  - /passkeys/still-need-password-manager/
+  - /passkeys/password-managers-adapting/
 ---
 
 The passwordless future is here, but the password present is not going anywhere. For the foreseeable future -- likely five to ten years -- you will manage a mixed portfolio of passkeys and passwords. This hybrid reality creates practical challenges: where do you store each type? How do you track which accounts use which method? What is your strategy for gradually upgrading? This guide, part of our [passkeys and passwordless authentication](/passkeys/) series, provides concrete strategies for the transition period.
@@ -29,7 +32,7 @@ You have several options for where to store your credentials, and the right choi
 
 **Advantages**: Zero additional software. Deep OS integration. Seamless [Face ID/Touch ID](/apple/face-id-touch-id-setup/) experience on Apple devices. Free.
 
-**Disadvantages**: Limited organizational features. Difficult to use across platforms. Limited export options. No secure sharing for families or teams.
+**Disadvantages**: Limited organizational features. Difficult to use across platforms. Limited export options. Sharing is limited: Apple's Passwords app shares passwords and passkeys through shared groups, while Google Password Manager shares passwords only with your family group.
 
 ### Option 2: Third-Party Password Manager
 
@@ -49,7 +52,7 @@ You have several options for where to store your credentials, and the right choi
 
 **Advantages**: Complete data ownership. No subscription. Open format works with [dozens of compatible apps](/keepass/). Database file stays where you put it -- iCloud Drive, local storage, or any [cloud sync service](/cloud-sync/).
 
-**Disadvantages**: Passkey support in the KeePass ecosystem is still maturing (see [passkeys and your KeePass database](/passkeys/keepass-and-passkeys/)). Setup requires more initial configuration. Sync is file-based rather than built into the service.
+**Disadvantages**: Passkey support depends on the app -- KeePassXC uses passkeys only in browsers with its extension (see [passkeys and your KeePass database](/passkeys/keepass-and-passkeys/)). Setup requires more initial configuration. Sync is file-based rather than built into the service.
 
 ### Option 4: Hybrid Approach
 
@@ -60,6 +63,24 @@ You have several options for where to store your credentials, and the right choi
 **Advantages**: Best-in-class passkey experience. Full-featured password management. Can use different tools for different strengths.
 
 **Disadvantages**: Credentials split across two systems. Requires checking two places. No unified view of all credentials.
+
+### Which Password Managers Support Passkeys (2026)
+
+Every major password manager now handles passkeys. The differences are in sharing and in how you get your passkeys out again:
+
+| Manager | Passkey support | Share passkeys with others | Notes |
+|---|---|---|---|
+| Apple Passwords (iCloud Keychain) | Yes, built into iPhone, iPad and Mac | Yes -- shared groups (iOS 17, macOS Sonoma or later) and AirDrop | Can transfer passkeys to another app on iOS, iPadOS and macOS 26 |
+| Google Password Manager | Yes, on Android and in Chrome (including Chrome on iPhone and iPad, iOS 17 or later) | No -- only passwords, with your family group | Can export passkeys to another app on Android |
+| 1Password | Yes, on all platforms | Yes, through shared vaults | Exports passkeys to other apps from its iOS and Android apps |
+| Bitwarden | Yes, including the free plan | -- | Passkey transfer on iOS 26 and Android 14 or later |
+| Dashlane | Yes | Not yet | Passkey transfer through Credential Exchange |
+| KeePassXC | Yes, since 2.7.7 (2024), through its browser extension | Through a shared database file | Stored in the KDBX file (`KPEX_PASSKEY_` fields) |
+| Strongbox | Yes, as an AutoFill provider (iOS 17, macOS Sonoma or later) | Through a shared database file | KDBX, compatible with KeePassXC |
+| KeePassium | Yes, since 2.0 (2024), iOS 17 and macOS 14 or later | Through a shared database file | KDBX, same format as KeePassXC |
+| PanicVault | Yes, as an AutoFill provider on iPhone, iPad and Mac | Through a shared database file | KDBX, same format as KeePassXC |
+
+**Moving passkeys between managers** used to be impossible. The FIDO Alliance's Credential Exchange Format reached Proposed Standard status in August 2025, and the transfers listed above are built on it: the passkey moves directly from one app to another, with no file in between. The KeePass apps take a different route -- the passkeys live in your `.kdbx` file, so they move whenever the file does.
 
 There is no single right answer. The best strategy is the one you will actually follow consistently. A unified approach (Options 2 or 3) is generally easier to maintain, but Option 4 is a valid transitional strategy if your preferred password manager has not yet fully integrated passkey support.
 
@@ -119,7 +140,7 @@ Do not delete passwords from your manager after creating passkeys. Instead, upda
 
 With both passwords and passkeys in your credential toolbox, the daily login experience works like this:
 
-**Sites with passkeys**: Navigate to the login page. Your device offers the passkey through autofill. Confirm with biometrics. Done. This is the [fastest authentication method available](/passkeys/vs-passwords/) -- about two seconds on Apple devices with Face ID.
+**Sites with passkeys**: Navigate to the login page. Your device offers the passkey through autofill. Confirm with biometrics. Done. This is the [fastest authentication method available](/passkeys/what-are-passkeys/#how-passkeys-differ-from-passwords) -- about two seconds on Apple devices with Face ID.
 
 **Sites with passwords**: Navigate to the login page. Your password manager fills the credentials. Provide a TOTP code if [two-factor authentication](/two-factor-authentication/) is enabled. Done.
 
@@ -155,7 +176,7 @@ Store passkeys in iCloud Keychain for the seamless Apple experience. When you ne
 
 For passwords, use a password manager available on all your platforms (1Password, Bitwarden, or a KeePass-compatible tool with cross-platform apps).
 
-See [how to sync passkeys across devices](/passkeys/sync-across-devices/) for detailed cross-platform strategies.
+See our comparison of [Google, Apple and Microsoft passkeys](/passkeys/google-apple-microsoft/#which-implementation-should-you-use) for detailed cross-platform strategies.
 
 ### Multi-Platform Regular Use
 
@@ -212,8 +233,8 @@ The goal is not to eliminate all passwords as fast as possible. The goal is to m
 
 ## Related Articles
 
-- [Why You Still Need a Password Manager in a Passkey World](/passkeys/still-need-password-manager/)
+- [What Are Passkeys? Complete Guide](/passkeys/what-are-passkeys/)
 - [How to Set Up Passkeys on Apple Devices](/passkeys/setup-apple/)
 - [Which Websites Support Passkeys in 2026?](/passkeys/supported-sites/)
-- [How Password Managers Are Adapting to Passkeys](/passkeys/password-managers-adapting/)
-- [Passkeys and Your KeePass Database: Current State](/passkeys/keepass-and-passkeys/)
+- [Google, Apple, Microsoft Passkey Implementations Compared](/passkeys/google-apple-microsoft/)
+- [Passkeys and Your KeePass Database](/passkeys/keepass-and-passkeys/)

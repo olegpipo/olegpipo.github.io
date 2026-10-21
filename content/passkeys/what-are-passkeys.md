@@ -2,9 +2,12 @@
 title: "What Are Passkeys? Complete Guide for 2026"
 description: "Learn what passkeys are, how they replace passwords with public-key cryptography, and why they represent the biggest shift in authentication technology in decades."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Passkeys & Passwordless"
+aliases:
+  - /passkeys/how-passkeys-work/
+  - /passkeys/vs-passwords/
 ---
 
 Passkeys are the most significant advancement in authentication technology since passwords were first introduced in the 1960s. If you have been following the security landscape, you have likely heard the term used by Apple, Google, and Microsoft -- but the details often get lost in marketing language. This guide, part of our comprehensive [passkeys and passwordless authentication](/passkeys/) series, explains what passkeys actually are, how they differ from everything that came before, and what they mean for your daily digital life.
@@ -27,7 +30,7 @@ This model has several structural weaknesses that no amount of password complexi
 
 ## What a Passkey Actually Is
 
-A passkey is a cryptographic credential based on public-key cryptography. Instead of a shared secret (like a password), it uses a key pair: a private key that stays on your device and a public key that the website stores.
+A passkey is a cryptographic credential based on public-key cryptography. Instead of a shared secret (like a password), it uses a key pair: a private key that stays with you -- on your device or in your credential manager -- and a public key that the website stores.
 
 Here is how it works in practice:
 
@@ -36,11 +39,11 @@ Here is how it works in practice:
 When you create a passkey for a website:
 
 1. The website sends a challenge to your device -- essentially a random number.
-2. Your device generates a new key pair specific to that website. The private key is stored securely on your device, protected by your device's security hardware (the Secure Enclave on Apple devices, TPM on Windows, Titan chip on Pixel phones).
+2. Your device generates a new key pair specific to that website. The private key is saved in your credential manager -- iCloud Keychain on Apple devices, Google Password Manager on Android, Windows Hello on a PC, or a third-party password manager -- or on a hardware security key.
 3. Your device signs the challenge with the private key and sends the signature along with the public key back to the website.
 4. The website stores the public key associated with your account.
 
-At no point does a secret travel over the network that could be used to impersonate you. The private key never leaves your device. The public key, even if stolen from the website's database, is useless for authentication.
+At no point does a secret travel over the network that could be used to impersonate you. The private key is never sent to the website. (A synced passkey does travel between your own devices, but end-to-end encrypted -- see below.) The public key, even if stolen from the website's database, is useless for authentication.
 
 ### Authentication (Using a Passkey)
 
@@ -53,23 +56,43 @@ When you log in with a passkey:
 
 The entire process takes a few seconds. There is nothing to type, nothing to remember, and -- critically -- nothing that can be phished. Your device will only respond to challenges from the legitimate website because the passkey is cryptographically bound to that specific domain.
 
-For a deeper technical dive into the protocols that make this work, see our article on [how passkeys work: FIDO2 and WebAuthn explained](/passkeys/how-passkeys-work/).
+### Under the Hood: FIDO2, WebAuthn and CTAP
+
+Passkeys are FIDO credentials, built on open standards from the FIDO Alliance and the World Wide Web Consortium (W3C):
+
+- **WebAuthn** (Web Authentication) is the W3C standard that browsers implement. A website calls `navigator.credentials.create()` to register a passkey and `navigator.credentials.get()` to sign in; the browser hands the request to an authenticator and returns the signed result.
+- **CTAP** (Client to Authenticator Protocol) defines how a browser or operating system talks to an external authenticator over USB, NFC or Bluetooth -- including the "hybrid" flow that lets your phone sign you in on a nearby computer after you scan a QR code.
+- **FIDO2** is the umbrella name for WebAuthn plus CTAP.
+
+**Authenticators** come in two kinds. A *platform authenticator* is built into the device you are using: iCloud Keychain on an iPhone or Mac, Google Password Manager on Android, Windows Hello on a PC, or a third-party password manager registered with the operating system. A *roaming authenticator* is a separate device, such as a YubiKey or Google Titan key, connected by USB, NFC or Bluetooth; it holds device-bound passkeys that never leave the key.
+
+**Attestation** is an optional signed statement an authenticator can attach at registration to say what kind of authenticator it is. Most consumer websites do not ask for it; enterprise and government services sometimes require it so that only approved hardware can register.
+
+Whatever the authenticator, the browser and operating system handle the prompts and key storage. That is why the same passkey works whether a site is opened in Safari, Chrome, Edge or Firefox.
 
 ## How Passkeys Differ from Passwords
 
-The differences go beyond just "no typing required." Here is a systematic comparison:
+The differences go beyond just "no typing required." Here is a systematic comparison, including the places where passwords still win:
 
 | Characteristic | Passwords | Passkeys |
 |---|---|---|
 | What is stored on the server | Password hash | Public key |
-| What the user provides | A secret (the password) | Biometric or PIN to unlock a device key |
-| Can be phished | Yes | No -- domain-bound |
-| Can be reused across sites | Yes (and often is) | No -- unique per site by design |
-| Can be brute-forced | Yes, if hash is leaked | No -- private key never exposed |
+| What the user provides | A secret (the password) | Biometric or PIN to unlock the passkey |
+| Phishing | Can be typed into a fake site | Resistant -- only offered on the domain it was created for |
+| Reuse across sites | Yes (and often is) | No -- unique per site by design |
+| If the site's database leaks | Hashes can be cracked | Public keys are useless to an attacker |
 | Requires memorization | Yes | No |
 | Login speed | Slow (type + possible MFA) | Fast (biometric confirmation only) |
+| Works on every site | Yes | Only sites that have added support |
+| Signing in on someone else's computer | Type it anywhere | Scan a QR code with your phone, which must be nearby |
+| Account recovery | Email reset | Synced copy on your other devices, or the site's fallback |
+| Sharing with family or a team | Easy | Only in managers that share passkeys |
 
-For a thorough comparison of these approaches including practical trade-offs, read our [passkeys vs. passwords](/passkeys/vs-passwords/) analysis.
+### Where Passkeys Still Fall Short
+
+**Recoverability.** Password recovery is familiar: you click an email link and set a new one. Passkey recovery depends on where the passkey lives. A synced passkey survives a lost phone because it is still on your other devices, but losing access to the account that syncs it (your Apple Account, Google account or password manager account) loses every copy, and a passkey on a lost hardware key is simply gone. That is why most sites keep a password or another fallback -- and why attackers target that fallback, as explained in [can passkeys be hacked?](/passkeys/can-passkeys-be-hacked/).
+
+**Shared and enterprise accounts.** A password can be handed to a family member or colleague. A passkey can only be shared inside a credential manager that supports it -- for example, a shared group in Apple's Passwords app or a shared vault in 1Password -- and a passkey on a hardware security key cannot be shared at all. Team service accounts often still depend on a shared password for this reason.
 
 ## How Passkeys Differ from Two-Factor Authentication
 
@@ -85,13 +108,13 @@ Hardware security keys like YubiKey are the closest predecessor to passkeys. In 
 
 This distinction matters for understanding how passkeys work in practice.
 
-**Synced passkeys** (also called multi-device credentials) are stored in a cloud-synced credential manager like iCloud Keychain, Google Password Manager, or a third-party [password manager](/password-managers/). When you create a passkey on your iPhone, it automatically becomes available on your iPad and Mac through iCloud Keychain. If you lose your phone, your passkeys are not lost -- they are recoverable through your cloud account.
+**Synced passkeys** (also called multi-device credentials) are stored in a cloud-synced credential manager like iCloud Keychain, Google Password Manager, or a third-party [password manager](/password-managers/). When you create a passkey on your iPhone, it automatically becomes available on your iPad and Mac through iCloud Keychain. If you lose your phone, your passkeys are not lost -- they are recoverable through your cloud account. Apple and Google both sync passkeys end-to-end encrypted, so neither company can read them.
 
 **Device-bound passkeys** are stored on a single device and cannot be exported or synced. Hardware security keys create device-bound passkeys. Some enterprise security policies require device-bound passkeys for higher assurance.
 
 Most consumer passkey implementations in 2026 use synced passkeys, which provides a better user experience. The trade-off is that the security of your passkeys depends partly on the security of your cloud account, which is why protecting your Apple ID, Google account, or password manager with strong credentials and two-factor authentication remains important.
 
-For details on how syncing works across platforms, see our guide to [syncing passkeys across devices](/passkeys/sync-across-devices/).
+For details on how syncing works on each platform, see our comparison of [Google, Apple and Microsoft passkeys](/passkeys/google-apple-microsoft/).
 
 ## Where You Can Use Passkeys Today
 
@@ -136,9 +159,9 @@ Here is why password managers remain essential even as passkeys gain adoption:
 2. **Password managers can store passkeys.** 1Password, Bitwarden, Dashlane, and others now support passkey storage, giving you a single credential manager.
 3. **Password managers handle more than passwords.** Secure notes, documents, credit cards, identities -- these features are not replaced by passkeys.
 
-For KeePass users, the situation is particularly interesting. The KDBX format is being extended to support passkey storage, and KeePass-compatible applications like PanicVault are in a strong position to offer unified credential management within the [Apple ecosystem](/apple/). Our article on [passkeys and your KeePass database](/passkeys/keepass-and-passkeys/) covers this in detail.
+For KeePass users, passkeys already fit in the KDBX file: KeePassXC stores each passkey in the entry's custom fields (prefixed `KPEX_PASSKEY_`), and other KeePass-compatible apps such as PanicVault read the same format, so passwords and passkeys sit in one portable, encrypted database within the [Apple ecosystem](/apple/) and beyond. Our article on [passkeys and your KeePass database](/passkeys/keepass-and-passkeys/) covers this in detail.
 
-For the broader picture of how the password manager industry is responding, see [how password managers are adapting to passkeys](/passkeys/password-managers-adapting/).
+To see which password managers support passkeys today, see [managing passwords and passkeys together](/passkeys/managing-both/).
 
 ## Getting Started with Passkeys
 
@@ -162,8 +185,8 @@ Passkeys are not the future of authentication. They are the present. The only qu
 
 ## Related Articles
 
-- [Passkeys vs. Passwords: Why the Industry Is Moving On](/passkeys/vs-passwords/)
-- [How Passkeys Work: FIDO2 and WebAuthn Explained](/passkeys/how-passkeys-work/)
 - [How to Set Up Passkeys on Apple Devices](/passkeys/setup-apple/)
-- [Why Passkeys Are Phishing-Resistant](/passkeys/phishing-resistant/)
-- [Why You Still Need a Password Manager in a Passkey World](/passkeys/still-need-password-manager/)
+- [Can Passkeys Be Hacked? Security Model Explained](/passkeys/can-passkeys-be-hacked/)
+- [The Transition: Managing Passwords and Passkeys Together](/passkeys/managing-both/)
+- [Google, Apple, Microsoft Passkey Implementations Compared](/passkeys/google-apple-microsoft/)
+- [Passkeys and Your KeePass Database](/passkeys/keepass-and-passkeys/)

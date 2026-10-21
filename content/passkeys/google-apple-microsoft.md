@@ -2,9 +2,11 @@
 title: "Google, Apple, Microsoft Passkey Implementations Compared"
 description: "Detailed comparison of how Google, Apple, and Microsoft implement passkeys across their ecosystems. Understand the differences in storage, sync, and cross-platform support."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Passkeys & Passwordless"
+aliases:
+  - /passkeys/sync-across-devices/
 ---
 
 Google, Apple, and Microsoft have each built passkey support into their platforms, and the three approaches differ in meaningful ways. If you use devices from multiple ecosystems -- or are deciding which platform's passkey implementation to rely on -- understanding these differences matters. This comparison, part of our [passkeys and passwordless authentication](/passkeys/) guide, examines each implementation's architecture, strengths, limitations, and cross-platform behavior.
@@ -13,13 +15,13 @@ Google, Apple, and Microsoft have each built passkey support into their platform
 
 | Feature | Apple | Google | Microsoft |
 |---|---|---|---|
-| Credential store | iCloud Keychain | Google Password Manager | Windows Hello / Microsoft Authenticator |
-| Sync mechanism | iCloud (end-to-end encrypted) | Google account (encrypted) | Microsoft account |
+| Credential store | iCloud Keychain | Google Password Manager | Windows Hello; Microsoft Password Manager in Edge |
+| Sync mechanism | iCloud (end-to-end encrypted) | Google account (end-to-end encrypted) | Windows Hello: none (device-bound); Edge: syncs across Windows PCs |
 | Mobile support | iOS 16+ | Android 9+ | No native mobile OS |
 | Desktop support | macOS Ventura+ | Chrome on any OS | Windows 10+ |
 | Browser support | Safari, Chrome, Firefox | Chrome (primary), others | Edge (primary), Chrome |
 | Biometric | Face ID, Touch ID | Fingerprint, face unlock | Windows Hello (face, fingerprint, PIN) |
-| Third-party providers | Yes (credential provider framework) | Yes (credential provider API) | Limited |
+| Third-party providers | Yes (credential provider framework) | Yes (credential provider API) | Yes, on Windows 11 |
 | Cross-device auth | QR + Bluetooth | QR + Bluetooth | QR + Bluetooth |
 
 ## Apple's Implementation
@@ -30,15 +32,15 @@ Apple introduced passkey support in iOS 16, iPadOS 16, and macOS Ventura (2022),
 
 Passkeys on Apple devices are stored in iCloud Keychain, the same system that stores passwords, credit cards, and WiFi credentials. When you create a passkey:
 
-1. The private key is generated in the device's [Secure Enclave](/apple/secure-enclave/) -- a dedicated security chip physically isolated from the main processor.
-2. The passkey is encrypted and synced to iCloud Keychain, making it available on all your Apple devices signed into the same Apple ID.
+1. The passkey is saved as an iCloud Keychain item. On each device, the keys that protect keychain items are guarded by the [Secure Enclave](/apple/secure-enclave/) -- a dedicated security processor isolated from the main processor.
+2. The passkey is end-to-end encrypted and synced through iCloud Keychain, making it available on all your Apple devices signed into the same Apple Account.
 3. Authentication uses [Face ID or Touch ID](/apple/face-id-touch-id-setup/) (or device passcode as fallback).
 
 ### Strengths
 
 **Ecosystem integration.** Passkeys work in Safari, Chrome, Firefox, and every native iOS and macOS app through system-level autofill. There is no browser extension to install. The experience is consistent whether you are logging into a website or a native app.
 
-**Secure Enclave protection.** The private key is generated and stored in hardware-isolated security silicon. Even if the operating system is compromised, the Secure Enclave's data cannot be extracted. This is the strongest credential protection available on any consumer platform.
+**Hardware-backed protection.** The keys that protect your keychain on each device are guarded by the Secure Enclave, and every passkey use requires Face ID, Touch ID or your device passcode.
 
 **Automatic sync.** Passkeys sync across all your Apple devices through iCloud Keychain with end-to-end encryption. Apple cannot read your passkeys in transit or at rest.
 
@@ -48,9 +50,9 @@ Passkeys on Apple devices are stored in iCloud Keychain, the same system that st
 
 ### Limitations
 
-**Platform lock-in.** Passkeys stored in iCloud Keychain are not exportable. You cannot transfer them to Google Password Manager, 1Password, or any other credential store. If you decide to leave the Apple ecosystem, your passkeys cannot come with you. This is the most significant limitation of Apple's approach.
+**Limited portability.** For years, passkeys stored in iCloud Keychain could not be moved anywhere. Since iOS 26, iPadOS 26 and macOS Tahoe 26, Apple can transfer passkeys, passwords and verification codes directly to another credential manager app that supports the FIDO Alliance's Credential Exchange standard. The destination app has to support that transfer, so check before you plan a move.
 
-**No Android or Linux clients.** iCloud Keychain passkeys are only natively available on Apple devices. There is a basic iCloud Passwords extension for Windows (through Chrome), but no Android or Linux support.
+**No Android or Linux clients.** iCloud Keychain passkeys are only natively available on Apple devices. On Windows, Apple's iCloud Passwords extension brings your passwords to Chrome, Edge and Firefox, but there is no Android or Linux support.
 
 **Cross-device authentication friction.** When you need to use your Apple-stored passkey on a non-Apple device, you must scan a QR code with your iPhone and authenticate via Bluetooth proximity. This works but is slower and less convenient than having the passkey natively on the device.
 
@@ -64,9 +66,9 @@ Google's passkey implementation is centered on Google Password Manager and the C
 
 ### How It Works
 
-On Android devices, passkeys are stored in Google Password Manager and synced across devices signed into the same Google account. On desktop, Chrome can store passkeys in Google Password Manager regardless of the operating system (macOS, Windows, ChromeOS, Linux).
+On Android devices, passkeys are stored in Google Password Manager and synced across devices signed into the same Google account. Chrome can also save passkeys to Google Password Manager on Windows, macOS, Linux and ChromeOS, and on iPhone and iPad (iOS 17 or later).
 
-1. The private key is generated and stored on-device, with encrypted sync through Google's infrastructure.
+1. Passkeys are end-to-end encrypted as they sync through your Google account, and a Google Password Manager PIN protects access to them on new devices.
 2. On Android, passkeys are protected by the device's screen lock (fingerprint, face, PIN).
 3. On desktop Chrome, passkeys can be accessed through the browser's credential management.
 
@@ -74,7 +76,7 @@ On Android devices, passkeys are stored in Google Password Manager and synced ac
 
 **Android dominance.** For the roughly 70 percent of smartphone users worldwide who use Android, Google's implementation is the default and most natural passkey experience.
 
-**Chrome ubiquity.** Chrome's massive market share means Google Password Manager is available on virtually every desktop platform. You can access your Google-stored passkeys from macOS, Windows, Linux, and ChromeOS.
+**Chrome ubiquity.** Chrome's massive market share means Google Password Manager is available on virtually every platform. You can access your Google-stored passkeys from macOS, Windows, Linux, ChromeOS, and Chrome on iPhone and iPad.
 
 **Developer ecosystem.** Google has invested heavily in developer tooling for passkeys. Google Identity Services, Firebase Authentication, and comprehensive documentation make it relatively easy for developers to add passkey support to their apps and websites.
 
@@ -100,11 +102,11 @@ Microsoft's passkey approach is the most enterprise-focused of the three, reflec
 
 ### How It Works
 
-On Windows, passkeys are tied to Windows Hello -- the biometric and PIN authentication system built into Windows 10 and 11. Passkeys can also be stored in Microsoft Authenticator on iOS and Android for mobile access.
+On Windows, passkeys are tied to Windows Hello -- the biometric and PIN authentication system built into Windows 10 and 11.
 
-1. On Windows, private keys are stored in the device's TPM (Trusted Platform Module) and accessed through Windows Hello (face recognition, fingerprint, or PIN).
-2. Microsoft Authenticator on mobile devices can store passkeys synced through the user's Microsoft account.
-3. Edge browser is the primary browser for passkey interactions on Windows, though Chrome on Windows also supports passkeys.
+1. Passkeys saved with Windows Hello are device-bound: the private key stays on that PC, protected by its TPM (Trusted Platform Module), and is unlocked with face recognition, fingerprint, or PIN.
+2. Since Edge 142 (November 2025), Microsoft Password Manager in Edge can also save passkeys and sync them across your Windows desktop devices, protected by a PIN. At launch this did not cover mobile devices or Microsoft Entra work accounts.
+3. Microsoft Authenticator on iOS and Android holds device-bound passkeys for Microsoft Entra ID (work and school) accounts. Its password autofill was retired in 2025.
 
 ### Strengths
 
@@ -112,13 +114,13 @@ On Windows, passkeys are tied to Windows Hello -- the biometric and PIN authenti
 
 **Windows Hello maturity.** Windows Hello has been available since 2015 and has a large installed base. Many users are already familiar with face recognition or fingerprint login on Windows devices. Passkeys build on this existing infrastructure.
 
-**Cross-device through Authenticator.** Microsoft Authenticator for iOS and Android allows mobile passkey storage and use, giving Microsoft a presence on non-Windows mobile devices.
+**Third-party passkey managers on Windows 11.** Since November 2025, passkey managers such as 1Password and Bitwarden, as well as Microsoft Password Manager in Edge, can plug into Windows Hello, so their passkeys appear in the same Windows prompt.
 
 **TPM-backed security.** Most modern Windows PCs include a TPM chip that provides hardware-backed key storage comparable to Apple's Secure Enclave.
 
 ### Limitations
 
-**No native mobile OS.** Microsoft does not have a mobile operating system. Its mobile passkey presence depends on the Microsoft Authenticator app running on iOS and Android, which is a third-party app on those platforms, not a first-party credential provider.
+**No native mobile OS.** Microsoft does not have a mobile operating system. On iOS and Android, its passkey presence is limited to device-bound work-account passkeys in Microsoft Authenticator, and Edge's passkey syncing launched for Windows desktops only.
 
 **Fragmented consumer experience.** For consumers (as opposed to enterprise users), the passkey experience on Windows is less polished than Apple's or Google's. Managing passkeys requires navigating Windows Settings, and there is no equivalent of Apple's Passwords app for unified credential management.
 
@@ -141,7 +143,16 @@ All three implementations support cross-device authentication using the FIDO All
 
 This protocol works across platforms: you can use an iPhone to authenticate on a Windows PC, or an Android phone to authenticate on a Mac. The experience is functional but not as smooth as having the passkey natively on the device.
 
-For detailed guidance on making cross-platform passkeys work, see [how to sync passkeys across devices](/passkeys/sync-across-devices/).
+### If Cross-Device Sign-In Fails
+
+1. **Turn on Bluetooth on both devices.** The QR code starts the exchange, but the proximity check runs over Bluetooth.
+2. **Bring the devices close together** -- within a few meters.
+3. **Check camera access** on the phone that scans the code.
+4. **Try again.** The Bluetooth handshake sometimes fails on the first attempt; display a fresh QR code and scan it again.
+
+If a passkey works in one browser but not another on the same computer, the two browsers are probably using different credential stores -- a passkey saved in Chrome's Google Password Manager does not appear in Safari's iCloud Keychain, and vice versa. Save passkeys in the store you use everywhere, or in a third-party manager that works in all your browsers.
+
+If a passkey created on one Apple device does not appear on another, see the syncing checklist in our [Apple passkey setup guide](/passkeys/setup-apple/#passkey-not-syncing-to-other-devices).
 
 ## The Third-Party Password Manager Alternative
 
@@ -149,19 +160,23 @@ If you use devices from multiple ecosystems, a third-party password manager that
 
 The trade-off is that you are adding another piece of software and another account to manage. But for multi-platform users, this provides a more consistent experience than navigating the gaps between Apple, Google, and Microsoft's implementations.
 
-For KeePass users, a [KeePass-compatible app](/keepass/) that supports passkeys would provide the best data portability. PanicVault on Apple devices and KeePassXC on desktop are both moving in this direction. See [passkeys and your KeePass database](/passkeys/keepass-and-passkeys/) for the current state.
+For KeePass users, a [KeePass-compatible app](/keepass/) that supports passkeys provides the best data portability. KeePassXC on the desktop (since version 2.7.7) and PanicVault, Strongbox and KeePassium on Apple devices all support passkeys and store them in the same KDBX format. See [passkeys and your KeePass database](/passkeys/keepass-and-passkeys/) for the details.
 
-The [password manager industry is actively adapting](/passkeys/password-managers-adapting/) to support passkeys, and choosing a manager with strong passkey support is increasingly important.
+Choosing a manager with strong passkey support is increasingly important -- see our table of [which password managers support passkeys](/passkeys/managing-both/#which-password-managers-support-passkeys-2026).
 
 ## Which Implementation Should You Use?
 
-**If you are all-Apple**: Use iCloud Keychain. The integration is seamless, the security is best-in-class, and there is nothing to configure.
+**If you are all-Apple**: Use iCloud Keychain. The integration is seamless, the security is best-in-class, and there is nothing to configure. If you also want your passwords in a portable file, add a KeePass-compatible app like PanicVault alongside it.
 
-**If you are all-Android**: Use Google Password Manager. It is free, built-in, and works well with Chrome on desktop.
+**If you are all-Android**: Use Google Password Manager. It is free, built-in, and syncs to Chrome on any desktop.
 
 **If you are all-Windows for work**: Use Windows Hello with Microsoft's infrastructure, especially if your organization uses Entra ID.
 
-**If you cross platforms regularly**: Use a third-party password manager (1Password, Bitwarden) or a KeePass-compatible tool for credential portability.
+**If you use Apple and Windows**: For occasional Windows use, keep passkeys in iCloud Keychain and sign in on the PC by scanning the QR code with your iPhone. If you use both every day, a third-party password manager on both platforms is less friction.
+
+**If you use Apple and Android**: Neither iCloud Keychain nor Google Password Manager spans that divide well, so a third-party manager available on both phones saves you from scanning QR codes all day.
+
+**If you cross three or more platforms regularly**: Use a third-party password manager (1Password, Bitwarden) or a KeePass-compatible tool for credential portability. Separate stores per platform become unwieldy.
 
 **If data portability matters most**: Avoid platform lock-in. Use a third-party manager with export capabilities, or a KeePass-compatible tool with the open KDBX format.
 
@@ -169,8 +184,8 @@ The good news is that passkeys are interoperable at the protocol level. Regardle
 
 ## Related Articles
 
-- [How to Sync Passkeys Across Devices](/passkeys/sync-across-devices/)
 - [How to Set Up Passkeys on Apple Devices](/passkeys/setup-apple/)
-- [How Password Managers Are Adapting to Passkeys](/passkeys/password-managers-adapting/)
+- [The Transition: Managing Passwords and Passkeys Together](/passkeys/managing-both/)
+- [Passkeys and Your KeePass Database](/passkeys/keepass-and-passkeys/)
 - [Apple Secure Enclave Explained](/apple/secure-enclave/)
 - [Which Websites Support Passkeys in 2026?](/passkeys/supported-sites/)

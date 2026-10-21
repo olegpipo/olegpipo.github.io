@@ -1,10 +1,12 @@
 ---
 title: "Can Passkeys Be Hacked? Security Model Explained"
-description: "Honest analysis of passkey security: what attacks passkeys prevent, what threats remain, and how to evaluate the real-world security of passwordless authentication."
+description: "Honest analysis of passkey security: why passkeys resist phishing, what threats remain (account recovery, password fallback, cloud accounts), and how safe a passkey stored in a KeePass database is."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Passkeys & Passwordless"
+aliases:
+  - /passkeys/phishing-resistant/
 ---
 
 Passkeys are widely described as unhackable, phishing-proof, and more secure than any password-based system. Those descriptions are mostly accurate, but "mostly" is not the same as "entirely." If you are considering adopting passkeys -- or have already started -- you deserve a clear-eyed analysis of what passkeys protect against, where vulnerabilities remain, and what realistic threats look like. This article, part of our [passkeys and passwordless authentication](/passkeys/) guide, provides that analysis.
@@ -17,7 +19,21 @@ Before examining potential weaknesses, it is important to establish the attacks 
 
 With passwords, a convincing fake website can trick you into entering your credentials. With passkeys, authentication is cryptographically bound to the legitimate website's domain. Your device will not respond to an authentication challenge from a spoofed domain, period. No amount of social engineering can change this because the check happens at the protocol level, not the human level.
 
-This alone is transformative. With 3.4 billion phishing emails sent daily, phishing is the single largest vector for credential theft. Passkeys make it irrelevant. For a full technical explanation, see [why passkeys are phishing-resistant](/passkeys/phishing-resistant/).
+The check works in three places, none of which depends on you reading the address bar:
+
+1. **The browser** only lets a page request a passkey for its own domain (the "relying party ID"). A page on `bank-secure.com` cannot ask for the `bank.com` passkey, so none is offered.
+2. **The signed data** includes the page's real origin (in WebAuthn's `clientDataJSON`) and a hash of the relying party ID, both filled in by the browser and authenticator rather than by the website.
+3. **The real server** rejects any signature made for a different origin or relying party, even if the signature itself is valid.
+
+This alone is transformative. With 3.4 billion phishing emails sent daily, phishing is the single largest vector for credential theft, and passkeys take the stolen-password half of it off the table.
+
+### How It Plays Out Against Real Phishing
+
+- **Lookalike domain.** An email links to `bank-verify.com`, a pixel-perfect copy of your bank. With a password, you type it in and it is gone. With a passkey, the fake site cannot request your `bank.com` credential, so your device offers nothing to approve.
+- **Homograph domain.** An attacker registers `bаnk.com` with a Cyrillic "а" that looks identical in the address bar. To the browser it is a different domain, so no passkey matches.
+- **Real-time phishing proxy.** A phishing kit relays the real site's pages through the attacker's server, capturing passwords and one-time codes as you type them -- one of the most effective attacks against password-plus-2FA. A passkey ceremony through the proxy is either refused or signed for the proxy's domain, which the real server rejects.
+
+What these scenarios have in common is that the passkey is never offered to the wrong site. The weak points are elsewhere: the password you still have on the account, and the account recovery process (see below).
 
 ### Credential Stuffing
 
@@ -43,7 +59,7 @@ Passkeys are not magic. They shift the security boundary from "the user must pro
 
 If an attacker gains physical access to your unlocked device, they have access to your passkeys. This is true of any authentication method stored on a device, including passwords in a [password manager](/password-managers/). The mitigating factor is that passkeys require user verification (Face ID, Touch ID, or device PIN) for each use, so a device must be both unlocked and in the attacker's physical presence during the authentication attempt.
 
-The more serious scenario is malware with elevated privileges on your device. If malware gains root or kernel-level access, it could theoretically interact with the operating system's credential APIs. However, on Apple devices, the private keys are stored in the [Secure Enclave](/apple/secure-enclave/), which is a separate processor with its own security boundary. Even if the main operating system is compromised, extracting keys from the Secure Enclave is extraordinarily difficult -- no publicly documented attack has succeeded against it.
+The more serious scenario is malware with elevated privileges on your device. If malware gains root or kernel-level access, it could theoretically interact with the operating system's credential APIs. Copying your passkeys out is much harder: on Apple devices, passkeys are stored in iCloud Keychain, whose encryption keys are protected by the [Secure Enclave](/apple/secure-enclave/) -- a separate processor with its own security boundary -- and each use requires Face ID, Touch ID or your device passcode. A passkey on a hardware security key goes further: the private key never leaves the key at all.
 
 ### Cloud Account Compromise
 
@@ -51,17 +67,28 @@ Synced passkeys (the default on Apple, Google, and most third-party managers) ar
 
 Apple mitigates this through several mechanisms:
 - End-to-end encryption means Apple cannot read your passkey data.
-- Adding a new device to your iCloud Keychain requires approval from an existing trusted device.
+- Reading your keychain on a new device can require the passcode of one of your other devices.
 - [Two-factor authentication](/two-factor-authentication/) on your Apple ID is mandatory for passkey sync.
 - iCloud Keychain recovery requires knowledge of your device passcode and multiple verification steps.
 
-The practical risk is low, but it makes protecting your Apple ID (or Google account) critically important. A strong, unique master password and two-factor authentication on your cloud account are non-negotiable.
+The practical risk is low, but it makes protecting your Apple Account (or Google account) critically important. A strong, unique password and two-factor authentication on your cloud account are non-negotiable.
+
+### Passkeys Stored in a KeePass Database
+
+Where the private key lives decides the risk, and a KeePass database is a different place again. KeePassXC stores each passkey, private key included, in the entry's custom fields (prefixed `KPEX_PASSKEY_`) inside your encrypted `.kdbx` file, and other KeePass-compatible apps such as PanicVault use the same format. That means a passkey in your vault is exactly as safe as two things:
+
+- **The vault's own protection** -- your master password, plus a key file or YubiKey if you use one. Anyone who has the file and can unlock it has your passkeys.
+- **Wherever the `.kdbx` file is stored and synced** -- iCloud Drive, Google Drive, Dropbox or a USB stick. The file is encrypted, so a copy on its own is not enough, but every copy is one more place an attacker can try to guess your master password offline.
+
+The trade-off is control: no Apple Account or Google account can be hijacked to reach these passkeys, and you can back them up and move them like any other entry. In return, the strength of your master password carries the whole load. See [passkeys and your KeePass database](/passkeys/keepass-and-passkeys/) for which KeePass apps support passkeys today.
 
 ### Account Recovery Attacks
 
 This is arguably the weakest link in the passkey security chain, and it has nothing to do with passkeys themselves. Most websites that support passkeys also maintain alternative authentication methods: password-based login, email-based password reset, security questions, or customer support-based recovery.
 
 An attacker who cannot compromise your passkey might instead target the recovery process. If they can reset your password through email, or convince customer support to bypass authentication, the passkey is irrelevant.
+
+The same goes for the password you keep as a fallback. Phishing protection only applies when you actually sign in with the passkey: if you type the account's password on a device without your passkeys, that sign-in is as phishable as ever. Attackers can also try to push you there on purpose. In August 2025, Proofpoint researchers demonstrated a [FIDO authentication downgrade](https://www.proofpoint.com/us/blog/threat-insight/dont-phish-let-me-down-fido-authentication-downgrade) in which an adversary-in-the-middle phishing page makes passkey sign-in fail and steers the victim to a less secure method it can intercept. Proofpoint had not seen it used in the wild, but the lesson holds: if a site you normally open with a passkey suddenly asks for your password or a code, treat that as a warning sign, not a glitch.
 
 This is an industry-wide challenge. As passkeys become more common, services will need to strengthen their recovery processes to match the security level of passkey authentication. Until then, your passkey-protected accounts are only as strong as their weakest authentication method.
 
@@ -92,7 +119,7 @@ For the average consumer, the realistic threats to passkey-protected accounts ar
 1. **Account recovery process exploitation** -- the most likely attack vector, and it targets the website's recovery mechanisms, not the passkey itself.
 2. **Cloud account compromise** -- mitigated by strong cloud account security.
 3. **Physical device theft with PIN knowledge** -- limited scope, requires both the device and knowledge of the unlock PIN.
-4. **Advanced persistent threats with device malware** -- relevant for high-value targets (journalists, executives, activists), but Secure Enclave protection makes this extremely difficult on Apple devices.
+4. **Advanced persistent threats with device malware** -- relevant for high-value targets (journalists, executives, activists), and made expensive on Apple devices by the hardware-protected keychain and the biometric or passcode check on every use.
 
 For comparison, the realistic threats to password-protected accounts include all of the above plus phishing, credential stuffing, brute force attacks, server-side breaches, and keylogging. The threat surface with passkeys is dramatically smaller.
 
@@ -136,7 +163,7 @@ Check your account activity logs regularly. If someone bypasses your passkey thr
 
 | Attack Vector | Password Only | Password + MFA | Passkey | Hardware Security Key |
 |---|---|---|---|---|
-| Phishing | Vulnerable | Partially vulnerable | Immune | Immune |
+| Phishing | Vulnerable | Partially vulnerable | Resistant (passkey itself) | Resistant |
 | Credential stuffing | Vulnerable | Vulnerable (password layer) | Immune | Immune |
 | Server breach | Vulnerable (hash cracking) | Vulnerable (password layer) | Immune | Immune |
 | Keylogging | Vulnerable | Partially vulnerable | Immune | Immune |
@@ -157,8 +184,7 @@ The question is not whether passkeys are hackable in theory. The question is whe
 
 ## Related Articles
 
-- [Why Passkeys Are Phishing-Resistant](/passkeys/phishing-resistant/)
-- [How Passkeys Work: FIDO2 and WebAuthn Explained](/passkeys/how-passkeys-work/)
-- [Passkeys vs. Passwords: Why the Industry Is Moving On](/passkeys/vs-passwords/)
+- [What Are Passkeys? Complete Guide](/passkeys/what-are-passkeys/)
+- [Passkeys and Your KeePass Database](/passkeys/keepass-and-passkeys/)
+- [The Transition: Managing Passwords and Passkeys Together](/passkeys/managing-both/)
 - [Apple Secure Enclave Explained](/apple/secure-enclave/)
-- [Why You Still Need a Password Manager in a Passkey World](/passkeys/still-need-password-manager/)
