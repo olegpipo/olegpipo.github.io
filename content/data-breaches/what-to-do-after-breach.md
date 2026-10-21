@@ -2,9 +2,11 @@
 title: "What to Do Immediately After a Data Breach"
 description: "Step-by-step action plan for the critical first 48 hours after learning your data has been exposed in a breach. Prioritized checklist to limit damage fast."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Data Breaches & Identity"
+aliases:
+  - /data-breaches/what-hackers-steal/
 ---
 
 Learning that your personal information has been exposed in a data breach can trigger a wave of anxiety, but the actions you take in the first 48 hours determine how much damage the breach ultimately causes. This guide, part of our [Data Breaches & Identity Protection](/data-breaches/) resource center, provides a prioritized, step-by-step response plan you can follow immediately -- whether the breach exposed your email and password, your financial details, or your Social Security number.
@@ -19,23 +21,45 @@ This is the most common type of breach exposure. An online service was hacked, a
 
 **Urgency**: High, but manageable if you use unique passwords. If you reuse the breached password anywhere, it becomes critical.
 
-### Tier 2: Financial Information
+### Tier 2: Phone Number, Home Address, and Date of Birth
+
+These do not unlock an account on their own, but they are identity-verification data. With your phone number plus personal details, an attacker can try to talk your carrier into a SIM swap (moving your number to their SIM to receive your SMS codes), call you posing as your bank, or send convincing [smishing](/phishing/smishing/) texts. Address and date of birth are the answers to many phone-verification questions and are bundled with other data into "fullz" identity packages.
+
+**Urgency**: Moderate. Add a PIN or number-lock to your mobile carrier account, move important accounts from SMS codes to an authenticator app or security key, and treat calls and texts that reference the breach with extra suspicion.
+
+### Tier 3: Financial Information
 
 Credit card numbers, bank account details, or payment history were exposed. The risk is direct financial fraud -- unauthorized charges, wire transfers, or new accounts opened in your name.
 
 **Urgency**: Critical. Contact your financial institutions immediately.
 
-### Tier 3: Government-Issued Identifiers
+### Tier 4: Government-Issued Identifiers
 
 Social Security number, driver's license number, passport number, or tax identification number. These are the keys to identity theft -- opening new credit lines, filing fraudulent tax returns, or obtaining medical services in your name.
 
 **Urgency**: Maximum. Act within hours, not days.
 
-### Tier 4: Medical Records
+### Tier 5: Medical Records
 
 Health insurance information, medical history, or prescription data. Medical identity theft is among the hardest to detect and the most difficult to resolve.
 
 **Urgency**: Maximum, with the added complexity that medical records cannot be "changed" the way a password can.
+
+### Tier 6: Biometric Data
+
+Fingerprints, face scans, voice recordings, and the selfies and ID photos collected by identity-verification services. Unlike a password, a face or fingerprint cannot be replaced. The biometric data most likely to leak is what services store on their servers -- the Face ID and Touch ID data on an iPhone or Mac stays on the device. Leaked faces and voices are useful for impersonation, including [deepfake voice scams](/phishing/deepfake-voice-scams/).
+
+**Urgency**: Moderate. Make sure the affected service also requires a password, passkey, or second factor, and be wary of calls or videos that seem to come from you or someone you know.
+
+### What Attackers Do With Stolen Data
+
+Knowing what happens next explains why the order of the checklist below matters:
+
+- **Credential stuffing**: Within hours, bots try stolen email-and-password pairs on email providers, banks, shops, and social networks. Any reused password falls immediately. See [credential stuffing](/data-breaches/credential-stuffing/).
+- **Identity theft**: Social Security numbers, dates of birth, and addresses are combined into full identity profiles and used to open accounts, file tax returns, or obtain medical care in your name.
+- **Targeted phishing**: Breach details make scams believable. An email that mentions your real order, your bank, or the breach itself is far more convincing than a generic one.
+- **Account takeover**: With enough personal details, attackers pass the identity checks at banks and phone carriers, then reset passwords and contact details.
+- **Resale**: Stolen data is traded and re-traded on criminal markets. Old data sells for less but stays useful for years, which is why a breach from long ago can still lead to fraud today.
 
 ## The First-Hour Checklist
 
@@ -130,7 +154,7 @@ Pull your credit reports from all three bureaus at AnnualCreditReport.com. Revie
 
 ## The Password Manager Question
 
-A data breach often triggers a broader reassessment of security practices. If you are not using a password manager, a breach is compelling evidence that you need one -- managing unique passwords for 250+ accounts is not feasible without one. If you are already using a password manager, verify that the breached password was not reused elsewhere. Your manager's audit feature (sometimes called a "security checkup" or "vault health report") can identify reused passwords across all your stored credentials.
+A data breach often triggers a broader reassessment of security practices. If you are not using a password manager, a breach is compelling evidence that you need one -- managing unique passwords for dozens or hundreds of accounts is not feasible without one. If you are already using a password manager, verify that the breached password was not reused elsewhere. Your manager's audit feature (sometimes called a "security checkup" or "vault health report") can identify reused passwords across all your stored credentials.
 
 If your password manager itself was breached -- a scenario with its own specific response plan covered in [What to Do If Your Password Manager Is Breached](/data-breaches/password-manager-breached/) -- the calculus changes significantly. The [LastPass breach](/data-breaches/lastpass-breach-lessons/) demonstrated that cloud-based password managers create a centralized target: breach the vendor, and you potentially get copies of every user's encrypted vault.
 
