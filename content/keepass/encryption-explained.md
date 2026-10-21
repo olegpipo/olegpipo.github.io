@@ -79,7 +79,7 @@ Key characteristics:
 - **Design philosophy**: Twofish uses a more conservative design with wider security margins than AES, at the cost of somewhat lower performance.
 - **Availability**: Not built into KeePass 2.x. KeePass's own documentation lists Twofish -- with Serpent and GOST -- among the algorithms supplied by plugins; Twofish was a built-in option in KeePass 1.x for the older .kdb format. Several KDBX applications, KeePassXC among them, implement it natively.
 
-Twofish appeals to users who want algorithm diversity -- a different cipher than AES as a hedge against the (extremely unlikely) possibility that a practical attack against AES is discovered. The trade-off is reach: [compatibility](/keepass/compatibility-guide/) has to be checked before you commit, because KeePass itself needs a plugin and not every KeePass-compatible app reads Twofish databases.
+Twofish appeals to users who want algorithm diversity -- a different cipher than AES as a hedge against the (extremely unlikely) possibility that a practical attack against AES is discovered. The trade-off is reach: [compatibility](/keepass/compatible-apps/) has to be checked before you commit, because KeePass itself needs a plugin and not every KeePass-compatible app reads Twofish databases.
 
 ## Key Derivation: Turning Your Passphrase Into a Key
 
@@ -101,7 +101,7 @@ Argon2 exposes three parameters you can configure in KeePass:
 
 The interplay between these parameters is what makes Argon2d powerful. An attacker cannot trade memory for time or vice versa -- the algorithm is designed to require both simultaneously. This is a fundamental improvement over older KDFs that are only computationally hard, not memory-hard.
 
-To understand why this matters for password security, see our explanation of [password entropy](/password-security/password-entropy/) and how key derivation amplifies the effective strength of your passphrase. The relationship between [password salting](/password-security/password-salt-explained/) and key derivation is also critical: the salt stored in the KDBX header ensures that the same passphrase produces different derived keys for different databases.
+To understand why this matters for password security, see our explanation of [password entropy](/password-security/password-entropy/) and how key derivation amplifies the effective strength of your passphrase. The relationship between [password salting](/password-security/password-cracking-explained/) and key derivation is also critical: the salt stored in the KDBX header ensures that the same passphrase produces different derived keys for different databases.
 
 ### AES-KDF (Legacy)
 
@@ -210,6 +210,6 @@ Understanding the encryption architecture leads to concrete decisions:
 
 **Pair strong encryption with a strong passphrase.** The encryption is only as strong as the key, and the key is derived from your passphrase. A weak passphrase with perfect encryption is still vulnerable. Aim for a passphrase with at least 60-80 bits of [entropy](/password-security/password-entropy/).
 
-**Keep your database format current.** KDBX 4 offers meaningful security improvements over KDBX 3.1, including Argon2 support (Argon2d and Argon2id), the ChaCha20 inner stream moved into the encrypted inner header, encrypt-then-MAC block authentication, and header HMAC authentication. Check the [compatibility guide](/keepass/compatibility-guide/) to ensure your applications support it, then upgrade.
+**Keep your database format current.** KDBX 4 offers meaningful security improvements over KDBX 3.1, including Argon2 support (Argon2d and Argon2id), the ChaCha20 inner stream moved into the encrypted inner header, encrypt-then-MAC block authentication, and header HMAC authentication. Check the [compatibility guide](/keepass/compatible-apps/) to ensure your applications support it, then upgrade.
 
 The KeePass encryption architecture is not security by obscurity. Every algorithm is a published standard. Every parameter is configurable. Every implementation can be audited. That transparency is the foundation of trust -- and it is why the format has remained a trusted choice for security-conscious users for over two decades.

@@ -158,7 +158,6 @@ The intersection of biometric technology and law is complex and unsettled. The t
 
 ## Related Articles
 
-- [Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)
 - [Biometric Unlock: Convenience vs. Security](/biometrics/convenience-vs-security/)
 - [Why Biometrics Are Safer Than Passwords Alone](/biometrics/safer-than-passwords/)
 - [Face ID vs. Touch ID: Which Is More Secure?](/biometrics/face-id-vs-touch-id/)

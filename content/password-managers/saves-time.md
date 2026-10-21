@@ -139,7 +139,7 @@ The time savings are quantifiable, but the cognitive benefit is harder to measur
 
 This is not a trivial point. Decision fatigue is a well-documented psychological phenomenon. Every time you create, recall, or worry about a password, you are spending a small amount of cognitive energy. Across a day with dozens of logins, these micro-decisions accumulate into a measurable drain on your mental resources.
 
-Password managers externalize this cognitive load entirely. Your brain does not need to store, recall, or generate passwords. It does not need to track which password goes where or whether a particular credential might have been compromised. The manager handles all of it, leaving your cognitive resources available for work, creativity, and the things that actually matter. For more on how password-related stress affects decision-making, see our article on [the psychology of passwords](/password-security/psychology-of-passwords/).
+Password managers externalize this cognitive load entirely. Your brain does not need to store, recall, or generate passwords. It does not need to track which password goes where or whether a particular credential might have been compromised. The manager handles all of it, leaving your cognitive resources available for work, creativity, and the things that actually matter. For more on how password-related stress affects decision-making, see our article on [password fatigue](/password-managers/password-fatigue/).
 
 ## The One-Time Investment
 
@@ -153,7 +153,7 @@ Migrating to a password manager typically involves:
 
 The total setup investment is roughly one to two hours. Given monthly savings of two to five hours, the break-even point arrives within the first month. Every month after that is pure gain.
 
-For a complete walkthrough of the setup process, our [beginner's guide to password managers](/password-managers/beginners-guide/) covers everything from choosing a manager to importing your first passwords. And if you want to understand the broader case for making the switch, our article on [reasons you need a password manager](/password-managers/reasons-you-need-one/) covers both security and productivity benefits.
+For a complete walkthrough of the setup process, our [beginner's guide to password managers](/guides/first-time-setup/) covers everything from choosing a manager to importing your first passwords. And if you want to understand the broader case for making the switch, our article on [reasons you need a password manager](/password-managers/reasons-you-need-one/) covers both security and productivity benefits.
 
 ## Good Password Hygiene Becomes Effortless
 

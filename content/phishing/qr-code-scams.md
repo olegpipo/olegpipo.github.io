@@ -13,7 +13,7 @@ QR codes are everywhere -- restaurant menus, parking meters, event tickets, busi
 
 A QR code is simply a visual representation of a URL or other data. When you scan a QR code with your phone's camera, it decodes the embedded URL and offers to open it in your browser. The problem is that unlike a text URL, which you can read and evaluate before clicking, a QR code's contents are invisible until after you scan it.
 
-Attackers exploit this opacity by placing malicious QR codes in locations where people expect to find legitimate ones. The QR code leads to a [fake login page](/phishing/fake-login-pages/) that harvests credentials, a page that downloads malware, or a payment form that captures financial information.
+Attackers exploit this opacity by placing malicious QR codes in locations where people expect to find legitimate ones. The QR code leads to a [fake login page](/phishing/password-manager-prevents-phishing/) that harvests credentials, a page that downloads malware, or a payment form that captures financial information.
 
 ### Physical QR Code Attacks
 
@@ -102,7 +102,7 @@ When possible, skip the QR code entirely and navigate to the service directly:
 
 ### Be Extra Cautious with QR Codes in Emails
 
-A QR code in an email should be treated with the same skepticism as a link in an email. If an email from your "IT department" contains a QR code, [verify the request](/phishing/verify-suspicious-messages/) through a separate channel before scanning it. Contact the IT department directly using a phone number or email address you already have.
+A QR code in an email should be treated with the same skepticism as a link in an email. If an email from your "IT department" contains a QR code, [verify the request](/phishing/recognize-phishing/) through a separate channel before scanning it. Contact the IT department directly using a phone number or email address you already have.
 
 ### Keep Your Phone's Software Updated
 
@@ -156,7 +156,6 @@ As QR codes become even more embedded in daily life -- for payments, authenticat
 ## Related Articles
 
 - [What Is Smishing? How to Spot SMS Phishing](/phishing/smishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

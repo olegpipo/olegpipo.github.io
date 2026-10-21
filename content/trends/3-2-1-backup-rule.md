@@ -146,7 +146,7 @@ For PanicVault users and others in the [KeePass ecosystem](/keepass/), the open 
 ## Related Articles
 
 - [The State of Password Security in 2026](/trends/state-of-password-security/)
-- [Cybersecurity Awareness Month: Resources](/trends/cybersecurity-awareness-month/)
+- [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
 - [World Password Day: What It Means](/trends/world-password-day/)
 - [Zero Trust Security for Individuals](/trends/zero-trust-individuals/)
 - [Quantum Computing and Passwords: Should You Worry?](/trends/quantum-computing/)

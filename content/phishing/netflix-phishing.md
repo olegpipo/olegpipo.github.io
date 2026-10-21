@@ -34,7 +34,7 @@ This is the most widespread Netflix phishing email. It creates immediate panic b
 
 **What it looks like**: The email uses Netflix's signature dark background, red logo, and clean layout. It states that your account has been suspended due to a billing problem, suspicious activity, or a failure to verify your information. A large red button says "Restart Membership," "Reactivate Account," or "Unlock Your Account." Some variants include a fake case number or reference ID.
 
-**The tell**: The sender address is not @netflix.com. Common fakes include addresses like support@netflix-billing.com, noreply@netflixsecurity.net, account@netflix-verify.com, or service@netf1ix.com (note the numeral "1" replacing the letter "l"). The reactivation button links to a [fake login page](/phishing/fake-login-pages/) designed to harvest your email and password -- and often your credit card details on a second screen.
+**The tell**: The sender address is not @netflix.com. Common fakes include addresses like support@netflix-billing.com, noreply@netflixsecurity.net, account@netflix-verify.com, or service@netf1ix.com (note the numeral "1" replacing the letter "l"). The reactivation button links to a [fake login page](/phishing/password-manager-prevents-phishing/) designed to harvest your email and password -- and often your credit card details on a second screen.
 
 **The reality**: Netflix does suspend accounts when payments fail, but when this happens, you see a notification the next time you open the Netflix app or visit netflix.com. Netflix will never ask you to click an email link to re-enter your password or payment information. If you are concerned about your account status, open the Netflix app directly or type netflix.com into your browser.
 
@@ -175,7 +175,7 @@ For a broader framework that applies to all phishing attempts, see our guide on 
 
 ## Why a Password Manager Is Your Strongest Defense
 
-Knowing what Netflix phishing emails look like is valuable, but awareness alone is not a reliable defense. Even security-conscious people click links when they are tired, distracted, or multitasking. Modern [AI-powered phishing](/phishing/ai-powered-phishing/) emails arrive with perfect grammar, pixel-accurate branding, and personalized details that make visual inspection increasingly unreliable. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your attention does not.
+Knowing what Netflix phishing emails look like is valuable, but awareness alone is not a reliable defense. Even security-conscious people click links when they are tired, distracted, or multitasking. Modern [AI-powered phishing](/trends/ai-phishing-effectiveness/) emails arrive with perfect grammar, pixel-accurate branding, and personalized details that make visual inspection increasingly unreliable. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your attention does not.
 
 ### Domain Matching Stops Credential Theft
 
@@ -224,5 +224,5 @@ The attackers count on a moment of emotional reaction -- the instant you see "yo
 - [Bank of America Phishing Email Examples](/phishing/bank-of-america-phishing/)
 - [PayPal Phishing Emails](/phishing/paypal-phishing/)
 - [How to Recognize a Phishing Email](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
+- [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [Phishing Email Red Flags](/phishing/phishing-red-flags-checklist/)

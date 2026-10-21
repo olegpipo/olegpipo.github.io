@@ -15,7 +15,7 @@ World Password Day was inspired by security researcher Mark Burnett, who in his 
 
 The event was a product of its time. In 2013, the dominant security advice was straightforward: use strong passwords, change them regularly, do not reuse them. Password managers were niche tools used by security professionals. Two-factor authentication was rare outside of enterprise environments. The average person managed perhaps 50 online accounts.
 
-The landscape has changed dramatically. The average person now manages roughly 250 accounts. NIST no longer recommends periodic password changes. [Passkeys](/passkeys/) are emerging as a genuine replacement for passwords. And AI has transformed both the [threat landscape](/trends/ai-and-passwords/) and the defense capabilities available to ordinary users.
+The landscape has changed dramatically. The average person now manages roughly 250 accounts. NIST no longer recommends periodic password changes. [Passkeys](/passkeys/) are emerging as a genuine replacement for passwords. And AI has transformed both the [threat landscape](/trends/ai-phishing-effectiveness/) and the defense capabilities available to ordinary users.
 
 ## What World Password Day Gets Right
 
@@ -127,7 +127,7 @@ Proprietary formats create a dependency that may not matter today but could matt
 
 ## Beyond World Password Day
 
-World Password Day is one moment. [Cybersecurity Awareness Month](/trends/cybersecurity-awareness-month/) in October is another. But security is not a once-a-year activity. The most impactful change you can make is establishing habits that maintain security continuously:
+World Password Day is one moment. Cybersecurity Awareness Month in October is another. But security is not a once-a-year activity. The most impactful change you can make is establishing habits that maintain security continuously:
 
 - Use a password manager for every credential, every day
 - Generate random passwords for every new account
@@ -140,7 +140,7 @@ The best thing World Password Day can do is make itself unnecessary -- by cataly
 ## Related Articles
 
 - [The State of Password Security in 2026](/trends/state-of-password-security/)
-- [Cybersecurity Awareness Month: Resources](/trends/cybersecurity-awareness-month/)
+- [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
 - [Are Passwords Dead? The Passwordless Future](/trends/are-passwords-dead/)
 - [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
 - [The 3-2-1 Backup Rule in 2026](/trends/3-2-1-backup-rule/)

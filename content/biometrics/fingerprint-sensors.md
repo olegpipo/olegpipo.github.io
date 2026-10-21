@@ -131,7 +131,7 @@ Touch ID's threshold is calibrated for a false match rate of approximately 1 in 
 - **Latent prints**: You leave fingerprints on nearly every surface you touch. While these latent prints are insufficient to fool modern Touch ID sensors in practice, they represent available source material for sophisticated spoofing attempts.
 - **Environmental sensitivity**: Wet, dry, dirty, or damaged fingertips can cause authentication failures, leading to fallback to less convenient methods.
 - **Limited changeability**: If a fingerprint template is somehow compromised, you cannot change your fingerprint. You have a limited set of ten fingers, and re-enrolling the same finger produces a similar template.
-- **[Spoofing research](/biometrics/can-biometrics-be-hacked/)**: Academic researchers have demonstrated fingerprint spoofing using materials like gelatin, silicone, and conductive inks. While these attacks require significant expertise and are not practical for casual attackers, they demonstrate that fingerprint authentication is not impervious.
+- **[Spoofing research](/biometrics/safer-than-passwords/)**: Academic researchers have demonstrated fingerprint spoofing using materials like gelatin, silicone, and conductive inks. While these attacks require significant expertise and are not practical for casual attackers, they demonstrate that fingerprint authentication is not impervious.
 
 ## Fingerprint Sensors in Password Management
 
@@ -165,6 +165,6 @@ For users in the [Apple ecosystem](/apple/), Touch ID remains the biometric auth
 
 - [Face ID vs. Touch ID: Which Is More Secure?](/biometrics/face-id-vs-touch-id/)
 - [How Face ID Technology Actually Works](/biometrics/how-face-id-works/)
-- [Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)
+- [Is Face ID Safer Than a Password? Real Risks and Where Biometrics Win](/biometrics/safer-than-passwords/)
 - [How Biometrics Protect Your Password Vault](/biometrics/biometric-vault-protection/)
 - [Setting Up Biometric Unlock: Step-by-Step](/biometrics/setup-guide/)

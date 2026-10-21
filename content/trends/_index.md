@@ -39,7 +39,7 @@ On the defense side, AI powers behavioral biometrics that can detect anomalous l
 
 The net effect is an acceleration of the security arms race. Static defenses -- including passwords themselves -- are increasingly inadequate against dynamic, AI-powered attacks. The organizations and individuals who adapt fastest will be most secure. Those who rely on the same practices they used five years ago are falling behind.
 
-Explore this topic in depth in our analysis of [how AI is changing password security](/trends/ai-and-passwords/) and the specific threat of [AI-powered phishing](/trends/ai-phishing-effectiveness/).
+Explore this topic in depth in our analysis of [AI-powered phishing](/trends/ai-phishing-effectiveness/).
 
 ## Deepfakes and Identity Verification
 
@@ -71,7 +71,7 @@ Read our analysis of [why regulators are banning SMS OTP](/trends/sms-otp-ban/).
 
 The California DELETE Act represents a new approach to data privacy that gives consumers unprecedented control over their personal information. By requiring data brokers to honor deletion requests through a centralized mechanism, the law changes the economics of personal data collection and has implications for how identity and authentication data is handled.
 
-Our coverage of [the California DELETE Act](/trends/california-delete-act/) explains what it means for your digital security posture.
+Our coverage of [the California DELETE Act](/digital-privacy/remove-personal-info/) explains what it means for your digital security posture.
 
 ### The Broader Privacy Landscape
 
@@ -87,7 +87,7 @@ The [3-2-1 backup rule](/trends/3-2-1-backup-rule/) -- three copies, two media t
 
 ## Awareness and Education
 
-Two annual events focus global attention on cybersecurity practices: [World Password Day](/trends/world-password-day/) in May and [Cybersecurity Awareness Month](/trends/cybersecurity-awareness-month/) in October. While these awareness campaigns have been criticized for superficiality, they serve an important function in creating cultural moments where security conversations happen outside of security circles.
+Two annual events focus global attention on cybersecurity practices: [World Password Day](/trends/world-password-day/) in May and Cybersecurity Awareness Month in October. While these awareness campaigns have been criticized for superficiality, they serve an important function in creating cultural moments where security conversations happen outside of security circles.
 
 The challenge is translating awareness into action. Most people know they should use strong, unique passwords. Far fewer actually do. The gap between knowledge and behavior is the central challenge of consumer security, and it is one that technology alone cannot solve.
 
@@ -111,15 +111,12 @@ This is not just a technical advantage. It is a strategic one. As passkeys emerg
 
 - [The State of Password Security in 2026](/trends/state-of-password-security/)
 - [Are Passwords Dead? The Passwordless Future](/trends/are-passwords-dead/)
-- [AI and Password Security](/trends/ai-and-passwords/)
 - [Quantum Computing and Passwords](/trends/quantum-computing/)
 - [Deepfake-as-a-Service: Security Implications](/trends/deepfake-as-a-service/)
 - [Why Regulators Are Banning SMS OTP](/trends/sms-otp-ban/)
 - [World Password Day](/trends/world-password-day/)
-- [Cybersecurity Awareness Month](/trends/cybersecurity-awareness-month/)
 - [The 3-2-1 Backup Rule in 2026](/trends/3-2-1-backup-rule/)
 - [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
 - [Privacy in the Age of AI](/trends/privacy-age-of-ai/)
 - [Zero Trust Security for Individuals](/trends/zero-trust-individuals/)
-- [The California DELETE Act](/trends/california-delete-act/)
 - [Authentication in 2027: Predictions](/trends/authentication-2027/)

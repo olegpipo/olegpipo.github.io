@@ -52,7 +52,7 @@ Fear of an IRS audit is a powerful motivator. This pattern exploits that anxiety
 
 **What it looks like**: The email adopts a formal, bureaucratic tone designed to intimidate. It references specific tax years and may include a fabricated case number or document control number. The message claims that discrepancies have been found on your return and that you must respond by clicking a link to upload supporting documentation or verify your identity. Some versions threaten penalties, interest, or legal action if you fail to respond.
 
-**The tell**: The IRS initiates audits exclusively by postal mail, using either a Letter 525 (General 30-Day Letter) or Letter 566 (Examination Report). An audit notification will arrive in a physical envelope from the IRS -- never via email. Any email claiming you are being audited is an immediate red flag. The phishing link leads to a [fake login page](/phishing/fake-login-pages/) that harvests your Social Security number, tax filing information, and other sensitive data.
+**The tell**: The IRS initiates audits exclusively by postal mail, using either a Letter 525 (General 30-Day Letter) or Letter 566 (Examination Report). An audit notification will arrive in a physical envelope from the IRS -- never via email. Any email claiming you are being audited is an immediate red flag. The phishing link leads to a [fake login page](/phishing/password-manager-prevents-phishing/) that harvests your Social Security number, tax filing information, and other sensitive data.
 
 **The reality**: If the IRS were genuinely auditing your return, you would receive a letter by mail with specific instructions, a contact phone number, and an employee ID number. You can always verify any IRS notice by calling the IRS directly at 800-829-1040.
 
@@ -153,7 +153,7 @@ For a complete guide on reporting phishing across all platforms, see [how to rep
 
 ## Staying Ahead of IRS Phishing in 2026
 
-IRS phishing campaigns peak from January through April but continue year-round with stimulus payment scams, CP2000 impersonations, and identity verification pretexts. [AI-powered phishing](/phishing/ai-powered-phishing/) has made these emails more convincing than ever -- the days of obvious grammatical errors and poor formatting in IRS scam emails are largely over.
+IRS phishing campaigns peak from January through April but continue year-round with stimulus payment scams, CP2000 impersonations, and identity verification pretexts. [AI-powered phishing](/trends/ai-phishing-effectiveness/) has made these emails more convincing than ever -- the days of obvious grammatical errors and poor formatting in IRS scam emails are largely over.
 
 Your strongest defense is a combination of knowledge and technology:
 
@@ -169,7 +169,5 @@ The scammers rely on panic -- the fear of owing money, missing a refund, or faci
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
-- [How to Verify Suspicious Messages](/phishing/verify-suspicious-messages/)

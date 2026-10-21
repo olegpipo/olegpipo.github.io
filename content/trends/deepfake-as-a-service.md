@@ -117,7 +117,6 @@ For individuals, this means adopting phishing-resistant authentication now, esta
 
 ## Related Articles
 
-- [AI and Password Security: How ML Changes Authentication](/trends/ai-and-passwords/)
 - [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
 - [Why Regulators Are Banning SMS OTP](/trends/sms-otp-ban/)
 - [Privacy in the Age of AI](/trends/privacy-age-of-ai/)

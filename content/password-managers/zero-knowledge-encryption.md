@@ -45,7 +45,7 @@ The derived key never leaves your device. It is not transmitted, not stored, and
 
 The salt is a random value (typically 128 or 256 bits) unique to each user. It is stored alongside the encrypted data and is not secret -- its purpose is to ensure that two users with the same master password produce entirely different encryption keys.
 
-Without salting, an attacker could precompute a table of keys derived from common passwords and use it against every user's vault simultaneously. With per-user salts, each vault requires its own independent cracking effort. Our guide on [password salting](/password-security/password-salt-explained/) explores this defense mechanism in depth.
+Without salting, an attacker could precompute a table of keys derived from common passwords and use it against every user's vault simultaneously. With per-user salts, each vault requires its own independent cracking effort. Our guide on [password salting](/password-security/password-cracking-explained/) explores this defense mechanism in depth.
 
 ### Symmetric Encryption of the Vault
 

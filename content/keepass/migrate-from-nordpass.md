@@ -204,5 +204,5 @@ Install the KeePassXC Browser extension for desktop autofill. On Apple devices, 
 - [What Is the KDBX Format and Why It Matters](/keepass/kdbx-format-guide/)
 - [KeePass-Compatible Apps for Every Platform](/keepass/compatible-apps/)
 - [How to Back Up Your KeePass Database](/keepass/backup-database/)
-- [KeePass vs. Proprietary Password Managers](/keepass/vs-proprietary/)
+- [Data Portability: Why Your Password Manager Should Never Lock You In](/keepass/data-portability/)
 - [Migrate from LastPass to KeePass](/keepass/migrate-from-lastpass/)

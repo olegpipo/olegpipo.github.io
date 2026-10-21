@@ -34,7 +34,7 @@ A password manager is an unusually clean thing to threat model, because the asse
 
 The `.kdbx` file is the crown jewel. It contains every credential you own, and unlike a server-side database it is a *portable* artifact -- it can be copied to a USB stick, pulled out of a backup, or downloaded from a compromised cloud account.
 
-We therefore assume, as a baseline, that **the attacker already has your vault file.** Not as a worst case, but as the default case. Everything else follows from that assumption. It is why the file is encrypted with AES-256 or ChaCha20 in the [KDBX 4 format](/keepass/kdbx-format-guide/), why the master password is stretched with a memory-hard KDF rather than a fast hash, and why the file is authenticated with an HMAC so that a tampered vault is rejected rather than partially decrypted. If the attacker has the file, the only thing standing between them and your credentials is the cost of guessing your master password. We design for that fight, and we lose it only if your master password is weak -- which is why the [master password guide](/password-managers/master-password-guide/) is the most important thing we ask of you.
+We therefore assume, as a baseline, that **the attacker already has your vault file.** Not as a worst case, but as the default case. Everything else follows from that assumption. It is why the file is encrypted with AES-256 or ChaCha20 in the [KDBX 4 format](/keepass/kdbx-format-guide/), why the master password is stretched with a memory-hard KDF rather than a fast hash, and why the file is authenticated with an HMAC so that a tampered vault is rejected rather than partially decrypted. If the attacker has the file, the only thing standing between them and your credentials is the cost of guessing your master password. We design for that fight, and we lose it only if your master password is weak -- which is why the [master password guide](/guides/master-password/) is the most important thing we ask of you.
 
 ### Asset 2: The master key in memory
 
@@ -74,7 +74,7 @@ The SSDF (NIST SP 800-218) is not a certification and we make no claim of one. I
 
 ### Design (PO.1, PW.1, PW.2)
 
-Every feature that touches a secret starts with a written note answering the four threat-model questions above for that feature specifically. Adding TOTP? Then the shared secret becomes an asset, and the fact that it now lives in the same vault as the password is a threat-model change worth stating out loud -- which we do, honestly, in our discussion of [using a password manager as your authenticator](/two-factor-authentication/password-manager-as-authenticator/).
+Every feature that touches a secret starts with a written note answering the four threat-model questions above for that feature specifically. Adding TOTP? Then the shared secret becomes an asset, and the fact that it now lives in the same vault as the password is a threat-model change worth stating out loud -- which we do, honestly, in our discussion of [using a password manager as your authenticator](/two-factor-authentication/google-authenticator-vs-builtin/).
 
 Two design rules are absolute:
 

@@ -153,6 +153,5 @@ The banking industry's experience validates several principles for personal pass
 
 - [How Biometrics Protect Your Password Vault](/biometrics/biometric-vault-protection/)
 - [Why Biometrics Are Safer Than Passwords Alone](/biometrics/safer-than-passwords/)
-- [Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)
 - [Face ID vs. Touch ID: Which Is More Secure?](/biometrics/face-id-vs-touch-id/)
 - [Setting Up Biometric Unlock: Step-by-Step](/biometrics/setup-guide/)

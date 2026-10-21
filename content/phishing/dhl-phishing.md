@@ -36,7 +36,7 @@ This is the most prevalent DHL phishing email. It exploits the anticipation of r
 
 **What it looks like**: The email uses DHL's signature yellow and red color scheme, the DHL logo, and a layout that closely mimics genuine DHL delivery notifications. It includes a fabricated tracking number and claims that a package is scheduled for delivery. The email provides a "Track Your Shipment" or "Schedule Delivery" button. Some versions include a fake tracking summary with origin, destination, and estimated delivery time to add credibility.
 
-**The tell**: The sender address is not @dhl.com. Common fakes include delivery@dhl-express.net, tracking@dhl-notification.com, noreply@dhl-delivery.org, or shipment@dhlpackage.net. The tracking number does not verify at dhl.com/tracking. The "Track Shipment" button leads to a [fake login page](/phishing/fake-login-pages/) or a malware download disguised as a tracking application. Some variants include an attachment (PDF, ZIP, or executable) labeled as a "shipping label" or "delivery receipt" that contains malware.
+**The tell**: The sender address is not @dhl.com. Common fakes include delivery@dhl-express.net, tracking@dhl-notification.com, noreply@dhl-delivery.org, or shipment@dhlpackage.net. The tracking number does not verify at dhl.com/tracking. The "Track Shipment" button leads to a [fake login page](/phishing/password-manager-prevents-phishing/) or a malware download disguised as a tracking application. Some variants include an attachment (PDF, ZIP, or executable) labeled as a "shipping label" or "delivery receipt" that contains malware.
 
 **The reality**: Genuine DHL delivery notifications come from @dhl.com and include valid tracking numbers that can be verified at dhl.com/tracking or through the DHL mobile app. If you are expecting a DHL delivery, track it directly at dhl.com by entering the tracking number provided by the actual sender or retailer -- not by clicking links in unsolicited emails.
 
@@ -118,7 +118,7 @@ Before acting on any communication claiming to be from DHL, follow these steps:
 
 5. **Be skeptical of fees**: If an email asks you to pay a customs fee or redelivery charge through a link, verify by checking dhl.com or contacting DHL customer service directly. DHL's legitimate customs fee notifications include your shipment details and direct you to official payment channels.
 
-For a broader approach to evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/verify-suspicious-messages/).
+For a broader approach to evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/recognize-phishing/).
 
 ## Why a Password Manager Is Your Strongest Defense
 
@@ -152,7 +152,7 @@ If you receive a phishing email or message impersonating DHL:
 
 ## Staying Ahead of DHL Phishing in 2026
 
-DHL's position as the most impersonated brand globally means that phishing campaigns impersonating the company will continue at massive scale. [AI-powered phishing](/phishing/ai-powered-phishing/) makes these emails more convincing, with perfect grammar, localized language, and branding indistinguishable from the real thing. The rise of [smishing](/phishing/smishing/) -- SMS-based phishing -- has added a new channel, with fake DHL delivery texts becoming nearly as common as email-based scams.
+DHL's position as the most impersonated brand globally means that phishing campaigns impersonating the company will continue at massive scale. [AI-powered phishing](/trends/ai-phishing-effectiveness/) makes these emails more convincing, with perfect grammar, localized language, and branding indistinguishable from the real thing. The rise of [smishing](/phishing/smishing/) -- SMS-based phishing -- has added a new channel, with fake DHL delivery texts becoming nearly as common as email-based scams.
 
 Build a layered defense:
 
@@ -168,7 +168,6 @@ DHL phishing succeeds because it exploits a universal experience: waiting for a 
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [Smishing: SMS Phishing Attacks Explained](/phishing/smishing/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

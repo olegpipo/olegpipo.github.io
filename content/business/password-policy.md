@@ -84,7 +84,7 @@ When credentials need to be shared with team members:
 - Self-destructing encrypted message services for one-time sharing
 - In-person verbal communication for master passwords
 
-See our [small team sharing guide](/business/small-team-sharing/) for detailed procedures.
+See our [shared password vault guide](/password-managers/shared-password-vault/) for detailed procedures.
 
 **3.2 Prohibited sharing methods.**
 
@@ -259,7 +259,7 @@ The goal is a living document that reflects how your business actually handles c
 ## Related Articles
 
 - [Why Every Small Business Needs a Password Manager](/business/why-businesses-need-one/)
-- [Secure Password Sharing for Small Teams](/business/small-team-sharing/)
+- [Shared Password Vault: How It Works & Best Options](/password-managers/shared-password-vault/)
 - [Password Compliance: HIPAA, PCI DSS for Small Business](/business/compliance/)
 - [Secure Credential Handoffs for Contractors](/business/contractor-handoffs/)
 - [Password Management for Business & Freelancers](/business/)

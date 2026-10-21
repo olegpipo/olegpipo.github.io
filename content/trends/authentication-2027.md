@@ -83,7 +83,7 @@ Performance overhead from post-quantum algorithms could create pushback, particu
 
 ### What We Expect
 
-Additional US states will enact comprehensive privacy laws modeled on the CCPA/CPRA. The momentum from the [California DELETE Act](/trends/california-delete-act/) will inspire similar centralized deletion mechanisms in other jurisdictions. Federal privacy legislation will continue to be debated but is unlikely to pass in 2027 due to political dynamics.
+Additional US states will enact comprehensive privacy laws modeled on the CCPA/CPRA. The momentum from the [California DELETE Act](/digital-privacy/remove-personal-info/) will inspire similar centralized deletion mechanisms in other jurisdictions. Federal privacy legislation will continue to be debated but is unlikely to pass in 2027 due to political dynamics.
 
 Internationally, AI-specific privacy regulations will begin to affect how authentication data is collected, processed, and retained. The EU AI Act will create compliance requirements for AI systems that process biometric and authentication data.
 
@@ -115,7 +115,7 @@ This is where data portability becomes strategically important. PanicVault and o
 
 ### What We Expect
 
-[Behavioral biometrics and adaptive authentication](/trends/ai-and-passwords/), currently used primarily by financial institutions and enterprise applications, will begin appearing in consumer services. Rather than authenticating once at login, systems will continuously verify your identity based on how you type, how you move your mouse, and how you interact with your device.
+Behavioral biometrics and adaptive authentication, currently used primarily by financial institutions and enterprise applications, will begin appearing in consumer services. Rather than authenticating once at login, systems will continuously verify your identity based on how you type, how you move your mouse, and how you interact with your device.
 
 ### Why We Are Confident
 
@@ -135,7 +135,7 @@ These predictions translate into concrete near-term actions:
 
 **Choose tools with data portability.** The authentication landscape will continue to shift. Your credentials should be in a format that moves with you. The KDBX format used by PanicVault and the [KeePass ecosystem](/keepass/) provides this portability by design.
 
-**Reduce your data broker exposure.** Submit [DELETE Act](/trends/california-delete-act/) requests and use data broker removal services. Less personal data available means less effective [AI-powered attacks](/trends/ai-and-passwords/).
+**Reduce your data broker exposure.** Submit [DELETE Act](/digital-privacy/remove-personal-info/) requests and use data broker removal services. Less personal data available means less effective [AI-powered attacks](/trends/ai-phishing-effectiveness/).
 
 **Adopt a [zero trust mindset](/trends/zero-trust-individuals/).** Verify identities through separate channels. Treat every communication as potentially spoofed. Use tools that implement security by design rather than relying on your ability to detect threats.
 
@@ -147,6 +147,6 @@ The authentication landscape in 2027 will be different from 2026 in ways that ar
 
 - [The State of Password Security in 2026](/trends/state-of-password-security/)
 - [Are Passwords Dead? The Passwordless Future](/trends/are-passwords-dead/)
-- [AI and Password Security: How ML Changes Authentication](/trends/ai-and-passwords/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [Quantum Computing and Passwords: Should You Worry?](/trends/quantum-computing/)
 - [Why Regulators Are Banning SMS OTP](/trends/sms-otp-ban/)

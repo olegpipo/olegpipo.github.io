@@ -192,7 +192,7 @@ Children's password needs vary by age, but the principles of good password manag
 - Set them up with their own password manager (see our [setup guide for parents](/guides/setup-for-parents/))
 - Maintain parent access to their vault for safety
 - Gradually transition shared household passwords to their own vault
-- Teach them to use [strong, generated passwords](/guides/generate-strong-passwords/)
+- Teach them to use [strong, generated passwords](/password-managers/how-generators-work/)
 
 ### Adult Children
 

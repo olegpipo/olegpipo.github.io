@@ -93,7 +93,7 @@ The chorus is broad:
 
 Understanding the psychology helps explain the research results. When forced to create a new password every 90 days, people face a cognitive problem: they need something they can remember, that meets complexity requirements, and that is different from their last password.
 
-The path of least resistance is to make a minimal change. Research on [password psychology](/password-security/psychology-of-passwords/) confirms that users follow consistent, predictable strategies:
+The path of least resistance is to make a minimal change. Research on [password behavior](/password-managers/password-fatigue/) confirms that users follow consistent, predictable strategies:
 
 - **Incrementing numbers**: `Autumn2024!` becomes `Autumn2025!`
 - **Rotating seasons or months**: `Winter2024$` becomes `Spring2024$`

@@ -84,7 +84,7 @@ In sophisticated BEC attacks, the attacker has actually compromised the executiv
 
 ### AI Enhancement
 
-[AI-powered tools](/phishing/ai-powered-phishing/) allow attackers to mimic an executive's writing style, reference real business activities, and create contextually accurate messages. Combined with [voice cloning](/phishing/deepfake-voice-scams/), attackers can follow up a BEC email with a phone call from what sounds like the executive's own voice, confirming the request.
+[AI-powered tools](/trends/ai-phishing-effectiveness/) allow attackers to mimic an executive's writing style, reference real business activities, and create contextually accurate messages. Combined with [voice cloning](/phishing/deepfake-voice-scams/), attackers can follow up a BEC email with a phone call from what sounds like the executive's own voice, confirming the request.
 
 ## Real-World BEC Examples
 
@@ -127,7 +127,7 @@ These protocols prevent attackers from spoofing your exact domain. They do not p
 
 Compromised email accounts are a primary enabler of BEC. Protect executive and finance team email accounts with:
 
-- **[Password managers](/password-managers/)** for strong, unique passwords on every account. Deploying a password manager organization-wide -- such as PanicVault for Apple-equipped teams -- ensures that no employee uses a weak or reused password that could be compromised through a [data breach](/data-breaches/) or [fake login page](/phishing/fake-login-pages/).
+- **[Password managers](/password-managers/)** for strong, unique passwords on every account. Deploying a password manager organization-wide -- such as PanicVault for Apple-equipped teams -- ensures that no employee uses a weak or reused password that could be compromised through a [data breach](/data-breaches/) or [fake login page](/phishing/password-manager-prevents-phishing/).
 - **[Two-factor authentication](/two-factor-authentication/)** on all email accounts, with hardware security keys or [passkeys](/passkeys/) preferred over SMS-based 2FA.
 - **[Strong password policies](/password-security/)** that require sufficient length and complexity.
 
@@ -180,7 +180,7 @@ Security culture starts at the top. Executives who submit to the same verificati
 ## Related Articles
 
 - [What Is Social Engineering? Comprehensive Guide](/phishing/social-engineering-guide/)
-- [AI-Powered Phishing in 2026: Harder to Spot](/phishing/ai-powered-phishing/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [Deepfake Voice Cloning Scams: How They Work](/phishing/deepfake-voice-scams/)
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

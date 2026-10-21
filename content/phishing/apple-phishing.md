@@ -36,7 +36,7 @@ This is the most widespread Apple phishing email. It exploits the fear of being 
 
 **What it looks like**: The email uses Apple's minimalist design language -- clean white background, San Francisco font, and the Apple logo. It states that your Apple ID has been locked due to suspicious activity, too many failed login attempts, or outdated account information. A button says "Verify Your Identity," "Unlock Apple ID," or "Go to Apple ID." The email often includes a fabricated case number or reference ID.
 
-**The tell**: The sender address is not from @apple.com or @email.apple.com. Common fakes include support@appleid-verify.com, noreply@icloud-security.net, security@apple-support.org, or service@app1e.com (note the numeral "1" replacing the letter "l"). The "Verify" button links to a [fake login page](/phishing/fake-login-pages/) on a lookalike domain that captures your Apple ID email and password. Sophisticated versions also ask for your two-factor authentication code on a second screen.
+**The tell**: The sender address is not from @apple.com or @email.apple.com. Common fakes include support@appleid-verify.com, noreply@icloud-security.net, security@apple-support.org, or service@app1e.com (note the numeral "1" replacing the letter "l"). The "Verify" button links to a [fake login page](/phishing/password-manager-prevents-phishing/) on a lookalike domain that captures your Apple ID email and password. Sophisticated versions also ask for your two-factor authentication code on a second screen.
 
 **The reality**: Apple does lock Apple IDs when it detects potential unauthorized access, but when this happens, you see the notification directly on your Apple device or when you try to sign in at appleid.apple.com. Apple never asks you to unlock your account by clicking an email link and entering your password. If you are concerned, open Settings on your iPhone, tap your name at the top, and check your account status.
 
@@ -148,7 +148,7 @@ For a broader framework that applies to all phishing attempts, see our guide on 
 
 ## Why a Password Manager Is Your Strongest Defense
 
-Understanding Apple phishing patterns is valuable, but awareness alone is not a reliable defense. Modern [AI-powered phishing](/phishing/ai-powered-phishing/) emails are nearly indistinguishable from genuine Apple communications, with pixel-perfect branding and personalized details. Even security-conscious people click links when they are tired, distracted, or alarmed by a notification about their Apple ID. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your judgment lapses.
+Understanding Apple phishing patterns is valuable, but awareness alone is not a reliable defense. Modern [AI-powered phishing](/trends/ai-phishing-effectiveness/) emails are nearly indistinguishable from genuine Apple communications, with pixel-perfect branding and personalized details. Even security-conscious people click links when they are tired, distracted, or alarmed by a notification about their Apple ID. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your judgment lapses.
 
 ### Domain Matching Stops Credential Theft
 
@@ -208,7 +208,6 @@ The attackers count on the moment of panic when you see "Your Apple ID has been 
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [Netflix Phishing Emails](/phishing/netflix-phishing/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

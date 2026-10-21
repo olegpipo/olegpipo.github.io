@@ -249,5 +249,5 @@ Because they all use the same KDBX format, your choice is about interface prefer
 - [PanicVault vs. KeePassXC](/compare/panicvault-vs-keepassxc/) -- Detailed comparison of the two most popular options
 - [PanicVault vs. Strongbox](/compare/panicvault-vs-strongbox/) -- Apple-native KeePass apps compared
 - [KeePass Encryption Explained](/keepass/encryption-explained/) -- Security architecture shared by all KeePass apps
-- [KeePass Compatibility Guide](/keepass/compatibility-guide/) -- Format compatibility across the ecosystem
+- [KeePass Apps for Every Platform](/keepass/compatible-apps/) -- Format compatibility across the ecosystem
 - [Best Password Manager for Mac](/apple/best-password-manager-mac/) -- Broader Mac password manager comparison

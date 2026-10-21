@@ -143,7 +143,7 @@ Data breaches are the wholesale compromise of user credentials from a service's 
 
 The scale of modern data breaches is staggering. The 2013 Yahoo breach affected all 3 billion user accounts. The 2019 Collection #1 leak exposed over 773 million unique email addresses alongside 21 million unique passwords. These databases circulate on dark web marketplaces and hacking forums, available to anyone willing to look for them.
 
-Even if a breached service stored passwords using hashing and [salting](/password-security/password-salt-explained/), weak passwords can still be recovered. A short or common password hashed with SHA-256 can be cracked in seconds using rainbow tables or GPU-accelerated tools. Only long, truly random passwords survive intact after a breach.
+Even if a breached service stored passwords using hashing and [salting](/password-security/password-cracking-explained/), weak passwords can still be recovered. A short or common password hashed with SHA-256 can be cracked in seconds using rainbow tables or GPU-accelerated tools. Only long, truly random passwords survive intact after a breach.
 
 Our list of the [most common passwords](/password-security/most-common-passwords/) shows exactly which credentials appear most frequently in breach databases -- and if yours is among them, it is already in every attacker's dictionary.
 

@@ -156,7 +156,7 @@ One password, one account. No exceptions. See [password reuse dangers](/password
 
 Your birthday, your pet's name, your street address, your anniversary -- all of this information is either publicly available or easily discoverable through social media. Attackers routinely build targeted wordlists from a victim's social media profiles.
 
-A password derived from personal information is essentially a password that your attacker already knows part of. Our article on [the psychology of passwords](/password-security/psychology-of-passwords/) explores why humans gravitate toward these predictable choices and what cognitive biases make us underestimate the risk.
+A password derived from personal information is essentially a password that your attacker already knows part of. Our article on [password fatigue](/password-managers/password-fatigue/) explains how the cognitive load of managing hundreds of accounts pushes people toward these predictable choices.
 
 ### Relying on Keyboard Patterns
 
@@ -185,7 +185,7 @@ With a password manager, you shift from memorizing passwords (poorly) to managin
 
 ### Security of the Vault
 
-Modern password managers encrypt your vault using AES-256, the same encryption standard used by governments and military organizations worldwide. The vault is decrypted locally using a key derived from your master passphrase through a key derivation function (like Argon2 or PBKDF2) that is deliberately slow, making brute force attacks against your master passphrase computationally expensive. Stored passwords are also protected with a [password salt](/password-security/password-salt-explained/) -- a random value added before hashing that ensures identical passwords produce different hashes, defeating precomputed attack tables.
+Modern password managers encrypt your vault using AES-256, the same encryption standard used by governments and military organizations worldwide. The vault is decrypted locally using a key derived from your master passphrase through a key derivation function (like Argon2 or PBKDF2) that is deliberately slow, making brute force attacks against your master passphrase computationally expensive. Stored passwords are also protected with a [password salt](/password-security/password-cracking-explained/) -- a random value added before hashing that ensures identical passwords produce different hashes, defeating precomputed attack tables.
 
 The [KeePass format](/keepass/), used by PanicVault and several other password managers, is open-source and has been extensively audited by the security community. Because the format is open, you are never locked into a single vendor. Your vault file is yours to keep, back up, and migrate as you choose.
 

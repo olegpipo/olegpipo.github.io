@@ -113,6 +113,6 @@ Passwords are not dead. But they are, for the first time, genuinely being displa
 
 - [The State of Password Security in 2026](/trends/state-of-password-security/)
 - [Authentication in 2027: Predictions](/trends/authentication-2027/)
-- [AI and Password Security: How ML Changes Authentication](/trends/ai-and-passwords/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [Why Regulators Are Banning SMS OTP](/trends/sms-otp-ban/)
 - [Zero Trust Security for Individuals](/trends/zero-trust-individuals/)

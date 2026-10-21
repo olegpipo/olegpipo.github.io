@@ -89,7 +89,7 @@ Our guide to [zero trust security for individuals](/trends/zero-trust-individual
 
 ### Regulatory Pressure
 
-Governments are increasingly willing to mandate security practices. The EU's NIS2 directive, expanding cybersecurity requirements across critical sectors, came into full effect in 2025. The SEC's incident disclosure rules are changing how publicly traded companies approach credential security. And at the consumer level, regulations like the [California DELETE Act](/trends/california-delete-act/) are giving individuals more control over their personal data.
+Governments are increasingly willing to mandate security practices. The EU's NIS2 directive, expanding cybersecurity requirements across critical sectors, came into full effect in 2025. The SEC's incident disclosure rules are changing how publicly traded companies approach credential security. And at the consumer level, regulations like the [California DELETE Act](/digital-privacy/remove-personal-info/) are giving individuals more control over their personal data.
 
 ## What This Means for You
 
@@ -109,6 +109,5 @@ The state of password security in 2026 leads to a clear set of practical conclus
 
 - [Are Passwords Dead? The Passwordless Future](/trends/are-passwords-dead/)
 - [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
-- [AI and Password Security: How ML Changes Authentication](/trends/ai-and-passwords/)
 - [Zero Trust Security for Individuals](/trends/zero-trust-individuals/)
 - [Authentication in 2027: Predictions](/trends/authentication-2027/)

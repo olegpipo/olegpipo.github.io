@@ -53,7 +53,7 @@ Expect 5-25 hours total depending on the number of cards and charges involved. M
 
 ### What It Is
 
-Someone uses your stolen identity information (typically your Social Security number from a [data breach](/data-breaches/what-hackers-steal/)) to open new credit cards, loans, or other financial accounts in your name.
+Someone uses your stolen identity information (typically your Social Security number from a [data breach](/data-breaches/what-to-do-after-breach/)) to open new credit cards, loans, or other financial accounts in your name.
 
 ### Timeline: 1-6 Months
 
@@ -235,4 +235,3 @@ While recovering, build defenses against recurrence:
 - [How to Freeze Your Credit After a Data Breach](/data-breaches/freeze-credit/)
 - [What to Do Immediately After a Data Breach](/data-breaches/what-to-do-after-breach/)
 - [How to Set Up Identity Theft Monitoring](/data-breaches/monitoring-alerts/)
-- [What Information Hackers Steal in a Breach](/data-breaches/what-hackers-steal/)

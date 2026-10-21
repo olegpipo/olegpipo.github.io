@@ -19,7 +19,7 @@ Before dissecting the weaknesses of notebooks, it is worth understanding their g
 
 **No digital attack surface.** A notebook cannot be hacked remotely. It is immune to malware, phishing, data breaches, and software vulnerabilities. In a world where major password manager companies have themselves been breached, the appeal of something that exists entirely offline is understandable.
 
-**Distrust of technology.** Some people -- particularly older adults or those who have been burned by technology failures -- have a deep-seated reluctance to entrust sensitive information to software they do not fully understand. This is not irrational. Trusting a tool means understanding how it works, and [the psychology behind password decisions](/password-security/psychology-of-passwords/) shows that perceived control is a major factor in security behavior.
+**Distrust of technology.** Some people -- particularly older adults or those who have been burned by technology failures -- have a deep-seated reluctance to entrust sensitive information to software they do not fully understand. This is not irrational. Trusting a tool means understanding how it works, and the psychology behind password decisions shows that perceived control is a major factor in security behavior.
 
 **Cost.** A notebook costs a few dollars. Many password managers are free, but the perception persists that "good" security tools require paid subscriptions.
 
@@ -129,7 +129,7 @@ If you have been using a notebook and are ready to transition to a password mana
 
 ### Week 1: Set Up the Manager
 
-Choose a password manager, install it, and create a strong master password. See our [beginner's guide](/password-managers/beginners-guide/) for step-by-step instructions. Do not try to migrate everything at once.
+Choose a password manager, install it, and create a strong master password. See our [beginner's guide](/guides/first-time-setup/) for step-by-step instructions. Do not try to migrate everything at once.
 
 ### Week 2: Migrate Critical Accounts
 

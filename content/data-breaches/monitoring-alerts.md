@@ -121,7 +121,7 @@ Paid monitoring services are most valuable when:
 - You want identity theft insurance and recovery assistance included
 - You prefer hands-off monitoring over managing multiple free services
 
-For most people, the free layers (HIBP, credit monitoring, transaction alerts, IRS PIN) provide strong coverage. Add paid services when your risk level justifies the cost -- particularly after a breach that [exposed sensitive personal data](/data-breaches/what-hackers-steal/).
+For most people, the free layers (HIBP, credit monitoring, transaction alerts, IRS PIN) provide strong coverage. Add paid services when your risk level justifies the cost -- particularly after a breach that [exposed sensitive personal data](/data-breaches/what-to-do-after-breach/).
 
 ## Building Your Monitoring Stack
 

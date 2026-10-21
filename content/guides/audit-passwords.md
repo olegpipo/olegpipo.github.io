@@ -160,7 +160,7 @@ For each password that needs changing:
 
 1. Open the account's website or app
 2. Navigate to Settings > Security > Change Password (the exact path varies)
-3. Use your password manager to [generate a new strong password](/guides/generate-strong-passwords/) -- at least 16 characters, fully random
+3. Use your password manager to [generate a new strong password](/password-managers/how-generators-work/) -- at least 16 characters, fully random
 4. Enter the old password and the new generated password
 5. Save the new password in your vault
 6. Verify the change by logging out and back in
@@ -226,7 +226,7 @@ These five actions eliminate the majority of your password risk. Everything else
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 - [How to Set Up 2FA Using Your Password Manager](/guides/setup-2fa/)
 - [How to Create a Secure Master Password You'll Remember](/guides/master-password/)
 - [How to Organize Your Password Vault](/guides/organize-vault/)

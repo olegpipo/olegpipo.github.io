@@ -50,7 +50,7 @@ This pattern creates fear by claiming your Venmo account has been restricted and
 - "Venmo: Your Account Access Has Been Temporarily Suspended"
 - "Important: Complete Verification to Restore Your Venmo Account"
 
-**What it looks like**: The email states that your Venmo account has been limited due to suspicious activity, policy violations, or incomplete verification. It warns that you cannot send or receive payments until you resolve the issue. The email provides a "Restore Account" or "Verify Now" button that links to a [fake login page](/phishing/fake-login-pages/) mimicking Venmo's interface. The phishing page requests your username, password, and often additional personal information like your Social Security number, date of birth, and bank account details.
+**What it looks like**: The email states that your Venmo account has been limited due to suspicious activity, policy violations, or incomplete verification. It warns that you cannot send or receive payments until you resolve the issue. The email provides a "Restore Account" or "Verify Now" button that links to a [fake login page](/phishing/password-manager-prevents-phishing/) mimicking Venmo's interface. The phishing page requests your username, password, and often additional personal information like your Social Security number, date of birth, and bank account details.
 
 **The tell**: The sender address is not @venmo.com -- look for fakes like security@venmo-support.com, noreply@venmo-verification.net, or compliance@venmo-review.org. Venmo does occasionally limit accounts for compliance reasons, but notifications appear within the Venmo app, and resolution steps are conducted through the app's settings. Venmo will never ask for your full Social Security number or bank login credentials through an email link.
 
@@ -118,7 +118,7 @@ Before acting on any communication claiming to be from Venmo, follow these steps
 
 5. **Evaluate the urgency**: Legitimate Venmo communications provide reasonable timeframes for action. Emails threatening immediate account closure or fund seizure within hours are designed to make you panic and bypass your judgment.
 
-For a broader approach to evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/verify-suspicious-messages/).
+For a broader approach to evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/recognize-phishing/).
 
 ## Why a Password Manager Is Your Strongest Defense
 
@@ -151,7 +151,7 @@ If you receive a phishing email or message impersonating Venmo:
 
 ## Staying Ahead of Venmo Phishing in 2026
 
-Venmo phishing evolves as the platform adds new features. The expansion of Venmo for business payments, Venmo Credit Card integration, and crypto purchasing capabilities all create fresh pretexts for phishing emails. [AI-powered phishing](/phishing/ai-powered-phishing/) tools generate messages that reference your actual Venmo activity (scraped from public feeds) and mimic Venmo's tone perfectly.
+Venmo phishing evolves as the platform adds new features. The expansion of Venmo for business payments, Venmo Credit Card integration, and crypto purchasing capabilities all create fresh pretexts for phishing emails. [AI-powered phishing](/trends/ai-phishing-effectiveness/) tools generate messages that reference your actual Venmo activity (scraped from public feeds) and mimic Venmo's tone perfectly.
 
 Build a layered defense:
 
@@ -167,7 +167,6 @@ Phishing attacks that target financial apps rely on one emotion above all others
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [PayPal Phishing Email Examples](/phishing/paypal-phishing/)

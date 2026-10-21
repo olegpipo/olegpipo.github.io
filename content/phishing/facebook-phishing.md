@@ -36,7 +36,7 @@ This is the most common Facebook phishing email. It creates immediate fear of lo
 
 **What it looks like**: The email uses Facebook's branding -- the blue color scheme, the "f" logo, and a layout that mirrors genuine Facebook notifications. It claims that your account or page has been reported for violating community standards, citing reasons like "misleading content," "spam activity," "hate speech," or "impersonation." The email threatens account suspension or permanent deletion within 24 to 48 hours and provides an "Appeal" button.
 
-**The tell**: The sender domain is not one Meta actually uses. Common fakes include support@facebook-community.com, noreply@meta-security.net, appeals@fb-standards.com, or community@facebook-help.org. The appeal link goes to a [fake login page](/phishing/fake-login-pages/) at a domain like facebook-appeal.com or meta-community-review.net. Real community standards notifications appear in your Support Inbox within the Facebook app (Settings > Support Inbox), not through external email links.
+**The tell**: The sender domain is not one Meta actually uses. Common fakes include support@facebook-community.com, noreply@meta-security.net, appeals@fb-standards.com, or community@facebook-help.org. The appeal link goes to a [fake login page](/phishing/password-manager-prevents-phishing/) at a domain like facebook-appeal.com or meta-community-review.net. Real community standards notifications appear in your Support Inbox within the Facebook app (Settings > Support Inbox), not through external email links.
 
 **The reality**: Facebook does enforce community standards, but violations are communicated through in-app notifications in your Support Inbox. If content is removed, you see a notification within the app with a clear explanation of which standard was violated and an option to appeal directly through Facebook's interface. Facebook does not email threats of immediate account deletion.
 
@@ -118,7 +118,7 @@ Before acting on any communication claiming to be from Facebook or Meta, follow 
 
 5. **Verify independently**: Open the Facebook app directly and check your notifications, Support Inbox, and account settings. Any legitimate issue will be visible within the platform.
 
-For a broader approach to evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/verify-suspicious-messages/).
+For a broader approach to evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/recognize-phishing/).
 
 ## Why a Password Manager Is Your Strongest Defense
 
@@ -151,7 +151,7 @@ If you receive a phishing email or message impersonating Facebook or Meta:
 
 ## Staying Ahead of Facebook Phishing in 2026
 
-Facebook phishing will continue to evolve with the platform. The Meta rebrand, evolving ad policies, new Marketplace features, and AI integration all provide fresh pretexts for phishing emails. [AI-powered phishing](/phishing/ai-powered-phishing/) generates messages that are grammatically flawless and personalized using data from your public profile.
+Facebook phishing will continue to evolve with the platform. The Meta rebrand, evolving ad policies, new Marketplace features, and AI integration all provide fresh pretexts for phishing emails. [AI-powered phishing](/trends/ai-phishing-effectiveness/) generates messages that are grammatically flawless and personalized using data from your public profile.
 
 Build a layered defense:
 
@@ -167,7 +167,6 @@ Attackers exploit the fear of losing your account, your page, or your business. 
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [Smishing: SMS Phishing Attacks Explained](/phishing/smishing/)

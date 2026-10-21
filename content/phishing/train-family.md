@@ -9,7 +9,7 @@ silo: "Phishing & Social Engineering"
 
 You know how to spot a phishing email. You understand that a pop-up warning is not a real virus alert. You would never send money to someone you met online without meeting them in person. But what about your parents? Your grandparents? Your teenagers? Your less tech-savvy spouse? The weakest link in your family's digital security is not your firewall -- it is the family member who has not been taught to recognize a scam. This article is part of our [Phishing & Social Engineering](/phishing/) guide.
 
-With 3.4 billion phishing emails sent daily and [AI making scams harder to spot](/phishing/ai-powered-phishing/), training your family is not optional -- it is one of the most impactful things you can do for their safety. And the way you approach it matters. Lectures create resistance. Fear creates paralysis. Practical, compassionate education creates resilience.
+With 3.4 billion phishing emails sent daily and [AI making scams harder to spot](/trends/ai-phishing-effectiveness/), training your family is not optional -- it is one of the most impactful things you can do for their safety. And the way you approach it matters. Lectures create resistance. Fear creates paralysis. Practical, compassionate education creates resilience.
 
 ## Why Family Training Matters
 
@@ -53,14 +53,14 @@ Elderly family members are disproportionately targeted by scammers and dispropor
 
 1. **[Tech support scams](/phishing/tech-support-scams/)**: "If a pop-up on your computer says you have a virus and tells you to call a phone number, it is always a scam. Always. Close the browser and call me instead."
 
-2. **[Voice cloning scams](/phishing/deepfake-voice-scams/)**: "Technology now exists that can make a phone call sound exactly like me or [grandchild's name]. If you get a panicked call from someone claiming to be family and asking for money, hang up and call us on our regular number. We have a [family code word](/phishing/family-code-word/) for this."
+2. **[Voice cloning scams](/phishing/deepfake-voice-scams/)**: "Technology now exists that can make a phone call sound exactly like me or [grandchild's name]. If you get a panicked call from someone claiming to be family and asking for money, hang up and call us on our regular number. We have a family code word for this."
 
-3. **[Phone call scams](/phishing/verify-suspicious-messages/)**: "No real company or government agency will ever call you and ask for your Social Security number, bank information, or passwords. If someone calls asking for this, it is a scam. Hang up."
+3. **Phone call scams**: "No real company or government agency will ever call you and ask for your Social Security number, bank information, or passwords. If someone calls asking for this, it is a scam. Hang up."
 
 **Practical setup**:
 - Install a [password manager](/password-managers/) on their devices. PanicVault is designed to be approachable for non-technical users on Apple devices -- Face ID or Touch ID for authentication, automatic domain matching to prevent phishing, no complicated setup.
 - Enable call screening (Silence Unknown Callers on iPhone).
-- Write down the [family code word](/phishing/family-code-word/) and keep it somewhere secure but accessible.
+- Write down the [family code word](/phishing/deepfake-voice-scams/) and keep it somewhere secure but accessible.
 - Set yourself as their first call for any technical concerns: "If anything on your computer or phone seems wrong or scary, call me before doing anything else."
 
 **Approach**:
@@ -76,7 +76,7 @@ Teenagers face different risks: [social media phishing](/phishing/recognize-phis
 
 1. **Password hygiene**: Teenagers often share passwords with friends, reuse passwords across services, and use weak passwords. Set them up with a [password manager](/password-managers/) and explain why unique passwords matter. A real-world example works well: "If someone hacks your TikTok password and you use the same password for your email, they now have access to every account that can be reset through your email."
 
-2. **[Fake login pages](/phishing/fake-login-pages/)**: "If a friend sends you a link to log into Instagram, Discord, or Roblox and it asks for your password, check the URL. Or better yet, open the app directly instead of clicking the link."
+2. **[Fake login pages](/phishing/password-manager-prevents-phishing/)**: "If a friend sends you a link to log into Instagram, Discord, or Roblox and it asks for your password, check the URL. Or better yet, open the app directly instead of clicking the link."
 
 3. **[Social engineering](/phishing/social-engineering-guide/)**: Teenagers can be manipulated through social pressure, fake promotions, and impersonation of friends whose accounts have been compromised. "If a friend's account sends you a message that seems weird -- asking for money, asking you to click something, asking for personal information -- that account might be hacked. Contact your friend through a different method to check."
 
@@ -97,7 +97,7 @@ If your partner manages shared financial accounts, makes online purchases, or ac
 **Priority topics**:
 
 1. **[Recognizing phishing emails](/phishing/recognize-phishing/)**: Walk through the red flags together using real examples from your spam folder.
-2. **[Verification habits](/phishing/verify-suspicious-messages/)**: Agree on a shared approach to unexpected requests, especially those involving money or account credentials.
+2. **Verification habits**: Agree on a shared approach to unexpected requests, especially those involving money or account credentials.
 3. **Password management**: Set up a shared password manager where both partners can access credentials for shared accounts. PanicVault uses the KDBX format, which allows a shared database on iCloud Drive or Google Drive that both partners can access on their own devices.
 
 **Approach**:
@@ -128,7 +128,7 @@ Rather than training each family member individually, consider a family security
 
 1. **Share a recent example** of a phishing attempt (from your own inbox or from news reports). Walk through what made it convincing and how to spot it.
 
-2. **Set up the [family code word](/phishing/family-code-word/)**. Choose it together. Practice it. Make sure everyone understands when and how to use it.
+2. **Set up the [family code word](/phishing/deepfake-voice-scams/)**. Choose it together. Practice it. Make sure everyone understands when and how to use it.
 
 3. **Install password managers** on everyone's devices. PanicVault for Apple devices makes this straightforward -- one database on iCloud Drive or Google Drive, accessible on every family member's iPhone, iPad, and Mac with biometric authentication.
 
@@ -144,7 +144,7 @@ Security training is not a one-time event. Revisit the conversation:
 
 - **Quarterly**: A brief check-in. "Has anyone received any suspicious messages lately? Let me show you a new scam that is going around."
 - **After major incidents**: When a large [data breach](/data-breaches/) makes the news, use it as a prompt to check whether family members' accounts are affected and to reinforce good habits.
-- **When new threats emerge**: [AI-powered phishing](/phishing/ai-powered-phishing/), [QR code scams](/phishing/qr-code-scams/), new [smishing](/phishing/smishing/) tactics -- share these with the family as they become relevant.
+- **When new threats emerge**: [AI-powered phishing](/trends/ai-phishing-effectiveness/), [QR code scams](/phishing/qr-code-scams/), new [smishing](/phishing/smishing/) tactics -- share these with the family as they become relevant.
 
 ## Setting Up Technical Defenses for Your Family
 
@@ -188,13 +188,13 @@ It will happen eventually. When it does:
 
 ## Your Family's Digital Security Is a Shared Responsibility
 
-Training your family to spot scams is not about making them into cybersecurity experts. It is about giving them simple, practical habits that protect them from the most common threats. A [family code word](/phishing/family-code-word/), a password manager, a healthy skepticism toward unexpected messages, and a trusted person to call when something seems wrong -- these four things provide a strong foundation.
+Training your family to spot scams is not about making them into cybersecurity experts. It is about giving them simple, practical habits that protect them from the most common threats. A [family code word](/phishing/deepfake-voice-scams/), a password manager, a healthy skepticism toward unexpected messages, and a trusted person to call when something seems wrong -- these four things provide a strong foundation.
 
 The conversation about security is ongoing. Technology changes. Scams evolve. But the habits you build with your family today will adapt with them. Start the conversation. Set up the tools. Make it safe to ask for help. That is how families stay safe online.
 
 ## Related Articles
 
-- [The Family Code Word: Protecting Against Voice Clone Scams](/phishing/family-code-word/)
+- [Deepfake Voice Cloning Scams: How They Work](/phishing/deepfake-voice-scams/)
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
 - [Tech Support Scams: How to Recognize and Avoid Them](/phishing/tech-support-scams/)
 - [What Is Social Engineering? Comprehensive Guide](/phishing/social-engineering-guide/)

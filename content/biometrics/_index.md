@@ -61,7 +61,7 @@ The strongest approach is combining both: use biometrics for convenient daily ac
 
 ## Real-World Risks and Limitations
 
-Understanding [whether biometrics can be hacked](/biometrics/can-biometrics-be-hacked/) requires distinguishing between theoretical attacks and practical threats. Researchers have demonstrated spoofing attacks against fingerprint sensors using high-resolution molds and against facial recognition systems using 3D-printed masks. These attacks are real, but they require physical access to the target device, significant preparation, and often do not work against current-generation hardware with liveness detection.
+Understanding [whether biometrics can be hacked](/biometrics/safer-than-passwords/) requires distinguishing between theoretical attacks and practical threats. Researchers have demonstrated spoofing attacks against fingerprint sensors using high-resolution molds and against facial recognition systems using 3D-printed masks. These attacks are real, but they require physical access to the target device, significant preparation, and often do not work against current-generation hardware with liveness detection.
 
 The more practical risks are contextual. A coercive situation -- someone physically forcing you to unlock your device with your face or finger -- bypasses biometric security entirely. This is why Apple includes mechanisms to quickly disable biometric unlock: pressing the side button five times on an iPhone triggers the Emergency SOS screen and requires the passcode for next unlock. Being aware of these mechanisms is part of a complete biometric security posture.
 
@@ -103,7 +103,6 @@ This silo covers every aspect of biometric security relevant to password managem
 
 - **[Face ID vs. Touch ID: Which Is More Secure?](/biometrics/face-id-vs-touch-id/)** -- A detailed comparison of Apple's two biometric systems, including accuracy, security architecture, and practical differences.
 - **[How Biometrics Protect Your Password Vault](/biometrics/biometric-vault-protection/)** -- The technical architecture behind biometric vault unlock, from Secure Enclave key storage to encrypted key release.
-- **[Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)** -- An honest assessment of spoofing attacks, liveness detection, and the real threat landscape for biometric security.
 - **[Biometric Unlock: Convenience vs. Security](/biometrics/convenience-vs-security/)** -- Why biometric convenience does not mean compromised security, and how it actually strengthens your overall posture.
 - **[How Face ID Technology Actually Works](/biometrics/how-face-id-works/)** -- Deep dive into the TrueDepth camera system, infrared dot projection, neural engine processing, and the mathematics of facial recognition.
 - **[Why Biometrics Are Safer Than Passwords Alone](/biometrics/safer-than-passwords/)** -- The case for biometric authentication as a security upgrade, with data on password breach rates and biometric system reliability.

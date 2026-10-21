@@ -35,7 +35,7 @@ Building a business by yourself means wearing every hat, including the security 
 
 ### Small Teams
 
-The moment you add a second person to your business, credential sharing becomes a challenge. How do you give a contractor access to your social media accounts without emailing them a password? How do you revoke that access when the engagement ends? [Secure password sharing for small teams](/business/small-team-sharing/) addresses these real-world scenarios with practical solutions that do not require enterprise software.
+The moment you add a second person to your business, credential sharing becomes a challenge. How do you give a contractor access to your social media accounts without emailing them a password? How do you revoke that access when the engagement ends? [Secure password sharing for small teams](/password-managers/shared-password-vault/) addresses these real-world scenarios with practical solutions that do not require enterprise software.
 
 ### Remote Workers
 
@@ -43,7 +43,7 @@ Remote and distributed work has become the default for many small businesses and
 
 ### Developers and Technical Freelancers
 
-If you build software or manage infrastructure for clients, you handle some of the most sensitive credentials that exist: database passwords, API keys, server access, deployment tokens. [Managing client passwords as a developer](/business/client-passwords/) provides a framework for handling these credentials responsibly, including separation of concerns, rotation practices, and secure handoff protocols.
+If you build software or manage infrastructure for clients, you handle some of the most sensitive credentials that exist: database passwords, API keys, server access, deployment tokens. [Managing client credentials as a freelancer or developer](/business/freelancers/) provides a framework for handling these credentials responsibly, including separation of concerns, rotation practices, and secure handoff protocols.
 
 ### Content Creators
 
@@ -127,7 +127,7 @@ With all your accounts now in a password manager, systematically enable [two-fac
 
 ### Step 6: Establish Sharing Procedures
 
-If you work with anyone else -- employees, contractors, virtual assistants -- establish clear procedures for how credentials are shared, who has access to what, and how access is revoked. The [small team sharing guide](/business/small-team-sharing/) and [contractor handoff guide](/business/contractor-handoffs/) cover these scenarios in detail.
+If you work with anyone else -- employees, contractors, virtual assistants -- establish clear procedures for how credentials are shared, who has access to what, and how access is revoked. The [shared password vault guide](/password-managers/shared-password-vault/) and [contractor handoff guide](/business/contractor-handoffs/) cover these scenarios in detail.
 
 ### Step 7: Document and Review
 
@@ -139,9 +139,8 @@ Each article in this section addresses a specific business password management s
 
 - **[Password Management for Freelancers](/business/freelancers/)** -- Organizing credentials, managing client accounts, and protecting your livelihood
 - **[How Solo Entrepreneurs Should Manage Passwords](/business/solo-entrepreneurs/)** -- The unique challenges of being your own IT department
-- **[Secure Password Sharing for Small Teams](/business/small-team-sharing/)** -- Practical methods for sharing credentials without email or sticky notes
+- **[Shared Password Vault: How It Works & Best Options](/password-managers/shared-password-vault/)** -- Practical methods for sharing credentials without email or sticky notes
 - **[Password Security for Remote Workers](/business/remote-workers/)** -- Staying secure when your office is wherever you open your laptop
-- **[How to Manage Client Passwords as a Developer](/business/client-passwords/)** -- Frameworks for handling the most sensitive credentials responsibly
 - **[Password Compliance: HIPAA, PCI DSS for Small Business](/business/compliance/)** -- Meeting regulatory requirements without enterprise budgets
 - **[Why Every Small Business Needs a Password Manager](/business/why-businesses-need-one/)** -- The case for making this your first security investment
 - **[How to Create a Password Policy for Your Business](/business/password-policy/)** -- A practical template that people will actually follow

@@ -153,7 +153,7 @@ Data sovereignty means:
 - **You decide how long your data is retained** -- not a vendor's data retention policy, but your own.
 - **You can leave at any time** -- without penalty, without data loss, without a degraded experience.
 
-[Proprietary password managers](/keepass/vs-proprietary/) often claim to offer these things, but the practical reality falls short. True data sovereignty requires an open data format and infrastructure you control. The KeePass ecosystem with bring-your-own-cloud is one of the few password management approaches that delivers both.
+[Proprietary password managers](/keepass/data-portability/) often claim to offer these things, but the practical reality falls short. True data sovereignty requires an open data format and infrastructure you control. The KeePass ecosystem with bring-your-own-cloud is one of the few password management approaches that delivers both.
 
 ## Making the Switch
 

@@ -31,7 +31,7 @@ This is the most widespread PayPal phishing email. It exploits PayPal's legitima
 
 **What it looks like**: The email uses PayPal's logo, blue color scheme, and standard footer layout. It states that your account has been limited due to "unusual activity," "a policy violation," or "incomplete information." A large button says "Restore Account Access" or "Resolve Now." Some variants include a fabricated case or reference number to increase credibility.
 
-**The tell**: The sender address is not @paypal.com. Common fakes include service@paypal-security.com, noreply@paypal-support.net, or support@pp-limited.com. The button links to a [fake login page](/phishing/fake-login-pages/) on a lookalike domain. The email may address you as "Dear Customer" rather than by your full legal name, which PayPal always uses.
+**The tell**: The sender address is not @paypal.com. Common fakes include service@paypal-security.com, noreply@paypal-support.net, or support@pp-limited.com. The button links to a [fake login page](/phishing/password-manager-prevents-phishing/) on a lookalike domain. The email may address you as "Dear Customer" rather than by your full legal name, which PayPal always uses.
 
 **The reality**: PayPal does occasionally limit accounts, but when it does, you will see a notification when you log into paypal.com directly. PayPal will never ask you to restore access by entering your password, bank details, or Social Security number through an email link.
 
@@ -159,7 +159,7 @@ For a complete framework that applies to all phishing attempts, see our guide on
 
 ## Why a Password Manager Is Your Strongest Defense
 
-Awareness matters, but it is not enough. Even cautious people click phishing links when they are tired, rushed, or distracted -- and modern [AI-powered phishing](/phishing/ai-powered-phishing/) emails are nearly indistinguishable from the real thing. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated, technical layer of protection that works even when your judgment lapses.
+Awareness matters, but it is not enough. Even cautious people click phishing links when they are tired, rushed, or distracted -- and modern [AI-powered phishing](/trends/ai-phishing-effectiveness/) emails are nearly indistinguishable from the real thing. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated, technical layer of protection that works even when your judgment lapses.
 
 ### Domain Matching Stops Credential Theft
 
@@ -207,6 +207,5 @@ The attackers are banking on a split-second panic reaction -- the moment you see
 
 - [Bank of America Phishing Email Examples](/phishing/bank-of-america-phishing/)
 - [How to Recognize a Phishing Email](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)

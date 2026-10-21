@@ -36,7 +36,7 @@ This is the most common Microsoft phishing email and one of the most effective p
 
 **What it looks like**: The email mimics a system notification from Microsoft 365 or an IT department. It states that your password is about to expire and that you must change it immediately to avoid losing access to Outlook, Teams, OneDrive, and other Microsoft services. A large "Change Password Now" or "Keep Current Password" button is prominently displayed. Some variants include a countdown showing hours remaining.
 
-**The tell**: The sender address is not from @microsoft.com or @accountprotection.microsoft.com. Common fakes include noreply@microsoft365-security.com, admin@microsoftonline-alerts.net, or it-support@office365-admin.com. The "Keep Current Password" option is a particularly clever trick -- it does not exist in any real Microsoft password system, but many users click it hoping to avoid the hassle of a password change. Both buttons lead to the same [fake login page](/phishing/fake-login-pages/) that captures your credentials.
+**The tell**: The sender address is not from @microsoft.com or @accountprotection.microsoft.com. Common fakes include noreply@microsoft365-security.com, admin@microsoftonline-alerts.net, or it-support@office365-admin.com. The "Keep Current Password" option is a particularly clever trick -- it does not exist in any real Microsoft password system, but many users click it hoping to avoid the hassle of a password change. Both buttons lead to the same [fake login page](/phishing/password-manager-prevents-phishing/) that captures your credentials.
 
 **The reality**: Microsoft 365 password expiration prompts appear when you sign in to your account, not through email links. If your organization requires a password change, you will see the prompt during login at login.microsoftonline.com. Microsoft itself has moved away from mandatory password expiration policies, recommending against them in its security guidance. If you receive an email about an expiring password, verify with your IT department directly.
 
@@ -142,11 +142,11 @@ Before acting on any email that claims to be from Microsoft, apply this checklis
 
 6. **Evaluate the urgency**: Legitimate Microsoft communications do not threaten account deletion within 24 hours or demand immediate action through an email link.
 
-For a broader framework that applies to all phishing attempts, see our guide on [how to recognize phishing emails](/phishing/recognize-phishing/) and our [verification checklist for suspicious messages](/phishing/verify-suspicious-messages/).
+For a broader framework that applies to all phishing attempts, see our guide on [how to recognize phishing emails](/phishing/recognize-phishing/).
 
 ## Why a Password Manager Is Your Strongest Defense
 
-Understanding Microsoft phishing patterns is important, but awareness alone is not sufficient. Microsoft's own research shows that phishing attacks targeting Microsoft 365 credentials are the number one initial attack vector for data breaches. Modern [AI-powered phishing](/phishing/ai-powered-phishing/) generates emails with perfect grammar, accurate branding, and contextually relevant content that passes visual inspection. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated technical defense that works even when your attention fails.
+Understanding Microsoft phishing patterns is important, but awareness alone is not sufficient. Microsoft's own research shows that phishing attacks targeting Microsoft 365 credentials are the number one initial attack vector for data breaches. Modern [AI-powered phishing](/trends/ai-phishing-effectiveness/) generates emails with perfect grammar, accurate branding, and contextually relevant content that passes visual inspection. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated technical defense that works even when your attention fails.
 
 ### Domain Matching Stops Credential Theft
 
@@ -206,6 +206,5 @@ The attackers are counting on the rushed moment when you see "Your password expi
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
 - [Business Email Compromise: What It Is and How to Prevent It](/phishing/business-email-compromise/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

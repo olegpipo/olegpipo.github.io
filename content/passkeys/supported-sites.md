@@ -159,7 +159,7 @@ If you use devices across these platforms, you have several options:
 2. **Third-party password manager.** Use a password manager like 1Password, Bitwarden, or Dashlane that stores passkeys across platforms. More flexible but adds a dependency.
 3. **Platform-native with cross-device authentication.** Store passkeys in iCloud Keychain but use cross-device QR code authentication when needed on non-Apple devices.
 
-For a detailed comparison of how each platform handles passkeys, see [Google, Apple, Microsoft passkey implementations compared](/passkeys/google-apple-microsoft/). For practical cross-platform strategies, see [how to sync passkeys across devices](/passkeys/sync-across-devices/).
+For a detailed comparison of how each platform handles passkeys, see [Google, Apple, Microsoft passkey implementations compared](/passkeys/google-apple-microsoft/).
 
 ## What to Expect Going Forward
 
@@ -167,12 +167,11 @@ Passkey adoption follows a predictable pattern. The largest, most technically so
 
 Industry analysts project that by the end of 2027, a majority of the top 10,000 websites will support passkeys. For consumers, the practical implication is clear: start using passkeys where you can, keep your password manager for everything else, and check back regularly as support expands.
 
-The [password manager industry is adapting](/passkeys/password-managers-adapting/) to this reality by adding passkey management alongside traditional password storage. Whether you use iCloud Keychain, a third-party manager, or a KeePass-compatible tool, the goal is the same: a unified view of all your credentials, both passwords and passkeys, managed securely from a single interface.
+The [password manager industry is adapting](/passkeys/managing-both/) to this reality by adding passkey management alongside traditional password storage. Whether you use iCloud Keychain, a third-party manager, or a KeePass-compatible tool, the goal is the same: a unified view of all your credentials, both passwords and passkeys, managed securely from a single interface.
 
 ## Related Articles
 
 - [How to Set Up Passkeys on Apple Devices](/passkeys/setup-apple/)
 - [Passkey Adoption Statistics: How Fast Is It Moving?](/passkeys/adoption-statistics/)
-- [Why You Still Need a Password Manager in a Passkey World](/passkeys/still-need-password-manager/)
-- [How to Sync Passkeys Across Devices](/passkeys/sync-across-devices/)
+- [The Transition: Managing Passwords and Passkeys Together](/passkeys/managing-both/)
 - [Google, Apple, Microsoft Passkey Implementations Compared](/passkeys/google-apple-microsoft/)

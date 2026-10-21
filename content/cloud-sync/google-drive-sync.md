@@ -33,7 +33,7 @@ Google's terms of service grant them the right to process your files for service
 - **Automated scanning is irrelevant** -- Google scans files for malware and (in some cases) for terms-of-service violations. An encrypted KDBX file will not trigger these systems because its content is opaque binary data.
 - **Legal requests yield ciphertext** -- If Google is compelled to hand over your files in response to a court order, they can only provide the encrypted file. The recipient faces the same cryptographic barrier as any attacker.
 
-The bottom line: Google's access to the file is irrelevant because the file is encrypted before it reaches Google. This is the fundamental advantage of the pre-encrypted-file approach over storing passwords in a service where the provider manages the encryption. For a deeper analysis of cloud storage security for passwords, see our guide on [storing passwords in the cloud](/cloud-sync/passwords-in-cloud/).
+The bottom line: Google's access to the file is irrelevant because the file is encrypted before it reaches Google. This is the fundamental advantage of the pre-encrypted-file approach over storing passwords in a service where the provider manages the encryption. For a deeper analysis of cloud storage security for passwords, see our guide on [storing passwords in the cloud](/cloud-sync/end-to-end-encryption/).
 
 ## Encryption Layers
 

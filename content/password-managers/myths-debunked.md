@@ -29,7 +29,7 @@ Modern password managers are designed for mainstream users. They offer browser e
 
 The irony is that non-technical users benefit the most from password managers. People who describe themselves as "not tech-savvy" are the ones most likely to reuse passwords, choose weak ones, and fall for phishing attacks. A password manager addresses all three problems automatically: it generates strong, unique passwords and fills them only on legitimate websites, making phishing significantly harder to pull off.
 
-If you can use a web browser and install an app on your phone, you can use a password manager. Our [beginner's guide](/password-managers/beginners-guide/) walks through the entire setup process step by step.
+If you can use a web browser and install an app on your phone, you can use a password manager. Our [beginner's guide](/guides/first-time-setup/) walks through the entire setup process step by step.
 
 ## Myth 3: Saving Passwords in Your Browser Is Just as Good
 
@@ -77,7 +77,7 @@ Even if you have an exceptional memory, the math does not work. The average pers
 
 What actually happens when people rely on memory is predictable: they develop a system. A base password with site-specific modifications. A set of five or six passwords rotated across all accounts. Familiar words with predictable substitutions. These systems feel secure because they feel complex, but they are precisely the patterns that [credential stuffing tools and password cracking software](/password-security/password-cracking-explained/) are designed to exploit.
 
-Research into the [psychology of passwords](/password-security/psychology-of-passwords/) consistently shows that people overestimate the strength of their memorized passwords while underestimating the sophistication of modern attacks. The human brain is wired for patterns, associations, and meaning -- exactly the properties that make passwords guessable.
+Research into the psychology of passwords consistently shows that people overestimate the strength of their memorized passwords while underestimating the sophistication of modern attacks. The human brain is wired for patterns, associations, and meaning -- exactly the properties that make passwords guessable.
 
 A password manager does not replace your memory. It replaces the flawed systems your memory forces you to create. You memorize one strong master passphrase. The manager handles the other 99 passwords with true randomness that no human could replicate or remember.
 
@@ -117,7 +117,7 @@ For a detailed breakdown of the time savings, including estimates of hours saved
 
 Myths about password managers persist for several interconnected reasons. First, high-profile breaches of password management companies (notably LastPass in 2022) generate headlines that reinforce fears, even when the encrypted data remains secure. Second, the technology involves concepts -- encryption, zero-knowledge architecture, key derivation -- that are unfamiliar to most people, creating uncertainty that myths fill. Third, the status quo bias is powerful: people who have managed passwords in their heads for decades resist admitting that their approach is fundamentally flawed.
 
-The [psychology behind password behavior](/password-security/psychology-of-passwords/) explains much of this resistance. Humans tend to evaluate risks based on familiarity rather than probability. The familiar risk of [password reuse](/password-security/password-reuse-dangers/) feels manageable because it is known. The unfamiliar risk of trusting software with all your passwords feels dangerous because it is new.
+The psychology behind password behavior explains much of this resistance. Humans tend to evaluate risks based on familiarity rather than probability. The familiar risk of [password reuse](/password-security/password-reuse-dangers/) feels manageable because it is known. The unfamiliar risk of trusting software with all your passwords feels dangerous because it is new.
 
 But the evidence is clear. Password managers, when built on sound cryptographic principles and used with a strong master passphrase, provide dramatically better security than any manual approach. The myths above are understandable but incorrect, and the cost of believing them is measured in compromised accounts, stolen data, and hours of wasted time.
 
@@ -125,4 +125,4 @@ But the evidence is clear. Password managers, when built on sound cryptographic 
 
 If any of these myths were holding you back, consider what you are actually comparing. On one side: a tool that generates unique, random passwords for every account, stores them in an encrypted vault, fills them automatically, and alerts you when credentials are compromised. On the other side: your memory, a handful of reused passwords, and hope.
 
-The myths make the password manager sound risky. The reality makes everything else look risky by comparison. Whether you choose a cloud-based manager, a local-first tool like PanicVault, or an open-source solution, the important step is making the switch. You can read our [comparison with physical notebooks](/password-managers/vs-notebook/) if you are still weighing options, or start directly with our [beginner's guide](/password-managers/beginners-guide/) to get set up in minutes.
+The myths make the password manager sound risky. The reality makes everything else look risky by comparison. Whether you choose a cloud-based manager, a local-first tool like PanicVault, or an open-source solution, the important step is making the switch. You can read our [comparison with physical notebooks](/password-managers/vs-notebook/) if you are still weighing options, or start directly with our [beginner's guide](/guides/first-time-setup/) to get set up in minutes.

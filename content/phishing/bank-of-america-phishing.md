@@ -35,7 +35,7 @@ This is the most prevalent Bank of America scam email. It exploits the fear that
 
 **What it looks like**: The email uses Bank of America's logo, brand colors, and a layout that closely mirrors genuine BofA alerts. It states that unusual activity has been detected and that your account has been temporarily limited or locked. A prominent button says "Verify Your Identity" or "Review Activity Now."
 
-**The tell**: The sender's domain does not end in bankofamerica.com. Common fakes include addresses like `security@bankofamerica-alerts.com`, `noreply@bofasecure.net`, or `alerts@boa-online.com`. The "Verify" button links to a [fake login page](/phishing/fake-login-pages/) on a lookalike domain designed to capture your credentials.
+**The tell**: The sender's domain does not end in bankofamerica.com. Common fakes include addresses like `security@bankofamerica-alerts.com`, `noreply@bofasecure.net`, or `alerts@boa-online.com`. The "Verify" button links to a [fake login page](/phishing/password-manager-prevents-phishing/) on a lookalike domain designed to capture your credentials.
 
 **The reality**: Bank of America does send genuine fraud alerts, but they direct you to sign in through the official app or website -- they never ask you to enter credentials through an email link. If you receive a suspicious activity alert, open the Bank of America app directly or navigate to bankofamerica.com yourself.
 
@@ -216,7 +216,7 @@ If you entered your credentials on a phishing site or shared sensitive informati
 
 ## Staying Ahead of BofA Phishing in 2026
 
-Bank of America phishing campaigns will continue to evolve. [AI-powered phishing](/phishing/ai-powered-phishing/) tools generate emails with perfect grammar, personalized details pulled from data breaches and social media, and branding that is indistinguishable from the real thing. The old advice to "look for spelling errors" is no longer sufficient.
+Bank of America phishing campaigns will continue to evolve. [AI-powered phishing](/trends/ai-phishing-effectiveness/) tools generate emails with perfect grammar, personalized details pulled from data breaches and social media, and branding that is indistinguishable from the real thing. The old advice to "look for spelling errors" is no longer sufficient.
 
 What does work is a layered defense:
 
@@ -231,7 +231,6 @@ The attackers are counting on a moment of panic -- the instant when you see "una
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [Online Banking Security: 10 Rules](/digital-privacy/online-banking-security/)

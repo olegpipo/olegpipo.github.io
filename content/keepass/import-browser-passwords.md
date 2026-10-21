@@ -298,7 +298,7 @@ Be cautious with this step. Only clear browser passwords after you are fully con
 
 Going forward, use KeePass to generate and store passwords for every new account. Install the browser extension for your KeePass application (KeePassXC Browser for KeePassXC, for example) and configure it for autofill. The goal is to establish KeePass as your single source of truth for all credentials.
 
-For users who are also migrating from a commercial password manager like LastPass, our [LastPass to KeePass migration guide](/keepass/migrate-from-lastpass/) covers that process in detail. And if you are new to password managers entirely, our [beginner's guide to password managers](/password-managers/beginners-guide/) provides the foundational concepts.
+For users who are also migrating from a commercial password manager like LastPass, our [LastPass to KeePass migration guide](/keepass/migrate-from-lastpass/) covers that process in detail. And if you are new to password managers entirely, our [beginner's guide to password managers](/guides/first-time-setup/) provides the foundational concepts.
 
 ## Conclusion
 

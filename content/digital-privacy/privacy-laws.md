@@ -178,5 +178,5 @@ Understanding these laws is not about becoming a legal expert. It is about knowi
 - [Remove Your Personal Information From Data Brokers](/digital-privacy/remove-personal-info/)
 - [The Complete Guide to Digital Privacy in 2026](/digital-privacy/privacy-guide/)
 - [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
-- [What Is End-to-End Encryption? Simple Explanation](/digital-privacy/e2e-encryption-explained/)
+- [End-to-End Encryption Explained](/cloud-sync/end-to-end-encryption/)
 - [Understanding Data Breaches and Their Impact](/data-breaches/)

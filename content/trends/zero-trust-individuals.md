@@ -109,7 +109,7 @@ In a zero trust model, every credential is treated as potentially compromised. T
 
 **Unique passwords for every account**: This is the most fundamental zero trust practice for credentials. If every password is unique, the compromise of one account cannot cascade to others. A [password manager](/password-managers/) makes this practical by generating and storing random passwords for every account.
 
-**Random generation, not human creation**: Human-created passwords are predictable, even when they feel creative. [AI models trained on breach data](/trends/ai-and-passwords/) can predict human-created passwords with alarming accuracy. Truly random generation -- 20+ character strings of mixed characters -- is the only reliable defense.
+**Random generation, not human creation**: Human-created passwords are predictable, even when they feel creative. AI models trained on breach data can predict human-created passwords with alarming accuracy. Truly random generation -- 20+ character strings of mixed characters -- is the only reliable defense.
 
 **Phishing-resistant authentication**: [Passkeys](/passkeys/) and hardware security keys verify both your identity and the identity of the service you are authenticating to. SMS-based [two-factor authentication](/two-factor-authentication/) is [increasingly inadequate](/trends/sms-otp-ban/).
 
@@ -179,7 +179,7 @@ The challenge with any security framework is sustainability. The most secure pra
 
 **Portable**: Your zero trust infrastructure should move with you. The open KDBX format used by PanicVault ensures your credential database works across [multiple applications and platforms](/keepass/). If you switch devices, operating systems, or password managers, your data moves with you.
 
-Zero trust is not a product you buy or a project you complete. It is a mindset you adopt and maintain. In the current [threat landscape](/trends/state-of-password-security/) -- with [AI-powered attacks](/trends/ai-and-passwords/), deepfake impersonation, and credential theft at scale -- it is the most effective framework for personal digital security.
+Zero trust is not a product you buy or a project you complete. It is a mindset you adopt and maintain. In the current [threat landscape](/trends/state-of-password-security/) -- with [AI-powered attacks](/trends/ai-phishing-effectiveness/), deepfake impersonation, and credential theft at scale -- it is the most effective framework for personal digital security.
 
 ## Related Articles
 

@@ -53,7 +53,7 @@ Bitwarden Premium costs $19.80 per year -- $1.65 per month, after the January 20
 
 This is the headline feature for most upgraders. Bitwarden Premium can store TOTP (Time-based One-Time Password) secrets and generate six-digit codes directly within your vault. When you fill a login, Bitwarden can automatically copy the current TOTP code to your clipboard.
 
-Without Premium, you need a separate authenticator app -- Google Authenticator, Authy, or similar -- to manage your [two-factor authentication](/two-factor-authentication/what-is-2fa/) codes. That means switching between two apps every time you log into a 2FA-protected account. With Premium, everything lives in one place.
+Without Premium, you need a separate authenticator app -- Google Authenticator, Authy, or similar -- to manage your [two-factor authentication](/two-factor-authentication/) codes. That means switching between two apps every time you log into a 2FA-protected account. With Premium, everything lives in one place.
 
 The convenience is real. If you have 2FA enabled on a dozen services (and you should), eliminating the app-switching friction is worth the cost for many users. The security trade-off -- storing both your password and your TOTP secret in the same vault -- is debatable among security professionals, but for most threat models, having 2FA enabled everywhere with a single-vault approach is far better than skipping 2FA because it is annoying.
 
@@ -90,7 +90,7 @@ Bitwarden Free supports basic 2FA for your Bitwarden account: a TOTP authenticat
 - **FIDO2/WebAuthn** hardware key support
 - **Duo** integration for enterprise-grade 2FA
 
-If you own a YubiKey or another [FIDO2 hardware key](/two-factor-authentication/what-is-2fa/) and want to use it to protect your Bitwarden vault itself (not just the sites stored within it), you need Premium. This is a meaningful security upgrade for users who consider their password vault their highest-value target -- which it is.
+If you own a YubiKey or another [FIDO2 hardware key](/two-factor-authentication/) and want to use it to protect your Bitwarden vault itself (not just the sites stored within it), you need Premium. This is a meaningful security upgrade for users who consider their password vault their highest-value target -- which it is.
 
 ### Priority Support
 

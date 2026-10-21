@@ -84,7 +84,7 @@ The closing section typically includes:
 
 ## Assessing Your Actual Risk
 
-After reading the notification, assess your risk based on what was exposed. Our guide to [what hackers steal in breaches](/data-breaches/what-hackers-steal/) provides the full hierarchy, but here is a quick assessment framework:
+After reading the notification, assess your risk based on what was exposed. Our [post-breach guide](/data-breaches/what-to-do-after-breach/) provides the full hierarchy, but here is a quick assessment framework:
 
 ### Low Risk
 
@@ -186,7 +186,6 @@ These measures do not prevent breaches at organizations you do business with. Bu
 ## Related Articles
 
 - [What to Do Immediately After a Data Breach](/data-breaches/what-to-do-after-breach/)
-- [What Information Hackers Steal in a Breach](/data-breaches/what-hackers-steal/)
 - [How to Freeze Your Credit After a Data Breach](/data-breaches/freeze-credit/)
 - [Identity Theft Recovery: Step-by-Step Guide](/data-breaches/identity-theft-recovery/)
 - [How to Set Up Identity Theft Monitoring](/data-breaches/monitoring-alerts/)

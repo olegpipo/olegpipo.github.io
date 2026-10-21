@@ -21,7 +21,7 @@ KeePass began in 2003 as an open-source password manager for Windows, created by
 
 When people refer to "KeePass" today, they might mean the original KeePass application, the KDBX file format, or the broader ecosystem of compatible apps that read and write KDBX files. This distinction matters because the format is not tied to any single application. You can create a KeePass database in one app, open it in another, and switch tools at any time without converting, exporting, or losing data.
 
-This openness is what sets KeePass apart from every proprietary password manager on the market. Your passwords are not trapped inside a vendor's ecosystem. They live in a file you own, protected by encryption you can verify, in a format that any developer can implement. For a thorough comparison of what this means in practice versus closed-source alternatives, see our article on [KeePass vs. proprietary password managers](/keepass/vs-proprietary/).
+This openness is what sets KeePass apart from every proprietary password manager on the market. Your passwords are not trapped inside a vendor's ecosystem. They live in a file you own, protected by encryption you can verify, in a format that any developer can implement. For a thorough comparison of what this means in practice versus closed-source alternatives, see our article on [data portability](/keepass/data-portability/).
 
 ## The KDBX Format Explained
 
@@ -71,7 +71,7 @@ When a proprietary password manager claims to use AES-256 encryption with zero-k
 
 With KeePass and its compatible applications, the source code is publicly available. Security researchers, cryptographers, and developers worldwide can -- and do -- review it. Vulnerabilities are found and fixed in public, with full transparency about what was wrong and how it was addressed. This collective scrutiny produces software that is more secure than any single company's internal review process could achieve.
 
-Our article on [open-source security](/keepass/open-source-security/) examines why this transparency model consistently produces more trustworthy software than closed-source alternatives. For a direct comparison of the security models, see [open-source versus proprietary password managers](/keepass/open-source-vs-proprietary/).
+Our article on [open-source security](/keepass/open-source-security/) examines why this transparency model consistently produces more trustworthy software than closed-source alternatives.
 
 ### No Vendor Lock-In
 
@@ -117,7 +117,7 @@ On iOS, apps like Strongbox, KeePassium, and PanicVault provide native experienc
 
 KeePassXC includes a companion browser extension for Chrome, Firefox, Edge, and other Chromium-based browsers. It communicates with the desktop application to provide autofill capabilities that work seamlessly with your browsing workflow.
 
-For a comprehensive overview of compatible applications organized by platform, see our [KeePass compatible apps guide](/keepass/compatible-apps/). Our broader [compatibility guide](/keepass/compatibility-guide/) covers interoperability considerations, including how to ensure your database works across different applications. For your phone, our guide to [KeePass on iOS](/keepass/keepass-ios/) compares the iPhone apps and shows how to move a database over from KeePass on Windows. If you use KeePassXC on desktop and need a mobile solution, see our guide to [KeePassXC on iOS: best alternatives](/keepass/keepassxc-ios-alternatives/).
+For a comprehensive overview of compatible applications organized by platform, see our [KeePass compatible apps guide](/keepass/compatible-apps/). For your phone, our guide to [KeePass on iOS](/keepass/keepass-ios/) compares the iPhone apps and shows how to move a database over from KeePass on Windows. If you use KeePassXC on desktop and need a mobile solution, see our guide to [KeePassXC on iOS: best alternatives](/keepass/keepassxc-ios-alternatives/).
 
 ## Migrating to KeePass
 
@@ -191,7 +191,7 @@ A KeePass database is one component of a comprehensive security approach. It wor
 
 Your master passphrase should follow the principles outlined in the [password security guide](/password-security/) -- a sequence of five or more random, unrelated words that provides high entropy while remaining memorable. The [zero-knowledge encryption](/password-managers/zero-knowledge-encryption/) model that KeePass embodies means your security depends entirely on the strength of this passphrase and the secrecy of any key file you use.
 
-For master passwords specifically, understanding how [password salting](/password-security/password-salt-explained/) works helps explain why the key derivation process in KDBX is designed the way it is. Salting ensures that even if two users choose the same master password, their encryption keys will differ, preventing precomputed attacks.
+For master passwords specifically, understanding how [password salting](/password-security/password-cracking-explained/) works helps explain why the key derivation process in KDBX is designed the way it is. Salting ensures that even if two users choose the same master password, their encryption keys will differ, preventing precomputed attacks.
 
 Two-factor authentication on the services stored in your vault adds a critical second layer. Even if an attacker somehow obtained a decrypted copy of your database, two-factor authentication on your email, banking, and other high-value accounts would block unauthorized access.
 

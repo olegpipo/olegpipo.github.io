@@ -178,7 +178,7 @@ During a visit:
 
 By now, they should be comfortable with AutoFill as part of their daily routine. This is when you can introduce:
 
-1. [Password generation](/guides/generate-strong-passwords/) for new accounts
+1. [Password generation](/password-managers/how-generators-work/) for new accounts
 2. [Organizing their vault](/guides/organize-vault/) into a few basic folders
 3. [2FA](/guides/setup-2fa/) on their email and banking accounts
 4. [Sharing passwords](/guides/share-with-family/) with you for emergency access

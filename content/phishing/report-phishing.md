@@ -150,7 +150,7 @@ After reporting, block the phone number on your device:
 
 ### FBI Internet Crime Complaint Center (IC3)
 
-File a report at **ic3.gov** for any internet-related crime, including phishing, [business email compromise](/phishing/business-email-compromise/), [romance scams](/phishing/romance-scams/), and [tech support scams](/phishing/tech-support-scams/). IC3 reports are analyzed and distributed to federal, state, and local law enforcement agencies.
+File a report at **ic3.gov** for any internet-related crime, including phishing, [business email compromise](/phishing/business-email-compromise/), [romance scams](/phishing/social-engineering-guide/), and [tech support scams](/phishing/tech-support-scams/). IC3 reports are analyzed and distributed to federal, state, and local law enforcement agencies.
 
 Provide as much detail as possible:
 
@@ -209,7 +209,6 @@ The entire process takes less than a minute. Over time, your reports contribute 
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [How to Verify Suspicious Emails, Texts, and Calls](/phishing/verify-suspicious-messages/)
 - [What Is Smishing? How to Spot SMS Phishing](/phishing/smishing/)
 - [QR Code Scams (Quishing): The Newest Phishing Threat](/phishing/qr-code-scams/)
 - [How to Train Your Family to Spot Scams](/phishing/train-family/)

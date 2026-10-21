@@ -157,7 +157,7 @@ Using a VPN alongside a [password manager](/password-managers/) is complementary
 
 A VPN is a useful tool for specific situations, particularly public Wi-Fi, travel, and ISP privacy. It is not a magic shield that makes you anonymous or protects you from all threats. The VPN marketing industry has dramatically oversold what VPNs do, creating expectations that no VPN can meet.
 
-If you use public Wi-Fi regularly, travel frequently, or care about preventing your ISP from tracking your browsing, a paid VPN from a reputable provider is a worthwhile investment. If you primarily use your [secured home network](/digital-privacy/secure-home-wifi/) and are already practicing good security hygiene -- strong passwords, [two-factor authentication](/two-factor-authentication/), [encrypted communications](/digital-privacy/e2e-encryption-explained/) -- a VPN is a nice-to-have, not a need-to-have.
+If you use public Wi-Fi regularly, travel frequently, or care about preventing your ISP from tracking your browsing, a paid VPN from a reputable provider is a worthwhile investment. If you primarily use your [secured home network](/digital-privacy/secure-home-wifi/) and are already practicing good security hygiene -- strong passwords, [two-factor authentication](/two-factor-authentication/), [encrypted communications](/cloud-sync/end-to-end-encryption/) -- a VPN is a nice-to-have, not a need-to-have.
 
 The most important thing is not to let a VPN give you a false sense of security. A VPN does not compensate for weak passwords, missing two-factor authentication, or clicking on phishing links. Get the fundamentals right first, then add a VPN if your situation calls for one.
 
@@ -166,5 +166,5 @@ The most important thing is not to let a VPN give you a false sense of security.
 - [How to Stay Safe on Public Wi-Fi](/digital-privacy/public-wifi-safety/)
 - [Travel Cybersecurity: Protect Your Accounts Abroad](/digital-privacy/travel-cybersecurity/)
 - [How to Secure Your Home Wi-Fi Network](/digital-privacy/secure-home-wifi/)
-- [What Is End-to-End Encryption? Simple Explanation](/digital-privacy/e2e-encryption-explained/)
+- [End-to-End Encryption Explained](/cloud-sync/end-to-end-encryption/)
 - [The Complete Guide to Digital Privacy in 2026](/digital-privacy/privacy-guide/)

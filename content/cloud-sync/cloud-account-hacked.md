@@ -43,7 +43,7 @@ At these rates, cracking a passphrase with 60 bits of entropy (roughly a 5-word 
 
 For a detailed explanation of how [KeePass encryption protects against brute-force attacks](/keepass/encryption-explained/), including how different key derivation settings affect cracking difficulty, see our encryption guide.
 
-**Delete or corrupt the file.** An attacker with write access to your cloud account can delete your database or overwrite it with garbage. This does not compromise your passwords, but it can deny you access if you have no backup. This is why [automatic backups](/cloud-sync/automatic-backup/) are essential.
+**Delete or corrupt the file.** An attacker with write access to your cloud account can delete your database or overwrite it with garbage. This does not compromise your passwords, but it can deny you access if you have no backup. This is why [automatic backups](/keepass/backup-database/) are essential.
 
 **Monitor future changes.** If the attacker maintains persistent access to your cloud account, they can download new versions of your database as you save changes. Each version is equally encrypted, but maintaining access gives them ongoing copies. They could also attempt to replace your database with a modified version, though HMAC verification would detect this.
 
@@ -116,7 +116,7 @@ If you know or suspect your cloud account has been compromised, take these steps
 9. **Consider changing your master passphrase** as a precaution, even if your current passphrase is strong. This ensures that even if the attacker devotes significant resources to brute-forcing the captured file, the passphrase they are targeting will no longer be the current one.
 10. **Change passwords for your most sensitive accounts** -- banking, primary email, anything with financial or identity implications. While your encrypted database protects these passwords, defense in depth means not relying solely on one layer.
 11. **Review and harden your cloud account security.** Consider switching to a provider with stronger security options, or enabling features like Apple's Advanced Data Protection. Evaluate whether a different [cloud provider](/cloud-sync/choose-your-cloud/) better fits your security needs.
-12. **Ensure backups are current and accessible.** Verify that your backup strategy is working and that you have offline copies of your database. See our [automatic backup guide](/cloud-sync/automatic-backup/) for backup best practices.
+12. **Ensure backups are current and accessible.** Verify that your backup strategy is working and that you have offline copies of your database. See our [backup guide](/keepass/backup-database/) for backup best practices.
 
 ## Prevention: Reducing the Risk of Cloud Account Compromise
 

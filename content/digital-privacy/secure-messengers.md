@@ -26,7 +26,7 @@ Before comparing individual apps, understand the four pillars that determine whe
 
 ### End-to-End Encryption (E2E)
 
-[End-to-end encryption](/digital-privacy/e2e-encryption-explained/) means only you and the recipient can read the messages. The service provider cannot decrypt them, even if compelled by a court order. E2E encryption should be enabled by default -- not hidden behind a "secret chat" mode most users never find.
+[End-to-end encryption](/cloud-sync/end-to-end-encryption/) means only you and the recipient can read the messages. The service provider cannot decrypt them, even if compelled by a court order. E2E encryption should be enabled by default -- not hidden behind a "secret chat" mode most users never find.
 
 ### Metadata Minimization
 
@@ -240,7 +240,7 @@ Securing your messenger is one piece of a larger privacy strategy. Your messagin
 ## Related Articles
 
 - [The Complete Guide to Digital Privacy](/digital-privacy/privacy-guide/)
-- [What Is End-to-End Encryption?](/digital-privacy/e2e-encryption-explained/)
+- [End-to-End Encryption Explained](/cloud-sync/end-to-end-encryption/)
 - [How to Secure Your Email Account](/digital-privacy/secure-email/)
 - [How to Secure Your Social Media Accounts](/digital-privacy/secure-social-media/)
 - [Parent's Guide to Children's Online Safety](/digital-privacy/children-online-safety/)

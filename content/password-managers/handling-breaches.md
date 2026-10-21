@@ -47,7 +47,7 @@ This means that even if an attacker steals the entire server-side database -- ev
 
 KDFs deliberately slow down the process of converting a password into an encryption key. This makes brute-force cracking expensive. The "iteration count" (for PBKDF2) or "memory cost" (for Argon2) determines how slow each guess is for an attacker.
 
-A well-configured KDF with a strong master password makes brute-force cracking infeasible even for well-funded attackers with specialized hardware. A poorly configured KDF with a weak master password can be cracked in hours. This is why your master password choice is arguably the most important security decision you make -- a topic covered in depth in our [master password guide](/password-managers/master-password-guide/).
+A well-configured KDF with a strong master password makes brute-force cracking infeasible even for well-funded attackers with specialized hardware. A poorly configured KDF with a weak master password can be cracked in hours. This is why your master password choice is arguably the most important security decision you make -- a topic covered in depth in our [master password guide](/guides/master-password/).
 
 ### What Attackers Get in a Vault Breach
 
@@ -133,7 +133,7 @@ Whether the breach affects a third-party service where you have an account or th
 
 ### If Your Password Manager Is Breached
 
-1. **Change your master password immediately.** Create a new, strong master password. Our [master password guide](/password-managers/master-password-guide/) covers the principles.
+1. **Change your master password immediately.** Create a new, strong master password. Our [master password guide](/guides/master-password/) covers the principles.
 
 2. **Rotate high-value credentials.** Starting with email, financial, and cloud storage accounts, change the passwords stored in your vault. Prioritize accounts that would cause the most damage if compromised.
 

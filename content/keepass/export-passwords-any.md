@@ -32,7 +32,7 @@ A KDBX file lives on your device. You control where it is stored, how it is back
 
 ### No Recurring Costs
 
-KeePass-compatible applications are free and open source. Once your passwords are in KDBX format, you never need to pay for access to them again. For a detailed comparison of open and proprietary approaches, see our [KeePass vs. proprietary](/keepass/vs-proprietary/) guide.
+KeePass-compatible applications are free and open source. Once your passwords are in KDBX format, you never need to pay for access to them again. For a detailed comparison of open and proprietary approaches, see our [data portability](/keepass/data-portability/) guide.
 
 ## Export Comparison Table
 

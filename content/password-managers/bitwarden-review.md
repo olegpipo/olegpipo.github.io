@@ -133,7 +133,7 @@ Bitwarden is the right choice for several distinct user profiles:
 - **Budget-conscious users** who want strong password management without any cost, or maximum features at minimal cost.
 - **Open-source advocates** who prioritize transparency and verifiable security over proprietary polish.
 - **Technical users and self-hosters** who want complete control over their data and infrastructure.
-- **Users switching from no password manager** who want a low-friction, zero-cost starting point. Our [beginner's guide](/password-managers/beginners-guide/) pairs well with Bitwarden's free tier.
+- **Users switching from no password manager** who want a low-friction, zero-cost starting point. Our [beginner's guide](/guides/first-time-setup/) pairs well with Bitwarden's free tier.
 - **Families on a budget** who need a shared password management solution at the lowest possible price.
 
 ## Who Should Look Elsewhere

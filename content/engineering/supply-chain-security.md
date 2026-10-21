@@ -89,7 +89,7 @@ Here is the argument that outlives every control on this page.
 
 Suppose all of it fails. Suppose we are compromised, or negligent, or acquired by someone with different values. What is your exposure? Your vault is a **standard KDBX 4 file**, sitting in your own storage, encrypted with standard algorithms, readable by KeePassXC, KeePassDX, and a dozen other independent implementations written by people who have never met us. You are not locked in. You never were.
 
-That is the deepest supply chain control we can offer you, and it is the one that does not depend on you believing anything we say: [the open format](/keepass/) means your data's security does not ultimately rest on our integrity. Every other vendor asks you to trust their process. We ask you to check ours -- and then hand you the door key regardless, which is the whole point of [open standards over proprietary lock-in](/keepass/open-source-vs-proprietary/).
+That is the deepest supply chain control we can offer you, and it is the one that does not depend on you believing anything we say: [the open format](/keepass/) means your data's security does not ultimately rest on our integrity. Every other vendor asks you to trust their process. We ask you to check ours -- and then hand you the door key regardless, which is the whole point of [open code and open formats](/keepass/open-source-security/).
 
 Read next: [platform hardening on iOS and macOS](/engineering/ios-app-hardening/), [cryptographic engineering](/engineering/cryptographic-engineering/), or the [secure development lifecycle](/engineering/secure-development-lifecycle/).
 

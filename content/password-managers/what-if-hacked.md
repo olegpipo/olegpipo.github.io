@@ -50,7 +50,7 @@ Here is how this protects you in a breach scenario:
 ### The Encryption Pipeline
 
 1. You enter your master password on your device.
-2. A key derivation function (KDF) -- such as Argon2, bcrypt, or PBKDF2 -- transforms your master password into an encryption key. The KDF uses a unique [salt](/password-security/password-salt-explained/) for each user, ensuring that identical master passwords produce different encryption keys.
+2. A key derivation function (KDF) -- such as Argon2, bcrypt, or PBKDF2 -- transforms your master password into an encryption key. The KDF uses a unique [salt](/password-security/password-cracking-explained/) for each user, ensuring that identical master passwords produce different encryption keys.
 3. Your vault is encrypted with AES-256 using this derived key.
 4. The encrypted vault (and only the encrypted vault) is stored on the provider's servers or synced between your devices.
 5. The provider never sees your master password, the derived key, or the decrypted vault contents.

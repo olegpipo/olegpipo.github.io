@@ -221,8 +221,7 @@ For detailed information on structuring your overall approach to business passwo
 
 ## Related Articles
 
-- [Secure Password Sharing for Small Teams](/business/small-team-sharing/)
-- [How to Manage Client Passwords as a Developer](/business/client-passwords/)
+- [Shared Password Vault: How It Works & Best Options](/password-managers/shared-password-vault/)
 - [How to Create a Password Policy for Your Business](/business/password-policy/)
 - [Password Management for Freelancers](/business/freelancers/)
 - [Cloud Sync & Storage for Password Databases](/cloud-sync/)

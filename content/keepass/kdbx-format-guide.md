@@ -67,7 +67,7 @@ In KDBX 3.1, the key derivation function is always AES-KDF: the composite key is
 
 KDBX 4.0 introduced a **KDF parameters** field that stores a VariantDictionary -- a flexible key-value structure that can describe any key derivation function. This is how KDBX 4.0 supports Argon2d and Argon2id alongside AES-KDF. The dictionary stores the algorithm UUID plus its specific parameters (memory cost, iteration count, parallelism, salt).
 
-The move to Argon2 was significant. AES-KDF is CPU-bound and can be accelerated with GPUs and custom hardware. Argon2 is memory-hard, meaning it requires substantial RAM per computation, which dramatically increases the cost of parallel brute-force attacks. This is the same principle discussed in our guide on [password salting](/password-security/password-salt-explained/).
+The move to Argon2 was significant. AES-KDF is CPU-bound and can be accelerated with GPUs and custom hardware. Argon2 is memory-hard, meaning it requires substantial RAM per computation, which dramatically increases the cost of parallel brute-force attacks. This is the same principle discussed in our guide on [password salting](/password-security/password-cracking-explained/).
 
 ### Encryption IV
 

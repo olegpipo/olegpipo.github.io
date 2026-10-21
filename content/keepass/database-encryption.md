@@ -82,7 +82,7 @@ Key derivation functions solve this by making each guess deliberately expensive.
 
 ### The Role of Salt
 
-Before key derivation begins, a [random salt](/password-security/password-salt-explained/) is generated and stored in the database header. The salt is combined with your passphrase as input to the KDF. This serves two purposes:
+Before key derivation begins, a [random salt](/password-security/password-cracking-explained/) is generated and stored in the database header. The salt is combined with your passphrase as input to the KDF. This serves two purposes:
 
 1. **Prevents precomputation** -- Without a salt, an attacker could build a lookup table mapping common passphrases to their derived keys. The salt makes every database unique, even if two users choose the same passphrase.
 2. **Forces per-database attacks** -- Each database has a different salt, so an attacker cracking multiple databases gains no efficiency from having cracked one.

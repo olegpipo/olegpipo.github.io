@@ -159,7 +159,6 @@ The T-Mobile breach pattern carries an uncomfortable lesson: you cannot outsourc
 ## Related Articles
 
 - [What to Do Immediately After a Data Breach](/data-breaches/what-to-do-after-breach/)
-- [AT&T Data Breach: What You Need to Know](/data-breaches/att-data-breach/)
 - [Credential Stuffing: How One Password Compromises All](/data-breaches/credential-stuffing/)
 - [How to Freeze Your Credit (and Why You Should)](/data-breaches/freeze-credit/)
 - [The Biggest Data Breaches of 2025-2026](/data-breaches/biggest-breaches/)

@@ -36,7 +36,7 @@ This is the most prevalent Chase phishing email. It exploits the genuine fear th
 
 **What it looks like**: The email uses Chase's blue and white branding, the Chase octagon logo, and a layout that closely mirrors genuine Chase security alerts. It states that unusual or suspicious activity has been detected and that your account has been temporarily restricted for your protection. A prominent button says "Verify Your Identity" or "Review Activity Now." Some variants include a fabricated transaction -- a large purchase at a retailer, an ATM withdrawal in a foreign city, or an online transfer -- to increase alarm.
 
-**The tell**: The sender address is not from @chase.com. Common fakes include alerts@chase-secure.com, security@jpmorgan-alerts.net, noreply@chase-verify.com, or support@chaseonline-alert.com. The "Verify" button leads to a [fake login page](/phishing/fake-login-pages/) designed to capture your Chase username, password, and often your Social Security number or PIN on subsequent screens.
+**The tell**: The sender address is not from @chase.com. Common fakes include alerts@chase-secure.com, security@jpmorgan-alerts.net, noreply@chase-verify.com, or support@chaseonline-alert.com. The "Verify" button leads to a [fake login page](/phishing/password-manager-prevents-phishing/) designed to capture your Chase username, password, and often your Social Security number or PIN on subsequent screens.
 
 **The reality**: Chase does send genuine fraud alerts via email, text, and push notification, but these alerts direct you to verify transactions through the Chase app or by calling the number on the back of your card. Genuine Chase fraud alerts never ask you to enter your password, SSN, or PIN through an email link. If you receive a suspicious activity alert, open the Chase app directly and check your account activity.
 
@@ -147,7 +147,7 @@ For a broader framework that applies to all phishing attempts, see our guide on 
 
 ## Why a Password Manager Is Your Strongest Defense
 
-Technical defenses matter more than awareness alone. Even security-conscious people occasionally click links when they see "unauthorized wire transfer" and panic takes over. Modern [AI-powered phishing](/phishing/ai-powered-phishing/) generates banking emails with perfect grammar, accurate branding, and personalized details that are virtually impossible to distinguish from genuine Chase communications. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your critical thinking is overridden by fear.
+Technical defenses matter more than awareness alone. Even security-conscious people occasionally click links when they see "unauthorized wire transfer" and panic takes over. Modern [AI-powered phishing](/trends/ai-phishing-effectiveness/) generates banking emails with perfect grammar, accurate branding, and personalized details that are virtually impossible to distinguish from genuine Chase communications. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your critical thinking is overridden by fear.
 
 ### Domain Matching Stops Credential Theft
 
@@ -190,7 +190,7 @@ If you entered your credentials on a phishing site or shared sensitive informati
 
 ## Staying Ahead of Chase Phishing in 2026
 
-Chase phishing campaigns continue to evolve. [AI-powered phishing](/phishing/ai-powered-phishing/) tools generate emails with perfect grammar, personalized account details, and branding indistinguishable from genuine Chase communications. The old advice to "look for spelling errors" is obsolete.
+Chase phishing campaigns continue to evolve. [AI-powered phishing](/trends/ai-phishing-effectiveness/) tools generate emails with perfect grammar, personalized account details, and branding indistinguishable from genuine Chase communications. The old advice to "look for spelling errors" is obsolete.
 
 What works is a layered defense:
 

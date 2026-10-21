@@ -40,7 +40,7 @@ This is one of the most common Amazon phishing emails. It works because Amazon s
 
 **What it looks like**: The email mimics Amazon's standard order confirmation layout, complete with the Amazon logo, product image, order number, shipping details, and a total amount. The item is typically expensive -- electronics, jewelry, or luxury goods -- chosen specifically to trigger alarm if you did not place the order. The email includes a "Cancel This Order" or "View Order Details" button. Some versions skip the button and give a phone number to call "to cancel"; Amazon warns that order-confirmation scammers may try to get your payment details, talk you into installing software, or have you buy gift cards.
 
-**The tell**: The sender address is usually not @amazon.com. Common fakes include orders@amazon-orders.com, noreply@amazonsecurity.net, confirm@amaz0n-order.com (note the zero replacing the letter "o"), or shipping@amazon-shipping.info. Because a display name and even the From line can be faked, a correct-looking address is not proof on its own -- the Message Center check below is. The "Cancel Order" button leads to a [fake login page](/phishing/fake-login-pages/) designed to capture your Amazon credentials and, often, your credit card number on a second screen.
+**The tell**: The sender address is usually not @amazon.com. Common fakes include orders@amazon-orders.com, noreply@amazonsecurity.net, confirm@amaz0n-order.com (note the zero replacing the letter "o"), or shipping@amazon-shipping.info. Because a display name and even the From line can be faked, a correct-looking address is not proof on its own -- the Message Center check below is. The "Cancel Order" button leads to a [fake login page](/phishing/password-manager-prevents-phishing/) designed to capture your Amazon credentials and, often, your credit card number on a second screen.
 
 **The reality**: If you did not place an order, there is no order to cancel. Amazon does not require you to "cancel" unfamiliar orders through an email link or a phone number in an email. Log into amazon.com directly and check Your Orders -- as Amazon puts it, only legitimate purchases will appear in your order history. If the order is not there, the email was a scam.
 
@@ -168,7 +168,7 @@ Before acting on any email that claims to be from Amazon, run through this check
 
 7. **Verify independently**: Open the Amazon app or navigate to amazon.com directly. Any genuine order, delivery issue, or account notification will be visible within your account.
 
-For a broader framework that applies to all phishing attempts, see our guide on [how to recognize phishing emails](/phishing/recognize-phishing/) and our [step-by-step message verification process](/phishing/verify-suspicious-messages/).
+For a broader framework that applies to all phishing attempts, see our guide on [how to recognize phishing emails](/phishing/recognize-phishing/).
 
 ## Where to Forward Amazon Phishing Emails
 
@@ -193,7 +193,7 @@ For a complete guide on reporting phishing across all brands and platforms, see 
 
 ## Why a Password Manager Is Your Strongest Defense
 
-Knowing what Amazon phishing emails look like is valuable, but awareness alone is not a reliable defense. Even security-conscious people click links when they are tired, distracted, or rushing to check on a package. Modern [AI-powered phishing](/phishing/ai-powered-phishing/) emails arrive with perfect grammar, pixel-accurate branding, and realistic order details that make visual inspection increasingly unreliable. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your attention does not.
+Knowing what Amazon phishing emails look like is valuable, but awareness alone is not a reliable defense. Even security-conscious people click links when they are tired, distracted, or rushing to check on a package. Modern [AI-powered phishing](/trends/ai-phishing-effectiveness/) emails arrive with perfect grammar, pixel-accurate branding, and realistic order details that make visual inspection increasingly unreliable. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your attention does not.
 
 ### Domain Matching Stops Credential Theft
 
@@ -240,8 +240,6 @@ The attackers are counting on a moment of panic -- the instant you see "unauthor
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [What Is Smishing? How to Spot SMS Phishing](/phishing/smishing/)
-- [How to Verify Suspicious Messages](/phishing/verify-suspicious-messages/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

@@ -56,7 +56,7 @@ Each layer protects against a different failure scenario. KeePass encryption pro
 
 ## How KeePass Apps Use iCloud for Sync
 
-KeePass-compatible apps on iOS and macOS integrate with iCloud Drive in two primary ways. (Not sure which app to use? See our [KeePass compatibility guide](/keepass/compatibility-guide/) for a full breakdown.)
+KeePass-compatible apps on iOS and macOS integrate with iCloud Drive in two primary ways. (Not sure which app to use? See our [guide to KeePass apps for every platform](/keepass/compatible-apps/) for a full breakdown.)
 
 ### App-Specific iCloud Container
 
@@ -82,7 +82,7 @@ Whether you want to sync KeePass between iPhone and Mac or across your full set 
 
 1. **Enable iCloud Drive on all devices** -- Go to Settings > Apple ID > iCloud on each iPhone, iPad, and Mac. Make sure iCloud Drive is toggled on.
 2. **Save your `.kdbx` file to iCloud Drive** -- Place your iCloud Drive password database in a location visible to all your devices. On Mac, drag the file into iCloud Drive in Finder. On iPhone, use the Files app.
-3. **Open the file from your KeePass app on each device** -- Launch your [KeePass-compatible app](/keepass/compatibility-guide/) (PanicVault, KeePassXC, Strongbox, KeePassium, etc.) and use its file picker to open the database from iCloud Drive.
+3. **Open the file from your KeePass app on each device** -- Launch your [KeePass-compatible app](/keepass/compatible-apps/) (PanicVault, KeePassXC, Strongbox, KeePassium, etc.) and use its file picker to open the database from iCloud Drive.
 4. **Verify sync by making a test change** -- Add or edit a test entry on one device, wait 30 seconds, then open the database on another device. If the change appears, your KeePass iCloud sync is working.
 
 The detailed breakdown of each step follows.

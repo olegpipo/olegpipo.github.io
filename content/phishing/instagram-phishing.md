@@ -118,7 +118,7 @@ Before acting on any communication claiming to be from Instagram, follow these s
 
 5. **Verify independently**: Open the Instagram app directly and check for notifications, messages, or account restrictions. Any legitimate issue will be visible within the app itself.
 
-For a broader framework on evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/verify-suspicious-messages/).
+For a broader framework on evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/recognize-phishing/).
 
 ## Why a Password Manager Is Your Strongest Defense
 
@@ -153,7 +153,7 @@ For a complete guide on reporting across all platforms, see [how to report a phi
 
 ## Staying Ahead of Instagram Phishing in 2026
 
-Instagram phishing continues to evolve alongside the platform itself. Every new feature -- Meta Verified, broadcast channels, collaborative posts, AI-generated content labels -- creates a new pretext for phishing emails. [AI-powered phishing](/phishing/ai-powered-phishing/) makes these messages indistinguishable from legitimate Instagram communications, and scammers increasingly target specific users based on publicly available profile information.
+Instagram phishing continues to evolve alongside the platform itself. Every new feature -- Meta Verified, broadcast channels, collaborative posts, AI-generated content labels -- creates a new pretext for phishing emails. [AI-powered phishing](/trends/ai-phishing-effectiveness/) makes these messages indistinguishable from legitimate Instagram communications, and scammers increasingly target specific users based on publicly available profile information.
 
 Your strongest defense is a combination of verification habits and automated protection:
 
@@ -169,7 +169,6 @@ The attackers count on the panic of losing your account. When you know how to ve
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [How to Train Your Family to Spot Phishing](/phishing/train-family/)

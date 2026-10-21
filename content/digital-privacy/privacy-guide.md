@@ -63,7 +63,7 @@ Switching your default search engine takes ten seconds and has an immediate impa
 
 ## Communication Privacy
 
-The messages you send and receive contain some of your most personal information. Protecting this communication requires understanding what [end-to-end encryption](/digital-privacy/e2e-encryption-explained/) actually provides and choosing tools that implement it properly.
+The messages you send and receive contain some of your most personal information. Protecting this communication requires understanding what [end-to-end encryption](/cloud-sync/end-to-end-encryption/) actually provides and choosing tools that implement it properly.
 
 ### Messaging
 
@@ -130,7 +130,7 @@ Apple has positioned privacy as a core feature, and iOS provides substantial pri
 
 ### Smart Home
 
-Smart home devices deserve their own dedicated attention. See our guide to [securing your smart home devices](/digital-privacy/smart-home-security/) for comprehensive coverage.
+Smart home devices deserve their own dedicated attention. See our guide to [securing your home Wi-Fi and smart home devices](/digital-privacy/secure-home-wifi/).
 
 ## Network Privacy
 
@@ -176,7 +176,7 @@ Data brokers aggregate and sell your personal information. [Removing your data f
 
 ### Shopping Privacy
 
-[Holiday shopping](/digital-privacy/holiday-shopping-security/) and year-round online shopping create privacy risks through tracking cookies, saved payment information, and purchase history aggregation. Use privacy-focused payment methods, avoid saving cards on retail sites, and clear cookies after shopping sessions.
+Holiday shopping and year-round online shopping create privacy risks through tracking cookies, saved payment information, and purchase history aggregation. Use privacy-focused payment methods, avoid saving cards on retail sites, and clear cookies after shopping sessions.
 
 ### Travel Privacy
 
@@ -212,7 +212,7 @@ Privacy is not about perfection. It is about making deliberate, informed choices
 ## Related Articles
 
 - [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
-- [What Is End-to-End Encryption? Simple Explanation](/digital-privacy/e2e-encryption-explained/)
+- [End-to-End Encryption Explained](/cloud-sync/end-to-end-encryption/)
 - [Remove Your Personal Information From Data Brokers](/digital-privacy/remove-personal-info/)
 - [Privacy Laws Explained: GDPR, CCPA, DELETE Act](/digital-privacy/privacy-laws/)
 - [How to Secure Your Email Account](/digital-privacy/secure-email/)

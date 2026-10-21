@@ -245,7 +245,6 @@ All three apps read and write the same KDBX format. You can try all of them with
 ## Related Articles
 
 - [KeePass for iPhone & iOS](/keepass/keepass-ios/)
-- [KDBX Compatibility Guide](/keepass/compatibility-guide/)
 - [Every App That Opens KeePass Databases](/keepass/compatible-apps/)
 - [Strongbox vs KeePassium vs KeePassXC: KeePass Apps for Mac & iPhone](/compare/keepass-apps-apple/)
 - [PanicVault vs. KeePassXC](/compare/panicvault-vs-keepassxc/)

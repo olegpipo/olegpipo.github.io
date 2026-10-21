@@ -37,7 +37,7 @@ Gather these before beginning:
 
 1. **Your current TikTok password** (if you have one set). If you signed up with a phone number or social login and never created a password, you will be setting one for the first time -- see the section below on accounts without passwords.
 2. **Access to your phone number or email.** TikTok may require verification via SMS or email during the password change process.
-3. **Your password manager.** Open PanicVault or your preferred manager to [generate a strong password](/guides/generate-strong-passwords/) and save it immediately.
+3. **Your password manager.** Open PanicVault or your preferred manager to [generate a strong password](/password-managers/how-generators-work/) and save it immediately.
 4. **The TikTok app updated to the latest version.** Older versions may have slightly different menu paths.
 
 ## How to Change Your TikTok Password on Mobile App
@@ -157,12 +157,12 @@ After changing your password, enable 2FA for an extra layer of protection:
 4. Enter the verification code to confirm setup.
 5. Save any backup codes in your password manager as a secure note.
 
-For a comprehensive overview of 2FA across all your accounts, see our guide on [setting up 2FA on every service](/two-factor-authentication/setup-on-every-service/).
+For a comprehensive overview of 2FA across all your accounts, see our guide on [setting up 2FA on every service](/two-factor-authentication/priority-accounts/).
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 - [The Dangers of Password Reuse](/password-security/password-reuse-dangers/)
 - [What to Do After a Data Breach](/data-breaches/what-to-do-after-breach/)
-- [How to Set Up 2FA on Every Service](/two-factor-authentication/setup-on-every-service/)
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/)
 - [How to Audit Your Existing Passwords](/guides/audit-passwords/)

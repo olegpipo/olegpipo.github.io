@@ -26,8 +26,8 @@ In practice, digital privacy encompasses several domains:
 - **Account security** -- How you protect access to your online accounts through [strong passwords](/password-security/), [two-factor authentication](/two-factor-authentication/), and credential management
 - **Network security** -- How you protect the connections your devices make, from your [home Wi-Fi](/digital-privacy/secure-home-wifi/) to [public networks](/digital-privacy/public-wifi-safety/)
 - **Data minimization** -- Reducing the amount of personal information available about you through [data broker removal](/digital-privacy/remove-personal-info/) and thoughtful sharing habits
-- **Communication security** -- Protecting the content of your messages through [encryption](/digital-privacy/e2e-encryption-explained/), [secure email practices](/digital-privacy/secure-email/), and choosing [secure messengers](/digital-privacy/secure-messengers/)
-- **Physical device security** -- Securing the hardware that stores and accesses your data, including [smart home devices](/digital-privacy/smart-home-security/)
+- **Communication security** -- Protecting the content of your messages through [encryption](/cloud-sync/end-to-end-encryption/), [secure email practices](/digital-privacy/secure-email/), and choosing [secure messengers](/digital-privacy/secure-messengers/)
+- **Physical device security** -- Securing the hardware that stores and accesses your data, including [smart home devices](/digital-privacy/secure-home-wifi/)
 
 ## Securing Your Online Accounts
 
@@ -87,7 +87,7 @@ Regulations like GDPR, CCPA, and the DELETE Act give you legal rights over your 
 
 ### Understanding Encryption
 
-Encryption is the fundamental technology that protects your data, but it is often discussed in ways that obscure rather than clarify. [Our explanation of end-to-end encryption](/digital-privacy/e2e-encryption-explained/) uses plain language to describe what it is, how it works, why it matters, and what its limitations are.
+Encryption is the fundamental technology that protects your data, but it is often discussed in ways that obscure rather than clarify. [Our explanation of end-to-end encryption](/cloud-sync/end-to-end-encryption/) uses plain language to describe what it is, how it works, why it matters, and what its limitations are.
 
 ## Protecting Specific Groups
 
@@ -107,7 +107,7 @@ Some threats intensify during specific periods or situations. Being aware of the
 
 ### Holiday Shopping
 
-The holiday shopping season brings a spike in phishing attempts, fake retail sites, and payment fraud. [Protecting your accounts during holiday shopping](/digital-privacy/holiday-shopping-security/) covers the specific threats and countermeasures relevant to the busiest shopping period of the year.
+The holiday shopping season brings a spike in phishing attempts, fake retail sites, and payment fraud. Our [online banking security rules](/digital-privacy/online-banking-security/) cover the countermeasures -- unique passwords, transaction alerts, phishing awareness -- that matter most during the busiest shopping period of the year.
 
 ### Travel Abroad
 
@@ -119,7 +119,7 @@ The devices in your home and the networks they connect to are part of your digit
 
 ### Smart Home Devices
 
-Smart speakers, cameras, thermostats, and door locks create convenience but also create new attack surfaces and data collection points. [Securing your smart home devices](/digital-privacy/smart-home-security/) addresses both the security risks (can someone hack your camera?) and the privacy implications (what data is your smart speaker collecting?).
+Smart speakers, cameras, thermostats, and door locks create convenience but also create new attack surfaces and data collection points. [Securing your smart home devices](/digital-privacy/secure-home-wifi/) addresses both the security risks (can someone hack your camera?) and the privacy implications (what data is your smart speaker collecting?).
 
 ### Home Wi-Fi as a Foundation
 

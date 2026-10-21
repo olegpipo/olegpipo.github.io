@@ -105,7 +105,7 @@ There are several persistent misconceptions that keep people relying on browser-
 
 **"I only use one browser, so cross-platform does not matter."** Today, maybe. But people switch devices, change jobs, and adopt new platforms. Browser lock-in is a hidden cost that surfaces at the worst times.
 
-**"Setting up a password manager is too complicated."** Modern managers are designed for mainstream users. PanicVault, for example, requires only downloading a file, setting a master passphrase, and importing your existing passwords. Many managers can import directly from your browser's saved passwords, making migration a one-time task. For a walkthrough, see our [beginner's guide to password managers](/password-managers/beginners-guide/).
+**"Setting up a password manager is too complicated."** Modern managers are designed for mainstream users. PanicVault, for example, requires only downloading a file, setting a master passphrase, and importing your existing passwords. Many managers can import directly from your browser's saved passwords, making migration a one-time task. For a walkthrough, see our [beginner's guide to password managers](/guides/first-time-setup/).
 
 ## When Browser Saving Is Acceptable
 

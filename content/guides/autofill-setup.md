@@ -112,7 +112,7 @@ If you have both personal and work accounts for the same site (e.g., two Google 
 
 ### Use Strong, Generated Passwords
 
-Since AutoFill fills passwords for you, there is zero benefit to making passwords short or memorable. Use your password manager's generator to create long, random passwords. You will never type them manually. See our guide on [generating strong passwords](/guides/generate-strong-passwords/).
+Since AutoFill fills passwords for you, there is zero benefit to making passwords short or memorable. Use your password manager's generator to create long, random passwords. You will never type them manually. See our guide on [generating strong passwords](/password-managers/how-generators-work/).
 
 ### Keep Your Vault Unlocked (Selectively)
 

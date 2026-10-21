@@ -37,7 +37,7 @@ Once you have your password manager set up and your existing credentials importe
 
 A vault with 250 entries and no structure is almost as frustrating as no vault at all. Learn folder structures, tagging strategies, naming conventions, and search techniques that keep your credentials findable as your vault grows. Includes practical templates for personal and family vaults.
 
-### [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+### [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 
 Stop trying to invent passwords yourself. Your password manager's generator creates truly random credentials that are immune to dictionary attacks and pattern guessing. This guide covers how to configure your generator for different site requirements and how to handle sites with frustrating password rules.
 

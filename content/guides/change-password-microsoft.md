@@ -38,7 +38,7 @@ Gather a few things before you begin:
 
 1. **Your current password.** Microsoft requires your existing password to set a new one. If you have forgotten it, skip to the "What to Do If You Forgot Your Password" section below.
 2. **Access to your recovery method.** Make sure you can receive codes via your recovery email, phone number, or authenticator app. You may need to verify your identity during the process.
-3. **Your password manager ready.** Open PanicVault or your preferred password manager so you can [generate a strong replacement password](/guides/generate-strong-passwords/) and save it immediately.
+3. **Your password manager ready.** Open PanicVault or your preferred password manager so you can [generate a strong replacement password](/password-managers/how-generators-work/) and save it immediately.
 4. **A list of devices signed into your Microsoft account.** Changing your password signs you out everywhere, so be prepared to re-authenticate on your phone, tablet, Xbox, Windows PC, and any apps using your Microsoft account.
 
 ## How to Change Your Microsoft Password on Desktop (Web)
@@ -101,7 +101,7 @@ Tap **Save** to confirm. Update the password in your mobile password manager imm
 Your Microsoft account protects email, files, gaming accounts, and potentially your Windows login. The replacement password should be:
 
 - **At least 20 characters long.** Microsoft allows passwords up to 256 characters. There is no reason to use fewer than 20 when your password manager fills it automatically.
-- **Randomly generated.** Use your password manager's generator, not your imagination. Human-created passwords follow predictable patterns that attackers exploit. See our guide on [generating strong passwords](/guides/generate-strong-passwords/) for configuration details.
+- **Randomly generated.** Use your password manager's generator, not your imagination. Human-created passwords follow predictable patterns that attackers exploit. See our guide on [generating strong passwords](/password-managers/how-generators-work/) for configuration details.
 - **Unique to Microsoft.** Never reuse a password across services. If your Microsoft password matches your [Gmail password](/guides/change-password-gmail/) or [Facebook password](/guides/change-password-facebook/), a breach on one service compromises both. Learn more about [why password reuse is dangerous](/password-security/password-reuse-dangers/).
 - **Free of personal information.** No birth years, pet names, street addresses, or Xbox gamertags. These are the first things attackers try in targeted attacks.
 
@@ -132,7 +132,7 @@ If you cannot remember your current Microsoft password, you cannot use the stand
 
 If you do not have access to any of your recovery methods, Microsoft offers an account recovery form where you answer questions about your account to prove ownership. This process can take up to 24 hours.
 
-Going forward, store your Microsoft password in a password manager like PanicVault so you never face this situation again. Also consider setting up a [strong master password](/guides/master-password/) that you will remember, and configure [two-factor authentication](/two-factor-authentication/setup-on-every-service/) on your Microsoft account for an additional layer of protection.
+Going forward, store your Microsoft password in a password manager like PanicVault so you never face this situation again. Also consider setting up a [strong master password](/guides/master-password/) that you will remember, and configure [two-factor authentication](/two-factor-authentication/priority-accounts/) on your Microsoft account for an additional layer of protection.
 
 ## Additional Security Steps
 
@@ -146,8 +146,8 @@ After changing your Microsoft password, take a few extra minutes to harden your 
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 - [How to Audit Your Existing Passwords](/guides/audit-passwords/)
 - [What to Do After a Data Breach](/data-breaches/what-to-do-after-breach/)
-- [How to Set Up 2FA on Every Service](/two-factor-authentication/setup-on-every-service/)
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/)
 - [How to Create a Secure Master Password](/guides/master-password/)

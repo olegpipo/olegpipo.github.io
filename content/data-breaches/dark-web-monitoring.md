@@ -85,7 +85,7 @@ When a match is found, the service notifies you -- typically via email, app noti
 
 ### Strong Case For
 
-- **High-risk individuals**: People whose Social Security numbers, financial account numbers, or government IDs have been exposed in breaches -- particularly breaches involving [what hackers steal](/data-breaches/what-hackers-steal/) in the most sensitive categories
+- **High-risk individuals**: People whose Social Security numbers, financial account numbers, or government IDs have been exposed in breaches -- particularly breaches involving [what hackers steal](/data-breaches/what-to-do-after-breach/) in the most sensitive categories
 - **Identity theft victims**: If you have experienced identity theft before, ongoing monitoring provides early warning of repeat incidents
 - **Business owners and executives**: Individuals whose compromised credentials could lead to organizational damage
 - **People uncomfortable with DIY security**: If you are not going to regularly check Have I Been Pwned, review credit reports, or audit your passwords manually, a paid monitoring service that does it automatically provides genuine value
@@ -145,5 +145,4 @@ If you decide that monitoring is worthwhile for your situation, here is how to s
 - [Have I Been Pwned? Using Free Breach-Checking Tools](/data-breaches/have-i-been-pwned/)
 - [How to Set Up Identity Theft Monitoring](/data-breaches/monitoring-alerts/)
 - [What to Do Immediately After a Data Breach](/data-breaches/what-to-do-after-breach/)
-- [What Information Hackers Steal in a Breach](/data-breaches/what-hackers-steal/)
 - [The LastPass Breach: Lessons for Password Security](/data-breaches/lastpass-breach-lessons/)

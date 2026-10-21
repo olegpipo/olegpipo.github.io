@@ -126,7 +126,6 @@ Biometrics and hardware keys combine rather than compete. On a hardware-key vaul
 ## Related Articles
 
 - [Face ID vs. Touch ID: Which Is More Secure?](/biometrics/face-id-vs-touch-id/)
-- [Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)
 - [Biometric Unlock: Convenience vs. Security](/biometrics/convenience-vs-security/)
 - [Setting Up Biometric Unlock: Step-by-Step](/biometrics/setup-guide/)
 - [Why Biometrics Are Safer Than Passwords Alone](/biometrics/safer-than-passwords/)

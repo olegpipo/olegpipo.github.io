@@ -131,7 +131,7 @@ The pattern is clear: making secure behavior easier leads to more secure behavio
 
 3. **Practice your master password regularly.** Once a week, manually lock your vault and unlock it with your master password. This keeps the password in your memory and ensures you can access your vault if biometrics are unavailable.
 
-4. **Keep your devices updated.** Biometric security improvements are delivered through operating system updates. Running the latest version of iOS or macOS ensures you have the most current [anti-spoofing protections](/biometrics/can-biometrics-be-hacked/).
+4. **Keep your devices updated.** Biometric security improvements are delivered through operating system updates. Running the latest version of iOS or macOS ensures you have the most current [anti-spoofing protections](/biometrics/safer-than-passwords/).
 
 5. **Understand the emergency disable mechanism.** On iPhone, five rapid presses of the side button. On Mac, restarting the computer. Knowing this gives you the option to disable biometric unlock quickly in a situation where you are concerned about compelled access.
 
@@ -143,4 +143,3 @@ The bottom line is that biometric unlock on password vaults is one of those rare
 - [Why Biometrics Are Safer Than Passwords Alone](/biometrics/safer-than-passwords/)
 - [Face ID vs. Touch ID: Which Is More Secure?](/biometrics/face-id-vs-touch-id/)
 - [Setting Up Biometric Unlock: Step-by-Step](/biometrics/setup-guide/)
-- [Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)

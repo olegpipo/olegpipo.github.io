@@ -50,7 +50,7 @@ The email addresses you as "Dear Customer," "Dear Account Holder," "Dear User," 
 
 ### 7. Grammar and Spelling Errors
 
-Historically, poor grammar was the easiest way to spot phishing. That has changed. [AI-powered phishing](/phishing/ai-powered-phishing/) now produces emails with flawless language, so the absence of errors does not mean the email is safe. However, when you do spot awkward phrasing, inconsistent formatting, or unusual word choices, treat it as a red flag. Some attackers still operate without AI tools, and machine-translated phishing from non-English-speaking groups still contains telltale errors.
+Historically, poor grammar was the easiest way to spot phishing. That has changed. [AI-powered phishing](/trends/ai-phishing-effectiveness/) now produces emails with flawless language, so the absence of errors does not mean the email is safe. However, when you do spot awkward phrasing, inconsistent formatting, or unusual word choices, treat it as a red flag. Some attackers still operate without AI tools, and machine-translated phishing from non-English-speaking groups still contains telltale errors.
 
 ### 8. Too-Good-to-Be-True Offers
 
@@ -70,7 +70,7 @@ Any email that asks you to wire money, purchase gift cards, or transfer cryptocu
 
 ### 12. "Verify Your Account" Messages
 
-The email claims there has been suspicious activity on your account and asks you to "verify" or "confirm" your identity by clicking a link and logging in. The link leads to a [fake login page](/phishing/fake-login-pages/) that looks identical to the real site but sends your credentials directly to the attacker. If you are genuinely concerned about account security, open a new browser tab and navigate to the service's website yourself. Never log in through an email link.
+The email claims there has been suspicious activity on your account and asks you to "verify" or "confirm" your identity by clicking a link and logging in. The link leads to a [fake login page](/phishing/password-manager-prevents-phishing/) that looks identical to the real site but sends your credentials directly to the attacker. If you are genuinely concerned about account security, open a new browser tab and navigate to the service's website yourself. Never log in through an email link.
 
 ## What to Do If You Spot a Phishing Email
 
@@ -91,7 +91,7 @@ What AI has not changed are the behavioral red flags. Phishing still requires yo
 
 This is why the checklist above emphasizes what the email asks you to do, not just how it looks. A perfectly written email that demands you click a link to "verify your account" within 24 hours is no less dangerous because it has correct grammar. Focus on intent and behavior, and you will catch the threats that spell-checking alone will miss.
 
-For a comprehensive breakdown of AI phishing techniques and defenses, see [AI-Powered Phishing in 2026](/phishing/ai-powered-phishing/).
+For a comprehensive breakdown of AI phishing techniques and defenses, see [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/).
 
 ## Why a Password Manager Is Your Strongest Technical Defense
 
@@ -119,7 +119,6 @@ If any answer raises doubt, do not engage with the email. Go directly to the org
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [AI-Powered Phishing in 2026](/phishing/ai-powered-phishing/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
-- [Fake Login Pages](/phishing/fake-login-pages/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

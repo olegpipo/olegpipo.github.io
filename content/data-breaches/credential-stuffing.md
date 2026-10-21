@@ -148,4 +148,3 @@ Credential stuffing succeeds because of a single, solvable human behavior -- pas
 - [How to Check If Your Email Has Been Compromised](/data-breaches/check-email-compromised/)
 - [The LastPass Breach: Lessons for Password Security](/data-breaches/lastpass-breach-lessons/)
 - [How Data Breaches Happen: Anatomy of an Incident](/data-breaches/how-breaches-happen/)
-- [What Information Hackers Steal in a Breach](/data-breaches/what-hackers-steal/)

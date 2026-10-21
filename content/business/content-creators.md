@@ -161,7 +161,7 @@ Many content creators work with teams: editors, thumbnail designers, social medi
 
 1. **Create separate accounts when possible.** YouTube supports multiple channel managers with different permission levels. Instagram, Facebook, and most social platforms allow team or delegate access. Use these features to give team members their own credentials.
 
-2. **Use shared KeePass databases for credentials that must be shared.** When a platform supports only a single login (some podcast hosting dashboards, certain affiliate portals), create a shared .kdbx database containing only the credentials your team needs. See our [small team sharing guide](/business/small-team-sharing/) for detailed procedures.
+2. **Use shared KeePass databases for credentials that must be shared.** When a platform supports only a single login (some podcast hosting dashboards, certain affiliate portals), create a shared .kdbx database containing only the credentials your team needs. See our [shared password vault guide](/password-managers/shared-password-vault/) for detailed procedures.
 
 3. **Follow the principle of least privilege.** Your video editor does not need access to your AdSense account. Your social media manager does not need your Stripe login. Share only the credentials required for each person's specific role.
 
@@ -265,6 +265,6 @@ Your content is your business. Your accounts are your storefront. Your credentia
 
 - [Password Management for Freelancers](/business/freelancers/)
 - [How Solo Entrepreneurs Should Manage Passwords](/business/solo-entrepreneurs/)
-- [Secure Password Sharing for Small Teams](/business/small-team-sharing/)
+- [Shared Password Vault: How It Works & Best Options](/password-managers/shared-password-vault/)
 - [Two-Factor Authentication Guide](/two-factor-authentication/)
 - [Best Password Manager for iPhone](/apple/best-password-manager-iphone/)

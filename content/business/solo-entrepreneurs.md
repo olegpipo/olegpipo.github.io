@@ -160,7 +160,7 @@ The key principles:
 4. **Revoke promptly** -- when the engagement ends, change every password that was shared
 5. **Use shared KeePass databases** -- create a separate .kdbx file containing only the credentials a contractor needs, and share it through a [secure cloud sync](/cloud-sync/) method
 
-For detailed procedures, see our guides on [small team sharing](/business/small-team-sharing/) and [contractor handoffs](/business/contractor-handoffs/).
+For detailed procedures, see our guides on [shared password vaults](/password-managers/shared-password-vault/) and [contractor handoffs](/business/contractor-handoffs/).
 
 ## Practical Setup Guide
 
@@ -208,5 +208,5 @@ Your business depends on you, and your business accounts depend on your password
 - [Password Management for Freelancers](/business/freelancers/)
 - [Why Every Small Business Needs a Password Manager](/business/why-businesses-need-one/)
 - [How to Create a Password Policy for Your Business](/business/password-policy/)
-- [Secure Password Sharing for Small Teams](/business/small-team-sharing/)
+- [Shared Password Vault: How It Works & Best Options](/password-managers/shared-password-vault/)
 - [Password Security for Remote Workers](/business/remote-workers/)

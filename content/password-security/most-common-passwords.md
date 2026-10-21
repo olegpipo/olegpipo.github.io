@@ -68,7 +68,7 @@ To understand how attackers exploit these patterns systematically, read our guid
 
 `iloveyou` and `letmein` represent another category: short phrases that feel personal but are universally popular. Other passwords that consistently appear in broader top-100 lists include `starwars`, `batman`, `football`, `pokemon`, and whatever the current year happens to be. Pop culture references feel unique to the person choosing them, but millions of people have the same idea.
 
-The reasons people gravitate toward these patterns are deeply rooted in human cognition. Our article on [the psychology of passwords](/password-security/psychology-of-passwords/) explores why our brains are fundamentally bad at generating randomness, and why we keep making the same mistakes.
+The reasons people gravitate toward these patterns are deeply rooted in human cognition. Our article on [password fatigue](/password-managers/password-fatigue/) explains how the cognitive burden of hundreds of accounts drives people toward these shortcuts.
 
 ### Names and Dates
 

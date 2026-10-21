@@ -111,7 +111,7 @@ Your password manager needs to work everywhere you log in. If you use a Mac at h
 
 ### Usability
 
-A password manager that is difficult to use will not be used. Look for intuitive autofill, easy password generation, simple vault organization, and a clean interface. The setup process should be straightforward enough that you can complete it in minutes, not hours. Our [beginner's guide to password managers](/password-managers/beginners-guide/) walks through the setup process step by step.
+A password manager that is difficult to use will not be used. Look for intuitive autofill, easy password generation, simple vault organization, and a clean interface. The setup process should be straightforward enough that you can complete it in minutes, not hours. Our [beginner's guide to password managers](/guides/first-time-setup/) walks through the setup process step by step.
 
 ### Trust and Transparency
 
@@ -157,7 +157,7 @@ Your master password is the single most important password you will ever create.
 
 Generate a passphrase of five or six randomly selected, unrelated words. Use a method that ensures genuine randomness -- dice rolls with a wordlist (the Diceware method) or a password manager's built-in generator. A passphrase like "glacier trumpet canvas marble lantern" is both strong and memorable.
 
-Do not use a phrase from a book, song, or movie. Do not use personal information. Do not use fewer than four words. Our [master password guide](/password-managers/master-password-guide/) provides detailed instructions for creating and memorizing a master password that will protect your vault for years.
+Do not use a phrase from a book, song, or movie. Do not use personal information. Do not use fewer than four words. Our [master password guide](/guides/master-password/) provides detailed instructions for creating and memorizing a master password that will protect your vault for years.
 
 For background on why passphrases outperform traditional passwords, see the [password security guide](/password-security/) and its section on passphrase versus password tradeoffs.
 

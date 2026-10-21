@@ -38,7 +38,7 @@ Amazon accounts are high-value targets because they typically have payment metho
 Get ready before beginning the change:
 
 1. **Know your current password.** Check PanicVault or your password manager. You will need your current password to make the change.
-2. **Generate a strong new password.** Use your password manager's [password generator](/guides/generate-strong-passwords/) to create a random password of at least 16 characters.
+2. **Generate a strong new password.** Use your password manager's [password generator](/password-managers/how-generators-work/) to create a random password of at least 16 characters.
 3. **Have your phone or email accessible.** Amazon may send a verification code as part of the password change process, especially if you have two-step verification enabled.
 4. **Consider the impact on other Amazon services.** Your password change will affect every Amazon service -- Prime Video, Alexa, Kindle, Audible, Ring, and more. You may need to sign in again on each device.
 
@@ -133,7 +133,7 @@ Your Amazon password protects your financial information. Treat it accordingly.
 
 Amazon has specific password requirements: minimum 6 characters with at least one letter and one number or symbol. These minimums are dangerously low. Ignore them and use a password far exceeding these requirements.
 
-Use your password manager's [generator](/guides/generate-strong-passwords/) to create the password. For context on why random passwords are so much stronger than human-created ones, see our [strong password guide](/password-security/strong-password-guide/).
+Use your password manager's [generator](/password-managers/how-generators-work/) to create the password. For context on why random passwords are so much stronger than human-created ones, see our [strong password guide](/password-security/strong-password-guide/).
 
 ## Store It in a Password Manager
 
@@ -192,7 +192,7 @@ This is why it is critical to have your new password saved in your password mana
 
 After changing your Amazon password, take these additional measures:
 
-1. **Enable two-step verification (2SV).** Go to Login & security > Two-Step Verification > Get Started. Use an authenticator app rather than SMS. See our [2FA guide](/two-factor-authentication/setup-on-every-service/).
+1. **Enable two-step verification (2SV).** Go to Login & security > Two-Step Verification > Get Started. Use an authenticator app rather than SMS. See our [2FA guide](/two-factor-authentication/priority-accounts/).
 2. **Review your order history.** Check for any purchases you did not make. Report unauthorized orders to Amazon immediately.
 3. **Check your payment methods.** Verify that only your payment methods are on file. Remove any you do not recognize.
 4. **Review shipping addresses.** Ensure only your addresses are saved. Attackers sometimes add their own address.
@@ -202,8 +202,8 @@ After changing your Amazon password, take these additional measures:
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/) -- create random passwords that cannot be guessed or cracked
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/) -- create random passwords that cannot be guessed or cracked
 - [The Dangers of Password Reuse](/password-security/password-reuse-dangers/) -- why your Amazon password must be unique
 - [What to Do After a Data Breach](/data-breaches/what-to-do-after-breach/) -- step-by-step response when credentials are exposed
 - [Good Password Hygiene Habits](/password-security/password-hygiene/) -- daily practices that keep all your accounts secure
-- [How to Set Up 2FA on Every Service](/two-factor-authentication/setup-on-every-service/) -- add a second layer of protection to your accounts
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/) -- add a second layer of protection to your accounts

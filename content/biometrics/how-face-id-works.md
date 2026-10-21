@@ -152,6 +152,6 @@ Despite these limitations, Face ID remains the most secure consumer biometric au
 
 - [Face ID vs. Touch ID: Which Is More Secure?](/biometrics/face-id-vs-touch-id/)
 - [How Fingerprint Sensors Work](/biometrics/fingerprint-sensors/)
-- [Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)
+- [Is Face ID Safer Than a Password? Real Risks and Where Biometrics Win](/biometrics/safer-than-passwords/)
 - [How Biometrics Protect Your Password Vault](/biometrics/biometric-vault-protection/)
 - [Setting Up Biometric Unlock: Step-by-Step](/biometrics/setup-guide/)

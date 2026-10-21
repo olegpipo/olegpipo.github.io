@@ -35,7 +35,7 @@ The derived key encrypts your vault using AES-256, a symmetric encryption algori
 
 The critical point: the company stores only the encrypted vault. They do not store your master passphrase or the derived key. This means they cannot decrypt your vault, cannot read your passwords, and cannot provide access to anyone else -- including law enforcement with a warrant. They physically cannot comply with a request for your data in readable form because they do not possess the means to decrypt it.
 
-For a deeper technical exploration of this architecture, see our dedicated article on [zero-knowledge encryption](/password-managers/zero-knowledge-encryption/). To understand the cryptographic building blocks involved, our explanation of [password salting](/password-security/password-salt-explained/) covers how salting and hashing protect derived keys.
+For a deeper technical exploration of this architecture, see our dedicated article on [zero-knowledge encryption](/password-managers/zero-knowledge-encryption/). To understand the cryptographic building blocks involved, our explanation of [password salting](/password-security/password-cracking-explained/) covers how salting and hashing protect derived keys.
 
 ### What Zero-Knowledge Does Not Protect Against
 

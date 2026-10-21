@@ -7,7 +7,7 @@ draft: false
 silo: "Trends & Future"
 ---
 
-The relationship between privacy and security has always been close. In the age of AI, they are inseparable. Every piece of personal data that exists in a database, on a social media profile, or in a data broker's file is potential fuel for [AI-powered attacks](/trends/ai-and-passwords/). The more an attacker knows about you, the more effective their [phishing messages](/trends/ai-phishing-effectiveness/), the more accurate their password predictions, and the more convincing their [deepfake impersonations](/trends/deepfake-as-a-service/).
+The relationship between privacy and security has always been close. In the age of AI, they are inseparable. Every piece of personal data that exists in a database, on a social media profile, or in a data broker's file is potential fuel for [AI-powered attacks](/trends/ai-phishing-effectiveness/). The more an attacker knows about you, the more effective their [phishing messages](/trends/ai-phishing-effectiveness/), the more accurate their password predictions, and the more convincing their [deepfake impersonations](/trends/deepfake-as-a-service/).
 
 Privacy is not just a philosophical preference. In the [current authentication landscape](/trends/), it is a security measure.
 
@@ -34,7 +34,7 @@ Data brokers aggregate personal information from public records, commercial tran
 - Generate personalized social engineering attacks
 - Predict behavior, preferences, and potential vulnerabilities
 
-The [California DELETE Act](/trends/california-delete-act/) and similar legislation represent an attempt to give individuals control over this data. But the legislative response is slow relative to the pace of AI development.
+The [California DELETE Act](/digital-privacy/remove-personal-info/) and similar legislation represent an attempt to give individuals control over this data. But the legislative response is slow relative to the pace of AI development.
 
 ### Authentication Data as a Target
 
@@ -117,7 +117,7 @@ This is not just a privacy advantage -- it is a security architecture decision t
 
 **Audit your social media**: Review what is publicly visible on every platform. Restrict profile information, limit public posts, and consider whether each platform is worth the privacy trade-off.
 
-**Opt out of data brokers**: Services like DeleteMe, Privacy Duck, and Kanary help you remove your information from data broker databases. The [California DELETE Act](/trends/california-delete-act/) is making this process easier by creating a centralized deletion mechanism.
+**Opt out of data brokers**: Services like DeleteMe, Privacy Duck, and Kanary help you remove your information from data broker databases. The [California DELETE Act](/digital-privacy/remove-personal-info/) is making this process easier by creating a centralized deletion mechanism.
 
 **Review app permissions**: Audit the permissions granted to apps on your phone and computer. Revoke access to contacts, location, photos, and other sensitive data for apps that do not need it.
 
@@ -150,7 +150,7 @@ This is not just a privacy advantage -- it is a security architecture decision t
 Privacy regulation is evolving, but it is moving slower than the AI capabilities it seeks to govern:
 
 - **GDPR** (EU): Established comprehensive data protection rights but predated the current AI wave. Enforcement is ongoing but inconsistent.
-- **CCPA/CPRA** (California): Provides data access and deletion rights for California residents. The [DELETE Act](/trends/california-delete-act/) extends these rights specifically to data brokers.
+- **CCPA/CPRA** (California): Provides data access and deletion rights for California residents. The [DELETE Act](/digital-privacy/remove-personal-info/) extends these rights specifically to data brokers.
 - **AI-specific regulations** (EU AI Act): Beginning to address AI-specific privacy concerns, including training data governance and transparency requirements.
 - **State privacy laws** (US): A patchwork of state laws providing varying levels of protection. No federal privacy legislation equivalent to GDPR.
 
@@ -171,8 +171,7 @@ PanicVault embodies this approach for Apple users. Your passwords live in an enc
 
 ## Related Articles
 
-- [AI and Password Security: How ML Changes Authentication](/trends/ai-and-passwords/)
 - [How AI Makes Phishing 400% More Effective](/trends/ai-phishing-effectiveness/)
-- [The California DELETE Act: What It Means](/trends/california-delete-act/)
+- [Remove Your Personal Information From Data Brokers](/digital-privacy/remove-personal-info/)
 - [Zero Trust Security for Individuals](/trends/zero-trust-individuals/)
 - [Deepfake-as-a-Service: What It Means for Security](/trends/deepfake-as-a-service/)

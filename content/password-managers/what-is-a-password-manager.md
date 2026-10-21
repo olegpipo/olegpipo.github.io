@@ -49,7 +49,7 @@ The purpose of these functions is to create an asymmetry. When you type your mas
 
 ### Choosing a Strong Master Password
 
-Because the master password protects everything, it must be strong enough to withstand sustained offline attack. The recommended approach is a passphrase -- a sequence of 5 to 7 randomly chosen words -- rather than a traditional complex string. A six-word passphrase from a 7,776-word dictionary provides approximately 77.5 bits of [password entropy](/password-security/password-entropy/), which combined with a strong KDF like Argon2, puts brute-force attacks firmly out of reach. For detailed guidance on building an effective master passphrase, see our [master password guide](/password-managers/master-password-guide/).
+Because the master password protects everything, it must be strong enough to withstand sustained offline attack. The recommended approach is a passphrase -- a sequence of 5 to 7 randomly chosen words -- rather than a traditional complex string. A six-word passphrase from a 7,776-word dictionary provides approximately 77.5 bits of [password entropy](/password-security/password-entropy/), which combined with a strong KDF like Argon2, puts brute-force attacks firmly out of reach. For detailed guidance on building an effective master passphrase, see our [master password guide](/guides/master-password/).
 
 ## Zero-Knowledge Architecture
 
@@ -158,7 +158,7 @@ If the manager uses zero-knowledge architecture, a server breach exposes only en
 
 Adopting a password manager involves three steps:
 
-1. **Choose a manager** that fits your needs -- cloud-based for convenience, or offline for maximum control. Our [beginner's guide to password managers](/password-managers/beginners-guide/) walks through the decision process.
+1. **Choose a manager** that fits your needs -- cloud-based for convenience, or offline for maximum control. Our [beginner's guide to password managers](/guides/first-time-setup/) walks through the decision process.
 2. **Create a strong master passphrase** of at least six randomly chosen words. Write it down and store it in a physically secure location until you have committed it to memory.
 3. **Migrate your accounts gradually.** Start with your most critical accounts (email, banking, cloud storage), generate new unique passwords for each, and save them in the vault. Work through remaining accounts over the following weeks.
 

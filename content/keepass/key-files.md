@@ -181,7 +181,7 @@ This is not meant to scare you away from using key files. It is meant to emphasi
 ### Do
 
 - **Generate a purpose-built key file** using KeePassXC's built-in generator or a cryptographic random number generator. Do not repurpose an existing file unless you fully understand the risks.
-- **Use a strong master password alongside your key file.** A key file is a second factor, not a replacement for a strong [master password](/password-managers/master-password-guide/). Both factors should be strong independently.
+- **Use a strong master password alongside your key file.** A key file is a second factor, not a replacement for a strong [master password](/guides/master-password/). Both factors should be strong independently.
 - **Keep the key file physically separate from the database.** The separation is the entire point.
 - **Maintain multiple verified backups** in different physical locations.
 - **Test your recovery process** before you need it. Simulate a scenario where your primary key file is unavailable and verify that you can recover using a backup.

@@ -65,7 +65,7 @@ RFC 9106 gives two recommended profiles: a high-memory option (2 GiB, t=1, p=4) 
 
 So we do the unglamorous thing: we default to parameters at the strong end of what every supported device can complete reliably, we expose them so you can raise them, and we write down *why* -- because a vendor that quietly ships a 1-iteration, 16 MiB KDF while advertising "Argon2" has technically told the truth and practically given your vault away. Parameter choice is not a detail. It *is* the security of a stolen vault, and a commit that changes it is treated as a cryptographic change, reviewed as such by [Fable](/engineering/ai-code-audit-fable-5/), and tested as such.
 
-Your master password still has to carry its side of the bargain. Argon2 multiplies the cost of each guess; it cannot multiply zero. See [password entropy](/password-security/password-entropy/) for how much entropy your passphrase actually needs, and [password salting](/password-security/password-salt-explained/) for why the random salt in the KDBX header means no precomputed table can ever help an attacker.
+Your master password still has to carry its side of the bargain. Argon2 multiplies the cost of each guess; it cannot multiply zero. See [password entropy](/password-security/password-entropy/) for how much entropy your passphrase actually needs, and [password salting](/password-security/password-cracking-explained/) for why the random salt in the KDBX header means no precomputed table can ever help an attacker.
 
 ## Key Material: Lifetime and Zeroization
 

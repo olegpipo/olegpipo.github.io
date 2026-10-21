@@ -37,7 +37,7 @@ X accounts are frequently targeted because they provide a trusted platform for s
 Prepare the following before changing your X password:
 
 1. **Your current password.** X requires your existing password to set a new one. If you have forgotten it, see the password reset section below.
-2. **Your password manager.** Open PanicVault or your preferred manager so you can [generate a strong replacement](/guides/generate-strong-passwords/) and save it immediately.
+2. **Your password manager.** Open PanicVault or your preferred manager so you can [generate a strong replacement](/password-managers/how-generators-work/) and save it immediately.
 3. **Your recovery email and phone number.** Verify these are current in your X settings. You will need them if X prompts for verification or if you ever need to reset your password in the future.
 4. **A plan for 2FA.** X restricts SMS-based two-factor authentication to premium subscribers, so free users should set up TOTP (time-based one-time password) authentication. PanicVault and most password managers can generate TOTP codes, making this easy to configure during the same session.
 
@@ -110,7 +110,7 @@ X offers three 2FA methods, but only one is available to all users for free:
 4. Enter the code on X to confirm the setup.
 5. X provides **backup codes**. Save these in your password manager as a secure note. They are your recovery path if you lose access to your authenticator.
 
-For more details on configuring 2FA across all your accounts, see our guide on [setting up 2FA on every service](/two-factor-authentication/setup-on-every-service/).
+For more details on configuring 2FA across all your accounts, see our guide on [setting up 2FA on every service](/two-factor-authentication/priority-accounts/).
 
 ## What Makes a Strong X Password
 
@@ -152,8 +152,8 @@ After regaining access, check your account for unauthorized changes. Review your
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 - [The Dangers of Password Reuse](/password-security/password-reuse-dangers/)
-- [How to Set Up 2FA on Every Service](/two-factor-authentication/setup-on-every-service/)
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/)
 - [What to Do After a Data Breach](/data-breaches/what-to-do-after-breach/)
 - [How to Audit Your Existing Passwords](/guides/audit-passwords/)

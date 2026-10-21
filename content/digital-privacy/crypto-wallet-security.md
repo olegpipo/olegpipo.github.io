@@ -167,5 +167,5 @@ Cryptocurrency security is ultimately about understanding that you are your own 
 - [Digital Estate Planning: Prepare Your Passwords for Heirs](/digital-privacy/digital-estate-planning/)
 - [Online Banking Security: 10 Rules for Protection](/digital-privacy/online-banking-security/)
 - [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
-- [What Is End-to-End Encryption? Simple Explanation](/digital-privacy/e2e-encryption-explained/)
+- [End-to-End Encryption Explained](/cloud-sync/end-to-end-encryption/)
 - [Two-Factor Authentication Guide](/two-factor-authentication/)

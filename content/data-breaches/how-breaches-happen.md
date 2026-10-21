@@ -171,7 +171,6 @@ You cannot prevent breaches at organizations that hold your data. But you can li
 ## Related Articles
 
 - [The Biggest Data Breaches of 2025-2026](/data-breaches/biggest-breaches/)
-- [What Information Hackers Steal in a Breach](/data-breaches/what-hackers-steal/)
 - [Credential Stuffing: How One Password Compromises All](/data-breaches/credential-stuffing/)
 - [The LastPass Breach: Lessons for Password Security](/data-breaches/lastpass-breach-lessons/)
 - [What to Do Immediately After a Data Breach](/data-breaches/what-to-do-after-breach/)

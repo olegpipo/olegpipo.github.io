@@ -112,7 +112,7 @@ Remote teams need to share credentials regularly, and the temptation to use the 
 
 Every password shared through a chat message persists indefinitely in that service's history and is accessible to anyone who gains access to the workspace. For remote teams, this risk is amplified because the team's communication channels are the primary target for attackers who want to find shared credentials.
 
-Use shared [KeePass databases](/keepass/) synced through [cloud storage](/cloud-sync/) for ongoing credential sharing. For one-time sharing, use self-destructing encrypted messages. For detailed procedures, see our guide on [secure password sharing for small teams](/business/small-team-sharing/).
+Use shared [KeePass databases](/keepass/) synced through [cloud storage](/cloud-sync/) for ongoing credential sharing. For one-time sharing, use self-destructing encrypted messages. For detailed procedures, see our guide on [shared password vaults for small teams](/password-managers/shared-password-vault/).
 
 ### Remote Team Password Policies
 
@@ -176,7 +176,7 @@ Start with the highest-impact changes: install a password manager, enable 2FA on
 ## Related Articles
 
 - [Password Management for Freelancers](/business/freelancers/)
-- [Secure Password Sharing for Small Teams](/business/small-team-sharing/)
+- [Shared Password Vault: How It Works & Best Options](/password-managers/shared-password-vault/)
 - [How Solo Entrepreneurs Should Manage Passwords](/business/solo-entrepreneurs/)
 - [Two-Factor Authentication Guide](/two-factor-authentication/)
 - [Digital Privacy Fundamentals](/digital-privacy/)

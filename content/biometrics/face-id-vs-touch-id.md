@@ -132,5 +132,5 @@ The answer depends on your specific situation:
 - [How Face ID Technology Actually Works](/biometrics/how-face-id-works/)
 - [How Fingerprint Sensors Work](/biometrics/fingerprint-sensors/)
 - [How Biometrics Protect Your Password Vault](/biometrics/biometric-vault-protection/)
-- [Can Biometrics Be Hacked? Real Risks](/biometrics/can-biometrics-be-hacked/)
+- [Is Face ID Safer Than a Password? Real Risks and Where Biometrics Win](/biometrics/safer-than-passwords/)
 - [Setting Up Biometric Unlock: Step-by-Step](/biometrics/setup-guide/)

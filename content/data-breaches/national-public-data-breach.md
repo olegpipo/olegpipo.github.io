@@ -93,7 +93,7 @@ National Public Data was not unique. Thousands of data brokers operate in the Un
 
 Perhaps the most troubling aspect of this breach is that the vast majority of affected individuals never consented to National Public Data having their information. They never created an account, never agreed to terms of service, and never knew the company existed. Their data was compiled from public sources and aggregated into a comprehensive database without their direct involvement.
 
-This distinguishes the National Public Data breach from breaches at companies like [T-Mobile](/data-breaches/tmobile-data-breach/) or [Ticketmaster](/data-breaches/ticketmaster-data-breach/), where affected individuals at least had a customer relationship with the breached entity. Here, the victims had no relationship with the company and no ability to proactively protect their information.
+This distinguishes the National Public Data breach from breaches at companies like [T-Mobile](/data-breaches/tmobile-data-breach/) or [Ticketmaster](/data-breaches/biggest-breaches/), where affected individuals at least had a customer relationship with the breached entity. Here, the victims had no relationship with the company and no ability to proactively protect their information.
 
 ## Impact
 

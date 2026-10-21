@@ -84,7 +84,7 @@ KeePass inverts every one of these incentives. The software is free. The format 
 
 This matters in ways that are easy to overlook until they become urgent. Companies go bankrupt, get acquired, pivot their business model, or simply decide to discontinue a product. When a proprietary password manager shuts down, users face a scramble to export their data before the servers go dark -- assuming the export format even captures everything. When LastPass changed its free tier limitations, millions of users had to decide between paying or migrating on short notice.
 
-With a KDBX file, none of these scenarios apply. Your data is a file on your computer. It will be readable by KeePass-compatible applications for as long as AES-256 and SHA-256 remain standard -- which is to say, for the foreseeable future. For a deeper analysis of what happens when you depend on proprietary formats, see our comparison of [KeePass vs. proprietary formats](/keepass/vs-proprietary/).
+With a KDBX file, none of these scenarios apply. Your data is a file on your computer. It will be readable by KeePass-compatible applications for as long as AES-256 and SHA-256 remain standard -- which is to say, for the foreseeable future. For a deeper analysis of what happens when you depend on proprietary formats, see our guide to [data portability](/keepass/data-portability/).
 
 ## Longevity as a Security Feature
 

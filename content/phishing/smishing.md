@@ -33,7 +33,7 @@ Email providers have had decades to develop sophisticated spam and phishing filt
 
 ### Package Delivery Scams
 
-"Your package could not be delivered. Click here to reschedule." This is the most common smishing template because it is universally relevant -- most people are expecting some kind of delivery at any given time. The link leads to a [fake login page](/phishing/fake-login-pages/) that harvests credentials or requests a small "redelivery fee" to capture credit card information.
+"Your package could not be delivered. Click here to reschedule." This is the most common smishing template because it is universally relevant -- most people are expecting some kind of delivery at any given time. The link leads to a [fake login page](/phishing/password-manager-prevents-phishing/) that harvests credentials or requests a small "redelivery fee" to capture credit card information.
 
 **How to verify**: Open the official app or website of the carrier (USPS, UPS, FedEx, DHL) and enter any tracking numbers you have. If you are not expecting a delivery, ignore the text.
 
@@ -113,7 +113,7 @@ For example:
 3. They walk you through "verifying" your account, during which you provide account numbers, PINs, and personal information.
 4. The attacker now has everything they need to drain your account.
 
-The defense is always the same: [verify through a separate channel](/phishing/verify-suspicious-messages/). Do not call numbers from suspicious texts. Look up the real number independently.
+The defense is always the same: [verify through a separate channel](/phishing/recognize-phishing/). Do not call numbers from suspicious texts. Look up the real number independently.
 
 ## What to Do If You Have Responded to a Smishing Message
 
@@ -156,6 +156,5 @@ The simplest rule to teach: "If a text asks you to tap a link or call a number, 
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
 - [QR Code Scams (Quishing): The Newest Phishing Threat](/phishing/qr-code-scams/)
-- [How to Verify Suspicious Emails, Texts, and Calls](/phishing/verify-suspicious-messages/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

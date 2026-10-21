@@ -75,7 +75,7 @@ Security investments often come at the cost of productivity. Password managers a
 
 ### Secure Collaboration
 
-A password manager enables [secure credential sharing](/business/small-team-sharing/) that is not possible without one. Shared [KeePass databases](/keepass/) let team members access the same credentials from a single, encrypted source of truth. When a password changes, everyone sees the update. When someone leaves, you rotate the master password and the departing member loses access to everything at once.
+A password manager enables [secure credential sharing](/password-managers/shared-password-vault/) that is not possible without one. Shared [KeePass databases](/keepass/) let team members access the same credentials from a single, encrypted source of truth. When a password changes, everyone sees the update. When someone leaves, you rotate the master password and the departing member loses access to everything at once.
 
 ### Compliance Readiness
 
@@ -138,7 +138,7 @@ If your business does not yet use a password manager, here is a practical starti
 
 **Day 4**: Add remaining business accounts to your vault. Use the password manager's generator for every new password.
 
-**Day 5**: If you have team members, create a shared database for credentials that multiple people need. Share it through a [secure method](/business/small-team-sharing/) and explain the basics.
+**Day 5**: If you have team members, create a shared database for credentials that multiple people need. Share it through a [secure method](/password-managers/shared-password-vault/) and explain the basics.
 
 **Week 2**: Write a simple [password policy](/business/password-policy/) and review it with your team.
 

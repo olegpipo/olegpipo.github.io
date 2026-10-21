@@ -164,6 +164,6 @@ PanicVault and the KeePass format provide the encrypted storage, strong key deri
 
 - [How to Create a Password Policy for Your Business](/business/password-policy/)
 - [Why Every Small Business Needs a Password Manager](/business/why-businesses-need-one/)
-- [How to Manage Client Passwords as a Developer](/business/client-passwords/)
+- [Password Management for Freelancers](/business/freelancers/)
 - [KeePass Encryption Explained](/keepass/encryption-explained/)
 - [Two-Factor Authentication Guide](/two-factor-authentication/)

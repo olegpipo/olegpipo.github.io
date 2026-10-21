@@ -249,7 +249,7 @@ The goal is not a perfectly curated vault. The goal is a vault where you can fin
 ## Related Articles
 
 - [How to Import Passwords from Chrome, Safari, or Firefox](/guides/import-from-browser/)
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 - [How to Audit Your Existing Passwords](/guides/audit-passwords/)
 - [How to Store Secure Notes, Credit Cards, and IDs](/guides/store-notes-cards/)
 - [How to Share Passwords Securely With Family](/guides/share-with-family/)

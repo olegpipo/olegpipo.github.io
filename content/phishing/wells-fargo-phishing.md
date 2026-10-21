@@ -36,7 +36,7 @@ This is the most common Wells Fargo phishing email. It disguises itself as a rou
 
 **What it looks like**: The email uses Wells Fargo's red and yellow branding, the stagecoach logo, and a professional layout that mimics genuine bank communications. It states that Wells Fargo is conducting routine account verification for security or regulatory compliance purposes and that you must confirm your personal information to maintain account access. A button says "Verify Now" or "Confirm Your Identity." The tone is professional and measured rather than alarming, which makes it particularly deceptive.
 
-**The tell**: The sender address is not from @wellsfargo.com. Common fakes include verify@wf-secure.com, noreply@wellsfargo-alerts.net, security@wells-fargo-online.com, or support@wfonline.org. The "Verify" button leads to a [fake login page](/phishing/fake-login-pages/) that captures your username and password. Subsequent screens ask for your Social Security number, date of birth, account number, and even your mother's maiden name -- information used for identity theft.
+**The tell**: The sender address is not from @wellsfargo.com. Common fakes include verify@wf-secure.com, noreply@wellsfargo-alerts.net, security@wells-fargo-online.com, or support@wfonline.org. The "Verify" button leads to a [fake login page](/phishing/password-manager-prevents-phishing/) that captures your username and password. Subsequent screens ask for your Social Security number, date of birth, account number, and even your mother's maiden name -- information used for identity theft.
 
 **The reality**: Wells Fargo does not send emails asking you to verify your identity through a link. If Wells Fargo genuinely needed to verify your information, they would notify you through secure mail within your online banking account, through the Wells Fargo mobile app, or by mail. You would see the request when you log into wellsfargo.com directly.
 
@@ -160,7 +160,7 @@ For a broader framework that applies to all phishing attempts, see our guide on 
 
 ## Why a Password Manager Is Your Strongest Defense
 
-Technical defenses matter more than awareness alone. Even the most security-conscious person can be caught off guard by a well-timed email about a wire transfer draining their savings. Modern [AI-powered phishing](/phishing/ai-powered-phishing/) tools generate banking emails with perfect grammar, accurate Wells Fargo branding, and personalized details that pass visual inspection. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your critical thinking is overridden by alarm.
+Technical defenses matter more than awareness alone. Even the most security-conscious person can be caught off guard by a well-timed email about a wire transfer draining their savings. Modern [AI-powered phishing](/trends/ai-phishing-effectiveness/) tools generate banking emails with perfect grammar, accurate Wells Fargo branding, and personalized details that pass visual inspection. A [password manager](/password-managers/what-is-a-password-manager/) provides an automated safety net that works even when your critical thinking is overridden by alarm.
 
 ### Domain Matching Stops Credential Theft
 
@@ -203,7 +203,7 @@ If you entered your credentials on a phishing site or shared sensitive informati
 
 ## Staying Ahead of Wells Fargo Phishing in 2026
 
-Wells Fargo phishing campaigns will continue to evolve. [AI-powered phishing](/phishing/ai-powered-phishing/) tools generate emails with perfect grammar, personalized details pulled from data breaches, and branding that is indistinguishable from genuine Wells Fargo communications. The old advice to "look for spelling errors" is no longer reliable.
+Wells Fargo phishing campaigns will continue to evolve. [AI-powered phishing](/trends/ai-phishing-effectiveness/) tools generate emails with perfect grammar, personalized details pulled from data breaches, and branding that is indistinguishable from genuine Wells Fargo communications. The old advice to "look for spelling errors" is no longer reliable.
 
 What works is a layered defense:
 
@@ -220,5 +220,4 @@ The attackers count on a moment of panic -- the instant when you see "wire trans
 - [Bank of America Phishing Email Examples](/phishing/bank-of-america-phishing/)
 - [Chase Phishing Email Examples](/phishing/chase-phishing/)
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)

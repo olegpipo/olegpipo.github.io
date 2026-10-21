@@ -142,7 +142,7 @@ Before acting on any text or email that claims to be from USPS, apply these rule
 
 6. **Check Informed Delivery**: If you have a USPS Informed Delivery account, log in at informeddelivery.usps.com to see incoming mail and packages. This is the most reliable way to know what USPS is actually delivering to your address.
 
-For a broader framework for verifying suspicious messages, see our guide on [how to verify suspicious messages](/phishing/verify-suspicious-messages/) and our [smishing guide](/phishing/smishing/).
+For a broader framework for verifying suspicious messages, see our guide on [how to verify suspicious messages](/phishing/recognize-phishing/) and our [smishing guide](/phishing/smishing/).
 
 ## Why a Password Manager Is Your Strongest Defense
 
@@ -187,7 +187,7 @@ If you entered personal information or payment details on a USPS phishing site, 
 
 ## Staying Ahead of USPS Phishing in 2026
 
-USPS smishing will continue to grow because it works. The combination of near-universal package delivery, the immediacy of text messages, and the difficulty of inspecting URLs on tiny phone screens makes USPS one of the easiest brands for attackers to impersonate. [AI-powered phishing](/phishing/ai-powered-phishing/) and automated smishing kits make it trivial for attackers to send millions of fake delivery texts at minimal cost.
+USPS smishing will continue to grow because it works. The combination of near-universal package delivery, the immediacy of text messages, and the difficulty of inspecting URLs on tiny phone screens makes USPS one of the easiest brands for attackers to impersonate. [AI-powered phishing](/trends/ai-phishing-effectiveness/) and automated smishing kits make it trivial for attackers to send millions of fake delivery texts at minimal cost.
 
 What works is a layered defense:
 
@@ -205,6 +205,5 @@ The attackers count on a moment of worry about a missed package -- the instant y
 
 - [Smishing: How to Spot Fake Text Messages](/phishing/smishing/)
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [How to Verify Suspicious Messages](/phishing/verify-suspicious-messages/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [How to Train Your Family to Spot Phishing](/phishing/train-family/)

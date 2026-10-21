@@ -38,7 +38,7 @@ Gather a few things before you begin:
 
 1. **Know your current password.** You will need to enter it as part of the change process. If you use a password manager like PanicVault, open it and confirm you have the current password saved.
 2. **Have your phone nearby.** Google may ask you to verify your identity through two-factor authentication before allowing a password change.
-3. **Prepare a strong new password.** Use your password manager's [password generator](/guides/generate-strong-passwords/) to create a random password of at least 16 characters. Do not try to invent one yourself.
+3. **Prepare a strong new password.** Use your password manager's [password generator](/password-managers/how-generators-work/) to create a random password of at least 16 characters. Do not try to invent one yourself.
 4. **Check your recovery options.** Make sure your recovery phone number and recovery email are up to date in case you ever need to regain access.
 
 ## How to Change Your Gmail Password on Desktop (Web)
@@ -175,7 +175,7 @@ After recovering your account, immediately set a strong password and save it in 
 
 Changing your password is step one. To fully secure your Google account:
 
-1. **Enable two-factor authentication.** Go to Security settings and turn on 2-Step Verification. Use an authenticator app rather than SMS when possible. See our guide on [setting up 2FA on every service](/two-factor-authentication/setup-on-every-service/).
+1. **Enable two-factor authentication.** Go to Security settings and turn on 2-Step Verification. Use an authenticator app rather than SMS when possible. See our guide on [setting up 2FA on every service](/two-factor-authentication/priority-accounts/).
 2. **Review connected apps.** Under Security, check "Third-party apps with account access" and revoke access for any apps you no longer use.
 3. **Review recent activity.** Check "Your devices" and "Recent security events" for anything unfamiliar.
 4. **Check forwarding rules.** In Gmail settings, verify no unknown forwarding addresses have been added. Attackers sometimes set up forwarding to maintain access even after a password change.
@@ -183,8 +183,8 @@ Changing your password is step one. To fully secure your Google account:
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/) -- let your password manager create uncrackable passwords for every account
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/) -- let your password manager create uncrackable passwords for every account
 - [Password Reuse Is Dangerous](/password-security/password-reuse-dangers/) -- why your Gmail password must be unique
 - [What to Do After a Data Breach](/data-breaches/what-to-do-after-breach/) -- complete response plan when your credentials are exposed
-- [How to Set Up 2FA on Every Service](/two-factor-authentication/setup-on-every-service/) -- add a second layer of protection beyond your password
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/) -- add a second layer of protection beyond your password
 - [How to Audit Your Passwords](/guides/audit-passwords/) -- find weak and reused passwords across all your accounts

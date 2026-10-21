@@ -27,7 +27,7 @@ Some breaches are so large they reshape the entire security landscape. [The Bigg
 
 ### What Gets Stolen
 
-Not all breaches are equal. The severity depends on what type of data is compromised. [What Information Hackers Steal in a Breach](/data-breaches/what-hackers-steal/) explains the hierarchy of stolen data -- from email addresses (damaging but manageable) to Social Security numbers and biometric data (potentially catastrophic) -- and what attackers do with each category once they have it.
+Not all breaches are equal. The severity depends on what type of data is compromised. Our guide on [what to do after a data breach](/data-breaches/what-to-do-after-breach/) explains the hierarchy of stolen data -- from email addresses (damaging but manageable) to Social Security numbers and biometric data (potentially catastrophic) -- and what attackers do with each category once they have it.
 
 ### Credential Stuffing
 

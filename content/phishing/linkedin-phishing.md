@@ -118,7 +118,7 @@ Before acting on any communication claiming to be from LinkedIn, follow these st
 
 5. **Check the LinkedIn Security page**: LinkedIn maintains a page at safety.linkedin.com with information about current phishing campaigns and how to protect your account.
 
-For a comprehensive approach to evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/verify-suspicious-messages/).
+For a comprehensive approach to evaluating suspicious messages, see our guide on [how to verify suspicious messages](/phishing/recognize-phishing/).
 
 ## Why a Password Manager Is Your Strongest Defense
 
@@ -151,7 +151,7 @@ If you receive a phishing email or message impersonating LinkedIn:
 
 ## Staying Ahead of LinkedIn Phishing in 2026
 
-LinkedIn phishing is growing more sophisticated as [AI-powered phishing](/phishing/ai-powered-phishing/) tools generate personalized messages that reference your actual job title, company, skills, and connections -- all scraped from your public LinkedIn profile. This personalization makes phishing messages nearly indistinguishable from genuine outreach.
+LinkedIn phishing is growing more sophisticated as [AI-powered phishing](/trends/ai-phishing-effectiveness/) tools generate personalized messages that reference your actual job title, company, skills, and connections -- all scraped from your public LinkedIn profile. This personalization makes phishing messages nearly indistinguishable from genuine outreach.
 
 Build a layered defense:
 
@@ -167,7 +167,6 @@ The professional context that makes LinkedIn valuable also makes it dangerous. A
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
 - [Business Email Compromise: How It Works](/phishing/business-email-compromise/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

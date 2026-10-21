@@ -107,7 +107,7 @@ The good news is that biometric authentication (Face ID, Touch ID) has already n
 
 **Enable passkeys where available.** Passkeys are the long-term replacement for both passwords and SMS OTP. Adopting them now gives you immediate security benefits and positions you for the post-SMS future.
 
-**Keep your phone number private.** Your phone number is the key to SMS-based attacks. Minimize where you share it, remove it from [data broker databases](/trends/california-delete-act/) where possible, and consider a secondary number for public use.
+**Keep your phone number private.** Your phone number is the key to SMS-based attacks. Minimize where you share it, remove it from [data broker databases](/digital-privacy/remove-personal-info/) where possible, and consider a secondary number for public use.
 
 The regulatory ban on SMS OTP is not arbitrary -- it reflects a genuine security problem that has been exploited at scale. The alternatives are better in every dimension: more secure, often more convenient, and increasingly well-supported. The transition away from SMS is one of the clearest improvements individuals can make to their [security posture](/password-security/).
 

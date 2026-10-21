@@ -151,7 +151,7 @@ Apple's security architecture gives you a strong foundation, but there are speci
 
 ### Use a Strong Master Password
 
-Everything rests on your master password. Apple's biometric authentication means you will rarely type it, so you can afford to make it long and complex. A passphrase of five or more random, unrelated words provides excellent entropy while remaining memorable for the occasions when you do need to type it -- after a device restart, for instance, or when setting up a new device. See the [master password guide](/password-managers/master-password-guide/) for detailed advice.
+Everything rests on your master password. Apple's biometric authentication means you will rarely type it, so you can afford to make it long and complex. A passphrase of five or more random, unrelated words provides excellent entropy while remaining memorable for the occasions when you do need to type it -- after a device restart, for instance, or when setting up a new device. See the [master password guide](/guides/master-password/) for detailed advice.
 
 ### Enable Two-Factor Authentication Everywhere
 

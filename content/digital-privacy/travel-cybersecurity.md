@@ -99,7 +99,7 @@ Ensure Find My is enabled on every Apple device you are carrying. This allows yo
 
 ### International Communication
 
-- Use end-to-end encrypted messaging (iMessage between Apple devices, or Signal for cross-platform) for sensitive communications. See our [encryption explainer](/digital-privacy/e2e-encryption-explained/) for why this matters.
+- Use end-to-end encrypted messaging (iMessage between Apple devices, or Signal for cross-platform) for sensitive communications. See our [encryption explainer](/cloud-sync/end-to-end-encryption/) for why this matters.
 - Be aware that some countries restrict or monitor VPN usage
 - Some countries actively monitor encrypted communications and may target travelers who use them
 - Consider what you say and type -- assume that any communication on local infrastructure could be intercepted

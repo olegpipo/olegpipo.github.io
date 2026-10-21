@@ -151,6 +151,5 @@ The entire process takes about fifteen minutes and saves you the awkward passwor
 
 - [How to Secure Your Home Wi-Fi Network](/digital-privacy/secure-home-wifi/)
 - [How to Stay Safe on Public Wi-Fi](/digital-privacy/public-wifi-safety/)
-- [How to Secure Your Smart Home Devices](/digital-privacy/smart-home-security/)
 - [The Complete Guide to Digital Privacy in 2026](/digital-privacy/privacy-guide/)
 - [Password Security Best Practices](/password-security/)

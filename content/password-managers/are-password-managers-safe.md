@@ -37,7 +37,7 @@ When you type your master password, the KDF transforms it into a 256-bit encrypt
 
 **scrypt** uses a similar memory-hard approach to Argon2 and remains widely deployed, particularly in cryptocurrency applications and some password managers.
 
-The practical effect is dramatic. A master password with 77 bits of entropy (a six-word random passphrase) combined with Argon2 at recommended settings would take millions of years to crack even with nation-state-level computing resources. Understanding how [password salt](/password-security/password-salt-explained/) adds unique randomness to each vault's key derivation process is essential to appreciating why two identical master passwords produce entirely different encryption keys.
+The practical effect is dramatic. A master password with 77 bits of entropy (a six-word random passphrase) combined with Argon2 at recommended settings would take millions of years to crack even with nation-state-level computing resources. Understanding how [password salt](/password-security/password-cracking-explained/) adds unique randomness to each vault's key derivation process is essential to appreciating why two identical master passwords produce entirely different encryption keys.
 
 ## Zero-Knowledge Architecture
 

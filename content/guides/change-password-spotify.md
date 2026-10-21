@@ -39,7 +39,7 @@ Prepare before changing your Spotify password:
 
 1. **Your current Spotify password.** Required for the standard change process. If you use social login (Facebook, Apple, or Google) and have never set a Spotify password, see the "Social Login Accounts" section below.
 2. **A web browser.** The Spotify desktop app and mobile app do not have password change functionality. You need Safari, Chrome, Firefox, or any mobile or desktop browser.
-3. **Your password manager.** Open PanicVault or your preferred manager so you can [generate a strong replacement password](/guides/generate-strong-passwords/) and save it immediately.
+3. **Your password manager.** Open PanicVault or your preferred manager so you can [generate a strong replacement password](/password-managers/how-generators-work/) and save it immediately.
 4. **Your recovery email.** Verify you have access to the email address associated with your Spotify account. You will need it if Spotify sends a verification code or if you need to reset your password.
 
 ## How to Change Your Spotify Password on Desktop (Web)
@@ -151,7 +151,7 @@ To prevent this situation in the future, make sure your password manager has you
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 - [The Dangers of Password Reuse](/password-security/password-reuse-dangers/)
 - [What to Do After a Data Breach](/data-breaches/what-to-do-after-breach/)
 - [How to Audit Your Existing Passwords](/guides/audit-passwords/)

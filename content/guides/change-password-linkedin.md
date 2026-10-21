@@ -42,7 +42,7 @@ Change your LinkedIn password immediately if you notice suspicious activity, rec
 Prepare before making the change:
 
 1. **Your current LinkedIn password.** Required for the standard password change process. If you have forgotten it, see the reset section below.
-2. **Your password manager.** Open PanicVault or your preferred manager to [generate a strong replacement](/guides/generate-strong-passwords/) and save it immediately.
+2. **Your password manager.** Open PanicVault or your preferred manager to [generate a strong replacement](/password-managers/how-generators-work/) and save it immediately.
 3. **Your recovery email and phone number.** Verify these are current in your LinkedIn settings. Go to Settings & Privacy → Sign in & security → Email addresses and Phone numbers to confirm.
 4. **A decision about other sessions.** LinkedIn lets you sign out every other device when you change your password. If you choose that, expect to sign in again on your phone, tablet, and any other device where you use LinkedIn.
 
@@ -184,7 +184,7 @@ LinkedIn accounts warrant additional security measures beyond a strong password 
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 - [What to Do After a Data Breach](/data-breaches/what-to-do-after-breach/)
 - [The Dangers of Password Reuse](/password-security/password-reuse-dangers/)
 - [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/)

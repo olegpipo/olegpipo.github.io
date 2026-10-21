@@ -182,4 +182,3 @@ If identity theft does occur despite your freeze, the [identity theft recovery g
 - [Identity Theft Recovery: Step-by-Step Guide](/data-breaches/identity-theft-recovery/)
 - [Data Breach Notification Letters: How to Read Them](/data-breaches/notification-letters/)
 - [How to Set Up Identity Theft Monitoring](/data-breaches/monitoring-alerts/)
-- [What Information Hackers Steal in a Breach](/data-breaches/what-hackers-steal/)

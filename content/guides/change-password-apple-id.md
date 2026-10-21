@@ -37,7 +37,7 @@ The stakes with Apple ID are unusually high. Beyond data access, a compromised A
 Gather the following before you begin:
 
 1. **Your current Apple ID password.** Check PanicVault or your password manager. You will need to enter it during the change process.
-2. **A new strong password.** Use your password manager's [password generator](/guides/generate-strong-passwords/) to create a random password of at least 16 characters. Apple requires at least one uppercase letter, one lowercase letter, and one number. Add symbols for extra strength.
+2. **A new strong password.** Use your password manager's [password generator](/password-managers/how-generators-work/) to create a random password of at least 16 characters. Apple requires at least one uppercase letter, one lowercase letter, and one number. Add symbols for extra strength.
 3. **Access to your trusted devices.** Apple may send a verification code to one of your trusted devices or phone numbers as part of the change process.
 4. **Time to update all your devices.** After changing your Apple ID password, every Apple device you own will prompt you to enter the new password. Plan for 5-10 minutes to update them all.
 
@@ -207,7 +207,7 @@ Apple offers an account recovery process for situations where you cannot access 
 
 After changing your Apple ID password, take these additional steps:
 
-1. **Verify two-factor authentication is active.** Go to Settings > your name > Sign-In & Security > Two-Factor Authentication. This should already be enabled on modern Apple IDs. See our [2FA setup guide](/two-factor-authentication/setup-on-every-service/).
+1. **Verify two-factor authentication is active.** Go to Settings > your name > Sign-In & Security > Two-Factor Authentication. This should already be enabled on modern Apple IDs. See our [2FA setup guide](/two-factor-authentication/priority-accounts/).
 2. **Review trusted devices.** Under Sign-In & Security > Two-Factor Authentication, check the list of trusted devices. Remove any you no longer own.
 3. **Review trusted phone numbers.** Ensure only your current phone numbers are listed.
 4. **Check App-Specific Passwords.** If you use third-party apps that access iCloud (like email clients), review and regenerate App-Specific Passwords at appleid.apple.com.
@@ -216,8 +216,8 @@ After changing your Apple ID password, take these additional steps:
 
 ## Related Articles
 
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/) -- create random, uncrackable passwords for every account
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/) -- create random, uncrackable passwords for every account
 - [How to Set Up AutoFill on iPhone and iPad](/guides/autofill-setup/) -- make logging in effortless with your password manager
 - [What to Do After a Data Breach](/data-breaches/what-to-do-after-breach/) -- complete response plan when your credentials are exposed
-- [How to Set Up 2FA on Every Service](/two-factor-authentication/setup-on-every-service/) -- add a second verification layer beyond your password
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/) -- add a second verification layer beyond your password
 - [The Dangers of Password Reuse](/password-security/password-reuse-dangers/) -- why every account needs its own unique password

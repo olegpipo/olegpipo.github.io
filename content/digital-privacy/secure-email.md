@@ -200,6 +200,6 @@ Your email is the foundation. Everything else in your [digital security](/digita
 
 - [How to Do a Personal Security Audit in 30 Minutes](/digital-privacy/personal-security-audit/)
 - [The Complete Guide to Digital Privacy in 2026](/digital-privacy/privacy-guide/)
-- [What Is End-to-End Encryption? Simple Explanation](/digital-privacy/e2e-encryption-explained/)
+- [End-to-End Encryption Explained](/cloud-sync/end-to-end-encryption/)
 - [Online Banking Security: 10 Rules for Protection](/digital-privacy/online-banking-security/)
 - [Two-Factor Authentication Guide](/two-factor-authentication/)

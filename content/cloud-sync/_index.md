@@ -13,7 +13,7 @@ A password manager is only useful if you can reach your passwords when you need 
 
 The good news: cloud syncing an encrypted password database is not just safe -- it is, for most people, safer than not syncing at all. A single copy of your vault on a single device is one hardware failure away from total loss. A properly encrypted database synced through a reputable cloud service gives you redundancy, availability, and security simultaneously. The encryption travels with the file, meaning the cloud provider stores nothing but opaque, unreadable data.
 
-This guide covers everything you need to know about syncing your password database through cloud storage: the security model that makes it safe, the services you can use, the trade-offs between different approaches, and the practical steps to set up reliable, secure sync across all your devices. Each section links to detailed articles that explore specific topics in depth. If your first question is whether this entire concept is trustworthy, start with our examination of [whether it is safe to store passwords in the cloud](/cloud-sync/passwords-in-cloud/).
+This guide covers everything you need to know about syncing your password database through cloud storage: the security model that makes it safe, the services you can use, the trade-offs between different approaches, and the practical steps to set up reliable, secure sync across all your devices. Each section links to detailed articles that explore specific topics in depth. If your first question is whether this entire concept is trustworthy, start with our examination of [whether it is safe to store passwords in the cloud](/cloud-sync/end-to-end-encryption/).
 
 ## The Security Model: Why Cloud Sync Works
 
@@ -101,7 +101,7 @@ Your password database is a local file. Cloud sync keeps it updated, but the fil
 
 This is a fundamental advantage of the file-based approach over purely cloud-based password managers. With a cloud-only service, losing your internet connection means losing access to your passwords. With a locally synced file, the cloud is a transport mechanism, not a requirement.
 
-Our guide on [how to access your passwords when offline](/cloud-sync/access-offline/) covers the practical details, including how to ensure your app keeps a local copy, how to handle situations where the local copy is not current, and what to do if you need to access your vault on a device where it has not been synced.
+Our guide on [how to access your passwords when offline](/cloud-sync/offline-vs-cloud/) covers the practical details, including how to ensure your app keeps a local copy, how to handle situations where the local copy is not current, and what to do if you need to access your vault on a device where it has not been synced.
 
 ### The Offline vs. Cloud Debate
 
@@ -119,9 +119,7 @@ An effective backup strategy for your password database follows the 3-2-1 rule: 
 
 For comprehensive protection, complement cloud sync with periodic manual backups to a USB drive or secondary cloud service. Because the database file is already encrypted, you do not need to worry about the security of the backup medium -- the file protects itself. Even if someone finds your backup USB drive, they cannot read its contents without your master password.
 
-Our guide on [how to set up automatic cloud backup](/cloud-sync/automatic-backup/) walks through the configuration for major cloud providers and KeePass-compatible apps, including versioning features that let you recover previous versions of your database if something goes wrong.
-
-For a more comprehensive discussion of backup strategies that goes beyond cloud sync, see the [KeePass database backup guide](/keepass/backup-database/).
+Our [KeePass database backup guide](/keepass/backup-database/) walks through the configuration for major cloud providers and KeePass-compatible apps, including versioning features that let you recover previous versions of your database if something goes wrong.
 
 ## What Happens If Your Cloud Account Is Compromised
 
@@ -151,11 +149,11 @@ Cloud syncing a password database is safe by design, but following best practice
 
 ### Use a Strong Master Password
 
-Everything rests on your master password. If your master password is weak, no amount of encryption algorithm strength matters -- an attacker with your encrypted file can try common passwords and variations until one works. Use a passphrase of five or more random, unrelated words. For detailed guidance, see the [password security guide](/password-security/) and the [master password guide](/password-managers/master-password-guide/).
+Everything rests on your master password. If your master password is weak, no amount of encryption algorithm strength matters -- an attacker with your encrypted file can try common passwords and variations until one works. Use a passphrase of five or more random, unrelated words. For detailed guidance, see the [password security guide](/password-security/) and the [master password guide](/guides/master-password/).
 
 ### Enable Two-Factor Authentication on Your Cloud Account
 
-Your cloud storage account should be protected with [two-factor authentication](/two-factor-authentication/). This prevents an attacker who learns your cloud password from accessing your storage. Use a TOTP authenticator app or hardware key rather than SMS, which is [vulnerable to SIM swapping](/two-factor-authentication/sim-swapping/).
+Your cloud storage account should be protected with [two-factor authentication](/two-factor-authentication/). This prevents an attacker who learns your cloud password from accessing your storage. Use a TOTP authenticator app or hardware key rather than SMS, which is [vulnerable to SIM swapping](/two-factor-authentication/sms-being-phased-out/).
 
 ### Keep Your Encryption Settings Current
 

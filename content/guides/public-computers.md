@@ -85,7 +85,7 @@ For accounts you know you will need on a public computer (e.g., webmail during t
 2. Change the password to something temporary -- still reasonably strong but shorter and typeable (e.g., `TravelLogin-March2026!`)
 3. Save the temporary password in your vault with a note: "Temporary -- change back after trip"
 4. On the public computer, use the temporary password
-5. When you return to your trusted device, change the password back to a strong, [generated password](/guides/generate-strong-passwords/) and update your vault
+5. When you return to your trusted device, change the password back to a strong, [generated password](/password-managers/how-generators-work/) and update your vault
 
 ### Advantages
 
@@ -197,7 +197,7 @@ When traveling, public computer use is most common. Prepare:
 ## Related Articles
 
 - [How to Set Up 2FA Using Your Password Manager](/guides/setup-2fa/)
-- [How to Generate and Store Strong Passwords](/guides/generate-strong-passwords/)
+- [How Password Managers Generate Strong Random Passwords](/password-managers/how-generators-work/)
 - [How to Back Up Your Password Vault](/guides/backup-vault/)
 - [How to Create a Secure Master Password You'll Remember](/guides/master-password/)
 - [Face ID and Touch ID Setup for Password Managers](/apple/face-id-touch-id-setup/)
