@@ -2,9 +2,11 @@
 title: "How Password Cracking Works: Brute Force, Dictionary, and Rainbow Tables"
 description: "Learn how attackers crack passwords using brute force, dictionary attacks, and rainbow tables, plus the defenses that stop them cold."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Password Security"
+aliases:
+  - /password-security/password-salt-explained/
 ---
 
 Every password you create will eventually face an adversary. Whether it is a targeted attacker going after your accounts or an automated script chewing through a leaked database, the question is never _if_ your password will be tested -- it is _how long it will hold_. Understanding the methods attackers use to crack passwords is the first step toward building defenses that actually work. If you are looking for a broader foundation, start with our [Password Security](/password-security/) pillar page, which covers the full landscape of protecting your credentials.
@@ -25,20 +27,20 @@ The math is simple. If your password uses lowercase letters only (26 characters)
 
 ### Modern Cracking Speeds
 
-This is where theory meets reality. A single modern GPU can compute billions of hashes per second against fast algorithms like MD5 or SHA-1. A dedicated cracking rig with multiple GPUs pushes that into the tens or hundreds of billions. Here is what that means in practice:
+This is where theory meets reality. A single modern GPU computes tens to hundreds of billions of hashes per second against fast algorithms like MD5 or SHA-256, and a dedicated cracking rig with several GPUs multiplies that. Here is how long one RTX 4090 needs to try every combination, at its published hashcat benchmark speeds (see [GPU-Accelerated Cracking](#gpu-accelerated-cracking) below):
 
-| Password Length | Character Set | Possible Combinations | MD5 Crack Time (10B hashes/sec) | SHA-256 Crack Time (5B hashes/sec) |
+| Password Length | Character Set | Possible Combinations | MD5 (~163 billion/sec) | SHA-256 (~22 billion/sec) |
 |---|---|---|---|---|
 | 6 characters | Lowercase (26) | 309 million | < 1 second | < 1 second |
-| 6 characters | Full ASCII (95) | 735 billion | ~1 minute | ~2.5 minutes |
-| 8 characters | Lowercase (26) | 209 billion | ~21 seconds | ~42 seconds |
-| 8 characters | Full ASCII (95) | 6.6 quadrillion | ~7.6 days | ~15.3 days |
-| 10 characters | Lowercase (26) | 141 trillion | ~3.9 hours | ~7.8 hours |
-| 10 characters | Full ASCII (95) | 59.9 quintillion | ~190 years | ~380 years |
-| 12 characters | Full ASCII (95) | 540 sextillion | ~1.7 million years | ~3.4 million years |
-| 16 characters | Full ASCII (95) | 4.4 x 10^31 | ~140 trillion years | ~280 trillion years |
+| 6 characters | Full ASCII (95) | 735 billion | ~4.5 seconds | ~33 seconds |
+| 8 characters | Lowercase (26) | 209 billion | ~1 second | ~9 seconds |
+| 8 characters | Full ASCII (95) | 6.6 quadrillion | ~11 hours | ~3.5 days |
+| 10 characters | Lowercase (26) | 141 trillion | ~14 minutes | ~1.8 hours |
+| 10 characters | Full ASCII (95) | 59.9 quintillion | ~12 years | ~86 years |
+| 12 characters | Full ASCII (95) | 540 sextillion | ~105,000 years | ~775,000 years |
+| 16 characters | Full ASCII (95) | 4.4 x 10^31 | ~8.5 trillion years | ~63 trillion years |
 
-The takeaway is stark. Short passwords -- anything under 10 characters using a limited character set -- fall in minutes to hours. This is why [password length](/password-security/password-length/) matters more than almost any other factor. Each additional character multiplies the work an attacker must do exponentially.
+These are times to exhaust the whole space; on average the password turns up halfway through, and an eight-GPU rig is eight times faster again. The takeaway is stark. Short passwords -- anything under 10 characters using a limited character set -- fall in seconds to hours, and even an 8-character password using every character type lasts less than a day against MD5. This is why [password length](/password-security/password-length/) matters more than almost any other factor. Each additional character multiplies the work an attacker must do exponentially.
 
 But pure brute force is also the least efficient method. Attackers almost always start with smarter approaches.
 
@@ -84,22 +86,43 @@ A full table storing every hash and its corresponding input would require absurd
 
 For unsalted MD5, rainbow tables covering all 8-character alphanumeric passwords fit in a few hundred gigabytes. That is well within reach of a consumer hard drive.
 
+### The Second Problem: Identical Passwords, Identical Hashes
+
+Without salting, a hash function always turns the same input into the same output. Every user who chose `password` has exactly the same entry in the database. An attacker scanning a stolen table can see which accounts share a password without cracking anything, and cracking one of those hashes cracks all of them at once. Since the [most common passwords](/password-security/most-common-passwords/) are shared by millions of people, that is an enormous shortcut.
+
 ### How Salting Defeats Rainbow Tables
 
-A **salt** is a random value added to each password before hashing. Instead of computing `hash(password)`, the system computes `hash(salt + password)`. The salt is stored alongside the hash in the database.
+A **salt** is a random value generated for each user and added to the password before hashing. Instead of computing `hash(password)`, the system computes `hash(salt + password)`. The salt is not secret -- it is stored alongside the hash in the database. Its job is to make every hash unique.
 
-Salting makes rainbow tables useless. A rainbow table built for unsalted hashes cannot match salted hashes because the input is different for every user, even if two users share the same password. An attacker would need to build a separate rainbow table for every possible salt value, which is computationally infeasible.
+Here is the effect with SHA-256 (real hashes, truncated; a fast hash like SHA-256 is used here only for illustration):
 
-For a deeper explanation of this defense, see our guide on [password salting](/password-security/password-salt-explained/). Every modern password storage system uses salting. If a service is breached and the hashes are unsalted, that is a sign of negligent security practices.
+```
+Without salt:
+  alice   "password"                     -> 5e884898da28...
+  bob     "password"                     -> 5e884898da28...  (identical)
+  carol   "password"                     -> 5e884898da28...  (identical)
+
+With a random salt per user:
+  alice   salt a1f09c3e + "password"     -> a0baa1bc923c...
+  bob     salt b7e42d1a + "password"     -> 415022184ece...  (different)
+  carol   salt c3d85f2e + "password"     -> 557700cd6b67...  (different)
+```
+
+The three users still chose the same password, but nothing in the salted table reveals it, and cracking Alice's hash tells the attacker nothing about Bob's or Carol's.
+
+Salting makes rainbow tables useless. A rainbow table built for unsalted hashes cannot match salted hashes because the input is different for every user. An attacker would need a separate table for every possible salt value -- with 128-bit salts, that is 2^128 (about 3.4 x 10^38) tables, which is computationally infeasible.
+
+What salting does not do is make any single password harder to guess. An attacker can still try candidates against one user's hash using that user's known salt. Salting removes the economies of scale: each hash has to be attacked on its own, which turns a mass compromise into a per-user effort. Making each of those per-user guesses expensive is the job of the key derivation functions below. Every modern password storage system uses salting. If a service is breached and the hashes are unsalted, that is a sign of negligent security practices.
 
 ## GPU-Accelerated Cracking
 
-The shift from CPU-based cracking to GPU-accelerated cracking changed the landscape permanently. GPUs excel at the kind of parallel, repetitive computation that password hashing demands. A single high-end GPU in 2026 can perform:
+The shift from CPU-based cracking to GPU-accelerated cracking changed the landscape permanently. GPUs excel at the kind of parallel, repetitive computation that password hashing demands. In a [published hashcat 7 benchmark](https://hashcat.net/forum/post-63595.html), a single NVIDIA RTX 4090 computes about:
 
-- **MD5**: ~50 billion hashes per second
-- **SHA-1**: ~15 billion hashes per second
-- **SHA-256**: ~5 billion hashes per second
-- **NTLM (Windows)**: ~100 billion hashes per second
+- **MD5**: ~163 billion hashes per second
+- **SHA-1**: ~59 billion hashes per second
+- **SHA-256**: ~22 billion hashes per second
+- **NTLM (Windows)**: ~272 billion hashes per second
+- **bcrypt** (at the low cost factor of 5 the benchmark uses): ~213,000 hashes per second
 
 A purpose-built cracking rig with eight GPUs multiplies those numbers accordingly. Cloud computing makes this even more accessible -- an attacker can rent GPU clusters by the hour without any upfront hardware investment.
 
@@ -111,11 +134,15 @@ The answer to GPU-accelerated cracking is **key derivation functions** (KDFs) --
 
 ### PBKDF2
 
-PBKDF2 (Password-Based Key Derivation Function 2) works by iterating a hash function thousands or hundreds of thousands of times. If each hash takes a fraction of a microsecond but you perform 600,000 iterations, a single guess now takes measurable time. An attacker doing billions of fast hashes per second might only manage a few thousand PBKDF2 guesses per second.
+PBKDF2 (Password-Based Key Derivation Function 2) works by iterating a hash function thousands or hundreds of thousands of times. If each hash takes a fraction of a microsecond but you perform 600,000 iterations, a single guess now takes measurable time. An attacker doing billions of fast hashes per second drops to thousands or tens of thousands of PBKDF2 guesses per second.
 
 ### bcrypt
 
-bcrypt incorporates a cost factor that controls how much computation each hash requires. It also has built-in salting. The cost factor can be increased over time as hardware gets faster, keeping the defense current.
+bcrypt incorporates a cost factor that controls how much computation each hash requires. It also has built-in salting. The cost factor can be increased over time as hardware gets faster, keeping the defense current. The benchmark above shows the effect: the same GPU that tries 163 billion MD5 hashes per second manages about 213,000 bcrypt hashes at a low cost factor.
+
+### scrypt
+
+scrypt, designed by Colin Percival in 2009 and later published as [RFC 7914](https://datatracker.ietf.org/doc/html/rfc7914), added **memory hardness**: each hash needs a large block of RAM, not just computation. That matters because GPUs and custom cracking chips have enormous computing power but little memory per core, so scrypt takes away much of their advantage. Its cost is set with three parameters (N, r and p).
 
 ### Argon2
 
@@ -123,11 +150,11 @@ Argon2 is the current gold standard, winner of the Password Hashing Competition 
 
 - **CPU-hard**: Requires significant computation
 - **Memory-hard**: Requires large amounts of RAM, which neutralizes GPU advantages since GPUs have limited memory per core
-- **Parallelism-resistant**: Can be tuned to resist attacks using many cores simultaneously
+- **Tunable**: Time cost (iterations), memory cost and parallelism (threads) are set independently
 
 Argon2 has three variants: Argon2d (data-dependent, maximizes resistance to GPU attacks), Argon2i (data-independent, resistant to side-channel attacks), and Argon2id (a hybrid that provides both protections).
 
-PanicVault uses Argon2 for deriving the encryption key from your master passphrase. This means even if an attacker obtained your encrypted vault file, each guess at your master passphrase would require significant time and memory. Combined with a strong master passphrase, this makes brute-forcing the vault computationally impractical. You can learn more about how this encryption pipeline works in our [KeePass encryption explained](/keepass/encryption-explained/) guide.
+PanicVault uses Argon2 for deriving the encryption key from your master passphrase: new vaults use Argon2d with 64 MB of memory and 10 iterations by default. This means even if an attacker obtained your encrypted vault file, each guess at your master passphrase would require significant time and memory. Combined with a strong master passphrase, this makes brute-forcing the vault computationally impractical. You can learn more about how this encryption pipeline works in our [KeePass encryption explained](/keepass/encryption-explained/) guide.
 
 ## How Real-World Attacks Unfold
 
