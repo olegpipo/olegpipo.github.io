@@ -2,7 +2,7 @@
 title: "iCloud Keychain vs. Third-Party Password Managers"
 description: "Compare Apple's iCloud Keychain and Passwords app with third-party password managers like KeePass. Covers features, encryption, cross-platform support, and export options."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Cloud Sync & Storage"
 ---
@@ -13,7 +13,7 @@ Apple's built-in password management -- iCloud Keychain and the Passwords app in
 
 iCloud Keychain is Apple's credential sync system. It stores passwords, passkeys, Wi-Fi credentials, credit card numbers, and two-factor authentication codes, then syncs them across all your Apple devices signed into the same Apple Account.
 
-Under the hood, iCloud Keychain uses end-to-end encryption. Apple cannot read your stored credentials. The encryption keys are derived from your device passcode and are protected by Apple's Secure Enclave hardware. This is genuinely strong security.
+Under the hood, iCloud Keychain uses end-to-end encryption with keys Apple does not know, so Apple cannot read your stored credentials. On each device, the keys that protect keychain items are guarded by Apple's Secure Enclave hardware. This is genuinely strong security.
 
 With iOS 18 and macOS Sequoia, Apple elevated iCloud Keychain into a standalone Passwords app with its own interface, making it more visible and usable. The app supports:
 
@@ -158,7 +158,7 @@ This approach gives you:
 | Tags | No | Yes (app-dependent) |
 | Entry history | No | Yes |
 | Offline access | Full (on synced devices) | Full (database is a local file) |
-| Passkey support | Yes | Emerging (app-dependent) |
+| Passkey support | Yes | Yes, app-dependent (KeePassXC, Strongbox, KeePassium, PanicVault) |
 | TOTP codes | Yes | Yes |
 | Cost | Free (with Apple devices) | Free to paid (varies by app) |
 | Data ownership | Apple Account-dependent | You own the file |
@@ -196,4 +196,4 @@ iCloud Keychain is not bad. It is, in fact, better than what most people were us
 
 But it is a walled garden. Your data exists within Apple's ecosystem, in Apple's format, accessible through Apple's tools. For users who value control, portability, and the full feature set of a dedicated password manager, a third-party solution built on an open standard offers a fundamentally different relationship with your own data -- one where you are the owner, not a tenant.
 
-The [choice between cloud providers](/cloud-sync/passwords-in-cloud/) is important, but the choice between open and proprietary data formats is even more so. Passwords are credentials you may need for decades. The format they are stored in should outlast any single company's product decisions.
+The [choice between cloud providers](/cloud-sync/choose-your-cloud/) is important, but the choice between open and proprietary data formats is even more so. Passwords are credentials you may need for decades. The format they are stored in should outlast any single company's product decisions.

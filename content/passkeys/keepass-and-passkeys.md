@@ -1,13 +1,15 @@
 ---
 title: "Passkeys and Your KeePass Database: Current State"
-description: "The current state of passkey support in KeePass-compatible applications. How KDBX databases are evolving to store passkeys alongside passwords."
+description: "Yes, KeePass databases can store passkeys. Which KeePass apps support them (KeePassXC, Strongbox, KeePassium, PanicVault), how passkeys are stored in the KDBX file, and how to manage them."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Passkeys & Passwordless"
 ---
 
-The KeePass ecosystem has always stood for principles that matter: open formats, local control, and data portability. As passkeys reshape authentication, KeePass users face a unique question: how does a decentralized, file-based credential system adapt to a technology designed primarily for cloud-synced credential stores? This article, part of our [passkeys and passwordless authentication](/passkeys/) series, examines where KeePass-compatible applications stand on passkey support, what the roadmap looks like, and how to manage your credentials during the transition.
+The KeePass ecosystem has always stood for principles that matter: open formats, local control, and data portability. As passkeys reshape authentication, KeePass users face a unique question: how does a decentralized, file-based credential system adapt to a technology designed primarily for cloud-synced credential stores? This article, part of our [passkeys and passwordless authentication](/passkeys/) series, examines where KeePass-compatible applications stand on passkey support, how passkeys are stored in a KDBX file, and how to manage your credentials during the transition.
+
+**The short answer: yes, KeePass supports passkeys.** KeePassXC has stored and used passkeys since version 2.7.7 (March 2024), and Strongbox, KeePassium and PanicVault support them on Apple devices. All of them keep passkeys inside the same encrypted `.kdbx` file as your passwords, in a shared format.
 
 ## The KeePass Philosophy and Passkeys
 
@@ -24,22 +26,22 @@ These principles do not conflict with passkeys. In fact, they align well with th
 
 ### KDBX Format
 
-The KDBX format was designed for passwords but is extensible. It supports custom fields, attachments, and structured data, which means passkey credentials (primarily a private key, associated metadata, and the relying party information) can technically be stored in a KDBX entry.
+The KDBX format was designed for passwords but is extensible: it supports custom fields, attachments, and structured data. Passkeys use that extensibility. KeePassXC defined the format now shared across the ecosystem: each passkey is an ordinary entry whose custom fields, prefixed `KPEX_PASSKEY_`, hold the private key and the passkey's details -- credential ID, relying party (the website), user name and user handle.
 
-The KeePass community is working on standardizing how passkey data is stored within KDBX entries. The goal is interoperability: a passkey stored in one KeePass-compatible app should be readable and usable by another. This is consistent with the ecosystem's long-standing commitment to portability.
+Because Strongbox, KeePassium and PanicVault use the same fields, a passkey saved in one KeePass-compatible app is readable in the others. This is consistent with the ecosystem's long-standing commitment to portability.
 
-The challenge is not storage -- it is the operating system integration required to use stored passkeys for web authentication. Storing a passkey in a KDBX file is straightforward. Making the browser's WebAuthn API use that stored passkey requires the app to register as a credential provider with the operating system.
+Storing a passkey is the easy part. Using it to sign in requires the app to answer the browser's WebAuthn request -- either through a browser extension or by registering as a credential provider with the operating system.
 
 ### KeePassXC
 
 KeePassXC is the leading open-source desktop KeePass client. Its passkey status:
 
-- **Storage**: KeePassXC can store passkey-related data in custom fields within KDBX entries.
-- **Browser integration**: The KeePassXC-Browser extension supports communication with KeePassXC for password autofill. Passkey support through this extension is under active development.
-- **Platform integration**: KeePassXC does not currently register as a system-level credential provider on macOS or Windows, which limits its ability to provide passkeys to Safari and other browsers through the operating system's autofill framework.
-- **Safari**: No Safari extension exists for KeePassXC, which is a significant limitation for Mac users who prefer Safari. Passkey support in Safari requires system-level credential provider integration.
-
-KeePassXC's open-source development model means progress is driven by volunteer contributors. The community has identified passkey support as a high-priority feature, but the implementation timeline depends on contributor availability and the complexity of platform-specific integration work.
+- **Supported since 2.7.7** (March 2024): KeePassXC can create, store and use passkeys.
+- **Storage**: passkeys are saved in `KPEX_PASSKEY_*` attributes on the entry, inside your database.
+- **Browser integration**: passkeys work only through the KeePassXC-Browser extension, which handles the website's passkey request in supported browsers.
+- **Platform integration**: KeePassXC does not register as a system-level credential provider on macOS or Windows, so its passkeys are not offered to native apps or through the operating system's own passkey prompt.
+- **Safari**: No Safari extension exists for KeePassXC, which is a significant limitation for Mac users who prefer Safari.
+- **Import and export**: you can export a single passkey as a `.passkey` file and import it with Database > Import Passkey. The exported file is unencrypted JSON, so treat it like a plaintext password export and delete it after use.
 
 ### PanicVault
 
@@ -48,17 +50,22 @@ PanicVault occupies a unique position in the KeePass ecosystem: it is built nati
 - **Credential provider extension**: PanicVault integrates with Apple's [credential provider extension framework](/apple/credential-provider-extensions/), which is the mechanism iOS and macOS use to provide passkeys and passwords to apps and browsers.
 - **Safari support**: Through the credential provider framework, PanicVault can provide credentials (including passkeys) to Safari without requiring a separate browser extension.
 - **Face ID / Touch ID**: Authentication for credential use is handled through [Face ID and Touch ID](/apple/face-id-touch-id-setup/), consistent with how platform-native passkey providers work.
+- **KeePassXC format**: PanicVault stores passkey data in the same `KPEX_PASSKEY_` fields, so passkeys created in KeePassXC are visible in PanicVault -- with their relying party, user name and credential ID -- and vice versa. See [Passkeys (WebAuthn)](/help/passkeys/) in the user manual.
 - **iCloud Drive sync**: Database files can be synced through [iCloud Drive](/cloud-sync/icloud-sync/), providing the cross-device availability that passkey users expect while maintaining the file-based approach that KeePass users value.
 
 PanicVault represents the bridge between KeePass's open, portable philosophy and the native platform integration that modern authentication requires. For Apple users who want the data portability of KDBX with the passkey experience of iCloud Keychain, it is the most direct solution.
 
 ### Strongbox
 
-Strongbox, another KeePass-compatible app on Apple platforms, is also working on passkey integration. Like PanicVault, it benefits from access to Apple's credential provider framework, which provides the system-level hooks needed for passkey support.
+Strongbox, another KeePass-compatible app on Apple platforms, has supported passkeys since October 2023. On iOS 17 and macOS Sonoma or later, it works as a passkey provider through the system AutoFill and saves passkeys in your KeePass database, in a format compatible with KeePassXC.
+
+### KeePassium
+
+KeePassium added passkey support in version 2.0 (December 2024), on iOS 17 and macOS 14 or later. It stores passkeys in your database using the same format as KeePassXC.
 
 ### KeePass 2.x (Windows)
 
-The original KeePass 2.x on Windows has a plugin-based architecture that allows community extensions. Passkey support through plugins is being explored, but the Windows credential provider integration is more complex than Apple's unified framework.
+The original KeePass 2.x on Windows has a plugin-based architecture that allows community extensions, so passkey support there depends on third-party plugins. On Windows, KeePassXC is the established way to use passkeys from a KDBX database today.
 
 ## The Technical Challenge
 
@@ -91,39 +98,31 @@ For a broader discussion of sync options, see our [cloud sync and storage](/clou
 
 ### The Key Storage Question
 
-Platform-native passkey implementations store private keys in secure hardware -- the [Secure Enclave](/apple/secure-enclave/) on Apple devices, TPM on Windows. These hardware modules provide tamper-resistant key storage that cannot be extracted even if the device's operating system is compromised.
+Platform-native passkey implementations lean on secure hardware. On Apple devices, passkeys are iCloud Keychain items, end-to-end encrypted when they sync, whose keys are protected on each device by the [Secure Enclave](/apple/secure-enclave/). Windows Hello passkeys stay on the PC, protected by its TPM. A hardware security key goes furthest: the private key never leaves the key.
 
-KeePass databases store everything in an encrypted file. The private keys are protected by the database's encryption (AES-256 or ChaCha20) and the user's master password or key file. This is strong encryption, but it is software-based. The private key can theoretically be extracted from a decrypted database in memory, whereas a Secure Enclave-stored key cannot.
+KeePass databases store everything in an encrypted file. The private keys are protected by the database's encryption (AES-256 or ChaCha20) and the user's master password, key file or YubiKey. This is strong encryption, but it is software-based: while the database is unlocked, the private key can theoretically be read from memory by malware on the device, which is not possible with a hardware security key. For a closer look at the threat model, see [can passkeys be hacked?](/passkeys/can-passkeys-be-hacked/#passkeys-stored-in-a-keepass-database)
 
 This is a trade-off, not necessarily a weakness. The KeePass model provides portability and user control that hardware-bound storage cannot. The security is still strong -- breaking AES-256 encryption to access the private keys is not feasible. But it is worth understanding the architectural difference.
 
 ## Practical Guidance for KeePass Users
 
-Given the current state, here is how to manage passkeys if you are a KeePass user:
+Here is how to manage passkeys if you are a KeePass user:
 
-### Strategy 1: Hybrid Approach (Recommended for Most)
+### Strategy 1: Hybrid Approach
 
-Use iCloud Keychain for passkeys and your KeePass database for passwords. This gives you the best native passkey experience on Apple devices while maintaining the portability and control of KDBX for your password portfolio.
+Use iCloud Keychain for passkeys and your KeePass database for passwords. This gives you Apple's built-in passkey experience while maintaining the portability and control of KDBX for your password portfolio.
 
-**Advantages**: Best passkey experience now. No waiting for KeePass passkey support to mature.
+**Advantages**: Zero setup for passkeys. Your Apple Account recovery options cover them.
 
 **Disadvantages**: Credentials split across two systems. Passkeys not in your portable KDBX file.
 
-### Strategy 2: Wait for KeePass Passkey Support
+### Strategy 2: Keep Passkeys in Your KeePass Database
 
-If you strongly prefer keeping all credentials in your KDBX database, continue using passwords with [two-factor authentication](/two-factor-authentication/) and wait for full passkey support in your preferred KeePass app.
+Store passkeys in the same `.kdbx` file as your passwords. On Apple devices, use an app that works as a passkey provider through AutoFill -- PanicVault, Strongbox or KeePassium. On Windows and Linux desktops, use KeePassXC with the KeePassXC-Browser extension. Because they share the `KPEX_PASSKEY_` format, the same database works in all of them.
 
-**Advantages**: All credentials in one place. Full data portability.
+**Advantages**: All credentials in one place. Full data portability. No cloud account to hijack.
 
-**Disadvantages**: You miss out on passkey security benefits while waiting.
-
-### Strategy 3: KeePass-Compatible App with Credential Provider
-
-If you use PanicVault or Strongbox on Apple devices, you may already have (or soon will have) credential provider integration that supports passkeys directly from your KDBX database.
-
-**Advantages**: Best of both worlds -- passkey support with KDBX portability.
-
-**Disadvantages**: Apple-only. Feature availability depends on the specific app version.
+**Disadvantages**: Your master password carries the whole load, so it must be strong. On the desktop, KeePassXC's passkeys work only in browsers with its extension.
 
 ### Regardless of Strategy
 
@@ -132,26 +131,18 @@ If you use PanicVault or Strongbox on Apple devices, you may already have (or so
 - Enable [two-factor authentication](/two-factor-authentication/) on accounts where passkeys are not yet available.
 - Regularly review which of your accounts now support passkeys -- the list grows monthly. Check our [supported sites directory](/passkeys/supported-sites/).
 
-## The Path Forward
+## What Comes Next
 
-The KeePass ecosystem's evolution toward passkey support is inevitable. The open-source community is engaged, the technical path is clear, and the demand from users is strong. The question is timing, not direction.
+**Moving passkeys between managers.** The FIDO Alliance's Credential Exchange Format reached Proposed Standard status in August 2025, and Apple added direct passkey transfers between credential manager apps in iOS, iPadOS and macOS 26. Whether you can move passkeys from iCloud Keychain or another manager straight into a KeePass database depends on your KeePass app supporting that transfer -- check its documentation. Within the KeePass ecosystem, no transfer is needed: the passkeys travel with the `.kdbx` file.
 
-Several developments will accelerate progress:
+**Windows integration.** Since November 2025, Windows 11 lets third-party passkey managers plug into Windows Hello. It is up to each KeePass app to adopt it.
 
-**FIDO Alliance credential exchange.** The FIDO Alliance is developing a standard for transferring passkeys between credential providers. When finalized, this will make it easier for KeePass-compatible apps to import passkeys from other providers and vice versa.
-
-**KDBX passkey standardization.** As the community converges on a standard way to store passkeys in KDBX entries, interoperability between KeePass-compatible apps will improve.
-
-**Platform API maturation.** Apple and Microsoft continue to improve their credential provider frameworks, making it easier for third-party apps to offer full passkey support.
-
-**User demand.** As more KeePass users need passkeys, more development effort will be directed toward supporting them. Open-source projects respond to user needs, and passkey support is clearly a priority.
-
-For KeePass users, the transition period requires a bit more thought than it does for users of cloud-based password managers that already support passkeys. But the fundamental value proposition of KeePass -- open formats, local control, data portability -- remains as relevant in the passkey era as it was in the password era. The tools will catch up, and when they do, KeePass users will have passkey support without having sacrificed any of the principles that brought them to KeePass in the first place.
+For KeePass users, passkeys no longer mean choosing between convenience and the principles that brought them to KeePass. Open formats, local control and data portability apply to passkeys just as they do to passwords.
 
 ## Related Articles
 
-- [Why You Still Need a Password Manager in a Passkey World](/passkeys/still-need-password-manager/)
-- [How Password Managers Are Adapting to Passkeys](/passkeys/password-managers-adapting/)
 - [The Transition: Managing Passwords and Passkeys Together](/passkeys/managing-both/)
+- [Can Passkeys Be Hacked? Security Model Explained](/passkeys/can-passkeys-be-hacked/)
+- [Passkeys (WebAuthn) in PanicVault](/help/passkeys/)
 - [KeePass Encryption Architecture Explained](/keepass/encryption-explained/)
 - [KeePass Data Portability](/keepass/data-portability/)

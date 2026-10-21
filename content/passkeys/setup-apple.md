@@ -2,7 +2,7 @@
 title: "How to Set Up Passkeys on Apple Devices"
 description: "Step-by-step guide to creating, using, and managing passkeys on iPhone, iPad, and Mac. Covers iCloud Keychain sync, Face ID, Touch ID, and third-party apps."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Passkeys & Passwordless"
 ---
@@ -107,24 +107,22 @@ Apple provides a central location for viewing and managing all your passkeys.
 
 ### Viewing Passkeys on iPhone or iPad
 
-1. Open **Settings**.
-2. Tap **Passwords**.
-3. Authenticate with Face ID, Touch ID, or your passcode.
-4. You will see a list of all saved credentials. Passkeys are indicated with a key icon next to the account name.
-5. Tap any entry to see details, including when the passkey was created and which device created it.
+On iOS 18 or iPadOS 18 and later:
+
+1. Open the **Passwords** app.
+2. Unlock it with Face ID, Touch ID, or your passcode.
+3. Tap **Passkeys** to see every saved passkey, or search for an account.
+4. Tap any entry to see its details.
+
+On iOS 17 or earlier, passkeys are listed in **Settings** > **Passwords**.
 
 ### Viewing Passkeys on Mac
 
-1. Open **System Settings**.
-2. Click **Passwords**.
-3. Authenticate with Touch ID or your system password.
-4. Browse or search for specific passkeys.
-
-Alternatively, on macOS Sonoma and later, you can use the standalone **Passwords** app, which provides a more full-featured interface for managing credentials. For a deeper look at Apple's built-in password management, see our [Apple Passwords app comparison](/apple/apple-passwords-app-comparison/).
+On macOS Sequoia and later, open the standalone **Passwords** app and authenticate with Touch ID or your login password. On macOS Sonoma or earlier, open **System Settings** > **Passwords** instead. For a deeper look at Apple's built-in password management, see our [Apple Passwords app comparison](/apple/apple-passwords-app-comparison/).
 
 ### Deleting a Passkey
 
-If you need to remove a passkey (for example, if you are closing an account), navigate to the passkey in your Passwords settings and tap **Delete Passkey**. This removes it from iCloud Keychain and all synced devices. The website will still have your account -- you will just need to use a different authentication method (like a password) to sign in.
+If you need to remove a passkey (for example, if you are closing an account), open it in the Passwords app (or your Passwords settings on older systems) and delete it. This removes it from iCloud Keychain and all synced devices. The website will still have your account -- you will just need to use a different authentication method (like a password) to sign in.
 
 ## Using Passkeys with Third-Party Password Managers
 
@@ -134,8 +132,8 @@ This means password managers like 1Password, Bitwarden, Dashlane, and KeePass-co
 
 ### Setting Up a Third-Party Passkey Provider
 
-1. Open **Settings** > **Passwords** > **Password Options** (on iPhone/iPad) or **System Settings** > **Passwords** > **Password Options** (on Mac).
-2. Under **Use passwords and passkeys from**, select your preferred password manager alongside or instead of iCloud Keychain.
+1. On iPhone or iPad (iOS 18 or later), open **Settings** > **General** > **AutoFill & Passwords**. On a Mac (macOS Sequoia or later), open **System Settings** > **General** > **AutoFill & Passwords**.
+2. Turn on **AutoFill Passwords and Passkeys**, then select your preferred password manager alongside or instead of Apple's Passwords.
 3. When you create a passkey on a website, you will be prompted to choose which credential store to use.
 
 For PanicVault users, this integration means you can store passkeys alongside your traditional KeePass passwords in a single KDBX database, maintaining the data portability that defines the [KeePass ecosystem](/keepass/). For more on this topic, see [passkeys and your KeePass database](/passkeys/keepass-and-passkeys/).
@@ -155,7 +153,7 @@ What happens when you need to sign in on a device that does not have your passke
 
 This works because your iPhone communicates with the other device over Bluetooth Low Energy (BLE) to complete the authentication. The devices need to be physically near each other, which provides an additional layer of security against remote attacks.
 
-For more complex cross-platform scenarios, including using passkeys across Apple, Android, and Windows, see our guide on [how to sync passkeys across devices](/passkeys/sync-across-devices/).
+For more complex cross-platform scenarios, including using passkeys across Apple, Android, and Windows, see our comparison of [Google, Apple and Microsoft passkeys](/passkeys/google-apple-microsoft/).
 
 ## Passkeys and Apple's Ecosystem Advantages
 
@@ -163,11 +161,11 @@ The [Apple ecosystem](/apple/) offers several advantages for passkey users:
 
 **Seamless sync.** iCloud Keychain syncs passkeys across all your Apple devices with end-to-end encryption. No extra setup, no third-party tools needed.
 
-**Biometric integration.** [Face ID and Touch ID](/apple/face-id-touch-id-setup/) provide fast, secure authentication for passkey use. The hardware-backed [Secure Enclave](/apple/secure-enclave/) protects the private keys.
+**Biometric integration.** [Face ID and Touch ID](/apple/face-id-touch-id-setup/) provide fast, secure authentication for passkey use. iCloud Keychain is end-to-end encrypted, and on each device the [Secure Enclave](/apple/secure-enclave/) protects the keys that guard it.
 
 **System-level autofill.** Passkeys work in Safari, other browsers, and native apps through macOS and iOS system autofill. There is no browser extension to install or maintain.
 
-**Apple Passwords app.** The standalone Passwords app (macOS Sonoma and later, iOS 18 and later) provides a visual interface for managing all your credentials including passkeys.
+**Apple Passwords app.** The standalone Passwords app (iOS 18, iPadOS 18, macOS Sequoia and later) provides a visual interface for managing all your credentials including passkeys.
 
 **Third-party extensibility.** The credential provider framework lets you choose where passkeys are stored, so you are not locked into iCloud Keychain if you prefer another solution.
 
@@ -188,6 +186,7 @@ If a passkey you created on one device is not appearing on another:
 - Verify iCloud Keychain is enabled on both devices.
 - Check your internet connection -- iCloud Keychain requires a network connection to sync.
 - Wait a few minutes. Sync is usually fast but can take time on slow connections.
+- Check that both devices run iOS 16, iPadOS 16, macOS Ventura or later, then quit and reopen the Passwords app.
 
 ### Face ID or Touch ID Prompt Not Appearing
 
@@ -210,7 +209,6 @@ The setup process is simpler than most security improvements. A few minutes spen
 ## Related Articles
 
 - [What Are Passkeys? Complete Guide for 2026](/passkeys/what-are-passkeys/)
-- [How to Sync Passkeys Across Devices](/passkeys/sync-across-devices/)
 - [Google, Apple, Microsoft Passkey Implementations Compared](/passkeys/google-apple-microsoft/)
 - [Face ID and Touch ID Setup Guide](/apple/face-id-touch-id-setup/)
 - [Which Websites Support Passkeys in 2026?](/passkeys/supported-sites/)
