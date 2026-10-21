@@ -2,9 +2,11 @@
 title: "Data Portability: Why Your Password Manager Should Never Lock You In"
 description: "Understand why data portability matters for password managers, how open standards like KDBX prevent vendor lock-in, and what to look for before trusting a vault."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
+aliases:
+  - /keepass/vs-proprietary/
 ---
 
 Your passwords are yours. That statement sounds obvious, but the reality of how most password managers operate tells a different story. When you store credentials in a proprietary vault, you are trusting not only that the vendor will keep your data secure, but that they will let you leave with it when you want to. Many will not -- at least not easily. Export tools are limited, formats are undocumented, and the switching costs are designed, whether intentionally or not, to keep you paying month after month. This is vendor lock-in, and it has no place in the management of your most sensitive personal data.
@@ -50,6 +52,8 @@ This openness produces several concrete benefits:
 
 **Competition on quality.** When multiple applications support the same format, they compete on user experience, features, performance, and platform support rather than on data lock-in. KeePassXC exists because developers saw an opportunity to build a better cross-platform experience on top of the KDBX format. Strongbox exists because iOS users wanted a native, polished vault app. PanicVault exists because Apple users wanted a modern, intuitive native client for macOS and iOS. The open format enabled all of them without requiring users to migrate their data.
 
+**The ability to fork.** The main KeePass applications are open source, so if a project stalls or heads somewhere its users do not want to go, anyone can take the code in a new direction. KeePassXC began as a community fork of KeePassX; KeePassX has since been discontinued, and the `.kdbx` files people made with it still open in KeePassXC and every other KDBX app. A proprietary format has no equivalent check: when its owner makes a change you disagree with, you can accept it or leave with whatever the export function gives you.
+
 **Long-term archival safety.** A KDBX file created in 2010 can still be opened in 2026 by any compatible application. The format has evolved (from KDB to KDBX 3.1 to KDBX 4.0/4.1), but backward compatibility has been maintained. Your data does not depend on any company remaining in business or any subscription remaining active.
 
 For a detailed look at the format itself, see our [KDBX format guide](/keepass/kdbx-format-guide/).
@@ -62,11 +66,15 @@ The risks are concrete:
 
 **Vendor discontinuation.** Companies fail, get acquired, or pivot to different business models. If your password manager shuts down, your access to your own data depends entirely on whatever export tools they built (if any) and whatever migration path they provide (if any). History is full of examples: password managers have been discontinued, acquired and sunsetted, or changed their pricing models dramatically, leaving users scrambling.
 
-**Price increases.** When your data is locked in a proprietary format, the vendor's leverage in pricing discussions is significant. Switching costs -- the time and effort to export, find an alternative, import, verify, and rebuild integrations -- serve as a de facto price floor. You will pay more than you want to before you will endure the pain of migration.
+**Price increases and shrinking free plans.** When your data is locked in a proprietary format, the vendor's leverage in pricing discussions is significant. Switching costs -- the time and effort to export, find an alternative, import, verify, and rebuild integrations -- serve as a de facto price floor. You will pay more than you want to before you will endure the pain of migration. The change does not have to be a price rise: in February 2021 LastPass [announced](https://blog.lastpass.com/posts/changes-to-lastpass-free) that from March 16 its free plan would work on only one type of device: computers or mobile devices. Free users who relied on both had to start paying or leave, and leaving meant an export.
+
+**Infrastructure dependency.** A cloud-first manager needs its vendor's servers to sign you in on a new device and to keep your devices in sync. If the service goes away, the cached copy on the devices you already use is all you have, and how long that keeps working is up to the app. A KDBX file needs nothing but the file, your master key and any compatible app.
 
 **Feature removal or degradation.** Vendors can remove features, change sync behavior, drop platform support, or alter security practices. When you are locked in, your options are to accept the changes or begin a painful migration. When your data is in an open format, you switch applications and keep working.
 
 **Forced trust.** With a proprietary format, you cannot independently verify how your data is encrypted, how keys are managed, or what data the vendor can access. You trust their documentation, their marketing, and their reputation. With an open format, you trust the mathematics and the publicly auditable code. For more on the trust dynamics of password management, see our discussion of [trusting a company with your passwords](/password-managers/trust-with-passwords/).
+
+The LastPass breach shows why this matters. When LastPass [disclosed in December 2022](https://blog.lastpass.com/posts/notice-of-recent-security-incident) that attackers had copied a backup of customer vaults, it described that data as "stored in a proprietary binary format that contains both unencrypted data, such as website URLs, as well as fully-encrypted sensitive fields such as website usernames and passwords." Until that notice, users had no way to check which parts of their vault were encrypted. In a KDBX file, everything after the short header is encrypted -- titles, URLs, usernames, notes and passwords alike -- and anyone can confirm that from the published format, before a breach rather than after one.
 
 ## How KDBX Enables True Portability
 
@@ -102,7 +110,7 @@ No conversion is needed. You open the file, enter your master password, and your
 
 Beyond native KDBX support, KeePass-compatible applications provide import and export paths for migration:
 
-**Importing from other password managers:** KeePassXC and KeePass 2.x can import from 1Password (1PIF/1PUX), LastPass (CSV), Bitwarden (JSON), Dashlane (CSV), Chrome (CSV), Firefox, and many others. The import translates the foreign format into KDBX entries, preserving as much metadata as the source format provides.
+**Importing from other password managers:** KeePassXC's import wizard reads CSV files and exports from 1Password (.1pux and .opvault), Bitwarden and Proton Pass, and KeePass 2.x [imports dozens of formats](https://keepass.info/help/base/importexport.html), LastPass among them. The import translates the foreign format into KDBX entries, preserving as much metadata as the source format provides.
 
 **Exporting to common formats:** If you ever need to leave the KeePass ecosystem (though the open format makes this far less likely), you can export to CSV, XML, or HTML. Be aware that these exports are unencrypted -- handle them with extreme care and securely delete them immediately after use.
 
@@ -187,9 +195,9 @@ If data portability is important to you (and it should be), evaluate password ma
 5. **No subscription gate on data access.** Can you access your data if you stop paying? Some managers lock you out of your vault or limit you to read-only access on the free tier.
 6. **Open-source implementation.** Can you verify the code that handles your data? Open source is not a guarantee of security, but it enables independent auditing that proprietary software does not.
 
-The KeePass ecosystem scores well on every criterion. Your vault is a local KDBX file that you control. Multiple open-source applications support it natively. Full import and export capabilities exist. There is no subscription, no server dependency, and no vendor controlling access to your own data.
+The KeePass ecosystem scores well on every criterion. Your vault is a local KDBX file that you control. Several open-source applications support it natively, and full import and export capabilities exist. Some KeePass apps are free and some are paid -- Strongbox and KeePassium charge for their full versions, and [PanicVault](https://apps.apple.com/app/id6759188575) is a one-time purchase -- but none of them holds your data: stop paying for one and the same file still opens in any other. There is no server dependency and no vendor controlling access to your own data.
 
-For a broader comparison of how the KeePass approach differs from proprietary alternatives, see our article on [KeePass vs. proprietary managers](/keepass/vs-proprietary/). And for a critical look at common misconceptions about password management tools, our piece on [password manager myths debunked](/password-managers/myths-debunked/) addresses several portability-related claims.
+For a critical look at common misconceptions about password management tools, our piece on [password manager myths debunked](/password-managers/myths-debunked/) addresses several portability-related claims.
 
 ## The Cost of Ignoring Portability
 
