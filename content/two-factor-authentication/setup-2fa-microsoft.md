@@ -88,9 +88,9 @@ If you do choose passwordless sign-in, you are essentially replacing the "someth
 
 ## Why You Should Choose TOTP Over SMS
 
-Microsoft supports SMS as a verification method, but it should be your fallback, not your primary choice. [SIM swapping](/two-factor-authentication/sim-swapping/) remains a serious threat, and high-value accounts like Microsoft -- which often serve as the recovery email for other services -- are prime targets.
+Microsoft supports SMS as a verification method, but it should be your fallback, not your primary choice. [SIM swapping](/two-factor-authentication/sms-being-phased-out/) remains a serious threat, and high-value accounts like Microsoft -- which often serve as the recovery email for other services -- are prime targets.
 
-TOTP codes are generated entirely on your device. They never travel over a phone network, cannot be intercepted by redirecting your phone number, and do not depend on cellular coverage. For a comprehensive comparison, read our [TOTP vs. SMS analysis](/two-factor-authentication/totp-vs-sms/).
+TOTP codes are generated entirely on your device. They never travel over a phone network, cannot be intercepted by redirecting your phone number, and do not depend on cellular coverage. For a comprehensive comparison, read our [TOTP vs. SMS analysis](/two-factor-authentication/sms-being-phased-out/).
 
 If you add SMS as a backup method (which is reasonable for emergency recovery), make sure TOTP is configured as your primary verification method.
 
@@ -98,7 +98,7 @@ If you add SMS as a backup method (which is reasonable for emergency recovery), 
 
 Microsoft generates a single recovery code during the two-step verification setup. This code is critically important. Write it down or store it in your password manager immediately. It is the only way to regain access to your account if you lose your authenticator app, your phone, and your backup email simultaneously.
 
-Microsoft allows you to regenerate this code later from the security settings page, which invalidates the old code. If you suspect your recovery code has been compromised, regenerate it immediately. For comprehensive advice on recovery code management, see our [recovery codes guide](/two-factor-authentication/recovery-codes/).
+Microsoft allows you to regenerate this code later from the security settings page, which invalidates the old code. If you suspect your recovery code has been compromised, regenerate it immediately. For comprehensive advice on recovery code management, see our [recovery codes guide](/two-factor-authentication/backup-totp-codes/).
 
 ## Using a Password Manager for TOTP Codes
 
@@ -111,12 +111,12 @@ The benefits are substantial:
 - **Strong encryption.** Your TOTP secrets are protected by the same AES-256 encryption (or equivalent) that guards your passwords. Many standalone authenticator apps have weaker or no encryption for stored secrets.
 - **Simplified migration.** When you switch phones, your TOTP codes migrate automatically with your password vault. No QR code re-scanning, no manual transfers.
 
-For the full rationale and step-by-step instructions, see our guide on [using your password manager as an authenticator](/two-factor-authentication/password-manager-as-authenticator/). If you are migrating existing codes from a standalone app, our [guide to moving codes to a password manager](/two-factor-authentication/move-codes-to-password-manager/) walks you through the process.
+For the full rationale and step-by-step instructions, see our guide on [using your password manager as an authenticator](/two-factor-authentication/google-authenticator-vs-builtin/). If you are migrating existing codes from a standalone app, our [guide to moving codes to a password manager](/two-factor-authentication/move-codes-to-password-manager/) walks you through the process.
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication and Why You Need It](/two-factor-authentication/what-is-2fa/)
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/)
 - [The Best Authenticator Apps in 2026](/two-factor-authentication/best-authenticator-apps/)
 - [Hardware Security Keys vs. TOTP: Which Is More Secure?](/two-factor-authentication/hardware-keys-vs-totp/)
-- [How to Use Your Password Manager as an Authenticator](/two-factor-authentication/password-manager-as-authenticator/)
-- [Understanding Recovery Codes: Your 2FA Safety Net](/two-factor-authentication/recovery-codes/)
+- [Google Authenticator vs. Password Manager TOTP](/two-factor-authentication/google-authenticator-vs-builtin/)
+- [How to Back Up 2FA: TOTP Secrets and Recovery Codes](/two-factor-authentication/backup-totp-codes/)

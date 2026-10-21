@@ -9,7 +9,7 @@ silo: "Two-Factor Authentication"
 
 Time-Based One-Time Passwords are one of the most widely deployed [two-factor authentication](/two-factor-authentication/) methods in the world. Every 30 seconds, your authenticator app generates a new six-digit code without contacting any server. The service you are logging into independently computes the same code and checks for a match. This article explains exactly how that process works, from the cryptographic primitives to the final digit extraction.
 
-Understanding TOTP at a technical level is not just an academic exercise. It helps you evaluate the security of different [authenticator apps](/two-factor-authentication/best-authenticator-apps/), understand why backup matters, and make informed decisions about using TOTP in a [password manager](/two-factor-authentication/password-manager-as-authenticator/).
+Understanding TOTP at a technical level is not just an academic exercise. It helps you evaluate the security of different [authenticator apps](/two-factor-authentication/best-authenticator-apps/), understand why backup matters, and make informed decisions about using TOTP in a [password manager](/two-factor-authentication/google-authenticator-vs-builtin/).
 
 ## The Standards: RFC 4226 and RFC 6238
 
@@ -163,7 +163,7 @@ Both your authenticator app and the server perform this identical computation. W
 
 TOTP codes change every 30 seconds by design. This expiration serves several security purposes.
 
-**Replay prevention**: A code observed by an attacker (over the shoulder, via a keylogger, through phishing) is only useful for a very narrow window. With [SMS codes that remain valid for 5-10 minutes](/two-factor-authentication/totp-vs-sms/), an attacker has a much wider window to exploit a captured code.
+**Replay prevention**: A code observed by an attacker (over the shoulder, via a keylogger, through phishing) is only useful for a very narrow window. With [SMS codes that remain valid for 5-10 minutes](/two-factor-authentication/sms-being-phased-out/), an attacker has a much wider window to exploit a captured code.
 
 **Statelessness**: Because the code is derived from the current time, neither the client nor the server needs to track which codes have been used. This simplifies implementation and eliminates synchronization issues that plague counter-based HOTP systems.
 
@@ -237,7 +237,7 @@ The key takeaways for users:
 
 - Your TOTP secrets are as sensitive as your passwords. Protect them accordingly.
 - Back up your secrets. Losing access to your authenticator without backup codes is a serious problem. Using a password manager that stores TOTP secrets provides automatic encrypted backup.
-- TOTP is vastly superior to [SMS-based 2FA](/two-factor-authentication/totp-vs-sms/), but it is not phishing-proof. For your most critical accounts, consider hardware security keys.
+- TOTP is vastly superior to [SMS-based 2FA](/two-factor-authentication/sms-being-phased-out/), but it is not phishing-proof. For your most critical accounts, consider hardware security keys.
 - The 30-second code rotation is a feature, not an inconvenience. It bounds the window of vulnerability for any intercepted code.
 
 The fact that TOTP works the same way everywhere -- from Google to your bank to a self-hosted Nextcloud instance -- is a testament to the power of open standards. RFC 6238 gave the world a common, interoperable, and secure second-factor protocol, and it continues to serve that role well.

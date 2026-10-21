@@ -17,7 +17,7 @@ This guide walks through the complete migration process: how to export or re-enr
 
 Not all password managers handle TOTP. You need one that can store TOTP secret keys (the `otpauth://` URI) and generate time-based codes. [KeePass-compatible apps](/keepass/) support TOTP through the standardized KDBX format, and many popular managers like 1Password and Bitwarden include it as well. PanicVault, for example, stores TOTP secrets inside your encrypted KeePass vault on Apple devices, giving you code generation alongside your passwords with full AES-256 or ChaCha20 encryption.
 
-If you are evaluating options, our comparison of the [best authenticator apps](/two-factor-authentication/best-authenticator-apps/) covers TOTP support across different tools, and the [password manager as authenticator](/two-factor-authentication/password-manager-as-authenticator/) guide explains the tradeoffs in depth.
+If you are evaluating options, our comparison of the [best authenticator apps](/two-factor-authentication/best-authenticator-apps/) covers TOTP support across different tools, and the [password manager as authenticator](/two-factor-authentication/google-authenticator-vs-builtin/) guide explains the tradeoffs in depth.
 
 ### A Complete Inventory of Your 2FA Accounts
 
@@ -82,7 +82,7 @@ If the code does not match, check the time on your device (TOTP is time-sensitiv
 
 **6. Save the recovery codes.**
 
-Most services display a set of recovery codes after enabling 2FA. Save these in your password manager entry for the service, or store them separately according to your [recovery code strategy](/two-factor-authentication/recovery-codes/).
+Most services display a set of recovery codes after enabling 2FA. Save these in your password manager entry for the service, or store them separately according to your [recovery code strategy](/two-factor-authentication/backup-totp-codes/).
 
 **7. Remove the entry from your old authenticator.**
 

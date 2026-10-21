@@ -110,7 +110,7 @@ Apple's decision to use a proprietary system rather than standard TOTP means you
 - The system is opaque -- you cannot inspect or export the underlying secrets
 - It does not work with cross-platform authenticator workflows
 
-For your Apple ID specifically, you are limited to Apple's system. But for all your other accounts, using a [TOTP-based authenticator or password manager](/two-factor-authentication/totp-vs-sms/) gives you more flexibility and control.
+For your Apple ID specifically, you are limited to Apple's system. But for all your other accounts, using a [TOTP-based authenticator or password manager](/two-factor-authentication/sms-being-phased-out/) gives you more flexibility and control.
 
 ## Setting Up an Account Recovery Key
 
@@ -147,7 +147,7 @@ While you cannot store Apple's 2FA codes in a password manager (since Apple uses
 
 [PanicVault](https://apps.apple.com/app/id6759188575), a KeePass-compatible password manager built for Apple devices, is particularly well-suited for this. Your Apple ID password, Recovery Key, and trusted phone number details all live in a single encrypted entry in your `.kdbx` database. Because PanicVault supports iCloud Drive sync, your encrypted vault is accessible across all your Apple devices -- while the vault itself is protected by your master passphrase and optional [key file](/keepass/key-files/), independent of your Apple ID. This means even if your Apple ID is compromised, your password vault remains secure.
 
-For all your non-Apple accounts, PanicVault handles TOTP natively -- storing both passwords and TOTP secrets in the same entry and generating verification codes automatically. This unified approach means you can use the [password manager as your authenticator](/two-factor-authentication/password-manager-as-authenticator/) for Google, Facebook, Instagram, and every other service that supports standard TOTP.
+For all your non-Apple accounts, PanicVault handles TOTP natively -- storing both passwords and TOTP secrets in the same entry and generating verification codes automatically. This unified approach means you can use the [password manager as your authenticator](/two-factor-authentication/google-authenticator-vs-builtin/) for Google, Facebook, Instagram, and every other service that supports standard TOTP.
 
 ## Verifying Your Apple ID 2FA Setup
 
@@ -163,8 +163,8 @@ Periodically review your trusted devices and phone numbers in **Settings** > you
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication?](/two-factor-authentication/what-is-2fa/) -- The fundamentals of 2FA and why every account needs it.
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/) -- The fundamentals of 2FA and why every account needs it.
 - [Hardware Keys vs. TOTP: Which 2FA Is Best?](/two-factor-authentication/hardware-keys-vs-totp/) -- Compare physical security keys with app-based authentication.
-- [How to Save and Manage Recovery Codes](/two-factor-authentication/recovery-codes/) -- Best practices for storing the codes that save you from lockout.
-- [How to Set Up 2FA on Every Major Service](/two-factor-authentication/setup-on-every-service/) -- Enable 2FA across all your important accounts.
+- [How to Back Up 2FA: TOTP Secrets and Recovery Codes](/two-factor-authentication/backup-totp-codes/) -- Best practices for storing the codes that save you from lockout.
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/) -- Enable 2FA across all your important accounts.
 - [SMS 2FA Is Being Phased Out](/two-factor-authentication/sms-being-phased-out/) -- Why services are moving away from text message verification.

@@ -42,7 +42,7 @@ GitHub offers the most comprehensive set of 2FA options of any major platform:
 
 **GitHub Mobile** -- The GitHub Mobile app can send push notifications for login approval. You tap "Approve" on your phone instead of entering a code. This is convenient but ties your 2FA to a specific app on a specific device.
 
-**SMS** -- GitHub supports SMS-based codes as a 2FA method. It is the least secure option and should be used only as a backup. See our [TOTP vs. SMS comparison](/two-factor-authentication/totp-vs-sms/) for the security trade-offs.
+**SMS** -- GitHub supports SMS-based codes as a 2FA method. It is the least secure option and should be used only as a backup. See our [TOTP vs. SMS comparison](/two-factor-authentication/sms-being-phased-out/) for the security trade-offs.
 
 **Passkeys** -- GitHub also supports passkeys (a newer FIDO2-based standard), which combine the security of hardware keys with the convenience of biometric authentication on supported devices.
 
@@ -94,7 +94,7 @@ GitHub's 2FA requirement means you must pick a method. The choice matters signif
 
 **Security keys** provide even stronger protection. They are immune to phishing attacks because the key cryptographically verifies the website you are authenticating to. Even if you are tricked into visiting a phishing site that looks exactly like GitHub, the security key will not authenticate because the domain does not match. If you contribute to high-profile or critical open-source projects, a security key is worth the investment.
 
-**SMS** should be avoided as a primary method. [SIM swapping attacks](/two-factor-authentication/sim-swapping/) and SS7 network vulnerabilities make SMS codes interceptable. For a developer account with access to production repositories and deployment secrets, this risk is unacceptable.
+**SMS** should be avoided as a primary method. [SIM swapping attacks](/two-factor-authentication/sms-being-phased-out/) and SS7 network vulnerabilities make SMS codes interceptable. For a developer account with access to production repositories and deployment secrets, this risk is unacceptable.
 
 ## Saving Your Recovery Codes
 
@@ -108,7 +108,7 @@ Treat these codes with the same seriousness as your SSH keys or deployment crede
 - **Regenerate them periodically** from Settings → Password and authentication → Recovery codes → Generate new recovery codes. This invalidates all previous codes.
 - **Check your remaining codes** regularly. If you have used several, generate a fresh set before you run out.
 
-For more guidance, see our comprehensive [recovery codes guide](/two-factor-authentication/recovery-codes/).
+For more guidance, see our comprehensive [recovery codes guide](/two-factor-authentication/backup-totp-codes/).
 
 ## Using a Password Manager for TOTP Codes
 
@@ -123,12 +123,12 @@ For developers, this approach has specific advantages:
 
 Developer accounts often have access to sensitive repositories, deployment secrets, and organizational resources. The reliability of TOTP code access is critical -- being locked out of GitHub during a production incident is not acceptable. A password manager with cross-device sync provides that reliability.
 
-For detailed setup instructions and the security trade-off analysis, see our guide on [using your password manager as an authenticator](/two-factor-authentication/password-manager-as-authenticator/).
+For detailed setup instructions and the security trade-off analysis, see our guide on [using your password manager as an authenticator](/two-factor-authentication/google-authenticator-vs-builtin/).
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication and Why You Need It](/two-factor-authentication/what-is-2fa/)
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/)
 - [Hardware Security Keys vs. TOTP: Which Is More Secure?](/two-factor-authentication/hardware-keys-vs-totp/)
 - [The Best Authenticator Apps in 2026](/two-factor-authentication/best-authenticator-apps/)
-- [How to Use Your Password Manager as an Authenticator](/two-factor-authentication/password-manager-as-authenticator/)
-- [Understanding Recovery Codes: Your 2FA Safety Net](/two-factor-authentication/recovery-codes/)
+- [Google Authenticator vs. Password Manager TOTP](/two-factor-authentication/google-authenticator-vs-builtin/)
+- [How to Back Up 2FA: TOTP Secrets and Recovery Codes](/two-factor-authentication/backup-totp-codes/)

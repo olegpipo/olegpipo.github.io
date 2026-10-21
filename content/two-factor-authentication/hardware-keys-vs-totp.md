@@ -125,7 +125,7 @@ Hardware keys require a compatible port or NFC. A USB-A key will not work on a U
 
 TOTP is supported by virtually every service that offers 2FA. Hardware key support is growing but remains less universal. Major platforms (Google, Microsoft, Apple, GitHub, Dropbox, Facebook) support hardware keys. Many smaller services do not.
 
-As [TOTP continues to replace SMS](/two-factor-authentication/totp-vs-sms/) as the baseline second factor, hardware keys occupy the premium tier above TOTP.
+As [TOTP continues to replace SMS](/two-factor-authentication/sms-being-phased-out/) as the baseline second factor, hardware keys occupy the premium tier above TOTP.
 
 ## Cost Analysis
 
@@ -141,7 +141,7 @@ So what is the best 2FA method in 2026? The answer depends on your situation. He
 
 - **If you want maximum phishing protection**, use a hardware key. A YubiKey or Titan key cryptographically verifies the site you are logging into, stopping phishing attacks before they start. This is the best choice for email, banking, and any account where a breach would be catastrophic.
 - **If you want free, easy 2FA for everything**, use a TOTP app. It protects against the vast majority of attacks and works with virtually every service. See our [best authenticator apps](/two-factor-authentication/best-authenticator-apps/) guide for our top picks.
-- **If you already use a password manager**, use its built-in TOTP. Keeping your passwords and TOTP codes in [one place](/two-factor-authentication/password-manager-as-authenticator/) simplifies your workflow while still providing strong second-factor protection. Learn [how to move your TOTP codes into a password manager](/two-factor-authentication/move-codes-to-password-manager/) if you have not already.
+- **If you already use a password manager**, use its built-in TOTP. Keeping your passwords and TOTP codes in [one place](/two-factor-authentication/google-authenticator-vs-builtin/) simplifies your workflow while still providing strong second-factor protection. Learn [how to move your TOTP codes into a password manager](/two-factor-authentication/move-codes-to-password-manager/) if you have not already.
 - **Best of both worlds**: use a hardware key for your most critical accounts (email, banking, cloud infrastructure) and a TOTP app for everything else. This layered approach gives you the strongest protection where it matters most without adding friction to everyday logins.
 
 ### Use Hardware Keys If:
@@ -169,7 +169,7 @@ As passkeys gain adoption, the distinction between hardware keys and TOTP may be
 
 ## Practical Recommendations
 
-1. **Audit your accounts.** Start with the [highest-priority accounts](/two-factor-authentication/priority-accounts/) -- the services that would cause the most damage if compromised. See our guide to [setting up 2FA on every service](/two-factor-authentication/setup-on-every-service/) for a systematic approach.
+1. **Audit your accounts.** Start with the [highest-priority accounts](/two-factor-authentication/priority-accounts/) -- the services that would cause the most damage if compromised. See our guide to [setting up 2FA on every service](/two-factor-authentication/priority-accounts/) for a systematic approach.
 2. **Buy two hardware keys.** Register both with your critical accounts. Store one on your keychain and one in a safe or safety deposit box.
 3. **Use a reputable TOTP app** for services that do not support hardware keys. Avoid SMS-based 2FA where possible. If you are in the Apple ecosystem, [PanicVault](https://apps.apple.com/app/id6759188575) is a native macOS/iOS password manager that also handles TOTP codes alongside your passwords in a single KeePass KDBX vault.
 4. **Save recovery codes.** Regardless of which method you use, store recovery codes in a secure location, separate from your primary authentication method.

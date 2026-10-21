@@ -87,7 +87,7 @@ If you are deciding between an authenticator app and SMS for Facebook 2FA, TOTP 
 
 **International travel.** If you travel internationally and do not have a local SIM or roaming enabled, SMS codes may not reach you. TOTP codes continue to generate normally regardless of your location or network status.
 
-**Account takeover patterns.** Real-world Facebook account compromises frequently involve [phishing attacks](/two-factor-authentication/what-is-2fa/) combined with SIM swapping. Attackers phish your password, then swap your SIM to receive the SMS code. TOTP eliminates the SIM component of this attack chain, and recognizing [Facebook phishing](/phishing/facebook-phishing/) removes the first link in it.
+**Account takeover patterns.** Real-world Facebook account compromises frequently involve phishing attacks combined with SIM swapping. Attackers phish your password, then swap your SIM to receive the SMS code. TOTP eliminates the SIM component of this attack chain, and recognizing [Facebook phishing](/phishing/facebook-phishing/) removes the first link in it.
 
 For all these reasons, the security community overwhelmingly recommends TOTP over SMS. Facebook makes it easy to use either one, so there is no reason not to choose the stronger option.
 
@@ -107,7 +107,7 @@ Facebook provides ten recovery codes during 2FA setup. Each code can be used exa
 
 When you have used most of your codes, return to the recovery codes section and generate a fresh set. The old unused codes are invalidated when new ones are generated.
 
-For a comprehensive discussion of recovery code management across all services, see our [recovery codes guide](/two-factor-authentication/recovery-codes/).
+For a comprehensive discussion of recovery code management across all services, see our [recovery codes guide](/two-factor-authentication/backup-totp-codes/).
 
 ## Using a Password Manager for TOTP
 
@@ -117,7 +117,7 @@ Managing Facebook 2FA with a password manager streamlines both the setup and the
 
 This approach also solves the backup problem. Your TOTP secret is part of your encrypted password database, which is backed up through your regular vault backup process. Lose your phone? Your TOTP secrets are in your vault, accessible from any device where you have PanicVault (or KeePassXC, or any other KeePass-compatible app). No panicked search for recovery codes, no account recovery process.
 
-The [password manager as authenticator](/two-factor-authentication/password-manager-as-authenticator/) approach works for Facebook and for virtually every other service that supports standard TOTP. If you are currently using a standalone authenticator app, see our guide on [moving your codes to a password manager](/two-factor-authentication/move-codes-to-password-manager/).
+The [password manager as authenticator](/two-factor-authentication/google-authenticator-vs-builtin/) approach works for Facebook and for virtually every other service that supports standard TOTP. If you are currently using a standalone authenticator app, see our guide on [moving your codes to a password manager](/two-factor-authentication/move-codes-to-password-manager/).
 
 ## Additional Facebook Security Settings
 
@@ -135,8 +135,8 @@ These settings, combined with TOTP-based 2FA, create a layered defense that make
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication?](/two-factor-authentication/what-is-2fa/) -- Understand how 2FA protects your accounts.
-- [TOTP vs. SMS: Which 2FA Method Is Safer?](/two-factor-authentication/totp-vs-sms/) -- Why app-based codes beat text messages for security.
-- [Using a Password Manager as Your Authenticator](/two-factor-authentication/password-manager-as-authenticator/) -- Simplify 2FA by storing TOTP codes in your vault.
-- [How to Save and Manage Recovery Codes](/two-factor-authentication/recovery-codes/) -- Never get locked out of your accounts.
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/) -- Understand how 2FA protects your accounts.
+- [SMS 2FA vs. Authenticator Apps: Why SMS Is Being Phased Out](/two-factor-authentication/sms-being-phased-out/) -- Why app-based codes beat text messages for security.
+- [Google Authenticator vs. Password Manager TOTP](/two-factor-authentication/google-authenticator-vs-builtin/) -- Simplify 2FA by storing TOTP codes in your vault.
+- [How to Back Up 2FA: TOTP Secrets and Recovery Codes](/two-factor-authentication/backup-totp-codes/) -- Never get locked out of your accounts.
 - [Set Up 2FA on Instagram](/two-factor-authentication/setup-2fa-instagram/) -- Protect your linked Instagram account with the same approach.

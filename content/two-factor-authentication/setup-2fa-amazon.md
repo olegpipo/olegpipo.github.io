@@ -36,9 +36,9 @@ Credential stuffing attacks -- where attackers use email and password combinatio
 
 Amazon offers two methods for two-step verification:
 
-**Authenticator app (TOTP)** -- This is the recommended method. An authenticator app generates a time-based one-time password that changes every 30 seconds. The code is generated locally on your device and never travels over a network, making it immune to interception. For a detailed explanation of how this technology works, see our article on [what 2FA is and why you need it](/two-factor-authentication/what-is-2fa/).
+**Authenticator app (TOTP)** -- This is the recommended method. An authenticator app generates a time-based one-time password that changes every 30 seconds. The code is generated locally on your device and never travels over a network, making it immune to interception. For a detailed explanation of how this technology works, see our article on [what 2FA is and why you need it](/two-factor-authentication/).
 
-**SMS text messages** -- Amazon can send a six-digit code to your phone number via text message. While this is better than no 2FA at all, SMS is vulnerable to SIM swapping and interception attacks. Our comparison of [TOTP vs. SMS authentication](/two-factor-authentication/totp-vs-sms/) explains why TOTP is the stronger choice.
+**SMS text messages** -- Amazon can send a six-digit code to your phone number via text message. While this is better than no 2FA at all, SMS is vulnerable to SIM swapping and interception attacks. Our comparison of [TOTP vs. SMS authentication](/two-factor-authentication/sms-being-phased-out/) explains why TOTP is the stronger choice.
 
 Amazon requires you to set up a primary method and allows you to add a backup method. The ideal configuration is an authenticator app as your primary method with SMS as a backup for emergencies.
 
@@ -80,11 +80,11 @@ Once enabled, Amazon will require a verification code during login on new device
 
 Amazon supports both authenticator apps and SMS, but they are not equally secure. The difference matters.
 
-SMS codes travel through the telecommunications network, which was not designed with security in mind. [SIM swapping attacks](/two-factor-authentication/sim-swapping/) allow criminals to hijack your phone number by convincing your carrier to transfer it to a new SIM card. Once they control your number, they receive your SMS verification codes. This attack requires no technical sophistication -- it is a social engineering attack against a customer service representative.
+SMS codes travel through the telecommunications network, which was not designed with security in mind. [SIM swapping attacks](/two-factor-authentication/sms-being-phased-out/) allow criminals to hijack your phone number by convincing your carrier to transfer it to a new SIM card. Once they control your number, they receive your SMS verification codes. This attack requires no technical sophistication -- it is a social engineering attack against a customer service representative.
 
 TOTP codes, by contrast, are generated entirely on your device. There is no phone number to hijack, no message to intercept, and no carrier employee to deceive. The shared secret lives only on your device and Amazon's servers. An attacker would need physical access to your device -- or access to your authenticator app's backup -- to obtain your codes.
 
-For a deeper analysis of why the security community recommends TOTP over SMS, read our full comparison of [TOTP vs. SMS](/two-factor-authentication/totp-vs-sms/).
+For a deeper analysis of why the security community recommends TOTP over SMS, read our full comparison of [TOTP vs. SMS](/two-factor-authentication/sms-being-phased-out/).
 
 ## Saving Your Recovery Codes
 
@@ -92,7 +92,7 @@ When you enable two-step verification, Amazon may provide recovery options or al
 
 Save your recovery codes immediately. Do not skip this step. Store them in a secure location separate from your authenticator app -- a password manager is ideal because the codes are encrypted alongside your other credentials.
 
-If Amazon does not explicitly provide downloadable recovery codes during setup, your backup phone number serves as the recovery path. Make sure the backup number is current and belongs to a phone you will have access to in an emergency. For comprehensive guidance on managing recovery codes, see our [recovery codes guide](/two-factor-authentication/recovery-codes/).
+If Amazon does not explicitly provide downloadable recovery codes during setup, your backup phone number serves as the recovery path. Make sure the backup number is current and belongs to a phone you will have access to in an emergency. For comprehensive guidance on managing recovery codes, see our [recovery codes guide](/two-factor-authentication/backup-totp-codes/).
 
 ## Using a Password Manager for TOTP Codes
 
@@ -109,12 +109,12 @@ This approach has several advantages:
 
 Some security purists argue that storing passwords and TOTP codes together weakens the "two-factor" principle because both factors are in the same place. In theory, this is true. In practice, the threat model for most people involves remote attackers who have stolen a password from a data breach -- not attackers who have compromised your encrypted password manager vault. The practical security improvement of having reliable, backed-up TOTP codes far outweighs the theoretical risk for the vast majority of users.
 
-For a full discussion of this trade-off and how to set it up, see our guide on [using your password manager as an authenticator](/two-factor-authentication/password-manager-as-authenticator/).
+For a full discussion of this trade-off and how to set it up, see our guide on [using your password manager as an authenticator](/two-factor-authentication/google-authenticator-vs-builtin/).
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication and Why You Need It](/two-factor-authentication/what-is-2fa/)
-- [TOTP vs. SMS: Which Two-Factor Method Is More Secure?](/two-factor-authentication/totp-vs-sms/)
-- [How to Use Your Password Manager as an Authenticator](/two-factor-authentication/password-manager-as-authenticator/)
-- [Understanding Recovery Codes: Your 2FA Safety Net](/two-factor-authentication/recovery-codes/)
-- [How to Set Up 2FA on Every Account That Supports It](/two-factor-authentication/setup-on-every-service/)
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/)
+- [SMS 2FA vs. Authenticator Apps: Why SMS Is Being Phased Out](/two-factor-authentication/sms-being-phased-out/)
+- [Google Authenticator vs. Password Manager TOTP](/two-factor-authentication/google-authenticator-vs-builtin/)
+- [How to Back Up 2FA: TOTP Secrets and Recovery Codes](/two-factor-authentication/backup-totp-codes/)
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/)

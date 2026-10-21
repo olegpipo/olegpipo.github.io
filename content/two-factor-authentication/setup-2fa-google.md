@@ -80,7 +80,7 @@ You can also configure 2FA directly from the Google app or your phone's settings
 
 ## Why TOTP Is Better Than SMS
 
-Google Prompts and SMS are convenient, but [TOTP is the stronger choice](/two-factor-authentication/totp-vs-sms/) for several reasons:
+Google Prompts and SMS are convenient, but [TOTP is the stronger choice](/two-factor-authentication/sms-being-phased-out/) for several reasons:
 
 **Portability.** TOTP works with any compatible authenticator or password manager. You are not locked into Google's ecosystem. If you switch phones, switch platforms, or want to use a desktop password manager, your TOTP secret travels with you.
 
@@ -108,7 +108,7 @@ Google generates ten backup codes, each usable exactly once. These codes are you
 - Do not take a screenshot and leave it in your camera roll unencrypted.
 - Do not skip saving them entirely. This is the most common mistake, and it leads to permanent account lockout.
 
-After you use a backup code, it is consumed and cannot be reused. When you have used several codes, generate a new set. The old unused codes are invalidated when you generate new ones. For a deeper discussion of recovery code management, see our [recovery codes guide](/two-factor-authentication/recovery-codes/).
+After you use a backup code, it is consumed and cannot be reused. When you have used several codes, generate a new set. The old unused codes are invalidated when you generate new ones. For a deeper discussion of recovery code management, see our [recovery codes guide](/two-factor-authentication/backup-totp-codes/).
 
 ## Using a Password Manager for TOTP
 
@@ -118,7 +118,7 @@ This approach has several advantages. Your TOTP secrets are automatically backed
 
 [PanicVault](https://apps.apple.com/app/id6759188575), a KeePass-compatible password manager for iPhone, iPad, and Mac, handles this seamlessly. When you scan a QR code during Google's 2FA setup, PanicVault stores the TOTP secret in the standard KeePass OTP field within your encrypted `.kdbx` database. The code appears automatically in the entry, updating every thirty seconds. Because PanicVault uses the open KeePass format, your TOTP secrets are never locked into a proprietary ecosystem -- you can access the same database from [KeePassXC on desktop](/two-factor-authentication/best-authenticator-apps/) or KeePassDX on Android.
 
-For more on this approach, see our article on [using a password manager as your authenticator](/two-factor-authentication/password-manager-as-authenticator/) and our guide to [moving existing codes into a password manager](/two-factor-authentication/move-codes-to-password-manager/).
+For more on this approach, see our article on [using a password manager as your authenticator](/two-factor-authentication/google-authenticator-vs-builtin/) and our guide to [moving existing codes into a password manager](/two-factor-authentication/move-codes-to-password-manager/).
 
 ## Google Advanced Protection Program
 
@@ -144,8 +144,8 @@ Do not skip this verification step. Discovering a misconfigured authenticator du
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication?](/two-factor-authentication/what-is-2fa/) -- Understand the fundamentals of 2FA and why it matters.
-- [TOTP vs. SMS: Which 2FA Method Is Safer?](/two-factor-authentication/totp-vs-sms/) -- A detailed comparison of the two most common second-factor methods.
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/) -- Understand the fundamentals of 2FA and why it matters.
+- [SMS 2FA vs. Authenticator Apps: Why SMS Is Being Phased Out](/two-factor-authentication/sms-being-phased-out/) -- A detailed comparison of the two most common second-factor methods.
 - [The Best Authenticator Apps in 2026](/two-factor-authentication/best-authenticator-apps/) -- Compare standalone authenticator apps and password managers with TOTP support.
 - [How to Back Up Your TOTP Codes](/two-factor-authentication/backup-totp-codes/) -- Strategies for ensuring you never lose access to your 2FA secrets.
-- [How to Set Up 2FA on Every Major Service](/two-factor-authentication/setup-on-every-service/) -- Guides for enabling 2FA across all your accounts.
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/) -- Guides for enabling 2FA across all your accounts.

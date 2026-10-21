@@ -109,7 +109,7 @@ If you are an X Premium subscriber, you have the option to use SMS for 2FA. Do n
 
 **Portability.** Your TOTP secret can be stored in any compatible authenticator app or password manager. It is not tied to your phone number, your carrier, or X's platform decisions.
 
-Even services that still offer SMS as an option are increasingly recommending against it. For more on why TOTP is the better choice, see our detailed comparison of [TOTP vs. SMS](/two-factor-authentication/totp-vs-sms/).
+Even services that still offer SMS as an option are increasingly recommending against it. For more on why TOTP is the better choice, see our detailed comparison of [TOTP vs. SMS](/two-factor-authentication/sms-being-phased-out/).
 
 ## Saving Your Backup Code
 
@@ -122,7 +122,7 @@ X provides only a single backup code during 2FA setup, which makes protecting it
 
 Because X gives you only one code (not ten like most services), losing it means your only fallback is X's account recovery process -- which has been notoriously slow and unreliable. Treat this single code as critically important.
 
-For broader advice on managing recovery codes across all your accounts, see our [recovery codes guide](/two-factor-authentication/recovery-codes/).
+For broader advice on managing recovery codes across all your accounts, see our [recovery codes guide](/two-factor-authentication/backup-totp-codes/).
 
 ## Using a Password Manager for TOTP
 
@@ -138,7 +138,7 @@ Storing your X 2FA secret in a password manager is the most practical approach f
 
 Because PanicVault uses the open KeePass format, your X TOTP secret is portable. You can access the same database from [KeePassXC on a desktop](/two-factor-authentication/best-authenticator-apps/) or KeePassDX on Android. No vendor lock-in, no proprietary format, no risk of losing your codes if an app shuts down.
 
-For a complete guide to this workflow, see our articles on [using a password manager as your authenticator](/two-factor-authentication/password-manager-as-authenticator/) and [moving existing codes to a password manager](/two-factor-authentication/move-codes-to-password-manager/).
+For a complete guide to this workflow, see our articles on [using a password manager as your authenticator](/two-factor-authentication/google-authenticator-vs-builtin/) and [moving existing codes to a password manager](/two-factor-authentication/move-codes-to-password-manager/).
 
 ## Additional X Security Recommendations
 
@@ -156,8 +156,7 @@ These measures, combined with TOTP-based 2FA, create layered security that makes
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication?](/two-factor-authentication/what-is-2fa/) -- Understand the fundamentals of 2FA and why every account needs it.
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/) -- Understand the fundamentals of 2FA and why every account needs it.
 - [SMS 2FA Is Being Phased Out](/two-factor-authentication/sms-being-phased-out/) -- Why platforms like X are moving away from text message verification.
-- [TOTP vs. SMS: Which 2FA Method Is Safer?](/two-factor-authentication/totp-vs-sms/) -- The security comparison that explains X's decision.
-- [Using a Password Manager as Your Authenticator](/two-factor-authentication/password-manager-as-authenticator/) -- The simplest way to manage all your TOTP codes.
-- [How to Set Up 2FA on Every Major Service](/two-factor-authentication/setup-on-every-service/) -- Enable 2FA on all your important accounts in one session.
+- [Google Authenticator vs. Password Manager TOTP](/two-factor-authentication/google-authenticator-vs-builtin/) -- The simplest way to manage all your TOTP codes.
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/) -- Enable 2FA on all your important accounts in one session.

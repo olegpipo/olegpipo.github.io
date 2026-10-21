@@ -17,7 +17,7 @@ If you are currently locked out of accounts because your 2FA device is gone, wor
 
 ### Step 1: Check for Recovery Codes
 
-When you first enabled 2FA on each service, you were given a set of one-time [recovery codes](/two-factor-authentication/recovery-codes/). These codes bypass the TOTP requirement and let you sign in without your authenticator. They are designed precisely for this situation.
+When you first enabled 2FA on each service, you were given a set of one-time [recovery codes](/two-factor-authentication/backup-totp-codes/). These codes bypass the TOTP requirement and let you sign in without your authenticator. They are designed precisely for this situation.
 
 Where you might find them:
 
@@ -81,7 +81,7 @@ The solution is straightforward: your TOTP secrets must exist in more than one p
 
 ### Store TOTP Secrets in Your Password Manager
 
-A [password manager with TOTP support](/two-factor-authentication/password-manager-as-authenticator/) stores your 2FA secrets in the same encrypted database as your passwords. That database is backed up and synchronized across devices. If you lose one device, every other device that has your vault still has your TOTP codes.
+A [password manager with TOTP support](/two-factor-authentication/google-authenticator-vs-builtin/) stores your 2FA secrets in the same encrypted database as your passwords. That database is backed up and synchronized across devices. If you lose one device, every other device that has your vault still has your TOTP codes.
 
 PanicVault stores TOTP secrets directly in the KDBX database, which means your codes are protected by the same encryption that guards your passwords and can be [backed up using any strategy](/keepass/backup-database/) that works for your vault file. This is the most robust defense against device loss.
 

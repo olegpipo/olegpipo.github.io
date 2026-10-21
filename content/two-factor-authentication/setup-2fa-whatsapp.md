@@ -35,7 +35,7 @@ The fundamental vulnerability is that WhatsApp authentication relies on your pho
 
 Before walking through the setup, it is important to understand that WhatsApp's two-step verification is fundamentally different from the TOTP-based 2FA used by services like Google, GitHub, Amazon, and most other platforms.
 
-**Standard TOTP** (Time-Based One-Time Password) works like this: the service shares a secret key with your authenticator app, and both sides use that key plus the current time to generate a six-digit code that changes every 30 seconds. You enter this rotating code during login. For a detailed explanation, see [what 2FA is and why you need it](/two-factor-authentication/what-is-2fa/).
+**Standard TOTP** (Time-Based One-Time Password) works like this: the service shares a secret key with your authenticator app, and both sides use that key plus the current time to generate a six-digit code that changes every 30 seconds. You enter this rotating code during login. For a detailed explanation, see [what 2FA is and why you need it](/two-factor-authentication/).
 
 **WhatsApp's system** works differently. You create a static six-digit PIN that you choose yourself. This PIN does not change every 30 seconds -- it is a fixed PIN that you set once and only update when you choose to. WhatsApp asks for this PIN when you (or someone else) attempts to register your phone number on a new device. WhatsApp will also periodically ask you to re-enter the PIN within the app to make sure you remember it.
 
@@ -121,7 +121,7 @@ WhatsApp's PIN-based system is a sensible compromise given the platform's phone-
 - There is no integration with authenticator apps or password managers for code generation -- the PIN is entered manually.
 - The PIN protects registration events, not every session. TOTP-based 2FA on other services protects each login.
 
-For the [differences between TOTP and SMS-based approaches](/two-factor-authentication/totp-vs-sms/), see our detailed comparison. While WhatsApp's system does not fit neatly into either category, it provides meaningful protection against the most common attacks on messaging accounts.
+For the [differences between TOTP and SMS-based approaches](/two-factor-authentication/sms-being-phased-out/), see our detailed comparison. While WhatsApp's system does not fit neatly into either category, it provides meaningful protection against the most common attacks on messaging accounts.
 
 ## Using a Password Manager to Store Your WhatsApp PIN
 
@@ -133,12 +133,11 @@ Since WhatsApp does not use standard TOTP, you cannot scan a QR code with your p
 
 **Generate a random PIN.** Use your password manager's password generator to create a random six-digit number. This produces a stronger PIN than anything you would choose yourself, and since it is stored in your vault, you do not need to memorize it.
 
-While this is not the same as using a password manager as a [TOTP authenticator](/two-factor-authentication/password-manager-as-authenticator/) (which works beautifully for services like Amazon, Microsoft, Discord, Reddit, and GitHub), it is the best approach for WhatsApp's custom system. Your password manager becomes the secure storage for the PIN rather than the generator of rotating codes.
+While this is not the same as using a password manager as a [TOTP authenticator](/two-factor-authentication/google-authenticator-vs-builtin/) (which works beautifully for services like Amazon, Microsoft, Discord, Reddit, and GitHub), it is the best approach for WhatsApp's custom system. Your password manager becomes the secure storage for the PIN rather than the generator of rotating codes.
 
 ## Related Articles
 
-- [What Is Two-Factor Authentication and Why You Need It](/two-factor-authentication/what-is-2fa/)
-- [TOTP vs. SMS: Which Two-Factor Method Is More Secure?](/two-factor-authentication/totp-vs-sms/)
-- [How SIM Swapping Bypasses SMS-Based 2FA](/two-factor-authentication/sim-swapping/)
-- [How to Use Your Password Manager as an Authenticator](/two-factor-authentication/password-manager-as-authenticator/)
-- [How to Set Up 2FA on Every Account That Supports It](/two-factor-authentication/setup-on-every-service/)
+- [The Complete Guide to Two-Factor Authentication](/two-factor-authentication/)
+- [SMS 2FA vs. Authenticator Apps: Why SMS Is Being Phased Out](/two-factor-authentication/sms-being-phased-out/)
+- [Google Authenticator vs. Password Manager TOTP](/two-factor-authentication/google-authenticator-vs-builtin/)
+- [Setting Up 2FA for Your Most Important Accounts](/two-factor-authentication/priority-accounts/)

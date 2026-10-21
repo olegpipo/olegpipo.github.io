@@ -194,7 +194,7 @@ Practically, the concern is about single points of failure. If an attacker crack
 
 **Scenario C: Hardware security key.** True factor separation. The key is a separate physical device with no extractable secrets. This is the strongest option but is not supported by all services and requires carrying the key.
 
-For most users, the pragmatic recommendation is: use [your password manager as your authenticator](/two-factor-authentication/password-manager-as-authenticator/) for the vast majority of accounts, and use a hardware security key for the handful of accounts where maximum security justifies the extra friction (email, financial, infrastructure).
+For most users, the pragmatic recommendation is: use [your password manager as your authenticator](/two-factor-authentication/google-authenticator-vs-builtin/) for the vast majority of accounts, and use a hardware security key for the handful of accounts where maximum security justifies the extra friction (email, financial, infrastructure).
 
 ## Comparison Table
 
@@ -246,4 +246,4 @@ The authenticator app landscape continues to evolve. Passkeys (based on FIDO2/We
 
 Until passkeys achieve universal adoption -- which is likely years away given the pace of service migration -- TOTP remains the practical standard for second-factor authentication. Choosing the right authenticator app, backing up your secrets, and enabling 2FA on every account that supports it are the actions that protect you today.
 
-Whatever app you choose, the most important step is the one where you enable [2FA on all your accounts](/two-factor-authentication/setup-on-every-service/). The best authenticator app is the one you actually use.
+Whatever app you choose, the most important step is the one where you enable [2FA on all your accounts](/two-factor-authentication/priority-accounts/). The best authenticator app is the one you actually use.
