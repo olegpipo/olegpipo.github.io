@@ -5,6 +5,8 @@ date: 2026-02-14
 lastmod: 2026-02-14
 draft: false
 silo: "Digital Privacy & Online Safety"
+aliases:
+  - /trends/cybersecurity-awareness-month/
 ---
 
 A personal security audit is a systematic review of your digital security posture -- your passwords, two-factor authentication, privacy settings, connected devices, and account hygiene. Most people never do one, which means vulnerabilities accumulate silently until something goes wrong. As part of your [digital privacy and online safety](/digital-privacy/) practice, a regular security audit is one of the most efficient uses of your time. Thirty minutes, twice a year, can prevent problems that would take days or weeks to resolve.

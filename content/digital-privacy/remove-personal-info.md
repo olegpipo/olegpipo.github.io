@@ -2,14 +2,16 @@
 title: "Remove Your Personal Information From Data Brokers"
 description: "A step-by-step guide to finding and removing your personal information from data brokers, people-search sites, and public databases."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Digital Privacy & Online Safety"
+aliases:
+  - /trends/california-delete-act/
 ---
 
 Data brokers are companies that collect, aggregate, and sell your personal information -- and most people have no idea how much of their data is available for purchase. Your home address, phone number, email, relatives' names, income estimates, property records, political affiliations, and purchasing habits are all being bought and sold in a multi-billion-dollar industry. As part of your [digital privacy and online safety](/digital-privacy/) strategy, removing your information from these services is one of the most impactful privacy actions you can take.
 
-The bad news: there are hundreds of data brokers, each with its own opt-out process, and they continuously re-acquire data. The good news: the process, while tedious, is straightforward, and recent legislation like the [DELETE Act](/digital-privacy/privacy-laws/) is making it easier. This guide walks you through it step by step.
+The bad news: there are hundreds of data brokers, each with its own opt-out process, and they continuously re-acquire data. The good news: the process, while tedious, is straightforward, and if you live in California, the [Delete Act's DROP platform](#step-4-use-drop-california-residents) now sends one deletion request to every registered data broker. This guide walks you through it step by step.
 
 ## What Data Brokers Know About You
 
@@ -42,6 +44,10 @@ Data brokers make identity theft easier by providing criminals with the personal
 ### Phishing and Social Engineering
 
 The more an attacker knows about you, the more convincing their [phishing](/phishing/) attempts. A spear-phishing email that references your employer, your neighborhood, or a recent purchase is far more likely to succeed than a generic one.
+
+### Your Phone Number
+
+Your phone number is one of the most sensitive details a data broker sells. It is the account-recovery and [SMS two-factor](/two-factor-authentication/sms-being-phased-out/) channel for many services, it is used to verify your identity with banks, and a call from a "known" number feels trustworthy. A people-search listing that ties your number to your name, address and relatives gives an attacker most of what they need to talk a mobile carrier into a SIM swap or to make a convincing scam call. Removing it from broker databases reduces that exposure, though it does not eliminate it -- which is why moving important accounts off SMS codes matters too.
 
 ### Physical Safety
 
@@ -109,13 +115,25 @@ Common opt-out methods:
 
 Many brokers claim removal takes 24-72 hours but may take weeks. Set calendar reminders to check each site 2-4 weeks after submitting your request. If your data is still visible, resubmit the request and escalate if the broker provides an escalation path.
 
-### Step 4: Use the DELETE Act (California Residents)
+### Step 4: Use DROP (California Residents)
 
-If you are a California resident, the [DELETE Act](/digital-privacy/privacy-laws/) provides a centralized deletion request mechanism. Submit a single request through the California Data Broker Registry, and all registered brokers must process it. This does not replace individual opt-out requests for unregistered brokers but significantly reduces the workload.
+California's [Delete Act](/digital-privacy/privacy-laws/) (SB 362, passed in 2023) created DROP, the Delete Request and Opt-out Platform, run by the California Privacy Protection Agency. It lets California residents send a single deletion request to every data broker registered with the state -- [over 600 of them](https://privacy.ca.gov/drop/). The Data Broker Registry is only the list of brokers; the request itself goes through DROP.
+
+1. **Go to [consumer.drop.privacy.ca.gov](https://consumer.drop.privacy.ca.gov).** It is free, and only California residents can submit requests.
+2. **Confirm you live in California** through the California Identity Gateway, or with Login.gov if you already have an account. DROP says it does not keep the information used for this check.
+3. **Create your profile.** Add the personal details you want brokers to match against; you choose how much to share, and more details let brokers find more of your records.
+4. **Submit.** One request goes to all registered brokers.
+5. **Check your status** later at [consumer.drop.privacy.ca.gov/dropstatus](https://consumer.drop.privacy.ca.gov/dropstatus). The agency says it can take up to 90 days for a status to update.
+
+**The timeline:** consumers could start submitting requests when DROP launched in January 2026, but brokers only had to start processing them on August 1, 2026. From that date, each broker must check DROP at least once every 45 days and process new requests within 45 days of receiving them ([CPPA](https://www.cppa.ca.gov/data_brokers/)).
+
+**What it does that a one-off opt-out does not:** once a broker has deleted your data, the law requires it to keep deleting your personal information at least every 45 days and not to sell or share new personal information about you ([Civil Code 1798.99.86](https://california.public.law/codes/civil_code_section_1798.99.86)). If a broker cannot verify your request, it must treat it as an opt-out of the sale or sharing of your information instead.
+
+**What it does not cover:** only registered data brokers -- companies that sell information about people they have no direct relationship with -- are covered, and limited legal exceptions apply. Companies you deal with directly, unregistered people-search sites, and public records are outside DROP, so keep doing Steps 1 to 3 for any site that still lists you.
 
 ### Step 5: Repeat Periodically
 
-Data brokers re-acquire your information over time from public records, commercial partners, and other sources. Plan to repeat the opt-out process every 6-12 months. Mark your calendar.
+Data brokers re-acquire your information over time from public records, commercial partners, and other sources. Plan to repeat the manual opt-out process every 6-12 months for sites DROP does not cover. Mark your calendar.
 
 ## Automated Removal Services
 
@@ -147,7 +165,7 @@ Removal is important, but reducing the flow of new data to brokers is equally va
 
 ### Use a Password Manager With Unique Credentials
 
-Every account you create is a potential data source. When those services are breached -- and with the average US [data breach](/data-breaches/) costing $10.22 million, breaches are frequent -- your credentials and personal data enter the ecosystem. Using unique passwords from a [password manager](/password-managers/) like PanicVault limits the damage of any single breach.
+Every account you create is a potential data source. When those services are breached -- and the Identity Theft Resource Center counted more than 3,300 publicly reported [data compromises](/data-breaches/biggest-breaches/) in the US in 2025 alone -- your credentials and personal data enter the ecosystem. Using unique passwords from a [password manager](/password-managers/) like PanicVault limits the damage of any single breach.
 
 ### Opt Out Proactively
 
