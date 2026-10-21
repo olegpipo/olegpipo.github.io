@@ -1,13 +1,16 @@
 ---
-title: "How End-to-End Encryption Protects Passwords in the Cloud"
-description: "Learn how end-to-end encryption keeps your passwords safe in cloud storage, why KeePass databases are E2E encrypted by design, and how client-side encryption compares to vendor-managed solutions."
+title: "Is It Safe to Store Passwords in the Cloud? End-to-End Encryption Explained"
+description: "Yes, if the vault is encrypted on your device first. How end-to-end encryption protects a password database in iCloud, Google Drive or Dropbox, the cloud threats it stops, and what it does not protect against."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Cloud Sync & Storage"
+aliases:
+  - /cloud-sync/passwords-in-cloud/
+  - /digital-privacy/e2e-encryption-explained/
 ---
 
-Storing a password database in the cloud sounds risky until you understand end-to-end encryption. When your [cloud sync strategy](/cloud-sync/) relies on proper E2E encryption, the cloud provider never sees your plaintext data -- it stores only encrypted bytes that are meaningless without your key. This article explains how end-to-end encryption works, why it matters for password management, and how different approaches to E2E encryption compare in practice.
+Is it safe to store your passwords in the cloud? Yes -- as long as they are encrypted on your device before they are uploaded, with a key the cloud provider never has. Storing a password database in the cloud sounds risky until you understand end-to-end encryption. When your [cloud sync strategy](/cloud-sync/) relies on proper E2E encryption, the cloud provider never sees your plaintext data -- it stores only encrypted bytes that are meaningless without your key. This article explains how end-to-end encryption works, why it matters for password management, and how different approaches to E2E encryption compare in practice.
 
 The distinction between "encrypted in the cloud" and "end-to-end encrypted" is critical. Many services encrypt your data at rest on their servers, but they hold the keys. End-to-end encryption means only you hold the keys. If the cloud provider is breached, subpoenaed, or compromised by a rogue employee, your data remains unreadable.
 
@@ -58,7 +61,7 @@ Client-side encryption protects against provider breaches, insider threats, gove
 
 When the data in question is your entire password collection -- every banking login, every email account, every sensitive service -- the threat model demands client-side encryption. Server-side encryption means trusting a third party with the keys to your digital life. Client-side encryption means trusting only yourself and your devices.
 
-This is not a theoretical concern. Cloud providers have experienced breaches. Employees have been caught accessing user data. Government agencies have compelled providers to hand over data and encryption keys. If your [passwords are stored in the cloud](/cloud-sync/passwords-in-cloud/) with only server-side encryption, these scenarios expose everything.
+This is not a theoretical concern. Cloud providers have experienced breaches. Employees have been caught accessing user data. Government agencies have compelled providers to hand over data and encryption keys. If your passwords are stored in the cloud with only server-side encryption, these scenarios expose everything.
 
 ## Why KeePass Databases Are End-to-End Encrypted by Design
 
@@ -110,13 +113,31 @@ With a KeePass database, you manage the entire encryption pipeline yourself:
 
 The trade-off is responsibility. User-managed E2E encryption means you handle backups, sync, key management, and disaster recovery yourself. There is no support team to call. If you lose your passphrase and have no backup, your data is gone permanently. For users who understand these responsibilities, the security benefits are substantial.
 
-## What Happens If the Cloud Provider Is Breached
+## What Could Go Wrong in the Cloud -- and What the Attacker Gets
 
-One of the most common concerns about [storing passwords in the cloud](/cloud-sync/passwords-in-cloud/) is what happens if the cloud account is compromised. With proper end-to-end encryption, the answer is straightforward: the attacker gets encrypted bytes they cannot read.
+With proper end-to-end encryption, every cloud-side threat ends the same way: the attacker gets encrypted bytes they cannot read.
 
-A detailed analysis of this scenario -- what attackers can and cannot do with an encrypted KeePass database, and what steps to take -- is covered in our guide on [what happens if your cloud account is hacked](/cloud-sync/cloud-account-hacked/).
+- **The provider is breached.** The attacker copies your `.kdbx` file along with everything else. Without your master passphrase it is useless.
+- **Your cloud account is hijacked.** Through a phished password or a stolen session, the attacker can download the file -- and can also delete it or replace it, which is why you keep [backups outside that account](/keepass/backup-database/). Our guide on [what happens if your cloud account is hacked](/cloud-sync/cloud-account-hacked/) covers the steps to take.
+- **A rogue employee looks at your files.** Insider abuse happens at large companies. The employee sees the same encrypted file any outside attacker would.
+- **A government or court demands your data.** The provider can only hand over what it holds: the encrypted file. Strong encryption has no exception for legal authority.
+- **Someone intercepts the sync.** Cloud services use TLS in transit, and underneath it the file is already encrypted (see above).
 
-The short version: the encryption is the defense. If your database uses AES-256 or ChaCha20 with Argon2d key derivation and a strong master passphrase, the encrypted file is effectively useless to an attacker. They could theoretically attempt a brute-force attack against your passphrase, but properly configured key derivation makes this prohibitively expensive.
+In each case the only remaining attack is guessing your master passphrase offline. If your database uses AES-256 or ChaCha20 with Argon2d key derivation and a strong passphrase, that is prohibitively expensive. The encryption is the defense.
+
+## What End-to-End Encryption Does Not Protect Against
+
+End-to-end encryption protects the contents of your vault. It does not protect everything around it:
+
+**Metadata.** The provider can still see that the file exists, its name and size, when it changes, and which devices and IP addresses sync it. Nothing inside the vault is exposed, but the pattern of use is.
+
+**A compromised device.** Encryption guards the file in storage and in transit. On your own device, the vault is decrypted while it is unlocked. Malware there, or a keylogger that captures your master passphrase, gets past the encryption entirely. Device security -- updates, a strong passcode, auto-lock -- is the other half of the protection.
+
+**A weak or reused master passphrase.** Anyone who gets the file can try passphrases offline, as fast as their hardware allows. The key derivation slows them down; only a strong passphrase stops them.
+
+**Unencrypted copies and backups.** A plaintext CSV export left in a synced folder is not protected by your vault's encryption. The same gap exists outside password managers: Messages in iCloud is end-to-end encrypted, but if iCloud Backup is on and Advanced Data Protection is off, the backup includes a copy of the key protecting those messages, which Apple holds. Check where every copy of your data ends up, not just the main one.
+
+**Social engineering.** If someone tricks you into handing over your passphrase or an unlocked device, the strength of the encryption does not matter.
 
 ## Practical Recommendations
 
@@ -128,7 +149,7 @@ The short version: the encryption is the defense. If your database uses AES-256 
 
 **Enable additional cloud account protections.** While the encryption protects your database contents, preventing unauthorized access to your cloud account avoids giving attackers even the encrypted file. Enable two-factor authentication, use a strong unique password for your cloud account, and monitor for unauthorized access.
 
-**Maintain local backups.** End-to-end encryption means the cloud provider cannot help you recover your data. Keep local copies of your encrypted database as a safeguard against cloud provider outages or account lockouts. Our guide on [automatic cloud backup](/cloud-sync/automatic-backup/) covers strategies for maintaining redundant copies.
+**Maintain local backups.** End-to-end encryption means the cloud provider cannot help you recover your data. Keep local copies of your encrypted database as a safeguard against cloud provider outages or account lockouts. Our guide to [backing up your KeePass database](/keepass/backup-database/) covers strategies for maintaining redundant copies, including your cloud provider's version history.
 
 **Understand your provider's encryption model.** Different cloud providers offer different security features. Our [comparison of iCloud, Google Drive, and Dropbox](/cloud-sync/icloud-vs-gdrive-vs-dropbox/) details each provider's approach to encryption, both at-rest and in-transit, so you can make an informed choice about where to store your encrypted database.
 

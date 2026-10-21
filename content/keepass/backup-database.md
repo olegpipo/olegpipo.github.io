@@ -2,9 +2,11 @@
 title: "How to Safely Back Up Your KeePass Database"
 description: "Learn how to back up your KeePass database using the 3-2-1 rule, encrypted cloud storage, automated scripts, and versioning to prevent data loss."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
+aliases:
+  - /cloud-sync/automatic-backup/
 ---
 
 Your [KeePass](/keepass/) database is a single file. That simplicity is one of its greatest strengths -- there is no server dependency, no cloud infrastructure, no subscription service standing between you and your passwords. But it also means that if you lose that file, you lose everything in it. Every password, every login, every secure note, gone. There is no customer support to call, no "forgot my vault" recovery flow, no server-side backup waiting to restore your data. The KDBX file on your disk is the only copy that exists unless you deliberately create others.
@@ -180,6 +182,48 @@ Get-ChildItem $BackupDir -Filter "Vault-*.kdbx" |
 
 Schedule with Windows Task Scheduler or set it to run on login.
 
+### Mac: Run the Script Automatically with launchd
+
+On a Mac, the script above works as is; the native way to schedule it is a launchd agent rather than cron. If your vault lives in iCloud Drive, set `SOURCE` to the file's real path -- the easiest way to get it is to drag the `.kdbx` file from the Finder into a Terminal window, which pastes its full path. Then save this file as `~/Library/LaunchAgents/local.vault-backup.plist`, replacing the script path with your own:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.vault-backup</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/yourname/scripts/backup-vault.sh</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>2</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>StandardErrorPath</key>
+    <string>/tmp/vault-backup.err</string>
+</dict>
+</plist>
+```
+
+Load it once with `launchctl load ~/Library/LaunchAgents/local.vault-backup.plist`. If the Mac is asleep at 2:00 AM, launchd runs the job when it wakes; if the Mac is shut down, that day's run is skipped until the next scheduled time. Check the error file if backups stop appearing.
+
+If the vault is in iCloud Drive, Control-click its folder in the Finder and choose **Keep Downloaded**, so the file is always on the Mac when the script runs.
+
+### iPhone and iPad: A Shortcuts Automation
+
+On iOS and iPadOS, the Shortcuts app can copy the vault on a schedule:
+
+1. Create a shortcut with a **Get File** action that points to your vault file, followed by a **Save File** action. Turn off **Ask Where to Save** and choose a destination in a different place -- another cloud provider's folder in the Files app, for example.
+2. In the Automation tab, create a **Time of Day** automation that runs the shortcut, and set it to run without asking.
+
+Saving to a second provider gives you a copy that survives a problem with the first one. You can also make a copy by hand at any time: in PanicVault, **Export Vault** writes an encrypted `.kdbx` copy (see [Vault Settings](/help/vault-settings/)).
+
 ### What to Back Up
 
 Your backup should include:
@@ -206,14 +250,15 @@ This gives you fine-grained recovery options for recent corruption and long-term
 
 ### Cloud Storage Versioning
 
-Most cloud storage services offer built-in versioning:
+Most cloud storage services keep earlier versions of a file, which gives you a restore point even when the latest copy is damaged. What you actually get differs by provider:
 
-- **Google Drive**: Keeps versions for 30 days, up to 100 versions.
-- **Dropbox**: Keeps versions for 30-180 days depending on your plan.
-- **OneDrive**: Keeps versions accessible through the file's version history.
-- **S3/B2**: Versioning can be enabled on a per-bucket basis with configurable retention.
+- **Google Drive**: open the file's **More** menu on the web and choose **Manage versions**. A version may be deleted after 30 days or once there are 100 newer ones, but you can mark any version **Keep forever**. After a big change to your vault -- a new master password, a large import -- pin the current version as a known-good snapshot.
+- **Dropbox**: open **Version history** from the file's menu on dropbox.com. Basic, Plus and Family accounts keep 30 days of history; Professional, Essentials, Business and Standard keep 180 days; Business Plus, Advanced and Enterprise keep 365 days.
+- **iCloud Drive**: there is no version history you can browse for a `.kdbx` file. iCloud.com can only bring back files *deleted* in the last 30 days (Recently Deleted). On a Mac, use Time Machine for older versions -- it backs up files stored on the Mac, so keep the vault folder downloaded.
+- **OneDrive**: keeps versions accessible through the file's version history.
+- **S3/B2**: versioning can be enabled on a per-bucket basis with configurable retention.
 
-Enable versioning on whatever cloud service holds your backup. It costs virtually nothing in storage and can save your vault if the latest upload was corrupted.
+Enable versioning on whatever cloud service holds your backup. It costs virtually nothing in storage and can save your vault if the latest upload was corrupted. But treat it as one layer, not the whole plan: the history disappears with the account if the account itself is lost or compromised.
 
 ## Testing Your Restores
 
@@ -236,6 +281,19 @@ A backup you have never tested is a backup you cannot trust. Restore testing is 
 - **After any significant change to your backup infrastructure** (new cloud provider, new script, new storage location).
 
 A backup strategy that has been tested is worth infinitely more than one that has not. Spend ten minutes quarterly to confirm your safety net works.
+
+### What to Do When Something Goes Wrong
+
+If your working database is corrupted, deleted or will not open:
+
+1. **Stop syncing.** Pause your sync app or go offline, so a damaged file does not overwrite the good copies on your other devices.
+2. **Find the most recent good copy.** Check the cloud provider's version history first, then your local and offsite backups.
+3. **Restore to a temporary location.** Do not overwrite anything until you have checked the copy.
+4. **Open and verify it.** Confirm it opens with your master password (and key file) and that recent entries are there.
+5. **Replace the damaged file and resume syncing.**
+6. **Re-enter anything added since that backup.**
+
+If the problem is a compromised cloud account rather than a damaged file, see [what happens if your cloud account is hacked](/cloud-sync/cloud-account-hacked/).
 
 ## What NOT to Do
 
