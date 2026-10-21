@@ -2,7 +2,7 @@
 title: "The 20 Most Common Passwords of 2026"
 description: "Discover the 20 most common passwords still used in 2026, how fast hackers can crack them, and what to do if yours is on the list."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Password Security"
 ---
@@ -162,4 +162,4 @@ The path forward is straightforward:
 - **Enable two-factor authentication** on every account that supports it
 - **Never reuse a password** -- let your password manager handle the complexity
 
-PanicVault makes this process simple: generate strong passwords, store them in your encrypted vault, and audit your credentials against known breaches -- all without a subscription, and with your data always under your control.
+PanicVault makes this process simple: generate strong passwords, store them in your encrypted vault, and audit your credentials -- all without a subscription, and with your data always under your control.

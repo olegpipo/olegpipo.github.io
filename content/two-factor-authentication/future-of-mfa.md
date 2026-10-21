@@ -2,7 +2,7 @@
 title: "The Future of Multi-Factor Authentication"
 description: "Explore the future of MFA: passkeys, FIDO2 passwordless login, biometric advances, behavioral biometrics, continuous authentication, zero trust architecture, and how password managers are adapting."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Two-Factor Authentication"
 ---
@@ -17,7 +17,7 @@ The most significant near-term shift in authentication is the adoption of passke
 
 ### How Passkeys Work
 
-A passkey is a cryptographic credential stored on your device (phone, laptop, or hardware security key). When you register a passkey with a service, your device generates a public-private key pair. The private key stays on your device, protected by the platform's secure enclave or TPM. The public key is sent to the server.
+A passkey is a cryptographic credential stored on your device (phone, laptop, or hardware security key). When you register a passkey with a service, your device generates a public-private key pair. The private key never goes to the service: it stays on a hardware security key, or in your platform's credential manager (such as iCloud Keychain or Google Password Manager) or your password manager, which can sync it end-to-end encrypted across your devices. The public key is sent to the server.
 
 To log in, the server sends a cryptographic challenge. Your device signs it with the private key, and the server verifies the signature with the public key. The entire process is:
 
@@ -37,7 +37,7 @@ Password managers are adapting to store and sync passkeys alongside traditional 
 
 This is a significant development. Without third-party passkey storage, your passkeys would be tied to Apple's Keychain, Google Password Manager, or Windows Hello, creating platform lock-in that many users and organizations want to avoid. Password managers that support passkeys become the cross-platform bridge, making passkeys practical for users with mixed-ecosystem devices.
 
-For KeePass-compatible apps like PanicVault, passkey support represents the next frontier in feature development: extending the open-standard, user-controlled model to the post-password era.
+KeePass-compatible apps already do this inside the KDBX file -- KeePassXC since version 2.7.7, and PanicVault, Strongbox and KeePassium on Apple devices -- extending the open-standard, user-controlled model to the post-password era.
 
 ## Passwordless Authentication
 

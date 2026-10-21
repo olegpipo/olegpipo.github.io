@@ -2,7 +2,7 @@
 title: "How to Migrate from 1Password to KeePass: Complete Guide"
 description: "Step-by-step guide to migrating from 1Password to KeePass. Export your vaults, import passwords, handle tags and attachments, and set up sync."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -13,7 +13,7 @@ Switching from 1Password to a [KeePass-compatible application](/keepass/) is a d
 
 ### Subscription Costs
 
-1Password transitioned from a one-time purchase model to a subscription model several years ago. The current pricing requires an ongoing monthly or annual payment for individuals, with higher tiers for families and businesses. Over the lifetime of use, these costs accumulate significantly. KeePass-compatible applications are free and open source, with no subscription required. The total cost of ownership is zero, permanently.
+1Password transitioned from a one-time purchase model to a subscription model several years ago. The current pricing requires an ongoing monthly or annual payment for individuals, with higher tiers for families and businesses. Over the lifetime of use, these costs accumulate significantly. KeePass 2.x and KeePassXC are free and open source, and on iPhone and Mac, PanicVault is a one-time purchase, so no subscription is required.
 
 ### Data Sovereignty
 

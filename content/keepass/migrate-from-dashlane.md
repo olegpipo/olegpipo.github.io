@@ -2,7 +2,7 @@
 title: "Migrate from Dashlane to KeePass"
 description: "Step-by-step guide to exporting your Dashlane vault and importing it into KeePass. Covers CSV and DASH exports, field mapping, and data verification."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -24,7 +24,7 @@ Moving from a subscription password manager to an open, self-hosted vault is one
 
 ### Rising Subscription Costs
 
-Dashlane has steadily increased its pricing over the years while trimming features from its free tier. The free plan now limits users to a single device, making it impractical for anyone who uses more than one computer or phone. The premium plan carries a recurring annual cost that accumulates over time. KeePass-compatible applications are free and open source, eliminating subscription fees entirely.
+Dashlane has steadily increased its pricing over the years while trimming features from its free tier. The free plan now limits users to a single device, making it impractical for anyone who uses more than one computer or phone. The premium plan carries a recurring annual cost that accumulates over time. KeePass 2.x and KeePassXC are free and open source, and on iPhone and Mac, PanicVault is a one-time purchase, eliminating subscription fees entirely.
 
 ### Data Ownership and Privacy
 

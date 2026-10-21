@@ -2,7 +2,7 @@
 title: "PanicVault vs. Apple Passwords App"
 description: "In-depth comparison of PanicVault and Apple's standalone Passwords app. Data portability, organization, KDBX format advantages, and Apple integration evaluated honestly."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Comparisons"
 ---
@@ -91,9 +91,9 @@ Both tools store TOTP verification codes. Apple Passwords displays codes with au
 
 **Apple Passwords** supports passkeys natively, as passkey management is built into the operating system.
 
-**PanicVault** focuses on traditional credentials and TOTP codes within the KDBX format. Passkey support depends on the KDBX specification's adoption of the standard, which is still evolving.
+**PanicVault** stores passkeys inside your KDBX file, in the same `KPEX_PASSKEY_` format KeePassXC uses, and signs you in with them as a passkey provider through AutoFill.
 
-If passkey adoption is critical to you today, Apple Passwords has the advantage.
+The difference is where your passkeys live: in iCloud Keychain, or in a file that other KeePass apps can also read.
 
 ### Offline Access
 
@@ -129,7 +129,6 @@ For users who have never used a password manager and just want things to work, A
 - People who exclusively use Apple devices with no plans to change
 - Users who do not need organizational structure beyond basic search
 - Those who primarily manage website logins and do not need custom fields
-- Anyone who values passkey support today
 - Users who want the simplest possible sharing with other Apple users
 
 ## Who Should Use PanicVault

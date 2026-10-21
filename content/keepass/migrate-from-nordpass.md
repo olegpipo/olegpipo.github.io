@@ -2,7 +2,7 @@
 title: "Migrate from NordPass to KeePass"
 description: "Step-by-step guide to migrating from NordPass to KeePass. Export your NordPass vault as CSV, import into KeePassXC, and verify all entries transferred."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -24,7 +24,7 @@ NordPass, created by the team behind NordVPN, is a competent password manager, b
 
 ### Subscription Fees
 
-NordPass offers a limited free tier and paid plans for individuals, families, and businesses. The premium features that most users need -- including multi-device sync and secure item sharing -- require an ongoing subscription. KeePass-compatible applications are free and open source with no premium tiers, no feature restrictions, and no recurring costs.
+NordPass offers a limited free tier and paid plans for individuals, families, and businesses. The premium features that most users need -- including multi-device sync and secure item sharing -- require an ongoing subscription. KeePass 2.x and KeePassXC are free and open source, and on iPhone and Mac, PanicVault is a one-time purchase, so you can leave recurring costs behind.
 
 ### Data Control
 

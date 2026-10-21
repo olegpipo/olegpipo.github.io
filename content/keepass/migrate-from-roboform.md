@@ -2,7 +2,7 @@
 title: "Migrate from RoboForm to KeePass"
 description: "Complete guide to migrating from RoboForm to KeePass. Export logins as CSV, handle form-filling data, import into KeePassXC, and verify the migration."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -28,7 +28,7 @@ RoboForm has a long history, which is both a strength and a weakness. The applic
 
 ### Subscription Costs
 
-RoboForm transitioned from a one-time purchase to a subscription model. The free tier has limitations, and the premium features require ongoing annual payments. KeePass-compatible applications are completely free with no subscription tiers or feature restrictions.
+RoboForm transitioned from a one-time purchase to a subscription model. The free tier has limitations, and the premium features require ongoing annual payments. KeePass 2.x and KeePassXC are free and open source, and on iPhone and Mac, PanicVault is a one-time purchase with no subscription.
 
 ### Proprietary Format Lock-In
 

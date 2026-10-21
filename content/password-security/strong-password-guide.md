@@ -2,7 +2,7 @@
 title: "What Makes a Strong Password in 2026"
 description: "Learn the science behind strong passwords, including length requirements, complexity rules, and why passphrases are becoming the new standard."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "Password Security"
 ---
@@ -79,7 +79,7 @@ Even with good intentions, certain patterns weaken your passwords significantly:
 
 ### Check If You Have Been Compromised
 
-You can verify whether your credentials have appeared in known breaches by using services like [Have I Been Pwned](https://haveibeenpwned.com/). PanicVault also provides a password audit feature that checks your stored passwords against known breach databases without ever sending your actual passwords over the network.
+You can verify whether your credentials have appeared in known breaches by using services like [Have I Been Pwned](https://haveibeenpwned.com/). PanicVault also includes a password audit for reviewing the passwords stored in your vault.
 
 ## The Role of Password Managers
 

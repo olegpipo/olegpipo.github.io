@@ -2,7 +2,7 @@
 title: "How to Switch From LastPass: Migration Guide"
 description: "Complete step-by-step guide to migrating from LastPass to PanicVault, KeePassXC, Bitwarden, or 1Password. Export, import, and verify your credentials."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Guides & Tutorials"
 ---
@@ -72,16 +72,14 @@ Some LastPass plans offer encrypted export options. If available:
 
 PanicVault reads the [KDBX format](/keepass/) natively and can import from CSV:
 
-1. Open PanicVault on your Mac
-2. Open your vault (or create a new one if you have not already)
-3. Go to **File > Import** or find the Import option
-4. Select **LastPass CSV** as the import format (or Generic CSV if LastPass is not listed)
-5. Navigate to the exported CSV file
-6. Preview the entries -- check that URLs, usernames, and passwords are mapped to the correct fields
-7. Confirm the import
-8. Your LastPass entries are now in your vault, protected by [KeePass-level encryption](/keepass/encryption-explained/)
+1. Open PanicVault and unlock your vault (or create a new one if you have not already)
+2. On a Mac, choose **File > Import Passwords from CSV...** (**Cmd+Shift+I**). On iPhone or iPad, tap the **"..."** menu in the entry list toolbar and choose **Import Passwords from CSV**
+3. Select the exported LastPass CSV. LastPass is not one of the formats PanicVault recognizes by name, so it imports as a generic CSV: PanicVault matches the title, username, URL and notes columns by their header names
+4. In the import sheet, check the number of entries found and choose the group to add them to, then tap **Import**
+5. Open a few imported entries and check that URLs, usernames, and passwords landed in the right fields
+6. Your LastPass entries are now in your vault, protected by [KeePass-level encryption](/keepass/encryption-explained/)
 
-**Folder mapping**: If your LastPass vault used folders, PanicVault should recreate them as groups. Verify the folder structure matches your expectations.
+**Folder mapping**: PanicVault adds every imported entry to the one group you choose, so LastPass folders are not recreated as groups. If you relied on folders, create groups afterwards and move entries into them ([Importing Passwords](/help/importing-passwords/)).
 
 ### Importing Into KeePassXC
 

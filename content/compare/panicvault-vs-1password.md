@@ -2,7 +2,7 @@
 title: "PanicVault vs. 1Password: Detailed Comparison"
 description: "An honest, in-depth comparison of PanicVault and 1Password covering security, pricing, data ownership, Apple integration, and daily usability for Mac and iOS users."
 date: 2026-02-14
-lastmod: 2026-09-19
+lastmod: 2026-10-21
 draft: false
 silo: "Comparisons"
 ---
@@ -57,7 +57,7 @@ Creating and editing entries is straightforward. PanicVault supports custom fiel
 
 ### Usability Differences
 
-1Password has a broader feature set. Watchtower, travel mode, shared vaults with granular permissions, and passkey support are features PanicVault does not replicate. If you need these capabilities, 1Password is the clear choice.
+1Password has a broader feature set. Watchtower, travel mode, and shared vaults with granular permissions are features PanicVault does not replicate. If you need these capabilities, 1Password is the clear choice.
 
 PanicVault is more focused. It does credential management, TOTP codes, and AutoFill exceptionally well, without the feature sprawl. For users who want a clean, fast password manager without enterprise features, this focus is an advantage.
 
@@ -149,7 +149,7 @@ For details on cloud sync options, see our [cloud sync guide](/cloud-sync/).
 - Teams and families who need granular sharing permissions and shared vaults
 - Users who value Watchtower's security monitoring and breach alerts
 - Those who prefer a fully managed cloud experience with no configuration
-- Users who need passkey support and enterprise features
+- Users who need enterprise features
 
 ## Who Should Choose PanicVault
 

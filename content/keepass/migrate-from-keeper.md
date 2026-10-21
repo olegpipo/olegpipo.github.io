@@ -24,7 +24,7 @@ Keeper Security is a well-regarded password manager, but its proprietary nature 
 
 ### Subscription Costs
 
-Keeper operates on a subscription model with pricing tiers for individuals, families, and businesses. Additional features like secure file storage and dark web monitoring carry extra costs on top of the base subscription. Over years of use, these recurring fees add up to a substantial amount. KeePass-compatible applications are free and open source, with a lifetime cost of zero.
+Keeper operates on a subscription model with pricing tiers for individuals, families, and businesses. Additional features like secure file storage and dark web monitoring carry extra costs on top of the base subscription. Over years of use, these recurring fees add up to a substantial amount. KeePass 2.x and KeePassXC are free and open source, and on iPhone and Mac, PanicVault is a one-time purchase rather than a subscription.
 
 ### Data Sovereignty
 

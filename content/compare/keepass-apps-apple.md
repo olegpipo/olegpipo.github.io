@@ -2,7 +2,7 @@
 title: "Strongbox vs KeePassium vs KeePassXC: KeePass Apps for Mac & iPhone"
 description: "Strongbox, KeePassium, KeePassXC and PanicVault compared on Mac, iPhone and iPad: price, AutoFill, YubiKey, sync, and which one fits your setup."
 date: 2026-02-14
-lastmod: 2026-09-26
+lastmod: 2026-10-21
 draft: false
 silo: "Comparisons"
 ---
@@ -31,7 +31,7 @@ Strongbox and KeePassium are both long-established KeePass clients for iPhone, i
 
 - **What is free.** KeePassium's free version handles one database with basic AutoFill, Face ID and Touch ID, and TOTP codes, but you pick each login from a list every time; logins suggested above the keyboard, saving new logins from AutoFill, YubiKey support, and the password audit need Premium. Strongbox's free version (non-commercial use only) includes AutoFill and TOTP codes on iPhone and iPad, but Face ID and Touch ID unlock need Pro, and on Mac so does AutoFill.
 - **What paying costs.** Strongbox Pro is $2.99/month, $24.99/year, or $124.99 lifetime on Strongbox's website. KeePassium Premium is €19.99/year on a rent-to-own basis, and the lifetime KeePassium Pro app is $79.99 on the US App Store. (Prices vary by region.)
-- **Sync.** Strongbox connects to Dropbox, Google Drive, OneDrive, WebDAV, and SFTP itself, as well as iCloud Drive. KeePassium works through whichever providers appear in the iOS Files app.
+- **Sync.** Strongbox connects to Dropbox, Google Drive, OneDrive, WebDAV, and SFTP itself, as well as iCloud Drive. KeePassium connects directly to Dropbox, Google Drive, OneDrive and WebDAV, and reaches iCloud Drive and SFTP through the iOS Files app ([KeePassium](https://support.keepassium.com/kb/sync/)).
 - **Scope.** Strongbox does more: an Apple Watch app, Have I Been Pwned breach checks, and an SSH agent on Mac (all Pro). KeePassium is smaller and more focused.
 
 Both publish their source code, KeePassium under the GPLv3 and Strongbox under the AGPL-3.0, but there is no way to verify that the App Store builds were compiled from it. Choose KeePassium for a simpler app you can start using free, within the limits above; choose Strongbox if you want the most features and built-in sync and expect to pay. They open the same file, so trying both costs nothing but time. So does PanicVault, covered below, if your database is KDBX 4: a native app sold as a one-time purchase, with no subscription.
@@ -88,7 +88,7 @@ Strongbox is a mature, feature-rich KeePass client for Apple devices with a long
 - More complex interface due to extensive configuration options
 - Highest lifetime price in this group ($124.99 on Strongbox's website)
 
-**Best for**: Power users who need multiple sync providers, Lightning (5Ci) hardware keys, or password auditing. Also ideal for users migrating from older KeePass 1.x databases.
+**Best for**: Power users who need multiple sync providers, Lightning (5Ci) hardware keys, or Have I Been Pwned breach checks. Also ideal for users migrating from older KeePass 1.x databases.
 
 For a direct comparison, see [PanicVault vs. Strongbox](/compare/panicvault-vs-strongbox/).
 
@@ -136,7 +136,7 @@ KeePassium is a KeePass client for iPhone and iPad, with a Mac version built wit
 - Face ID and Touch ID, including in the free tier
 - TOTP codes, including in the free tier
 - Multiple databases (Premium; the free tier covers one)
-- File provider integration (iCloud, Dropbox, etc.)
+- Direct Dropbox, Google Drive, OneDrive and WebDAV connections, plus iCloud Drive and other providers through the Files app
 - YubiKey support and password leak audit (Premium)
 - Source code published under the GPLv3
 
@@ -187,9 +187,9 @@ KeePass 2.x is the original KeePass implementation that defined the KDBX format.
 | SSH agent | No | Pro (Mac) | Yes | No |
 | Auto-Type | No | No | Yes | No |
 | iCloud sync | Yes | Yes | Manual | Yes |
-| Dropbox/OneDrive | Via Files app | Built-in | Manual | Via Files app |
-| WebDAV / SFTP | No | Yes (Pro on Mac) | No | Via Files app |
-| Password audit | No | Yes (breach check: Pro) | No | Premium |
+| Dropbox/OneDrive | Via Files app | Built-in | Manual | Built-in |
+| WebDAV / SFTP | No | Yes (Pro on Mac) | No | WebDAV built-in; SFTP via Files app |
+| Password audit | Yes | Yes (breach check: Pro) | No | Premium |
 | Apple Watch | No | Pro | No | No |
 | KDB (v1) support | No | Yes | No | Yes |
 | Database merge | Automatic (sync and outside changes) | Yes | Yes | No |
@@ -210,7 +210,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Maximum Features
 
-**Strongbox on all Apple devices, KeePassXC on non-Apple desktops.** Strongbox's password audit, KeePass 1.x support, and multiple sync providers cover power user needs. KeePassXC handles desktop-specific workflows. (Hardware keys are no longer a reason to pick one Apple app over the other -- PanicVault and Strongbox both support YubiKey challenge-response over NFC on iPhone, and over USB on Mac; in Strongbox it is a Pro feature.)
+**Strongbox on all Apple devices, KeePassXC on non-Apple desktops.** Strongbox's breach checks, KeePass 1.x support, and multiple sync providers cover power user needs. KeePassXC handles desktop-specific workflows. (Hardware keys are no longer a reason to pick one Apple app over the other -- PanicVault and Strongbox both support YubiKey challenge-response over NFC on iPhone, and over USB on Mac; in Strongbox it is a Pro feature.)
 
 ### Zero Cost, With Trade-offs
 
@@ -224,7 +224,7 @@ The KeePass ecosystem's interoperability means you do not have to pick one app f
 
 ### Prioritize if you want the most features
 
-**Strongbox** (Apple) or **KeePassXC** (desktop). Strongbox covers Apple platforms with password auditing, KeePass 1.x support, and multiple sync providers. KeePassXC covers desktop platforms with SSH agent, Auto-Type, and open-source transparency.
+**Strongbox** (Apple) or **KeePassXC** (desktop). Strongbox covers Apple platforms with breach checks, KeePass 1.x support, and multiple sync providers. KeePassXC covers desktop platforms with SSH agent, Auto-Type, and open-source transparency.
 
 ### Prioritize if you want the lowest cost
 

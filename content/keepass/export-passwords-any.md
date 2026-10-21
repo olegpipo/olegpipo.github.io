@@ -2,7 +2,7 @@
 title: "Export Passwords From Any Manager"
 description: "Universal guide to exporting passwords from Chrome, Safari, Firefox, 1Password, Bitwarden, LastPass, Dashlane, Keeper, and NordPass into KeePass KDBX format."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -32,7 +32,7 @@ A KDBX file lives on your device. You control where it is stored, how it is back
 
 ### No Recurring Costs
 
-KeePass-compatible applications are free and open source. Once your passwords are in KDBX format, you never need to pay for access to them again. For a detailed comparison of open and proprietary approaches, see our [data portability](/keepass/data-portability/) guide.
+KeePass 2.x and KeePassXC are free and open source, and every KeePass-compatible app, free or paid, opens the same file. Once your passwords are in KDBX format, you never need to pay for access to them again. For a detailed comparison of open and proprietary approaches, see our [data portability](/keepass/data-portability/) guide.
 
 ## Export Comparison Table
 

@@ -2,7 +2,7 @@
 title: "Migrate from Enpass to KeePass"
 description: "Step-by-step guide to migrating from Enpass to KeePass. Export directly to KDBX, or use CSV/JSON, and verify all credentials transferred correctly."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -28,7 +28,7 @@ Enpass stores your vault locally (which is good), but the application itself is 
 
 ### No License Fees
 
-Enpass uses a one-time purchase model on desktop and a subscription model on mobile (or a one-time lifetime purchase). While more reasonable than many competitors, it still costs money. KeePass-compatible applications are completely free, permanently.
+Enpass uses a one-time purchase model on desktop and a subscription model on mobile (or a one-time lifetime purchase). While more reasonable than many competitors, it still costs money. KeePass 2.x and KeePassXC are completely free, permanently, and on iPhone and Mac, PanicVault is a one-time purchase.
 
 ### Broader App Ecosystem
 

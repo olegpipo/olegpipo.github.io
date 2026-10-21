@@ -124,7 +124,7 @@ The trade-off is complexity and pricing. On iPhone and iPad, Strongbox's free ve
 
 KeePassium is a KeePass client for iOS with a simpler interface and fewer options than Strongbox.
 
-KeePassium supports KDBX 4.0 and reads KeePassXC databases without trouble. It integrates with iOS AutoFill, supports Face ID and Touch ID, and works with any cloud storage provider through the iOS Files framework (iCloud Drive, Dropbox, Google Drive, OneDrive, and others).
+KeePassium supports KDBX 4.0 and reads KeePassXC databases without trouble. It integrates with iOS AutoFill, supports Face ID and Touch ID, and connects directly to Dropbox, Google Drive, OneDrive and WebDAV, reaching iCloud Drive and other providers through the iOS Files app ([KeePassium](https://support.keepassium.com/kb/sync/)).
 
 It has configurable timeouts for the app, the database, and the clipboard. KeePassium publishes its source code under the GPLv3, as Strongbox does under the AGPL-3.0, but there is no way to verify that either app's App Store build was compiled from that code. KeePassium's App Store listing says it has been independently audited by Cure53.
 
@@ -162,7 +162,7 @@ The free version handles one database and has basic AutoFill, Face ID and Touch 
 | **Face ID / Touch ID** | Yes | Pro | Yes | Yes | Yes |
 | **TOTP** | Yes | Yes | Yes | Yes | No |
 | **iCloud Sync** | Yes | Yes | Via Files | Via Files | Via Files |
-| **Google Drive Sync** | Yes | Yes | Via Files | Via Files | No |
+| **Google Drive Sync** | Yes | Yes | Yes | Via Files | No |
 | **YubiKey** | Yes -- NFC on iPhone, USB on Mac | Pro | Premium | No | No |
 | **Open Source** | No | Source published* | Source published* | Source published* | No |
 | **Apple Watch** | No | Pro | No | No | No |
@@ -200,15 +200,15 @@ Google Drive is the better choice if you use KeePassXC on Windows or Linux, or i
 
 3. **Update KeePassXC.** Open the database from its new Google Drive location in KeePassXC.
 
-4. **Open the file on iPhone.** In your chosen iOS KeePass app, browse to Google Drive when adding a database. PanicVault and Strongbox have built-in Google Drive support. KeePassium accesses Google Drive through the iOS Files app (install the Google Drive app first to register it as a file provider).
+4. **Open the file on iPhone.** In your chosen iOS KeePass app, browse to Google Drive when adding a database. PanicVault, Strongbox and KeePassium all have built-in Google Drive support.
 
 5. **Enable AutoFill.** Same as above: Settings > General > AutoFill & Passwords.
 
 ### Option 3: Other Sync Methods
 
-**Dropbox and OneDrive** work similarly to Google Drive. Install the desktop client, move your KDBX file into the synced folder, and open it from the same location on both desktop and mobile. Strongbox has built-in support for both. PanicVault and KeePassium access them through the iOS Files framework. PanicVault merges the changes KeePassXC saves to a file kept there instead of overwriting them.
+**Dropbox and OneDrive** work similarly to Google Drive. Install the desktop client, move your KDBX file into the synced folder, and open it from the same location on both desktop and mobile. Strongbox and KeePassium have built-in support for both. PanicVault accesses them through the iOS Files framework. PanicVault merges the changes KeePassXC saves to a file kept there instead of overwriting them.
 
-**WebDAV and SFTP** are options for users who run their own server or NAS. Strongbox supports these protocols natively. KeePassium supports them through third-party file providers.
+**WebDAV and SFTP** are options for users who run their own server or NAS. Strongbox supports these protocols natively. KeePassium connects to WebDAV directly and reaches SFTP through third-party file providers.
 
 **Manual transfer** via AirDrop or USB is possible but impractical for ongoing use. It works for one-time setup but does not keep your database synchronized as you make changes.
 
@@ -236,7 +236,7 @@ Here is what each combination looks like:
 
 If you are a KeePassXC user looking for the best iOS experience and you primarily use Apple devices, **PanicVault** is the strongest recommendation. Its native design, one-time pricing, iCloud and Google Drive sync, and full KDBX 4.0 compatibility make it the most seamless companion for KeePassXC on desktop.
 
-If you need multiple sync providers, password auditing, KDBX 3.1 support, or Lightning (5Ci) hardware keys, **Strongbox** is the better fit despite its higher cost and complexity.
+If you need multiple sync providers, Have I Been Pwned breach checks, KDBX 3.1 support, or Lightning (5Ci) hardware keys, **Strongbox** is the better fit despite its higher cost and complexity.
 
 **KeePassium** has a free version, but it is limited to one database and basic AutoFill; logins above the keyboard, YubiKey support, and the password audit need Premium.
 

@@ -2,7 +2,7 @@
 title: "Migrate from Proton Pass to KeePass"
 description: "Step-by-step guide to migrating from Proton Pass to KeePass. Export your vault as CSV, import into KeePassXC, and understand what transfers and what stays."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -32,7 +32,7 @@ Proton Pass uses its own vault format. While Proton is open source and committed
 
 ### No Subscription Required
 
-Proton Pass offers a free tier with limitations and paid plans with additional features. KeePass-compatible applications are completely free with no premium tiers. Every feature is available at no cost, permanently.
+Proton Pass offers a free tier with limitations and paid plans with additional features. KeePass 2.x and KeePassXC are completely free with no premium tiers. On iPhone and Mac, PanicVault is a one-time purchase, and Strongbox and KeePassium have free versions with paid upgrades.
 
 ### Ecosystem Independence
 
