@@ -2,14 +2,16 @@
 title: "BofA Phishing Email Examples (2026)"
 description: "Real Bank of America phishing email examples from 2026. Learn to spot fake BofA emails, texts, and calls before they steal your credentials."
 date: 2026-03-06
-lastmod: 2026-09-19
+lastmod: 2026-10-21
 draft: false
 silo: "Phishing & Social Engineering"
 faq:
   - q: "How do I know if a Bank of America email is real?"
-    a: "Check the sender address -- legitimate BofA emails come from @bankofamerica.com or @ealerts.bankofamerica.com. Real emails address you by name, never ask for your password or SSN, and link only to bankofamerica.com. If your password manager does not offer to autofill on the linked page, the email is almost certainly fake."
+    a: "Check the full sender address, not just the display name. An address whose domain ends in bankofamerica.com, such as onlinebanking@ealerts.bankofamerica.com, belongs to Bank of America; lookalikes like bankofamerica-alerts.com do not. A correct-looking address is not proof on its own, so confirm any alert in the Bank of America app. Real emails address you by name, never ask for your password or SSN, and link only to bankofamerica.com. If your password manager does not offer to autofill on the linked page, the email is almost certainly fake."
+  - q: "Is onlinebanking@ealerts.bankofamerica.com a real Bank of America email?"
+    a: "The address is on a Bank of America domain: ealerts.bankofamerica.com is a subdomain of bankofamerica.com, which only Bank of America controls. But Bank of America does not publish a list of its sender addresses, and sender lines can be faked or imitated with lookalikes such as ealerts-bankofamerica.com. Don't click links in the email; open the Bank of America app and check for the same alert there. If it isn't there, forward the email to abuse@bofa.com."
   - q: "What does a Bank of America phishing email look like?"
-    a: "BofA phishing emails typically mimic official branding with the correct logo and color scheme. They create urgency with subject lines like 'Suspicious Activity on Your Account' or 'Action Required: Verify Your Identity.' The giveaway is the sender domain (not @bankofamerica.com), links pointing to lookalike domains, and requests for sensitive information."
+    a: "BofA phishing emails typically mimic official branding with the correct logo and color scheme. They create urgency with subject lines like 'Suspicious Activity on Your Account' or 'Action Required: Verify Your Identity.' The giveaway is a sender domain that doesn't end in bankofamerica.com, links pointing to lookalike domains, and requests for sensitive information."
   - q: "Does Bank of America send emails asking for personal information?"
     a: "No. Bank of America will never ask for your Social Security number, full account number, PIN, password, or one-time passcode via email, text, or phone call. Any message requesting this information is a scam, regardless of how legitimate it looks."
   - q: "How do I report a phishing email to Bank of America?"
@@ -33,7 +35,7 @@ This is the most prevalent Bank of America scam email. It exploits the fear that
 
 **What it looks like**: The email uses Bank of America's logo, brand colors, and a layout that closely mirrors genuine BofA alerts. It states that unusual activity has been detected and that your account has been temporarily limited or locked. A prominent button says "Verify Your Identity" or "Review Activity Now."
 
-**The tell**: The sender address is not from @bankofamerica.com or @ealerts.bankofamerica.com. Common fakes include addresses like security@bankofamerica-alerts.com, noreply@bofasecure.net, or alerts@boa-online.com. The "Verify" button links to a [fake login page](/phishing/fake-login-pages/) on a lookalike domain designed to capture your credentials.
+**The tell**: The sender's domain does not end in bankofamerica.com. Common fakes include addresses like `security@bankofamerica-alerts.com`, `noreply@bofasecure.net`, or `alerts@boa-online.com`. The "Verify" button links to a [fake login page](/phishing/fake-login-pages/) on a lookalike domain designed to capture your credentials.
 
 **The reality**: Bank of America does send genuine fraud alerts, but they direct you to sign in through the official app or website -- they never ask you to enter credentials through an email link. If you receive a suspicious activity alert, open the Bank of America app directly or navigate to bankofamerica.com yourself.
 
@@ -76,7 +78,7 @@ With the widespread adoption of Zelle for peer-to-peer payments through Bank of 
 
 **What it looks like**: The email mimics a Zelle transaction confirmation, showing a payment you supposedly initiated. The amount is typically large enough to cause alarm. The message includes a "Cancel This Transaction" or "Report Unauthorized Payment" button, preying on the instinct to act fast before money leaves your account.
 
-**The tell**: If you did not initiate a Zelle payment, the email is fraudulent. Clicking "Cancel" leads to a phishing page that harvests your online banking credentials. Real Zelle notifications from Bank of America come from @ealerts.bankofamerica.com and can be confirmed by logging into the BofA app directly.
+**The tell**: If you did not initiate a Zelle payment, the email is fraudulent. Clicking "Cancel" leads to a phishing page that harvests your online banking credentials. A real Zelle notification from Bank of America comes from an address ending in bankofamerica.com, and the payment will show up when you open the BofA app directly.
 
 **The reality**: Even if a fraudulent Zelle payment were initiated, clicking a link in an email would not cancel it. You would need to contact Bank of America directly through the app or by calling the number on the back of your debit card.
 
@@ -143,7 +145,7 @@ Phone-based phishing -- vishing -- often follows a smishing attempt or operates 
 
 Before acting on any communication that claims to be from Bank of America, run through this checklist:
 
-1. **Check the sender address**: Legitimate BofA emails come from @bankofamerica.com or @ealerts.bankofamerica.com. Click on the sender name to see the full email address, not just the display name.
+1. **Check the sender address**: Click on the sender name to see the full email address, not just the display name. The domain must end in bankofamerica.com; the next section shows how to read an address like `onlinebanking@ealerts.bankofamerica.com`.
 
 2. **Inspect the links without clicking**: Hover over any buttons or links (on desktop) or long-press them (on mobile) to see the actual URL. It should point to bankofamerica.com -- not bankofamerica-login.com, bofasecure.net, or any other domain.
 
@@ -154,6 +156,32 @@ Before acting on any communication that claims to be from Bank of America, run t
 5. **Verify independently**: When in doubt, open the Bank of America app or navigate to bankofamerica.com directly. Any legitimate alert will be visible within your account. You can also call the number on the back of your debit card.
 
 For a broader framework that applies to all phishing attempts, see our guide on [how to recognize phishing emails](/phishing/recognize-phishing/).
+
+## Is `onlinebanking@ealerts.bankofamerica.com` Legit?
+
+An email that really comes from `onlinebanking@ealerts.bankofamerica.com` was sent by Bank of America. The part after the @, `ealerts.bankofamerica.com`, is a subdomain of bankofamerica.com, and only Bank of America controls that domain. The same goes for `payments@ealerts.bankofamerica.com`, `customerservice@ealerts.bankofamerica.com`, and `noreply@mail-mycredit.bankofamerica.com`.
+
+There are two catches. Bank of America does not publish a list of the addresses it sends email from, so you cannot check an address against an official list. And the sender line in your inbox can be faked or imitated. Treat a correct address as a good sign, not as proof.
+
+### How to Read a Sender Address
+
+Ignore the display name and everything before the @. Read the domain after the @ from right to left: it must end in exactly `bankofamerica.com`, with a dot or the @ directly in front of it.
+
+| Sender address | Domain it really comes from | Verdict |
+|---|---|---|
+| `onlinebanking@ealerts.bankofamerica.com` | bankofamerica.com | Bank of America domain |
+| `noreply@mail-mycredit.bankofamerica.com` | bankofamerica.com | Bank of America domain |
+| `onlinebanking@ealerts-bankofamerica.com` | ealerts-bankofamerica.com | Not a bankofamerica.com address: treat as phishing |
+| `alerts@bankofamerica.com.account-review.net` | account-review.net | Not a bankofamerica.com address: treat as phishing |
+| `security@bankofamerica-alerts.com` | bankofamerica-alerts.com | Not a bankofamerica.com address: treat as phishing |
+
+The third row is the one to watch: a single hyphen in place of a dot turns Bank of America's domain into someone else's.
+
+Bank of America also uses the shorter bofa.com domain. abuse@bofa.com is the address its [security center](https://web.bankofamerica.com/en/security/report-suspicious-activity) gives for reporting phishing: you forward suspicious emails to it.
+
+### Even When the Address Checks Out
+
+Do not act on the email itself. Open the Bank of America app, or type bankofamerica.com into your browser, and look for the same alert, payment, or message there. If it is not in your account, forward the email to abuse@bofa.com and delete it.
 
 ## Why a Password Manager Is Your Strongest Defense
 
