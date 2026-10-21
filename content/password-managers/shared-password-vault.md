@@ -2,9 +2,11 @@
 title: "Shared Password Vault: How It Works & Best Options (2026)"
 description: "What a shared password vault is, how it keeps shared logins encrypted, and the best options for couples, families, and teams -- without exposing your private passwords."
 date: 2026-07-01
-lastmod: 2026-07-01
+lastmod: 2026-10-21
 draft: false
 silo: "Password Managers"
+aliases:
+  - /business/small-team-sharing/
 faq:
   - q: "What is a shared password vault?"
     a: "A shared password vault is an encrypted collection of logins that two or more people can access from their own devices. Instead of texting a password or emailing a spreadsheet, everyone in the group opens the same protected vault and sees the credentials they are allowed to see. Changes made by one person sync to everyone else. It is the secure alternative to sharing passwords over chat, email, or sticky notes."
@@ -16,6 +18,8 @@ faq:
     a: "Yes, and you should. Every good shared-vault setup separates a shared vault (joint accounts like streaming, utilities, or a household bank login) from each person's private vault (their email, personal banking, and individual accounts). You choose exactly what goes into the shared space; everything else stays private and is never visible to the group."
   - q: "How do I share a password vault without sharing my master password?"
     a: "Never share your master password -- it unlocks your entire private vault. Cloud managers like Bitwarden, 1Password, and Apple Passwords let you invite people to a shared vault or group, and each person unlocks it with their own credentials. With a shared KeePass database, you protect the shared file with its own separate password (and optional key file) that is different from your personal vault's master password."
+  - q: "What happens if two people edit a shared vault at the same time?"
+    a: "With a cloud manager, the service merges the changes for you. With a shared KeePass database, it depends on the app: a shared .kdbx is a single file, and an app that simply saves over it can wipe out the other person's edit. PanicVault merges the other copy's changes into yours entry by entry before it saves, and if the same entry was changed in both places it keeps both versions and asks which one to keep."
 ---
 
 Sharing a password is one of the most routine things people do online -- and one of the most quietly dangerous. A streaming login sent over text. The Wi-Fi password emailed to a new roommate. A company account pasted into a Slack channel. Each of these leaves a permanent, unencrypted copy of a credential somewhere you no longer control. A shared password vault solves this problem by giving a group of people secure, revocable access to the same logins without any of them ever changing hands as plain text.
@@ -57,6 +61,10 @@ The offline approach shares a single encrypted database file rather than an acco
 
 This model trades the account-based permission controls of cloud managers for total ownership: there is no provider, no subscription, and no third party that could be breached. The trade-off is that a KeePass database is all-or-nothing -- anyone with the file's password sees everything in it -- so you keep shared and private credentials in **separate databases** rather than relying on per-item permissions. Our [guide to sharing passwords with family](/guides/share-with-family/) walks through this setup step by step.
 
+#### When Two People Edit the Same Database
+
+A shared `.kdbx` is one file, so the real question is what happens when two people change it at about the same time. An app that simply saves its copy over the file can silently wipe out the other person's edit. PanicVault checks the file before every save and merges the other copy's changes into yours entry by entry -- for vaults on iCloud Drive or Google Drive and for files kept in step by another tool such as Dropbox. If the same entry was changed in both places, it keeps both versions and shows a conflict screen so you can choose. Other KeePass apps handle this differently, so if your group mixes apps, read our guide to [resolving sync conflicts](/cloud-sync/sync-conflicts/). Shared credentials change rarely, but a simple convention helps: when you change one, tell the others (without putting the password in the message).
+
 ## What to Look For in a Shared Vault
 
 Whatever approach you choose, a well-designed shared setup should give you these five things:
@@ -73,8 +81,22 @@ The best shared vault depends on who you are sharing with. We have detailed, sce
 
 - **Couples.** Two people typically share a handful of joint accounts while keeping most logins private. Affordable two-person plans and a clean shared-versus-private split matter most. See [the best password managers for couples](/compare/best-for-couples/).
 - **Families.** Households add the wrinkles of recovery for less technical members and age-appropriate access for children. See [the best password managers for families](/compare/best-for-families/) and the practical [how to share passwords with family](/guides/share-with-family/).
-- **Small teams and freelancers.** Businesses need shared service accounts, clean handoffs, and offboarding without leaking credentials. See [secure password sharing for small teams](/business/small-team-sharing/).
+- **Small teams and freelancers.** Businesses need shared service accounts, clean handoffs, and offboarding without leaking credentials. See [shared vaults for small teams](#shared-vaults-for-small-teams) below, and our guides for [freelancers](/business/freelancers/) and [contractor handoffs](/business/contractor-handoffs/).
 - **All-Apple households.** If everyone uses iPhone, iPad, or Mac, the built-in shared groups may be all you need. See [sharing passwords on Apple devices](/apple/share-passwords-apple/).
+
+## Shared Vaults for Small Teams
+
+For a team of two to ten people, the shared KeePass model works best as several databases split by need rather than one file for everyone:
+
+- **Team-wide** -- company email and social accounts, the website CMS, shared tools. Everyone gets this password.
+- **Finance** -- banking, payment processor, accounting and tax. Only the owner and the bookkeeper.
+- **Development** -- hosting, servers, API keys, deployment. Only the technical people.
+
+Each database has its own password, given only to the people who need it. That is least privilege without enterprise software. The owner should also keep every business credential in their own private vault, so a corrupted shared file or a departure never loses anything.
+
+**Onboarding** someone means deciding which databases they need, giving them those passwords in person or by phone, and helping them open the files in a [KeePass-compatible app](/keepass/compatible-apps/). **Offboarding** is the step teams skip: change the password of every shared database the person had, give the new passwords to everyone who stays, and change the individual credentials they could see -- they may remember or have copied them. For freelancers and other short engagements, a one-time encrypted link or an account of their own is usually better than database access; see [secure credential handoffs](/business/contractor-handoffs/).
+
+**Cost** is the other reason small teams choose this model. Cloud managers bill per user: Bitwarden Teams, for example, is $4 per user per month billed annually ([Bitwarden](https://bitwarden.com/pricing/business/)), or $240 a year for five people, every year. PanicVault has no subscription, the database files are yours, and teammates on Windows or Linux can open the same file in free apps such as KeePassXC. Past roughly fifteen people, the manual work of managing files and passwords starts to strain, and a cloud manager's admin console, provisioning and audit logs become worth paying for.
 
 ## Security Practices for Shared Vaults
 
@@ -95,5 +117,5 @@ A shared password vault replaces the riskiest habit in everyday digital life -- 
 - [Best Password Manager for Couples](/compare/best-for-couples/) -- Two-person plans and shared-versus-private setups
 - [Best Password Manager for Families](/compare/best-for-families/) -- Household sharing, recovery, and child access
 - [How to Share Passwords Securely With Family](/guides/share-with-family/) -- Step-by-step shared-database setup
-- [Secure Password Sharing for Small Teams](/business/small-team-sharing/) -- Business handoffs without leaking credentials
+- [Secure Credential Handoffs for Contractors](/business/contractor-handoffs/) -- Business handoffs without leaking credentials
 - [Share Passwords on iPhone, iPad & Mac](/apple/share-passwords-apple/) -- Apple-native sharing methods compared
