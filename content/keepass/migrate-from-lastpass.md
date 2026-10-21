@@ -1,213 +1,192 @@
 ---
 title: "How to Migrate from LastPass to KeePass: Step-by-Step Guide"
-description: "Complete guide to migrating from LastPass to KeePass. Export your vault, import passwords, organize entries, and verify your data for a clean transition."
+description: "Export your LastPass vault to CSV, import it into KeePassXC, KeePass 2.x or PanicVault on iPhone and Mac, verify every entry, and decide which passwords to change after the 2022 breach."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
+faq:
+  - q: "How do I export my passwords from LastPass?"
+    a: "In the LastPass web vault, choose Advanced Options in the left sidebar, then Export under Manage your Vault, and confirm the email LastPass sends you. In the browser extension, go to Account > Fix a problem yourself > Export vault items > Export data for use anywhere. Either way you get a plaintext CSV file."
+  - q: "Can KeePass import a LastPass CSV file?"
+    a: "Yes. KeePass 2.x has a LastPass format under File > Import. KeePassXC imports it through its CSV import wizard, where you match LastPass's columns to KeePass fields. PanicVault on iPhone, iPad and Mac imports it as a generic CSV with File > Import Passwords from CSV."
+  - q: "Do my LastPass TOTP codes transfer to KeePass?"
+    a: "Usually not. LastPass's help says exporting TOTP codes for password items is unsupported, so the totp column in the CSV is normally empty, and codes in LastPass Authenticator are a separate app. Plan to set up two-factor codes again in your KeePass app, which is a good idea anyway if your vault existed during the 2022 breach."
+  - q: "Is KeePass free?"
+    a: "KeePass 2.x and KeePassXC are free and open source. Some KeePass-compatible apps for iPhone and Mac are paid: PanicVault is a one-time purchase, and Strongbox and KeePassium have free versions with paid upgrades. All of them use the same .kdbx file, so you are never tied to one."
+  - q: "Should I change my passwords after leaving LastPass?"
+    a: "If your LastPass vault existed in 2022, yes, starting with the most valuable accounts. Attackers copied encrypted vault backups that year and can keep trying to crack them offline. Moving to KeePass protects you from now on; it does not change a password that was already in the stolen copy."
 ---
 
-Migrating away from a commercial password manager can feel daunting, but the process of moving from LastPass to a [KeePass-compatible application](/keepass/) is straightforward once you understand the steps involved. Whether you are leaving because of security concerns after the LastPass breach incidents, frustration with pricing changes, or a desire for greater control over your data, this guide walks you through every stage of the migration -- from exporting your LastPass vault to verifying that every credential has been successfully transferred.
+Moving from LastPass to a [KeePass-compatible app](/keepass/) takes an afternoon: you export a CSV file from LastPass, import it into KeePass, check the result and delete the CSV. This guide walks through each step with the current LastPass menus, covers KeePassXC and KeePass 2.x on a computer and [PanicVault](https://apps.apple.com/app/id6759188575) on iPhone, iPad and Mac, and ends with what to change if your vault was caught up in the 2022 LastPass breach.
 
-## Why Migrate from LastPass to KeePass
+## Why Move from LastPass to KeePass
 
-Several factors have driven users away from LastPass in recent years, and understanding them helps frame why a migration is worth the effort.
+**The 2022 breach.** In December 2022 LastPass [disclosed](https://blog.lastpass.com/posts/notice-of-recent-security-incident) that attackers had copied a backup of customer vault data. Passwords and notes in those vaults were encrypted, but website URLs were not, and the attackers can try to crack the encrypted parts offline for as long as they like. By September 2023, researchers had [linked the theft of more than $35 million in cryptocurrency](https://krebsonsecurity.com/2023/09/experts-fear-crooks-are-cracking-keys-stolen-in-lastpass-breach/) to secrets stored in those vaults.
 
-### Security Incidents
+**A shrinking free plan.** In 2021 LastPass [limited its free plan](https://blog.lastpass.com/posts/changes-to-lastpass-free) to one type of device -- computers or mobile devices -- so free users who relied on both had to pay or leave.
 
-The 2022 LastPass breach was one of the most significant password manager compromises in history. Attackers gained access to encrypted vault backups for millions of users. While the encryption on those vaults provides a layer of protection, the reality is that vaults secured with weak or reused master passwords are vulnerable to brute force cracking. Subsequent reports linked cryptocurrency thefts totaling hundreds of millions of dollars to credentials extracted from those stolen vaults.
+**Your own file.** With KeePass, your vault is a single encrypted `.kdbx` file that you keep where you choose: on your computer, in iCloud Drive or Google Drive, or anywhere else. No company holds a copy unless you put one there, and because the format is open, any KeePass-compatible app can open it. KeePass 2.x and KeePassXC are free and open source; on Apple devices you can use a paid app such as PanicVault, or Strongbox or KeePassium, which have free versions with paid upgrades. Our [data portability guide](/keepass/data-portability/) explains why the open format matters.
 
-For users whose vaults were included in the breach, the risk is ongoing. Attackers have the encrypted data indefinitely and can attempt to crack it as computing power improves. If your vault was breached and your master password was not exceptionally strong, migrating to a new password manager is only the first step -- you should also rotate every password stored in the compromised vault. Our guide on [what happens when a password manager gets hacked](/password-managers/what-if-hacked/) covers the full implications and response steps.
+## Before You Start: Back Up Everything
 
-### Pricing Changes
-
-LastPass has progressively restricted its free tier over the years. The platform once offered unlimited devices on its free plan, then limited free users to a single device type (mobile or desktop), and has continued to push more features behind its premium paywall. For users who relied on the free tier, these changes forced a choice: pay a recurring subscription or find an alternative.
-
-KeePass-compatible applications are free and open source. There is no subscription, no premium tier, and no risk of features being removed from a plan you depend on. The software is maintained by the open source community and funded by donations rather than user fees.
-
-### Privacy and Data Control
-
-LastPass stores encrypted vault data on its own servers. While the company cannot read your encrypted data (in theory), the 2022 breach demonstrated that server-side storage creates a target. An attacker who compromises the service gains access to millions of vaults at once.
-
-With KeePass, your vault is a local file on your device. You decide where it lives, how it is backed up, and whether it is synced to any cloud service. No third party holds a copy of your encrypted data unless you explicitly place one there. This architectural difference is fundamental to the KeePass security model.
+1. **Note your entry count.** Count the items in your LastPass vault, at least roughly, so you can compare after the import.
+2. **Download attachments.** File attachments are not included in the CSV export. Save any you need from LastPass before you close the account.
+3. **List your shared folders.** Check that their items appear in your export; even when they do, the sharing itself does not carry over.
+4. **Find your two-factor codes.** Make a list of accounts whose codes live in LastPass or LastPass Authenticator, because those codes will not come across (see below).
+5. **Keep LastPass active.** Do not delete the account until you have verified the migration, ideally after two to four weeks of using KeePass.
 
 ## Step 1: Export Your Data from LastPass
 
-Before you can import anything into KeePass, you need to get your data out of LastPass. LastPass supports exporting to CSV format, which is the most universally compatible option for importing into other password managers.
+LastPass exports to a CSV file. Both routes below produce the same file.
 
-### Exporting via the LastPass Web Vault
+### From the LastPass Web Vault
 
-1. Log in to your LastPass account at lastpass.com.
-2. Navigate to **Advanced Options** in the left sidebar (or click your account icon and look for **Advanced Options**).
-3. Select **Export** under the "Manage Your Vault" section.
-4. You will be prompted to enter your master password again for verification.
-5. LastPass will generate a CSV file and either download it directly or display the data in your browser window. If the data is displayed in the browser, select all of it, copy it, and paste it into a plain text file saved with a `.csv` extension.
+1. Log in at lastpass.com and open your vault.
+2. Choose **Advanced Options** in the left sidebar.
+3. Under **Manage your Vault**, choose **Export**.
+4. LastPass emails you to confirm the export. Open the link, return to the web vault and choose **Export** again, entering your master password if asked.
+5. Your browser saves a `.csv` file. If the data appears on screen instead, copy all of it into a plain text file and save it with a `.csv` extension.
 
-### Exporting via the LastPass Browser Extension
+### From the LastPass Browser Extension
 
-1. Click the LastPass extension icon in your browser toolbar.
-2. Go to **Account Options** then **Advanced** then **Export**.
-3. Enter your master password when prompted.
-4. Save the resulting CSV file to a secure location on your device.
+1. Click the LastPass icon in your browser toolbar and open the **Account** tab.
+2. Choose **Fix a problem yourself**, then **Export vault items**, then **Export data for use anywhere**.
+3. Enter your master password and save the `.csv` file.
 
-### Important Warnings About the Export
+LastPass changes these menus from time to time. If you cannot find them, search LastPass's help for "export vault items".
 
-The CSV file produced by LastPass contains all your passwords in plain text. This is inherently risky. While it is necessary for the migration, you must handle this file with extreme care:
+### What Is in the CSV
 
-- Save it to your local drive only, not to a cloud-synced folder like Dropbox or Google Drive.
-- Do not email the file or share it through any messaging service.
-- Delete the file securely after you have completed the import and verified your data. On most operating systems, simply deleting the file and emptying the recycle bin is insufficient for true secure deletion, but it is adequate for most threat models. If you need stronger guarantees, use a secure deletion tool.
+The file starts with a header row like this:
 
-### What the Export Includes
+```
+url,username,password,totp,extra,name,grouping,fav
+```
 
-The LastPass CSV export typically includes the following fields: URL, username, password, extra notes, name (the entry title), grouping (folder path), and a "fav" flag for favorites. It covers standard login entries, secure notes, and form fill data, though the format for notes and form fills may require manual adjustment after import.
+| LastPass column | What it holds | KeePass field |
+|---|---|---|
+| `url` | Website address | URL |
+| `username` | Login name | User name |
+| `password` | Password | Password |
+| `totp` | Two-factor secret; usually empty, because LastPass does not export TOTP codes for password items | Re-add codes by hand |
+| `extra` | Notes, and the contents of secure notes | Notes |
+| `name` | Entry name | Title |
+| `grouping` | Folder | Group |
+| `fav` | Favourite flag (1 or 0) | Not needed |
+
+Secure notes and form-fill items are flattened into the `extra` column, so they arrive as notes rather than structured entries.
+
+### Keep the CSV Safe
+
+The CSV holds every password in plain text. Save it to your computer's local drive, not a synced folder such as Dropbox or iCloud Drive; do not email or message it; and delete it as soon as the import is verified.
 
 ## Step 2: Import into KeePass
 
-The import process varies slightly depending on which KeePass-compatible application you are using. The two most common options are KeePass 2.x (the classic Windows application) and KeePassXC (the cross-platform community edition).
+### KeePassXC (Windows, Mac, Linux)
 
-### Importing into KeePass 2.x
+1. Choose **Database > Import...** to start KeePassXC's Import Wizard.
+2. Choose **Comma Separated Values (.csv)** and select your LastPass file.
+3. Treat the first row as field names, then check the column mapping: `name` to Title, `username` to Username, `password` to Password, `url` to URL, `extra` to Notes and `grouping` to Group.
+4. Look over the preview and finish the wizard. If it creates a new database, give it a strong master password, then save it.
 
-1. Open KeePass and create a new database (or open your existing one).
-2. Go to **File** then **Import**.
-3. In the import dialog, select **Generic CSV Importer** from the list of formats. Some versions of KeePass also include a dedicated **LastPass CSV** import option -- use that if available, as it maps fields automatically.
-4. Browse to and select your exported CSV file.
-5. If using the generic CSV importer, you will need to map the CSV columns to KeePass fields. The mapping is typically: "name" to Title, "url" to URL, "username" to User Name, "password" to Password, "extra" to Notes, and "grouping" to Group.
-6. Click **OK** to complete the import.
+### KeePass 2.x (Windows)
 
-### Importing into KeePassXC
+1. Create a new database with **File > New**, or open an existing one.
+2. Choose **File > Import**.
+3. Choose **LastPass** from the list of formats and select your CSV file. KeePass maps the columns for you; the generic CSV importer is only needed if the dedicated option fails.
+4. Save the database.
 
-1. Open KeePassXC and create a new database or open an existing one.
-2. Go to **Database** then **Import** then **CSV File**.
-3. Select your LastPass CSV export file.
-4. KeePassXC will display a preview of the CSV data and allow you to map columns to fields. Verify that the column assignments are correct.
-5. Check the option to consider the first row as field names if your CSV includes a header row.
-6. Click **OK** to import.
+For more on the file your entries now live in, see our [KDBX format guide](/keepass/kdbx-format-guide/).
 
-For details on the database format your entries are being stored in, see our [KDBX format guide](/keepass/kdbx-format-guide/).
+### Importing on Apple Devices
 
-## Step 3: Organize Your Imported Entries
+On iPhone, iPad or Mac you can import the LastPass CSV straight into [PanicVault](https://apps.apple.com/app/id6759188575):
 
-After the import, your entries will likely be organized into groups (folders) that mirror your LastPass folder structure. Take some time to review and reorganize them.
+1. Create a vault in PanicVault, or open and unlock the one you want to import into.
+2. On a Mac, choose **File > Import Passwords from CSV...** (Cmd+Shift+I). On iPhone or iPad, tap the **...** menu in the entry list toolbar and choose **Import Passwords from CSV**.
+3. Pick the LastPass file. LastPass is not one of the formats PanicVault recognises by name, so the import sheet shows **Generic CSV**; PanicVault uses the password column and matches title, username, URL and notes columns by their header names.
+4. Choose the group to import into and tap **Import**.
 
-### Review the Group Structure
+All entries go into the one group you choose, so LastPass folders are not recreated. Check a few entries afterwards: LastPass calls its title column `name` and its notes column `extra`, and if those did not come through, the next route is the simpler fix. The [PanicVault import guide](/help/importing-passwords/) has the details.
 
-LastPass uses a flat or lightly nested folder system. KeePass supports a hierarchical group structure that can be as deep as you need. Consider reorganizing your entries into logical categories:
+If you want your LastPass folders as groups, import the CSV into KeePassXC first (above), save the database as KDBX 4, and open that `.kdbx` file in PanicVault on your Mac, iPhone or iPad. Keep it in iCloud Drive or Google Drive to sync it across your devices. For other options, see our list of [KeePass apps for every platform](/keepass/compatible-apps/).
 
-- **Email** -- All email account credentials
-- **Financial** -- Banking, investment, payment services
-- **Social Media** -- Social networking accounts
-- **Shopping** -- E-commerce sites
-- **Work** -- Professional accounts and services
-- **Subscriptions** -- Streaming, news, software licenses
-- **Secure Notes** -- Non-login sensitive information
+## Step 3: Verify the Import
 
-You do not need to complete this reorganization immediately. The important thing is that your entries are imported and accessible. You can refine the structure over the following days and weeks.
+- **Compare entry counts** with the number you noted from LastPass. Gaps usually come from secure notes or form fills, or from rows with unusual characters that broke the CSV.
+- **Log in to your most important accounts** -- email, banking, your main work account -- using the passwords from the new database.
+- **Check that fields did not shift.** A column mapping mistake can put URLs in the username field or titles in the notes. Catching it now saves confusion later.
+- **Open a few former secure notes** and make sure their content arrived intact.
 
-### Handle Secure Notes and Form Fills
+## Step 4: Clean Up
 
-LastPass secure notes and form fill profiles may not import cleanly into KeePass. The CSV export format flattens these into text fields that may need manual editing. Review your imported secure notes to ensure the information is intact. For form fill profiles (addresses, credit cards), you may need to recreate these entries manually in KeePass, as the field structure differs between the two applications.
+### Delete the CSV File
 
-### Deal with Shared Folders
+Delete the export as soon as the import checks out, then empty the Trash or Recycle Bin. Do not keep it "just in case": if you need another export, LastPass can produce one while your account is open.
 
-If you used LastPass shared folders (a premium feature), the entries from those folders will be included in your personal export. However, the sharing relationship itself does not transfer. If you were sharing passwords with family members or team members through LastPass, you will need to establish a new sharing method.
+### Back Up the New Database
 
-For KeePass-based sharing, the simplest approach is to create a separate database file for shared credentials and distribute that file (along with its passphrase) to the people who need access. Some KeePass-compatible applications also support more sophisticated sharing mechanisms. See our guide on [KeePass-compatible apps](/keepass/compatible-apps/) for options that include built-in sharing features.
+Copy the `.kdbx` file somewhere separate from the original, such as an external drive or a different cloud service. Losing your only copy would lock you out of everything. Our [KeePass backup guide](/keepass/backup-database/) covers a complete routine.
 
-## Step 4: Verify the Import
+### Set Up Filling
 
-Verification is a critical step that many people skip. A migration is not complete until you have confirmed that every entry transferred correctly.
+On a computer, the KeePassXC-Browser extension fills logins in Chrome, Firefox, Edge and other browsers, and KeePass 2.x can type them into any window with Auto-Type. On phones, KeePass-compatible apps fill through the system: KeePassDX on Android, and PanicVault, Strongbox or KeePassium through AutoFill on iPhone. Then turn off the LastPass extension so the two do not compete.
 
-### Spot-Check Critical Accounts
+### Close Your LastPass Account
 
-Log in to your most important accounts -- email, banking, primary social media -- using the credentials from your new KeePass database. This confirms that the passwords imported correctly and that you can access your accounts through the new manager.
+Once you have used KeePass for a few weeks without missing anything, delete the items from your LastPass vault and then the account itself, so your current data no longer sits in your LastPass account. It does not affect the backups stolen in 2022, which is why the next section matters.
 
-### Compare Entry Counts
+## If Your Vault Was in the 2022 Breach
 
-Check how many entries are in your LastPass vault versus how many were imported into KeePass. If there is a discrepancy, investigate which entries are missing. Common causes of missing entries include:
+If you had a LastPass account in 2022, assume the attackers have an encrypted copy of your vault as it was then. How long it resists cracking depends on your master password at the time and your account's iteration setting, so the safest course is to change the secrets that were in it, starting with the ones that matter most:
 
-- Secure notes or form fills that did not export properly
-- Entries with unusual characters in the password or notes field that caused CSV parsing errors
-- Duplicate entries that were merged during import
+1. **Cryptocurrency.** Any seed phrase or private key that was ever stored in LastPass should be treated as exposed. Move the funds to a new wallet created with a new seed phrase.
+2. **Email accounts.** Your email can reset almost every other password, so change these first and check their recovery phone numbers and addresses.
+3. **Banking, payment and investment accounts.**
+4. **Two-factor secrets and recovery codes.** If you kept TOTP secrets or backup codes in LastPass notes, set up two-factor authentication again on those accounts to get new ones.
+5. **Work accounts and anything with admin rights**, plus API keys, SSH keys and other secrets kept in secure notes.
+6. **Reused passwords.** Any password you also used elsewhere should be changed everywhere it appears. Our guide to [password reuse](/password-security/password-reuse-dangers/) explains why.
+7. **Everything else**, as you next log in to each site.
 
-### Verify URLs and Usernames
-
-Scan through your imported entries and verify that the URL and username fields populated correctly. Occasionally, CSV column mapping issues can cause fields to shift, putting the URL in the username field or vice versa. Catching this early saves frustration later.
-
-## Step 5: Set Up Browser Integration and Autofill
-
-One of the most noticeable differences between LastPass and KeePass is how autofill works. LastPass installs a browser extension that fills credentials automatically. KeePass-compatible applications offer several autofill approaches.
-
-### KeePassXC Browser Extension
-
-KeePassXC provides a browser extension for Chrome, Firefox, Edge, and other Chromium-based browsers. Once installed and connected to your open database, it detects login forms and offers to fill credentials, similar to LastPass. This is the closest experience to what you are used to.
-
-### KeePass Auto-Type
-
-KeePass 2.x uses an "Auto-Type" feature that simulates keyboard input to fill login forms. You select the entry in KeePass and trigger Auto-Type (usually with a keyboard shortcut like Ctrl+Alt+A), and KeePass types the username, presses Tab, types the password, and presses Enter. This works across all applications, not just browsers, but requires your KeePass database to be open.
-
-### Mobile Autofill
-
-On mobile devices, KeePass-compatible apps like KeePassDX (Android) and Strongbox, KeePassium, or [PanicVault](https://apps.apple.com/app/id6759188575) (iOS) integrate with the operating system's autofill framework. Once configured, they offer to fill credentials in apps and browsers just like LastPass did on mobile. PanicVault also runs natively on macOS, making it a convenient option for Apple users who want a single app across their devices. Our guide to [compatible apps](/keepass/compatible-apps/) covers the best options for each platform.
-
-## Step 6: Post-Migration Cleanup
-
-With your data successfully migrated and verified, there are several cleanup tasks to complete.
-
-### Delete the CSV Export File
-
-The plain text CSV file containing all your passwords should be deleted immediately after you have verified the import. Do not keep it "just in case." If you need to re-export later, you can do so from LastPass as long as your account is still active.
-
-### Back Up Your New KeePass Database
-
-Create an immediate backup of your new KeePass database file. Store it in a separate location from the primary copy -- an encrypted USB drive, a different device, or a secure cloud storage location. Losing your only copy of the database would be catastrophic. For a comprehensive approach to vault backup, see our [KeePass database backup guide](/keepass/backup-database/).
-
-### Decide What to Do with Your LastPass Account
-
-You have several options:
-
-- **Keep it temporarily** as a fallback while you verify that everything migrated correctly over the next few weeks. This is the safest approach.
-- **Delete all entries** in LastPass but keep the account active, giving you a safety net without leaving your credentials on LastPass servers.
-- **Delete the account entirely** once you are confident the migration is complete. This removes your encrypted vault data from LastPass servers.
-
-If the 2022 breach was a factor in your decision to migrate, deleting your LastPass data is advisable. However, remember that the breached vault backups are already in the hands of attackers -- deleting your current account does not affect data that was already exfiltrated.
-
-### Rotate Compromised Passwords
-
-If your LastPass vault was potentially included in the 2022 breach, consider rotating all passwords stored in that vault. This is time-consuming but eliminates the risk of attackers eventually cracking the stolen vault backup. Prioritize high-value accounts first: email, banking, and any accounts that could lead to identity theft or financial loss.
-
-The risk of [password reuse](/password-security/password-reuse-dangers/) is amplified when a vault breach is involved, because every credential in the vault is exposed simultaneously rather than one at a time.
-
-### Update Your Recovery Information
-
-With your new KeePass database as your primary vault, update your recovery plan:
-
-- Write down your master passphrase and store it in a physically secure location.
-- Document the location of your database file and backups.
-- Ensure a trusted person knows how to access your vault in an emergency.
+Remember that the website URLs in the stolen vaults were not encrypted, so attackers may know which sites you use. Be wary of emails that appear to come from those services. For a fuller response plan, see [what happens when a password manager gets hacked](/password-managers/what-if-hacked/).
 
 ## Handling Common Migration Issues
 
 ### Entries with Special Characters
 
-Some passwords containing unusual characters (curly braces, backslashes, quotation marks) can cause CSV parsing errors. If you notice missing or garbled entries after import, check the original CSV file for rows that might have been split incorrectly by special characters. You may need to manually correct these entries.
+Passwords or notes containing commas, quotation marks or line breaks can split a CSV row in the wrong place. If an entry is missing or garbled after the import, find its row in the CSV and fix the entry by hand.
 
 ### Duplicate Entries
 
-LastPass sometimes stores multiple versions of the same login if you updated a password and the previous version was retained. After import, scan your KeePass database for duplicates and merge or delete as appropriate.
+LastPass may hold several entries for the same site, for example after a password change. Search the new database for duplicates and delete the outdated ones.
 
-### Multi-Factor Authentication Secrets
+### Two-Factor (TOTP) Codes
 
-If you stored TOTP (time-based one-time password) secrets in LastPass, these may export as part of the secure notes or within the URL field. KeePassXC supports TOTP natively -- you can add the TOTP secret to an entry's properties and generate codes directly from your vault. KeePass 2.x requires a plugin for this functionality.
+Because LastPass does not export TOTP codes for password items, re-add each code in your new app: open the account's security settings, set up two-factor authentication again, and scan the new QR code. KeePassXC, PanicVault and KeePass 2.x (from version 2.47, with menu commands since 2.51) all generate TOTP codes without a plugin.
 
-### Browser Saved Passwords
+### Passwords Saved in Your Browser
 
-After migrating from LastPass, check whether your browsers also have saved copies of your passwords. If so, consider [importing those into KeePass](/keepass/import-browser-passwords/) as well, then disabling browser password saving to consolidate everything in one place.
+Your browser may also have saved passwords while you used LastPass. Consider [importing those into KeePass](/keepass/import-browser-passwords/) too, then turning off the browser's password saving so everything lives in one place.
 
-## Why KeePass Is Worth the Transition
+## What Transfers and What Does Not
 
-The migration from LastPass to KeePass requires an afternoon of focused effort, but the long-term benefits are substantial. You gain complete ownership of your data with no cloud servers holding copies of your vault. You eliminate subscription costs permanently. You gain the portability and transparency of the open KDBX format, which is supported by dozens of applications across every platform.
+| Data | Transfers via CSV | Notes |
+|---|:-:|---|
+| Logins (URL, username, password, name) | Yes | Map the columns as shown above |
+| Notes | Yes | From the `extra` column |
+| Folders | Yes, as groups | Via `grouping` in KeePassXC or KeePass 2.x; PanicVault imports into one group |
+| Secure notes | Partly | Arrive as plain notes |
+| Form fills (addresses, cards) | Partly | Flattened into notes; recreate as entries if needed |
+| TOTP codes | No | Set up two-factor again in your new app |
+| File attachments | No | Download from LastPass first |
+| Sharing | No | Shared items export, but not who they were shared with |
 
-The KeePass ecosystem may lack the polish of commercial alternatives, but it compensates with flexibility, security, and control that no subscription service can match. Your passwords belong to you, stored in a format you can read and verify, protected by encryption you can audit, and accessible through applications you choose. For a deeper understanding of how data portability protects you from vendor lock-in, see our guide on [KeePass data portability](/keepass/data-portability/).
+## Related Articles
 
-For broader context on how password manager breaches affect users and how to evaluate your risk, our guide on [handling password manager breaches](/password-managers/handling-breaches/) covers the decision framework for when and how to respond.
+- [Export Passwords From Any Manager](/keepass/export-passwords-any/)
+- [Migrate from Bitwarden to KeePass](/keepass/migrate-from-bitwarden/)
+- [Migrate from 1Password to KeePass](/keepass/migrate-from-1password/)
+- [KeePass Apps for Every Platform](/keepass/compatible-apps/)
+- [How to Back Up Your KeePass Database](/keepass/backup-database/)
+- [Handling Password Manager Breaches](/password-managers/handling-breaches/)
