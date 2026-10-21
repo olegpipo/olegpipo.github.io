@@ -2,7 +2,7 @@
 title: "KeePass for iPhone & iOS: The 3 Best KeePass Apps (2026)"
 description: "There's no official KeePass app for iPhone. These 3 iOS apps open your .kdbx database with AutoFill and Face ID, plus how to move it over from Windows."
 date: 2026-09-19
-lastmod: 2026-09-26
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -38,52 +38,62 @@ The names cause most of the confusion:
 
 None of the three has an iPhone app, and KeePass 2.x and KeePassXC both use `.kdbx` files, so the apps below work with databases from either. If you use KeePassXC on your computer, our guide to [KeePassXC for iPhone](/keepass/keepassxc-ios-alternatives/) covers these apps from that angle.
 
+## What Comes Across from KeePass 2.x, and What Doesn't
+
+The apps below open the `.kdbx` file you already use in KeePass 2.x: entries, groups, custom fields, attachments and entry history all come across as they are. What varies is everything KeePass does through options and plugins, so check these before you choose:
+
+- **Format version.** KeePass saves many databases as KDBX 3.1 even today (step 3 below shows why). Strongbox and KeePassium open KDBX 3.1 and KeePass 1.x `.kdb` files; PanicVault opens KDBX 4 only.
+- **Key files.** All three accept KeePass key files, but you have to bring the key file over yourself (step 2).
+- **TOTP codes.** KeePass 2.x keeps its built-in one-time passwords in [fields named `TimeOtp-Secret-Base32`](https://keepass.info/help/base/placeholders.html#otp) and similar; the older KeeTrayTOTP plugin used `TOTP Seed` and `TOTP Settings`. All three apps read both conventions, though KeePassium reads only the Base32 form of KeePass's own secret field.
+- **Plugins don't run on iPhone.** KeePassRPC and Kee, KeeAgent, triggers and Auto-Type are KeePass desktop features. Anything a plugin stored as an entry field stays in the entry, but nothing on the phone uses it.
+- **Twofish.** A database encrypted with the Twofish Cipher plugin opens in Strongbox and KeePassium, but not in PanicVault, which supports AES-256 and ChaCha20. Switching the cipher to AES-256 under **File > Database Settings > Security** in KeePass fixes that.
+- **KeeChallenge YubiKeys.** KeePassium [says it has no plans](https://support.keepassium.com/kb/yubikey-keechallenge/) to support the KeeChallenge plugin, PanicVault does not support it, and Strongbox documents only KeePassXC's challenge-response scheme. All three support that scheme instead.
+- **Windows user account keys.** If your master key includes KeePass's "Windows User Account" option, [keepass.info](https://keepass.info/help/base/keys.html) explains that the database opens only when you are logged in as that same Windows user, so no iPhone app can open it. Change the master key in KeePass (**File > Change Master Key**) to a password, with a key file if you like, before you move the database.
+
 ## The Best KeePass Apps for iPhone and iPad
 
-All three open a `.kdbx` database from KeePass 2.x, work with iOS AutoFill, and support Face ID or Touch ID. They differ in price model, which database versions they accept, how they sync, and how much they try to do.
+All three open a `.kdbx` database from KeePass 2.x, fill passwords through iOS AutoFill, and support Face ID or Touch ID. For a KeePass 2.x user, the differences are which files they accept, how they reach a database saved on a Windows PC, and what they cost.
 
 ### PanicVault
 
 **Price**: $4.99 one-time purchase, no subscription
-**KDBX versions**: KDBX 4 only
-**Sync**: iCloud Drive and Google Drive built in; Dropbox, OneDrive and others through the iOS Files app
+**Opens**: KDBX 4 only (AES-256 or ChaCha20; Argon2 or AES-KDF)
+**Reaching your PC's database**: iCloud Drive and Google Drive built in; OneDrive and Dropbox through the Files app
 **Platforms**: iPhone, iPad, Mac
 
-[PanicVault](https://apps.apple.com/app/id6759188575) is a native Apple app written in SwiftUI, for people who want their KeePass database to feel at home on an iPhone. It reads and writes KDBX 4 with groups, custom fields, attachments and entry history intact, fills passwords system-wide through iOS AutoFill, and unlocks with Face ID or Touch ID. It also generates TOTP codes, including from the `TimeOtp` fields KeePass 2.x uses for its own one-time passwords.
+[PanicVault](https://apps.apple.com/app/id6759188575) is a native Apple app built in SwiftUI. Once your database is KDBX 4, it opens a file in iCloud Drive or another storage app in place rather than importing a copy. When KeePass on your PC changes the file, PanicVault merges those changes into its own entry by entry instead of overwriting them.
 
-iCloud Drive and Google Drive sync are built in. A database in Dropbox or OneDrive opens through the Files app, with that provider's app doing the syncing. YubiKey challenge-response works over NFC on iPhone and USB on Mac, in the same format KeePassXC uses.
+For a KeePass 2.x database it reads every standard key file type, generates TOTP codes from KeePass's own `TimeOtp-` fields (Base32, hex or Base64) as well as KeeTrayTOTP and KeePassXC fields, and leaves TOTP fields written by another app exactly as they are. It also keeps custom fields, attachments, entry history, custom icons and Auto-Type settings intact when it saves, so the file still works the same way in KeePass on your PC.
 
-The limits matter for KeePass 2.x users. PanicVault opens **KDBX 4 only**, so a KDBX 3.1 database has to be upgraded first, which takes about a minute in KeePass. It cannot read a YubiKey on iPad, over USB-C or over Lightning, and it does not support the KeeChallenge plugin that some KeePass 2.x users rely on. It is not open source, and it runs only on Apple devices, which is fine when KeePass is covering your PC.
+What you have to change first: a KDBX 3.1 or KeePass 1.x database must be [upgraded to KDBX 4](#step-3-check-your-kdbx-version), a Twofish database switched to AES-256 or ChaCha20, and a KeeChallenge YubiKey replaced with KeePassXC-style challenge-response, which PanicVault reads over NFC on iPhone and USB on Mac (not on iPad). It is not open source, and it runs only on Apple devices -- fine when KeePass is already covering your PC.
 
-**Best for**: KeePass users who want a clean, Apple-native app and would rather pay once than subscribe.
+**Best for**: KeePass 2.x users happy to save their database as KDBX 4 who want a clean, Apple-native app and would rather pay once than subscribe.
 
 ### Strongbox
 
-**Price**: Free version for non-commercial use; Strongbox Pro at $2.99/month, $24.99/year or $124.99 lifetime on Strongbox's website
-**KDBX versions**: KDBX 4, KDBX 3.1 and KeePass 1.x `.kdb`, plus Password Safe
-**Sync**: iCloud Drive, Dropbox, Google Drive, OneDrive, WebDAV and SFTP built in, plus the Files app
+**Price**: free for non-commercial use; Strongbox Pro by subscription ($2.99 a month or $24.99 a year) or a $124.99 lifetime licence on Strongbox's website
+**Opens**: KDBX 4, KDBX 3.1 and KeePass 1.x `.kdb`, including Twofish-encrypted files; also Password Safe
+**Reaching your PC's database**: OneDrive, Dropbox, Google Drive, iCloud Drive, WebDAV and SFTP built in, plus the Files app
 **Platforms**: iPhone, iPad, Mac, Apple Watch
 
-Strongbox is the most feature-rich KeePass client on Apple devices. It opens every KeePass format, including KeePass 1.x databases, and it connects directly to more storage services than the other two: you sign in to Dropbox, OneDrive or your own WebDAV or SFTP server from inside the app.
+Strongbox is the most accommodating of the three for an unmodified KeePass 2.x database. It opens every KeePass format version and the Twofish cipher, so you can usually point it at your existing file without changing anything in KeePass first. It also signs in to OneDrive and Dropbox directly from inside the app, which suits a database that lives in the OneDrive folder Windows sets up for you.
 
-On iPhone and iPad, the free version includes AutoFill, TOTP codes, key files and the built-in sync options. [Strongbox Pro](https://strongboxsafe.com/comparison/) adds Face ID and Touch ID unlock, YubiKey support, the Apple Watch app, Have I Been Pwned breach checks and offline editing. Biometric unlock is the gap most people notice on a phone; a 90-day free trial of Pro lets you decide. The source code is published on [GitHub](https://github.com/strongbox-password-safe/Strongbox) under the AGPL-3.0 licence.
+TOTP codes kept in KeePass's own fields or in KeeTrayTOTP's carry over, and key files work in the free version. A YubiKey needs Pro and the KeePassXC challenge-response scheme; Strongbox's documentation does not cover KeeChallenge. The free version is limited to non-commercial use and leaves out Face ID and Touch ID unlock, offline editing and the Apple Watch app; [Strongbox Pro](https://strongboxsafe.com/comparison/) adds them, with a 90-day free trial. Its source code is published on [GitHub](https://github.com/strongbox-password-safe/Strongbox), and the trade-off is a busier interface with many settings.
 
-The trade-offs are a busier interface, with many settings to expose, and the highest lifetime price of the three. Strongbox also notes that YubiKeys over USB-C are not supported on iOS.
-
-**Best for**: People who want everything in one app: built-in Dropbox, OneDrive or WebDAV sync, KeePass 1.x support, breach checks and an Apple Watch app.
+**Best for**: KeePass 2.x users who want to keep their database exactly as it is -- KDBX 3.1, Twofish and all -- or want built-in OneDrive, Dropbox or WebDAV sync.
 
 ### KeePassium
 
-**Price**: Free for one database; Premium subscription (€19.99/year on KeePassium's site) or a lifetime Pro licence ($79.99 on the US App Store)
-**KDBX versions**: KDBX 4, KDBX 3.1 and KeePass 1.x `.kdb`
-**Sync**: Any provider in the iOS Files app (iCloud Drive, Dropbox, OneDrive, Google Drive, Box and others)
+**Price**: free for one database; Premium (€19.99 a year on KeePassium's site) or a lifetime Pro licence ($79.99 on the US App Store)
+**Opens**: KDBX 4, KDBX 3.1 and KeePass 1.x `.kdb`, including Twofish-encrypted files
+**Reaching your PC's database**: direct connections to OneDrive, Dropbox, Google Drive and WebDAV, or any provider in the Files app, including iCloud Drive
 **Platforms**: iPhone, iPad, Mac (built with Mac Catalyst)
 
-KeePassium publishes its source code under the GPLv3, as Strongbox does under the AGPL-3.0, but there is no way to verify that either app's App Store build was compiled from that code. KeePassium's App Store listing says it has been independently audited by Cure53. The free version handles one database and has basic AutoFill, Face ID and Touch ID unlock, TOTP codes and file attachments, but you pick each login from a list every time. According to [KeePassium's pricing page](https://keepassium.com/pricing/), logins suggested above the keyboard (Quick AutoFill), YubiKey support, the password audit and more than one database need Premium (€19.99/year) or the lifetime Pro licence, and KeePassium's release notes say saving new logins from AutoFill is a Premium feature too.
+KeePassium, too, opens a KeePass 2.x database without conversion, whatever its version or cipher. It can reach a database in OneDrive, Dropbox or Google Drive in two ways: through that provider's app in the Files app, or by [connecting to the service directly](https://support.keepassium.com/kb/sync/) from inside KeePassium. It reads all three common TOTP conventions, but of KeePass's own fields only the Base32 secret, so check entries whose codes you set up with a hex or Base64 secret.
 
-KeePassium works through the storage providers in the Files app rather than keeping its own cloud logins. The limits are one database on the free tier, YubiKey only with a paid licence, and a Mac app built from the iPad code with Mac Catalyst.
+Its YubiKey support follows KeePassXC's scheme, needs Premium, and excludes KeeChallenge. The free version handles a single database with basic AutoFill, in which you pick each login from a list. [KeePassium's pricing page](https://keepassium.com/pricing/) lists logins suggested above the keyboard, YubiKey support, the password audit and more than one database as Premium features, and its release notes say saving new logins from AutoFill is Premium too.
 
-**Best for**: People who keep a single database and can live with basic AutoFill, or who are willing to pay for Premium.
+**Best for**: KeePass 2.x users with a single database who want to start free and keep their file unchanged.
 
 ### Older and Discontinued Apps
 
@@ -93,22 +103,25 @@ KeePassium works through the storage providers in the Files app rather than keep
 
 ## KeePass iPhone Apps Compared
 
-| Feature | PanicVault | Strongbox | KeePassium |
+| What a KeePass 2.x user needs | PanicVault | Strongbox | KeePassium |
 |---|---|---|---|
-| **Price model** | $4.99 one-time purchase | Free (non-commercial) or Pro subscription / lifetime | Free (one database) or Premium subscription / lifetime Pro |
-| **KDBX 4** | Yes | Yes | Yes |
-| **KDBX 3.1** | No (upgrade first) | Yes | Yes |
-| **KeePass 1.x .kdb** | No | Yes | Yes |
-| **Free version** | No tiers; every feature is in the $4.99 purchase | Non-commercial use only; no Face ID, YubiKey or offline editing | One database; no logins above the keyboard, YubiKey or password audit |
-| **iOS AutoFill** | Yes, logins suggested above the keyboard | Yes | Yes (logins above the keyboard: Premium) |
+| **Opens KDBX 4** | Yes | Yes | Yes |
+| **Opens KDBX 3.1** | No (upgrade in KeePass first) | Yes | Yes |
+| **Opens KeePass 1.x .kdb** | No (import into KeePass 2.x first) | Yes | Yes |
+| **Twofish (KeePass plugin)** | No (switch to AES-256) | Yes | Yes |
+| **Key files** | Yes | Yes | Yes |
+| **KeePass 2.x TOTP fields (`TimeOtp-`)** | Yes (Base32, hex, Base64) | Yes | Base32 only |
+| **KeeTrayTOTP fields** | Yes | Yes | Yes |
+| **YubiKey, KeePassXC-style** | NFC on iPhone, USB on Mac (not iPad) | Pro | Premium |
+| **KeeChallenge plugin** | No | Not documented | No |
+| **Reaching a database on your PC** | iCloud Drive, Google Drive built in; OneDrive, Dropbox via Files | OneDrive, Dropbox, Google Drive, iCloud Drive, WebDAV, SFTP built in | OneDrive, Dropbox, Google Drive, WebDAV direct; others via Files |
+| **iOS AutoFill** | Yes, logins suggested above the keyboard | Yes | Yes (above the keyboard: Premium) |
 | **Face ID / Touch ID** | Yes | Pro | Yes |
-| **TOTP codes** | Yes | Yes | Yes |
-| **Built-in sync** | iCloud Drive, Google Drive | iCloud Drive, Dropbox, Google Drive, OneDrive, WebDAV, SFTP | Via Files app providers |
-| **YubiKey** | NFC on iPhone (not iPad) | Pro | Premium |
+| **Price model** | $4.99 one-time purchase, no tiers | Free (non-commercial) or Pro subscription / lifetime | Free (one database) or Premium subscription / lifetime Pro |
 | **Open source** | No | Source published* | Source published* |
 | **Mac app** | Yes | Yes | Yes (Mac Catalyst) |
 
-\*Source code is public, but App Store builds can't be verified against it.
+\*Strongbox (AGPL-3.0) and KeePassium (GPLv3) publish their source code, but App Store builds can't be verified against it. According to its App Store listing, KeePassium has been audited by Cure53.
 
 Prices vary by country and change over time, so check them before you buy.
 
@@ -122,7 +135,7 @@ Pick a service with both a Windows client and an iPhone app:
 
 - **OneDrive** is built into Windows; the OneDrive iPhone app makes it available in the Files app.
 - **Dropbox** works the same way, with its desktop client on the PC.
-- **Google Drive** needs Google Drive for desktop on the PC. PanicVault and Strongbox connect to it directly; KeePassium reaches it through the Google Drive app.
+- **Google Drive** needs Google Drive for desktop on the PC. PanicVault, Strongbox and KeePassium can all connect to it directly.
 - **iCloud Drive** needs [iCloud for Windows](https://support.apple.com/guide/icloud-windows/set-up-icloud-drive-icw0144825a5/icloud), which adds an iCloud Drive folder to File Explorer.
 
 Close KeePass, move the `.kdbx` file into the synced folder, then reopen it with File > Open so KeePass works on the synced copy. With PanicVault, iCloud Drive or Google Drive gives you its built-in sync.
@@ -131,7 +144,7 @@ Close KeePass, move the `.kdbx` file into the synced folder, then reopen it with
 
 If your master key includes a key file, the iPhone needs it too, because KeePass requires [every part of the master key](https://keepass.info/help/base/keys.html) to open a database. Don't put it in the same cloud folder as the database: anyone who gets into that account would then have both. Move it across once by another route, save it to On My iPhone in the Files app, and select it when you first unlock. Our [key files guide](/keepass/key-files/) covers backups.
 
-If your YubiKey setup uses the KeeChallenge plugin for KeePass 2.x, confirm your iOS app supports it before relying on it. PanicVault does not.
+If your YubiKey setup uses the KeeChallenge plugin for KeePass 2.x, none of these apps documents support for it. Move the database to KeePassXC-style challenge-response first; [PanicVault's manual](/help/keepass-compatibility/#hardware-keys-and-challenge-response) explains how to recover the secret from KeeChallenge.
 
 ### Step 3: Check Your KDBX Version
 
