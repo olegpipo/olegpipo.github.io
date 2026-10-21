@@ -2,7 +2,7 @@
 title: "Migrate from Keeper to KeePass"
 description: "Complete guide to migrating from Keeper Security to KeePass. Export your vault as CSV, import into KeePassXC, and verify all passwords transferred correctly."
 date: 2026-03-08
-lastmod: 2026-03-08
+lastmod: 2026-10-21
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -49,7 +49,7 @@ Before beginning the migration, protect yourself against data loss.
 
 ## Step 1: Export Your Data from Keeper
 
-Keeper provides a CSV export that captures the core credential data from your vault.
+Keeper provides a CSV export that captures the core credential data from your vault. If you are also bringing in passwords saved in a browser or another password manager, our guide to [exporting passwords from any manager](/keepass/export-passwords-any/) covers each source.
 
 ### Exporting via the Keeper Web Vault
 
@@ -227,4 +227,5 @@ Install the browser extension for your KeePass application (KeePassXC Browser fo
 - [KeePass-Compatible Apps for Every Platform](/keepass/compatible-apps/)
 - [KeePass Data Portability: Own Your Passwords Forever](/keepass/data-portability/)
 - [How to Back Up Your KeePass Database](/keepass/backup-database/)
+- [Export Passwords From Any Manager](/keepass/export-passwords-any/)
 - [Migrate from Dashlane to KeePass](/keepass/migrate-from-dashlane/)
