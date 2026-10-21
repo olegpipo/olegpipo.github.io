@@ -2,21 +2,25 @@
 title: "Phishing Emails: 10 Red Flags to Watch For"
 description: "Can you spot a phishing email in 2026? AI makes them harder to detect. Learn the 10 red flags that still work every time."
 date: 2026-02-14
-lastmod: 2026-03-06
+lastmod: 2026-10-21
 draft: false
 silo: "Phishing & Social Engineering"
+aliases:
+  - /phishing/verify-suspicious-messages/
 faq:
   - q: "What are the most common signs of a phishing email?"
     a: "The top red flags are artificial urgency, requests for credentials, mismatched URLs, unexpected attachments, and a generic greeting instead of your name."
   - q: "Can AI-generated phishing emails be detected?"
     a: "AI phishing emails have fewer grammar mistakes, but still use urgency tactics, suspicious links, and unusual sender addresses. Focus on behavioral red flags rather than spelling errors."
+  - q: "How do I check whether a suspicious message is real?"
+    a: "Never use the links, phone numbers or reply address in the message itself. Contact the company or person through a channel you already trust: type the website address yourself, open the official app, or call the number on your card or in your contacts."
   - q: "What should I do if I clicked a phishing link?"
     a: "Change your password immediately, enable 2FA, check for unauthorized account activity, and run a malware scan. If you entered credentials, treat that account as compromised."
 ---
 
-Phishing emails are responsible for more account compromises, financial losses, and data breaches than any other attack vector. With 3.4 billion phishing emails sent daily, you are almost certainly receiving them -- the question is whether you can tell them apart from legitimate messages. This article is part of our comprehensive [Phishing & Social Engineering](/phishing/) guide, and it gives you a practical checklist for identifying phishing attempts before they succeed.
+Phishing is one of the most common ways accounts get compromised, money gets stolen, and data breaches begin. You are almost certainly receiving phishing emails -- the question is whether you can tell them apart from legitimate messages. This article is part of our comprehensive [Phishing & Social Engineering](/phishing/) guide, and it gives you a practical checklist for identifying phishing attempts before they succeed.
 
-The challenge has grown significantly. [AI-powered phishing](/phishing/ai-powered-phishing/) has eliminated many of the obvious signals -- poor grammar, broken formatting, generic greetings -- that once made phishing emails easy to dismiss. But even the most sophisticated phishing campaigns leave traces. Here are the ten red flags that remain reliable in 2026.
+The challenge has grown significantly. [AI-powered phishing](/trends/ai-phishing-effectiveness/) has eliminated many of the obvious signals -- poor grammar, broken formatting, generic greetings -- that once made phishing emails easy to dismiss. But even the most sophisticated phishing campaigns leave traces. Here are the ten red flags that remain reliable in 2026.
 
 ## Red Flag 1: Artificial Urgency
 
@@ -30,7 +34,7 @@ Legitimate organizations rarely impose artificial deadlines through email. Your 
 
 No reputable organization will ask you to provide your password, Social Security number, credit card details, or other sensitive information via email. Not your bank. Not Apple. Not the IRS. Not your employer's IT department.
 
-Phishing emails frequently include links to [fake login pages](/phishing/fake-login-pages/) that look identical to real sites. The email claims you need to "verify your identity" or "confirm your account" by logging in. The login page captures whatever you type and sends it directly to the attacker.
+Phishing emails frequently include links to [fake login pages](/phishing/password-manager-prevents-phishing/) that look identical to real sites. The email claims you need to "verify your identity" or "confirm your account" by logging in. The login page captures whatever you type and sends it directly to the attacker.
 
 **What to do**: Never enter credentials through a link in an email. If you need to log into an account, open your browser and navigate to the site directly. Better yet, use a [password manager](/password-managers/) that only autofills on the correct domain -- it will refuse to fill credentials on a phishing site automatically.
 
@@ -49,7 +53,7 @@ Common URL tricks include:
 
 ## Red Flag 4: Unexpected Attachments
 
-Approximately 94% of malware is delivered via email, and malicious attachments are a primary delivery mechanism. Phishing emails may include attachments disguised as invoices, shipping labels, voice messages, or documents requiring your review.
+Email remains one of the main ways malware reaches people, and malicious attachments are a primary delivery mechanism. Phishing emails may include attachments disguised as invoices, shipping labels, voice messages, or documents requiring your review.
 
 Dangerous attachment types include:
 
@@ -71,7 +75,7 @@ More sophisticated attacks use:
 - **Lookalike domains**: Registering domains like "apple-inc.com" or "support-microsoft.com" that look plausible at a glance.
 - **Compromised accounts**: Using legitimately hacked email accounts to send phishing from trusted addresses. This is particularly effective in [business email compromise](/phishing/business-email-compromise/) attacks.
 
-**What to do**: Click on the sender name to reveal the full email address. Compare the domain to what you would expect from that organization. When in doubt, [verify through a separate channel](/phishing/verify-suspicious-messages/).
+**What to do**: Click on the sender name to reveal the full email address. Compare the domain to what you would expect from that organization. When in doubt, [verify through a separate channel](#verify-before-you-act-out-of-band-verification).
 
 ## Red Flag 6: Generic or Incorrect Personal Details
 
@@ -121,6 +125,33 @@ The principle behind [social engineering](/phishing/social-engineering-guide/) i
 
 **What to do**: Verify unusual requests through established channels. Call the person who supposedly sent the request using a phone number you already have -- not one provided in the email. For financial requests, follow your organization's verification procedures regardless of who appears to be asking.
 
+## Verify Before You Act: Out-of-Band Verification
+
+Spotting a red flag tells you to stop. Verification tells you whether the message is real. The rule is simple: **never verify a message using information provided in that message.** The attacker who wrote the email also controls its links, its phone number, and its reply address. Confirm the claim through a channel the attacker does not control -- one you already had before the message arrived.
+
+This works regardless of how convincing the message is. AI can write flawless text and [clone a voice](/phishing/deepfake-voice-scams/), but none of that helps the attacker if you step outside their channel.
+
+**Email**: Do not click. Open the company's website by typing the address or using a bookmark, or open its official app, and log in there. If your bank really flagged a transaction, you will see it in your account. If the email claims to be from a colleague or vendor, ask them through a channel you already use: "Did you send me an email about this?"
+
+**Text messages**: Do not tap the link. Check the claim (failed delivery, unpaid toll, account alert) in the carrier's, agency's or bank's official app or website. See [smishing](/phishing/smishing/) for common text scams.
+
+**Phone calls**: Do not confirm any personal details. Tell the caller you will call back, hang up, and dial a number you find yourself -- the back of your card, the official website, or your contacts. A caller who insists you stay on the line is a red flag. If the caller claims to be a family member, ask for your [family code word](/phishing/deepfake-voice-scams/#establish-a-family-code-word).
+
+**Messaging apps** (WhatsApp, iMessage, Signal, Telegram):
+
+- **Compromised accounts**: A message from a friend's account is not proof it came from your friend. If they ask for money, a code, or a click, call them or reach them on a different platform.
+- **Fake accounts**: Attackers copy profile photos and names. Check the phone number or username against the contact you already have.
+- **Group chats**: Be wary of links shared in large groups where you do not know every member; one compromised account can reach everyone at once.
+
+### Build a Verification Toolkit
+
+Verification is faster when the trusted channels are ready before you need them:
+
+- **Save official numbers** for your bank, insurer, employer's IT help desk, and the agencies you deal with -- taken from your card or the official site, not from a message.
+- **Bookmark the sites you log into** (banking, email, social media) and use the bookmark when an alert arrives.
+- **Use your password manager as a navigation tool.** Each saved login stores the site's real URL. In PanicVault, open the entry and use its URL button to go straight to the real site instead of following the link in the message.
+- **Keep more than one way to reach the important people** in your life, so a single compromised account or number cannot cut you off.
+
 ## What to Do When You Spot a Phishing Email
 
 1. **Do not click any links or open any attachments** in the message.
@@ -128,6 +159,8 @@ The principle behind [social engineering](/phishing/social-engineering-guide/) i
 3. **Report it** -- Forward the email to your organization's IT security team if applicable. [Report it to the relevant authorities](/phishing/report-phishing/) (the Anti-Phishing Working Group at reportphishing@apwg.org, the FTC, or your email provider's reporting mechanism).
 4. **Delete it** -- After reporting, delete the email from your inbox.
 5. **Warn others** -- If the phishing email impersonates someone you know, alert that person. Their account may be compromised, or others may be receiving similar messages.
+
+If you already entered a password, see [what to do if you entered credentials on a fake site](/phishing/password-manager-prevents-phishing/#what-to-do-if-you-entered-credentials-on-a-fake-site).
 
 ## Building Lasting Habits
 
@@ -139,8 +172,8 @@ Combine awareness with technical defenses. A [password manager that prevents phi
 
 ## Related Articles
 
-- [AI-Powered Phishing in 2026: Harder to Spot](/phishing/ai-powered-phishing/)
-- [Fake Login Pages: How Phishing Sites Steal Credentials](/phishing/fake-login-pages/)
-- [How to Verify Suspicious Emails, Texts, and Calls](/phishing/verify-suspicious-messages/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [How a Password Manager Protects From Phishing](/phishing/password-manager-prevents-phishing/)
+- [What Is Smishing? How to Spot SMS Phishing](/phishing/smishing/)
+- [Deepfake Voice Cloning Scams: How They Work](/phishing/deepfake-voice-scams/)
 - [How to Report a Phishing Attempt](/phishing/report-phishing/)

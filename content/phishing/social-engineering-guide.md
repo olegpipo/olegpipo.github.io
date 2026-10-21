@@ -2,9 +2,11 @@
 title: "What Is Social Engineering? Comprehensive Guide"
 description: "Understand social engineering attacks: how they exploit human psychology, the most common types, and practical defenses for individuals and organizations."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-10-21
 draft: false
 silo: "Phishing & Social Engineering"
+aliases:
+  - /phishing/romance-scams/
 ---
 
 Social engineering is the art of manipulating people into giving up confidential information, granting access to systems, or taking actions that compromise their security. Unlike technical attacks that exploit software vulnerabilities, social engineering exploits human psychology -- trust, fear, curiosity, helpfulness, and the desire to comply with authority. It is the oldest form of hacking and remains the most effective. This article is part of our [Phishing & Social Engineering](/phishing/) guide.
@@ -31,7 +33,7 @@ People look to others' behavior to determine what is appropriate. If an attacker
 
 ### Liking and Trust
 
-We are more compliant with people we like. Social engineers invest time in building rapport, finding common interests, and establishing trust. [Romance scams](/phishing/romance-scams/) are the extreme version of this principle, where attackers invest weeks or months in building emotional connections before exploiting them.
+We are more compliant with people we like. Social engineers invest time in building rapport, finding common interests, and establishing trust. [Romance scams](#romance-scams) are the extreme version of this principle, where attackers invest weeks or months in building emotional connections before exploiting them.
 
 ### Commitment and Consistency
 
@@ -41,7 +43,7 @@ Once people make a small commitment, they tend to continue in that direction to 
 
 ### Phishing
 
-The most common form of social engineering. Attackers send fraudulent messages -- usually email -- that impersonate trusted entities to trick recipients into revealing credentials, clicking malicious links, or downloading malware. The [10 red flags of phishing](/phishing/recognize-phishing/) provide a practical detection guide. [AI-powered phishing](/phishing/ai-powered-phishing/) has made these attacks significantly harder to identify by eliminating the grammar errors and formatting inconsistencies that once served as warning signs.
+The most common form of social engineering. Attackers send fraudulent messages -- usually email -- that impersonate trusted entities to trick recipients into revealing credentials, clicking malicious links, or downloading malware. The [10 red flags of phishing](/phishing/recognize-phishing/) provide a practical detection guide. [AI-powered phishing](/trends/ai-phishing-effectiveness/) has made these attacks significantly harder to identify by eliminating the grammar errors and formatting inconsistencies that once served as warning signs.
 
 ### Spear Phishing
 
@@ -108,7 +110,21 @@ Phone calls, emails, and text messages impersonating banks, the IRS, utility com
 
 ### Romance Scams
 
-Long-term social engineering that [builds emotional relationships](/phishing/romance-scams/) before exploiting them financially. AI has supercharged these scams by allowing attackers to maintain dozens of convincing relationships simultaneously.
+Long-term social engineering that builds an emotional relationship before exploiting it financially. The scammer uses a fabricated persona -- often stolen photos -- on a dating app or social network, invests weeks or months in daily contact, and only then introduces a need for money: a medical emergency, a canceled flight, a customs fee, or an "investment opportunity" on a cryptocurrency trading platform that shows fake profits to draw in larger deposits (often called "pig butchering"). AI lets one scammer keep many such conversations going at once, remembering details and writing fluently in any language, and [voice cloning](/phishing/deepfake-voice-scams/) can even fake the reassuring phone call.
+
+**Warning signs:**
+
+- **They can never meet in person.** There is always a reason: overseas work, military deployment, a family emergency. Every plan falls through.
+- **They ask for money.** Someone you know only online asking for money -- in any amount, for any reason -- is the defining red flag.
+- **The relationship moves fast.** Declarations of love within days or weeks, talk of marriage before you have verified basic facts about them.
+- **They avoid video calls**, or the calls are brief and blurry. Even a video call is not proof anymore, but consistent avoidance is a signal.
+- **Their story shifts.** Details about their job, location, or past change between conversations.
+- **They isolate you.** "Your family won't understand us" is designed to remove the people who would spot the scam.
+- **They push you off the dating platform** quickly, to a messaging app where the platform's fraud detection cannot see the conversation.
+
+A reverse image search (Google Images, TinEye) of their photos often reveals a different name or a stock photo, though AI-generated faces will not show up. Never send money, gift cards, or cryptocurrency to someone you have met only online.
+
+**If a loved one is being scammed:** be compassionate, not judgmental -- shame pushes victims deeper into the relationship, and the scammer offers unconditional acceptance. Present evidence gently (the reverse image search results, inconsistencies you noticed), avoid ultimatums, and expect it to take more than one conversation. Then help with the practical steps: stop sending money, contact the bank about recent transfers, report to the platform, the FTC at ReportFraud.ftc.gov and the FBI's IC3 at ic3.gov, and secure their accounts with [unique passwords](/password-security/) and [two-factor authentication](/two-factor-authentication/). Falling for a romance scam is not a sign of naivety; these scams are built to exploit the basic human need for connection.
 
 ### Tech Support Scams
 
@@ -122,13 +138,13 @@ Social engineering is frequently used to gather the information needed for ident
 
 ### Develop a Verification Mindset
 
-The single most effective defense against social engineering is the habit of verifying unexpected requests through a separate channel. If you receive a suspicious email, call the sender. If you receive a suspicious call, hang up and call back on a number you know is legitimate. [Learn how to verify suspicious messages](/phishing/verify-suspicious-messages/).
+The single most effective defense against social engineering is the habit of verifying unexpected requests through a separate channel. If you receive a suspicious email, call the sender. If you receive a suspicious call, hang up and call back on a number you know is legitimate. [Learn how to verify suspicious messages](/phishing/recognize-phishing/).
 
 ### Use Technical Controls
 
 Social engineering exploits human judgment. Technical controls protect you even when your judgment fails:
 
-- **Password managers** prevent you from entering credentials on [fake login pages](/phishing/fake-login-pages/) by checking the domain automatically. PanicVault integrates with Apple's system autofill, so the protection works across every app and website on your Mac, iPhone, and iPad.
+- **Password managers** prevent you from entering credentials on [fake login pages](/phishing/password-manager-prevents-phishing/) by checking the domain automatically. PanicVault integrates with Apple's system autofill, so the protection works across every app and website on your Mac, iPhone, and iPad.
 - **[Passkeys](/passkeys/)** eliminate passwords entirely for supported sites, making phishing for credentials impossible.
 - **[Strong, unique passwords](/password-security/)** limit the blast radius if one account is compromised.
 - **[Two-factor authentication](/two-factor-authentication/)** adds a barrier even when credentials are stolen.
@@ -154,7 +170,7 @@ The fundamental defense has not changed: awareness, verification, and skepticism
 ## Related Articles
 
 - [How to Recognize a Phishing Email: 10 Red Flags](/phishing/recognize-phishing/)
-- [AI-Powered Phishing in 2026: Harder to Spot](/phishing/ai-powered-phishing/)
+- [AI Phishing: Why It Works and What Still Stops It](/trends/ai-phishing-effectiveness/)
 - [Deepfake Voice Cloning Scams: How They Work](/phishing/deepfake-voice-scams/)
 - [CEO Fraud and Business Email Compromise](/phishing/business-email-compromise/)
 - [How to Train Your Family to Spot Scams](/phishing/train-family/)
