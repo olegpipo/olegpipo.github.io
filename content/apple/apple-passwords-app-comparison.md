@@ -47,6 +47,8 @@ iCloud Keychain supports shared password groups, letting you share specific cred
 
 ## Where Apple Passwords Falls Short
 
+None of the gaps below is an encryption weakness: Apple encrypts saved passwords end to end and protects the keys with the Secure Enclave. If your question is whether the app is secure rather than whether it does enough, read [is the Apple Passwords app safe?](/apple/is-apple-passwords-safe/)
+
 ### No Cross-Platform Support
 
 This is the most significant limitation. Apple Passwords works on iPhone, iPad, Mac, and -- through the iCloud Passwords extension -- on Windows with Chrome. That is where the list ends. There is no Android app. There is no Linux client. There is no web vault you can access from any browser on any device.
