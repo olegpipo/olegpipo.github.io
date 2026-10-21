@@ -218,7 +218,7 @@ After changing your password, consider these additional measures:
 3. **Check your plan and payment method.** Verify that your subscription plan has not been upgraded without your knowledge and that the payment method on file is yours.
 4. **Review authorized users.** If Netflix offers household management in your region, check which users are authorized on your account.
 5. **Audit all your passwords.** If you reused your old Netflix password on other accounts, change those too. Your password manager's [audit feature](/guides/audit-passwords/) can identify all duplicates.
-6. **Check for phishing emails.** After a password change, be cautious of emails claiming to be from Netflix asking you to verify your account. Always navigate to Netflix directly rather than clicking links in emails. Learn to recognize [phishing attempts](/data-breaches/what-to-do-after-breach/).
+6. **Check for phishing emails.** After a password change, be cautious of emails claiming to be from Netflix asking you to verify your account. Always navigate to Netflix directly rather than clicking links in emails. Learn to recognize [Netflix phishing attempts](/phishing/netflix-phishing/).
 
 ## Related Articles
 

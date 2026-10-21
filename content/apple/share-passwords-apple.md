@@ -2,7 +2,7 @@
 title: "Share Passwords on iPhone, iPad & Mac"
 description: "5 ways to securely share passwords between Apple devices: AirDrop, iCloud Keychain, Family Sharing & more. Step-by-step guide."
 date: 2026-02-13
-lastmod: 2026-03-06
+lastmod: 2026-10-21
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -17,7 +17,7 @@ AirDrop is Apple's peer-to-peer file and data transfer protocol, and it is one o
 
 ### How It Works
 
-Starting with iOS 17 and macOS Sonoma, you can share passwords and passkeys directly via AirDrop from the Passwords app (or from Settings > Passwords on older versions). The process is straightforward:
+You can share passwords and passkeys with someone nearby via AirDrop: from the Passwords app on iOS 18 and macOS Sequoia or later, or from Settings > Passwords on earlier versions. The process is straightforward:
 
 1. Open the Passwords app on the sending device.
 2. Select the entry you want to share.
