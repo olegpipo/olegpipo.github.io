@@ -2,7 +2,7 @@
 title: "Using a Password Manager with Apple Watch"
 description: "How to access passwords and TOTP codes from your Apple Watch, including setup, complications, quick lookups, emergency access, and limitations of wrist-based password management."
 date: 2026-02-13
-lastmod: 2026-09-19
+lastmod: 2026-10-26
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -142,7 +142,7 @@ PanicVault does not currently have an Apple Watch app. There is no watchOS compa
 If you use PanicVault and wear an Apple Watch, here is what works today:
 
 - **TOTP codes on your iPhone.** An entry with a [TOTP secret](/help/two-factor-authentication/) shows the live code and a countdown in its detail view; tap the code to copy it. The same codes are available in PanicVault on your [iPad and Mac](/apple/iphone-ipad-mac/).
-- **Approving requests on your Mac.** macOS lets an unlocked Apple Watch approve authentication requests on a nearby Mac. PanicVault's [Mac browser helper](/help/browser-extension/) works with a Touch ID sensor or an Apple Watch configured for authentication.
+- **Approving requests on your Mac.** macOS lets an unlocked Apple Watch approve authentication requests on a nearby Mac. PanicVault's [Mac browser helper](/help/browser-extension/) (version 1.4 or later) accepts Touch ID, an Apple Watch configured for authentication, or your Mac login password.
 
 ## Conclusion
 

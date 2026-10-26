@@ -1,22 +1,22 @@
 ---
 title: "Browser Extension for Mac"
-description: "Install the PanicVault extension and helper to fill passwords, usernames, TOTP codes, and passkeys in Chrome, Brave, Edge, Arc, and Dia with Touch ID."
+description: "Fill passwords, TOTP codes, and passkeys in Chrome, Brave, Edge, Arc, and Dia, unlocking with Touch ID, Apple Watch, or your Mac login password."
 date: 2026-07-14
-lastmod: 2026-09-29
+lastmod: 2026-10-26
 draft: false
 silo: "User Manual"
 helpgroup: "Filling Passwords"
 weight: 140
 ---
 
-PanicVault includes a browser extension for Chromium-based browsers (Google Chrome, Brave, Microsoft Edge, Arc, Dia, and Chromium) that lets you fill passwords, usernames, and TOTP codes directly in web pages using Touch ID. This page walks through what the extension does, how to install the helper and the extension, how to use them day to day, and how to fix the most common problems.
+PanicVault includes a browser extension for Chromium-based browsers (Google Chrome, Brave, Microsoft Edge, Arc, Dia, and Chromium) that lets you fill passwords, usernames, and TOTP codes directly in web pages, unlocking with Touch ID, your Apple Watch, or your Mac login password. This page walks through what the extension does, how to install the helper and the extension, how to use them day to day, and how to fix the most common problems.
 
 ## What It Does
 
 The browser extension connects to a small helper program on your Mac. When you visit a login page:
 
 - A dropdown appears on focused login fields showing matching credentials from your vault
-- Authenticate with Touch ID to unlock your credentials
+- Unlock your credentials with Touch ID, your Apple Watch, or your Mac login password
 - Click a credential to fill the username and password fields automatically
 - TOTP codes are available for accounts with [two-factor authentication](/help/two-factor-authentication/) configured
 - [Passkey](/help/passkeys/) authentication is supported for sites that use WebAuthn
@@ -52,7 +52,7 @@ The extension works with Chrome, Brave, Edge, Arc, Dia, and other Chromium-based
 
 When you focus a login field on any web page, a small PanicVault dropdown appears below the field:
 
-1. If you are not authenticated, click **Unlock with Touch ID** and verify with your fingerprint
+1. If you are not authenticated, click **Unlock with Touch ID**, then verify with Touch ID or your Apple Watch, or choose **Use Password…** to enter your Mac login password
 2. The dropdown shows credentials matching the current website
 3. Click a credential to fill the username and password fields
 4. The dropdown dismisses automatically after filling
@@ -61,10 +61,14 @@ When you focus a login field on any web page, a small PanicVault dropdown appear
 
 Click the PanicVault icon in the browser toolbar to open the full popup:
 
-1. Click **Unlock with Touch ID** to authenticate
+1. Click **Unlock with Touch ID**, then verify with Touch ID or your Apple Watch, or choose **Use Password…** to enter your Mac login password
 2. Search or browse your credentials
 3. Click a credential to fill it in the active page
 4. Click the TOTP badge to view and copy the current code
+
+{{< callout type="note" >}}
+On a Mac without Touch ID (or a MacBook with its lid closed), the button keeps its name and macOS asks for your Mac login password directly. Unlocking with your password or an Apple Watch, and on Macs without Touch ID, requires browser helper 1.4 or later.
+{{< /callout >}}
 
 ### Filling TOTP Codes
 
@@ -85,11 +89,11 @@ For accounts with two-factor authentication:
 
 **Extension not detected after install**: Restart your browser after installing the helper. The browser reads native messaging manifests at startup.
 
-**Touch ID fails or is not prompted**: The helper uses the macOS Keychain to access your vault key. Make sure:
+**Unlocking fails or you are not prompted**: Unlocking uses the standard macOS prompt: Touch ID (or your Apple Watch) when available, and **Use Password…** for your Mac login password; Macs without Touch ID show the password prompt directly. If choosing **Use Password…** ends with "Authentication failed", or a Mac without Touch ID cannot unlock at all, your helper is older than 1.4: install the latest helper from Settings → Browser Extension or the [Browser Helper page](/browser-helper/), then restart your browser. "Authentication cancelled" only means the prompt was closed; click **Unlock with Touch ID** to try again. Also make sure:
 
 - You have unlocked your vault at least once in the PanicVault app with your master password
-- Touch ID is enabled in PanicVault settings
-- Your Mac has a Touch ID sensor or an Apple Watch configured for authentication
+- Your Mac user account has a login password (macOS cannot verify you without one)
+- To unlock with an Apple Watch, your watch is turned on in the **Apple Watch** section of System Settings → Touch ID & Password
 
 **macOS asks for your login keychain password**: The first time the helper reads your vault key, macOS asks permission with a dialog naming `com.tenpercent.panicvault`. Press **Always Allow** and enter your Mac login password -- **Allow** grants permission only once, so the dialog would return on every fill. If it keeps appearing, open **Keychain Access** (Applications > Utilities), select the **login** keychain, open the `com.tenpercent.panicvault` item, and add the helper on the **Access Control** tab.
 
