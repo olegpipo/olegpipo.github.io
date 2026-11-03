@@ -2,7 +2,7 @@
 title: "Managing Your Vault"
 description: "Unlock and lock your PanicVault vault, navigate the entry list, search, understand auto-lock behavior, and delete a vault safely."
 date: 2026-07-14
-lastmod: 2026-08-28
+lastmod: 2026-11-03
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
@@ -43,6 +43,8 @@ Your vault also locks automatically when:
 
 - The lock timeout expires after you leave the app (see Auto-Lock Behavior below)
 - The auto-lock timeout expires after a period of inactivity within the app
+
+PanicVault finishes saving before it locks or quits. If your latest changes could not be saved to the vault file — the **Changes not saved to the vault file** banner is up, or saving failed — locking the vault, by hand or automatically, tries the save once more and waits a few seconds at most for it, then locks either way. On a Mac, quitting PanicVault waits for any save still in progress, and tries a save that did not go through once more, for up to ten seconds. A save waiting for your YubiKey is not tried again: touch the key first. Changes that still could not be saved are not in the vault file, so if the banner stays up, use **Export Vault** before you lock or quit.
 
 ## The Entry List
 
