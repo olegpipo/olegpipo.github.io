@@ -67,6 +67,8 @@ PanicVault supports the following encryption algorithms for the outer database e
 
 New vaults created in PanicVault use AES-256 by default.
 
+PanicVault does not support **Twofish**, which KeePassXC also offers, and says so when you open a Twofish vault: to use it here, open it in KeePassXC, choose **Database → Database Settings → Security → Encryption Settings → Advanced**, set **Encryption Algorithm** to **AES 256-bit** or **ChaCha20 256-bit** and save -- your master password and entries stay the same.
+
 ## Supported Key Derivation
 
 Key derivation functions transform your master password into the encryption key. PanicVault supports:
