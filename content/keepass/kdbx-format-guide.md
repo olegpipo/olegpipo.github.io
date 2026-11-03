@@ -2,7 +2,7 @@
 title: "What Is a .KDBX File? The KeePass Format Explained (2026)"
 description: "A .kdbx file is an encrypted KeePass password database. Here's what's inside one, how its encryption works, and how the KDBX 3.1 and 4.x versions differ."
 date: 2026-02-13
-lastmod: 2026-10-21
+lastmod: 2026-11-03
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -216,7 +216,10 @@ You can also read the header described above in a hex viewer: bytes 8-11 read `0
 1. Open and unlock the database.
 2. Choose **Database > Database Settings**, select **Security**, and open the **Encryption Settings** tab.
 3. Set **Database format** to **KDBX 4 (recommended)**.
-4. Click **OK**, then choose **Database > Save Database**.
+4. Select the **Advanced** tab below it and check that **Key Derivation Function** now shows **Argon2d (KDBX 4 – recommended)**.
+5. Click **OK**, then choose **Database > Save Database**.
+
+KeePassXC picks the format from the key derivation function, so step 4 is what upgrades the file: click **OK** while the **Basic** tab is showing and KeePassXC keeps the old AES-KDF settings, so the file is saved as KDBX 3.1 again.
 
 ### Upgrade in KeePass 2.x
 
@@ -229,7 +232,7 @@ Switching the key derivation function is what makes KeePass write KDBX 4. A KeeP
 
 ### When You Might Go Back to KDBX 3.1
 
-Only when an app you cannot replace still reads nothing newer. In KeePass 2.x, set the key derivation function back to AES-KDF and the cipher to AES-256, then save; KeePass writes KDBX 3.1 again as long as no plugin has stored data that needs KDBX 4. KeePassXC offers **KDBX 3** under **Database format** only while the database uses no KDBX 4 features; once it does (Argon2, for example), the setting is greyed out until you switch those features off. Either way, you give up Argon2's resistance to GPU cracking and KDBX 4's HMAC-authenticated blocks. keepass.info also warns that once all major KeePass ports support KDBX 4, KeePass will always save in that format.
+Only when an app you cannot replace still reads nothing newer. In KeePass 2.x, set the key derivation function back to AES-KDF and the cipher to AES-256, then save; KeePass writes KDBX 3.1 again as long as no plugin has stored data that needs KDBX 4. KeePassXC offers **KDBX 3** under **Database format** only while the database uses no KDBX 4 features other than its key derivation function; once it does (a public display name, for example), the setting is greyed out until you switch those features off. Either way, you give up Argon2's resistance to GPU cracking and KDBX 4's HMAC-authenticated blocks. keepass.info also warns that once all major KeePass ports support KDBX 4, KeePass will always save in that format.
 
 ## Security Properties of the Format
 
