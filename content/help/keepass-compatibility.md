@@ -1,8 +1,8 @@
 ---
 title: "KeePass Compatibility"
-description: "PanicVault uses the open KDBX 4 format — AES-256-CBC and ChaCha20 ciphers, Argon2d, Argon2id and AES-KDF key derivation, and full round-trip data preservation."
+description: "PanicVault uses the open KDBX 4 format — AES-256-CBC and ChaCha20 ciphers, Argon2id, Argon2d and AES-KDF key derivation, and full round-trip data preservation."
 date: 2026-07-14
-lastmod: 2026-09-26
+lastmod: 2026-11-03
 draft: false
 silo: "User Manual"
 helpgroup: "Reference"
@@ -71,9 +71,11 @@ New vaults created in PanicVault use AES-256 by default.
 
 Key derivation functions transform your master password into the encryption key. PanicVault supports:
 
-- **Argon2d** -- the default for new vaults. A memory-hard function that resists brute-force attacks even with specialized hardware. New databases use 64 MB of memory and 10 iterations by default.
-- **Argon2id** -- a variant of Argon2 that combines data-dependent and data-independent memory access for additional side-channel resistance
-- **AES-KDF** -- the legacy key derivation function used by older KeePass databases
+- **Argon2id** -- the default for new vaults. A memory-hard function that resists brute-force attacks even with specialized hardware, and combines data-dependent and data-independent memory access for additional side-channel resistance. New databases use 64 MB of memory and 10 iterations by default.
+- **Argon2d** -- the other Argon2 variant, used by many KeePass and KeePassXC databases
+- **AES-KDF** -- the older key derivation function, which KeePass 2 still uses and KeePassXC offers as **AES-KDF (KDBX 4)**
+
+When PanicVault saves a vault, it keeps the vault's key derivation function and encryption: an AES-KDF vault stays AES-KDF, with the same number of rounds, and a ChaCha20 vault stays ChaCha20. The saved file opens in KeePass and KeePassXC with the same password as before.
 
 PanicVault puts no ceiling of its own on these settings. It accepts **any iteration count** and **any memory size the device can provide**, so a database that KeePassXC benchmarked to one second on a fast desktop, or one created with your Mac's full thread count as its parallelism, opens here exactly as it was written. A vault that asks for more memory than this device can give is refused in those terms — *"This vault's key derivation needs 2 GB of memory; this device can give it 1.3 GB."* — rather than being called corrupted, and the same vault opens on a machine with more memory. See [Unlocking Your Vault](/help/managing-your-vault/) for what a slow key derivation looks like while it runs.
 

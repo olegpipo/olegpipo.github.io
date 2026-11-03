@@ -2,7 +2,7 @@
 title: "Cryptographic Engineering: How We Handle Keys and Secrets"
 description: "AES-256 vs ChaCha20, Argon2 parameters under RFC 9106, key zeroization, constant-time comparison, the Secure Enclave, and why PanicVault implements no custom cryptography."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-11-03
 draft: false
 silo: "Engineering & Security"
 ---
@@ -57,7 +57,7 @@ Argon2 changes the resource being consumed. If a single guess requires 64 MiB of
 - **Argon2i** uses *data-independent* access: side-channel resistant, but weaker against time-memory tradeoff attacks.
 - **Argon2id** is the hybrid -- data-independent for the first half-pass, data-dependent thereafter -- and is what RFC 9106 recommends as the default choice when you are unsure.
 
-PanicVault supports **Argon2d and Argon2id**, matching the KDBX 4 format. The nuance worth stating plainly: in the *local vault file* threat model, the attacker who has your `.kdbx` is running the derivation on their own hardware and has no side channel into yours, which is why Argon2d is a defensible default for KDBX and why KeePass chose it. If you are worried about a hostile process observing your device while you unlock, Argon2id is the right selection -- and it is available in settings. Both are exercised by tests on every build, against the test vectors published in RFC 9106.
+PanicVault supports **Argon2d and Argon2id**, matching the KDBX 4 format, and creates new vaults with **Argon2id**. The nuance worth stating plainly: in the *local vault file* threat model, the attacker who has your `.kdbx` is running the derivation on their own hardware and has no side channel into yours, which is why Argon2d is a defensible choice for KDBX and why KeePass chose it. But the derivation also runs on your own phone and laptop every time you unlock, and Argon2id adds side-channel resistance there -- it is the hybrid RFC 9106 recommends -- so it is our default. A vault another KeePass app created with Argon2d opens as it is, and stays Argon2d when PanicVault saves it. Both are exercised by tests on every build, against the test vectors published in RFC 9106.
 
 ### Parameters
 

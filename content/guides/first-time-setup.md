@@ -2,7 +2,7 @@
 title: "How to Set Up a Password Manager for the First Time"
 description: "Complete beginner's guide to setting up a password manager. Step-by-step instructions for choosing, installing, and configuring your first vault."
 date: 2026-02-14
-lastmod: 2026-10-21
+lastmod: 2026-11-03
 draft: false
 silo: "Guides & Tutorials"
 aliases:
@@ -94,7 +94,7 @@ For a deep dive into creating and remembering a strong master password, see our 
 
 ### Check the Security Defaults
 
-New PanicVault vaults use the [KDBX 4 format](/help/keepass-compatibility/) with AES-256 encryption and the Argon2d key derivation function, which makes every guess at your master password slow and memory-hungry. There is nothing to tune on day one, and PanicVault also opens vaults that other KeePass apps created with ChaCha20 or Argon2id.
+New PanicVault vaults use the [KDBX 4 format](/help/keepass-compatibility/) with AES-256 encryption and the Argon2id key derivation function, which makes every guess at your master password slow and memory-hungry. There is nothing to tune on day one, and PanicVault also opens vaults that other KeePass apps created with ChaCha20, Argon2d or AES-KDF, and keeps those settings when it saves them.
 
 The setting worth a look now is the **lock timeout** in PanicVault's Settings: how long the vault stays unlocked while you are not using it. The choices run from 30 seconds to 5 minutes (the default is 1 minute), or Never.
 

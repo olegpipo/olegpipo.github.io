@@ -2,7 +2,7 @@
 title: "How Password Cracking Works: Brute Force, Dictionary, and Rainbow Tables"
 description: "Learn how attackers crack passwords using brute force, dictionary attacks, and rainbow tables, plus the defenses that stop them cold."
 date: 2026-02-13
-lastmod: 2026-10-21
+lastmod: 2026-11-03
 draft: false
 silo: "Password Security"
 aliases:
@@ -156,7 +156,7 @@ Argon2 is the current gold standard, winner of the Password Hashing Competition 
 
 Argon2 has three variants: Argon2d (data-dependent, maximizes resistance to GPU attacks), Argon2i (data-independent, resistant to side-channel attacks), and Argon2id (a hybrid that provides both protections).
 
-PanicVault uses Argon2 for deriving the encryption key from your master passphrase: new vaults use Argon2d with 64 MB of memory and 10 iterations by default. This means even if an attacker obtained your encrypted vault file, each guess at your master passphrase would require significant time and memory. Combined with a strong master passphrase, this makes brute-forcing the vault computationally impractical. You can learn more about how this encryption pipeline works in our [KeePass encryption explained](/keepass/encryption-explained/) guide.
+PanicVault uses Argon2 for deriving the encryption key from your master passphrase: new vaults use Argon2id with 64 MB of memory and 10 iterations by default. This means even if an attacker obtained your encrypted vault file, each guess at your master passphrase would require significant time and memory. Combined with a strong master passphrase, this makes brute-forcing the vault computationally impractical. You can learn more about how this encryption pipeline works in our [KeePass encryption explained](/keepass/encryption-explained/) guide.
 
 ## How Real-World Attacks Unfold
 

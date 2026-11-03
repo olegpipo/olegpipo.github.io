@@ -2,7 +2,7 @@
 title: "PanicVault vs. Bitwarden: Open Format vs. Open Source"
 description: "Detailed comparison of PanicVault and Bitwarden -- two password managers emphasizing openness from different angles. Security, pricing, data portability, and Apple integration analyzed."
 date: 2026-02-14
-lastmod: 2026-09-02
+lastmod: 2026-11-03
 draft: false
 silo: "Comparisons"
 ---
@@ -45,13 +45,13 @@ Bitwarden supports two-factor authentication for account access via TOTP, FIDO2/
 
 ### PanicVault
 
-PanicVault uses the KeePass encryption model: AES-256 or ChaCha20 for the outer cipher, with Argon2d for key derivation. The [encryption architecture](/keepass/encryption-explained/) is well-documented as part of the KDBX specification.
+PanicVault uses the KeePass encryption model: AES-256 or ChaCha20 for the outer cipher, with Argon2id for key derivation in new vaults. The [encryption architecture](/keepass/encryption-explained/) is well-documented as part of the KDBX specification.
 
 There is no server component and no account to protect. Your database file is encrypted with your master password (and optionally a [key file](/keepass/key-files/)) directly on your device. The attack surface is limited to your device and wherever you store the database file.
 
 ### Security Verdict
 
-Both tools provide strong encryption. Bitwarden's open-source code provides transparency that PanicVault cannot match at the code level. PanicVault's local-first architecture eliminates the cloud attack surface entirely, and its default use of Argon2d for key derivation is currently stronger than Bitwarden's default PBKDF2 (though Bitwarden premium users can enable Argon2id).
+Both tools provide strong encryption. Bitwarden's open-source code provides transparency that PanicVault cannot match at the code level. PanicVault's local-first architecture eliminates the cloud attack surface entirely, and its default use of Argon2id for key derivation is currently stronger than Bitwarden's default PBKDF2 (though Bitwarden premium users can enable Argon2id).
 
 For most threat models, both are more than adequate. If code auditability is your top priority, Bitwarden wins. If minimizing attack surface by eliminating cloud infrastructure is your priority, PanicVault wins.
 
