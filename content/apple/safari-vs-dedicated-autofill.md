@@ -2,7 +2,7 @@
 title: "Safari AutoFill vs. Dedicated Password Manager AutoFill"
 description: "Detailed comparison of Safari's built-in password autofill and third-party password manager autofill on Apple devices, covering security, features, and when to use each."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-11-03
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -57,7 +57,7 @@ Third-party password managers on Apple devices use the [Credential Provider Exte
 
 A dedicated password manager like PanicVault stores credentials in its own encrypted vault -- typically a KeePass-format .kdbx file. The critical difference:
 
-- **You control the encryption.** The vault uses algorithms you can inspect and configure: AES-256, ChaCha20, or Twofish for encryption, Argon2d for key derivation. The database file is encrypted with your master password, and you choose where to store it.
+- **You control the encryption.** The vault uses standard algorithms you can inspect: AES-256 or ChaCha20 for encryption, and Argon2id for key derivation in new PanicVault vaults. The database file is encrypted with your master password, and you choose where to store it.
 - **The vault is a portable file.** You can back it up, move it, store it on any cloud service or local storage, and open it with any compatible application on any platform.
 - **No vendor dependency.** If the password manager company disappears tomorrow, your .kdbx file can be opened by dozens of other applications. Your data is never locked into a proprietary format.
 
@@ -81,8 +81,8 @@ Both approaches provide strong security, but the threat models they address diff
 
 | Aspect | Safari / iCloud Keychain | Dedicated Password Manager |
 |--------|--------------------------|---------------------------|
-| Encryption algorithm | AES-256 (Apple's choice, not configurable) | User-configurable (AES-256, ChaCha20, Twofish) |
-| Key derivation | Apple's proprietary KDF | Argon2d, AES-KDF (configurable parameters) |
+| Encryption algorithm | AES-256 (Apple's choice, not configurable) | AES-256 or ChaCha20 |
+| Key derivation | Apple's proprietary KDF | Argon2id (new vaults); Argon2d and AES-KDF supported |
 | Master secret | Device passcode + Apple ID | Dedicated master password |
 | Key storage | Secure Enclave + iCloud | Secure Enclave (for biometric unlock) + vault file |
 | Audit ability | Closed source | Open source (KeePass format) |

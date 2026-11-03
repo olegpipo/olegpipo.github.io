@@ -2,7 +2,7 @@
 title: "Best Password Manager for iPhone (2026)"
 description: "The best password manager apps for iPhone in 2026. We compare Apple Passwords, PanicVault, 1Password, Bitwarden & Strongbox for security, features & price."
 date: 2026-02-13
-lastmod: 2026-09-19
+lastmod: 2026-11-03
 draft: false
 silo: "Apple Ecosystem"
 aliases:
@@ -106,7 +106,7 @@ PanicVault is purpose-built for the Apple ecosystem and uses the open KDBX forma
 
 **Apple Watch**: No Apple Watch app. TOTP codes live in the iPhone, iPad and Mac apps, where each entry shows its live code, ready to copy.
 
-**Strengths**: KDBX format means your data works with any [KeePass-compatible app](/keepass/compatible-apps/). No subscription -- one-time purchase. iCloud Drive sync without a proprietary cloud service. Native Apple design. Full KeePass encryption (AES-256, ChaCha20, Argon2d).
+**Strengths**: KDBX format means your data works with any [KeePass-compatible app](/keepass/compatible-apps/). No subscription -- one-time purchase. iCloud Drive sync without a proprietary cloud service. Native Apple design. Standard KeePass encryption (AES-256 or ChaCha20, with Argon2id key derivation for new vaults).
 
 **Limitations**: Apple ecosystem only -- no Windows, Android, or Linux app. If you need cross-platform access, you would need to pair PanicVault with a KeePass client on other platforms (which is straightforward since they share the same KDBX file).
 

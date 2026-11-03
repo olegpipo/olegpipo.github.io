@@ -2,7 +2,7 @@
 title: "PanicVault vs. Apple Passwords App"
 description: "In-depth comparison of PanicVault and Apple's standalone Passwords app. Data portability, organization, KDBX format advantages, and Apple integration evaluated honestly."
 date: 2026-02-14
-lastmod: 2026-10-21
+lastmod: 2026-11-03
 draft: false
 silo: "Comparisons"
 ---
@@ -71,7 +71,7 @@ For a deeper exploration of why data format matters, see our [KeePass data porta
 
 **Apple Passwords** inherits iCloud Keychain's security: end-to-end encryption using AES-256, with your device passcode and biometrics providing access. Apple's security infrastructure is world-class, and the zero-configuration nature means there are no weak points introduced by user error in setup.
 
-**PanicVault** uses the [KeePass encryption model](/keepass/encryption-explained/): AES-256 or ChaCha20 for the cipher, Argon2d for key derivation, with optional [key files](/keepass/key-files/) for an additional authentication factor. You choose where the encrypted database file lives. The security is strong and well-documented, though it requires slightly more user awareness (choosing a strong master password, deciding where to store the file).
+**PanicVault** uses the [KeePass encryption model](/keepass/encryption-explained/): AES-256 or ChaCha20 for the cipher, Argon2id for key derivation in new vaults, with optional [key files](/keepass/key-files/) for an additional authentication factor. You choose where the encrypted database file lives. The security is strong and well-documented, though it requires slightly more user awareness (choosing a strong master password, deciding where to store the file).
 
 Both are secure. Apple Passwords is easier to set up securely (it happens automatically). PanicVault gives you more control over the security parameters.
 

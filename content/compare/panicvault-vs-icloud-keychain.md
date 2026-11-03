@@ -2,7 +2,7 @@
 title: "PanicVault vs. iCloud Keychain"
 description: "Comprehensive comparison of PanicVault and iCloud Keychain for Apple users. When is the built-in option enough, and when do you need a dedicated KeePass-compatible password manager?"
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-11-03
 draft: false
 silo: "Comparisons"
 ---
@@ -57,7 +57,7 @@ This is the single largest differentiator between the two tools. iCloud Keychain
 
 **iCloud Keychain** uses end-to-end encryption with AES-256. Your data is encrypted on device and only decrypted on your other authenticated Apple devices. Apple cannot read your passwords. The infrastructure is backed by Apple's security engineering team, and iCloud Keychain has never had a publicly known breach.
 
-**PanicVault** uses the KeePass encryption model: AES-256 or ChaCha20 with Argon2d key derivation. Your database file is encrypted locally and can be stored on iCloud Drive, local storage, or any other location. There is no account or cloud service beyond whatever file storage you choose.
+**PanicVault** uses the KeePass encryption model: AES-256 or ChaCha20, with Argon2id key derivation for new vaults. Your database file is encrypted locally and can be stored on iCloud Drive, local storage, or any other location. There is no account or cloud service beyond whatever file storage you choose.
 
 Both approaches are secure. The difference is architectural: iCloud Keychain requires trust in Apple's infrastructure (reasonable, given Apple's track record). PanicVault eliminates that trust requirement by keeping everything local, with sync being a file-level operation you control.
 

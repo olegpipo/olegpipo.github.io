@@ -2,7 +2,7 @@
 title: "How TOTP Works: A Technical Explainer"
 description: "Understand how Time-Based One-Time Passwords (TOTP) work under the hood, including RFC 6238, HMAC-SHA1, shared secrets, time steps, and the code generation algorithm."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-11-03
 draft: false
 silo: "Two-Factor Authentication"
 ---
@@ -57,7 +57,7 @@ Once exchanged, the shared secret must be stored securely by both parties.
 
 **Server-side**: The server stores the secret in its database, typically encrypted at rest. Unlike password hashes, the TOTP secret must be stored in a recoverable form (not hashed) because the server needs the original secret to compute codes. This means a server database breach can expose TOTP secrets. This is a fundamental limitation of TOTP's symmetric-key design, and one reason why FIDO2 hardware keys (which use asymmetric cryptography) are considered more secure.
 
-**Client-side**: Your authenticator app stores the secret in device storage. Standalone apps may rely on the operating system's keychain or encrypted storage. Password managers like PanicVault store TOTP secrets in the encrypted KeePass database alongside your passwords, meaning they are protected by the same [encryption architecture](/keepass/encryption-explained/) -- AES-256 or ChaCha20, with Argon2d key derivation. This approach ensures that TOTP secrets receive the same level of cryptographic protection as your credentials.
+**Client-side**: Your authenticator app stores the secret in device storage. Standalone apps may rely on the operating system's keychain or encrypted storage. Password managers like PanicVault store TOTP secrets in the encrypted KeePass database alongside your passwords, meaning they are protected by the same [encryption architecture](/keepass/encryption-explained/) -- AES-256 or ChaCha20, with Argon2id key derivation in new PanicVault vaults. This approach ensures that TOTP secrets receive the same level of cryptographic protection as your credentials.
 
 ## The TOTP Algorithm Step by Step
 

@@ -2,7 +2,7 @@
 title: "How iOS Credential Provider Extensions Work"
 description: "Technical deep dive into the iOS Credential Provider Extension API, ASCredentialProviderViewController, how third-party password managers integrate with iOS autofill, and practical setup guidance."
 date: 2026-02-13
-lastmod: 2026-02-13
+lastmod: 2026-11-03
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -118,7 +118,7 @@ PanicVault's Credential Provider Extension demonstrates how a KeePass-compatible
 
 ### Vault Decryption in the Extension
 
-The .kdbx vault file must be decrypted within the extension process. Since KeePass encryption involves key derivation (Argon2d or AES-KDF), this requires non-trivial computation. PanicVault optimizes this by:
+The .kdbx vault file must be decrypted within the extension process. Since KeePass encryption involves key derivation (Argon2 or AES-KDF), this requires non-trivial computation. PanicVault optimizes this by:
 
 1. Caching the derived key in a Keychain item protected by biometric access control. This allows subsequent unlocks to skip the expensive key derivation step.
 2. Using the Secure Enclave to protect the cached key, ensuring it cannot be extracted even if the device is jailbroken.

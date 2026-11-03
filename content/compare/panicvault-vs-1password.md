@@ -2,7 +2,7 @@
 title: "PanicVault vs. 1Password: Detailed Comparison"
 description: "An honest, in-depth comparison of PanicVault and 1Password covering security, pricing, data ownership, Apple integration, and daily usability for Mac and iOS users."
 date: 2026-02-14
-lastmod: 2026-10-21
+lastmod: 2026-11-03
 draft: false
 silo: "Comparisons"
 ---
@@ -25,7 +25,7 @@ The key derivation function is PBKDF2-HMAC-SHA256 with 650,000 iterations (as of
 
 ### PanicVault
 
-PanicVault uses the [KeePass encryption architecture](/keepass/encryption-explained/), which supports AES-256, ChaCha20, and Twofish for the outer cipher, with Argon2d for key derivation. The KDBX format has been publicly documented, independently analyzed, and used by millions of users across dozens of applications for nearly two decades.
+PanicVault uses the [KeePass encryption architecture](/keepass/encryption-explained/): AES-256 or ChaCha20 for the outer cipher, with Argon2id for key derivation in new vaults. It also opens vaults made in other KeePass apps with Argon2d or AES-KDF. The KDBX format has been publicly documented, independently analyzed, and used by millions of users across dozens of applications for nearly two decades.
 
 Your database file is encrypted locally on your device. There is no server component, no account system, and no Secret Key equivalent -- your master password (and optionally a key file) is the sole authentication factor. The encryption happens entirely on your device, and the database file can be stored wherever you choose.
 
@@ -33,7 +33,7 @@ PanicVault itself is not open source, but the KDBX format it uses is fully open 
 
 ### Verdict on Security
 
-Both tools use strong encryption. 1Password's Secret Key system adds a layer of protection against server-side breaches, which is meaningful if you are concerned about cloud infrastructure attacks. PanicVault's local-first architecture eliminates the cloud attack surface entirely -- there are no servers to breach. The use of Argon2d for key derivation gives PanicVault an edge over 1Password's current PBKDF2 implementation.
+Both tools use strong encryption. 1Password's Secret Key system adds a layer of protection against server-side breaches, which is meaningful if you are concerned about cloud infrastructure attacks. PanicVault's local-first architecture eliminates the cloud attack surface entirely -- there are no servers to breach. The use of Argon2id for key derivation in new vaults gives PanicVault an edge over 1Password's current PBKDF2 implementation.
 
 If you trust 1Password's infrastructure and want the belt-and-suspenders approach of Secret Key, 1Password's model is solid. If you prefer eliminating the cloud trust requirement altogether, PanicVault's local-first model is inherently simpler to reason about.
 

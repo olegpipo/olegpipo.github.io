@@ -2,7 +2,7 @@
 title: "Best Password Manager for Mac in 2026"
 description: "In-depth comparison of the best password managers for macOS in 2026 -- 1Password, Bitwarden, KeePassXC, PanicVault, Dashlane, and Apple Passwords -- evaluated on security, usability, integration, price, and data portability."
 date: 2026-02-13
-lastmod: 2026-09-19
+lastmod: 2026-11-03
 draft: false
 silo: "Apple Ecosystem"
 ---
@@ -83,7 +83,7 @@ KeePassXC is the leading desktop KeePass client for macOS. It is free, open sour
 
 PanicVault is a native Apple password manager built specifically for the Apple ecosystem. It uses the KDBX format, giving you the data portability of KeePass with the polish and integration of a native Apple app. If you have been looking for something that bridges the gap between KeePassXC's openness and 1Password's user experience, PanicVault targets exactly that space.
 
-**Security**: Full KeePass encryption (AES-256, ChaCha20, Argon2d) with the KDBX format. Your database file stays under your control -- store it on iCloud Drive, local storage, or any file provider. No account creation, no cloud service, no telemetry.
+**Security**: Standard KeePass encryption (AES-256 or ChaCha20, with Argon2id key derivation for new vaults) in the KDBX format. Your database file stays under your control -- store it on iCloud Drive, local storage, or any file provider. No account creation, no cloud service, no telemetry.
 
 **Usability**: Designed from the ground up for macOS, iOS, and iPadOS. The Mac app follows Apple's Human Interface Guidelines and feels like a first-party Apple application. Autofill works through macOS system integration, meaning it works in Safari and every other app without a separate browser extension.
 
@@ -126,7 +126,7 @@ With iOS 18 and macOS Sequoia, Apple introduced a standalone Passwords app that 
 | Feature | 1Password | Bitwarden | KeePassXC | PanicVault | Dashlane | Apple Passwords |
 |---|---|---|---|---|---|---|
 | Encryption | AES-256 | AES-256 | AES-256/ChaCha20/Twofish | AES-256/ChaCha20 | AES-256 | AES-256 |
-| Key derivation | Proprietary | PBKDF2/Argon2 | Argon2d/AES-KDF | Argon2d | Argon2d | Undisclosed |
+| Key derivation | Proprietary | PBKDF2/Argon2 | Argon2d/AES-KDF | Argon2id/Argon2d/AES-KDF | Argon2d | Undisclosed |
 | Open source | No | Yes | Yes | No | No | No |
 | Safari autofill | Yes | Yes | No | Yes | Yes | Yes |
 | Touch ID | Yes | Yes | Yes | Yes | Browser only | Yes |

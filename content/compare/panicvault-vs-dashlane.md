@@ -2,7 +2,7 @@
 title: "PanicVault vs. Dashlane"
 description: "Honest comparison of PanicVault and Dashlane covering security, pricing, data ownership, VPN bundling, and Apple-native experience. Which password manager fits your needs?"
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-11-03
 draft: false
 silo: "Comparisons"
 ---
@@ -27,11 +27,11 @@ Dashlane adds a proprietary "confidential SSO" system for enterprise users and o
 
 ### PanicVault
 
-PanicVault uses the [KeePass encryption architecture](/keepass/encryption-explained/): AES-256 or ChaCha20 with Argon2d key derivation. The KDBX format has been publicly documented and independently analyzed for nearly two decades. There is no server component -- your database is encrypted locally and stored wherever you choose.
+PanicVault uses the [KeePass encryption architecture](/keepass/encryption-explained/): AES-256 or ChaCha20, with Argon2id key derivation for new vaults. The KDBX format has been publicly documented and independently analyzed for nearly two decades. There is no server component -- your database is encrypted locally and stored wherever you choose.
 
 ### Security Verdict
 
-The encryption is comparable. Both use AES-256 and Argon2d. The architectural difference is where your data lives: Dashlane stores encrypted vaults on its cloud servers. PanicVault keeps your database as a local file. If eliminating the cloud attack surface matters to you, PanicVault's approach is inherently simpler. If you trust Dashlane's zero-knowledge infrastructure, their security is also strong.
+The encryption is comparable. Both use AES-256 and memory-hard Argon2 key derivation: Argon2d at Dashlane, Argon2id in new PanicVault vaults. The architectural difference is where your data lives: Dashlane stores encrypted vaults on its cloud servers. PanicVault keeps your database as a local file. If eliminating the cloud attack surface matters to you, PanicVault's approach is inherently simpler. If you trust Dashlane's zero-knowledge infrastructure, their security is also strong.
 
 ## Pricing: The Subscription Gap
 

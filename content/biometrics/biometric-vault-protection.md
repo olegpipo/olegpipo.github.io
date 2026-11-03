@@ -2,7 +2,7 @@
 title: "How Biometrics Protect Your Password Vault"
 description: "Technical deep dive into how Face ID and Touch ID protect your password vault -- Secure Enclave key storage, encrypted key release, and layered security."
 date: 2026-02-14
-lastmod: 2026-08-25
+lastmod: 2026-11-03
 draft: false
 silo: "Biometric Security"
 ---
@@ -21,7 +21,7 @@ Biometric vault protection solves this by creating a second path to the decrypti
 
 ### Layer 1: Vault Encryption
 
-Your password vault is encrypted using standard cryptographic algorithms. In the KeePass ecosystem -- which PanicVault uses -- this means AES-256 or ChaCha20 for the cipher, with Argon2d for key derivation. The master password is processed through the key derivation function to produce the encryption key. Without this key, the vault data is computationally infeasible to decrypt.
+Your password vault is encrypted using standard cryptographic algorithms. In the KeePass ecosystem -- which PanicVault uses -- this means AES-256 or ChaCha20 for the cipher, with Argon2 for key derivation (Argon2id in new PanicVault vaults). The master password is processed through the key derivation function to produce the encryption key. Without this key, the vault data is computationally infeasible to decrypt.
 
 This layer exists independently of biometrics. If you disable biometric unlock, your vault is still protected by this encryption. Biometrics add a convenience layer on top of this foundation -- they do not replace it.
 
@@ -69,7 +69,7 @@ Understanding failure modes is as important as understanding the success path.
 
 PanicVault implements biometric vault protection using the architecture described above, with specific design choices that reflect its focus on security and the [Apple ecosystem](/apple/).
 
-**KeePass database encryption remains standard.** Your .kdbx file is encrypted with the same algorithms (AES-256 or ChaCha20 with Argon2d) regardless of whether biometric unlock is enabled. The file itself can be opened with any [compatible KeePass application](/keepass/compatible-apps/) using the master password.
+**KeePass database encryption remains standard.** Your .kdbx file is encrypted with the same algorithms (AES-256 or ChaCha20, with Argon2id key derivation for new vaults) regardless of whether biometric unlock is enabled. The file itself can be opened with any [compatible KeePass application](/keepass/compatible-apps/) using the master password.
 
 **Secure Enclave integration uses kSecAccessControlBiometryCurrentSet.** This is a specific access control flag that ties the stored key to the current biometric enrollment. If biometric enrollment changes, the key is automatically invalidated. This is the most secure access control option because it prevents an attacker from adding their own biometric to gain access to existing keys.
 

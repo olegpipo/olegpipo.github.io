@@ -2,7 +2,7 @@
 title: "How KeePass Encryption Works: AES-256, Twofish, and ChaCha20"
 description: "Deep dive into KeePass encryption algorithms, key derivation with Argon2d and AES-KDF, transform rounds, and inner random stream protection."
 date: 2026-02-13
-lastmod: 2026-09-02
+lastmod: 2026-11-03
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -112,6 +112,8 @@ A typical setting might be 60,000 rounds or more. Each round applies AES encrypt
 AES-KDF has a significant limitation compared to Argon2d: it is not memory-hard. GPU-based attackers can run AES-KDF computations efficiently because AES acceleration is widely available in hardware and the algorithm requires negligible memory. This means that while AES-KDF with a high round count provides decent protection, it is fundamentally less resistant to hardware-accelerated attacks than Argon2d.
 
 **Recommendation**: Use Argon2d for all new databases. AES-KDF exists primarily for backward compatibility: KDBX 3.1 supports no other KDF, so choosing anything but AES-KDF is itself what pushes a KeePass database into the KDBX 4 format.
+
+PanicVault, for its part, creates new vaults with Argon2id (64 MB, 10 iterations), and opens and saves Argon2d and AES-KDF databases without changing their key derivation settings.
 
 ### Choosing Key Derivation Parameters
 

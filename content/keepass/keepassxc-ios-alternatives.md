@@ -2,7 +2,7 @@
 title: "KeePassXC for iPhone: 3 Best iOS Alternatives (2026)"
 description: "KeePassXC has no iPhone or iPad app. Here are the 3 best KeePass apps for iOS — full KDBX 4.0, AutoFill, and Face ID — plus how to sync your .kdbx database."
 date: 2026-03-06
-lastmod: 2026-10-21
+lastmod: 2026-11-03
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -54,11 +54,11 @@ Before evaluating individual apps, here are the features that matter most when c
 
 **Price**: $4.99 one-time purchase
 **Platforms**: iOS, iPadOS, macOS
-**KDBX support**: 4.0 only
+**KDBX support**: KDBX 4 only
 
 [PanicVault](https://apps.apple.com/app/id6759188575) is a native Apple password manager built from the ground up with SwiftUI. It is designed specifically for users who live in the Apple ecosystem and want a KeePass-compatible app that feels like a first-party Apple product.
 
-PanicVault supports full KDBX 4.0 read and write, including Argon2 key derivation, AES-256 and ChaCha20 encryption, groups, custom fields, entry history, and file attachments. Your KeePassXC database opens without modification.
+PanicVault supports full KDBX 4 read and write, including Argon2 key derivation, AES-256 and ChaCha20 encryption, groups, custom fields, entry history, and file attachments. Your KeePassXC database opens without modification.
 
 On iOS, PanicVault integrates with Apple's credential provider framework for system-wide AutoFill. This means it fills credentials in Safari, in native apps, and in any browser or app that uses the standard iOS password autofill prompt. Face ID and Touch ID unlock is built in, and TOTP code generation is supported directly within each entry.
 
@@ -73,7 +73,7 @@ The pricing model is a one-time purchase with no subscription. You pay once and 
 - TOTP code generation
 - iCloud Drive and Google Drive sync
 - One-time purchase -- no subscription
-- Full KDBX 4.0 compatibility with KeePassXC databases
+- Full KDBX 4 compatibility with KeePassXC databases
 - YubiKey challenge-response over NFC on iPhone, and over USB on Mac -- the same format KeePassXC uses, included at no extra cost
 
 **Limitations:**

@@ -2,7 +2,7 @@
 title: "Password Compliance: HIPAA, PCI DSS for Small Business"
 description: "How small businesses meet HIPAA and PCI DSS password requirements without enterprise tools. Practical compliance guide for regulated industries."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-11-03
 draft: false
 silo: "Business & Freelancers"
 ---
@@ -49,7 +49,7 @@ For a small practice or freelancer, meeting these requirements involves:
 
 3. **Multi-factor authentication**: HIPAA does not explicitly require MFA, but the guidance is moving in that direction, and MFA is one of the most effective ways to demonstrate compliance with the "person or entity authentication" requirement. Enable [two-factor authentication](/two-factor-authentication/) on every system that touches PHI.
 
-4. **Password manager with encryption**: Store all credentials in an encrypted vault. PanicVault's [KeePass encryption](/keepass/encryption-explained/) -- AES-256 with Argon2d key derivation -- exceeds any reasonable interpretation of HIPAA's technical safeguard requirements.
+4. **Password manager with encryption**: Store all credentials in an encrypted vault. PanicVault's [KeePass encryption](/keepass/encryption-explained/) -- AES-256 with Argon2id key derivation for new vaults -- exceeds any reasonable interpretation of HIPAA's technical safeguard requirements.
 
 5. **Emergency access procedures**: Document how PHI systems can be accessed in an emergency. This might involve a sealed envelope with master passwords stored in a secure location, accessible to a designated emergency contact.
 

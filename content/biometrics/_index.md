@@ -2,7 +2,7 @@
 title: "Biometric Security: Face ID, Touch ID & Beyond"
 description: "Complete guide to biometric security for password management -- how Face ID, Touch ID, and fingerprint sensors protect your vault, real risks, and setup."
 date: 2026-02-14
-lastmod: 2026-02-14
+lastmod: 2026-11-03
 draft: false
 silo: "Biometric Security"
 sitemap_priority: 0.8
@@ -75,7 +75,7 @@ Biometric unlock eliminates this trade-off. With Face ID or Touch ID, your vault
 
 [Biometric vault protection](/biometrics/biometric-vault-protection/) in well-designed apps works through a layered architecture. Your vault is encrypted with a key derived from your master password. A copy of that key (or a key that can derive the vault key) is stored in the Secure Enclave, protected by biometric access control. When you use Face ID or Touch ID to unlock, the Secure Enclave verifies your identity and releases the key. The app never sees your biometric data, and the key is never stored in regular app memory.
 
-PanicVault implements this architecture natively. Your KeePass database is encrypted using standard KDBX encryption (AES-256 or ChaCha20 with Argon2d key derivation). When you enable biometric unlock, PanicVault stores the database key in the Secure Enclave. Face ID on iPhone and iPad, or Touch ID on Mac, releases this key after successful biometric verification. If biometric verification fails -- or if someone attempts to bypass it -- the Secure Enclave refuses to release the key, and the vault remains encrypted.
+PanicVault implements this architecture natively. Your KeePass database is encrypted using standard KDBX encryption (AES-256 or ChaCha20, with Argon2id key derivation for new vaults). When you enable biometric unlock, PanicVault stores the database key in the Secure Enclave. Face ID on iPhone and iPad, or Touch ID on Mac, releases this key after successful biometric verification. If biometric verification fails -- or if someone attempts to bypass it -- the Secure Enclave refuses to release the key, and the vault remains encrypted.
 
 ## Industry Applications
 

@@ -2,7 +2,7 @@
 title: "The Best Authenticator Apps in 2026"
 description: "Compare the top authenticator apps for TOTP two-factor authentication in 2026, including Google Authenticator, Microsoft Authenticator, Authy, and password managers with built-in TOTP support."
 date: 2026-02-13
-lastmod: 2026-09-02
+lastmod: 2026-11-03
 draft: false
 silo: "Two-Factor Authentication"
 faq:
@@ -131,7 +131,7 @@ PanicVault is a KeePass-compatible [password manager](/password-managers/) for A
 
 **Strengths:**
 
-- TOTP secrets are protected by the same robust [encryption](/keepass/encryption-explained/) as your passwords -- AES-256 or ChaCha20 with Argon2d key derivation
+- TOTP secrets are protected by the same robust [encryption](/keepass/encryption-explained/) as your passwords -- AES-256 or ChaCha20, with Argon2id key derivation for new vaults
 - Backup is automatic: your TOTP secrets are part of your regular database backup. No separate backup process needed
 - Full [data portability](/keepass/data-portability/) -- because PanicVault uses the open KeePass format, you can open the same database in KeePassXC, KeePassDX, or any other compatible app. Your TOTP secrets travel with you; you are never locked in
 - Supports optional [key files](/keepass/key-files/) for additional database protection
