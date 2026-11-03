@@ -37,9 +37,12 @@ If PanicVault tells you that a file is **an older KeePass database** — a KDBX 
 
 1. Open the database in KeePassXC and unlock it
 2. Choose **Database → Database Settings**
-3. Select the **Encryption** tab
-4. Set **Database format** to **KDBX 4**
-5. Click **OK**, then choose **Database → Save Database**
+3. Click **Security** in the list on the left, then select the **Encryption Settings** tab
+4. Set **Database format** to **KDBX 4 (recommended)**
+5. Select the **Advanced** tab below it and check that **Key Derivation Function** now shows **Argon2d (KDBX 4 – recommended)**
+6. Click **OK**, then choose **Database → Save Database**
+
+KeePassXC picks the file format from the key derivation function, so step 5 is what upgrades the format: if you click **OK** while the **Basic** tab is showing, KeePassXC keeps the old key derivation settings and the saved file is still not KDBX 4.
 
 **In KeePass 2** (Windows, version 2.35 or later):
 
@@ -54,7 +57,7 @@ KeePass writes KDBX 4 whenever the database uses Argon2 or ChaCha20, so switchin
 **A KeePass 1.x `.kdb` file** cannot be converted in place — it is a different format, not an older version of the same one. Import it first, then upgrade the result:
 
 - **KeePass 2**: **File → Import**, choose **KeePass KDB (1.x)**, pick the `.kdb` file, then save the new database and follow the KeePass 2 steps above
-- **KeePassXC**: **Database → Import → KeePass 1 Database**, pick the `.kdb` file, then save it and follow the KeePassXC steps above
+- **KeePassXC**: **Database → Import**, choose **KeePass 1 Database (.kdb)**, pick the `.kdb` file, enter its password and import into a **New Database**. KeePassXC then walks you through setting up the new database, including its password, and creates it as KDBX 4 — save it and there is nothing left to upgrade
 
 Then add the converted `.kdbx` file to PanicVault the usual way — see [Getting Started](/help/getting-started/).
 
