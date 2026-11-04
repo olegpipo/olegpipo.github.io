@@ -1,6 +1,6 @@
 ---
 title: "Importing Passwords"
-description: "Import a CSV export from Apple Passwords, Chrome, Firefox, Bitwarden, KeePassXC, 1Password, or mSecure into PanicVault, with TOTP and folders."
+description: "Import a CSV from Apple Passwords, Chrome, Firefox, Bitwarden, KeePassXC, 1Password, LastPass, or mSecure, with TOTP, folders, and custom fields."
 date: 2026-07-14
 lastmod: 2026-11-04
 draft: false
@@ -30,11 +30,25 @@ PanicVault automatically detects CSV exports from:
 - **Chrome, Edge, and other Chromium browsers** (including Brave)
 - **Firefox**
 - **Bitwarden**
-- **KeePassXC**
+- **KeePassXC** — including exports from versions before 2.6.3, which have no TOTP column
 - **1Password 8**
+- **LastPass** — see [Importing from LastPass](#importing-from-lastpass)
 - **mSecure 6** — no header row needed (see [Importing from mSecure](#importing-from-msecure))
 
 Any other CSV also works as long as it has a password column. PanicVault matches the remaining columns — title, username, URL, notes, and tags — by their header names, so most generic exports import correctly without any setup. Every other column is kept too: each becomes a custom field named after its header (see [Custom Fields](/help/entries/#custom-fields)), and a row with data only in such columns is still imported.
+
+## What Each Format Brings
+
+Besides the title, username, password, website, notes, and one-time password, PanicVault keeps what each app adds to its export:
+
+- **Bitwarden** — your custom fields become custom fields with the same names (see [Custom Fields](/help/entries/#custom-fields)). The export doesn't say which ones were hidden, so a field is protected when its name says it holds a secret, such as **PIN** or **Password**. Favorites get the tag **Favorite** and archived items the tag **Archived** (see [Tags](/help/entries/#tags)), and secure notes get the note icon. When a login has several websites, the first is the entry's website and the others become **KP2A_URL_1**, **KP2A_URL_2**, and so on, the fields KeePassXC uses for more websites. Bitwarden's master password re-prompt setting isn't imported: a vault has no such setting.
+- **Firefox** — each login keeps its dates: when it was created, when its password was last changed (the entry's modified date), and when it was last used. A site that asks for its password in a browser dialog keeps its realm in the custom field **HTTP Realm**, and a login form that sends the password to another site keeps that site in **Form Action Origin**.
+- **KeePassXC** — each entry keeps its icon and its created and modified dates.
+- **1Password 8** — favorites get the tag **Favorite** and archived items the tag **Archived**; 1Password's tags become tags.
+- **LastPass** — folders, favorites, and the fields of secure notes; see [Importing from LastPass](#importing-from-lastpass).
+- **Apple Passwords and Chrome** — their exports hold nothing more, and every column comes across.
+
+The dates appear in the entry's details. When a file has no dates, the imported entries are dated the moment you import them.
 
 ## Importing from mSecure
 
@@ -51,6 +65,15 @@ Every field of every record comes across, not only the passwords:
 
 Records without a password, such as secure notes, cards, and identities, are imported too.
 
+## Importing from LastPass
+
+PanicVault recognizes LastPass's CSV export, with or without its **totp** column:
+
+- **Sites** — the website, username, password, one-time password, and notes fill the entry's own fields. A site with nothing but a name is skipped, like an empty row.
+- **Favorites** get the tag **Favorite** (see [Tags](/help/entries/#tags)).
+- **Folders** — LastPass writes a folder inside a folder as **Parent\Child**, and a shared folder as **Shared-Name\Folder**. With **Recreate folders as groups** on, each becomes nested groups (see [Recreating Folders as Groups](#recreating-folders-as-groups)).
+- **Secure notes** — a plain note's text becomes the entry's notes. A note made from a template (Credit Card, Bank Account, Address, Wi-Fi Password, SSH Key, or one of your own) is split into fields: its **Username** and **Password** fill the entry's own fields, every other field you filled in becomes a custom field with the same name, its **Notes** become the entry's notes, and the template's name is added as a tag and picks the entry's icon. Card numbers, security codes, PINs, passwords, passphrases, and private keys are protected. Empty fields are left out.
+
 ## The Import Sheet
 
 After you pick a file, the import sheet shows:
@@ -66,7 +89,7 @@ Tap **Import** to add the entries. When the import finishes, a summary tells you
 
 With **Recreate folders as groups** on, each entry goes into the group of its folder, under the destination group (see [Groups & Folders](/help/groups/)):
 
-- **Nested folders become nested groups.** Bitwarden writes a folder inside a folder as **Parent/Child**. KeePassXC and PanicVault write the whole path from the top, such as **Root/Banking/Cards**; the first name is the other vault's top-level group, so it is left out and **Banking** is created right under the destination. An item of a Bitwarden organization export that is in several collections goes into the first one. A 1Password file with a vault column gets one group per vault. Apple Passwords, Chrome, Firefox, 1Password 8 and mSecure exports have no folders.
+- **Nested folders become nested groups.** Bitwarden writes a folder inside a folder as **Parent/Child**, LastPass as **Parent\Child**. KeePassXC and PanicVault write the whole path from the top, such as **Root/Banking/Cards**; the first name is the other vault's top-level group, so it is left out and **Banking** is created right under the destination. An item of a Bitwarden organization export that is in several collections goes into the first one. A 1Password file with a vault column gets one group per vault. Apple Passwords, Chrome, Firefox, 1Password 8 and mSecure exports have no folders.
 - **Groups you already have are used.** A folder goes into the group of the same name under the destination, whatever its upper and lower case (**banking** finds **Banking**), and only the missing groups are created. Importing the same file again into the same place adds its entries to the groups it created the first time, instead of making a second **Banking**. The import doesn't skip entries you already have, so a second import adds the entries a second time.
 - **Entries in no folder** go into the destination group itself.
 - **The Recycle Bin is never used.** Nothing is created or imported inside it. KeePassXC exports its Recycle Bin like any other folder: those entries arrive in an ordinary group named **Recycle Bin**, where you can look through what you had deleted, then delete the group if you don't need it.
@@ -81,7 +104,7 @@ Some exports contain invisible control characters, such as the vertical tab some
 
 ## Two-Factor (TOTP) Columns
 
-If the CSV includes a one-time-password column — such as the **OTPAuth** column from Apple Passwords or the **TOTP** column from KeePassXC and Bitwarden — PanicVault imports it into the entry's One-Time Password field. Those entries generate 2FA codes right away, just like TOTP you set up by hand (see [Two-Factor Authentication (TOTP)](/help/two-factor-authentication/)).
+If the CSV includes a one-time-password column — such as the **OTPAuth** column from Apple Passwords, the **TOTP** column from KeePassXC and Bitwarden, or LastPass's **totp** column — PanicVault imports it into the entry's One-Time Password field. Those entries generate 2FA codes right away, just like TOTP you set up by hand (see [Two-Factor Authentication (TOTP)](/help/two-factor-authentication/)).
 
 ## Exporting a CSV from Other Apps
 
@@ -94,6 +117,7 @@ Each source app has its own export command. A few common ones:
 - **Bitwarden** — in the web or desktop app, choose **Tools > Export Vault** and pick the **.csv** format
 - **KeePassXC** — choose **Database > Export > Export to CSV...**
 - **1Password 8** — open the account or vault menu and choose **Export**, then select **CSV**
+- **LastPass** — in the LastPass browser extension, choose **Account > Fix a problem yourself > Export vault items > Export data for use anywhere**, and enter your master password if LastPass asks for it. LastPass's CSV doesn't include attachments.
 - **mSecure 6** (Mac) — choose **File > Export > CSV**, name the file, and click **Export**. On Windows, click the **Settings** (gear) icon, choose **Backups**, then **Export Data to CSV File** (it exports the current view, so open **All Items** first)
 
 {{< callout type="tip" >}}
