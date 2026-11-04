@@ -34,6 +34,7 @@ PanicVault automatically detects CSV exports from:
 - **1Password 8**
 - **LastPass** — see [Importing from LastPass](#importing-from-lastpass)
 - **mSecure 6** — no header row needed (see [Importing from mSecure](#importing-from-msecure))
+- **PanicVault** — its own CSV export (see [Exporting Passwords to CSV](/help/exporting-passwords/))
 
 Any other CSV also works as long as it has a password column. PanicVault matches the remaining columns — title, username, URL, notes, and tags — by their header names, so most generic exports import correctly without any setup. Every other column is kept too: each becomes a custom field named after its header (see [Custom Fields](/help/entries/#custom-fields)), and a row with data only in such columns is still imported.
 
@@ -47,6 +48,7 @@ Besides the title, username, password, website, notes, and one-time password, Pa
 - **1Password 8** — favorites get the tag **Favorite** and archived items the tag **Archived**; 1Password's tags become tags.
 - **LastPass** — folders, favorites, and the fields of secure notes; see [Importing from LastPass](#importing-from-lastpass).
 - **Apple Passwords and Chrome** — their exports hold nothing more, and every column comes across.
+- **PanicVault** — everything its export holds: each entry's group, tags, icon, dates, expiry, and every custom field with its name, its protection, and its place in the list, exactly as the vault had them (see [What the File Contains](/help/exporting-passwords/#what-the-file-contains)).
 
 The dates appear in the entry's details. When a file has no dates, the imported entries are dated the moment you import them.
 
