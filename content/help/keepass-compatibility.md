@@ -2,7 +2,7 @@
 title: "KeePass Compatibility"
 description: "PanicVault uses the open KDBX 4 format — AES-256-CBC and ChaCha20 ciphers, Argon2id, Argon2d and AES-KDF key derivation, and full round-trip data preservation."
 date: 2026-07-14
-lastmod: 2026-11-03
+lastmod: 2026-11-04
 draft: false
 silo: "User Manual"
 helpgroup: "Reference"
@@ -119,3 +119,15 @@ When you open and save a .kdbx file in PanicVault, it preserves:
 - Entry and group metadata (creation time, modification time, expiry, tags, colors, last access time and usage count — and PanicVault keeps the usage counters up to date as you use an entry, the same way KeePassXC does)
 
 For details on the individual formats, see [Two-Factor Authentication (TOTP)](/help/two-factor-authentication/) and [Passkeys (WebAuthn)](/help/passkeys/).
+
+## Characters the KeePass Format Doesn't Allow
+
+A .kdbx file stores your entries as XML, and XML doesn't allow a few invisible control characters. The most common one is the "vertical tab" that some apps use as a line break. Text copied from Word, PowerPoint or FileMaker, or imported from a CSV file, can contain these characters without you seeing them.
+
+- **When PanicVault saves a vault, it removes these characters.** A vertical tab or a form feed becomes a normal line break, and the others are dropped. The rest of your text stays exactly as it was. Passwords and other protected fields are encrypted on their own and are saved exactly as you entered them.
+- **A vault saved by PanicVault 1.1.4 or earlier may contain such a character.** That vault then failed to open, with "Vault file is corrupted.", in PanicVault and in KeePassXC alike. Your entries were still in the file. PanicVault now repairs the vault when you unlock it: it removes the characters, keeps every entry, and saves the repaired vault right away, so it opens again on your other devices and in KeePassXC.
+- **The notice "PanicVault repaired this vault: it removed 2 invalid characters that older versions saved."** tells you that this repair happened, and how many characters it removed. You don't need to do anything. A line break that was saved as a vertical tab now shows as a normal line break. If the repaired vault can't be saved right away, you see the usual "not saved" message, and PanicVault saves it with your next change.
+
+{{< callout type="note" >}}
+If PanicVault says your password is correct but it **can't read this vault's contents**, the file has a problem the repair can't fix, and the message shows where in the file it is. PanicVault leaves the file as it is. Keep the file, don't remove the vault from PanicVault, and contact us.
+{{< /callout >}}
