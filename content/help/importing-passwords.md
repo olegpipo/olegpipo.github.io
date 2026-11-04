@@ -1,6 +1,6 @@
 ---
 title: "Importing Passwords"
-description: "Import a CSV export from Apple Passwords, Chrome, Firefox, Bitwarden, KeePassXC, or 1Password into PanicVault, including TOTP columns."
+description: "Import a CSV export from Apple Passwords, Chrome, Firefox, Bitwarden, KeePassXC, 1Password, or mSecure into PanicVault, including TOTP columns."
 date: 2026-07-14
 lastmod: 2026-11-04
 draft: false
@@ -32,8 +32,24 @@ PanicVault automatically detects CSV exports from:
 - **Bitwarden**
 - **KeePassXC**
 - **1Password 8**
+- **mSecure 6** — no header row needed (see [Importing from mSecure](#importing-from-msecure))
 
-Any other CSV also works as long as it has a password column. PanicVault matches the remaining columns — title, username, URL, and notes — by their header names, so most generic exports import correctly without any setup.
+Any other CSV also works as long as it has a password column. PanicVault matches the remaining columns — title, username, URL, notes, and tags — by their header names, so most generic exports import correctly without any setup. Every other column is kept too: each becomes a custom field named after its header (see [Custom Fields](/help/entries/#custom-fields)), and a row with data only in such columns is still imported.
+
+## Importing from mSecure
+
+PanicVault reads mSecure 6's own CSV export as it is. The file needs no header row: PanicVault recognizes it by its **mSecure6 CSV export file** first line, or by the way mSecure writes each record. If you added a header row yourself, it is recognized and never imported as an entry.
+
+Every field of every record comes across, not only the passwords:
+
+- **Title** — the record's name, without the record number mSecure adds after it.
+- **Username, Password, Website, and One-Time Password** — the record's first field of each kind fills the entry's own field, so AutoFill and two-factor codes work right away.
+- **Every other field** — card numbers, expiration dates, PINs, account and routing numbers, a second password, and so on — becomes a custom field with the same name (see [Custom Fields](/help/entries/#custom-fields)). When two fields share a name, the second one gets a number, such as **PIN (2)**.
+- **Protected fields** — passwords, card numbers, sensitive numbers, one-time password secrets, and fields whose name says they hold a secret (such as PIN, CVV, Security Code, or Passcode) become protected custom fields: hidden until you reveal them, like the password.
+- **Template** — the record's type (Login, Credit Card, Bank Account, Secure Note...) is added as a tag and picks the entry's icon.
+- **Tags and notes** — mSecure's tags become the entry's tags (see [Tags](/help/entries/#tags)), and the note becomes the entry's notes, line breaks included.
+
+Records without a password, such as secure notes, cards, and identities, are imported too.
 
 ## The Import Sheet
 
@@ -62,6 +78,7 @@ Each source app has its own export command. A few common ones:
 - **Bitwarden** — in the web or desktop app, choose **Tools > Export Vault** and pick the **.csv** format
 - **KeePassXC** — choose **Database > Export > Export to CSV...**
 - **1Password 8** — open the account or vault menu and choose **Export**, then select **CSV**
+- **mSecure 6** (Mac) — choose **File > Export > CSV**, name the file, and click **Export**. On Windows, click the **Settings** (gear) icon, choose **Backups**, then **Export Data to CSV File** (it exports the current view, so open **All Items** first)
 
 {{< callout type="tip" >}}
 These menus change between app versions. If you cannot find the export command, search the app's help for "export CSV".
