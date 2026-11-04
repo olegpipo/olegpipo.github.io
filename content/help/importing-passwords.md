@@ -1,6 +1,6 @@
 ---
 title: "Importing Passwords"
-description: "Import a CSV export from Apple Passwords, Chrome, Firefox, Bitwarden, KeePassXC, 1Password, or mSecure into PanicVault, including TOTP columns."
+description: "Import a CSV export from Apple Passwords, Chrome, Firefox, Bitwarden, KeePassXC, 1Password, or mSecure into PanicVault, with TOTP and folders."
 date: 2026-07-14
 lastmod: 2026-11-04
 draft: false
@@ -57,9 +57,25 @@ After you pick a file, the import sheet shows:
 
 - **Detected format** — the app PanicVault recognized (or "Generic CSV")
 - **Entries found** — how many rows were parsed into importable entries
-- **Add to group** — the destination group for the imported entries. This defaults to a group named **General** if your vault has one, otherwise the vault root. You can choose any group you like.
+- **Add to group** — the destination group for the imported entries. When the file's folders are recreated (below), this starts at the vault root, so they appear at the top level as they did in the other app. Otherwise it defaults to a group named **General** if your vault has one, or the vault root. You can choose any group you like.
+- **Recreate folders as groups** — shown when the file puts entries in folders, and on by default. The line under it says how many new groups the import will create and how many groups already in your vault it will use.
 
-Tap **Import** to add the entries. When the import finishes, a summary tells you how many entries were imported and how many empty rows were skipped. If you picked the wrong file, tap **Choose a Different File** before importing.
+Tap **Import** to add the entries. When the import finishes, a summary tells you how many entries were imported, how many empty rows were skipped, and how many groups were created. If you picked the wrong file, tap **Choose a Different File** before importing.
+
+### Recreating Folders as Groups
+
+With **Recreate folders as groups** on, each entry goes into the group of its folder, under the destination group (see [Groups & Folders](/help/groups/)):
+
+- **Nested folders become nested groups.** Bitwarden writes a folder inside a folder as **Parent/Child**. KeePassXC and PanicVault write the whole path from the top, such as **Root/Banking/Cards**; the first name is the other vault's top-level group, so it is left out and **Banking** is created right under the destination. An item of a Bitwarden organization export that is in several collections goes into the first one. A 1Password file with a vault column gets one group per vault. Apple Passwords, Chrome, Firefox, 1Password 8 and mSecure exports have no folders.
+- **Groups you already have are used.** A folder goes into the group of the same name under the destination, whatever its upper and lower case (**banking** finds **Banking**), and only the missing groups are created. Importing the same file again into the same place adds its entries to the groups it created the first time, instead of making a second **Banking**. The import doesn't skip entries you already have, so a second import adds the entries a second time.
+- **Entries in no folder** go into the destination group itself.
+- **The Recycle Bin is never used.** Nothing is created or imported inside it. KeePassXC exports its Recycle Bin like any other folder: those entries arrive in an ordinary group named **Recycle Bin**, where you can look through what you had deleted, then delete the group if you don't need it.
+
+Turn the toggle off to put every entry into the destination group, as earlier versions did.
+
+{{< callout type="tip" >}}
+To rebuild a vault's groups from a CSV, export it from PanicVault (see [Exporting Passwords to CSV](/help/exporting-passwords/)) and import the file with **Add to group** set to **Vault (root)**. Groups without entries aren't in a CSV, so they aren't recreated. A **/** in a group name reads as a folder inside a folder: **TV/Streaming** comes back as **Streaming** inside **TV**, unless the vault already has a group named **TV/Streaming**, which is then used.
+{{< /callout >}}
 
 Some exports contain invisible control characters, such as the vertical tab some apps use as a line break, which a KeePass vault can't store. PanicVault cleans them as it imports (a line break in notes, a space in one-line fields such as the title or password), and the sheet and the summary say how many fields it cleaned; see [Characters the KeePass Format Doesn't Allow](/help/keepass-compatibility/#characters-the-keepass-format-doesnt-allow).
 

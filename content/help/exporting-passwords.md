@@ -2,7 +2,7 @@
 title: "Exporting Passwords to CSV"
 description: "Export the passwords in your open PanicVault vault to a CSV file — how it differs from a .kdbx backup, what the columns hold, and how to handle the file."
 date: 2026-08-26
-lastmod: 2026-08-26
+lastmod: 2026-11-04
 draft: false
 silo: "User Manual"
 helpgroup: "Passwords & Entries"
@@ -26,7 +26,7 @@ Before anything is written, PanicVault shows a warning that tells you how many p
 
 ## What the File Contains
 
-The CSV has one row per entry, with these columns: **Group**, **Title**, **Username**, **Password**, **URL**, **Notes**, and **TOTP**. The Group column holds the full folder path (for example, **Root/Banking**) so your organization is preserved. If an entry has a one-time-password (TOTP) secret, it is written to the TOTP column — see [Two-Factor Authentication (TOTP)](/help/two-factor-authentication/).
+The CSV has one row per entry, with these columns: **Group**, **Title**, **Username**, **Password**, **URL**, **Notes**, and **TOTP**. The Group column holds the full folder path (for example, **Root/Banking**) so your organization is preserved; importing the file into PanicVault rebuilds the groups (see [The Import Sheet](/help/importing-passwords/#the-import-sheet)). If an entry has a one-time-password (TOTP) secret, it is written to the TOTP column — see [Two-Factor Authentication (TOTP)](/help/two-factor-authentication/).
 
 Entries in the **Recycle Bin** are never exported. Attachments and custom fields are not included.
 
