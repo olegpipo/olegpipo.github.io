@@ -2,14 +2,14 @@
 title: "How to Migrate from LastPass to KeePass: Step-by-Step Guide"
 description: "Export your LastPass vault to CSV, import it into KeePassXC, KeePass 2.x or PanicVault on iPhone and Mac, verify every entry, and decide which passwords to change after the 2022 breach."
 date: 2026-02-13
-lastmod: 2026-10-21
+lastmod: 2026-11-04
 draft: false
 silo: "KeePass & Open Standards"
 faq:
   - q: "How do I export my passwords from LastPass?"
     a: "In the LastPass web vault, choose Advanced Options in the left sidebar, then Export under Manage your Vault, and confirm the email LastPass sends you. In the browser extension, go to Account > Fix a problem yourself > Export vault items > Export data for use anywhere. Either way you get a plaintext CSV file."
   - q: "Can KeePass import a LastPass CSV file?"
-    a: "Yes. KeePass 2.x has a LastPass format under File > Import. KeePassXC imports it through its CSV import wizard, where you match LastPass's columns to KeePass fields. PanicVault on iPhone, iPad and Mac imports it as a generic CSV with File > Import Passwords from CSV."
+    a: "Yes. KeePass 2.x has a LastPass format under File > Import. KeePassXC imports it through its CSV import wizard, where you match LastPass's columns to KeePass fields. PanicVault on iPhone, iPad and Mac recognises LastPass's CSV and imports it, folders and secure notes included, with File > Import Passwords from CSV."
   - q: "Do my LastPass TOTP codes transfer to KeePass?"
     a: "Usually not. LastPass's help says exporting TOTP codes for password items is unsupported, so the totp column in the CSV is normally empty, and codes in LastPass Authenticator are a separate app. Plan to set up two-factor codes again in your KeePass app, which is a good idea anyway if your vault existed during the 2022 breach."
   - q: "Is KeePass free?"
@@ -105,12 +105,12 @@ On iPhone, iPad or Mac you can import the LastPass CSV straight into [PanicVault
 
 1. Create a vault in PanicVault, or open and unlock the one you want to import into.
 2. On a Mac, choose **File > Import Passwords from CSV...** (Cmd+Shift+I). On iPhone or iPad, tap the **...** menu in the entry list toolbar and choose **Import Passwords from CSV**.
-3. Pick the LastPass file. LastPass is not one of the formats PanicVault recognises by name, so the import sheet shows **Generic CSV**; PanicVault uses the password column and matches title, username, URL and notes columns by their header names.
-4. Choose the group to import into and tap **Import**.
+3. Pick the LastPass file. The import sheet shows **LastPass** as the detected format: names, URLs, usernames, passwords and notes (the `extra` column) go into the entry's own fields, and a secure note made from a template, such as a credit card, is split into custom fields.
+4. Choose the group to import into, leave **Recreate folders as groups** on, and tap **Import**.
 
-All entries go into the one group you choose, so LastPass folders are not recreated. Check a few entries afterwards: LastPass calls its title column `name` and its notes column `extra`, and if those did not come through, the next route is the simpler fix. The [PanicVault import guide](/help/importing-passwords/) has the details.
+Your LastPass folders, nested and shared ones included, become groups, and favourites get the tag **Favorite**. Check a few entries afterwards. The [PanicVault import guide](/help/importing-passwords/#importing-from-lastpass) has the details.
 
-If you want your LastPass folders as groups, import the CSV into KeePassXC first (above), save the database as KDBX 4, and open that `.kdbx` file in PanicVault on your Mac, iPhone or iPad. Keep it in iCloud Drive or Google Drive to sync it across your devices. For other options, see our list of [KeePass apps for every platform](/keepass/compatible-apps/).
+You can also import the CSV into KeePassXC first (above), save the database as KDBX 4, and open that `.kdbx` file in PanicVault on your Mac, iPhone or iPad. Keep it in iCloud Drive or Google Drive to sync it across your devices. For other options, see our list of [KeePass apps for every platform](/keepass/compatible-apps/).
 
 ## Step 3: Verify the Import
 
@@ -175,8 +175,8 @@ Your browser may also have saved passwords while you used LastPass. Consider [im
 |---|:-:|---|
 | Logins (URL, username, password, name) | Yes | Map the columns as shown above |
 | Notes | Yes | From the `extra` column |
-| Folders | Yes, as groups | Via `grouping` in KeePassXC or KeePass 2.x; PanicVault imports into one group |
-| Secure notes | Partly | Arrive as plain notes |
+| Folders | Yes, as groups | Via `grouping` in KeePassXC or KeePass 2.x; PanicVault recreates them as groups |
+| Secure notes | Partly | Arrive as plain notes; PanicVault splits a template note's fields into custom fields |
 | Form fills (addresses, cards) | Partly | Flattened into notes; recreate as entries if needed |
 | TOTP codes | No | Set up two-factor again in your new app |
 | File attachments | No | Download from LastPass first |
