@@ -2,7 +2,7 @@
 title: "Importing Passwords"
 description: "Import a CSV export from Apple Passwords, Chrome, Firefox, Bitwarden, KeePassXC, or 1Password into PanicVault, including TOTP columns."
 date: 2026-07-14
-lastmod: 2026-08-26
+lastmod: 2026-11-04
 draft: false
 silo: "User Manual"
 helpgroup: "Passwords & Entries"
@@ -44,6 +44,8 @@ After you pick a file, the import sheet shows:
 - **Add to group** — the destination group for the imported entries. This defaults to a group named **General** if your vault has one, otherwise the vault root. You can choose any group you like.
 
 Tap **Import** to add the entries. When the import finishes, a summary tells you how many entries were imported and how many empty rows were skipped. If you picked the wrong file, tap **Choose a Different File** before importing.
+
+Some exports contain invisible control characters, such as the vertical tab some apps use as a line break, which a KeePass vault can't store. PanicVault cleans them as it imports (a line break in notes, a space in one-line fields such as the title or password), and the sheet and the summary say how many fields it cleaned; see [Characters the KeePass Format Doesn't Allow](/help/keepass-compatibility/#characters-the-keepass-format-doesnt-allow).
 
 ## Two-Factor (TOTP) Columns
 
