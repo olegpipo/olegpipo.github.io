@@ -18,17 +18,20 @@ AutoFill of passwords and passkeys works on iOS and iPadOS 17.6 or later and on 
 ## Setting Up AutoFill on iOS
 
 1. Go to **Settings** in PanicVault
-2. Tap **Setup AutoFill...** -- this takes you to your device's Settings
-3. Go to **General** > **AutoFill & Passwords** (on iOS 17 and earlier: **Passwords** > **Password Options**)
-4. Turn on **AutoFill Passwords and Passkeys** and select **PanicVault**
+2. Tap **Enable AutoFill...** in the AutoFill section -- this opens the AutoFill settings in your device's Settings app
+3. Turn on AutoFill and select **PanicVault** as a provider
+
+You can also get there from the Settings app: **General** > **AutoFill & Passwords** on iOS and iPadOS 18 and later, or **Passwords** > **Password Options** on iOS and iPadOS 17.
 
 Once enabled, when a login field appears in Safari or any app, PanicVault suggests matching logins right above the keyboard -- tap one to fill it.
 
 ## Setting Up AutoFill on Mac
 
 1. Go to **Settings** in PanicVault
-2. Click **Open Password Settings...** -- this takes you to System Settings
-3. In the Passwords settings, enable PanicVault as an AutoFill provider
+2. Click **Enable AutoFill...** in the AutoFill section -- this opens the AutoFill settings in System Settings
+3. Turn on AutoFill and select **PanicVault** as a provider
+
+You can also get there from System Settings: **General** > **AutoFill & Passwords** on macOS 15 and later, or **Passwords** > **Password Options** on macOS 14.
 
 ## How AutoFill Works
 
@@ -38,7 +41,7 @@ See [Entries (Passwords)](/help/entries/) for where the URL and Override URL fie
 
 ## Multi-Vault AutoFill
 
-If you have multiple vaults, credentials from all unlocked vaults are available in AutoFill. When you unlock a vault during a session, its credentials are added to the pool of available suggestions. This means you can keep separate vaults for personal and work accounts and still see all your credentials in QuickType suggestions and the AutoFill credential picker, as long as each vault has been unlocked at least once during the current session.
+If you have multiple vaults, credentials from every vault you have unlocked are available in AutoFill. When you unlock a vault, its credentials are added to the pool of available suggestions. This means you can keep separate vaults for personal and work accounts and still see all your credentials in QuickType suggestions and the AutoFill credential picker, as long as each vault has been unlocked in PanicVault at least once.
 
 ## Troubleshooting AutoFill on Mac
 
