@@ -2,7 +2,7 @@
 title: "AutoFill"
 description: "Enable PanicVault as a system AutoFill provider on iOS and Mac to fill usernames and passwords in Safari and apps, across multiple vaults."
 date: 2026-07-14
-lastmod: 2026-09-19
+lastmod: 2026-11-11
 draft: false
 silo: "User Manual"
 helpgroup: "Filling Passwords"
@@ -10,6 +10,10 @@ weight: 130
 ---
 
 PanicVault supports the system AutoFill feature to fill usernames and passwords in apps and websites. This page walks through enabling PanicVault as an AutoFill provider on iOS and Mac, and explains how credentials are matched and how multiple vaults behave.
+
+{{< callout type="note" >}}
+AutoFill of passwords and passkeys works on iOS and iPadOS 17.6 or later and on macOS 14.6 or later. Filling verification codes from AutoFill requires iOS or iPadOS 18, or macOS 15, or later.
+{{< /callout >}}
 
 ## Setting Up AutoFill on iOS
 
