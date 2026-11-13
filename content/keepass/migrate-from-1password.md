@@ -58,7 +58,7 @@ Not all of these item types will export cleanly or import directly into KeePass.
 
 **1PUX (1Password Unencrypted Export)**: This is 1Password's native export format. It preserves the most data, including attachments, tags, and item metadata. However, it is specific to 1Password and not directly importable by most KeePass applications. Some import tools and converters support it, but availability varies.
 
-**CSV (Comma-Separated Values)**: This is the universal format. It works with virtually every password manager's import function. The tradeoff is that CSV exports are flat -- they lose the hierarchical structure of vaults, and they do not include attachments or binary data. 1Password 8's CSV export does keep each item's tags, in a Tags column (see Step 4). Complex item types like credit cards and identities may be flattened into text fields.
+**CSV (Comma-Separated Values)**: This is the universal format. It works with virtually every password manager's import function. The tradeoff is that CSV exports are flat -- they lose the hierarchical structure of vaults, and they do not include attachments or binary data. 1Password 8's CSV export does keep each item's tags, in a Tags column (see Step 4). Its columns are a login's, though -- Title, Url, Username, Password, OTPAuth, Favorite, Archived, Tags, and Notes -- with no place for a card number or an address, so complex item types like credit cards and identities may not be in the CSV at all. Check your export for them.
 
 For most migrations, the CSV export is the practical choice. If you have significant attachments or complex items, you may want to export in both formats: CSV for the bulk import and 1PUX as a reference for items that need manual attention.
 
@@ -174,13 +174,13 @@ This is a manual process and can be time-consuming if you have many attachments.
 
 ### Secure Notes
 
-Secure notes from 1Password should export as entries in the CSV file, typically with the note content in the notes field and no URL or password. Verify that these imported correctly by spot-checking a few. Long notes or notes with special formatting may be truncated or altered during the CSV export.
+1Password 8's CSV columns are a login's, so check whether your export has your secure notes at all. If they are there, verify that they imported correctly by spot-checking a few. Long notes or notes with special formatting may be truncated or altered during the CSV export. If they are not, copy each note from 1Password (or your 1PUX export) into the Notes field of a KeePass entry.
 
 ### Credit Cards and Identities
 
-These structured item types are flattened during CSV export. The fields (card number, expiration date, CVV for credit cards; name, address, phone for identities) will typically appear in the notes field as plain text. In KeePass, you can:
+1Password 8's CSV has no columns for these structured item types: nowhere for a card number, expiration date, or CVV, or for an identity's name, address, and phone. Don't count on them being in the CSV. Check your export, and if they are missing, take the details from 1Password itself, or from your 1PUX export with a tool that reads it (see [Importing 1PUX Format](#importing-1pux-format)). In KeePass, you can:
 
-- Leave them as notes within an entry, which works fine for reference purposes.
+- Keep the details as notes within an entry, which works fine for reference purposes.
 - Recreate them using custom string fields in the entry editor, which provides more structured storage.
 
 ## Step 6: Verify the Migration
@@ -189,7 +189,7 @@ Thorough verification prevents unpleasant surprises weeks later when you try to 
 
 ### Count and Compare
 
-Compare the total number of items in your 1Password vaults against the number of entries in your KeePass database. Account for the fact that some item types (like identities and credit cards) may have been combined or reformatted during import.
+Compare the total number of items in your 1Password vaults against the number of entries in your KeePass database. Account for the fact that some item types (like identities and credit cards) may be missing from a CSV export, or reformatted during import.
 
 ### Test Critical Accounts
 
@@ -213,7 +213,7 @@ If your count comparison revealed discrepancies, identify which entries are miss
 
 - Items in vaults you did not export
 - Entries with special characters that broke CSV parsing
-- Item types that the importer did not recognize
+- Item types that were not in the CSV export, or that the importer did not recognize
 - Entries in the 1Password Trash that were excluded from the export
 
 ## Step 7: Set Up Sync

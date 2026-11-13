@@ -2,7 +2,7 @@
 title: "How to Switch From 1Password: Migration Guide"
 description: "Step-by-step guide to switching from 1Password to PanicVault or another password manager. Export vaults, preserve tags, and migrate TOTP secrets."
 date: 2026-02-14
-lastmod: 2026-09-19
+lastmod: 2026-11-13
 draft: false
 silo: "Guides & Tutorials"
 ---
@@ -42,7 +42,7 @@ None of these are criticisms of 1Password's security or quality -- it is an exce
 
 - **TOTP secrets**: May or may not export depending on the method. Plan to re-enroll if they do not
 - **Document attachments**: Files attached to 1Password entries do not export via CSV. Save them separately
-- **Credit cards and identities**: May export as secure notes rather than structured entries
+- **Credit cards and identities**: May be missing from a CSV export, or arrive as notes rather than structured entries. Check your export for them
 - **Shared vaults**: Only your own vaults export. Items shared by others need to be re-shared through your new manager
 - **Password history**: Only the current password exports
 
@@ -59,7 +59,7 @@ None of these are criticisms of 1Password's security or quality -- it is an exce
 5. Choose **1Password Unencrypted Export (.1pux)** format
 6. Save the file
 
-The 1PUX format is the most complete export option, including TOTP secrets, custom fields, and structured data. However, not all target managers can read it directly -- you may need to use a conversion tool.
+The 1PUX format is the most complete export option, including TOTP secrets, custom fields, and structured data. However, not all target managers can read it directly -- PanicVault, for one, imports CSV files, not 1PUX -- so you may need to use a conversion tool.
 
 ### Method B: CSV Export (Most Compatible)
 
@@ -72,7 +72,9 @@ CSV is universally importable but loses some structure:
 5. Choose **CSV** format
 6. Save the file
 
-**What CSV loses**: TOTP secrets, document attachments, custom field structure, and item types (everything becomes a generic login). Credit cards and identities export as text.
+**What CSV keeps**: 1Password 8's CSV has the columns Title, Url, Username, Password, OTPAuth, Favorite, Archived, Tags, and Notes. The OTPAuth column holds a login's one-time password (TOTP), so your 2FA secrets can come along, and so can your tags.
+
+**What CSV loses**: Document attachments, custom fields, and item types. The columns are a login's, with no place for a card number or an address, so credit cards, identities, and other items that are not logins may not be in the CSV at all. Check your file for them, and keep 1Password (or a 1PUX export) as the reference for anything it left out.
 
 ### Method C: Individual Item Copy (For Small Vaults)
 
@@ -97,21 +99,18 @@ If you have Personal, Shared, and Archive vaults:
 
 ### Importing Into PanicVault
 
-1. Open PanicVault on your Mac
-2. Open your KDBX database (or create one)
-3. Go to **File > Import**
-4. Select the appropriate format:
-   - If you exported as 1PUX: Choose 1Password format if available, or convert to CSV first
-   - If you exported as CSV: Choose **1Password CSV** or **Generic CSV**
-5. Select your exported file
-6. Review the field mapping:
-   - Title → Title
-   - URL → URL
-   - Username → Username
-   - Password → Password
-   - Notes → Notes
-   - Tags → Tags (if supported)
-7. Confirm the import
+PanicVault imports CSV files. If you exported as 1PUX, export again as CSV (Method B).
+
+1. Open PanicVault on your Mac, iPhone, or iPad
+2. Unlock the vault you want to import into (or create one). The import command stays greyed out until a vault is unlocked
+3. Start the import:
+   - **Mac**: Choose **File > Import Passwords from CSV...**, or press **Cmd+Shift+I**
+   - **iPhone and iPad**: Tap the **...** menu in the entry list toolbar and choose **Import Passwords from CSV**
+4. Choose your exported CSV file. There is no format to pick: PanicVault recognizes 1Password 8's CSV by its columns, and the import sheet shows **1Password** as the **Detected format**. A CSV it doesn't recognize shows **Generic CSV**, and its columns are matched by their names
+5. Check **Entries found**, and under **Add to group** choose the group the entries go into. To keep several 1Password vaults apart, import each vault's file into its own group
+6. Click or tap **Import**. A summary tells you how many entries were imported
+
+There is no field mapping to review. Each login's title, website, username, password, notes, and one-time password (the OTPAuth column) fill the entry's own fields, 1Password's tags become tags, favorites get the tag **Favorite**, and archived items the tag **Archived**. The [PanicVault import guide](/help/importing-passwords/#what-each-format-brings) has the details.
 
 ### Importing Into KeePassXC
 
@@ -124,6 +123,7 @@ If you have Personal, Shared, and Archive vaults:
    - Map `Password` to `Password`
    - Map `URL` to `URL`
    - Map `Notes` to `Notes`
+   - Map `Tags` to `Tags` (KeePassXC 2.7 and later)
 5. Click OK to complete
 
 For additional detail, see our [1Password to KeePass migration guide](/keepass/migrate-from-1password/).
@@ -140,25 +140,25 @@ For additional detail, see our [1Password to KeePass migration guide](/keepass/m
 
 This is the step most migration guides gloss over, and it is the one that causes the most problems.
 
-### If Your TOTP Secrets Exported (1PUX Format)
+### If Your TOTP Secrets Came Across
 
-Check your imported entries for TOTP fields. If the secrets transferred:
+Check your imported entries for TOTP fields. When you import 1Password 8's CSV into PanicVault, the OTPAuth column becomes the entry's one-time password, and the entry's details show the current code with a countdown ([importing TOTP columns](/help/importing-passwords/#two-factor-totp-columns)). If the secrets transferred:
 
 1. Open an entry in your new password manager that had TOTP in 1Password
 2. Look for a TOTP or OTP field with a secret key (usually a long string starting with `otpauth://` or a base32-encoded key)
 3. If present, your manager should now generate the same 6-digit codes that 1Password did
 4. **Verify**: Log into the site, go through the 2FA prompt, and confirm your new manager generates the correct code
 
-### If Your TOTP Secrets Did Not Export (CSV Format)
+### If Your TOTP Secrets Did Not Come Across
 
-You need to re-enroll 2FA for each affected account:
+If an entry that had TOTP in 1Password shows no code after the import -- because your export left the secret out, or your new manager did not import it -- you need to re-enroll 2FA for each affected account:
 
 1. Make a list of every account where you used 1Password as your TOTP authenticator
 2. For each account:
    a. Log in using your migrated credentials
    b. Go to the account's security settings
    c. Disable the existing 2FA
-   d. Re-enable 2FA, this time scanning the QR code with your new password manager (PanicVault supports TOTP natively)
+   d. Re-enable 2FA, this time scanning the QR code with your new password manager (PanicVault supports TOTP natively: it scans the QR code on iPhone and iPad, and on a Mac you enter the secret key the site shows for manual setup)
    e. Save the backup/recovery codes in the entry's notes field
 3. Do not delete 1Password until you have re-enrolled all 2FA accounts
 
@@ -168,9 +168,9 @@ See our [2FA setup guide](/guides/setup-2fa/) for detailed instructions on confi
 
 ### Credit Cards
 
-1Password stores credit cards as a structured item type. In CSV exports, they become text entries. In your new manager:
+1Password stores credit cards as a structured item type. A CSV export may not include them at all -- 1Password 8's CSV has columns for logins only -- so check whether yours did. In your new manager:
 
-1. Find the imported credit card entries
+1. Find the imported credit card entries, or open your cards in 1Password if the CSV left them out
 2. If your manager supports a credit card entry type, recreate them in the proper format
 3. If not, store them as secure notes with structured information
 4. See our guide on [storing credit cards and IDs](/guides/store-notes-cards/)
@@ -181,7 +181,7 @@ Similar to credit cards, identity documents (passports, driver's licenses) may n
 
 ### Software Licenses
 
-These typically export as secure notes. Verify the license keys are intact and add any missing metadata (purchase date, vendor, expiration).
+These may export as secure notes, or not be in a CSV export at all. Verify the license keys are intact (copy any missing ones from 1Password) and add any missing metadata (purchase date, vendor, expiration).
 
 ### Document Attachments
 
@@ -196,7 +196,7 @@ These typically export as secure notes. Verify the license keys are intact and a
 
 ### The Verification Checklist
 
-1. **Entry count**: Compare the number of entries in 1Password vs. your new vault. Account for the difference (shared items that do not export, entry types that merged, etc.)
+1. **Entry count**: Compare the number of entries in 1Password vs. your new vault. Account for the difference (shared items that do not export, item types a CSV export leaves out, entry types that merged, etc.)
 2. **Critical accounts**: Log into your 5 most important accounts using only your new password manager
 3. **TOTP verification**: Generate a 2FA code from your new manager and confirm it works on at least 3 accounts
 4. **Secure notes**: Open your most important secure notes and verify the content is complete
@@ -209,7 +209,7 @@ These typically export as secure notes. Verify the license keys are intact and a
 
 **Broken URLs**: 1Password's URL format may differ from your new manager's expectations. Check entries where AutoFill does not trigger and fix the URLs.
 
-**Tags not importing**: If tags did not transfer, re-create the most important ones. This is a good opportunity to simplify your tagging system.
+**Tags not importing**: Tags come across when your export has a Tags column and your new manager imports it. PanicVault turns the tags in 1Password 8's CSV into tags, and gives favorites the tag **Favorite** and archived items the tag **Archived**. If your export has no Tags column, or your manager has no field to put it in, re-create the most important tags by hand. This is a good opportunity to simplify your tagging system.
 
 **Garbled characters in notes**: Special characters or formatting in secure notes may not survive the CSV export. Check important notes and fix any encoding issues.
 
