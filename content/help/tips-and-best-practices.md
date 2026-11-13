@@ -2,7 +2,7 @@
 title: "Tips & Best Practices"
 description: "Practical advice for using PanicVault: protect your master password, keep backups, use TOTP, organize with groups and tags, and tune your lock timeout."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-11-13
 draft: false
 silo: "User Manual"
 helpgroup: "Reference"
@@ -41,7 +41,7 @@ See [Two-Factor Authentication (TOTP)](/help/two-factor-authentication/) for set
 
 - Create groups for different categories (Personal, Work, Finance, Social Media)
 - Use nested subgroups for finer organization
-- Add tags for cross-cutting categories (for example, "important", "shared", "expiring")
+- Add tags for cross-cutting categories (for example, "important", "shared", "expiring"), then pick a tag in the sidebar (Mac) or the tag chips (iOS) to see all of its entries at once
 - Use the search feature to quickly find entries when your vault grows large
 
 See [Groups & Folders](/help/groups/) and [Entries (Passwords)](/help/entries/).

@@ -2,7 +2,7 @@
 title: "Managing Your Vault"
 description: "Unlock and lock your PanicVault vault, navigate the entry list, search, understand auto-lock behavior, and delete a vault safely."
 date: 2026-07-14
-lastmod: 2026-11-03
+lastmod: 2026-11-13
 draft: false
 silo: "User Manual"
 helpgroup: "Getting Started"
@@ -50,8 +50,8 @@ PanicVault finishes saving before it locks or quits. If your latest changes coul
 
 Once your vault is unlocked, you see the entry list. This is your main workspace:
 
-- **iOS**: A single list with group filter chips at the top. Tap "All" to see every entry, or tap a group name to filter.
-- **Mac**: A three-column layout — groups on the left, entries in the middle, and entry details on the right.
+- **iOS**: A single list with group filter chips at the top. Tap "All" to see every entry, or tap a group name to filter. When your entries have tags, a second row of chips under the groups lists them: tap a tag to see every entry with it (see [Tags](/help/entries/#tags)).
+- **Mac**: A three-column layout — groups and tags on the left, entries in the middle, and entry details on the right.
 
 Each entry row shows the title, username, and an icon. You can quickly copy a password by:
 
@@ -60,7 +60,9 @@ Each entry row shows the title, username, and an icon. You can quickly copy a pa
 
 ## Searching for Entries
 
-Use the search bar to find entries across your entire vault. The search checks titles, usernames, URLs, and notes. On Mac, use **Cmd+F** to jump to the search field.
+Use the search bar to find entries across your entire vault. The search checks titles, usernames, URLs, notes, and tags. It ignores upper and lower case, and part of a word is enough: typing "fin" finds an entry tagged "finance" (see [Tags](/help/entries/#tags)). On Mac, use **Cmd+F** to jump to the search field.
+
+The search looks through your whole vault even when a group is selected. When a tag is selected, it looks only through the entries with that tag, so you can narrow them down (see [Browsing entries by tag](/help/entries/#browsing-entries-by-tag)).
 
 ## Auto-Lock Behavior
 

@@ -2,7 +2,7 @@
 title: "Entries (Passwords)"
 description: "Create, edit, and delete PanicVault entries, and use custom fields, tags, expiry dates, history, attachments, icons, and colors."
 date: 2026-07-14
-lastmod: 2026-08-27
+lastmod: 2026-11-13
 draft: false
 silo: "User Manual"
 helpgroup: "Passwords & Entries"
@@ -22,6 +22,8 @@ Entries are the individual items in your vault — each one stores a username, p
    - **Notes** — any additional information
 3. Optionally choose a group to organize the entry
 4. Tap **Save**
+
+If a tag is selected in the entry list when you start, the new entry already has that tag (see [Tags](#tags)).
 
 ## Viewing Entry Details
 
@@ -92,7 +94,36 @@ Tags help you categorize entries across groups. To add tags:
 2. Find the Tags field
 3. Enter your tags separated by semicolons (for example: "work; finance; important")
 
-Tags appear as colored badges on the entry detail view.
+Tags appear as colored badges on the entry detail view. Upper and lower case don't make a different tag: "Work" and "work" are the same tag, and a tag entered twice on one entry is shown once.
+
+### Reusing a tag
+
+To reuse a tag you already have, pick it instead of typing it again. Under the Tags field, PanicVault suggests the tags your other entries carry, the most used first:
+
+- Tap or click a suggestion to add it. PanicVault adds the semicolon for you, so you can pick another one or type the next tag straight away.
+- As you type, the suggestions narrow to the tags that contain what you've typed after the last semicolon, and picking one completes it with the tag's existing spelling.
+- Tags already on the entry aren't suggested.
+- When there are more tags than fit, "+N more" ends the list — type a few letters to find the one you want.
+
+A tag that doesn't exist yet is simply typed: it's created when you save the entry.
+
+### Browsing entries by tag
+
+To see every entry with a tag, pick the tag:
+
+- **Mac**: Your vault's tags are listed in the **TAGS** section at the bottom of the sidebar, each with the number of entries that have it. Click a tag to list those entries. A bar above the list shows the selected tag: click the **x** at its end, or click **All Items**, to see every entry again.
+- **iOS**: Your tags appear as a row of chips under the group chips, each with its number of entries. Tap a tag to list those entries: its chip is highlighted with an **x**, and the list's heading shows **TAG:** and the tag's name. Tap the tag again, or tap **All** or a group, to see every entry again.
+- **From an entry**: Tap or click a tag badge on the entry detail view to list every entry with that tag. On iPhone and iPad you go back to the entry list, showing that tag's entries; on Mac the entry stays selected.
+
+A tag lists its entries from every group and subgroup, sorted by title like the rest of the list. Entries in the Recycle Bin are left out, and the tags of an entry in the Recycle Bin can't be tapped. The Tags section and the tag chips appear only once at least one entry outside the Recycle Bin has a tag.
+
+While a tag is selected, the search bar looks only through that tag's entries, so you can type to narrow them down. Tapping or clicking a tag on an entry clears the search, so you see all of the tag's entries.
+
+If you create an entry while a tag is selected, the new entry starts with that tag, so it shows up in the list you are looking at — remove the tag from the Tags field if you don't want it. The entry goes to the same group as it would with **All** (or **All Items**) selected, unless you choose another one.
+
+When no entry has the selected tag any more — you removed the tag from its last entry, deleted that entry, or a sync from another device changed it — the tag leaves the list of tags, and PanicVault shows all your entries again. Locking the vault clears the selected tag too.
+
+You can also type a tag in the search bar: search matches tags as well as titles, usernames, URLs, and notes, and part of a tag is enough (see [Searching for Entries](/help/managing-your-vault/#searching-for-entries)).
 
 ## Entry Expiration
 

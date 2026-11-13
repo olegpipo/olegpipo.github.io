@@ -2,7 +2,7 @@
 title: "AutoFill"
 description: "Enable PanicVault as a system AutoFill provider on iOS and Mac to fill usernames and passwords in Safari and apps, across multiple vaults."
 date: 2026-07-14
-lastmod: 2026-11-11
+lastmod: 2026-11-13
 draft: false
 silo: "User Manual"
 helpgroup: "Filling Passwords"
@@ -38,6 +38,8 @@ You can also get there from System Settings: **General** > **AutoFill & Password
 When a login field appears in Safari or another app, your device looks for matching credentials based on the website or app domain. PanicVault matches credentials using the URL field of your entries. If an entry has an **Override URL** set, that URL is also used for matching, so you can handle sites with different login domains.
 
 See [Entries (Passwords)](/help/entries/) for where the URL and Override URL fields live.
+
+To pick a credential yourself, use the search field at the top of PanicVault's AutoFill list: it finds credentials by title, username, website, or tag.
 
 ## Multi-Vault AutoFill
 
