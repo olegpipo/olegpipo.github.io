@@ -2,7 +2,7 @@
 title: "Migrate from Enpass to KeePass"
 description: "Step-by-step guide to migrating from Enpass to KeePass. Export directly to KDBX, or use CSV/JSON, and verify all credentials transferred correctly."
 date: 2026-03-08
-lastmod: 2026-10-21
+lastmod: 2026-11-13
 draft: false
 silo: "KeePass & Open Standards"
 faq:
@@ -99,7 +99,7 @@ The Enpass KDBX export typically preserves:
 ### What May Not Transfer Completely
 
 - **File attachments**: Depending on the Enpass version and export settings, file attachments may not be included in the KDBX export. Verify after export.
-- **Tags**: Enpass uses tags for organization. KeePass does not have a native tagging system (though KeePassXC supports tags). Tag assignments may not survive the KDBX export.
+- **Tags**: Enpass uses tags for organization. KeePass has tags too: the KDBX format stores them natively on each entry, and KeePass 2.x, KeePassXC (2.7 and later) and PanicVault all show them. Whether Enpass writes your tag assignments into the export is another matter, so open a few tagged entries to check.
 - **TOTP secrets**: Check whether TOTP configurations transfer. If not, you will need to re-enroll two-factor authentication.
 - **Password history**: Enpass tracks password changes. This history may not transfer to the KDBX file.
 
@@ -213,7 +213,7 @@ Install the KeePassXC Browser extension for desktop autofill. On mobile devices,
 | Notes | Yes | Yes | Text content transfers |
 | Custom fields | Yes | Partial | KDBX preserves field structure |
 | TOTP secrets | Varies | Varies | Verify after export |
-| Tags | No | No | KeePass has limited tag support |
+| Tags | Varies | Varies | KDBX stores tags natively; check tagged entries after export |
 | File attachments | Varies | No | Check KDBX export; may need manual transfer |
 | Password history | No | No | Only current credentials export |
 | Credit cards | Yes | Partial | KDBX preserves structured data |

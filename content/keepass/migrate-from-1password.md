@@ -2,7 +2,7 @@
 title: "How to Migrate from 1Password to KeePass: Complete Guide"
 description: "Step-by-step guide to migrating from 1Password to KeePass. Export your vaults, import passwords, handle tags and attachments, and set up sync."
 date: 2026-02-13
-lastmod: 2026-10-21
+lastmod: 2026-11-13
 draft: false
 silo: "KeePass & Open Standards"
 ---
@@ -58,7 +58,7 @@ Not all of these item types will export cleanly or import directly into KeePass.
 
 **1PUX (1Password Unencrypted Export)**: This is 1Password's native export format. It preserves the most data, including attachments, tags, and item metadata. However, it is specific to 1Password and not directly importable by most KeePass applications. Some import tools and converters support it, but availability varies.
 
-**CSV (Comma-Separated Values)**: This is the universal format. It works with virtually every password manager's import function. The tradeoff is that CSV exports are flat -- they lose the hierarchical structure of vaults and tags, and they do not include attachments or binary data. Complex item types like credit cards and identities may be flattened into text fields.
+**CSV (Comma-Separated Values)**: This is the universal format. It works with virtually every password manager's import function. The tradeoff is that CSV exports are flat -- they lose the hierarchical structure of vaults, and they do not include attachments or binary data. 1Password 8's CSV export does keep each item's tags, in a Tags column (see Step 4). Complex item types like credit cards and identities may be flattened into text fields.
 
 For most migrations, the CSV export is the practical choice. If you have significant attachments or complex items, you may want to export in both formats: CSV for the bulk import and 1PUX as a reference for items that need manual attention.
 
@@ -103,6 +103,7 @@ Just as with any password manager export, the resulting file contains your crede
    - "Username" maps to **User Name**
    - "Password" maps to **Password**
    - "Notes" maps to **Notes**
+   - "Tags" maps to **Tags** (KeePassXC 2.7 and later)
    - "Type" or "Vault" can be used for group assignment or ignored
 5. Enable the option to treat the first row as field names.
 6. Review the preview to confirm the mapping looks correct.
@@ -128,7 +129,7 @@ For most users, the CSV path is simpler and sufficient.
 
 ## Step 4: Handle Vaults and Tags
 
-1Password's organizational structure uses vaults (top-level containers) and tags (labels that can span vaults). KeePass uses groups (hierarchical folders) and does not have a native tagging system, though KeePassXC supports a tag-like feature through entry attributes.
+1Password's organizational structure uses vaults (top-level containers) and tags (labels that can span vaults). KeePass uses groups (hierarchical folders) and tags: the KDBX format stores tags natively on each entry, so an entry sits in one group and can carry any number of tags. KeePass 2.x and KeePassXC (2.7 and later) let you tag entries, and PanicVault shows an entry's tags, searches them, suggests the tags you already use, and lists every entry with a given tag.
 
 ### Recreating Vault Structure
 
@@ -142,12 +143,18 @@ Within each group, create subgroups for categories as needed. KeePass supports u
 
 ### Handling Tags
 
-Tags from 1Password do not transfer through CSV export. If you relied heavily on tags for organization, you have two options:
+1Password 8's CSV export has a Tags column. Whether your tags come across depends on the app you import it into:
+
+- **PanicVault** recognizes 1Password 8's CSV when you import it on a Mac (**File > Import Passwords from CSV...**) or on iPhone and iPad (the **...** menu in the entry list toolbar, then **Import Passwords from CSV**). 1Password's tags become tags, favorites get the tag **Favorite**, and archived items the tag **Archived**. The [PanicVault import guide](/help/importing-passwords/#what-each-format-brings) has the details.
+- **KeePassXC** 2.7 and later has a Tags field in its CSV import: map the "Tags" column to it (Step 3).
+- If your export has no Tags column, or your importer has no Tags field to map it to, the tags are left behind.
+
+Check a few tagged entries after the import. If your tags did not come across, you have two options:
 
 1. **Recreate tags as groups.** If a tag represented a category (like "Finance" or "Social Media"), create a corresponding group in KeePass and move entries into it.
-2. **Use custom attributes.** In KeePassXC, you can add custom string fields to entries. Create a field called "Tags" and enter the relevant tag names. This preserves the metadata even though it does not function as a searchable tag system.
+2. **Add the tags back.** Every KDBX entry has a Tags field. Open the entry in your KeePass app and enter the tag names there. They are stored in the database file as real tags, not as a custom field, so other KeePass apps that support tags show them too.
 
-Neither approach perfectly replicates 1Password's tagging, but the group hierarchy in KeePass is flexible enough to accommodate most organizational needs.
+Groups and tags together cover most 1Password setups: vaults become groups, as described above, and tags stay tags.
 
 ## Step 5: Migrate Attachments and Secure Notes
 
